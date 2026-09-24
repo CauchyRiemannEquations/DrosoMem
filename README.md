@@ -167,13 +167,31 @@ Outputs include the resolved configuration, source provenance, package versions,
 
 Full tabular evidence and manifests: [results/mvp](results/mvp). Model checkpoints and all per-model figures are produced in `outputs/` on execution, not committed as large binary archives. Reported runtime is machine-specific; metric rows time computation before rendering figures. `runtime.json` times the complete run.
 
+
+### Phase 3: anatomical mushroom-body experiment
+
+Two pinned, annotated FlyWire subsets now contain 686 neurons each (512 KC, 48 MBON, 125 DAN, 1 APL). Digits stimulate KC only; the primary readout observes MBON only. Six graph conditions, two normalization methods, two training lengths and three seeds yield **288 actual CPU runs**.
+
+With 50 training digits and incoming-L1 normalization, real, role-shuffled and random networks all recalled the full 47-digit evaluation horizon after the supplied `314`. With 200 training digits, the real MBON readout scored **0 generated digits in all twelve runs**. This does not establish a benefit of the real fly wiring. DAN are modeled as ordinary signed nodes; dopamine/reward learning is not implemented.
+
+![Phase 3 measured recall](results/phase3/overview.png)
+
+[Full protocol, results, limitations and reproduction commands](docs/phase3-results.md).
+
+```bash
+python scripts/run_phase3.py --output outputs/phase3
+python scripts/summarize_phase3.py --output outputs/phase3
+```
+
+The code is MIT-licensed; FlyWire-derived data retain the upstream **CC BY-NC 4.0** terms. See [data provenance and attribution](data/README.md).
+
 ## Roadmap
 
 - [x] Phase 0: primary-source review, verified download/schema and provenance.
 - [x] Phase 1: real-subset fixed reservoir, linear readout, teacher forcing, free recall, 3 models × 3 seeds, plots and tests.
 - [x] Phase 2 first study: five 300–1000-neuron subsets, normalization/length curves, fresh seeds and leaky/memoryless controls (450 runs).
 - [ ] Phase 2 follow-up: perturbation robustness, delayed memory tasks and an independent confirmation protocol.
-- [ ] Phase 3: anatomically selected mushroom-body / Kenyon-cell circuits, preserving MBON/DAN feedback; KC-only wiring need not supply useful recurrence.
+- [x] Phase 3: annotated KC/MBON/DAN/APL subsets, KC-only input, MBON-only readout, role-preserving shuffle and structural ablations; 288 measured runs.
 - [ ] Stage B/C: Brian2 LIF dynamics and better-supported neuron/synapse parameters after rate-model diagnostics.
 - [ ] Phase 4: KC→MBON or other explicitly defined plasticity; keep the fixed-reservoir experiment as a baseline.
 - [ ] Phase 5: reward/dopamine signals with a separate learning protocol.
@@ -185,7 +203,7 @@ Full tabular evidence and manifests: [results/mvp](results/mvp). Model checkpoin
 ```text
 Flying/
   README.md, pyproject.toml, requirements*.txt
-  configs/           # mvp.json, phase2.json, phase2_quick.json
+  configs/           # mvp.json, phase2.json, phase3.json
   docs/              # source investigation and Phase 2 measured report
   src/flying/
     data/           # pinned connectome adapter; π generation
@@ -198,7 +216,7 @@ Flying/
   scripts/          # download_connectome, run_mvp, run_experiment
   notebooks/        # 3 runnable exploration/experiment notebooks
   data/             # small real subset, provenance, upstream notice
-  results/          # preserved mvp/ and full phase2/ experimental evidence
+  results/          # preserved mvp/, phase2/ and phase3/ experimental evidence
   outputs/          # new experiments (ignored by Git)
   tests/            # causality, scoring, controls, direction, frozen weights
 ```

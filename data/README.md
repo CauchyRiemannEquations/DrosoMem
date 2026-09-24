@@ -56,3 +56,13 @@ The raw pinned parquet from `download_connectome.py` must already exist. The
 builder streams its rows, then holds the thresholded sparse graph in RAM for
 selection (more memory than the small simulations). It never runs whole-brain
 neural dynamics. Connected-subset folders must not already exist.
+
+## Phase 3 anatomical subsets
+
+`flywire_783_mb_left_kc512_s701` and `s702` contain 686 neurons each: 512 KC, 48 MBON, 125 DAN and one APL. Their 3,309/3,241 edges are real, thresholded FlyWire v783 connections. Each includes `annotations.csv`, exact root IDs, edge counts/signs and source/annotation hashes. See [Phase 3 protocol](../docs/phase3-results.md) for deterministic selection and limitations.
+
+## Data licensing and attribution
+
+Flying's MIT code license does **not** relicense the underlying FlyWire data. The [official FlyWire public-release guidelines](https://flywire.ai/guidelines) specify **CC BY-NC 4.0** for the public data; see [license terms](https://creativecommons.org/licenses/by-nc/4.0/). Bundled data are transformed subsets (selection, thresholding, removal of autapses) of that release. The separately retained upstream MIT notice applies to the author software repository; it is not a replacement for FlyWire data terms.
+
+Credit the FlyWire Consortium, Dorkenwald et al. (2024), Shiu et al. (2024) for the processed model data, and the annotation authors. The [annotation repository](https://github.com/flyconnectome/flywire_annotations#how-to-cite) requests Berg et al. (2025), Schlegel et al. (2024), Matsliah et al. (2024) and Dorkenwald et al. (2024) for current annotations. Consult its pinned source and official citation guide when publishing.

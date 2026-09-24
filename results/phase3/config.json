@@ -1,0 +1,42 @@
+{
+  "circuits": [
+    "data/flywire_783_mb_left_kc512_s701",
+    "data/flywire_783_mb_left_kc512_s702"
+  ],
+  "seeds": [
+    242,
+    243,
+    244
+  ],
+  "lengths": [
+    50,
+    200
+  ],
+  "normalizations": [
+    "spectral",
+    "incoming_l1"
+  ],
+  "models": [
+    "fly",
+    "role_shuffled",
+    "random",
+    "no_dan",
+    "no_feedback",
+    "leaky_only"
+  ],
+  "views": [
+    "mbon",
+    "all"
+  ],
+  "epochs": 400,
+  "microsteps": 4,
+  "leak": 0.6,
+  "gain": 0.9,
+  "prompt_length": 3,
+  "heldout_start": 2000,
+  "heldout_count": 100,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "learning_rate": 0.03,
+  "l2": 1e-05
+}
