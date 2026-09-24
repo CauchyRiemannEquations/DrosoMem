@@ -8,6 +8,35 @@ Flying explores whether a fruit fly connectome can act as a fixed biological-str
 
 > **실제 FlyWire 연결 데이터로 실행되는 Python MVP입니다.** 현재 결과는 작은 부분망과 단순 dynamics의 계산 실험입니다. 실제 초파리가 원주율을 이해하거나 외웠다는 뜻이 아닙니다.
 
+## Phase 2 update — measured sensitivity study
+
+**450 CPU experiments completed** across five real subsets (300–1000 neurons),
+two normalization methods, three prefix lengths, three new model seeds and five
+models including recurrence-removal controls. **20 tests passed.**
+
+At 200 training digits, the original 300-neuron real structure scored
+`2 / 2 / 2` with global spectral scaling, versus **`≥197 / 41 / 84`** with
+per-neuron incoming normalization (paired seeds 142/143/144). This intervention
+preserves topology/signs but changes relative incoming strengths. More neurons
+and other connected subsets did not consistently improve recall. All real
+subsets recalled 47/47 generated digits for 50-digit training; at 400-digit
+training, real-subset scores fell to 0–4. Every length uses a separately fitted
+readout. These results do not establish biological-wiring superiority or unseen
+π prediction.
+
+![Real-subset normalization comparison](results/phase2/overview.png)
+
+Read the [complete Phase 2 report](docs/phase2-results.md) and
+[all experimental records](results/phase2). The original MVP evidence below is
+preserved; Phase 2 uses a separate heldout suffix at indices 1000–1099.
+
+```bash
+# Quick comparison: 10 conditions on the bundled 300-neuron subset
+python scripts/run_phase2.py --config configs/phase2_quick.json
+# Full recorded design: 450 conditions, ~89 seconds on this execution host
+python scripts/run_phase2.py --config configs/phase2.json
+```
+
 ## Project Idea
 
 Keep recurrent connectivity fixed, encode each digit as neural stimulation, and train **only a linear softmax readout** to predict the next digit. The same digit can have different successors; history must enter through the evolving state. There is no time index, positional embedding, digit lookup of π, or teacher target in the autoregressive generator.
@@ -142,7 +171,8 @@ Full tabular evidence and manifests: [results/mvp](results/mvp). Model checkpoin
 
 - [x] Phase 0: primary-source review, verified download/schema and provenance.
 - [x] Phase 1: real-subset fixed reservoir, linear readout, teacher forcing, free recall, 3 models × 3 seeds, plots and tests.
-- [ ] Phase 2: **next priority**: larger and multiple connected subsets, length-capacity curves, normalization/dynamics controls, stronger sequence baselines and independent evaluation seeds.
+- [x] Phase 2 first study: five 300–1000-neuron subsets, normalization/length curves, fresh seeds and leaky/memoryless controls (450 runs).
+- [ ] Phase 2 follow-up: perturbation robustness, delayed memory tasks and an independent confirmation protocol.
 - [ ] Phase 3: anatomically selected mushroom-body / Kenyon-cell circuits, preserving MBON/DAN feedback; KC-only wiring need not supply useful recurrence.
 - [ ] Stage B/C: Brian2 LIF dynamics and better-supported neuron/synapse parameters after rate-model diagnostics.
 - [ ] Phase 4: KC→MBON or other explicitly defined plasticity; keep the fixed-reservoir experiment as a baseline.
@@ -155,8 +185,8 @@ Full tabular evidence and manifests: [results/mvp](results/mvp). Model checkpoin
 ```text
 Flying/
   README.md, pyproject.toml, requirements*.txt
-  configs/mvp.json
-  docs/research.md
+  configs/           # mvp.json, phase2.json, phase2_quick.json
+  docs/              # source investigation and Phase 2 measured report
   src/flying/
     data/           # pinned connectome adapter; π generation
     encoding/       # seeded fixed digit populations
@@ -168,7 +198,7 @@ Flying/
   scripts/          # download_connectome, run_mvp, run_experiment
   notebooks/        # 3 runnable exploration/experiment notebooks
   data/             # small real subset, provenance, upstream notice
-  results/mvp/      # measured baseline logs and selected figures
+  results/          # preserved mvp/ and full phase2/ experimental evidence
   outputs/          # new experiments (ignored by Git)
   tests/            # causality, scoring, controls, direction, frozen weights
 ```

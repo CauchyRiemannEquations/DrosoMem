@@ -33,3 +33,26 @@ python scripts/download_connectome.py
 For a larger subset (up to 3000), give `--neurons 1000 --output data/flywire_783_1000`
 and update the config path and `max_neurons`. CSV/IDs are validated by checksums
 on every run. Missing/corrupt real data causes an error, never a synthetic fallback.
+
+## Phase 2 bundled subsets
+
+The original subset remains unchanged. Three additional 300-neuron subsets use
+randomized breadth-first growth from seeded starting cells in the largest weakly
+connected component of the same thresholded source graph (seeds 101, 202, 303).
+Every saved edge is an original induced connection; weak connectivity is guaranteed,
+strong connectivity is not. Seeded neighborhoods are not independent biological
+samples or named anatomical regions, and may overlap. A fourth new subset contains
+the top 1,000 neurons by retained incident synapse count. All source hashes,
+starting root IDs, selected IDs and edge hashes are bundled.
+
+To rebuild these four new subsets into a fresh destination:
+
+```bash
+python -m pip install -e ".[data]"
+python scripts/build_phase2_subsets.py --output data/rebuilt_phase2
+```
+
+The raw pinned parquet from `download_connectome.py` must already exist. The
+builder streams its rows, then holds the thresholded sparse graph in RAM for
+selection (more memory than the small simulations). It never runs whole-brain
+neural dynamics. Connected-subset folders must not already exist.

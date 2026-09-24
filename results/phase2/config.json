@@ -1,0 +1,45 @@
+{
+  "graphs": {
+    "hubs300": "data/flywire_783_subset",
+    "connected101": "data/flywire_783_connected_300_s101",
+    "connected202": "data/flywire_783_connected_300_s202",
+    "connected303": "data/flywire_783_connected_300_s303",
+    "hubs1000": "data/flywire_783_hubs_1000"
+  },
+  "normalizations": [
+    "spectral",
+    "incoming_l1"
+  ],
+  "train_lengths": [
+    50,
+    200,
+    400
+  ],
+  "seeds": [
+    142,
+    143,
+    144
+  ],
+  "models": [
+    "fly",
+    "shuffled",
+    "random",
+    "leaky_only",
+    "memoryless"
+  ],
+  "heldout_start": 1000,
+  "heldout_digits": 100,
+  "prompt_length": 3,
+  "gain": 0.9,
+  "leak": 0.6,
+  "encoding": {
+    "fraction": 0.1,
+    "amplitude": 0.5
+  },
+  "training": {
+    "epochs": 400,
+    "learning_rate": 0.03,
+    "l2": 1e-05
+  },
+  "interpretation": "Exploratory sensitivity study; no winner selected or confirmatory claim. Heldout suffix indices 1000..1099 shared across lengths."
+}

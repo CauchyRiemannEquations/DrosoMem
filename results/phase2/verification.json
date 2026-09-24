@@ -1,0 +1,15 @@
+{
+  "tests_passed": 20,
+  "experiments": 450,
+  "protocol": "all specified factors run; no outcome-based filtering",
+  "repeatability": "full 450-row rerun exactly matches except runtime",
+  "recall_validation": "all 450 full sequences independently checked against score, horizon and censoring",
+  "record_counts": {
+    "metrics_jsonl": 450,
+    "recall_jsonl": 450,
+    "results_csv": 450
+  },
+  "leakage": "changing heldout suffix leaves training traces and prefix recall unchanged",
+  "original_mvp": "13 original tests still pass",
+  "fixed_issue": "atomic final JSONL snapshots prevent missing terminal record"
+}

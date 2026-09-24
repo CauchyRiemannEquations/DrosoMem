@@ -1,0 +1,47 @@
+{
+  "time_utc": "2026-09-24T04:15:09.050648+00:00",
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "mpmath": "1.4.1",
+    "matplotlib": "3.10.8",
+    "threadpoolctl": "3.6.0"
+  },
+  "threads": 1,
+  "split": "train target indices 1..L-1; heldout target indices 1000..1099",
+  "source_code_sha256": {
+    "__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+    "brain/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "brain/diagnostics.py": "6cd44d3971490d4be13445d53571537bea0782e4d96a4b9e209510bbcdb619d0",
+    "brain/fly_network.py": "5b6393e9343d9516050a714e10ec94faea1aaa82c7799b4ee87b184436301e7a",
+    "brain/random_network.py": "95efa4ccc748cde4b71872bcef3d611958d4f8b21eabbce459af667e80e303cf",
+    "brain/reservoir.py": "2221db2706b6b01c92d83b6aa27bf6e1cedc8744e615d70f4081b41eb75f4630",
+    "brain/shuffled_network.py": "8ec288b891c91823e425fd3982b61ad0d065d8f76abb192d45ac021d03a3a9c9",
+    "data/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "data/connectome.py": "08adf495f49cffdd0d1b868220993362f8a3a8b9a453349649b0d90b7673a13e",
+    "data/pi_digits.py": "7dddbf916b1dd4e986e0c99b4303b60ced7797568b8de529d91c91b45f2a25d6",
+    "data/subsets.py": "0b84efc98944e534a5206b955b277f2be423393075b2c4905ace3ecb980294d8",
+    "encoding/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "encoding/digit_encoder.py": "e83dffff85555862e597b02b53da8f8dac497808af27ffe8f766a51b01735b89",
+    "evaluation/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "evaluation/free_recall.py": "39f27d2310fcd136eb56acf5681de06801853cf547283a96e8efcf93b2055154",
+    "evaluation/metrics.py": "aa64b8d4e03002d940e81116ecef99f206fc4d28ad4c7985a352f9c52d0c51e9",
+    "evaluation/next_digit.py": "cb7e74cb472ad255d79fcbeb5449e20c540433cd484bbec599457aa07d68e2b7",
+    "models/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "models/readout.py": "ded07cd8fa33d3fff8582731e28a6ccfe15c885e85e04d064c3cbd404a4189a7",
+    "training/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "training/phase2.py": "ffa684d99db45156af19ba7d1a6283893ae3005e7fc94d7fb1e6aa7f2d1a12a3",
+    "training/train.py": "d9a09c93431fca0cebacb13c202a345e23a26a94eae7f6fc035c0dfe6f353063",
+    "visualization/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "visualization/activity.py": "06b8cc7ea84082a95cea57252a541e487d1c828bdae00519ce91687ad164fe20",
+    "visualization/pi_memory.py": "93b513a51e540e5befb3d8045979d957de850223a93182d13ba420b4bb01316e"
+  },
+  "config_sha256": "c0900157053a7c935e8b26d9f4f96f117cc79237576df51b7b8032809e21727a",
+  "pi_sha256": "7248e420310f9fb276733ad17b4de6ae0608b4462cfef7cbe0e76821c2f9dc8a",
+  "figure_refresh": {
+    "source_sha256": "3bd639ba2a0c1c2bdc2f6be212b33edf146ae781d6a71941b49eaeae6c9919a6",
+    "change": "legend position only; numerical run source hashes above preserved"
+  }
+}
