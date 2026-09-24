@@ -185,6 +185,17 @@ python scripts/summarize_phase3.py --output outputs/phase3
 
 The code is MIT-licensed; FlyWire-derived data retain the upstream **CC BY-NC 4.0** terms. See [data provenance and attribution](data/README.md).
 
+### Phase 3b: temporal-memory diagnosis
+
+The update-count sweep and independent random-input probe are now implemented: **768 π runs and 4,224 delayed-input measurements**, with matched 48-neuron observation budgets and two affine readout methods. At MBON, three-digit-old random inputs are decoded at 71–75% accuracy with one update per digit, compared with 13–16% with four. Real-circuit 200-digit training-prefix recall reaches 5–9 digits (spectral, one update), but shuffled controls perform similarly. This supports sensitivity to model timing, not an advantage of real anatomy.
+
+[Protocol, measured results and limitations](docs/phase3b-results.md).
+
+```bash
+python scripts/run_phase3b.py --output outputs/phase3b
+python scripts/summarize_phase3b.py --output outputs/phase3b
+```
+
 ## Roadmap
 
 - [x] Phase 0: primary-source review, verified download/schema and provenance.
@@ -193,6 +204,7 @@ The code is MIT-licensed; FlyWire-derived data retain the upstream **CC BY-NC 4.
 - [ ] Phase 2 follow-up: perturbation robustness, delayed memory tasks and an independent confirmation protocol.
 - [x] Phase 3: annotated KC/MBON/DAN/APL subsets, KC-only input, MBON-only readout, role-preserving shuffle and structural ablations; 288 measured runs.
 - [ ] Stage B/C: Brian2 LIF dynamics and better-supported neuron/synapse parameters after rate-model diagnostics.
+- [x] Phase 3b: update-count sweep, independent delayed-input decoding and equal-size readout diagnostics.
 - [ ] Phase 4: KC→MBON or other explicitly defined plasticity; keep the fixed-reservoir experiment as a baseline.
 - [ ] Phase 5: reward/dopamine signals with a separate learning protocol.
 - [ ] Phase 6: whole-brain scale simulation after sparse performance and biological assumptions are justified.
