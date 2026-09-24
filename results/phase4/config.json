@@ -1,0 +1,48 @@
+{
+  "circuits": [
+    "data/flywire_783_mb_left_kc512_s701",
+    "data/flywire_783_mb_left_kc512_s702"
+  ],
+  "seeds": [
+    442,
+    443,
+    444
+  ],
+  "normalizations": [
+    "spectral",
+    "incoming_l1"
+  ],
+  "models": [
+    "fly",
+    "role_shuffled",
+    "role_random"
+  ],
+  "microsteps": [
+    1,
+    2
+  ],
+  "lengths": [
+    50,
+    200
+  ],
+  "conditions": [
+    "frozen",
+    "supervised",
+    "permuted_teacher"
+  ],
+  "plastic_epochs": 30,
+  "plastic_learning_rate": 0.05,
+  "plastic_floor": 0.0001,
+  "teacher_fraction": 0.25,
+  "teacher_amplitude": 0.25,
+  "readout_epochs": 400,
+  "readout_learning_rate": 0.03,
+  "readout_l2": 1e-05,
+  "leak": 0.6,
+  "gain": 0.9,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "prompt_length": 3,
+  "heldout_start": 4000,
+  "heldout_count": 100
+}

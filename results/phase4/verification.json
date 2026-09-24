@@ -1,0 +1,53 @@
+{
+  "records_checked": 432,
+  "weight_invariants_checked": true,
+  "all_recall_scores_match": true,
+  "checkpoints_replayed": [
+    {
+      "checkpoint": "fly_frozen",
+      "pi_memory_score": 5,
+      "prediction_exact": true
+    },
+    {
+      "checkpoint": "fly_supervised",
+      "pi_memory_score": 9,
+      "prediction_exact": true
+    },
+    {
+      "checkpoint": "fly_permuted_teacher",
+      "pi_memory_score": 6,
+      "prediction_exact": true
+    },
+    {
+      "checkpoint": "role_shuffled_frozen",
+      "pi_memory_score": 5,
+      "prediction_exact": true
+    },
+    {
+      "checkpoint": "role_shuffled_supervised",
+      "pi_memory_score": 10,
+      "prediction_exact": true
+    },
+    {
+      "checkpoint": "role_shuffled_permuted_teacher",
+      "pi_memory_score": 10,
+      "prediction_exact": true
+    },
+    {
+      "checkpoint": "role_random_frozen",
+      "pi_memory_score": 5,
+      "prediction_exact": true
+    },
+    {
+      "checkpoint": "role_random_supervised",
+      "pi_memory_score": 3,
+      "prediction_exact": true
+    },
+    {
+      "checkpoint": "role_random_permuted_teacher",
+      "pi_memory_score": 2,
+      "prediction_exact": true
+    }
+  ],
+  "checkpoint_readouts_refit_exact": true
+}

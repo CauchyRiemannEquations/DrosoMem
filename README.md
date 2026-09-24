@@ -8,6 +8,8 @@ Flying explores whether a fruit fly connectome can act as a fixed biological-str
 
 > **실제 FlyWire 연결 데이터로 실행되는 Python MVP입니다.** 현재 결과는 작은 부분망과 단순 dynamics의 계산 실험입니다. 실제 초파리가 원주율을 이해하거나 외웠다는 뜻이 아닙니다.
 
+**Latest: Phase 4 completed — 432 plasticity experiments, full repeat verification, 30 tests passed.** [Read the result](docs/phase4-results.md): this first KC→MBON teaching rule did not consistently improve recall. Phases 1–3b remain fixed-reservoir baselines; Phase 4 separately allows training only on existing KC→MBON weights and freezes them before evaluation.
+
 ## Phase 2 update — measured sensitivity study
 
 **450 CPU experiments completed** across five real subsets (300–1000 neurons),
@@ -196,6 +198,19 @@ python scripts/run_phase3b.py --output outputs/phase3b
 python scripts/summarize_phase3b.py --output outputs/phase3b
 ```
 
+### Phase 4: constrained KC→MBON plasticity
+
+The first supervised local teaching rule is implemented on existing KC→MBON edges only, with sign and incoming plastic-strength conservation. **432 runs** compare frozen weights, correct teaching and shuffled teaching across real, degree-shuffled and role-block-random graphs. Networks are frozen before final readout fitting and evaluation.
+
+This rule did **not** consistently improve recall: among 24 paired real-circuit comparisons at 200 training digits, 5 improved, 3 tied and 16 worsened. At 50 digits, all real conditions reached the 47-digit cap. This is a result about one computational rule, not fly learning or dopamine biology.
+
+[Full learning rule, controls, results and reproducibility report](docs/phase4-results.md).
+
+```bash
+python scripts/run_phase4.py --output outputs/phase4
+python scripts/summarize_phase4.py --output outputs/phase4
+```
+
 ## Roadmap
 
 - [x] Phase 0: primary-source review, verified download/schema and provenance.
@@ -205,7 +220,7 @@ python scripts/summarize_phase3b.py --output outputs/phase3b
 - [x] Phase 3: annotated KC/MBON/DAN/APL subsets, KC-only input, MBON-only readout, role-preserving shuffle and structural ablations; 288 measured runs.
 - [ ] Stage B/C: Brian2 LIF dynamics and better-supported neuron/synapse parameters after rate-model diagnostics.
 - [x] Phase 3b: update-count sweep, independent delayed-input decoding and equal-size readout diagnostics.
-- [ ] Phase 4: KC→MBON or other explicitly defined plasticity; keep the fixed-reservoir experiment as a baseline.
+- [x] Phase 4: supervised KC→MBON plasticity with fixed-connectivity and permuted-teacher controls; 432 reproducible runs.
 - [ ] Phase 5: reward/dopamine signals with a separate learning protocol.
 - [ ] Phase 6: whole-brain scale simulation after sparse performance and biological assumptions are justified.
 - [ ] Later: live web brain visualization and digit-by-digit recall UI. Not part of this MVP.
