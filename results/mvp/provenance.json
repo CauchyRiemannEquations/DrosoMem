@@ -1,0 +1,17 @@
+{
+  "dataset": "FlyWire FAFB",
+  "version": 783,
+  "source": "Shiu et al. processed connectivity",
+  "source_url": "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/Connectivity_783.parquet",
+  "source_commit": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+  "source_sha256": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347",
+  "source_rows": 15091983,
+  "neurons": 300,
+  "edges": 3303,
+  "selection": "top total incident synapse strength after threshold; induced subgraph",
+  "min_synapses": 5,
+  "autapses": "removed",
+  "sign": "upstream Excitatory column; model assumption",
+  "edges_sha256": "bb0250911e4bf5b157429552a1aaf7b939815dd492527082dde7a4e3b98928b1",
+  "neurons_sha256": "d21e49bd40652d3e8574b8853434cc3988a263fe8e4aee11fdbda6af8dc7b1b0"
+}

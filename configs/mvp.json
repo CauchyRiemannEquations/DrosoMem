@@ -1,0 +1,11 @@
+{
+  "connectome": "data/flywire_783_subset",
+  "train_digits": 200,
+  "heldout_digits": 100,
+  "prompt_length": 3,
+  "seeds": [42, 43, 44],
+  "models": ["fly", "shuffled", "random"],
+  "reservoir": {"max_neurons": 512, "spectral_radius": 0.9, "leak": 0.6},
+  "encoding": {"fraction": 0.1, "amplitude": 0.5},
+  "training": {"epochs": 400, "learning_rate": 0.03, "l2": 0.00001}
+}

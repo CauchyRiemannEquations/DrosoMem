@@ -1,0 +1,6 @@
+{
+  "tests_passed": 13,
+  "same_config_repeat": "all nine metric rows identical excluding elapsed time",
+  "checkpoint_replay": "all nine full generated sequences identical",
+  "heldout_leakage_test": "modifying heldout suffix leaves checkpoint and trained-prefix recall unchanged"
+}
