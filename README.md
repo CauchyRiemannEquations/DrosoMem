@@ -8,7 +8,7 @@ Flying explores whether a fruit fly connectome can act as a fixed biological-str
 
 > **실제 FlyWire 연결 데이터로 실행되는 Python MVP입니다.** 현재 결과는 작은 부분망과 단순 dynamics의 계산 실험입니다. 실제 초파리가 원주율을 이해하거나 외웠다는 뜻이 아닙니다.
 
-**Latest: Phase 4 completed — 432 plasticity experiments, full repeat verification, 30 tests passed.** [Read the result](docs/phase4-results.md): this first KC→MBON teaching rule did not consistently improve recall. Phases 1–3b remain fixed-reservoir baselines; Phase 4 separately allows training only on existing KC→MBON weights and freezes them before evaluation.
+**Latest: Phase 5 completed — 288 reward-learning network conditions, 576 evaluations, full repeat verification, 35 tests passed.** [Read the result](docs/phase5-results.md): this first reward/eligibility rule did not improve recall. Phases 1–3b remain fixed-reservoir baselines; Phases 4–5 separately adapt only existing KC→MBON weights and freeze them before evaluation.
 
 ## Phase 2 update — measured sensitivity study
 
@@ -211,6 +211,17 @@ python scripts/run_phase4.py --output outputs/phase4
 python scripts/summarize_phase4.py --output outputs/phase4
 ```
 
+### Phase 5: reward and eligibility traces
+
+A supervised-warm-started classifier is frozen while KC→MBON synapses receive scalar correct/incorrect reward. Immediate versus 3-step-delayed reward, trace versus no trace, and unrelated yoked reward are compared on the same topology controls: **288 network conditions and 576 evaluations**. This is an artificial computational reward signal, not modeled dopamine biology.
+
+The primary fixed-policy real-network score declined in all 24 paired comparisons after trace learning. A separate supervised readout refit recovered much of the performance, suggesting a changed-state/readout mismatch, but did not establish improvement over frozen connectivity. [Full protocol and negative result](docs/phase5-results.md).
+
+```bash
+python scripts/run_phase5.py --output outputs/phase5
+python scripts/summarize_phase5.py --output outputs/phase5
+```
+
 ## Roadmap
 
 - [x] Phase 0: primary-source review, verified download/schema and provenance.
@@ -221,7 +232,8 @@ python scripts/summarize_phase4.py --output outputs/phase4
 - [ ] Stage B/C: Brian2 LIF dynamics and better-supported neuron/synapse parameters after rate-model diagnostics.
 - [x] Phase 3b: update-count sweep, independent delayed-input decoding and equal-size readout diagnostics.
 - [x] Phase 4: supervised KC→MBON plasticity with fixed-connectivity and permuted-teacher controls; 432 reproducible runs.
-- [ ] Phase 5: reward/dopamine signals with a separate learning protocol.
+- [x] Phase 5A: artificial scalar reward and eligibility-trace protocol, with delayed and yoked controls.
+- [ ] Phase 5B: biologically supported dopamine/compartment modulation; current DAN nodes remain ordinary signed nodes.
 - [ ] Phase 6: whole-brain scale simulation after sparse performance and biological assumptions are justified.
 - [ ] Later: live web brain visualization and digit-by-digit recall UI. Not part of this MVP.
 

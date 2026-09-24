@@ -1,0 +1,57 @@
+{
+  "recall_records_checked": 576,
+  "network_conditions": 288,
+  "actual_reward_events_checked": 859680,
+  "yoked_reward_counts_match": true,
+  "all_scores_match": true,
+  "checkpoints_replayed": [
+    {
+      "condition": "frozen",
+      "readout": "frozen_policy",
+      "score": 5,
+      "prediction_exact": true
+    },
+    {
+      "condition": "frozen",
+      "readout": "refit_readout",
+      "score": 5,
+      "prediction_exact": true
+    },
+    {
+      "condition": "reward_trace",
+      "readout": "frozen_policy",
+      "score": 0,
+      "prediction_exact": true
+    },
+    {
+      "condition": "reward_trace",
+      "readout": "refit_readout",
+      "score": 5,
+      "prediction_exact": true
+    },
+    {
+      "condition": "reward_no_trace",
+      "readout": "frozen_policy",
+      "score": 1,
+      "prediction_exact": true
+    },
+    {
+      "condition": "reward_no_trace",
+      "readout": "refit_readout",
+      "score": 5,
+      "prediction_exact": true
+    },
+    {
+      "condition": "yoked_reward",
+      "readout": "frozen_policy",
+      "score": 0,
+      "prediction_exact": true
+    },
+    {
+      "condition": "yoked_reward",
+      "readout": "refit_readout",
+      "score": 5,
+      "prediction_exact": true
+    }
+  ]
+}
