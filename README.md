@@ -8,7 +8,9 @@ Flying explores whether a fruit fly connectome can act as a fixed biological-str
 
 > **실제 FlyWire 연결 데이터로 실행되는 Python MVP입니다.** 현재 결과는 작은 부분망과 단순 dynamics의 계산 실험입니다. 실제 초파리가 원주율을 이해하거나 외웠다는 뜻이 아닙니다.
 
-**Latest: Phase 5 follow-up completed — 4,384 evaluations, 5 fresh confirmation seeds, 41 tests passed.** [Read the diagnosis](docs/phase5-diagnostic-results.md): three small-update improvement candidates failed to confirm; statistics-only recalibration did not rescue the fixed-readout collapse. Whole-brain scaling remains deferred.
+**Latest: constrained BPTT positive control completed — 192 evaluations, all checkpoints replayed, 45 tests passed.** [Read the result](docs/phase5-bptt-results.md): exact recurrent gradients improved training cross entropy in all 24 graph settings, but did not establish a reliable π recall gain.
+
+**Previous: Phase 5 follow-up completed — 4,384 evaluations, 5 fresh confirmation seeds, 41 tests passed.** [Read the diagnosis](docs/phase5-diagnostic-results.md): three small-update improvement candidates failed to confirm; statistics-only recalibration did not rescue the fixed-readout collapse. Whole-brain scaling remains deferred.
 
 **Phase 5 baseline: 288 reward-learning network conditions, 576 evaluations, full repeat verification, 35 tests passed.** [Read the result](docs/phase5-results.md): this first reward/eligibility rule did not improve recall. Phases 1–3b remain fixed-reservoir baselines; Phases 4–5 separately adapt only existing KC→MBON weights and freeze them before evaluation.
 
@@ -229,6 +231,10 @@ python scripts/summarize_phase5.py --output outputs/phase5
 The same trace/yoked endpoint changes were interpolated at six magnitudes and read with four isolated interventions: fixed policy, statistics-only recalibration, coefficients-only refit and full refit. **2,304 discovery + 2,080 confirmation evaluations** used real and role-degree-shuffled circuits. Selected real-network gains of +0.50 to +0.83 digits became **−0.90 to −0.60 digits** versus frozen connectivity on five fresh seeds. Relearning classifier coefficients recovered much of the endpoint loss; updating feature statistics alone did not. This diagnoses a readout mismatch without establishing a reward-learning gain.
 
 [Full measured result, limitations and reproduction](docs/phase5-diagnostic-results.md) · [Locked protocol](docs/phase5-diagnostic-protocol.md)
+
+### Constrained BPTT positive control
+
+Full temporal gradients now optimize supervised next-digit cross entropy on the same existing KC→MBON edges, with the initial classifier frozen. Correct-label BPTT, last-step gradients, permuted-label BPTT and frozen weights are compared across real/role-shuffled circuits. The **192-evaluation study** reduced training loss but did not consistently extend free recall; extra readout refitting did not beat the permuted-label control. The local-gradient control selected epoch zero in all 24 settings. [Protocol and measured interpretation](docs/phase5-bptt-results.md).
 
 ## Roadmap
 

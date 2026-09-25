@@ -1,0 +1,46 @@
+{
+  "source_commit": "3aca7b059b17c8e6855b67a9efa3b16a9b1c79f2",
+  "circuits": [
+    "data/flywire_783_mb_left_kc512_s701",
+    "data/flywire_783_mb_left_kc512_s702"
+  ],
+  "seeds": [
+    742,
+    743,
+    744
+  ],
+  "normalizations": [
+    "spectral",
+    "incoming_l1"
+  ],
+  "models": [
+    "fly",
+    "role_shuffled"
+  ],
+  "conditions": [
+    "frozen",
+    "full_bptt",
+    "local_gradient",
+    "permuted_bptt"
+  ],
+  "views": [
+    "fixed_policy",
+    "refit_readout"
+  ],
+  "pi_length": 200,
+  "prompt_length": 3,
+  "leak": 0.6,
+  "gain": 0.9,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "floor": 0.0001,
+  "epochs": 100,
+  "learning_rate": 0.01,
+  "theta_cap": 2.0,
+  "gradient_clip": 5.0,
+  "readout_epochs": 400,
+  "readout_learning_rate": 0.03,
+  "readout_l2": 1e-05,
+  "selection": "lowest training cross entropy including epoch zero, never free recall",
+  "scope": "single prespecified positive-control protocol; no hyperparameter sweep or whole-brain scaling"
+}
