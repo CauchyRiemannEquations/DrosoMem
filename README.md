@@ -8,7 +8,9 @@ Flying explores whether a fruit fly connectome can act as a fixed biological-str
 
 > **실제 FlyWire 연결 데이터로 실행되는 Python MVP입니다.** 현재 결과는 작은 부분망과 단순 dynamics의 계산 실험입니다. 실제 초파리가 원주율을 이해하거나 외웠다는 뜻이 아닙니다.
 
-**Latest: matched-parameter readout experiment completed — 384 evaluations, all saved heads replayed.** [Read the result](docs/phase5-readout-results.md): on real connections, training accuracy rose from 47.80% to 83.70%, but mean error-free recall fell from 6.92 to 5.75 digits. 27 targeted checks passed; the full pytest suite was not run.
+**Latest: early-prefix weighting completed — 120 fits, 120 exact saved-head replays, 6 independent refits, 65 tests passed.** On real connections, mean error-free recall improved from **9.93 to 32.43 digits**, while later-position accuracy fell from **86.69% to 78.77%**. This is a measured tradeoff in decoder training priorities, not increased total memory or biological-wiring superiority. [Results](docs/phase5-prefix-results.md) · [Protocol](docs/phase5-prefix-protocol.md) · [Codex handoff / Work limitations](docs/codex-handoff-2026-09-25.md).
+
+**Previous: matched-parameter readout experiment completed — 384 evaluations, all saved heads replayed.** [Read the result](docs/phase5-readout-results.md): on real connections, training accuracy rose from 47.80% to 83.70%, but mean error-free recall fell from 6.92 to 5.75 digits. 27 targeted checks passed; the full pytest suite was not run.
 
 **Previous: timing diagnosis completed — 72 π runs and 432 iid-memory measurements independently rebuilt.** [Read the result](docs/phase5-timing-results.md): current-digit decoding rose from about 10% to 100%, but error-free π recall worsened. 23 targeted checks passed; the full pytest suite was unavailable in this runtime.
 

@@ -1,0 +1,50 @@
+{
+  "fly": {
+    "conditions": 10,
+    "mean_metrics": {
+      "uniform": {
+        "pi_memory_score": 9.933333333333334,
+        "train_accuracy": 0.8676716917922948,
+        "early_accuracy": 0.8677083333333333,
+        "later_accuracy": 0.8668686868686869,
+        "cross_entropy": 0.405825768341152
+      },
+      "weighted": {
+        "pi_memory_score": 32.43333333333333,
+        "train_accuracy": 0.8206030150753769,
+        "early_accuracy": 0.9947916666666666,
+        "later_accuracy": 0.7876767676767676,
+        "cross_entropy": 0.5710146317529144
+      }
+    },
+    "paired_mean_delta": 22.5,
+    "wins": 10,
+    "ties": 0,
+    "losses": 0,
+    "all_initializations_improve": 9
+  },
+  "role_shuffled": {
+    "conditions": 10,
+    "mean_metrics": {
+      "uniform": {
+        "pi_memory_score": 10.666666666666666,
+        "train_accuracy": 0.9085427135678391,
+        "early_accuracy": 0.9114583333333334,
+        "later_accuracy": 0.907878787878788,
+        "cross_entropy": 0.27816743942398864
+      },
+      "weighted": {
+        "pi_memory_score": 34.0,
+        "train_accuracy": 0.8561139028475712,
+        "early_accuracy": 0.9958333333333333,
+        "later_accuracy": 0.8296969696969697,
+        "cross_entropy": 0.46794194145202633
+      }
+    },
+    "paired_mean_delta": 23.333333333333336,
+    "wins": 9,
+    "ties": 0,
+    "losses": 1,
+    "all_initializations_improve": 8
+  }
+}

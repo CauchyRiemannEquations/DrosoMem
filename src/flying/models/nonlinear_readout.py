@@ -28,30 +28,39 @@ class NonlinearReadout:
 
     def predict(self,states):return self.logits(states).argmax(axis=1)
 
-    def objective(self,states,labels,l2=1e-5):
+    def objective(self,states,labels,l2=1e-5,sample_weight=None):
         z=self.features(states);p=self.parameters;h=np.tanh(z@p['w1']+p['b1']);logits=h@p['w2']+p['b2']
         labels=np.asarray(labels)
-        ce=float(np.mean(logsumexp(logits,axis=1)-logits[np.arange(len(labels)),labels]))
+        losses=logsumexp(logits,axis=1)-logits[np.arange(len(labels)),labels]
+        if sample_weight is None:
+            weights=None;ce=float(np.mean(losses))
+        else:
+            weights=np.asarray(sample_weight,dtype=float)
+            if weights.shape!=(len(labels),) or not np.all(np.isfinite(weights)) or np.any(weights<0) or weights.sum()<=0:
+                raise ValueError('Invalid sample weights')
+            weights=weights/weights.sum();ce=float(weights@losses)
         loss=ce+.5*l2*(np.sum(p['w1']**2)+np.sum(p['w2']**2))
-        error=softmax(logits,axis=1);error[np.arange(len(labels)),labels]-=1;error/=len(labels)
+        error=softmax(logits,axis=1);error[np.arange(len(labels)),labels]-=1
+        if weights is None:error/=len(labels)
+        else:error*=weights[:,None]
         hidden_error=(error@p['w2'].T)*(1-h**2)
         gradient={'w1':z.T@hidden_error+l2*p['w1'],'b1':hidden_error.sum(axis=0),
                   'w2':h.T@error+l2*p['w2'],'b2':error.sum(axis=0)}
         return float(loss),gradient,dict(cross_entropy=ce,accuracy=float(np.mean(logits.argmax(axis=1)==labels)))
 
-    def fit(self,states,labels,epochs=2000,learning_rate=.03,l2=1e-5,checkpoints=(400,2000)):
+    def fit(self,states,labels,epochs=2000,learning_rate=.03,l2=1e-5,checkpoints=(400,2000),sample_weight=None):
         if len(states)!=len(labels) or not len(labels) or epochs<1 or learning_rate<=0 or l2<0:
             raise ValueError('Invalid training configuration')
         if any(not isinstance(e,int) or e<1 or e>epochs for e in checkpoints):raise ValueError('Invalid checkpoint')
         self.initialize(states);moments={k:np.zeros_like(p) for k,p in self.parameters.items()};variances=copy.deepcopy(moments)
         saved={};history=[]
         for epoch in range(1,epochs+1):
-            _,grad,_=self.objective(states,labels,l2)
+            _,grad,_=self.objective(states,labels,l2,sample_weight)
             for k,p in self.parameters.items():
                 moments[k]=.9*moments[k]+.1*grad[k];variances[k]=.999*variances[k]+.001*grad[k]**2
                 p-=learning_rate*(moments[k]/(1-.9**epoch))/(np.sqrt(variances[k]/(1-.999**epoch))+1e-8)
             if epoch==1 or epoch%50==0 or epoch in checkpoints:
-                loss,_,metrics=self.objective(states,labels,l2);history.append(dict(epoch=epoch,objective=loss,**metrics))
+                loss,_,metrics=self.objective(states,labels,l2,sample_weight);history.append(dict(epoch=epoch,objective=loss,**metrics))
             if epoch in checkpoints:saved[epoch]=copy.deepcopy(self)
         return saved,history
 
