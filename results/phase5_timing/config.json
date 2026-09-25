@@ -1,0 +1,46 @@
+{
+  "source_commit": "379952e3ba88caa9a397f3f796be49763479bb25",
+  "circuits": [
+    "data/flywire_783_mb_left_kc512_s701",
+    "data/flywire_783_mb_left_kc512_s702"
+  ],
+  "seeds": [
+    842,
+    843,
+    844
+  ],
+  "normalizations": [
+    "spectral",
+    "incoming_l1"
+  ],
+  "models": [
+    "fly",
+    "role_shuffled"
+  ],
+  "schedules": [
+    "sync_one",
+    "mbon_after_kc",
+    "sync_two"
+  ],
+  "pi_length": 200,
+  "prompt_length": 3,
+  "leak": 0.6,
+  "gain": 0.9,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "readout_epochs": 400,
+  "readout_learning_rate": 0.03,
+  "readout_l2": 1e-05,
+  "memory_train_count": 2000,
+  "memory_test_count": 1000,
+  "memory_warmup": 100,
+  "memory_ridge_alpha": 1.0,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    8
+  ]
+}

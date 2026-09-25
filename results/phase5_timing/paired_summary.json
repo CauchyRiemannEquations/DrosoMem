@@ -1,0 +1,82 @@
+[
+  {
+    "normalization": "incoming_l1",
+    "model": "fly",
+    "control": "sync_one",
+    "n": 6,
+    "mean_gain": -2.3333333333333335,
+    "wins": 0,
+    "ties": 2,
+    "losses": 4
+  },
+  {
+    "normalization": "incoming_l1",
+    "model": "fly",
+    "control": "sync_two",
+    "n": 6,
+    "mean_gain": 2.5,
+    "wins": 4,
+    "ties": 2,
+    "losses": 0
+  },
+  {
+    "normalization": "incoming_l1",
+    "model": "role_shuffled",
+    "control": "sync_one",
+    "n": 6,
+    "mean_gain": -1.8333333333333333,
+    "wins": 0,
+    "ties": 3,
+    "losses": 3
+  },
+  {
+    "normalization": "incoming_l1",
+    "model": "role_shuffled",
+    "control": "sync_two",
+    "n": 6,
+    "mean_gain": 3.6666666666666665,
+    "wins": 6,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "normalization": "spectral",
+    "model": "fly",
+    "control": "sync_one",
+    "n": 6,
+    "mean_gain": -1.3333333333333333,
+    "wins": 0,
+    "ties": 3,
+    "losses": 3
+  },
+  {
+    "normalization": "spectral",
+    "model": "fly",
+    "control": "sync_two",
+    "n": 6,
+    "mean_gain": 3.3333333333333335,
+    "wins": 6,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "normalization": "spectral",
+    "model": "role_shuffled",
+    "control": "sync_one",
+    "n": 6,
+    "mean_gain": -0.8333333333333334,
+    "wins": 2,
+    "ties": 2,
+    "losses": 2
+  },
+  {
+    "normalization": "spectral",
+    "model": "role_shuffled",
+    "control": "sync_two",
+    "n": 6,
+    "mean_gain": 3.6666666666666665,
+    "wins": 6,
+    "ties": 0,
+    "losses": 0
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "direct_assertion_tests": [
+    "tests/test_constrained_bptt.py::test_full_temporal_derivative_matches_finite_differences",
+    "tests/test_constrained_bptt.py::test_zero_weights_and_forward_match_reservoir",
+    "tests/test_constrained_bptt.py::test_optimization_reduces_true_objective_preserving_anatomical_constraints",
+    "tests/test_constrained_bptt.py::test_labels_never_enter_forward_weights_or_state",
+    "tests/test_mushroom_body.py::test_kc_input_and_microstep_propagation",
+    "tests/test_mushroom_body.py::test_role_shuffle_and_ablation_invariants",
+    "tests/test_mushroom_body.py::test_readout_cannot_observe_unselected_neurons",
+    "tests/test_reward_plasticity.py::test_policy_score_gradient_matches_one_step_finite_difference",
+    "tests/test_reward_plasticity.py::test_delayed_delivery_flush_and_reward_identity",
+    "tests/test_reward_plasticity.py::test_trace_decay_and_yoked_reward_ignore_label_for_updates",
+    "tests/test_reward_plasticity.py::test_zero_learning_is_exact_and_seeded_replay_is_exact",
+    "tests/test_reward_plasticity.py::test_delay_longer_than_sequence_preserves_delivery_time",
+    "tests/test_plasticity.py::test_role_random_matches_plastic_budget_and_role_blocks",
+    "tests/test_plasticity.py::test_zero_learning_rate_equals_fixed_dynamics",
+    "tests/test_plasticity.py::test_teacher_not_in_forward_state_and_only_allowed_weights_change",
+    "tests/test_plasticity.py::test_simple_teacher_step_reduces_local_error",
+    "tests/test_timed_reservoir.py::test_synchronous_schedules_exactly_match_existing_implementation",
+    "tests/test_timed_reservoir.py::test_mbon_schedule_integrates_once_and_uses_new_kc_only",
+    "tests/test_timed_reservoir.py::test_current_input_is_unavailable_then_available_without_new_edges",
+    "tests/test_timed_reservoir.py::test_first_free_recall_error_equals_teacher_forced_error_from_same_reset"
+  ],
+  "unittest_pi_checks": 3,
+  "total_passed": 23,
+  "full_pytest_suite_run": false,
+  "reason": "pytest not installed and package download timed out; no pytest emulation used"
+}

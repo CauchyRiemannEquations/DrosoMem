@@ -8,7 +8,9 @@ Flying explores whether a fruit fly connectome can act as a fixed biological-str
 
 > **실제 FlyWire 연결 데이터로 실행되는 Python MVP입니다.** 현재 결과는 작은 부분망과 단순 dynamics의 계산 실험입니다. 실제 초파리가 원주율을 이해하거나 외웠다는 뜻이 아닙니다.
 
-**Latest: constrained BPTT positive control completed — 192 evaluations, all checkpoints replayed, 45 tests passed.** [Read the result](docs/phase5-bptt-results.md): exact recurrent gradients improved training cross entropy in all 24 graph settings, but did not establish a reliable π recall gain.
+**Latest: timing diagnosis completed — 72 π runs and 432 iid-memory measurements independently rebuilt.** [Read the result](docs/phase5-timing-results.md): current-digit decoding rose from about 10% to 100%, but error-free π recall worsened. 23 targeted checks passed; the full pytest suite was unavailable in this runtime.
+
+**Previous: constrained BPTT positive control completed — 192 evaluations, all checkpoints replayed, 45 tests passed.** [Read the result](docs/phase5-bptt-results.md): exact recurrent gradients improved training cross entropy in all 24 graph settings, but did not establish a reliable π recall gain.
 
 **Previous: Phase 5 follow-up completed — 4,384 evaluations, 5 fresh confirmation seeds, 41 tests passed.** [Read the diagnosis](docs/phase5-diagnostic-results.md): three small-update improvement candidates failed to confirm; statistics-only recalibration did not rescue the fixed-readout collapse. Whole-brain scaling remains deferred.
 
@@ -235,6 +237,10 @@ The same trace/yoked endpoint changes were interpolated at six magnitudes and re
 ### Constrained BPTT positive control
 
 Full temporal gradients now optimize supervised next-digit cross entropy on the same existing KC→MBON edges, with the initial classifier frozen. Correct-label BPTT, last-step gradients, permuted-label BPTT and frozen weights are compared across real/role-shuffled circuits. The **192-evaluation study** reduced training loss but did not consistently extend free recall; extra readout refitting did not beat the permuted-label control. The local-gradient control selected epoch zero in all 24 settings. [Protocol and measured interpretation](docs/phase5-bptt-results.md).
+
+### Input/output timing diagnosis
+
+Three schedules keep the same connectome weights and 48-MBON readout budget. Updating MBON after current KC activity makes the current digit fully decodable, but real-network recall falls from 6.33 to 5.00 digits (spectral) and from 6.00 to 3.67 (incoming-L1). All 72 runs also verify that first-error free recall equals the teacher-forced initial correct segment under the same deterministic reset and prompt. The current bottleneck therefore exists before the first incorrect feedback input. [Results and limitations](docs/phase5-timing-results.md).
 
 ## Roadmap
 
