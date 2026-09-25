@@ -1,0 +1,125 @@
+{
+  "config_sha256": "adc8efca9de532637b927404b2a6149486e05cdceb4e809888d83f986618e55d",
+  "discovery_results_sha256": "cfd4a209278feadbc32604667cb011e02efbd7ce60b52d2f5c0894c8ba3181c4",
+  "rule": "For each normalization/delay/view on real graphs, require positive mean paired gains over BOTH frozen and yoked; maximize the smaller mean gain, then prefer smaller alpha. No candidate means no improvement candidate; confirm predeclared anchors only.",
+  "candidates": [
+    {
+      "normalization": "incoming_l1",
+      "reward_delay": 0,
+      "view": "coefficients_only",
+      "alpha": null,
+      "status": "no_positive_candidate"
+    },
+    {
+      "normalization": "incoming_l1",
+      "reward_delay": 0,
+      "view": "fixed",
+      "alpha": null,
+      "status": "no_positive_candidate"
+    },
+    {
+      "normalization": "incoming_l1",
+      "reward_delay": 0,
+      "view": "full_refit",
+      "alpha": null,
+      "status": "no_positive_candidate"
+    },
+    {
+      "normalization": "incoming_l1",
+      "reward_delay": 0,
+      "view": "stats_only",
+      "alpha": null,
+      "status": "no_positive_candidate"
+    },
+    {
+      "normalization": "incoming_l1",
+      "reward_delay": 3,
+      "view": "coefficients_only",
+      "alpha": null,
+      "status": "no_positive_candidate"
+    },
+    {
+      "normalization": "incoming_l1",
+      "reward_delay": 3,
+      "view": "fixed",
+      "alpha": null,
+      "status": "no_positive_candidate"
+    },
+    {
+      "normalization": "incoming_l1",
+      "reward_delay": 3,
+      "view": "full_refit",
+      "alpha": null,
+      "status": "no_positive_candidate"
+    },
+    {
+      "normalization": "incoming_l1",
+      "reward_delay": 3,
+      "view": "stats_only",
+      "alpha": null,
+      "status": "no_positive_candidate"
+    },
+    {
+      "normalization": "spectral",
+      "reward_delay": 0,
+      "view": "coefficients_only",
+      "alpha": 0.03,
+      "status": "candidate",
+      "discovery_gain_frozen": 0.8333333333333334,
+      "discovery_gain_yoked": 0.8333333333333334
+    },
+    {
+      "normalization": "spectral",
+      "reward_delay": 0,
+      "view": "fixed",
+      "alpha": 0.03,
+      "status": "candidate",
+      "discovery_gain_frozen": 0.5,
+      "discovery_gain_yoked": 1.5
+    },
+    {
+      "normalization": "spectral",
+      "reward_delay": 0,
+      "view": "full_refit",
+      "alpha": 0.03,
+      "status": "candidate",
+      "discovery_gain_frozen": 0.8333333333333334,
+      "discovery_gain_yoked": 0.8333333333333334
+    },
+    {
+      "normalization": "spectral",
+      "reward_delay": 0,
+      "view": "stats_only",
+      "alpha": null,
+      "status": "no_positive_candidate"
+    },
+    {
+      "normalization": "spectral",
+      "reward_delay": 3,
+      "view": "coefficients_only",
+      "alpha": null,
+      "status": "no_positive_candidate"
+    },
+    {
+      "normalization": "spectral",
+      "reward_delay": 3,
+      "view": "fixed",
+      "alpha": null,
+      "status": "no_positive_candidate"
+    },
+    {
+      "normalization": "spectral",
+      "reward_delay": 3,
+      "view": "full_refit",
+      "alpha": null,
+      "status": "no_positive_candidate"
+    },
+    {
+      "normalization": "spectral",
+      "reward_delay": 3,
+      "view": "stats_only",
+      "alpha": null,
+      "status": "no_positive_candidate"
+    }
+  ]
+}

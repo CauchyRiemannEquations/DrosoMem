@@ -1,0 +1,19 @@
+# Phase 5 follow-up: synaptic-change size × readout decomposition
+
+Question: does the Phase 5 change help trained-prefix recall but become inaccessible to the old classifier, or does it fail to add a useful recall advantage?
+
+The protocol is encoded in `configs/phase5_diagnostic.json` before running discovery. It uses the two original 686-neuron circuits, 200 training digits, KC-only input, 48-MBON observation, one update per digit, two normalizations and reward delays 0/3. Real and role-preserving degree-shuffled graphs are included. Role-block-random and no-trace conditions are omitted because this experiment isolates correct-trace versus unrelated-yoked change; it does not retest every Phase 5 contrast.
+
+Reproduce the original trace/yoked endpoints with identical reward seeds, then evaluate W(alpha)=W0+alpha(W1-W0), alpha in {0,.01,.03,.1,.3,1}. Preserve support, signs, nonplastic weights and incoming absolute strength. Endpoints are reproduced from pinned data rather than approximated from plots. Interpolation diagnoses a direction in parameter space; it is NOT training with a smaller learning rate or a learned deviation cap.
+
+For every weight matrix, cross old/new train-only feature statistics with old/new classifier coefficients: fixed, statistics only, coefficients only (old statistics), full refit. Coefficient fits use the same 400-epoch Adam settings and zero initialization as Phase 5. Statistics-only changes no class coefficients or labels, but its states were generated from the true training prefix: it is calibration on known training data, not fresh reward-only learning. Changing normalization changes effective raw-state decision boundaries and regularization; the four cells diagnose interventions, not uniquely identifiable biological mechanisms.
+
+Primary outcome: consecutive correct autonomous generated digits after `314`, horizon 197. Training next-digit accuracy is secondary. No unseen π block is generated or used for selection. All adaptation/calibration sees only the 200 training digits. Evaluation freezes every component.
+
+Discovery seeds 542/543/544 reproduce Phase 5. For each real-graph normalization/delay/view, require positive mean paired gains over BOTH frozen and yoked, then maximize the smaller gain; break ties by smaller alpha. Save the selection with configuration/results hashes before confirmation. No positive candidate is explicitly recorded as such.
+
+Fresh confirmation seeds 642–646 evaluate the locked selected alphas, alpha=0, and predeclared diagnostic anchors .1 and 1. Selected alphas are also evaluated on role-shuffled graphs with the same input code. Anchors/extraneous views are descriptive and cannot replace failed selected candidates. Report all wins/ties/losses and mean gains; no seed is selected. Five encoder seeds on two overlapping subsets of one brain are computational robustness checks, not independent biological subjects or formal confirmatory population inference.
+
+Frozen baselines duplicated across directions, delays and views are not independent evidence. Comparisons are paired within circuit/seed/normalization/model/delay. A recovery to frozen performance is not a learning gain. A supervised-refit gain is not reward-only performance. Comparable gains from yoked or shuffled controls cannot establish useful reward credit assignment or an anatomical advantage.
+
+Verification: preserve endpoint/checkpoint arrays and reward events; independently recompute every saved recall score and reward identity, inspect all counts/uniqueness, check original Phase 5 endpoint scores/weight hashes/training accuracies, and replay/refit all alpha/readout conditions for the predetermined first-circuit/first-seed/incoming-L1/delay-3 real-network group in both stages. Unit tests cover interpolation invariants, exact zero-change equivalence, the four intervention boundaries and candidate selection.

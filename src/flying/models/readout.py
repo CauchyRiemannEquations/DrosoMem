@@ -3,11 +3,18 @@ import numpy as np
 from scipy.special import softmax
 
 class Readout:
-    def fit(self, x, y, epochs=400, learning_rate=0.03, l2=1e-5):
+    def fit(self, x, y, epochs=400, learning_rate=0.03, l2=1e-5, feature_stats=None):
         if len(x) != len(y) or len(x) == 0 or epochs < 1 or learning_rate <= 0 or l2 < 0:
             raise ValueError("Invalid training configuration")
-        self.mean = x.mean(axis=0)
-        self.scale = np.maximum(x.std(axis=0), 1e-5)
+        if feature_stats is None:
+            self.mean = x.mean(axis=0)
+            self.scale = np.maximum(x.std(axis=0), 1e-5)
+        else:
+            self.mean, self.scale = (np.array(a, dtype=float, copy=True) for a in feature_stats)
+            if (self.mean.shape != (x.shape[1],) or self.scale.shape != self.mean.shape
+                    or not np.isfinite(self.mean).all() or not np.isfinite(self.scale).all()
+                    or np.any(self.scale <= 0)):
+                raise ValueError("Invalid fixed feature statistics")
         z = self.features(x)
         self.weights = np.zeros((z.shape[1], 10))
         m = np.zeros_like(self.weights); v = m.copy(); history = []

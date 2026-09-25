@@ -1,0 +1,13 @@
+{
+  "text_files_exact": [
+    "config.json",
+    "results.csv",
+    "paired.csv",
+    "recalls.jsonl",
+    "endpoints.csv",
+    "event_keys.json",
+    "reward_training.csv"
+  ],
+  "checkpoint_and_reward_arrays_exact": 771,
+  "reference_note": "First run completed all numerical work but failed while serializing selection metadata; compared all saved numerical artifacts after a metadata-type-only fix."
+}
