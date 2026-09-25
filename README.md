@@ -8,7 +8,9 @@ Flying explores whether a fruit fly connectome can act as a fixed biological-str
 
 > **실제 FlyWire 연결 데이터로 실행되는 Python MVP입니다.** 현재 결과는 작은 부분망과 단순 dynamics의 계산 실험입니다. 실제 초파리가 원주율을 이해하거나 외웠다는 뜻이 아닙니다.
 
-**Latest: timing diagnosis completed — 72 π runs and 432 iid-memory measurements independently rebuilt.** [Read the result](docs/phase5-timing-results.md): current-digit decoding rose from about 10% to 100%, but error-free π recall worsened. 23 targeted checks passed; the full pytest suite was unavailable in this runtime.
+**Latest: matched-parameter readout experiment completed — 384 evaluations, all saved heads replayed.** [Read the result](docs/phase5-readout-results.md): on real connections, training accuracy rose from 47.80% to 83.70%, but mean error-free recall fell from 6.92 to 5.75 digits. 27 targeted checks passed; the full pytest suite was not run.
+
+**Previous: timing diagnosis completed — 72 π runs and 432 iid-memory measurements independently rebuilt.** [Read the result](docs/phase5-timing-results.md): current-digit decoding rose from about 10% to 100%, but error-free π recall worsened. 23 targeted checks passed; the full pytest suite was unavailable in this runtime.
 
 **Previous: constrained BPTT positive control completed — 192 evaluations, all checkpoints replayed, 45 tests passed.** [Read the result](docs/phase5-bptt-results.md): exact recurrent gradients improved training cross entropy in all 24 graph settings, but did not establish a reliable π recall gain.
 
@@ -47,7 +49,7 @@ python scripts/run_phase2.py --config configs/phase2.json
 
 ## Project Idea
 
-Keep recurrent connectivity fixed, encode each digit as neural stimulation, and train **only a linear softmax readout** to predict the next digit. The same digit can have different successors; history must enter through the evolving state. There is no time index, positional embedding, digit lookup of π, or teacher target in the autoregressive generator.
+The original baseline keeps recurrent connectivity fixed, encodes each digit as neural stimulation, and trains **only a linear softmax readout** to predict the next digit. Later diagnostic experiments separately test constrained synaptic updates and a small nonlinear readout; each report states what is trained. The same digit can have different successors; history must enter through the evolving state. There is no time index, positional embedding, digit lookup of π, or teacher target in the autoregressive generator.
 
 ## Why Pi?
 

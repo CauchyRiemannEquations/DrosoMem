@@ -1,0 +1,98 @@
+[
+  {
+    "normalization": "incoming_l1",
+    "model": "fly",
+    "schedule": "mbon_after_kc",
+    "n": 6,
+    "affine_mean": 6.333333333333333,
+    "nonlinear_mean": 9.166666666666666,
+    "wins": 3,
+    "ties": 0,
+    "losses": 3,
+    "all_initializations_beat_affine": 1
+  },
+  {
+    "normalization": "incoming_l1",
+    "model": "fly",
+    "schedule": "sync_one",
+    "n": 6,
+    "affine_mean": 7.166666666666667,
+    "nonlinear_mean": 4.277777777777778,
+    "wins": 0,
+    "ties": 1,
+    "losses": 5,
+    "all_initializations_beat_affine": 0
+  },
+  {
+    "normalization": "incoming_l1",
+    "model": "role_shuffled",
+    "schedule": "mbon_after_kc",
+    "n": 6,
+    "affine_mean": 7.666666666666667,
+    "nonlinear_mean": 14.500000000000002,
+    "wins": 4,
+    "ties": 0,
+    "losses": 2,
+    "all_initializations_beat_affine": 0
+  },
+  {
+    "normalization": "incoming_l1",
+    "model": "role_shuffled",
+    "schedule": "sync_one",
+    "n": 6,
+    "affine_mean": 9.5,
+    "nonlinear_mean": 5.000000000000001,
+    "wins": 1,
+    "ties": 0,
+    "losses": 5,
+    "all_initializations_beat_affine": 0
+  },
+  {
+    "normalization": "spectral",
+    "model": "fly",
+    "schedule": "mbon_after_kc",
+    "n": 6,
+    "affine_mean": 6.666666666666667,
+    "nonlinear_mean": 6.222222222222221,
+    "wins": 2,
+    "ties": 0,
+    "losses": 4,
+    "all_initializations_beat_affine": 0
+  },
+  {
+    "normalization": "spectral",
+    "model": "fly",
+    "schedule": "sync_one",
+    "n": 6,
+    "affine_mean": 7.5,
+    "nonlinear_mean": 3.3333333333333335,
+    "wins": 1,
+    "ties": 0,
+    "losses": 5,
+    "all_initializations_beat_affine": 0
+  },
+  {
+    "normalization": "spectral",
+    "model": "role_shuffled",
+    "schedule": "mbon_after_kc",
+    "n": 6,
+    "affine_mean": 6.666666666666667,
+    "nonlinear_mean": 11.444444444444443,
+    "wins": 3,
+    "ties": 0,
+    "losses": 3,
+    "all_initializations_beat_affine": 0
+  },
+  {
+    "normalization": "spectral",
+    "model": "role_shuffled",
+    "schedule": "sync_one",
+    "n": 6,
+    "affine_mean": 8.833333333333334,
+    "nonlinear_mean": 4.111111111111112,
+    "wins": 0,
+    "ties": 0,
+    "losses": 6,
+    "all_initializations_beat_affine": 0
+  }
+]
