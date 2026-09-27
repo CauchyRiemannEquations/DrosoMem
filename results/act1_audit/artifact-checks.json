@@ -1,0 +1,392 @@
+[
+  {
+    "manifest": "results/mvp/manifest.json",
+    "keys": [
+      "time_utc",
+      "python",
+      "platform",
+      "git_commit",
+      "original_neurons",
+      "effective_neurons",
+      "cap_applied",
+      "packages",
+      "config_sha256",
+      "source_code_sha256",
+      "split",
+      "selection",
+      "threads"
+    ],
+    "checked": 0,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase2/manifest.json",
+    "keys": [
+      "time_utc",
+      "python",
+      "packages",
+      "threads",
+      "split",
+      "source_code_sha256",
+      "config_sha256",
+      "pi_sha256",
+      "figure_refresh"
+    ],
+    "checked": 0,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase2_robustness/manifest.json",
+    "keys": [
+      "context",
+      "fingerprint",
+      "models",
+      "recalls",
+      "new_fits",
+      "created_this_invocation",
+      "reused_this_invocation",
+      "elapsed_this_invocation",
+      "file_sha256"
+    ],
+    "checked": 76,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase3/manifest.json",
+    "keys": [
+      "expected_runs",
+      "completed_runs",
+      "python",
+      "numpy",
+      "sources",
+      "config_sha256",
+      "results_sha256"
+    ],
+    "checked": 0,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase3b/manifest.json",
+    "keys": [
+      "pi_runs",
+      "memory_conditions",
+      "memory_lag_measurements",
+      "python",
+      "packages",
+      "sources",
+      "config_sha256",
+      "pi_sha256",
+      "memory_sha256"
+    ],
+    "checked": 0,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase4/manifest.json",
+    "keys": [
+      "completed_runs",
+      "expected_runs",
+      "python",
+      "packages",
+      "sources",
+      "config_sha256",
+      "results_sha256"
+    ],
+    "checked": 0,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase5/manifest.json",
+    "keys": [
+      "network_conditions",
+      "evaluations",
+      "reward_training_runs",
+      "python",
+      "packages",
+      "sources",
+      "config_sha256",
+      "results_sha256"
+    ],
+    "checked": 0,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase5_bptt/manifest.json",
+    "keys": [
+      "source_commit",
+      "sources",
+      "code_sha256",
+      "python",
+      "packages",
+      "evaluations",
+      "network_conditions",
+      "learned_conditions",
+      "elapsed_seconds",
+      "file_sha256"
+    ],
+    "checked": 7,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase5_curriculum/manifest.json",
+    "keys": [
+      "context",
+      "fingerprint",
+      "conditions",
+      "fits",
+      "evaluations",
+      "pi_generators_equal_digits",
+      "trained_this_invocation",
+      "reused_this_invocation",
+      "elapsed_this_invocation",
+      "file_sha256"
+    ],
+    "checked": 41,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase5_diagnostic/confirmation/manifest.json",
+    "keys": [
+      "stage",
+      "source_commit",
+      "sources",
+      "evaluations",
+      "endpoint_training_runs",
+      "legacy_endpoint_checks",
+      "python",
+      "packages",
+      "config_sha256",
+      "selection_sha256",
+      "code_sha256",
+      "file_sha256",
+      "execution_runner_snapshot",
+      "postrun_export_hardening"
+    ],
+    "checked": 10,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase5_diagnostic/discovery/manifest.json",
+    "keys": [
+      "stage",
+      "source_commit",
+      "sources",
+      "evaluations",
+      "endpoint_training_runs",
+      "legacy_endpoint_checks",
+      "python",
+      "packages",
+      "config_sha256",
+      "selection_sha256",
+      "code_sha256",
+      "file_sha256",
+      "execution_runner_snapshot",
+      "postrun_export_hardening",
+      "archive_recovery"
+    ],
+    "checked": 10,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase5_prefix/manifest.json",
+    "keys": [
+      "base_commit",
+      "code_sha256",
+      "python",
+      "packages",
+      "conditions",
+      "evaluations",
+      "elapsed_seconds",
+      "data_sha256",
+      "protocol_sha256",
+      "file_sha256"
+    ],
+    "checked": 6,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase5_prefix_confirmation/manifest.json",
+    "keys": [
+      "context",
+      "fingerprint",
+      "conditions",
+      "evaluations",
+      "trained_this_invocation",
+      "reused_this_invocation",
+      "elapsed_this_invocation",
+      "pi_generators_equal_digits",
+      "file_sha256"
+    ],
+    "checked": 41,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase5_prefix_confirmation_windows/manifest.json",
+    "keys": [
+      "context",
+      "fingerprint",
+      "conditions",
+      "evaluations",
+      "trained_this_invocation",
+      "reused_this_invocation",
+      "elapsed_this_invocation",
+      "pi_generators_equal_digits",
+      "file_sha256"
+    ],
+    "checked": 41,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase5_readout/manifest.json",
+    "keys": [
+      "source_commit",
+      "code_sha256",
+      "python",
+      "packages",
+      "fixed_state_conditions",
+      "evaluations",
+      "sources",
+      "elapsed_seconds",
+      "file_sha256"
+    ],
+    "checked": 7,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase5_retention/manifest.json",
+    "keys": [
+      "context",
+      "fingerprint",
+      "conditions",
+      "fits",
+      "evaluations",
+      "pi_generators_equal_digits",
+      "trained_this_invocation",
+      "reused_this_invocation",
+      "elapsed_this_invocation",
+      "file_sha256"
+    ],
+    "checked": 17,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase5_retention_confirmation/manifest.json",
+    "keys": [
+      "context",
+      "fingerprint",
+      "conditions",
+      "fits",
+      "evaluations",
+      "pi_generators_equal_digits",
+      "trained_this_invocation",
+      "reused_this_invocation",
+      "elapsed_this_invocation",
+      "file_sha256"
+    ],
+    "checked": 41,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase5_timing/manifest.json",
+    "keys": [
+      "source_commit",
+      "sources",
+      "code_sha256",
+      "python",
+      "packages",
+      "pi_runs",
+      "memory_measurements",
+      "pi_generator",
+      "elapsed_seconds",
+      "file_sha256"
+    ],
+    "checked": 7,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase5b/manifest.json",
+    "keys": [
+      "context",
+      "fingerprint",
+      "source_commit",
+      "conditioning_cases",
+      "pi_evaluations",
+      "file_sha256",
+      "elapsed_this_invocation"
+    ],
+    "checked": 19,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase6/manifest.json",
+    "keys": [
+      "context",
+      "conditions",
+      "probes",
+      "exact_reset_repeats",
+      "files"
+    ],
+    "checked": 40,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase6_analysis/analysis-manifest.json",
+    "keys": [
+      "activity.csv",
+      "coverage-and-scaling.png",
+      "coverage-pooled.csv",
+      "resources.csv",
+      "summary.json"
+    ],
+    "checked": 0,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/phase6_validation/manifest.json",
+    "keys": [
+      "lif_tests",
+      "rate_tests",
+      "rate_skips",
+      "files"
+    ],
+    "checked": 2,
+    "missing": [],
+    "mismatches": []
+  },
+  {
+    "manifest": "results/stage_bc/manifest.json",
+    "keys": [
+      "context",
+      "fingerprint",
+      "source_commit",
+      "conditions",
+      "evaluations",
+      "file_sha256",
+      "elapsed_this_invocation"
+    ],
+    "checked": 9,
+    "missing": [],
+    "mismatches": []
+  }
+]
