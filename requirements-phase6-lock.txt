@@ -1,0 +1,4 @@
+# Additions only; preserve the Stage B/C and Phase 5B environment versions.
+-r requirements-lif-lock.txt
+pyarrow==25.0.1
+psutil==7.2.2

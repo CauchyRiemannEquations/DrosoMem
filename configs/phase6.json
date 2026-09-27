@@ -1,0 +1,11 @@
+{
+  "levels": ["legacy5", "left5", "brain5", "brain1"],
+  "circuit_seeds": [701, 702],
+  "encoder_seed": 6142,
+  "probe_windows": 20,
+  "dt_ms": 0.1,
+  "worker_rss_limit_bytes": 3221225472,
+  "worker_wall_limit_seconds": 1800,
+  "sample_seconds": 0.2,
+  "oracle_state_atol_mv": 1e-8
+}
