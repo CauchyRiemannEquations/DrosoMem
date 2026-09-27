@@ -1,0 +1,111 @@
+{
+  "rows": 216,
+  "metrics": {
+    "pi_memory_score": {
+      "exact_matches": 184,
+      "max_abs_difference": 52.0
+    },
+    "train_accuracy": {
+      "exact_matches": 81,
+      "max_abs_difference": 0.10552763819095479
+    },
+    "early_accuracy": {
+      "exact_matches": 183,
+      "max_abs_difference": 0.125
+    },
+    "later_accuracy": {
+      "exact_matches": 89,
+      "max_abs_difference": 0.11515151515151523
+    },
+    "cross_entropy": {
+      "exact_matches": 0,
+      "max_abs_difference": 0.2235264385630792
+    }
+  },
+  "recall_by_offset": [
+    {
+      "offset": 0,
+      "model": "fly",
+      "treatment": "uniform",
+      "pi_memory_score": 6.722222222222222,
+      "later_accuracy": 0.8777777777777778
+    },
+    {
+      "offset": 0,
+      "model": "fly",
+      "treatment": "weighted",
+      "pi_memory_score": 34.333333333333336,
+      "later_accuracy": 0.7976430976430976
+    },
+    {
+      "offset": 0,
+      "model": "role_shuffled",
+      "treatment": "uniform",
+      "pi_memory_score": 9.555555555555555,
+      "later_accuracy": 0.9134680134680134
+    },
+    {
+      "offset": 0,
+      "model": "role_shuffled",
+      "treatment": "weighted",
+      "pi_memory_score": 35.666666666666664,
+      "later_accuracy": 0.8508417508417508
+    },
+    {
+      "offset": 1000,
+      "model": "fly",
+      "treatment": "uniform",
+      "pi_memory_score": 7.611111111111111,
+      "later_accuracy": 0.8239057239057239
+    },
+    {
+      "offset": 1000,
+      "model": "fly",
+      "treatment": "weighted",
+      "pi_memory_score": 33.888888888888886,
+      "later_accuracy": 0.7521885521885522
+    },
+    {
+      "offset": 1000,
+      "model": "role_shuffled",
+      "treatment": "uniform",
+      "pi_memory_score": 10.666666666666666,
+      "later_accuracy": 0.9077441077441077
+    },
+    {
+      "offset": 1000,
+      "model": "role_shuffled",
+      "treatment": "weighted",
+      "pi_memory_score": 32.5,
+      "later_accuracy": 0.7983164983164983
+    },
+    {
+      "offset": 2000,
+      "model": "fly",
+      "treatment": "uniform",
+      "pi_memory_score": 6.277777777777778,
+      "later_accuracy": 0.8484848484848485
+    },
+    {
+      "offset": 2000,
+      "model": "fly",
+      "treatment": "weighted",
+      "pi_memory_score": 35.166666666666664,
+      "later_accuracy": 0.7582491582491583
+    },
+    {
+      "offset": 2000,
+      "model": "role_shuffled",
+      "treatment": "uniform",
+      "pi_memory_score": 14.88888888888889,
+      "later_accuracy": 0.9124579124579125
+    },
+    {
+      "offset": 2000,
+      "model": "role_shuffled",
+      "treatment": "weighted",
+      "pi_memory_score": 37.44444444444444,
+      "later_accuracy": 0.863973063973064
+    }
+  ]
+}

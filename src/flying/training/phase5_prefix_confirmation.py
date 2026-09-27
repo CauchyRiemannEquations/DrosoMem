@@ -146,7 +146,7 @@ def run(config_path, output, resume=False, max_conditions=None):
     temporary = out/'evaluations.csv.part'; frame.to_csv(temporary,index=False); temporary.replace(out/'evaluations.csv')
     temporary = out/'recalls.jsonl.part'; temporary.write_text(''.join(json.dumps(r)+'\n' for r in recalls)); temporary.replace(out/'recalls.jsonl')
     atomic_json(out/'summary.json',summary(frame))
-    files = {str(p.relative_to(out)):sha256(p) for p in sorted(out.rglob('*'))
+    files = {p.relative_to(out).as_posix():sha256(p) for p in sorted(out.rglob('*'))
              if p.is_file() and p.suffix != '.part' and p.name not in ['manifest.json','verification.json','pytest.txt']}
     atomic_json(out/'manifest.json',dict(context=ctx,fingerprint=signature,conditions=expected,evaluations=len(rows),
                 trained_this_invocation=trained,reused_this_invocation=reused,elapsed_this_invocation=time.monotonic()-started,
@@ -156,6 +156,8 @@ def run(config_path, output, resume=False, max_conditions=None):
 
 def verify(output):
     out = Path(output); manifest = json.loads((out/'manifest.json').read_text()); cfg = manifest['context']['config']
+    # Accept manifests emitted by older Windows runs, which used backslashes.
+    manifest['file_sha256'] = {name.replace('\\', '/'):digest for name,digest in manifest['file_sha256'].items()}
     if context(cfg) != manifest['context']: raise ValueError('Verification context changed')
     for name,digest in manifest['file_sha256'].items():
         if sha256(out/name) != digest: raise ValueError(f'Artifact hash mismatch: {name}')

@@ -1,0 +1,7 @@
+# Source, protocol and data checksums require identical bytes on every platform.
+* text=auto eol=lf
+*.npz binary
+*.png binary
+*.jpg binary
+# Preserve archived artifact bytes: manifests hash the files as produced.
+results/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
