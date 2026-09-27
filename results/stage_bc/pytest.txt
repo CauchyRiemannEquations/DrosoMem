@@ -1,0 +1,10 @@
+........................................................................ [ 43%]
+........................................................................ [ 86%]
+......................                                                   [100%]
+============================== warnings summary ===============================
+tests/test_lif.py: 28 warnings
+  C:\Users\USER\Documents\Codex\2026-09-27\gi\work\.venv-lif\Lib\site-packages\brian2\parsing\statements.py:51: PyparsingDeprecationWarning: 'parseAll' argument is deprecated, use 'parse_all'
+    parsed = STATEMENT.parse_string(code, parseAll=True)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+166 passed, 28 warnings in 24.00s

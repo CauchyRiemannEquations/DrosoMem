@@ -1,18 +1,27 @@
 # Flying
 
 **Current priority: finish the remaining original research stages before game
-screen work.** Stage B/C LIF, Phase 5B biological modulation
-and Phase 6 whole-brain work are not complete. [Phase-by-phase audit](docs/phase-status.md).
+screen work.** Small-circuit Stage B/C LIF validation is complete; Phase 5B
+biological modulation and Phase 6 whole-brain work remain unfinished.
+[Phase-by-phase audit](docs/phase-status.md).
 
 ## Can a fruit fly brain memorize π?
 
-**Latest research: scoped Phase 2 robustness completed; acceptance criteria failed.**
+**Latest research: sourced small-circuit Stage B/C LIF validation completed.**
+Independent spike/state references and three timestep grids pass all locked
+checks. Eight matched-budget readouts give real-circuit mean recall **3.0 digits
+for LIF versus 33.5 for the rate baseline**. This one-seed feasibility comparison
+does not establish a better opponent or cell-specific physiological validity.
+Next: Phase 5B compartment mapping and dopamine-dependent learning.
+[Results and scope](docs/stage-bc-results.md) · [Locked protocol](docs/stage-bc-protocol.md).
+
+**Previous research: scoped Phase 2 robustness completed; acceptance criteria failed.**
 72 frozen heads from two independently seeded model cohorts, 16,128 exact recall
 replays and 148 passing tests. Confirmation real-graph mean recall fell from
 **36.83 clean digits** to **1.59** with one state perturbation (SD .001), **0.48**
 with ongoing noise, and **1.51** with 1% edge removal. These are computational
-stress levels, not biological noise measurements. Next: sourced Stage B/C LIF
-validation. [Results and scale limits](docs/phase2-robustness-results.md).
+stress levels, not biological noise measurements.
+[Results and scale limits](docs/phase2-robustness-results.md).
 
 **Previous research: anchored-weighting confirmation failed its prespecified
 criteria.** 324 fresh fits across offsets 0/1000/2000, 972 exact stage-head replays,
@@ -291,7 +300,7 @@ Three schedules keep the same connectome weights and 48-MBON readout budget. Upd
 - [x] Phase 2 delayed-memory follow-up: independent random-input tasks implemented and measured in Phase 3b.
 - [x] Phase 2 robustness follow-up on the current MB baseline: two model/noise-seed cohorts and full replay; primary robustness criteria failed. [Scope and results](docs/phase2-robustness-results.md).
 - [x] Phase 3: annotated KC/MBON/DAN/APL subsets, KC-only input, MBON-only readout, role-preserving shuffle and structural ablations; 288 measured runs.
-- [ ] Stage B/C: Brian2 LIF dynamics and better-supported neuron/synapse parameters after rate-model diagnostics.
+- [x] Stage B/C, small-circuit scope: sourced Brian2 LIF dynamics, numerical and timestep checks, paired rate comparison. Weak recall; uniform source defaults are not cell-specific calibration. [Results](docs/stage-bc-results.md).
 - [x] Phase 3b: update-count sweep, independent delayed-input decoding and equal-size readout diagnostics.
 - [x] Phase 4: supervised KC→MBON plasticity with fixed-connectivity and permuted-teacher controls; 432 reproducible runs.
 - [x] Phase 5A: artificial scalar reward and eligibility-trace protocol, with delayed and yoked controls.

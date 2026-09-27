@@ -1,0 +1,214 @@
+[
+  {
+    "circuit": "flywire_783_mb_left_kc512_s701",
+    "seed": 5142,
+    "model": "fly",
+    "reference": {
+      "max_v_error_mv": 6.679101716144942e-13,
+      "max_g_error_mv": 2.8421709430404007e-13,
+      "spikes_equal": true,
+      "passed": true
+    },
+    "convergence": {
+      "dt_ms": [
+        0.1,
+        0.05,
+        0.025
+      ],
+      "adjacent_count_relative_l1": [
+        0.009523809523809525,
+        0.009433962264150943
+      ],
+      "mean_role_hz": [
+        {
+          "APL": 100.0,
+          "DAN": 0.0,
+          "KC": 9.9609375,
+          "MBON": 2.208333333333333
+        },
+        {
+          "APL": 100.0,
+          "DAN": 0.0,
+          "KC": 9.9609375,
+          "MBON": 2.1875
+        },
+        {
+          "APL": 100.0,
+          "DAN": 0.0,
+          "KC": 9.9609375,
+          "MBON": 2.208333333333333
+        }
+      ],
+      "passed": true
+    },
+    "training_activity": {
+      "mean_role_hz": {
+        "APL": 100.0,
+        "DAN": 0.0,
+        "KC": 9.9609375,
+        "MBON": 2.3722780569514237
+      },
+      "active_mbon_features": 9,
+      "distinct_mbon_vectors": 68
+    }
+  },
+  {
+    "circuit": "flywire_783_mb_left_kc512_s701",
+    "seed": 5142,
+    "model": "role_shuffled",
+    "reference": {
+      "max_v_error_mv": 5.684341886080801e-13,
+      "max_g_error_mv": 2.8421709430404007e-13,
+      "spikes_equal": true,
+      "passed": true
+    },
+    "convergence": {
+      "dt_ms": [
+        0.1,
+        0.05,
+        0.025
+      ],
+      "adjacent_count_relative_l1": [
+        0.0,
+        0.0
+      ],
+      "mean_role_hz": [
+        {
+          "APL": 100.0,
+          "DAN": 0.0,
+          "KC": 9.9609375,
+          "MBON": 2.1875
+        },
+        {
+          "APL": 100.0,
+          "DAN": 0.0,
+          "KC": 9.9609375,
+          "MBON": 2.1875
+        },
+        {
+          "APL": 100.0,
+          "DAN": 0.0,
+          "KC": 9.9609375,
+          "MBON": 2.1875
+        }
+      ],
+      "passed": true
+    },
+    "training_activity": {
+      "mean_role_hz": {
+        "APL": 100.0,
+        "DAN": 0.0,
+        "KC": 9.9609375,
+        "MBON": 2.3597152428810717
+      },
+      "active_mbon_features": 8,
+      "distinct_mbon_vectors": 60
+    }
+  },
+  {
+    "circuit": "flywire_783_mb_left_kc512_s702",
+    "seed": 5142,
+    "model": "fly",
+    "reference": {
+      "max_v_error_mv": 6.110667527536862e-13,
+      "max_g_error_mv": 1.1368683772161603e-13,
+      "spikes_equal": true,
+      "passed": true
+    },
+    "convergence": {
+      "dt_ms": [
+        0.1,
+        0.05,
+        0.025
+      ],
+      "adjacent_count_relative_l1": [
+        0.03787878787878788,
+        0.007518796992481203
+      ],
+      "mean_role_hz": [
+        {
+          "APL": 100.0,
+          "DAN": 0.0,
+          "KC": 9.9609375,
+          "MBON": 2.7708333333333335
+        },
+        {
+          "APL": 100.0,
+          "DAN": 0.0,
+          "KC": 9.9609375,
+          "MBON": 2.75
+        },
+        {
+          "APL": 100.0,
+          "DAN": 0.0,
+          "KC": 9.9609375,
+          "MBON": 2.7708333333333335
+        }
+      ],
+      "passed": true
+    },
+    "training_activity": {
+      "mean_role_hz": {
+        "APL": 100.0,
+        "DAN": 0.0,
+        "KC": 9.9609375,
+        "MBON": 2.7533500837520934
+      },
+      "active_mbon_features": 8,
+      "distinct_mbon_vectors": 97
+    }
+  },
+  {
+    "circuit": "flywire_783_mb_left_kc512_s702",
+    "seed": 5142,
+    "model": "role_shuffled",
+    "reference": {
+      "max_v_error_mv": 5.400124791776761e-13,
+      "max_g_error_mv": 1.7053025658242404e-13,
+      "spikes_equal": true,
+      "passed": true
+    },
+    "convergence": {
+      "dt_ms": [
+        0.1,
+        0.05,
+        0.025
+      ],
+      "adjacent_count_relative_l1": [
+        0.024,
+        0.03968253968253968
+      ],
+      "mean_role_hz": [
+        {
+          "APL": 100.0,
+          "DAN": 0.0,
+          "KC": 9.9609375,
+          "MBON": 2.625
+        },
+        {
+          "APL": 100.0,
+          "DAN": 0.0,
+          "KC": 9.9609375,
+          "MBON": 2.6041666666666665
+        },
+        {
+          "APL": 100.0,
+          "DAN": 0.0,
+          "KC": 9.9609375,
+          "MBON": 2.625
+        }
+      ],
+      "passed": true
+    },
+    "training_activity": {
+      "mean_role_hz": {
+        "APL": 100.0,
+        "DAN": 0.0,
+        "KC": 9.9609375,
+        "MBON": 2.4916247906197655
+      },
+      "active_mbon_features": 8,
+      "distinct_mbon_vectors": 76
+    }
+  }
+]

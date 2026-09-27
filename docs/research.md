@@ -3,6 +3,11 @@
 Checked 2026-09-24. Links below are primary sources. “Current” applies to the
 named dataset and documentation, not all fruit-fly reconstructions.
 
+Update 2026-09-27: Brian2 2.10.1 has now been installed and used for the
+[small-circuit Stage B/C experiment](stage-bc-results.md). Its [locked parameter
+and input protocol](stage-bc-protocol.md) cites the pinned author model and
+versioned Brian2 semantics. The table below records the earlier Phase 0 review.
+
 | Resource | Verified finding | Decision / verification status |
 |---|---|---|
 | [FlyWire/Codex FAQ](https://codex.flywire.ai/faq) | FAFB snapshot 783; FAQ also lists BANC 888 and other datasets | Pin FAFB 783; do not call it the newest of all fly datasets |

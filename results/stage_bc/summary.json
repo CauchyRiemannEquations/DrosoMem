@@ -1,0 +1,31 @@
+{
+  "mean_metrics": [
+    {
+      "model": "fly",
+      "dynamics": "lif",
+      "pi_memory_score": 3.0,
+      "train_accuracy": 0.40703517587939697
+    },
+    {
+      "model": "fly",
+      "dynamics": "rate",
+      "pi_memory_score": 33.5,
+      "train_accuracy": 0.8994974874371859
+    },
+    {
+      "model": "role_shuffled",
+      "dynamics": "lif",
+      "pi_memory_score": 2.0,
+      "train_accuracy": 0.3693467336683417
+    },
+    {
+      "model": "role_shuffled",
+      "dynamics": "rate",
+      "pi_memory_score": 26.5,
+      "train_accuracy": 0.8115577889447236
+    }
+  ],
+  "reference_all_passed": true,
+  "convergence_all_passed": true,
+  "scope": "four graph conditions; one encoder/head seed; descriptive feasibility only"
+}

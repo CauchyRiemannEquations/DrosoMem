@@ -21,7 +21,8 @@ and Phase 6 acceptance work.
 | Deferred | User deferred | Actual fresh training during preparation | Return with game work; fixed budget and honest progress |
 | P1 | Done, confirmation failed | Confirm anchored weighting on fresh seeds and other segments | 324 fits / 972 stage heads; all offsets fail retention/completion, offset 0 also fails recall; [results](phase5-retention-confirmation-results.md) |
 | P1 | Done, robustness criteria failed | Complete scoped Phase 2 perturbation robustness | 72 frozen heads / 16,128 exact recall replays / 216 null checks; both cohorts fail all primary families; 148 tests; [results](phase2-robustness-results.md) |
-| P1 | Next original-phase task | Stage B/C: sourced small-circuit LIF implementation and validation | Lock equations, physiological units, parameter sources and reference tests before outcomes; separate validation from any recall-improvement claim |
+| P1 | Done within small-circuit scope; weak recall | Stage B/C: sourced LIF implementation and validation | Four graph conditions, independent-reference and timestep checks pass; eight exact replays/refits; 166 tests; real recall 3.0 versus rate 33.5; [results](stage-bc-results.md) |
+| P1 | Next original-phase task | Phase 5B: compartment mapping and dopamine-dependent modulation | Pin primary sources and mappings; implement targeted learning controls on small circuits before scaling; plain DAN graph nodes do not satisfy this requirement |
 | P2 | Open | Isolate numerical portability of nonlinear training | Record Python/BLAS/CPU details, compare per-step gradients on identical states, then verify controlled builds across platforms |
 | P2 | Open | Add Windows/Linux CI for the small deterministic test suite | Both systems validate data checksums, schedule behavior and checkpoint replay on main pushes and PRs |
 | Research backlog | Not complete | Phase 5B dopamine and Phase 6 whole brain | Proceed in [prerequisite order](phase-status.md); biological grounding and measured scaling are required |
@@ -34,5 +35,7 @@ recall/retention discovery criteria but failed the stronger joint criterion;
 [read the discovery](phase5-retention-results.md). The subsequent
 [fresh-seed confirmation failed](phase5-retention-confirmation-results.md).
 Keep fixed-32 as the clean reference. The [subsequent robustness study](phase2-robustness-results.md)
-also failed its primary criteria; proceed to sourced Stage B/C validation without
-presenting the existing noise-free recall as perturbation-robust memory.
+also failed its primary criteria. The [subsequent Stage B/C LIF study](stage-bc-results.md)
+passes numerical validation but has weak recall. Proceed to Phase 5B with sourced
+compartments and dopamine rules; do not present the rate baseline as robust or
+the new spiking implementation as an improved opponent.

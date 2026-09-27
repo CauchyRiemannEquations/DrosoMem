@@ -1,0 +1,41 @@
+{
+  "experiment": "stage_bc_lif",
+  "protocol": "docs/stage-bc-protocol.md",
+  "circuits": [
+    "data/flywire_783_mb_left_kc512_s701",
+    "data/flywire_783_mb_left_kc512_s702"
+  ],
+  "models": [
+    "fly",
+    "role_shuffled"
+  ],
+  "seeds": [
+    5142
+  ],
+  "pi_length": 200,
+  "epochs": 6000,
+  "input_fraction": 0.1,
+  "lif": {
+    "rest_mv": -52.0,
+    "reset_mv": -52.0,
+    "threshold_mv": -45.0,
+    "membrane_ms": 20.0,
+    "synapse_ms": 5.0,
+    "refractory_ms": 2.2,
+    "delay_ms": 1.8,
+    "contact_mv": 0.275,
+    "input_mv": 68.75,
+    "dt_ms": 0.1,
+    "digit_ms": 50.0,
+    "pulse_ms": 10.0
+  },
+  "reference_digits": 3,
+  "reference_atol_mv": 1e-08,
+  "convergence_digits": 20,
+  "convergence_dt_ms": [
+    0.1,
+    0.05,
+    0.025
+  ],
+  "convergence_count_relative_l1_max": 0.05
+}

@@ -1,5 +1,23 @@
 # Flying — 최신 Codex 인계 (2026-09-27 KST)
 
+## 최신 추가: 연구 우선 / Stage B/C 완료 범위
+
+- 사용자는 검증된 변경을 `main`에 직접 푸시하도록 승인했다. 그래픽 게임 작업은
+  보류하고 [phase 현황](phase-status.md)과 [다음 작업](next-work.md)을 따른다.
+- 이후 anchored 확인과 Phase 2 강건성 실험은 완료했지만 기준에 실패했다.
+  새로 완료한 [Stage B/C LIF](stage-bc-results.md)는 수치 검증을 통과했고,
+  실제 연결망 평균 회상은 3.0자리 대 기존 rate 33.5자리였다. 모델 승격은 하지 않는다.
+- 다음은 **Phase 5B: 근거 있는 compartment 매핑과 도파민 의존 학습 규칙**이다.
+  Phase 6 전체 뇌는 아직 미완료다. LIF에서 DAN 노드는 발화하지 않았으며,
+  그래프에 DAN이 있다는 사실만으로 학습 규칙이 구현된 것이 아니다.
+- LIF는 별도 환경과 `requirements-lif-lock.txt`를 사용한다. Brian2/SymPy 때문에
+  mpmath 1.3.0이 필요하므로 기존 rate 환경과 lock을 바꾸지 말 것.
+- `results/stage_bc/`에는 네 그래프 조건의 LIF/rate 상태, 가중치, 발화 기록,
+  회상열과 수치 진단이 있다. 재현은 새 출력 폴더에서 수행한다.
+
+아래는 앞선 구간별 확인 단계의 역사적 인계다. 아래의 당시 “다음 작업”을
+현재 우선순위로 다시 실행하지 말 것.
+
 이 문서는 9/25 인계를 갱신한다. [구간별 확인 결과](phase5-prefix-confirmation-results.md),
 [고정 설계](phase5-prefix-confirmation-protocol.md), `results/phase5_prefix_confirmation/`부터 읽는다.
 
