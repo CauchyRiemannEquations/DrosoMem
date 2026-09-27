@@ -5,6 +5,11 @@ come from the latest handoff, measured results and failures observed on a fresh
 Windows checkout. The product is a human-versus-connectome-model pi memory game;
 see [game direction](game-direction.md). Verified work now goes directly to main.
 
+**Latest user priority: original research phases first; graphical game work is
+deferred.** The original roadmap is not complete. See the [phase audit and
+research-first order](phase-status.md) for Phase 2 follow-up, Stage B/C, Phase 5B
+and Phase 6 acceptance work.
+
 | Priority | Status | Work | Acceptance evidence |
 |---|---|---|---|
 | P0 | Done | Repair Windows checksum and checkpoint-path failures | 84 tests pass in a fresh CRLF-enabled clone; archived hashes survive; old/new manifest keys replay |
@@ -12,12 +17,13 @@ see [game direction](game-direction.md). Verified work now goes directly to main
 | P1 | Done, negative result | Test 32→64→128 weighting at 6,000 updates | 324 fits, 972 replays, 27 refits; real recall 27.19 versus fixed 33.87; all segment criteria fail |
 | P1 | Done, promising discovery | Preserve first-32 normalized loss share during expansion | 108 fits, 324 replays, 9 independent refits; real recall 31.67→38.89, retention passed, later accuracy 81.58%→80.00% |
 | P1 | Done | Verified opponent adapter, scoring and timed console game | 18 fixed-32 opponents reproduce full 197-digit rollouts without reference access; 600-second study gate; 125 tests; [prototype](game-prototype.md) |
-| P1 | Next product task | Graphical ten-minute study → recall → results flow | Hide study digits at deadline, show pretrained status, accept digits, report scores and replay identity |
-| P1 | Open product follow-up | Actual fresh training during preparation | Fixed declared 6,000-update budget, honest progress, freeze before recall, slow-device handling; local fit 2.62 seconds including preparation, browser unmeasured |
-| P1 | Next research task | Confirm anchored weighting on fresh seeds and other segments | Separate locked protocol; repeat recall and retention criteria and report later accuracy cost; do not promote on offset-0 discovery alone |
+| Deferred | User deferred | Graphical ten-minute study → recall → results flow | Return after the research-first pass; keep the console core |
+| Deferred | User deferred | Actual fresh training during preparation | Return with game work; fixed budget and honest progress |
+| P1 | In progress | Confirm anchored weighting on fresh seeds and other segments | [Locked protocol](phase5-retention-confirmation-protocol.md): 324 fits, offsets 0/1000/2000, all-offset criteria |
+| P1 | Next original-phase task | Complete Phase 2 perturbation robustness | Lock perturbation types and strengths, matched controls, fresh noise seeds, and independent confirmation before outcomes |
 | P2 | Open | Isolate numerical portability of nonlinear training | Record Python/BLAS/CPU details, compare per-step gradients on identical states, then verify controlled builds across platforms |
 | P2 | Open | Add Windows/Linux CI for the small deterministic test suite | Both systems validate data checksums, schedule behavior and checkpoint replay on main pushes and PRs |
-| Deferred | Deferred | Whole-brain scale, LIF and biological dopamine | Revisit after rate-model bottlenecks and biological assumptions are supported |
+| Research backlog | Not complete | Stage B/C LIF, Phase 5B dopamine and Phase 6 whole brain | Proceed in [prerequisite order](phase-status.md); biological grounding and measured scaling are required |
 
 See [Windows reproduction](phase5-windows-reproduction.md) and the
 [locked curriculum protocol](phase5-curriculum-protocol.md) and

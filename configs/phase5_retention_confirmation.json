@@ -1,0 +1,51 @@
+{
+  "source_commit": "96f0ccdb1a5c39722bd5a06833d51cbf741d8151",
+  "circuits": [
+    "data/flywire_783_mb_left_kc512_s701",
+    "data/flywire_783_mb_left_kc512_s702"
+  ],
+  "seeds": [
+    4142,
+    4143,
+    4144
+  ],
+  "initializations": [
+    0,
+    1,
+    2
+  ],
+  "normalizations": [
+    "incoming_l1"
+  ],
+  "models": [
+    "fly",
+    "role_shuffled"
+  ],
+  "schedules": [
+    "mbon_after_kc"
+  ],
+  "hidden_units": 8,
+  "pi_length": 200,
+  "prompt_length": 3,
+  "prefix_window": 32,
+  "prefix_weight": 4.0,
+  "leak": 0.6,
+  "gain": 0.9,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "learning_rate": 0.03,
+  "l2": 1e-05,
+  "offsets": [
+    0,
+    1000,
+    2000
+  ],
+  "protocol": "docs/phase5-retention-confirmation-protocol.md",
+  "stage_epochs": 2000,
+  "windows": [
+    32,
+    64,
+    128
+  ],
+  "experiment": "prefix_share_retention_confirmation"
+}

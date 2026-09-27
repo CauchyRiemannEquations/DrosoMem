@@ -1,5 +1,9 @@
 # Flying
 
+**Current priority: finish the remaining original research stages before game
+screen work.** Phase 2 robustness, Stage B/C LIF, Phase 5B biological modulation
+and Phase 6 whole-brain work are not complete. [Phase-by-phase audit](docs/phase-status.md).
+
 ## Can a fruit fly brain memorize π?
 
 **Playable console prototype:** a ten-minute study phase, 18 verified pretrained
