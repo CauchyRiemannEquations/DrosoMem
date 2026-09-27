@@ -6,6 +6,8 @@
 
 Flying explores whether a fruit fly connectome can act as a fixed biological-structure-inspired reservoir capable of memorizing the digits of π.
 
+**Product goal: a pi memorization game where a human competes against a trained fly-connectome-based model.** Research establishes reproducible opponents, fair scoring and measured difficulty. The existing validated fixed-32 baseline can support the first playable game while learning research continues. [Game direction and working agreement](docs/game-direction.md).
+
 > **실제 FlyWire 연결 데이터로 실행되는 Python MVP입니다.** 현재 결과는 작은 부분망과 단순 dynamics의 계산 실험입니다. 실제 초파리가 원주율을 이해하거나 외웠다는 뜻이 아닙니다.
 
 **Latest: matched-budget prefix curriculum completed — 324 fits, 972 exact saved-head replays, 27 independent refits, 84 tests passed.** Expanding the weighted window 32→64→128 did not beat fixed 32-target weighting: real-circuit mean recall was **27.19 versus 33.87 digits**, and all three segment success criteria failed. Of 48 real models that initially completed 32 digits, 19 lost that completion by the final stage. Windows checkout/checkpoint replay failures are also fixed. [Results](docs/phase5-curriculum-results.md) · [Windows reproduction and numerical limits](docs/phase5-windows-reproduction.md) · [Prioritized next work](docs/next-work.md).
@@ -263,7 +265,7 @@ Three schedules keep the same connectome weights and 48-MBON readout budget. Upd
 - [x] Phase 5A: artificial scalar reward and eligibility-trace protocol, with delayed and yoked controls.
 - [ ] Phase 5B: biologically supported dopamine/compartment modulation; current DAN nodes remain ordinary signed nodes.
 - [ ] Phase 6: whole-brain scale simulation after sparse performance and biological assumptions are justified.
-- [ ] Later: live web brain visualization and digit-by-digit recall UI. Not part of this MVP.
+- [ ] Game MVP: verified checkpoint opponent, shared first-error scoring, then a playable human-versus-model digit-by-digit interface. [Product direction](docs/game-direction.md).
 
 ## GitHub structure
 

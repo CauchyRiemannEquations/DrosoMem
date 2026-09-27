@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import sys
 import time
 from pathlib import Path
 
@@ -22,6 +23,8 @@ MEASURES = ['pi_memory_score', 'train_accuracy', 'early_accuracy', 'later_accura
 
 
 def validate(cfg):
+    if cfg.get('experiment', 'curriculum') != 'curriculum':
+        raise ValueError('Use the runner for the configured experiment')
     for name in ['circuits', 'seeds', 'models', 'normalizations', 'schedules', 'offsets', 'initializations']:
         values = cfg[name]
         if not values or len(set(values)) != len(values):
@@ -64,14 +67,15 @@ def measure(head, states, labels, cfg):
                 accuracy_129_197=float(correct[128:].mean()))
 
 
-def train_condition(cfg, key, reservoir, mbon, digits, signature):
+def train_condition(cfg, key, reservoir, mbon, digits, signature, design=None):
+    design = design or sys.modules[__name__]
     states = reservoir.states(digits[:-1]); labels = digits[1:]
     before = weight_hash(reservoir.weights)
     state_hash = hashlib.sha256(states.tobytes()).hexdigest()
     rows, recalls, histories, arrays = [], [], [], {}
     for initialization in cfg['initializations']:
-        for arm in ARMS:
-            saved, history = fit_head(states, labels, mbon, key, initialization, arm, cfg)
+        for arm in design.ARMS:
+            saved, history = design.fit_head(states, labels, mbon, key, initialization, arm, cfg)
             histories.append(dict(initialization=initialization, treatment=arm, history=history))
             for epoch, head in saved.items():
                 ix = len(rows); digest = head.digest(); pred = head.predict(states)
@@ -92,7 +96,7 @@ def train_condition(cfg, key, reservoir, mbon, digits, signature):
     return arrays
 
 
-def summary(frame, cfg):
+def summary(frame, cfg, intervention='curriculum', controls=('uniform', 'fixed')):
     final = frame[frame.epoch == endpoints(cfg)[-1]]
     groups = KEYS + ['initialization']
     by_offset = {}
@@ -102,8 +106,8 @@ def summary(frame, cfg):
             means = subset.groupby('treatment')[MEASURES].mean().to_dict('index')
             pairs = subset.groupby(KEYS + ['treatment']).pi_memory_score.mean().unstack('treatment')
             comparisons = {}
-            for control in ['uniform', 'fixed']:
-                delta = pairs.curriculum - pairs[control]
+            for control in controls:
+                delta = pairs[intervention] - pairs[control]
                 comparisons[control] = dict(paired_mean_delta=float(delta.mean()), wins=int((delta > 0).sum()),
                                             ties=int((delta == 0).sum()), losses=int((delta < 0).sum()))
             completed = {arm:{str(n):int((rows.pi_memory_score >= n).sum()) for n in [32,64,128,197]}
@@ -127,15 +131,16 @@ def summary(frame, cfg):
         passed = real['conditions'] == 6 and all(
             c['paired_mean_delta'] > 0 and c['wins'] >= 4 for c in real['comparisons'].values())
         recall_criteria[str(offset)] = bool(passed)
-        joint_criteria[str(offset)] = bool(passed and real['mean_metrics']['curriculum']['later_accuracy'] >=
+        joint_criteria[str(offset)] = bool(passed and real['mean_metrics'][intervention]['later_accuracy'] >=
                                           real['mean_metrics']['fixed']['later_accuracy'])
     return dict(by_offset=by_offset, recall_criteria=recall_criteria, joint_criteria=joint_criteria,
                 all_offsets_recall_passed=len(recall_criteria)==3 and all(recall_criteria.values()),
                 all_offsets_joint_passed=len(joint_criteria)==3 and all(joint_criteria.values()))
 
 
-def run(config_path, output, resume=False, max_conditions=None):
-    cfg = json.loads(Path(config_path).read_text()); validate(cfg)
+def run(config_path, output, resume=False, max_conditions=None, design=None):
+    design = design or sys.modules[__name__]
+    cfg = json.loads(Path(config_path).read_text()); design.validate(cfg)
     if max_conditions is not None and (type(max_conditions) is not int or max_conditions < 1):
         raise ValueError('Invalid condition budget')
     ctx = checkpoint.context(cfg); signature = checkpoint.fingerprint(ctx); out = Path(output)
@@ -158,7 +163,7 @@ def run(config_path, output, resume=False, max_conditions=None):
                 arrays = checkpoint.load_chunk(path, ledger['completed'][name]); reused += 1
             else:
                 arrays = train_condition(cfg, key, reservoir, mbon,
-                                         checkpoint.segment_digits(key['offset'], cfg['pi_length']), signature)
+                                         checkpoint.segment_digits(key['offset'], cfg['pi_length']), signature, design)
                 save_archive(path, arrays); ledger['completed'][name] = sha256(path)
                 checkpoint.atomic_json(out/'progress.json', ledger); trained += 1
             payload = checkpoint.decode_chunk(arrays, signature, key)
@@ -168,16 +173,16 @@ def run(config_path, output, resume=False, max_conditions=None):
                   f'{trained} trained/{reused} reused; {time.monotonic()-started:.1f}s', flush=True)
             if max_conditions is not None and trained >= max_conditions and number+1 < expected:
                 return dict(complete=False, trained=trained, reused=reused)
-    assert len(ledger['completed']) == expected and len(rows) == expected * len(cfg['initializations']) * 9
+    assert len(ledger['completed']) == expected and len(rows) == expected * len(cfg['initializations']) * len(design.ARMS) * 3
     frame = pd.DataFrame(rows)
     temporary = out/'evaluations.csv.part'; frame.to_csv(temporary, index=False); temporary.replace(out/'evaluations.csv')
     temporary = out/'recalls.jsonl.part'
     temporary.write_text(''.join(json.dumps(r)+'\n' for r in recalls)); temporary.replace(out/'recalls.jsonl')
-    checkpoint.atomic_json(out/'summary.json', summary(frame, cfg))
+    checkpoint.atomic_json(out/'summary.json', design.summary(frame, cfg))
     files = {p.relative_to(out).as_posix():sha256(p) for p in sorted(out.rglob('*'))
              if p.is_file() and p.suffix != '.part' and p.name not in ['manifest.json','verification.json','pytest.txt']}
     checkpoint.atomic_json(out/'manifest.json', dict(context=ctx, fingerprint=signature, conditions=expected,
-        fits=expected*len(cfg['initializations'])*3, evaluations=len(rows), pi_generators_equal_digits=maximum,
+        fits=expected*len(cfg['initializations'])*len(design.ARMS), evaluations=len(rows), pi_generators_equal_digits=maximum,
         trained_this_invocation=trained, reused_this_invocation=reused,
         elapsed_this_invocation=time.monotonic()-started, file_sha256=files))
     return dict(complete=True, trained=trained, reused=reused)
@@ -186,9 +191,10 @@ def run(config_path, output, resume=False, max_conditions=None):
 KEYS_TO_GRID = ['circuits','seeds','models','normalizations','schedules','offsets']
 
 
-def verify(output):
+def verify(output, design=None):
+    design = design or sys.modules[__name__]
     out = Path(output); manifest = json.loads((out/'manifest.json').read_text()); cfg = manifest['context']['config']
-    validate(cfg)
+    design.validate(cfg)
     if checkpoint.context(cfg) != manifest['context']:
         raise ValueError('Verification context changed')
     for name, digest in manifest['file_sha256'].items():
@@ -211,11 +217,11 @@ def verify(output):
             fitted = {}
             if refit:
                 for initialization in cfg['initializations']:
-                    for arm in ARMS:
-                        fitted[(initialization, arm)] = fit_head(states, labels, mbon, key, initialization, arm, cfg)
+                    for arm in design.ARMS:
+                        fitted[(initialization, arm)] = design.fit_head(states, labels, mbon, key, initialization, arm, cfg)
                         refitted += 1
-            assert len(payload['rows']) == len(payload['recalls']) == len(cfg['initializations'])*9
-            expected_ids = {(i,a,e) for i in cfg['initializations'] for a in ARMS for e in endpoints(cfg)}
+            assert len(payload['rows']) == len(payload['recalls']) == len(cfg['initializations'])*len(design.ARMS)*3
+            expected_ids = {(i,a,e) for i in cfg['initializations'] for a in design.ARMS for e in endpoints(cfg)}
             assert {(r['initialization'],r['treatment'],r['epoch']) for r in payload['rows']} == expected_ids
             for row, rec in zip(payload['rows'], payload['recalls']):
                 ix = row['head_index']; head = NonlinearReadout(mbon, cfg['hidden_units'])
@@ -240,9 +246,9 @@ def verify(output):
                 for history in payload['histories']:
                     assert fitted[(history['initialization'], history['treatment'])][1] == history['history']
     pd.testing.assert_frame_equal(frame, pd.DataFrame(rows), check_exact=False, atol=1e-12, rtol=0)
-    assert recorded == recalls and summary(pd.DataFrame(rows), cfg) == json.loads((out/'summary.json').read_text())
+    assert recorded == recalls and design.summary(pd.DataFrame(rows), cfg) == json.loads((out/'summary.json').read_text())
     assert number+1 == manifest['conditions'] and replayed == manifest['evaluations']
-    assert refitted == len(cfg['offsets'])*len(cfg['initializations'])*3
+    assert refitted == len(cfg['offsets'])*len(cfg['initializations'])*len(design.ARMS)
     result = dict(states_rebuilt=number+1, heads_replayed=replayed, independently_refitted=refitted,
                   refitted_stage_heads=refitted*3, exact_recall_strings=True, frozen_weights_verified=True,
                   aggregate_and_per_position_metrics_verified=True, pi_generators_equal_digits=maximum)
