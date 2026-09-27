@@ -10,8 +10,9 @@ see [game direction](game-direction.md). Verified work now goes directly to main
 | P0 | Done | Repair Windows checksum and checkpoint-path failures | 84 tests pass in a fresh CRLF-enabled clone; archived hashes survive; old/new manifest keys replay |
 | P1 | Done | Reproduce cross-segment weighting | 216 new fits, 216 replays, 18 exact refits; qualitative tradeoff confirmed; cross-environment numerical differences documented |
 | P1 | Done, negative result | Test 32→64→128 weighting at 6,000 updates | 324 fits, 972 replays, 27 refits; real recall 27.19 versus fixed 33.87; all segment criteria fail |
-| P1 | In progress | Preserve first-32 normalized loss share during expansion | Locked offset-0 discovery, fresh seeds, 108 fits; compare fixed/curriculum/anchored with a retention criterion |
+| P1 | Done, promising discovery | Preserve first-32 normalized loss share during expansion | 108 fits, 324 replays, 9 independent refits; real recall 31.67→38.89, retention passed, later accuracy 81.58%→80.00% |
 | P1 | Next product task | Verified opponent adapter and shared game scoring | Load a validated head, generate without target access, use the same prompt/first-error rules for human and model; fixed-32 remains available regardless of research outcome |
+| P1 | Next research task | Confirm anchored weighting on fresh seeds and other segments | Separate locked protocol; repeat recall and retention criteria and report later accuracy cost; do not promote on offset-0 discovery alone |
 | P2 | Open | Isolate numerical portability of nonlinear training | Record Python/BLAS/CPU details, compare per-step gradients on identical states, then verify controlled builds across platforms |
 | P2 | Open | Add Windows/Linux CI for the small deterministic test suite | Both operating systems validate data checksums, schedule behavior and checkpoint replay on each PR |
 | Deferred | Deferred | Whole-brain scale, LIF and biological dopamine | Revisit after rate-model bottlenecks and biological assumptions are supported |
@@ -19,5 +20,6 @@ see [game direction](game-direction.md). Verified work now goes directly to main
 See [Windows reproduction](phase5-windows-reproduction.md) and the
 [locked curriculum protocol](phase5-curriculum-protocol.md) and
 [negative curriculum result](phase5-curriculum-results.md). The current curriculum
-should not replace fixed weighting. The new retention intervention has a separate
-[locked protocol](phase5-retention-protocol.md); no improvement is assumed in advance.
+should not replace fixed weighting. The retention intervention passed its separate
+recall/retention discovery criteria but failed the stronger joint criterion;
+[read the result and limits](phase5-retention-results.md). It is a candidate, not the new default.

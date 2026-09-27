@@ -1,0 +1,49 @@
+{
+  "source_commit": "41210771509ad4d81994a2d9082b1bf58b269ebc",
+  "circuits": [
+    "data/flywire_783_mb_left_kc512_s701",
+    "data/flywire_783_mb_left_kc512_s702"
+  ],
+  "seeds": [
+    3142,
+    3143,
+    3144
+  ],
+  "initializations": [
+    0,
+    1,
+    2
+  ],
+  "normalizations": [
+    "incoming_l1"
+  ],
+  "models": [
+    "fly",
+    "role_shuffled"
+  ],
+  "schedules": [
+    "mbon_after_kc"
+  ],
+  "hidden_units": 8,
+  "pi_length": 200,
+  "prompt_length": 3,
+  "prefix_window": 32,
+  "prefix_weight": 4.0,
+  "leak": 0.6,
+  "gain": 0.9,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "learning_rate": 0.03,
+  "l2": 1e-05,
+  "offsets": [
+    0
+  ],
+  "protocol": "docs/phase5-retention-protocol.md",
+  "stage_epochs": 2000,
+  "windows": [
+    32,
+    64,
+    128
+  ],
+  "experiment": "prefix_share_retention"
+}
