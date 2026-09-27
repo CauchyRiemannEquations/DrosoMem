@@ -20,7 +20,7 @@ and Phase 6 acceptance work.
 | Deferred | User deferred | Graphical ten-minute study → recall → results flow | Return after the research-first pass; keep the console core |
 | Deferred | User deferred | Actual fresh training during preparation | Return with game work; fixed budget and honest progress |
 | P1 | Done, confirmation failed | Confirm anchored weighting on fresh seeds and other segments | 324 fits / 972 stage heads; all offsets fail retention/completion, offset 0 also fails recall; [results](phase5-retention-confirmation-results.md) |
-| P1 | Next original-phase task | Complete Phase 2 perturbation robustness | Lock perturbation types and strengths, matched controls, fresh noise seeds, and independent confirmation before outcomes |
+| P1 | In progress | Complete Phase 2 perturbation robustness | [Locked protocol](phase2-robustness-protocol.md): 72 frozen heads, two model/noise-seed cohorts, pulse/ongoing state noise and edge dropout; 16,128 recalls |
 | P2 | Open | Isolate numerical portability of nonlinear training | Record Python/BLAS/CPU details, compare per-step gradients on identical states, then verify controlled builds across platforms |
 | P2 | Open | Add Windows/Linux CI for the small deterministic test suite | Both systems validate data checksums, schedule behavior and checkpoint replay on main pushes and PRs |
 | Research backlog | Not complete | Stage B/C LIF, Phase 5B dopamine and Phase 6 whole brain | Proceed in [prerequisite order](phase-status.md); biological grounding and measured scaling are required |

@@ -1,0 +1,109 @@
+{
+  "experiment": "frozen_model_perturbation_robustness",
+  "source_commit": "155cd224bc91ad2a59c9a0775808d1bbbfd4f508",
+  "protocol": "docs/phase2-robustness-protocol.md",
+  "circuits": [
+    "data/flywire_783_mb_left_kc512_s701",
+    "data/flywire_783_mb_left_kc512_s702"
+  ],
+  "cohorts": [
+    {
+      "name": "initial",
+      "source": "results/phase5_retention",
+      "manifest_sha256": "699955f57f31036dffd42314ee8e0996a47dc25ecc42562521e086e99c9116ec",
+      "model_seeds": [
+        3142,
+        3143,
+        3144
+      ],
+      "noise_seeds": [
+        5100,
+        5101,
+        5102,
+        5103,
+        5104,
+        5105,
+        5106,
+        5107,
+        5108,
+        5109,
+        5110,
+        5111,
+        5112,
+        5113,
+        5114,
+        5115,
+        5116,
+        5117,
+        5118,
+        5119
+      ]
+    },
+    {
+      "name": "confirmation",
+      "source": "results/phase5_retention_confirmation",
+      "manifest_sha256": "ec6f1a39d8b994aab532ce83837515f54c4f94de1ace5f0d4425d0b9ba3b56c4",
+      "model_seeds": [
+        4142,
+        4143,
+        4144
+      ],
+      "noise_seeds": [
+        6100,
+        6101,
+        6102,
+        6103,
+        6104,
+        6105,
+        6106,
+        6107,
+        6108,
+        6109,
+        6110,
+        6111,
+        6112,
+        6113,
+        6114,
+        6115,
+        6116,
+        6117,
+        6118,
+        6119
+      ]
+    }
+  ],
+  "treatment": "fixed",
+  "epoch": 6000,
+  "prompt": "314",
+  "horizon": 197,
+  "expected_models": 72,
+  "strengths": {
+    "pulse": [
+      0,
+      1e-06,
+      0.0001,
+      0.001,
+      0.01
+    ],
+    "ongoing": [
+      0,
+      1e-06,
+      0.0001,
+      0.001,
+      0.01
+    ],
+    "edge_dropout": [
+      0,
+      0.01,
+      0.05,
+      0.1
+    ]
+  },
+  "primary": {
+    "pulse": 0.001,
+    "ongoing": 0.001,
+    "edge_dropout": 0.01
+  },
+  "retention_fraction": 0.8,
+  "required_blocks": 5
+}
