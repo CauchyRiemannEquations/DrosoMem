@@ -1,20 +1,31 @@
 # Flying
 
-**Current priority: finish the remaining original research stages before game
-screen work.** Small-circuit Stage B/C and scoped gamma1/pedc Phase 5B experiments
-are complete; Phase 5B's neural-response criterion failed. Phase 6 whole-brain
-work remains unfinished, and broader biological validation is not established.
+**The requested research-first execution pass is complete within documented
+scopes.** Whole-brain Phase 6 feasibility now runs all 138,639 source neurons and
+15,091,983 connections. Earlier failed learning criteria remain failed;
+whole-brain pi training and broader biological validation are still untested.
+Graphical game work can follow this pass and was not started here.
 [Phase-by-phase audit](docs/phase-status.md).
 
 ## Can a fruit fly brain memorize π?
 
-**Latest research: compartment-local Phase 5B dopamine rule implemented.**
+**Latest research: complete source-graph Phase 6 execution and input audit.**
+Eight graph/input conditions and 24 one-second probes repeat every spike/count
+and final-state array exactly. Full-edge workers use at most **541 MiB RSS**;
+each simulated second takes about **23–25 wall seconds** on this CPU. Original
+subsets retained only **10.34–10.45%** of incoming left-MBON contacts. Restoring
+weak connections recovers MBON11 baseline probe responses in both input maps.
+No whole-brain readout or pi recall performance was tested; retain the current
+game opponent. [Results](docs/phase6-results.md) · [Locked protocol](docs/phase6-protocol.md).
+
+**Previous research: compartment-local Phase 5B dopamine rule implemented.**
 Twelve controlled conditioning cases pass the local causal-rule checks: only
 paired KC/PPL101 activity changes the selected connections (28.12% depression of
 active edges). However, both isolated probe baselines are silent, so the neural
 response criterion fails. Mean pi transfer recall falls **3 -> 2 digits**, with
-no improvement after refitting the readout. Next: Phase 6 input-coverage and
-sparse-scaling prerequisites. [Results and limits](docs/phase5b-results.md) ·
+no improvement after refitting the readout. The subsequent Phase 6 baseline
+activity result does not retrospectively pass this learning criterion.
+[Results and limits](docs/phase5b-results.md) ·
 [Locked protocol](docs/phase5b-protocol.md).
 
 **Previous research: sourced small-circuit Stage B/C LIF validation completed.**
@@ -314,9 +325,9 @@ Three schedules keep the same connectome weights and 48-MBON readout budget. Upd
 - [x] Phase 4: supervised KC→MBON plasticity with fixed-connectivity and permuted-teacher controls; 432 reproducible runs.
 - [x] Phase 5A: artificial scalar reward and eligibility-trace protocol, with delayed and yoked controls.
 - [x] Phase 5B, gamma1/pedc model scope: source-supported type mapping and actual DAN-spike-gated local depression; targeted controls pass, neural-response criterion fails. Not an all-compartment physiological model. [Results](docs/phase5b-results.md).
-- [ ] Phase 6: whole-brain scale simulation after sparse performance and biological assumptions are justified.
+- [x] Phase 6 engineering feasibility: complete source graph, input-coverage audit, validated sparse dynamics, measured resources and 24 exact whole/partial-brain probe repeats. Whole-brain pi learning and physiological calibration remain separate follow-ups. [Results](docs/phase6-results.md).
 - [x] Game core: verified pretrained opponents, shared first-error scoring and a timed console interface.
-- [ ] Game screens: deferred by user request until research work is advanced. [Phase audit](docs/phase-status.md) · [Product direction](docs/game-direction.md).
+- [ ] Game screens: next product task after the scoped research-first pass; not started in Phase 6. [Phase audit](docs/phase-status.md) · [Product direction](docs/game-direction.md).
 
 ## GitHub structure
 

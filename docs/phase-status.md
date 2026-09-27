@@ -1,8 +1,10 @@
 # Original research phases: completion audit — 2026-09-27
 
-**The original research roadmap is not complete.** A usable pretrained opponent
-does not imply completion of the scientific phases. The user has now asked to
-prioritize the original research stages and defer game screen work.
+**The research-first execution pass is complete within the scopes below.** Every
+listed original phase now has executed evidence, including whole-brain Phase 6
+feasibility. Several learning and robustness criteria failed. This is not a claim
+of complete biological validation or whole-brain pi learning. Game screens remain
+unimplemented; they can be the next product task after this research pass.
 
 | Original stage | Status | Evidence / remaining acceptance work |
 |---|---|---|
@@ -16,7 +18,7 @@ prioritize the original research stages and defer game screen work.
 | Phase 5A | Completed, negative baseline | Scalar reward/eligibility-trace study: [results](phase5-results.md); subsequent diagnostics, BPTT, timing and readout studies are follow-ups |
 | Phase 5 readout follow-up | Confirmation completed; criteria failed | 324 fresh fits: anchored weighting failed retention/completion at every offset and recall at offset 0. Keep fixed-32; [results](phase5-retention-confirmation-results.md) |
 | Phase 5B | Completed in gamma1/pedc model scope; neural-response criterion failed | Exact PPL101/MBON11 mapping and alpha3 control; actual DAN-spike-gated LTD, 12 conditioning cases, all causal/null checks pass. Both isolated probe baselines are silent; pi recall 3 -> 2. This is not an all-compartment or physiologically calibrated model; [results](phase5b-results.md) |
-| Phase 6 | Not implemented; prerequisite-dependent | Whole-brain data/graph, sparse memory/time benchmarks, validated dynamics, reproducible whole-brain run. The bundled 686-neuron MB circuits do not satisfy whole-brain scope |
+| Phase 6 | Completed in whole-brain engineering feasibility scope | 138,639 neurons / 15,091,983 source edges; eight graph/input conditions / 24 exactly repeated probes; legacy Brian2 comparisons pass; full-edge worker peak 541 MiB. MBON11 baseline responses recover when weak edges return. No whole-brain pi training or physiological calibration; [results](phase6-results.md) |
 | Game | Console core completed; UI deferred | Existing artifacts remain available. No new screen work while research is the priority |
 
 Completed means the stated experiment was executed and checked, not that its
@@ -36,14 +38,15 @@ hypothesis succeeded. Negative Phase 4/5 results must remain visible.
    controls. The rule checks pass but selective probe suppression cannot be
    assessed from silent baseline responses. Do not equate this with validated
    biological learning or improved pi memory.
-5. **Next:** Phase 6 prerequisites: audit retained input versus graph coverage,
-   benchmark sparse memory/runtime, and test activity sensitivity before a
-   reproducible whole-brain run. The current samples retain 512 of 2,580 left
-   KCs; quantify actual input loss rather than assuming its effect. Record actual
-   resource limits if encountered, not assumed blockers.
-6. Return to the graphical game flow after the research-first pass, or when the
-   user explicitly changes priorities.
+5. Completed: Phase 6 source-complete whole-brain execution and scaling audit.
+   Original samples retain only 10.34–10.45% of incoming left-MBON contacts.
+   All 24 probes repeat exactly; no resource limit was hit. Restoring weak edges
+   recovers isolated MBON11 responses in both input maps, but does not revalidate
+   Phase 5B learning. Whole-brain pi readout training remains a separate follow-up.
+6. Next product task: return to the graphical ten-minute study / recall / results
+   flow using the existing verified opponent. No UI work was started in Phase 6.
 
-Numerical portability and Windows/Linux CI are supporting work, not replacements
-for the unfinished scientific stages. This audit does not mark deferred stages
-complete or promise that all learning interventions will improve recall.
+Numerical portability, Windows/Linux CI, expanded-graph dopamine conditioning,
+whole-brain pi training and broader physiological validation remain follow-up
+work. This audit distinguishes executed scoped experiments from successful
+scientific hypotheses; no negative result is retrospectively promoted.

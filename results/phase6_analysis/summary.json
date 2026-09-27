@@ -1,0 +1,66 @@
+{
+  "coverage": [
+    {
+      "circuit_seed": 701,
+      "total": 184805,
+      "retained": 19312,
+      "weak": 55559,
+      "outside": 109934,
+      "autapse": 0,
+      "full_left_kc_contacts": 89316,
+      "retained_kc_contacts": 10468,
+      "retained_fraction": 0.10449933713914666,
+      "retained_left_kc_fraction": 0.1172018451341305
+    },
+    {
+      "circuit_seed": 702,
+      "total": 184805,
+      "retained": 19111,
+      "weak": 55559,
+      "outside": 110135,
+      "autapse": 0,
+      "full_left_kc_contacts": 89316,
+      "retained_kc_contacts": 10267,
+      "retained_fraction": 0.1034117042287817,
+      "retained_left_kc_fraction": 0.11495140848224282
+    }
+  ],
+  "mbon11_coverage": [
+    {
+      "autapse": 0,
+      "weak": 3269,
+      "outside": 4477,
+      "retained": 1681,
+      "total": 9427,
+      "excitatory": 8968,
+      "inhibitory": 459,
+      "circuit_seed": 701,
+      "root_id": "720575940623201833",
+      "cell_type": "MBON11",
+      "full_left_kc_contacts": 8323,
+      "retained_kc_contacts": 1239
+    },
+    {
+      "autapse": 0,
+      "weak": 3269,
+      "outside": 4808,
+      "retained": 1350,
+      "total": 9427,
+      "excitatory": 8968,
+      "inhibitory": 459,
+      "circuit_seed": 702,
+      "root_id": "720575940623201833",
+      "cell_type": "MBON11",
+      "full_left_kc_contacts": 8323,
+      "retained_kc_contacts": 908
+    }
+  ],
+  "all_input_root_ids_matched": true,
+  "input_cells_per_digit": 51,
+  "oracle_max_v_error_mv": 5.329070518200751e-13,
+  "oracle_max_g_error_mv": 4.263256414560601e-14,
+  "all_probe_repeats_exact": true,
+  "fullbrain_peak_rss_bytes": 566771712,
+  "source_manifest_sha256": "6f2663872c5a07f17cd842d4eb28276d9a14bb200b3a27b24f335da4fc61bd4e",
+  "analysis_script_sha256": "8130622d38f9575ae552b5e348da1057bc89c0f9036f29ac51b2a6c256db07bc"
+}

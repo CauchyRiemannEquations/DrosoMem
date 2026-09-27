@@ -1,0 +1,61 @@
+{
+  "source_rows": 15091983,
+  "neurons": 138639,
+  "autapse_edges": 0,
+  "autapse_contacts": 0,
+  "missing_annotation_ids": [
+    "720575940606792881",
+    "720575940607862706",
+    "720575940613336473",
+    "720575940613437206",
+    "720575940619169349",
+    "720575940623450077",
+    "720575940623913933",
+    "720575940625523749",
+    "720575940626741265",
+    "720575940628159081",
+    "720575940633242449",
+    "720575940636488667",
+    "720575940639387763",
+    "720575940642560987"
+  ],
+  "left_neurons": 2795,
+  "role_counts": {
+    "OTHER": 133033,
+    "KC": 5177,
+    "DAN": 331,
+    "MBON": 96,
+    "APL": 2
+  },
+  "left_role_counts": {
+    "KC": 2580,
+    "DAN": 166,
+    "MBON": 48,
+    "APL": 1
+  },
+  "bundled_induced_graphs_exact": true,
+  "sources": {
+    "Connectivity_783.parquet": {
+      "url": "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/Connectivity_783.parquet",
+      "sha256": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347"
+    },
+    "Completeness_783.csv": {
+      "url": "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/Completeness_783.csv",
+      "sha256": "bbb847a4cc2caaa7a16349722d220c087317b946d148d4d592d94d250617a311"
+    },
+    "annotations.tsv": {
+      "url": "https://raw.githubusercontent.com/flyconnectome/flywire_annotations/8587524c1748ce5ef2080822a2fc890fc03bf597/supplemental_files/Supplemental_file1_neuron_annotations.tsv",
+      "sha256": "9a4f8b2f843196074431ebd7cd883536afa1be86c8a4ce90970441e8be81d1be"
+    }
+  },
+  "brain1_edges": 15091983,
+  "brain5_edges": 2700513,
+  "left5_edges": 15120,
+  "files": {
+    "brain1.npz": "160624b0ddc0261f7dc06c8012aa5675e4ffc20706edeb989ab43afc0c409b27",
+    "brain5.npz": "5225dff229b94b40e31ef81af4755ebe8fd09883b340ccd2bebbbdd4ac60b572",
+    "coverage.csv": "261e2e78afc00dce14ce3e4ee410450c7c3d65a9e970a620522dc2eb62f1d0cc",
+    "left5.npz": "f3ddb6f48ed7547fd52bfd2648d122875877f56367058554510b4397f2c3cac2",
+    "nodes.npz": "e9827b294f19778508c21ed8effd22712ece0cbcb7fca98f70c1c141f82775f3"
+  }
+}

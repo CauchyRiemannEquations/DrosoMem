@@ -1,0 +1,9 @@
+level,circuit_seed,neurons,edges,sparse_csc_bytes,delay_ring_bytes,graph_load_seconds,wall_seconds,sampled_peak_rss_bytes,rss_scope,sample_seconds,returncode,resource_failure
+legacy5,701,686,3309,42456,104272,0.12807810000049358,2.2757557000004454,111562752,sum of worker process tree RSS (includes Windows venv redirector),0.2,0,
+legacy5,702,686,3241,41640,104272,0.12166859999888402,2.2821619999995164,111771648,sum of worker process tree RSS (includes Windows venv redirector),0.2,0,
+left5,701,2795,15120,192624,424840,0.12476219999916793,2.6925047999993694,112836608,sum of worker process tree RSS (includes Windows venv redirector),0.2,0,
+left5,702,2795,15120,192624,424840,0.14046739999866986,2.9133297000007587,112779264,sum of worker process tree RSS (includes Windows venv redirector),0.2,0,
+brain5,701,138639,2700513,32960716,21073128,0.22562490000018443,155.4375600000003,265695232,sum of worker process tree RSS (includes Windows venv redirector),0.2,0,
+brain5,702,138639,2700513,32960716,21073128,0.22922289999951317,144.63592229999995,299356160,sum of worker process tree RSS (includes Windows venv redirector),0.2,0,
+brain1,701,138639,15091983,181658356,21073128,0.6462016000004951,144.4276590999998,547729408,sum of worker process tree RSS (includes Windows venv redirector),0.2,0,
+brain1,702,138639,15091983,181658356,21073128,0.6648296000003029,144.98309309999968,566771712,sum of worker process tree RSS (includes Windows venv redirector),0.2,0,

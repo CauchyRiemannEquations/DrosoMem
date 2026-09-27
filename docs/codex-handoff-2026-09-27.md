@@ -1,6 +1,31 @@
 # Flying — 최신 Codex 인계 (2026-09-27 KST)
 
-## 최신 추가: 연구 우선 / Phase 5B 완료 범위
+## 최신 추가: Phase 6 전체 뇌 실행 완료 범위
+
+- [Phase 6 결과](phase6-results.md), [고정 설계](phase6-protocol.md)부터 읽는다.
+  원본 138,639개 뉴런·15,091,983개 연결 전체를 포함한다. 그래프 구축·원본 ID
+  대조·부분망 일치 검사·입력 손실 분석과 자원 제한 실행을 구현했다.
+- 4개 그래프 수준 × 기존 입력 지도 2개 × 자극 3개를 각각 두 번 실행했다.
+  24개 반복에서 발화·시간·카운트·최종 v/g 배열이 정확히 같다. 두 부분망의 6개
+  1초 자극은 Brian2와 발화가 같고 상태 오차는 1e-8 mV 기준 안이다.
+- 전체 연결 조건은 약 522~541 MiB RSS, 모의 1초당 실제 약 23~25초.
+  테스트 193개 통과. 기존 환경은 154개 통과·선택 의존성 관련 9개 skip.
+- 기존 부분망은 왼쪽 MBON의 입력 접촉 수 중 10.34~10.45%만 보존했다.
+  약한 연결까지 복원하자 MBON11의 digit3/digit1 반응이 s701에서 34/49회,
+  s702에서 13/25회로 회복됐다. 학습하지 않은 기본 반응이며 Phase 5B 학습
+  실패를 통과로 바꾸지 않는다. 전체 뇌 pi 학습·회상은 측정하지 않았다.
+- `results/phase6`, `results/phase6_analysis`, `results/phase6_validation` 보존.
+  설계 커밋 `59b6eea`, 실행 소스 `bdfc228`; 기존 LIF lock에 pyarrow/psutil만
+  더한 `requirements-phase6-lock.txt` 사용. 원본과 큰 그래프는 ignored 경로.
+  `python -m flying.training.phase6 prepare`, `run --out 새폴더`, `verify`로 재현.
+  Phase 6는 reset 반복을 했으며 전체 CLI를 별도 두 번째 실행한 것으로 쓰지 말 것.
+- 원래 phase는 문서에 명시된 범위에서 실행·검증됐다. [phase audit](phase-status.md)의
+  실패와 한계를 유지한다. 다음 제품 작업은 기존 fixed-32 상대의 그래픽 게임 흐름.
+  전체 뇌 원주율 학습·확장 그래프 도파민·생리학적 보정은 별도 후속 연구다.
+
+아래는 이전 단계의 역사적 인계이며 당시의 “다음” 항목은 위 결과로 갱신됐다.
+
+## 앞선 연구 우선 / Phase 5B 완료 범위
 
 - [Phase 5B 결과](phase5b-results.md): PPL101/MBON11 gamma1/pedc 매핑과 실제
   DAN 발화로 작동하는 국소 LTD 구현. alpha3는 다른 구획 대조군으로만 매핑했다.
