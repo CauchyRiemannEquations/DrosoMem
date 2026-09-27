@@ -13,6 +13,9 @@ pi; keep that scientific distinction accurate without repeatedly lecturing about
   choose a best seed after evaluation, or present teacher-forced accuracy as recall.
 - A useful playable baseline can ship before whole-brain simulation or perfect
   long-prefix recall. Research and the game should advance together.
+- Default human study time is ten minutes, as proposed by the user. Label the
+  current opponent pretrained. Later live-training displays must reflect actual
+  updates/completion; do not present a waiting timer as model learning.
 - The user explicitly authorized committing and pushing completed, verified work
   directly to `main` (2026-09-27). Do not open routine draft PRs or ask again to merge
   this project's normal work. Follow branch protection if the server requires it.

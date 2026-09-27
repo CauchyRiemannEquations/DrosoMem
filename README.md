@@ -2,6 +2,16 @@
 
 ## Can a fruit fly brain memorize π?
 
+**Playable console prototype:** a ten-minute study phase, 18 verified pretrained
+opponents and identical first-error scoring. All 18 reproduce their recorded
+197-digit rollouts; 125 tests pass. Fresh local training took 2.62 seconds including
+preparation for one 6,000-update fit. Graphical screens and live-training mode are
+next. [Play and read the timing evidence](docs/game-prototype.md).
+
+```bash
+python -m flying.game --record outputs/my_first_match.json
+```
+
 **Flying — Can a Fly Brain Memorize Pi?**
 
 Flying explores whether a fruit fly connectome can act as a fixed biological-structure-inspired reservoir capable of memorizing the digits of π.
