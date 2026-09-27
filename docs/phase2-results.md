@@ -149,5 +149,5 @@ The next useful step is an **anatomically annotated mushroom-body circuit** with
 KC/MBON/DAN roles and a stated input/output mapping, alongside delayed-digit
 memory and perturbation/recall-stability tests. Confirm annotations against the
 pinned snapshot before extracting it. Plasticity, spiking dynamics, dopamine and
-whole-brain execution remain unimplemented. More neurons or a prettier UI alone
+whole-brain execution remain unimplemented. Increasing neuron count alone
 would not resolve the scientific uncertainties identified here.

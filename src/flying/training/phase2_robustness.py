@@ -21,7 +21,7 @@ def validate(cfg):
     if cfg.get('experiment') != 'frozen_model_perturbation_robustness':
         raise ValueError('Wrong experiment')
     if cfg['prompt'] != '314' or cfg['horizon'] != 197 or cfg['treatment'] != 'fixed' or cfg['epoch'] != 6000:
-        raise ValueError('Expected the fixed-32 game-opening baseline')
+        raise ValueError('Expected the fixed-32 offset-zero baseline')
     if set(cfg['strengths']) != set(KINDS) or set(cfg['primary']) != set(KINDS):
         raise ValueError('Missing perturbation family')
     for kind in KINDS:

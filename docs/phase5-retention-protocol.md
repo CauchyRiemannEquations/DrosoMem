@@ -1,7 +1,11 @@
 # Locked first-prefix-share retention study — 2026-09-27
 
+Editorial update: research terminology only; the registered numerical design is
+unchanged. Original protocol bytes are preserved in Git history; see
+[historical reproduction](historical-reproduction.md).
+
 Base: 41210771509ad4d81994a2d9082b1bf58b269ebc. Written before outcomes.
-This is a scoped discovery study for the default `314` game opening, offset 0.
+This is a scoped discovery study for the default `314` sequence prefix, offset 0.
 Other offsets require a separate confirmation study; do not claim them tested.
 
 ## One intervention and matched controls
@@ -22,7 +26,7 @@ targets remain weight 1; all other targets are retained. This does not guarantee
 preservation of learned predictions. Do not add replay buffers, label lookup,
 teacher-state matching losses, gradient projection or outcome-dependent gates.
 
-## Fixed sample and game-facing decision
+## Fixed sample and research decision
 
 Use existing s701/s702 subsets, real/role-degree-shuffled graphs, new seeds
 3142/3143/3144, all initializations 0/1/2, incoming-L1, mbon_after_kc, 200 pi digits,
@@ -43,9 +47,8 @@ unweighted cross entropy. Shuffled controls must be included. Criteria are
 descriptive, not statistical significance tests; overlapping subsets and model
 initializations are not independent animals.
 
-A pass justifies a fresh cross-segment confirmation, not automatic promotion to
-the game's default model. A failure does not block game implementation using the
-existing validated fixed-32 baseline. No hyperparameter retuning in this run.
+A pass justifies a fresh cross-segment confirmation, not automatic replacement of
+the existing fixed-32 research baseline. No hyperparameter retuning in this run.
 
 ## Verification
 

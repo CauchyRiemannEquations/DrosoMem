@@ -140,7 +140,9 @@ voltage stimulation do not constitute physiological calibration.
 
 ## Reproduce
 
-Run from the repository root at this result's code revision. Install a separate
+For the archived run, use revision `503aa9e` in a separate clone, as explained in
+[historical reproduction](historical-reproduction.md). Run from that repository
+root. Install a separate
 Python 3.12 environment using `requirements-phase6-lock.txt`; it includes the
 unchanged LIF lock plus pyarrow and psutil. Raw data and graph caches stay ignored.
 
@@ -162,7 +164,7 @@ receive a completion manifest; this small fixed study has no resume command.
 The reported 24 repetitions were reset repeats within each isolated condition
 worker, not a separate second invocation of the entire CLI.
 
-## Phase and product decision
+## Phase scope and next research
 
 The original Phase 6 engineering acceptance work is now executed: complete
 source graph, quantified input coverage, measured sparse scaling, a numerically
@@ -171,6 +173,6 @@ now has executed evidence within the scope recorded in the [phase audit](phase-s
 This does not turn negative learning results into successes or establish a
 physiologically calibrated whole-brain memory model.
 
-Keep the existing fixed-32 pretrained game opponent. A whole-brain pi-training
-comparison and an expanded-graph Phase 5B conditioning study are distinct future
-research questions. Graphical game work was not started during this research pass.
+Keep the existing fixed-32 research baseline. The next question is a matched
+whole-brain versus partial-brain pi-training and autonomous-recall comparison.
+Expanded-graph Phase 5B conditioning remains a distinct follow-up study.

@@ -1,4 +1,4 @@
-"""Plot every arm and stage in the locked game-opening retention study."""
+"""Plot every arm and stage in the locked offset-zero retention study."""
 import argparse
 import json
 from pathlib import Path
@@ -37,7 +37,7 @@ def main():
     axes[0,0].set_ylabel('Mean consecutive generated digits')
     axes[1,0].set_ylabel('Models completing first 32 digits (%)')
     axes[0,0].legend(frameon=False,fontsize=8)
-    fig.suptitle('Preserving early-prefix loss share: game-opening discovery',fontsize=14)
+    fig.suptitle('Preserving early-prefix loss share: offset-zero discovery',fontsize=14)
     fig.text(.5,.02,'All seeds and initializations. Primary endpoint: 6,000 updates. Recall horizon: 197.',
              ha='center',fontsize=9,color='#555')
     fig.tight_layout(rect=(0,.05,1,.95)); fig.savefig(out/'overview.png',dpi=180); plt.close(fig)

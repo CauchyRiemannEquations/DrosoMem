@@ -1,5 +1,9 @@
 # Phase 6 — locked coverage and whole-brain feasibility protocol
 
+Editorial update: research terminology only; the registered numerical design is
+unchanged. Original protocol bytes are preserved in Git history; see
+[historical reproduction](historical-reproduction.md).
+
 Locked before activity outcomes, 2026-09-27. This closes the original Phase 6
 engineering acceptance scope: whole-brain graph, sparse resource measurements,
 validated dynamics and a reproducible whole-brain execution. It does not promise
@@ -69,7 +73,7 @@ Archive compact results and checksums, plus a CLI to regenerate and compare
 all conditions. Do not include changing logs in an already hashed manifest.
 Source topology and exact-repeat checks are necessary acceptance criteria.
 Activity improvement is exploratory, with no seed selection or tuning. No
-readout is fitted; game opponent and Phase 5B conclusions remain unchanged.
+readout is fitted; rate-model baseline and Phase 5B conclusions remain unchanged.
 
 Sources: [pinned author model](https://github.com/philshiu/Drosophila_brain_model/blob/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/model.py),
 [pinned data](https://github.com/philshiu/Drosophila_brain_model/tree/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960),

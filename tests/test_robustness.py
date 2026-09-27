@@ -10,7 +10,6 @@ from scipy import sparse
 from flying.brain.timed_reservoir import TimedReservoir
 from flying.brain.plasticity import weight_hash
 from flying.evaluation.perturbation import KINDS, drop_edges, recall
-from flying.game.opponent import FrozenEncoder, OpponentCatalog
 from flying.models.nonlinear_readout import NonlinearReadout
 from flying.training import phase2_robustness as study
 
@@ -21,18 +20,16 @@ def config():
 
 def tiny():
     roles = np.array(['KC','MBON'])
-    model = TimedReservoir(sparse.csr_matrix((2,2)),FrozenEncoder(np.zeros((10,2))),roles,1.,'mbon_after_kc')
+    model = TimedReservoir(sparse.csr_matrix((2,2)),lambda digit: np.zeros(2),roles,1.,'mbon_after_kc')
     head = NonlinearReadout([1],hidden=2,seed=3)
     head.initialize(np.array([[-.1,.2],[.1,-.2]]))
     return model,head,roles
 
 
-def test_null_perturbations_reproduce_real_saved_opponent():
-    opponent = OpponentCatalog('assets/opponents/fixed32/catalog.json').select(0)
-    reservoir, head = opponent._reservoir,opponent._head
-    roles = np.full(len(reservoir.state),'other',dtype='U5')
-    roles[reservoir.kc] = 'KC'; roles[reservoir.mbon] = 'MBON'
-    expected = ''.join(str(opponent.next_digit()) for _ in range(197))
+def test_null_perturbations_reproduce_real_research_checkpoint():
+    saved = next(study.models(config()))
+    reservoir, head, roles = saved['reservoir'], saved['head'], saved['roles']
+    expected = saved['expected']
     before = reservoir.state.copy()
     for kind in ('clean',*KINDS):
         got = recall(reservoir,head,roles,'314',197,kind,0,[23,42,0])

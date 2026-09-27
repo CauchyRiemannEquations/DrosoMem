@@ -14,7 +14,7 @@ def validate(cfg):
         raise ValueError('Expected prefix_share_retention experiment')
     engine.validate({k:v for k,v in cfg.items() if k != 'experiment'})
     if cfg['offsets'] != [0]:
-        raise ValueError('This discovery protocol uses only the game starting segment')
+        raise ValueError('This discovery protocol uses only the sequence starting at offset zero')
 
 
 def anchored_weights(count, prompt_length, window, anchor_window=32, multiplier=4.):

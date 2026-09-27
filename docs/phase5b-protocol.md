@@ -1,5 +1,9 @@
 # Phase 5B: compartment-local dopamine-dependent depression
 
+Editorial update: research terminology only; the registered numerical design is
+unchanged. Original protocol bytes are preserved in Git history; see
+[historical reproduction](historical-reproduction.md).
+
 Locked before circuit outcomes, 2026-09-27. Commit code, tests, registry and
 `configs/phase5b.json` before the main run. Preserve failures without tuning.
 
@@ -113,7 +117,7 @@ prompt `314`, with targets confined to the scorer; report first-error recall and
 teacher-forced accuracy separately. The dopamine conditioning has no pi targets
 and teaches an association with digit 3, **not the pi sequence**. This diagnostic
 only measures transfer/interference. No claim of dopamine-only pi learning or
-opponent improvement is licensed by it, and no promotion criterion is defined.
+recall improvement is established by it, and no promotion criterion is defined.
 
 ## Audit and reproduction
 

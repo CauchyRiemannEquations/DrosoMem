@@ -1,10 +1,11 @@
 # Flying
 
-**The requested research-first execution pass is complete within documented
-scopes.** Whole-brain Phase 6 feasibility now runs all 138,639 source neurons and
-15,091,983 connections. Earlier failed learning criteria remain failed;
+**Flying is a research-only repository for connectome-constrained sequence learning
+and autonomous recall.** Whole-brain Phase 6 feasibility now runs all 138,639 source
+neurons and 15,091,983 connections. Earlier failed learning criteria remain failed;
 whole-brain pi training and broader biological validation are still untested.
-Graphical game work can follow this pass and was not started here.
+Next: a matched whole-brain versus partial-brain pi-learning study.
+[Research direction](docs/research-direction.md) · [Historical replay](docs/historical-reproduction.md).
 [Phase-by-phase audit](docs/phase-status.md).
 
 ## Can a fruit fly brain memorize π?
@@ -16,7 +17,7 @@ each simulated second takes about **23–25 wall seconds** on this CPU. Original
 subsets retained only **10.34–10.45%** of incoming left-MBON contacts. Restoring
 weak connections recovers MBON11 baseline probe responses in both input maps.
 No whole-brain readout or pi recall performance was tested; retain the current
-game opponent. [Results](docs/phase6-results.md) · [Locked protocol](docs/phase6-protocol.md).
+fixed-32 research baseline. [Results](docs/phase6-results.md) · [Locked protocol](docs/phase6-protocol.md).
 
 **Previous research: compartment-local Phase 5B dopamine rule implemented.**
 Twelve controlled conditioning cases pass the local causal-rule checks: only
@@ -32,7 +33,7 @@ activity result does not retrospectively pass this learning criterion.
 Independent spike/state references and three timestep grids pass all locked
 checks. Eight matched-budget readouts give real-circuit mean recall **3.0 digits
 for LIF versus 33.5 for the rate baseline**. This one-seed feasibility comparison
-does not establish a better opponent or cell-specific physiological validity.
+does not establish a better recall model or cell-specific physiological validity.
 [Results and scope](docs/stage-bc-results.md) · [Locked protocol](docs/stage-bc-protocol.md).
 
 **Previous research: scoped Phase 2 robustness completed; acceptance criteria failed.**
@@ -50,25 +51,15 @@ retention/completion; at offset 0, mean recall fell from fixed **36.83** to anch
 **34.72**. Keep fixed-32 and proceed to Phase 2 robustness work.
 [Results](docs/phase5-retention-confirmation-results.md) · [Unfinished phases](docs/phase-status.md).
 
-**Playable console prototype:** a ten-minute study phase, 18 verified pretrained
-opponents and identical first-error scoring. All 18 reproduce their recorded
-197-digit rollouts; 125 tests pass. Fresh local training took 2.62 seconds including
-preparation for one 6,000-update fit. Graphical screens and live-training mode are
-deferred while research takes priority. [Play and read the timing evidence](docs/game-prototype.md).
-
-```bash
-python -m flying.game --record outputs/my_first_match.json
-```
-
 **Flying — Can a Fly Brain Memorize Pi?**
 
 Flying explores whether a fruit fly connectome can act as a fixed biological-structure-inspired reservoir capable of memorizing the digits of π.
 
-**Product goal: a pi memorization game where a human competes against a trained fly-connectome-based model.** Research establishes reproducible opponents, fair scoring and measured difficulty. The existing validated fixed-32 baseline can support the first playable game while learning research continues. [Game direction and working agreement](docs/game-direction.md).
+**Research scope:** sequence learning and autonomous recall in connectome-constrained models. Pi is a controlled memory benchmark. [Research direction](docs/research-direction.md).
 
-> **실제 FlyWire 연결 데이터로 실행되는 Python MVP입니다.** 현재 결과는 작은 부분망과 단순 dynamics의 계산 실험입니다. 실제 초파리가 원주율을 이해하거나 외웠다는 뜻이 아닙니다.
+> **실제 FlyWire 연결 데이터로 실행하는 순서 기억 연구입니다.** 부분망에서는 학습·자율 회상을, 전체 뇌에서는 활동 재현성과 규모 확장 가능성을 측정했습니다. 전체 뇌 모델의 원주율 학습 성능은 다음 연구 과제입니다.
 
-**Previous: first-prefix retention discovery completed — 108 fits, 324 exact stage-head replays, 9 independent refits, 96 tests passed.** Preserving first-32 loss share increased real-circuit recall from **31.67 to 38.89 digits** on fresh seeds at the game opening (offset 0), with no loss among 15 initially complete prefixes. Recall/retention criteria passed; later accuracy fell from **81.58% to 80.00%**, so the stronger joint criterion failed. This is a candidate pending separate confirmation. [Results](docs/phase5-retention-results.md) · [Game direction](docs/game-direction.md) · [Next work](docs/next-work.md).
+**Previous: first-prefix retention discovery completed — 108 fits, 324 exact stage-head replays, 9 independent refits, 96 tests passed.** Preserving first-32 loss share increased real-circuit recall from **31.67 to 38.89 digits** on fresh seeds at sequence offset 0, with no loss among 15 initially complete prefixes. Recall/retention criteria passed; later accuracy fell from **81.58% to 80.00%**, so the stronger joint criterion failed. This is a candidate pending separate confirmation. [Results](docs/phase5-retention-results.md) · [Research direction](docs/research-direction.md) · [Next work](docs/next-work.md).
 
 **Previous: matched-budget prefix curriculum completed — 324 fits, 972 exact saved-head replays, 27 independent refits, 84 tests passed.** Expanding the weighted window 32→64→128 did not beat fixed 32-target weighting: real-circuit mean recall was **27.19 versus 33.87 digits**, and all three segment success criteria failed. Of 48 real models that initially completed 32 digits, 19 lost that completion by the final stage. Windows checkout/checkpoint replay failures are also fixed. [Results](docs/phase5-curriculum-results.md) · [Windows reproduction and numerical limits](docs/phase5-windows-reproduction.md) · [Prioritized next work](docs/next-work.md).
 
@@ -326,8 +317,6 @@ Three schedules keep the same connectome weights and 48-MBON readout budget. Upd
 - [x] Phase 5A: artificial scalar reward and eligibility-trace protocol, with delayed and yoked controls.
 - [x] Phase 5B, gamma1/pedc model scope: source-supported type mapping and actual DAN-spike-gated local depression; targeted controls pass, neural-response criterion fails. Not an all-compartment physiological model. [Results](docs/phase5b-results.md).
 - [x] Phase 6 engineering feasibility: complete source graph, input-coverage audit, validated sparse dynamics, measured resources and 24 exact whole/partial-brain probe repeats. Whole-brain pi learning and physiological calibration remain separate follow-ups. [Results](docs/phase6-results.md).
-- [x] Game core: verified pretrained opponents, shared first-error scoring and a timed console interface.
-- [ ] Game screens: next product task after the scoped research-first pass; not started in Phase 6. [Phase audit](docs/phase-status.md) · [Product direction](docs/game-direction.md).
 
 ## GitHub structure
 

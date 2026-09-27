@@ -1,9 +1,9 @@
 # Stage B/C: small-circuit LIF result
 
 2026-09-27. The sourced LIF implementation passes the locked numerical checks,
-but this spike-count configuration is a weak pi opponent. On the two real
+but this spike-count configuration is a weak pi recall model. On the two real
 circuits, mean first-error recall is **3.0 digits**, versus **33.5** for the paired
-rate baseline. Keep the existing opponent. This is one fresh encoder/head seed,
+rate baseline. Keep the existing rate baseline. This is one fresh encoder/head seed,
 not a broad performance estimate or evidence that all spiking models are worse.
 
 Protocol and implementation were committed as `d9c69b4` before circuit outcomes.
@@ -84,6 +84,6 @@ simulation.
 The completed scope is a sourced small-circuit Stage B/C implementation and
 numerical/feasibility comparison. It does not close **Phase 5B** (source-supported
 compartment mapping and dopamine-dependent learning) or **Phase 6** (whole-brain
-data, scaling and simulation). Those remain the next original research work;
-graphical game screens stay deferred. A poor recall result does not invalidate
-the numerical checks, and passing those checks does not justify opponent promotion.
+data, scaling and simulation). Those remain the next original research work.
+A poor recall result does not invalidate the numerical checks, and passing those
+checks does not establish improved sequence memory.

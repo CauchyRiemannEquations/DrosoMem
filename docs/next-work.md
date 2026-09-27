@@ -2,12 +2,12 @@
 
 The repository had no open issues or pull requests when this work began. Priorities
 come from the latest handoff, measured results and failures observed on a fresh
-Windows checkout. The product is a human-versus-connectome-model pi memory game;
-see [game direction](game-direction.md). Verified work now goes directly to main.
+Windows checkout. This repository is research-only; see the
+[research direction](research-direction.md). Verified work goes directly to main.
 
 **The requested research-first execution pass is now complete within documented
-scopes.** Graphical work was deferred throughout this pass and can be the next
-product task. See the [phase audit](phase-status.md) for the completed scoped
+scopes.** The next research question is whether whole-brain connectivity improves
+autonomous pi recall under matched training budgets. See the [phase audit](phase-status.md) for the completed scoped
 Phase 2 follow-up, Stage B/C, Phase 5B and whole-brain Phase 6 feasibility work.
 Several scientific criteria failed; whole-brain pi learning remains untested.
 
@@ -17,14 +17,12 @@ Several scientific criteria failed; whole-brain pi learning remains untested.
 | P1 | Done | Reproduce cross-segment weighting | 216 new fits, 216 replays, 18 exact refits; qualitative tradeoff confirmed; cross-environment numerical differences documented |
 | P1 | Done, negative result | Test 32→64→128 weighting at 6,000 updates | 324 fits, 972 replays, 27 refits; real recall 27.19 versus fixed 33.87; all segment criteria fail |
 | P1 | Done, promising discovery | Preserve first-32 normalized loss share during expansion | 108 fits, 324 replays, 9 independent refits; real recall 31.67→38.89, retention passed, later accuracy 81.58%→80.00% |
-| P1 | Done | Verified opponent adapter, scoring and timed console game | 18 fixed-32 opponents reproduce full 197-digit rollouts without reference access; 600-second study gate; 125 tests; [prototype](game-prototype.md) |
-| P1 | Next product task after completed research pass | Graphical ten-minute study → recall → results flow | Keep the console core, fixed-32 pretrained opponent and shared first-error scoring |
-| Deferred | User deferred | Actual fresh training during preparation | Return with game work; fixed budget and honest progress |
 | P1 | Done, confirmation failed | Confirm anchored weighting on fresh seeds and other segments | 324 fits / 972 stage heads; all offsets fail retention/completion, offset 0 also fails recall; [results](phase5-retention-confirmation-results.md) |
 | P1 | Done, robustness criteria failed | Complete scoped Phase 2 perturbation robustness | 72 frozen heads / 16,128 exact recall replays / 216 null checks; both cohorts fail all primary families; 148 tests; [results](phase2-robustness-results.md) |
 | P1 | Done within small-circuit scope; weak recall | Stage B/C: sourced LIF implementation and validation | Four graph conditions, independent-reference and timestep checks pass; eight exact replays/refits; 166 tests; real recall 3.0 versus rate 33.5; [results](stage-bc-results.md) |
 | P1 | Done in gamma1/pedc scope; response criterion failed | Phase 5B: compartment mapping and dopamine-dependent modulation | Twelve cases / eight full recalls exactly rebuilt; 181 tests; local causal/null checks pass, both probe baselines silent; pi recall 3 -> 2; [results](phase5b-results.md) |
 | P1 | Done in whole-brain feasibility scope | Phase 6: input coverage, sparse scaling and whole-brain execution | 138,639 cells / 15,091,983 edges; 24 exact probe repeats, six Brian2 comparisons, 193 tests; full graph peak 541 MiB; [results](phase6-results.md) |
+| P1 | Next research; protocol not yet locked | Whole-brain versus partial-brain pi learning and autonomous recall | Match input IDs, observed MBONs, head capacity, updates and seeds; separate graph coverage from edge threshold; predeclare resource and success criteria |
 | P2 | Open | Isolate numerical portability of nonlinear training | Record Python/BLAS/CPU details, compare per-step gradients on identical states, then verify controlled builds across platforms |
 | P2 | Open | Add Windows/Linux CI for the small deterministic test suite | Both systems validate data checksums, schedule behavior and checkpoint replay on main pushes and PRs |
 | Research backlog | Not complete; distinct follow-up | Whole-brain pi training, expanded-graph Phase 5B and broader biological validation | Phase 6 restores baseline probe activity but fits no readout and performs no conditioning; freeze new protocols before testing learning claims |
@@ -43,5 +41,5 @@ implements a sourced local dopamine rule but fails its functional-response crite
 The [Phase 6 coverage/scaling study](phase6-results.md) now executes the complete
 source graph and restores isolated MBON11 baseline activity when weak edges are
 included. It does not validate the earlier learning criterion or improve a
-measured pi opponent. Do not present the rate baseline as robust, or the
-spiking/plastic model as an improved opponent.
+measured pi recall model. Do not present the rate baseline as robust, or the
+spiking/plastic model as an improved memory model.

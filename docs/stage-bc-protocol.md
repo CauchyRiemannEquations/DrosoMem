@@ -1,5 +1,9 @@
 # Stage B/C: small-circuit LIF validation and pi feasibility
 
+Editorial update: research terminology only; the registered numerical design is
+unchanged. Original protocol bytes are preserved in Git history; see
+[historical reproduction](historical-reproduction.md).
+
 Locked before circuit outcomes, 2026-09-27. Config: `configs/stage_bc.json`.
 Commit this protocol, implementation, tests and separate dependency lock before
 executing the four main graph conditions. No parameter sweep or seed selection.
@@ -107,5 +111,5 @@ python -m flying.training.stage_bc --output outputs/stage_bc --verify
 Completion closes only sourced small-circuit Stage B/C implementation, numerical
 validation and descriptive comparison. It does not establish cell-specific
 parameter validity, natural digit coding, dopamine plasticity (Phase 5B),
-whole-brain performance (Phase 6), or improved game opponents. Preserve the
-existing opponent while those claims remain untested or unsupported.
+whole-brain performance (Phase 6), or improved sequence recall. Preserve the
+existing baseline while those claims remain untested or unsupported.

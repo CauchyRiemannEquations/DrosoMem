@@ -6,7 +6,7 @@ All locked causal/locality controls pass in both circuits. **The separate neural
 response criterion fails:** both isolated test patterns evoke zero MBON11 spikes
 before conditioning, so selective post-conditioning suppression cannot be assessed.
 Pi transfer shows no improvement: mean recall falls from **3 to 2 digits**.
-Keep the existing rate-model game opponent.
+Keep the existing rate-model research baseline.
 
 [Locked protocol](phase5b-protocol.md) · [Type registry](../configs/compartments.json) ·
 [Configuration](../configs/phase5b.json) · [Artifacts](../results/phase5b) ·
@@ -130,4 +130,4 @@ input and activity limitations persist as graph coverage grows. Cell sampling
 alone does not quantify lost synaptic weight or prove the cause of silent probes;
 that requires a measured, separately locked comparison. Preserve the failed
 response result and complete those prerequisites before claiming a whole-brain
-or better biological opponent. Graphical game work stays deferred.
+model or improved sequence recall.

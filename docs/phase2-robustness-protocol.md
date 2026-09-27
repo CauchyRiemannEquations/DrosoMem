@@ -1,5 +1,9 @@
 # Locked Phase 2 follow-up: perturbation robustness — 2026-09-27
 
+Editorial update: research terminology only; the registered numerical design is
+unchanged. Original protocol bytes are preserved in Git history; see
+[historical reproduction](historical-reproduction.md).
+
 Base: 155cd224bc91ad2a59c9a0775808d1bbbfd4f508. Commit this protocol and code before
 the main perturbation outcomes. This closes a scoped robustness question on the
 current fixed-32 MB baseline, not a rerun of all 450 original Phase 2 conditions.
@@ -96,4 +100,4 @@ failure, separate confirmation, checkpoint corruption and resume equivalence.
 Full pytest must pass before the main experiment. No post-outcome tuning.
 
 Completion of this scoped experiment is distinct from passing robustness. Neither
-outcome completes LIF, biological dopamine, whole-brain modeling or game screens.
+outcome completes LIF, biological dopamine, or whole-brain modeling.

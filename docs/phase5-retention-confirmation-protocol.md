@@ -1,5 +1,9 @@
 # Locked anchored-weighting confirmation — 2026-09-27
 
+Editorial update: research terminology only; the registered numerical design is
+unchanged. Original protocol bytes are preserved in Git history; see
+[historical reproduction](historical-reproduction.md).
+
 Base: 96f0ccdb1a5c39722bd5a06833d51cbf741d8151. Written and committed before outcomes.
 This completes the open confirmation step of the Phase 5 readout investigation;
 it does not complete Phase 5B, spiking dynamics or Phase 6.
@@ -44,7 +48,7 @@ These are descriptive prespecified decisions, not significance tests.
 
 A primary pass supports the recall/retention effect within these small circuits;
 report any later-accuracy cost. A failure leaves fixed-32 as the validated default.
-Do not change game artifacts in this research run regardless of outcome.
+Do not change previously archived artifacts in this research run regardless of outcome.
 
 ## Verification
 
