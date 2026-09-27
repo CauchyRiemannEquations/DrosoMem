@@ -133,8 +133,10 @@ class DopamineLIF(LIFReservoir):
         self.learning_enabled = True
         self.network.run(duration_ms*b.ms, namespace={})
         self.learning_enabled = False
-        np.testing.assert_allclose(self.synapses.w[:]/b.mV,
-                                   self.weights.data*p.contact_mv, atol=0, rtol=0)
+        # Compare the stored SI values directly: dividing back to mV introduces
+        # an avoidable floating-point round trip for some integer contact counts.
+        np.testing.assert_array_equal(np.asarray(self.synapses.w[:]),
+                                      np.asarray(self.weights.data*p.contact_mv*b.mV))
         return self.weights.copy(), self.spike_arrays(), self.rule.events.copy()
 
 

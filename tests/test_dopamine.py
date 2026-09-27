@@ -95,6 +95,14 @@ def test_no_dopamine_matches_unmodified_lif_spikes():
         np.testing.assert_array_equal(spikes[k], base.spike_arrays()[k])
 
 
+def test_contact_to_si_validation_avoids_round_trip_error():
+    w, encoder = fixture()
+    w.data[:] = [29., 37., 113., 7.]
+    r = DopamineLIF(w, encoder, ROLES, MAPPING)
+    adapted, _, _ = r.condition(3, 0., 10., [], duration_ms=10.)
+    np.testing.assert_array_equal(adapted.data, w.data)
+
+
 @pytest.mark.parametrize('circuit', [701, 702])
 def test_exact_verified_type_mapping(circuit):
     directory = f'data/flywire_783_mb_left_kc512_s{circuit}'
