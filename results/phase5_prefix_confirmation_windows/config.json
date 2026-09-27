@@ -1,0 +1,45 @@
+{
+  "source_commit": "cc7d68fc874959e604df157f038c27bd226cf4f8",
+  "circuits": [
+    "data/flywire_783_mb_left_kc512_s701",
+    "data/flywire_783_mb_left_kc512_s702"
+  ],
+  "seeds": [
+    1142,
+    1143,
+    1144
+  ],
+  "initializations": [
+    0,
+    1,
+    2
+  ],
+  "normalizations": [
+    "incoming_l1"
+  ],
+  "models": [
+    "fly",
+    "role_shuffled"
+  ],
+  "schedules": [
+    "mbon_after_kc"
+  ],
+  "epochs": 2000,
+  "hidden_units": 8,
+  "pi_length": 200,
+  "prompt_length": 3,
+  "prefix_window": 32,
+  "prefix_weight": 4.0,
+  "leak": 0.6,
+  "gain": 0.9,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "learning_rate": 0.03,
+  "l2": 1e-05,
+  "offsets": [
+    0,
+    1000,
+    2000
+  ],
+  "protocol": "docs/phase5-prefix-confirmation-protocol.md"
+}

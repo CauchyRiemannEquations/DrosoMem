@@ -55,6 +55,12 @@ def test_interrupted_resume_matches_uninterrupted_and_replay(tmp_path):
             for name in a.files: np.testing.assert_array_equal(a[name],b[name])
     result=confirmation.verify(resumed)
     assert result['heads_replayed']==24 and result['independently_refitted']==12
+    manifest_path=resumed/'manifest.json'
+    manifest=json.loads(manifest_path.read_text())
+    assert all('\\' not in name for name in manifest['file_sha256'])
+    manifest['file_sha256']={name.replace('/', '\\'):digest for name,digest in manifest['file_sha256'].items()}
+    manifest_path.write_text(json.dumps(manifest))
+    assert confirmation.verify(resumed)==result
 
 
 def test_resume_rejects_config_and_code_changes(tmp_path,monkeypatch):

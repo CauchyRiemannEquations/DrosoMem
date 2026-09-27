@@ -48,19 +48,36 @@ class NonlinearReadout:
                   'w2':h.T@error+l2*p['w2'],'b2':error.sum(axis=0)}
         return float(loss),gradient,dict(cross_entropy=ce,accuracy=float(np.mean(logits.argmax(axis=1)==labels)))
 
-    def fit(self,states,labels,epochs=2000,learning_rate=.03,l2=1e-5,checkpoints=(400,2000),sample_weight=None):
+    def fit(self,states,labels,epochs=2000,learning_rate=.03,l2=1e-5,checkpoints=(400,2000),sample_weight=None,
+            sample_weight_schedule=None):
         if len(states)!=len(labels) or not len(labels) or epochs<1 or learning_rate<=0 or l2<0:
             raise ValueError('Invalid training configuration')
         if any(not isinstance(e,int) or e<1 or e>epochs for e in checkpoints):raise ValueError('Invalid checkpoint')
+        # Inclusive stage endpoints; one initialization and one continuous Adam clock.
+        schedule = [(epochs, sample_weight)]
+        if sample_weight_schedule is not None:
+            if sample_weight is not None:raise ValueError('Use static weights or a schedule, not both')
+            schedule = list(sample_weight_schedule)
+            previous = 0
+            for end, weights in schedule:
+                if type(end) is not int or not previous < end <= epochs:
+                    raise ValueError('Invalid weight schedule endpoint')
+                weights = np.asarray(weights,dtype=float)
+                if weights.shape != (len(labels),) or not np.all(np.isfinite(weights)) or np.any(weights<0) or weights.sum()<=0:
+                    raise ValueError('Invalid scheduled sample weights')
+                previous = end
+            if previous != epochs:raise ValueError('Weight schedule must cover all epochs')
         self.initialize(states);moments={k:np.zeros_like(p) for k,p in self.parameters.items()};variances=copy.deepcopy(moments)
-        saved={};history=[]
+        saved={};history=[];stage=0
         for epoch in range(1,epochs+1):
-            _,grad,_=self.objective(states,labels,l2,sample_weight)
+            if epoch > schedule[stage][0]:stage+=1
+            weights = schedule[stage][1]
+            _,grad,_=self.objective(states,labels,l2,weights)
             for k,p in self.parameters.items():
                 moments[k]=.9*moments[k]+.1*grad[k];variances[k]=.999*variances[k]+.001*grad[k]**2
                 p-=learning_rate*(moments[k]/(1-.9**epoch))/(np.sqrt(variances[k]/(1-.999**epoch))+1e-8)
             if epoch==1 or epoch%50==0 or epoch in checkpoints:
-                loss,_,metrics=self.objective(states,labels,l2,sample_weight);history.append(dict(epoch=epoch,objective=loss,**metrics))
+                loss,_,metrics=self.objective(states,labels,l2,weights);history.append(dict(epoch=epoch,objective=loss,**metrics))
             if epoch in checkpoints:saved[epoch]=copy.deepcopy(self)
         return saved,history
 
