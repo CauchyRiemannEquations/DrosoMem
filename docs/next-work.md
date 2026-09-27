@@ -4,16 +4,18 @@ The repository had no open issues or pull requests when this work began. Priorit
 come from the latest handoff, measured results and failures observed on a fresh
 Windows checkout.
 
-| Priority | Work | Acceptance evidence |
-|---|---|---|
-| P0 | Repair Windows checksum and checkpoint-path failures | Fresh checkout preserves data hashes; full tests pass; old and new manifest keys replay |
-| P1 | Reproduce cross-segment weighting before the next intervention | 216 new fits; complete saved-head replay; 18 independent refits; report both recall gain and later cost |
-| P1 | Test cumulative 32→64→128 weighting at a matched 6,000-update budget | Locked protocol; uniform/fixed/curriculum controls; all seeds and offsets; final-stage criteria; 972 replays and 27 independent refits |
-| P2 | Isolate numerical portability of nonlinear training | Record Python/BLAS/CPU details, compare per-step gradients on identical states, then verify controlled builds across platforms |
-| P2 | Add Windows/Linux CI for the small deterministic test suite | Both operating systems validate data checksums, schedule behavior and checkpoint replay on each PR |
-| Deferred | Whole-brain scale, LIF and biological dopamine | Revisit only after the present rate-model bottlenecks and biological assumptions are supported |
+| Priority | Status | Work | Acceptance evidence |
+|---|---|---|---|
+| P0 | Done | Repair Windows checksum and checkpoint-path failures | 84 tests pass in a fresh CRLF-enabled clone; archived hashes survive; old/new manifest keys replay |
+| P1 | Done | Reproduce cross-segment weighting | 216 new fits, 216 replays, 18 exact refits; qualitative tradeoff confirmed; cross-environment numerical differences documented |
+| P1 | Done, negative result | Test 32→64→128 weighting at 6,000 updates | 324 fits, 972 replays, 27 refits; real recall 27.19 versus fixed 33.87; all segment criteria fail |
+| P1 | Next research proposal | Design expansion with an explicit first-32 retention condition | New locked protocol, fresh seeds and matched budget; retain every failure; do not promote the failed curriculum |
+| P2 | Open | Isolate numerical portability of nonlinear training | Record Python/BLAS/CPU details, compare per-step gradients on identical states, then verify controlled builds across platforms |
+| P2 | Open | Add Windows/Linux CI for the small deterministic test suite | Both operating systems validate data checksums, schedule behavior and checkpoint replay on each PR |
+| Deferred | Deferred | Whole-brain scale, LIF and biological dopamine | Revisit after rate-model bottlenecks and biological assumptions are supported |
 
 See [Windows reproduction](phase5-windows-reproduction.md) and the
-[locked curriculum protocol](phase5-curriculum-protocol.md). The curriculum
-result report will determine whether a fresh-seed confirmation is justified;
-do not retune the schedule or success criteria after seeing its outcome.
+[locked curriculum protocol](phase5-curriculum-protocol.md) and
+[negative curriculum result](phase5-curriculum-results.md). The current curriculum
+should not replace fixed weighting. The retention proposal is future work, not an
+implemented or measured improvement; lock its criteria before any new experiment.

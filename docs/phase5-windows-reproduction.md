@@ -34,7 +34,9 @@ checksums were not altered. This compatibility step is now built into the verifi
 | 2000 | 6.28 | 35.17 | 84.85% → 75.82% |
 
 The direction of the original result replicates: increased early-prefix recall
-with a later-position accuracy cost. Shuffled graphs show the same tradeoff.
+with a later-position accuracy cost. Both prespecified new-segment criteria pass.
+Shuffled graphs show the same tradeoff. [All new records and checkpoints](../results/phase5_prefix_confirmation_windows)
+include the original-comparison table and numerical runtime metadata.
 
 This is **not bit-for-bit reproduction across environments**. Source and data
 byte hashes match the original, as do all 216 reservoir-weight and teacher-state
