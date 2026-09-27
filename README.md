@@ -6,11 +6,18 @@ and Phase 6 whole-brain work are not complete. [Phase-by-phase audit](docs/phase
 
 ## Can a fruit fly brain memorize π?
 
+**Latest research: anchored-weighting confirmation failed its prespecified
+criteria.** 324 fresh fits across offsets 0/1000/2000, 972 exact stage-head replays,
+27 independent refits and 132 passing tests. All three offsets failed early
+retention/completion; at offset 0, mean recall fell from fixed **36.83** to anchored
+**34.72**. Keep fixed-32 and proceed to Phase 2 robustness work.
+[Results](docs/phase5-retention-confirmation-results.md) · [Unfinished phases](docs/phase-status.md).
+
 **Playable console prototype:** a ten-minute study phase, 18 verified pretrained
 opponents and identical first-error scoring. All 18 reproduce their recorded
 197-digit rollouts; 125 tests pass. Fresh local training took 2.62 seconds including
 preparation for one 6,000-update fit. Graphical screens and live-training mode are
-next. [Play and read the timing evidence](docs/game-prototype.md).
+deferred while research takes priority. [Play and read the timing evidence](docs/game-prototype.md).
 
 ```bash
 python -m flying.game --record outputs/my_first_match.json
@@ -24,7 +31,7 @@ Flying explores whether a fruit fly connectome can act as a fixed biological-str
 
 > **실제 FlyWire 연결 데이터로 실행되는 Python MVP입니다.** 현재 결과는 작은 부분망과 단순 dynamics의 계산 실험입니다. 실제 초파리가 원주율을 이해하거나 외웠다는 뜻이 아닙니다.
 
-**Latest: first-prefix retention discovery completed — 108 fits, 324 exact stage-head replays, 9 independent refits, 96 tests passed.** Preserving first-32 loss share increased real-circuit recall from **31.67 to 38.89 digits** on fresh seeds at the game opening (offset 0), with no loss among 15 initially complete prefixes. Recall/retention criteria passed; later accuracy fell from **81.58% to 80.00%**, so the stronger joint criterion failed. This is a candidate pending separate confirmation. [Results](docs/phase5-retention-results.md) · [Game direction](docs/game-direction.md) · [Next work](docs/next-work.md).
+**Previous: first-prefix retention discovery completed — 108 fits, 324 exact stage-head replays, 9 independent refits, 96 tests passed.** Preserving first-32 loss share increased real-circuit recall from **31.67 to 38.89 digits** on fresh seeds at the game opening (offset 0), with no loss among 15 initially complete prefixes. Recall/retention criteria passed; later accuracy fell from **81.58% to 80.00%**, so the stronger joint criterion failed. This is a candidate pending separate confirmation. [Results](docs/phase5-retention-results.md) · [Game direction](docs/game-direction.md) · [Next work](docs/next-work.md).
 
 **Previous: matched-budget prefix curriculum completed — 324 fits, 972 exact saved-head replays, 27 independent refits, 84 tests passed.** Expanding the weighted window 32→64→128 did not beat fixed 32-target weighting: real-circuit mean recall was **27.19 versus 33.87 digits**, and all three segment success criteria failed. Of 48 real models that initially completed 32 digits, 19 lost that completion by the final stage. Windows checkout/checkpoint replay failures are also fixed. [Results](docs/phase5-curriculum-results.md) · [Windows reproduction and numerical limits](docs/phase5-windows-reproduction.md) · [Prioritized next work](docs/next-work.md).
 
@@ -273,7 +280,8 @@ Three schedules keep the same connectome weights and 48-MBON readout budget. Upd
 - [x] Phase 0: primary-source review, verified download/schema and provenance.
 - [x] Phase 1: real-subset fixed reservoir, linear readout, teacher forcing, free recall, 3 models × 3 seeds, plots and tests.
 - [x] Phase 2 first study: five 300–1000-neuron subsets, normalization/length curves, fresh seeds and leaky/memoryless controls (450 runs).
-- [ ] Phase 2 follow-up: perturbation robustness, delayed memory tasks and an independent confirmation protocol.
+- [x] Phase 2 delayed-memory follow-up: independent random-input tasks implemented and measured in Phase 3b.
+- [ ] Phase 2 remaining follow-up: perturbation/recall robustness and its independent confirmation protocol.
 - [x] Phase 3: annotated KC/MBON/DAN/APL subsets, KC-only input, MBON-only readout, role-preserving shuffle and structural ablations; 288 measured runs.
 - [ ] Stage B/C: Brian2 LIF dynamics and better-supported neuron/synapse parameters after rate-model diagnostics.
 - [x] Phase 3b: update-count sweep, independent delayed-input decoding and equal-size readout diagnostics.
@@ -281,7 +289,8 @@ Three schedules keep the same connectome weights and 48-MBON readout budget. Upd
 - [x] Phase 5A: artificial scalar reward and eligibility-trace protocol, with delayed and yoked controls.
 - [ ] Phase 5B: biologically supported dopamine/compartment modulation; current DAN nodes remain ordinary signed nodes.
 - [ ] Phase 6: whole-brain scale simulation after sparse performance and biological assumptions are justified.
-- [ ] Game MVP: verified checkpoint opponent, shared first-error scoring, then a playable human-versus-model digit-by-digit interface. [Product direction](docs/game-direction.md).
+- [x] Game core: verified pretrained opponents, shared first-error scoring and a timed console interface.
+- [ ] Game screens: deferred by user request until research work is advanced. [Phase audit](docs/phase-status.md) · [Product direction](docs/game-direction.md).
 
 ## GitHub structure
 

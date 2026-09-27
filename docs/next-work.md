@@ -19,7 +19,7 @@ and Phase 6 acceptance work.
 | P1 | Done | Verified opponent adapter, scoring and timed console game | 18 fixed-32 opponents reproduce full 197-digit rollouts without reference access; 600-second study gate; 125 tests; [prototype](game-prototype.md) |
 | Deferred | User deferred | Graphical ten-minute study → recall → results flow | Return after the research-first pass; keep the console core |
 | Deferred | User deferred | Actual fresh training during preparation | Return with game work; fixed budget and honest progress |
-| P1 | In progress | Confirm anchored weighting on fresh seeds and other segments | [Locked protocol](phase5-retention-confirmation-protocol.md): 324 fits, offsets 0/1000/2000, all-offset criteria |
+| P1 | Done, confirmation failed | Confirm anchored weighting on fresh seeds and other segments | 324 fits / 972 stage heads; all offsets fail retention/completion, offset 0 also fails recall; [results](phase5-retention-confirmation-results.md) |
 | P1 | Next original-phase task | Complete Phase 2 perturbation robustness | Lock perturbation types and strengths, matched controls, fresh noise seeds, and independent confirmation before outcomes |
 | P2 | Open | Isolate numerical portability of nonlinear training | Record Python/BLAS/CPU details, compare per-step gradients on identical states, then verify controlled builds across platforms |
 | P2 | Open | Add Windows/Linux CI for the small deterministic test suite | Both systems validate data checksums, schedule behavior and checkpoint replay on main pushes and PRs |
@@ -30,4 +30,6 @@ See [Windows reproduction](phase5-windows-reproduction.md) and the
 [negative curriculum result](phase5-curriculum-results.md). The current curriculum
 should not replace fixed weighting. The retention intervention passed its separate
 recall/retention discovery criteria but failed the stronger joint criterion;
-[read the result and limits](phase5-retention-results.md). It is a candidate, not the new default.
+[read the discovery](phase5-retention-results.md). The subsequent
+[fresh-seed confirmation failed](phase5-retention-confirmation-results.md).
+Keep fixed-32 as the default and proceed to the original robustness work.

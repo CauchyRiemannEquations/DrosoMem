@@ -2,7 +2,8 @@
 
 The game connects a trained FlyWire opponent to a timed study phase and a shared
 first-error judge. This is a local console prototype; graphical screens and live
-training mode remain next work.
+training mode remain unfinished and are now deferred by the user's research-first
+priority. See the [original phase audit](phase-status.md).
 
 ## Play
 
@@ -41,7 +42,9 @@ from the retention study: two circuits × three seeds × three initializations.
 All were trained on 200 digits; “fixed-32” means increased loss weight on the
 first 32 continuation targets, not a 32-digit training dataset. A seed chooses
 uniformly among entries before play. No best-score selection or adjustment to
-human performance occurs. Anchored weighting remains a research candidate.
+human performance occurs. Anchored weighting subsequently failed its
+[fresh-seed confirmation](phase5-retention-confirmation-results.md); fixed-32
+remains the shipped baseline.
 
 Each NPZ contains sparse connectivity, digit encoder patterns, neuron roles,
 observation indices, normalization and readout weights. It contains **no target
