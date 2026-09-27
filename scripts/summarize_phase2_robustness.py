@@ -32,6 +32,7 @@ def main():
             ax.set_title(f"{cohort['name'].capitalize()} / {title}",fontsize=10)
             if kind != 'edge_dropout':
                 ax.set_xscale('symlog',linthresh=1e-6)
+                ax.set_xlim(-1e-7,1.2e-2)
                 ax.set_xticks(cfg['strengths'][kind],['0','1e-6','1e-4','1e-3','1e-2'])
                 ax.set_xlabel('Absolute state-noise SD')
             else:

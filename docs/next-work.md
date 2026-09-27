@@ -7,7 +7,7 @@ see [game direction](game-direction.md). Verified work now goes directly to main
 
 **Latest user priority: original research phases first; graphical game work is
 deferred.** The original roadmap is not complete. See the [phase audit and
-research-first order](phase-status.md) for Phase 2 follow-up, Stage B/C, Phase 5B
+research-first order](phase-status.md) for the completed scoped Phase 2 follow-up, Stage B/C, Phase 5B
 and Phase 6 acceptance work.
 
 | Priority | Status | Work | Acceptance evidence |
@@ -20,10 +20,11 @@ and Phase 6 acceptance work.
 | Deferred | User deferred | Graphical ten-minute study → recall → results flow | Return after the research-first pass; keep the console core |
 | Deferred | User deferred | Actual fresh training during preparation | Return with game work; fixed budget and honest progress |
 | P1 | Done, confirmation failed | Confirm anchored weighting on fresh seeds and other segments | 324 fits / 972 stage heads; all offsets fail retention/completion, offset 0 also fails recall; [results](phase5-retention-confirmation-results.md) |
-| P1 | In progress | Complete Phase 2 perturbation robustness | [Locked protocol](phase2-robustness-protocol.md): 72 frozen heads, two model/noise-seed cohorts, pulse/ongoing state noise and edge dropout; 16,128 recalls |
+| P1 | Done, robustness criteria failed | Complete scoped Phase 2 perturbation robustness | 72 frozen heads / 16,128 exact recall replays / 216 null checks; both cohorts fail all primary families; 148 tests; [results](phase2-robustness-results.md) |
+| P1 | Next original-phase task | Stage B/C: sourced small-circuit LIF implementation and validation | Lock equations, physiological units, parameter sources and reference tests before outcomes; separate validation from any recall-improvement claim |
 | P2 | Open | Isolate numerical portability of nonlinear training | Record Python/BLAS/CPU details, compare per-step gradients on identical states, then verify controlled builds across platforms |
 | P2 | Open | Add Windows/Linux CI for the small deterministic test suite | Both systems validate data checksums, schedule behavior and checkpoint replay on main pushes and PRs |
-| Research backlog | Not complete | Stage B/C LIF, Phase 5B dopamine and Phase 6 whole brain | Proceed in [prerequisite order](phase-status.md); biological grounding and measured scaling are required |
+| Research backlog | Not complete | Phase 5B dopamine and Phase 6 whole brain | Proceed in [prerequisite order](phase-status.md); biological grounding and measured scaling are required |
 
 See [Windows reproduction](phase5-windows-reproduction.md) and the
 [locked curriculum protocol](phase5-curriculum-protocol.md) and
@@ -32,4 +33,6 @@ should not replace fixed weighting. The retention intervention passed its separa
 recall/retention discovery criteria but failed the stronger joint criterion;
 [read the discovery](phase5-retention-results.md). The subsequent
 [fresh-seed confirmation failed](phase5-retention-confirmation-results.md).
-Keep fixed-32 as the default and proceed to the original robustness work.
+Keep fixed-32 as the clean reference. The [subsequent robustness study](phase2-robustness-results.md)
+also failed its primary criteria; proceed to sourced Stage B/C validation without
+presenting the existing noise-free recall as perturbation-robust memory.

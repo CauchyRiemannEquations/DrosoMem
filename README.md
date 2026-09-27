@@ -1,12 +1,20 @@
 # Flying
 
 **Current priority: finish the remaining original research stages before game
-screen work.** Phase 2 robustness, Stage B/C LIF, Phase 5B biological modulation
+screen work.** Stage B/C LIF, Phase 5B biological modulation
 and Phase 6 whole-brain work are not complete. [Phase-by-phase audit](docs/phase-status.md).
 
 ## Can a fruit fly brain memorize π?
 
-**Latest research: anchored-weighting confirmation failed its prespecified
+**Latest research: scoped Phase 2 robustness completed; acceptance criteria failed.**
+72 frozen heads from two independently seeded model cohorts, 16,128 exact recall
+replays and 148 passing tests. Confirmation real-graph mean recall fell from
+**36.83 clean digits** to **1.59** with one state perturbation (SD .001), **0.48**
+with ongoing noise, and **1.51** with 1% edge removal. These are computational
+stress levels, not biological noise measurements. Next: sourced Stage B/C LIF
+validation. [Results and scale limits](docs/phase2-robustness-results.md).
+
+**Previous research: anchored-weighting confirmation failed its prespecified
 criteria.** 324 fresh fits across offsets 0/1000/2000, 972 exact stage-head replays,
 27 independent refits and 132 passing tests. All three offsets failed early
 retention/completion; at offset 0, mean recall fell from fixed **36.83** to anchored
@@ -281,7 +289,7 @@ Three schedules keep the same connectome weights and 48-MBON readout budget. Upd
 - [x] Phase 1: real-subset fixed reservoir, linear readout, teacher forcing, free recall, 3 models × 3 seeds, plots and tests.
 - [x] Phase 2 first study: five 300–1000-neuron subsets, normalization/length curves, fresh seeds and leaky/memoryless controls (450 runs).
 - [x] Phase 2 delayed-memory follow-up: independent random-input tasks implemented and measured in Phase 3b.
-- [ ] Phase 2 remaining follow-up: perturbation/recall robustness and its independent confirmation protocol.
+- [x] Phase 2 robustness follow-up on the current MB baseline: two model/noise-seed cohorts and full replay; primary robustness criteria failed. [Scope and results](docs/phase2-robustness-results.md).
 - [x] Phase 3: annotated KC/MBON/DAN/APL subsets, KC-only input, MBON-only readout, role-preserving shuffle and structural ablations; 288 measured runs.
 - [ ] Stage B/C: Brian2 LIF dynamics and better-supported neuron/synapse parameters after rate-model diagnostics.
 - [x] Phase 3b: update-count sweep, independent delayed-input decoding and equal-size readout diagnostics.
