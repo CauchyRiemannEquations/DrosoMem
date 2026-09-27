@@ -1,5 +1,10 @@
 # Original research phases: completion audit — 2026-09-27
 
+Update 2026-09-28: the subsequent [ACT I matched-memory study](whole-brain-memory-results.md)
+has also completed, with no established whole-brain recall improvement. Its scope
+is distinct from the original Phase 6 feasibility row below. Use
+[research-status](research-status.md) for the current question-based audit.
+
 **The research-first execution pass is complete within the scopes below.** Every
 listed original phase now has executed evidence, including whole-brain Phase 6
 feasibility. Several learning and robustness criteria failed. This is not a claim

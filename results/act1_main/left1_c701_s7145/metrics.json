@@ -1,0 +1,30 @@
+{
+  "level": "left1",
+  "circuit_seed": 701,
+  "seed": 7145,
+  "offset": 0,
+  "pi_memory_score": 32,
+  "autonomous_prefix_bits": 106.30169903639559,
+  "first_error_position": 33,
+  "first_error_digit_index": 35,
+  "censored": false,
+  "train_loss": 0.48944844402308296,
+  "next_digit_accuracy": 0.7537688442211056,
+  "teacher_forced_accuracy": 0.7563451776649747,
+  "autonomous_accuracy": 0.25380710659898476,
+  "region_accuracy": {
+    "1-32": 1.0,
+    "33-64": 0.125,
+    "65-128": 0.125,
+    "129-197": 0.08695652173913043
+  },
+  "effective_rank": 12.804112513401536,
+  "observed_mean_abs": 0.014902021291310717,
+  "active_neurons_mean": 2780.477386934673,
+  "active_neurons_max": 2795,
+  "activity_sparsity": 0.005195925962549808,
+  "mean_observed_cosine": 0.9967510719687057,
+  "full_decay_ratio_32": 0.00018254013902588097,
+  "observed_decay_ratio_32": 0.00047108368476391204,
+  "runtime_seconds": 1.6016131999999743
+}

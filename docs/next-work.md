@@ -1,4 +1,12 @@
-# Prioritized work — 2026-09-27
+# Prioritized work — updated 2026-09-28
+
+**ACT I follow-up is now complete with a negative main result:** 50 matched fits,
+50 exact replays, five exact independent refits; whole-brain means 31.8/34.1
+versus partial 35.0. See [results](whole-brain-memory-results.md) and
+[current research status](research-status.md). The table below records the prior
+execution pass. Its whole-brain proposal is now superseded by those results.
+The next single experiment is the small four-family ACT II comparison described
+in the result report; no new plasticity sweep is prioritized.
 
 The repository had no open issues or pull requests when this work began. Priorities
 come from the latest handoff, measured results and failures observed on a fresh

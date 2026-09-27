@@ -1,4 +1,5 @@
 """Replay/refit the first archived fixed-32 condition, all initializations."""
+import argparse
 import json
 import platform
 import subprocess
@@ -8,7 +9,9 @@ import numpy as np
 from threadpoolctl import threadpool_limits, threadpool_info
 from flying.training.phase5_prefix import conditions, fit_head, metrics, NonlinearReadout, evaluate_recall, sha256
 
-out = Path('results/act1_baseline'); out.mkdir(exist_ok=False)
+parser = argparse.ArgumentParser()
+parser.add_argument('--out', type=Path, default=Path('outputs/act1_baseline_new'))
+out = parser.parse_args().out; out.mkdir(parents=True, exist_ok=False)
 source = Path('results/phase5_prefix_confirmation_windows')
 manifest = json.loads((source/'manifest.json').read_text())
 cfg = manifest['context']['config']
