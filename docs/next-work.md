@@ -22,10 +22,11 @@ and Phase 6 acceptance work.
 | P1 | Done, confirmation failed | Confirm anchored weighting on fresh seeds and other segments | 324 fits / 972 stage heads; all offsets fail retention/completion, offset 0 also fails recall; [results](phase5-retention-confirmation-results.md) |
 | P1 | Done, robustness criteria failed | Complete scoped Phase 2 perturbation robustness | 72 frozen heads / 16,128 exact recall replays / 216 null checks; both cohorts fail all primary families; 148 tests; [results](phase2-robustness-results.md) |
 | P1 | Done within small-circuit scope; weak recall | Stage B/C: sourced LIF implementation and validation | Four graph conditions, independent-reference and timestep checks pass; eight exact replays/refits; 166 tests; real recall 3.0 versus rate 33.5; [results](stage-bc-results.md) |
-| P1 | Next original-phase task | Phase 5B: compartment mapping and dopamine-dependent modulation | Pin primary sources and mappings; implement targeted learning controls on small circuits before scaling; plain DAN graph nodes do not satisfy this requirement |
+| P1 | Done in gamma1/pedc scope; response criterion failed | Phase 5B: compartment mapping and dopamine-dependent modulation | Twelve cases / eight full recalls exactly rebuilt; 181 tests; local causal/null checks pass, both probe baselines silent; pi recall 3 -> 2; [results](phase5b-results.md) |
+| P1 | Next original-phase task | Phase 6: input coverage, sparse scaling and whole-brain prerequisites | Quantify retained input, benchmark memory/runtime and activity as graph coverage grows; lock comparisons before outcomes and preserve the Phase 5B response failure |
 | P2 | Open | Isolate numerical portability of nonlinear training | Record Python/BLAS/CPU details, compare per-step gradients on identical states, then verify controlled builds across platforms |
 | P2 | Open | Add Windows/Linux CI for the small deterministic test suite | Both systems validate data checksums, schedule behavior and checkpoint replay on main pushes and PRs |
-| Research backlog | Not complete | Phase 5B dopamine and Phase 6 whole brain | Proceed in [prerequisite order](phase-status.md); biological grounding and measured scaling are required |
+| Research backlog | Not complete | Whole-brain Phase 6 and broader biological validation | Phase 5B does not establish all-compartment rules or physiological calibration; proceed in [prerequisite order](phase-status.md) |
 
 See [Windows reproduction](phase5-windows-reproduction.md) and the
 [locked curriculum protocol](phase5-curriculum-protocol.md) and
@@ -36,6 +37,7 @@ recall/retention discovery criteria but failed the stronger joint criterion;
 [fresh-seed confirmation failed](phase5-retention-confirmation-results.md).
 Keep fixed-32 as the clean reference. The [subsequent robustness study](phase2-robustness-results.md)
 also failed its primary criteria. The [subsequent Stage B/C LIF study](stage-bc-results.md)
-passes numerical validation but has weak recall. Proceed to Phase 5B with sourced
-compartments and dopamine rules; do not present the rate baseline as robust or
-the new spiking implementation as an improved opponent.
+passes numerical validation but has weak recall. The [Phase 5B follow-up](phase5b-results.md)
+implements a sourced local dopamine rule but fails its functional-response criterion.
+Proceed to Phase 6 input-coverage and scaling prerequisites. Do not present the
+rate baseline as robust, or the spiking/plastic model as an improved opponent.

@@ -1,18 +1,27 @@
 # Flying
 
 **Current priority: finish the remaining original research stages before game
-screen work.** Small-circuit Stage B/C LIF validation is complete; Phase 5B
-biological modulation and Phase 6 whole-brain work remain unfinished.
+screen work.** Small-circuit Stage B/C and scoped gamma1/pedc Phase 5B experiments
+are complete; Phase 5B's neural-response criterion failed. Phase 6 whole-brain
+work remains unfinished, and broader biological validation is not established.
 [Phase-by-phase audit](docs/phase-status.md).
 
 ## Can a fruit fly brain memorize π?
 
-**Latest research: sourced small-circuit Stage B/C LIF validation completed.**
+**Latest research: compartment-local Phase 5B dopamine rule implemented.**
+Twelve controlled conditioning cases pass the local causal-rule checks: only
+paired KC/PPL101 activity changes the selected connections (28.12% depression of
+active edges). However, both isolated probe baselines are silent, so the neural
+response criterion fails. Mean pi transfer recall falls **3 -> 2 digits**, with
+no improvement after refitting the readout. Next: Phase 6 input-coverage and
+sparse-scaling prerequisites. [Results and limits](docs/phase5b-results.md) ·
+[Locked protocol](docs/phase5b-protocol.md).
+
+**Previous research: sourced small-circuit Stage B/C LIF validation completed.**
 Independent spike/state references and three timestep grids pass all locked
 checks. Eight matched-budget readouts give real-circuit mean recall **3.0 digits
 for LIF versus 33.5 for the rate baseline**. This one-seed feasibility comparison
 does not establish a better opponent or cell-specific physiological validity.
-Next: Phase 5B compartment mapping and dopamine-dependent learning.
 [Results and scope](docs/stage-bc-results.md) · [Locked protocol](docs/stage-bc-protocol.md).
 
 **Previous research: scoped Phase 2 robustness completed; acceptance criteria failed.**
@@ -304,7 +313,7 @@ Three schedules keep the same connectome weights and 48-MBON readout budget. Upd
 - [x] Phase 3b: update-count sweep, independent delayed-input decoding and equal-size readout diagnostics.
 - [x] Phase 4: supervised KC→MBON plasticity with fixed-connectivity and permuted-teacher controls; 432 reproducible runs.
 - [x] Phase 5A: artificial scalar reward and eligibility-trace protocol, with delayed and yoked controls.
-- [ ] Phase 5B: biologically supported dopamine/compartment modulation; current DAN nodes remain ordinary signed nodes.
+- [x] Phase 5B, gamma1/pedc model scope: source-supported type mapping and actual DAN-spike-gated local depression; targeted controls pass, neural-response criterion fails. Not an all-compartment physiological model. [Results](docs/phase5b-results.md).
 - [ ] Phase 6: whole-brain scale simulation after sparse performance and biological assumptions are justified.
 - [x] Game core: verified pretrained opponents, shared first-error scoring and a timed console interface.
 - [ ] Game screens: deferred by user request until research work is advanced. [Phase audit](docs/phase-status.md) · [Product direction](docs/game-direction.md).

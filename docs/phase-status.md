@@ -15,7 +15,7 @@ prioritize the original research stages and defer game screen work.
 | Phase 4 | Completed, no reliable recall gain established | 432 constrained-plasticity runs: [results](phase4-results.md) |
 | Phase 5A | Completed, negative baseline | Scalar reward/eligibility-trace study: [results](phase5-results.md); subsequent diagnostics, BPTT, timing and readout studies are follow-ups |
 | Phase 5 readout follow-up | Confirmation completed; criteria failed | 324 fresh fits: anchored weighting failed retention/completion at every offset and recall at offset 0. Keep fixed-32; [results](phase5-retention-confirmation-results.md) |
-| Phase 5B | Not implemented | Source-supported compartment mapping and dopamine-dependent modulation, with targeted controls. Artificial global reward and ordinary DAN graph nodes do not satisfy this stage |
+| Phase 5B | Completed in gamma1/pedc model scope; neural-response criterion failed | Exact PPL101/MBON11 mapping and alpha3 control; actual DAN-spike-gated LTD, 12 conditioning cases, all causal/null checks pass. Both isolated probe baselines are silent; pi recall 3 -> 2. This is not an all-compartment or physiologically calibrated model; [results](phase5b-results.md) |
 | Phase 6 | Not implemented; prerequisite-dependent | Whole-brain data/graph, sparse memory/time benchmarks, validated dynamics, reproducible whole-brain run. The bundled 686-neuron MB circuits do not satisfy whole-brain scope |
 | Game | Console core completed; UI deferred | Existing artifacts remain available. No new screen work while research is the priority |
 
@@ -32,12 +32,15 @@ hypothesis succeeded. Negative Phase 4/5 results must remain visible.
 3. Completed: sourced Stage B/C small-circuit LIF implementation, numerical checks
    and paired feasibility comparison. Keep the rate opponent; low LIF recall is
    preserved rather than repaired with an unregistered parameter sweep.
-4. **Next:** Phase 5B source-supported compartment mapping and dopamine-dependent
-   modulation with targeted controls. The LIF runs' DAN cells were silent; their
-   presence alone does not implement biological learning. Recheck primary sources
-   before choosing compartment assignments or plasticity rules.
-5. Benchmark sparse scaling and execute Phase 6 only with justified dynamics and
-   data. Record actual resource limits if encountered, not assumed blockers.
+4. Completed: scoped Phase 5B gamma1/pedc mapping, online modulation and targeted
+   controls. The rule checks pass but selective probe suppression cannot be
+   assessed from silent baseline responses. Do not equate this with validated
+   biological learning or improved pi memory.
+5. **Next:** Phase 6 prerequisites: audit retained input versus graph coverage,
+   benchmark sparse memory/runtime, and test activity sensitivity before a
+   reproducible whole-brain run. The current samples retain 512 of 2,580 left
+   KCs; quantify actual input loss rather than assuming its effect. Record actual
+   resource limits if encountered, not assumed blockers.
 6. Return to the graphical game flow after the research-first pass, or when the
    user explicitly changes priorities.
 

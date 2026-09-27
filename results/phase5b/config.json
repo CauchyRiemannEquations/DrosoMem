@@ -1,0 +1,48 @@
+{
+  "experiment": "gamma1_pedc_causal_dopamine",
+  "protocol": "docs/phase5b-protocol.md",
+  "registry": "configs/compartments.json",
+  "circuits": [
+    "data/flywire_783_mb_left_kc512_s701",
+    "data/flywire_783_mb_left_kc512_s702"
+  ],
+  "seed": 6142,
+  "input_fraction": 0.1,
+  "conditioned_digit": 3,
+  "control_digit": 1,
+  "arms": [
+    "no_dopamine",
+    "paired",
+    "backward",
+    "dopamine_only",
+    "wrong_compartment",
+    "blocked"
+  ],
+  "pi_arms": [
+    "no_dopamine",
+    "paired"
+  ],
+  "conditioning_ms": 3000.0,
+  "cs_ms": 1000.0,
+  "probe_digits": 20,
+  "forward_dan_ms": [
+    200.0,
+    700.0,
+    1200.0,
+    1700.0
+  ],
+  "backward_dan_ms": [
+    0.0,
+    500.0,
+    1000.0,
+    1500.0
+  ],
+  "backward_cs_start_ms": 2000.0,
+  "eligibility_ms": 1000.0,
+  "learning_rate": 0.1,
+  "floor_fraction": 0.1,
+  "pi_length": 200,
+  "epochs": 6000,
+  "weight_atol": 1e-10,
+  "minimum_active_depression": 0.05
+}
