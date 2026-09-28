@@ -39,7 +39,19 @@ This is not a new execution of every historical experiment.
 | Memory-critical subnetwork? | Partial prior ablations only | No comprehensive matched ablation/control study or causal circuit localization; ACT III open |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
-## Latest ACT III moment-alignment update
+## Latest ACT III residual diagnostics — 2026-09-29
+
+[Two completed diagnostics](residual-orientation-results.md) reject low-half
+source-mode dominance and preferential decoder-sensitive residual orientation.
+Fixed ranks25–48:10–18% state energy but about0–1% mean signed score attribution.
+Actual/reference geometric score-distortion ratios are below1 in both directions
+and both archived cohorts. Each study34 exact replays/374 rows; second5984
+signed-permutation control energies.192 tests pass/8 optional skips. These are
+geometric decoding diagnostics, not neuron-group ablations or memory improvements.
+Prior moment-alignment improvements and access/retention failures stay intact.
+Next: preregistered fresh-seed replication of the fixed alignment comparison.
+
+## Preceding moment-alignment update
 
 [Train-only mean/std alignment](moment-alignment-results.md) improves both
 directions in both archived cohorts: main51.007% /51.607%, confirmation49.447%
@@ -48,8 +60,8 @@ H2 access fails because mean R² stays negative; H3 5pp retention also fails.
 The label-free adapter estimates96 moments; source heads stay fixed.34 directions
 and374 lag rows verified,186 tests pass/8 optional skips.7,168 old result files
 unchanged. These are previously observed cohorts, not new confirmation seeds.
-Next proposed: singular-mode decomposition of remaining state mismatch and
-decoder amplification. This is decoding analysis, not recurrent learning.
+The subsequent source-mode and orientation diagnostics are complete above.
+This remains decoding analysis, not recurrent learning.
 
 ## Preceding frozen-transfer update
 

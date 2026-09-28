@@ -1,20 +1,19 @@
-# Prioritized work — updated 2026-09-28
+# Prioritized work — updated 2026-09-29
 
-**ACT III train-only moment alignment complete: improvement, incomplete recovery.**
-[Results](moment-alignment-results.md): main R→F51.007% / F→R51.607%; archived
-confirmation49.447% /52.886%. Target refits79–80%. H1 improvement passes in
-both directions/cohorts, but H2 access (negative R²) and H3 retention fail.
-34 directions including2 smoke,374 lag rows verified; no target supervised fits,
-96 target moment parameters per direction.186 tests pass,8 optional skips.
-7,168 prior result files unchanged. This reuses observed cohorts and is not a
-new fresh-seed confirmation. Historical negatives remain unchanged.
+**Two ACT III residual diagnostics complete; both registered hypotheses fail.**
+[Results](residual-orientation-results.md): source ranks25–48 account for only
+about0–1% mean signed score distortion, despite10–18% state residual energy.
+Energy-matched orientation references also do not support preferential
+amplification: geometric actual/reference ratios are below1 in all four cells.
+Each diagnostic verifies34 directions/374 lag rows; orientation verifies5984
+control energies.192 tests pass,8 optional skips. Historical results preserved.
 
-Next single proposed experiment: **singular-mode decomposition of residual
-state mismatch and frozen-head amplification after moment alignment**. Fit only
-the diagnostic basis to source training features; decompose paired state and
-score differences without new decoder, rotation, gain or held-out fitted choices.
-Preregister the decomposition and reporting before execution. Proposed, not run.
-Broader ACT III ablations and ACT IV internal learning remain open.
+Next single proposed experiment: **fresh, previously unobserved paired seeds for
+the fixed unaligned/moment-aligned/target-refit comparison**. Preregister seeds
+and retain the existing improvement/access/retention criteria and hyperparameters.
+This resolves the reuse-of-observed-cohorts limitation of the49–53% alignment
+result; do not tune cutoff, gain, head or the two failed diagnostic hypotheses.
+Proposed, not executed. Broader ACT III ablations and ACT IV learning remain open.
 
 ## Historical handoff notes (superseded by the result above)
 

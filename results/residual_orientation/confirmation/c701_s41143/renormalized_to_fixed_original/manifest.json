@@ -1,0 +1,27 @@
+{
+  "identity": {
+    "cohort": "confirmation",
+    "direction": "renormalized_to_fixed_original",
+    "circuit_seed": 701,
+    "seed": 41143,
+    "train_seed": 42143,
+    "test_seed": 43143,
+    "rewire_seed": 44143,
+    "perturb_seed": 46148
+  },
+  "source_path": "results/normalization_control_confirmation/renormalized_c701_s41143",
+  "target_path": "results/normalization_control_confirmation/fixed_original_c701_s41143",
+  "moment_path": "results/moment_alignment/confirmation/c701_s41143/renormalized_to_fixed_original",
+  "parent_path": "results/residual_modes/confirmation/c701_s41143/renormalized_to_fixed_original",
+  "source_hashes": {
+    "results/normalization_control_confirmation/renormalized_c701_s41143": "046b7816dd2eb90d6337828f67f452aa649ec3f237cc05fd0fd8a15cc8b9675f",
+    "results/normalization_control_confirmation/fixed_original_c701_s41143": "beb5dc3b35f3d867dc240feff94ab201be43b661b5075d0324f57c5cadd3619d",
+    "results/moment_alignment/confirmation/c701_s41143/renormalized_to_fixed_original": "bd02c5904ae426c21928be167dbc7a559b1f6615a6fe12f75014804f1876cb3b",
+    "results/residual_modes/confirmation/c701_s41143/renormalized_to_fixed_original": "24c60355594b2e6564ef92ec7a8cc3996b95c311d11408415f46b2d6f7c788a0"
+  },
+  "new_supervised_fits": 0,
+  "artifacts": {
+    "checkpoint.npz": "c17b95a1d42107e477ea5fe742bcec449982872eaabd48422c71906874caf7b0",
+    "metrics.json": "e14ccfe19bd9559c9fa3a8ba0054270033d944a46af14be8fd8e32f0fa6e7679"
+  }
+}

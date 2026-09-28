@@ -1,0 +1,54 @@
+{
+  "protocol": "docs/residual-orientation-protocol.md",
+  "source": "results/residual_modes",
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "split": 24,
+  "energy_floor": 1e-24,
+  "log2_ratio_min": 1.0,
+  "control_seeds": [
+    51400,
+    51401,
+    51402,
+    51403,
+    51404,
+    51405,
+    51406,
+    51407,
+    51408,
+    51409,
+    51410,
+    51411,
+    51412,
+    51413,
+    51414,
+    51415
+  ],
+  "bootstrap_seed": 51399,
+  "bootstrap_draws": 10000,
+  "max_seconds": 1800,
+  "max_rss_bytes": 3221225472
+}

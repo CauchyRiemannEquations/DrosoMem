@@ -9,14 +9,15 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 
 ## Current research
 
-Latest: [train-only moment alignment](docs/moment-alignment-results.md) raises
-frozen-head transfer from25–27% to49–53% without target-label fitting. It still
-fails the registered access/retention gates: target refits reach79–80%, and
-aligned regression R² remains negative. Improvement is distinct from portability.
+Latest: [two residual-distortion diagnostics](docs/residual-orientation-results.md)
+do not support either scoped hypothesis: the fixed low-variance half does not dominate
+score distortion, and observed distortion is smaller on average than an
+energy-matched random-orientation reference. Prior alignment gains and failed
+access/retention criteria remain unchanged.
 
-Current position: scoped ACT III structure, normalization and alignment diagnostics
-complete. Next proposed: decompose residual state mismatch and fixed-head
-amplification. Broader ablations and internal learning remain open.
+Current position: scoped ACT III normalization/readout diagnostics complete.
+Next proposed: fresh-seed confirmation of the fixed moment-alignment comparison.
+Broader ablations and internal learning remain open.
 
 The established models freeze recurrent connectivity and train an external
 readout. Distinguish **representation**, **decoding** and **internal learning**.
@@ -30,8 +31,8 @@ Use Python3.12 and a clean environment; commands run from the repository root.
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-act1-lock.txt
 $env:PYTHONPATH = 'src'
-.\.venv\Scripts\python.exe scripts/moment_alignment.py --out outputs/moment_new
-.\.venv\Scripts\python.exe scripts/verify_moment_alignment.py --out outputs/moment_check_new outputs/moment_new
+.\.venv\Scripts\python.exe scripts/residual_orientation.py --out outputs/orientation_new
+.\.venv\Scripts\python.exe scripts/verify_residual_orientation.py outputs/orientation_new --out outputs/orientation_check_new
 ```
 
 Use fresh directories. This diagnostic reuses committed checkpoints; no new

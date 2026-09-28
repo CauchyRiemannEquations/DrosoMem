@@ -5,23 +5,23 @@ It does not demonstrate a living fly memorizing pi. Always distinguish
 **representation** (past inputs affect state), **decoding** (a head extracts useful
 information), and **learning** (experience modifies recurrent connections).
 
-## Current position — 2026-09-28
+## Current position — 2026-09-29
 
-**Scoped ACT III structure, normalization and moment-alignment diagnostics complete.**
-[Moment alignment](moment-alignment-results.md) improves transfer but fails
-registered access/retention gates. This does not complete ACT III ablations.
+**Scoped ACT III normalization/readout residual diagnostics complete.**
+[Source-mode and orientation controls](residual-orientation-results.md) fail both
+registered explanations. This does not complete neuron/edge ablations.
 
 | Axis | Completed scope | Remaining scope |
 |---|---|---|
 | ACT I | Matched partial/expanded/whole graphs, thresholds5/1; no established whole-brain recall advantage | Broader tasks or dynamics would require separate protocols |
 | ACT II | Four-family pilot, random N32–512 scaling, prefix-weight tradeoff, independent-stream delay diagnostic, N128 K2/4/10/16 comparison,120 finite-context controls, fixed-K intervention and both state-decoding diagnostics | Additional families and a full length-by-K design remain open |
-| ACT III | Structure/normalization controls, failed unaligned transfer, improved but insufficient moment-aligned transfer | Residual state/head amplification diagnostic, grouped ablations, critical-subnetwork analysis |
+| ACT III | Structure/normalization, transfer, moment alignment, source-mode and orientation diagnostics | Fresh-seed alignment confirmation, grouped ablations, critical-subnetwork analysis |
 | ACT IV | Earlier local-rule implementation with negative functional results | Useful internal learning without external decoder dependence |
 | ACT V | Scoped robustness curves exposed strong fragility | Broader perturbation/physiological validation, kept separate from clean benchmarks |
 
-현재는 **ACT III의 구조·정규화와 평균·표준편차 정렬 진단까지 완료**했다.
-정렬로 정확도는25–27%에서49–53%로 올랐지만 접근성·유지 기준은 실패했다.
-다음은 정렬 후 남은 상태 차이가 출력층에서 증폭되는 경로를 분해하는 한 진단이다.
+현재는 **ACT III의 정규화·출력층 의존성 진단 두 개를 추가 완료**했다.
+하위 분산 방향 지배와 readout-sensitive 방향의 특별한 증폭 가설 모두 실패했다.
+다음은 미관찰 seed에서 기존 정렬 비교를 고정 설계로 재현하는 한 연구다.
 광범위한 제거 연구와 기억 중요 부분망 식별, ACT IV 내부 학습은 남아 있다.
 
 ## ACT I — Can a Fly Brain Remember?
@@ -53,7 +53,7 @@ K2 toK16, so the registered load-drop endpoint fails. The subsequent
 [finite-context diagnostic](context-memory-results.md) is complete:120 controls
 on20 unique tasks, with both registered endpoints passing. Context distinctiveness
 is a supported explanation candidate, not an identified neural cause. Next is one
-[fixed-K intervention](context-intervention-results.md), now complete. Confirmed graphs: none. The selected [blocked-state diagnostic](frozen-state-probe-results.md), [cross-arm transfer](cross-arm-probe-results.md) and subsequent [K4 structural control](structural-k4-results.md) are complete. The latter finds no real-wiring advantage; the subsequent normalization control is also complete with failed material-effect confirmation. Frozen-head transfer and train-only moment alignment are complete; next is the residual amplification diagnostic listed above.
+[fixed-K intervention](context-intervention-results.md), now complete. Confirmed graphs: none. The selected [blocked-state diagnostic](frozen-state-probe-results.md), [cross-arm transfer](cross-arm-probe-results.md) and subsequent [K4 structural control](structural-k4-results.md) are complete. The latter finds no real-wiring advantage; the subsequent normalization control is also complete with failed material-effect confirmation. Frozen-head transfer and train-only moment alignment are complete; the residual mode/orientation diagnostics are also complete, with fresh-seed alignment confirmation proposed next.
 Full length-by-alphabet scaling and additional families remain open. The paragraph
 below describes the staged scope, not an assertion that all stages are complete.
 
