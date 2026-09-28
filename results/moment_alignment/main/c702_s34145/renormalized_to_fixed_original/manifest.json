@@ -1,0 +1,42 @@
+{
+  "identity": {
+    "cohort": "main",
+    "direction": "renormalized_to_fixed_original",
+    "circuit_seed": 702,
+    "seed": 34145,
+    "train_seed": 39145,
+    "test_seed": 40145,
+    "rewire_seed": 37145,
+    "perturb_seed": 46145
+  },
+  "timestamp": "2026-09-28T07:15:41.309320+00:00",
+  "source_path": "results/normalization_control_main/renormalized_c702_s34145",
+  "target_path": "results/normalization_control_main/fixed_original_c702_s34145",
+  "source_manifest_sha256": "97193c541fe17da88c531f712792b2d8869fb50fe08f90e57500ce82db6d313d",
+  "target_manifest_sha256": "1f0b2de2ece8e4041fdc1005147803ddb441532bd2550f93f57aad7aa2c10a5e",
+  "target_fits": 0,
+  "target_moment_fits": 1,
+  "adapter_parameters": 96,
+  "unaligned_path": "results/normalization_transfer/main/c702_s34145/renormalized_to_fixed_original",
+  "unaligned_manifest_sha256": "50e5dcee4a8feb63d8538c55b60d109b22b5be7bac41c7a64c5c1a0ad0d1fe64",
+  "exact_replay": true,
+  "coefficients_per_task": 196,
+  "diagnostic": {
+    "cohort": "main",
+    "direction": "renormalized_to_fixed_original",
+    "circuit_seed": 702,
+    "seed": 34145,
+    "train_seed": 39145,
+    "test_seed": 40145,
+    "rewire_seed": 37145,
+    "perturb_seed": 46145,
+    "mean_abs_train_mean_shift_z": 6.10313402937755,
+    "median_train_scale_ratio": 1.0788031039031738,
+    "mean_train_feature_correlation": 0.971605907398561,
+    "mean_paired_train_cosine": 0.6665838706934691
+  },
+  "artifacts": {
+    "checkpoint.npz": "94027eb815f3977ffcdd68b10d08ff094e2add2c407717cd3a32bf3700739b17",
+    "metrics.json": "4dfab869e1f34b10a3328fca922be8a8f7b522fef8be6da26641eb0cbb4d59f0"
+  }
+}

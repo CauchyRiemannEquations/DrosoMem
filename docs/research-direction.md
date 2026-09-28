@@ -56,8 +56,10 @@ trained-prefix 기준을 통과했지만 전체망 우위는 확인되지 않았
 계수 고정의 이득은1.245%p/0.894%p로 사전 확인 기준1%p에 못 미쳤다.
 후속 [고정 출력층 전이](normalization-transfer-results.md)는 양방향·두 집단 모두
 실패했다. Target refit 약79–80%와 frozen 전이25–27%를 구분한다.
-현재는 제한된 ACT III 전이 진단까지 완료했으며, 다음 한 제안은 정답을 쓰지
-않는 학습 feature의 평균·표준편차 정렬이다. 추가 gain 탐색이나 ACT IV 확장은 하지 않는다.
+후속 [학습 상태 평균·표준편차 정렬](moment-alignment-results.md)은 전이를49–53%로
+개선했지만 R² 및5%p 유지 기준에 실패했다. Head는 고정, 전처리만 적응했다.
+현재는 제한된 ACT III 정렬 진단까지 완료했으며, 다음 한 제안은 정렬 후
+상태 차이와 출력층 증폭의 singular-mode 분해다. 추가 gain 탐색이나 ACT IV 확장은 하지 않는다.
 ACT I→II→III→IV 순서를 지키며 강건성은 ACT V의 독립 축으로 유지한다.
 [로드맵](research-roadmap.md).
 

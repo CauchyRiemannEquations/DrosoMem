@@ -1,19 +1,19 @@
 # Prioritized work — updated 2026-09-28
 
-**ACT III frozen-head normalization transfer complete; both directions failed.**
-[Results](normalization-transfer-results.md): main R→F25.728% / F→R25.468%;
-archived confirmation24.958% /27.172%. Target refits remain about79–80%.
-Both access and5pp retention gates fail in both cohorts.32 analyzed directions
-plus2 smoke directions replay exactly,374 lag rows independently checked,
-zero new target fits.181 tests pass,8 optional skips. Prior normalization's1pp
-confirmation failure and structural negatives remain unchanged.
+**ACT III train-only moment alignment complete: improvement, incomplete recovery.**
+[Results](moment-alignment-results.md): main R→F51.007% / F→R51.607%; archived
+confirmation49.447% /52.886%. Target refits79–80%. H1 improvement passes in
+both directions/cohorts, but H2 access (negative R²) and H3 retention fail.
+34 directions including2 smoke,374 lag rows verified; no target supervised fits,
+96 target moment parameters per direction.186 tests pass,8 optional skips.
+7,168 prior result files unchanged. This reuses observed cohorts and is not a
+new fresh-seed confirmation. Historical negatives remain unchanged.
 
-Next single proposed experiment: **label-free train-only per-feature mean/std
-alignment before frozen-head transfer**, both directions. Use only source/target
-training features to align; keep source coefficients/intercepts frozen and held-out
-labels inaccessible to transformation. This tests a simple coordinate-shift
-explanation, not a gain/normalization sweep or target-head refit. Preregister
-the transform, cohorts and gates before predictions. Proposed, not executed.
+Next single proposed experiment: **singular-mode decomposition of residual
+state mismatch and frozen-head amplification after moment alignment**. Fit only
+the diagnostic basis to source training features; decompose paired state and
+score differences without new decoder, rotation, gain or held-out fitted choices.
+Preregister the decomposition and reporting before execution. Proposed, not run.
 Broader ACT III ablations and ACT IV internal learning remain open.
 
 ## Historical handoff notes (superseded by the result above)

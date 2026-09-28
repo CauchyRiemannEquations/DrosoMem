@@ -39,15 +39,27 @@ This is not a new execution of every historical experiment.
 | Memory-critical subnetwork? | Partial prior ablations only | No comprehensive matched ablation/control study or causal circuit localization; ACT III open |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
-## Latest ACT III frozen-transfer update
+## Latest ACT III moment-alignment update
+
+[Train-only mean/std alignment](moment-alignment-results.md) improves both
+directions in both archived cohorts: main51.007% /51.607%, confirmation49.447%
+/52.886%, versus unaligned25–27% and target refit79–80%. H1 improvement passes,
+H2 access fails because mean R² stays negative; H3 5pp retention also fails.
+The label-free adapter estimates96 moments; source heads stay fixed.34 directions
+and374 lag rows verified,186 tests pass/8 optional skips.7,168 old result files
+unchanged. These are previously observed cohorts, not new confirmation seeds.
+Next proposed: singular-mode decomposition of remaining state mismatch and
+decoder amplification. This is decoding analysis, not recurrent learning.
+
+## Preceding frozen-transfer update
 
 [Frozen normalization transfer](normalization-transfer-results.md) completed both
 directions in both archived cohorts: main25.728% /25.468%; confirmation24.958%
 /27.172%, versus target refits about79–80%. All access/retention gates fail.
 32 analyzed plus2 smoke directions verify; zero new target fits.374 lag rows
 checked,181 tests pass,8 optional skips;7,053 historical result files unchanged.
-Train-feature means shift despite high centered temporal correlations. Next
-proposed: train-only label-free moment alignment, not target-head fitting.
+Train-feature means shift despite high centered temporal correlations. The subsequent
+train-only moment alignment is now complete as reported above.
 These results concern frozen decoder portability, not absent past information.
 
 ## Preceding normalization intervention
