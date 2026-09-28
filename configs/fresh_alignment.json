@@ -1,0 +1,106 @@
+{
+  "protocol": "docs/fresh-alignment-protocol.md",
+  "conditions": [
+    "renormalized",
+    "fixed_original"
+  ],
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "alphabet_size": 4,
+  "warmup": 100,
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "alpha": 1.0,
+  "swaps_per_edge": 5,
+  "normalization": "incoming_l1",
+  "schedule": "mbon_after_kc",
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "activity_epsilon": 1e-08,
+  "decay_steps": 32,
+  "bootstrap_seed": 55399,
+  "bootstrap_draws": 10000,
+  "max_seconds": 1800,
+  "max_rss_bytes": 3221225472,
+  "blocks": [
+    {
+      "seed": 55142,
+      "train_seed": 56142,
+      "test_seed": 57142,
+      "rewire_seed": 58142,
+      "perturb_seed": 59142
+    },
+    {
+      "seed": 55143,
+      "train_seed": 56143,
+      "test_seed": 57143,
+      "rewire_seed": 58143,
+      "perturb_seed": 59143
+    },
+    {
+      "seed": 55144,
+      "train_seed": 56144,
+      "test_seed": 57144,
+      "rewire_seed": 58144,
+      "perturb_seed": 59144
+    }
+  ],
+  "smoke": {
+    "circuit_seeds": [
+      701
+    ],
+    "train_samples": 200,
+    "test_samples": 100,
+    "blocks": [
+      {
+        "seed": 34001,
+        "train_seed": 39001,
+        "test_seed": 40001,
+        "rewire_seed": 37001,
+        "perturb_seed": 46001
+      }
+    ]
+  },
+  "perturbation_steps": 256,
+  "perturbation_amplitude": 1e-06,
+  "forgetting_ratio": 0.001,
+  "alignment_margin": 0.05,
+  "access_margin": 0.05,
+  "retention_tolerance": 0.05,
+  "scale_floor": 1e-05,
+  "directions": [
+    [
+      "renormalized",
+      "fixed_original"
+    ],
+    [
+      "fixed_original",
+      "renormalized"
+    ]
+  ]
+}
