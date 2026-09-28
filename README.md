@@ -8,12 +8,15 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 [Roadmap](docs/research-roadmap.md) · [ACT I protocol](docs/whole-brain-memory-protocol.md) ·
 [ACT I results](docs/whole-brain-memory-results.md)
 
-Latest: [N512 prefix-loss-mass experiment](docs/prefix-mass-results.md),
-with a [locked protocol](docs/prefix-mass-protocol.md): 44 new fits and exact
-replays, six independent refits. Prioritizing the first 32 targets improves
-prefix recall on fresh seeds in both graphs, but lowers later teacher-forced
-accuracy beyond the predefined tolerance. Reservoir states remain identical;
-this is a decoder tradeoff, not evidence of increased internal storage.
+Latest: [Independent-stream delayed-symbol decoding](docs/delayed-symbol-results.md),
+with a [locked protocol](docs/delayed-symbol-protocol.md): 20 matched conditions
+and 20 exact trajectory/head repeats. Mean past-lag accuracy is partial60.42% /
+whole-brain51.10%; the whole-brain superiority criterion fails. This measures
+linear access to past input, separately from autonomous trained-sequence recall.
+Current position: ACT II diagnostic; [completed and remaining scope](docs/research-roadmap.md).
+
+The preceding [prefix-loss-mass study](docs/prefix-mass-results.md) confirmed
+early recall gains with later teacher-forced costs on unchanged reservoir states.
 
 The preceding [random-sequence length curve](docs/length-scaling-results.md)
 tested N32–512 in 100 fits. No whole-brain advantage is established.

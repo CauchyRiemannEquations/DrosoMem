@@ -1,0 +1,320 @@
+{
+  "study": "act2-delayed-symbol-main",
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "conditions": {
+    "legacy5": {
+      "test_accuracy": {
+        "n": 5,
+        "mean": 0.6042,
+        "median": 0.6055833333333334,
+        "variance": 4.6547222222222476e-05,
+        "bootstrap95": [
+          0.5989166666666665,
+          0.6094666666666667
+        ],
+        "paired_dz": 88.55923095510971,
+        "positive": 5,
+        "zero": 0,
+        "negative": 0
+      },
+      "train_accuracy": {
+        "n": 5,
+        "mean": 0.6291333333333333,
+        "median": 0.63025,
+        "variance": 7.080503472222277e-05,
+        "bootstrap95": [
+          0.6225333333333334,
+          0.6354500000000001
+        ],
+        "paired_dz": 74.76711549436973,
+        "positive": 5,
+        "zero": 0,
+        "negative": 0
+      },
+      "frequency_accuracy": {
+        "n": 5,
+        "mean": 0.09563333333333332,
+        "median": 0.09483333333333333,
+        "variance": 7.182500000000007e-05,
+        "bootstrap95": [
+          0.08893249999999997,
+          0.10236666666666665
+        ],
+        "paired_dz": 11.284218220528741,
+        "positive": 5,
+        "zero": 0,
+        "negative": 0
+      },
+      "null_accuracy": {
+        "n": 5,
+        "mean": 0.08841666666666667,
+        "median": 0.08216666666666667,
+        "variance": 0.00029085069444444433,
+        "bootstrap95": [
+          0.07586666666666667,
+          0.10241666666666664
+        ],
+        "paired_dz": 5.184406964017668,
+        "positive": 5,
+        "zero": 0,
+        "negative": 0
+      },
+      "r2_vs_training_frequency": {
+        "n": 5,
+        "mean": 0.36239707222309836,
+        "median": 0.3664118080504619,
+        "variance": 4.588509910702694e-05,
+        "bootstrap95": [
+          0.3569740830414051,
+          0.36744440352653857
+        ],
+        "paired_dz": 53.49939161724992,
+        "positive": 5,
+        "zero": 0,
+        "negative": 0
+      },
+      "frequency_excess": {
+        "n": 5,
+        "mean": 0.5085666666666666,
+        "median": 0.5069166666666667,
+        "variance": 8.78555555555556e-05,
+        "bootstrap95": [
+          0.5011166666666667,
+          0.5160166666666667
+        ],
+        "paired_dz": 54.25793698448706,
+        "positive": 5,
+        "zero": 0,
+        "negative": 0
+      },
+      "null_excess": {
+        "n": 5,
+        "mean": 0.5157833333333333,
+        "median": 0.51225,
+        "variance": 0.00029288402777777805,
+        "bootstrap95": [
+          0.5025499999999999,
+          0.5301
+        ],
+        "paired_dz": 30.138349185341994,
+        "positive": 5,
+        "zero": 0,
+        "negative": 0
+      },
+      "past_decoding_gate": true
+    },
+    "brain1": {
+      "test_accuracy": {
+        "n": 5,
+        "mean": 0.511,
+        "median": 0.5131666666666667,
+        "variance": 8.683680555555525e-05,
+        "bootstrap95": [
+          0.50335,
+          0.5179666666666667
+        ],
+        "paired_dz": 54.836405687281136,
+        "positive": 5,
+        "zero": 0,
+        "negative": 0
+      },
+      "train_accuracy": {
+        "n": 5,
+        "mean": 0.5328083333333333,
+        "median": 0.5342916666666666,
+        "variance": 4.12105902777781e-05,
+        "bootstrap95": [
+          0.52755,
+          0.5376416666666667
+        ],
+        "paired_dz": 82.99780198134538,
+        "positive": 5,
+        "zero": 0,
+        "negative": 0
+      },
+      "frequency_accuracy": {
+        "n": 5,
+        "mean": 0.09563333333333332,
+        "median": 0.09483333333333333,
+        "variance": 7.182500000000007e-05,
+        "bootstrap95": [
+          0.08893249999999997,
+          0.10236666666666665
+        ],
+        "paired_dz": 11.284218220528741,
+        "positive": 5,
+        "zero": 0,
+        "negative": 0
+      },
+      "null_accuracy": {
+        "n": 5,
+        "mean": 0.08508333333333333,
+        "median": 0.081,
+        "variance": 0.00026973263888888896,
+        "bootstrap95": [
+          0.0727,
+          0.09746666666666666
+        ],
+        "paired_dz": 5.180572375382928,
+        "positive": 5,
+        "zero": 0,
+        "negative": 0
+      },
+      "r2_vs_training_frequency": {
+        "n": 5,
+        "mean": 0.2737389917652083,
+        "median": 0.27478186045066727,
+        "variance": 6.724126331960323e-05,
+        "bootstrap95": [
+          0.2673699275060514,
+          0.28010805602436506
+        ],
+        "paired_dz": 33.382490276569975,
+        "positive": 5,
+        "zero": 0,
+        "negative": 0
+      },
+      "frequency_excess": {
+        "n": 5,
+        "mean": 0.4153666666666666,
+        "median": 0.41100000000000003,
+        "variance": 0.00015566875000000066,
+        "bootstrap95": [
+          0.40606666666666663,
+          0.4248333333333334
+        ],
+        "paired_dz": 33.29131286994645,
+        "positive": 5,
+        "zero": 0,
+        "negative": 0
+      },
+      "null_excess": {
+        "n": 5,
+        "mean": 0.4259166666666666,
+        "median": 0.42000000000000004,
+        "variance": 0.0002536944444444442,
+        "bootstrap95": [
+          0.41583333333333333,
+          0.4396
+        ],
+        "paired_dz": 26.740477398527318,
+        "positive": 5,
+        "zero": 0,
+        "negative": 0
+      },
+      "past_decoding_gate": true
+    }
+  },
+  "graph_contrast": {
+    "test_accuracy": {
+      "n": 5,
+      "mean": -0.09319999999999998,
+      "median": -0.0910833333333334,
+      "variance": 2.6540277777777705e-05,
+      "bootstrap95": [
+        -0.09759999999999996,
+        -0.08944999999999999
+      ],
+      "paired_dz": -18.091025273810175,
+      "positive": 0,
+      "zero": 0,
+      "negative": 5
+    },
+    "train_accuracy": {
+      "n": 5,
+      "mean": -0.09632500000000004,
+      "median": -0.09624999999999995,
+      "variance": 2.3022048611110987e-05,
+      "bootstrap95": [
+        -0.09985000000000004,
+        -0.09255000000000009
+      ],
+      "paired_dz": -20.075530683228127,
+      "positive": 0,
+      "zero": 0,
+      "negative": 5
+    },
+    "frequency_accuracy": {
+      "n": 5,
+      "mean": 0.0,
+      "median": 0.0,
+      "variance": 0.0,
+      "bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "paired_dz": null,
+      "positive": 0,
+      "zero": 5,
+      "negative": 0
+    },
+    "null_accuracy": {
+      "n": 5,
+      "mean": -0.0033333333333333327,
+      "median": -0.003583333333333341,
+      "variance": 1.2017361111111091e-05,
+      "bootstrap95": [
+        -0.006183333333333327,
+        -0.0008333333333333304
+      ],
+      "paired_dz": -0.9615551306536378,
+      "positive": 1,
+      "zero": 0,
+      "negative": 4
+    },
+    "r2_vs_training_frequency": {
+      "n": 5,
+      "mean": -0.08865808045789009,
+      "median": -0.08908610523557542,
+      "variance": 6.343917017759498e-06,
+      "bootstrap95": [
+        -0.09048858188645054,
+        -0.08653392094866018
+      ],
+      "paired_dz": -35.19974986864561,
+      "positive": 0,
+      "zero": 0,
+      "negative": 5
+    },
+    "frequency_excess": {
+      "n": 5,
+      "mean": -0.09320000000000002,
+      "median": -0.0910833333333333,
+      "variance": 2.6540277777778108e-05,
+      "bootstrap95": [
+        -0.09760000000000006,
+        -0.08945
+      ],
+      "paired_dz": -18.091025273810047,
+      "positive": 0,
+      "zero": 0,
+      "negative": 5
+    },
+    "null_excess": {
+      "n": 5,
+      "mean": -0.08986666666666662,
+      "median": -0.09158333333333324,
+      "variance": 4.915138888888879e-05,
+      "bootstrap95": [
+        -0.09514999999999996,
+        -0.08411666666666665
+      ],
+      "paired_dz": -12.818308982995058,
+      "positive": 0,
+      "zero": 0,
+      "negative": 5
+    },
+    "superiority_gate": false
+  },
+  "inference": "strata averaged within paired input/stream seed block; descriptive 10000 bootstrap resamples seed21399",
+  "source_manifest_sha256": "4217d3376a0fde6164ae62d9e3a9c5f88a2f613fb481f553a4d09c7ae4230e0a",
+  "matched_interface_and_streams": true,
+  "confirmation_triggered": false
+}

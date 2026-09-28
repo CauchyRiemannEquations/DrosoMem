@@ -31,6 +31,7 @@ This is not a new execution of every historical experiment.
 | Does trained-prefix recall extend beyond pi? | ACT II four-family pilot complete, limited criterion passed | 80 fits: legacy5/brain1 means random26.0/28.8, shuffled-pi31.2/30.2. Both pass the registered limited beyond-pi rule, neither establishes whole-brain superiority. Periodic197/197 is also solved by a first-order control; [results](sequence-memory-results.md) |
 | How does random-sequence recall scale with length? | Completed within fixed training procedure | 100 fits at N32/64/128/256/512; both graphs complete N32, N512 means legacy5=14.6 / brain1=9.5. Relative-collapse criterion first met at N256 / N128. No whole-brain superiority; [results](length-scaling-results.md) |
 | Does restoring early-prefix loss mass explain part of the N512 drop? | Completed, prefix benefit confirmed with later cost | 44 new fits plus 20 reused baseline fits; fresh-seed means legacy5 10.83→33.00, brain1 11.17→23.33. Both pass prefix confirmation but fail later teacher-forced cost tolerance. Same reservoir states; external decoder tradeoff, not increased storage. [Results](prefix-mass-results.md) |
+| Is past iid input linearly accessible under the current matched interface? | Completed ACT II diagnostic | 20 conditions /20 exact full repeats; mean past-lag accuracy legacy5=60.42% / brain1=51.10%. Whole-brain criterion fails; [results](delayed-symbol-results.md). Not autonomous recall or formal memory capacity |
 | Does recall generalize across alphabet sizes? | Open | Generator-level integer alphabets tested; network experiments remain K=10. Length1024 and additional sequence families remain unexecuted |
 | Memory-critical subnetwork? | Partial prior ablations only | No comprehensive matched ablation/control study or causal circuit localization; ACT III open |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
@@ -132,10 +133,31 @@ The rate suite passed146 tests with8 optional-dependency skips. All3,054 prior
 result files remain unchanged. [Protocol](prefix-mass-protocol.md),
 [results and verification](prefix-mass-results.md).
 
-Next: one independent-stream delayed-symbol decoding experiment comparing
-legacy5 and brain1 with the same48 MBONs. Reuse the earlier delay-probe alignment
-tests but evaluate the current matched dynamics; the earlier small-network
-timing probes are not this whole-brain comparison. The new study is unexecuted.
+The selected independent-stream delayed-symbol comparison is now complete below.
+
+## Matched delayed-symbol decoding completion
+
+Protocol28a407c preceded outcomes; runner332e340 and analyzer correction30ecb6b.
+Five paired seed blocks, two input strata, two graphs:20 scientific conditions,
+each with11 real and11 misaligned-target probes. Every trajectory and every
+head independently regenerated/refitted exactly. Same48 MBON observation,
+input IDs and train/test streams. Mean primary past-lag accuracy: legacy5
+60.420% / brain151.100%; paired difference-9.320pp. H2 whole-brain
+superiority fails, so no fresh confirmation or tuning is triggered.
+[Results](delayed-symbol-results.md), [protocol](delayed-symbol-protocol.md).
+
+The smoke analyzer initially lacked the registered single-thread setting;
+exact reconstruction failed at4.996e-16, then passed with that setting restored
+and no relaxed tolerance. A premature initial main launch was stopped and
+preserved; the full scientific cohort uses delay_main_v2. Its completed partial
+condition matches the restart exactly. Execution deviations are documented,
+not hidden. All3,565 prior result files and numerical modules remain unchanged.
+Tests:148 passed,8 optional-dependency skips.
+
+Current roadmap position remains ACT II. Next: one N128 random-sequence
+alphabet-size comparison K2/4/10/16 with legacy5/brain1, not yet executed.
+Comprehensive ACT III structural interventions and ACT IV useful internal
+learning remain open; ACT V robustness remains separate.
 
 Recent history puts research-only scope after Phase 6 execution/analysis,
 preceded by Phase 5B failed response and Stage B/C validation. No historical

@@ -1,0 +1,20 @@
+{
+  "status": "aborted_before_smoke_analysis_gate",
+  "complete": false,
+  "excluded_from_scientific_estimates": true,
+  "timestamp": "2026-09-28T02:39:29.114927+00:00",
+  "reason": "Orchestration launched cohort before smoke analyzer failure was inspected. Stopped without using partial outcomes; identical full restart in delay_main_v2.",
+  "completed_runs": [
+    "legacy5_c701_s14142"
+  ],
+  "artifacts": {
+    "brain1_c701_s14142.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "config.json": "99a72b1defae206c992d08e4d134630a2cc1ac4b374085973fa2d3b17840a81f",
+    "legacy5_c701_s14142.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "started.json": "1f709b5268be7ba742e2a897c3a81d70d943d8beefac9f1ff12c9d79994dc938",
+    "legacy5_c701_s14142/checkpoint.npz": "89f22bbe221561de608cded6b6086f646fc55ef05c6bfbe5cf575de27bc5d880",
+    "legacy5_c701_s14142/manifest.json": "c616369211fd7c76d870902beed8aed59c4fdfd9df0d33ae0972d0bcfb11af4d",
+    "legacy5_c701_s14142/metrics.json": "6d8ceffaced91cc6b91fe6bd90842c35f9409adcdc09e2f3dccf9f4bc89acd8d",
+    "legacy5_c701_s14142/resources.json": "46d14ad0a84e77f2b52f0b66bd81d1009fb8c8cae2e8d1cb635398b876ba53a1"
+  }
+}

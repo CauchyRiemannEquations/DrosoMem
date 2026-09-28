@@ -1,14 +1,13 @@
 # Prioritized work — updated 2026-09-28
 
-**Latest: the N512 prefix-loss-mass experiment and fresh-seed confirmation are
-complete.** All44 new scientific fits replayed exactly; six heads refitted
-exactly. Both graphs confirm increased prefix recall, but both fail the later
-teacher-forced accuracy tolerance. No new default is promoted.
-[Results](prefix-mass-results.md). The next single experiment compares delayed
-symbol decoding on independent random input streams in legacy5 and brain1,
-using the same 48 observed MBONs. It separates past-input representation from
-priority learning of one trained sequence. This probe is not yet executed.
-The length curve, four-family pilot and notes below are historical completed work.
+**Latest: matched independent-stream delayed-symbol decoding is complete.**
+Twenty state conditions and all real/null heads independently replay/refit
+exactly. Past-lag accuracy averages legacy5=60.42% / brain1=51.10%; whole-brain
+superiority fails. [Results](delayed-symbol-results.md). Current position is
+ACT II, not completed ACT III or IV. The next single experiment is ACT II-A:
+random N128 sequences at K2/4/10/16 with matched graph comparisons within K.
+It is not yet executed. Preserve the prefix-weight tradeoff, failed robustness
+and plasticity findings; do not launch a tuning sweep.
 
 ## Historical handoff notes (superseded by the result above)
 

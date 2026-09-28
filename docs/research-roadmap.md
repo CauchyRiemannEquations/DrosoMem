@@ -5,6 +5,24 @@ It does not demonstrate a living fly memorizing pi. Always distinguish
 **representation** (past inputs affect state), **decoding** (a head extracts useful
 information), and **learning** (experience modifies recurrent connections).
 
+## Current position — 2026-09-28
+
+**ACT II, representation/decoding diagnostic.** Completion of a scoped experiment
+does not mean every question in its ACT is solved.
+
+| Axis | Completed scope | Remaining scope |
+|---|---|---|
+| ACT I | Matched partial/expanded/whole graphs, thresholds5/1; no established whole-brain recall advantage | Broader tasks or dynamics would require separate protocols |
+| ACT II | Four-family pilot, random N32–512 scaling, confirmed prefix-weight tradeoff, matched independent-stream delay diagnostic | Next: fixed-N128 network K2/4/10/16 comparison; additional families remain open |
+| ACT III | Earlier limited controls/ablations exist | Comprehensive matched structural controls, grouped ablations and critical-subnetwork analysis |
+| ACT IV | Earlier local-rule implementation with negative functional results | Useful internal learning without external decoder dependence |
+| ACT V | Scoped robustness curves exposed strong fragility | Broader perturbation/physiological validation, kept separate from clean benchmarks |
+
+현재는 **ACT II의 표현·해독 진단 단계**다. ACT I의 비교는 끝났으며 전체망 우위는
+확인되지 않았다. ACT II의 수열 종류·길이·초반 학습 비중 비교는 완료했지만,
+alphabet 크기에 대한 네트워크 실험은 남아 있다. ACT III의 체계적인 구조 제거와
+ACT IV의 내부 학습 확장을 시작한 것으로 표시하지 않는다.
+
 ## ACT I — Can a Fly Brain Remember?
 
 Close the matched partial/whole-brain question first: legacy5, left5, left1,
@@ -24,8 +42,10 @@ complete at N32–512, with no whole-brain superiority. The subsequent
 [N512 prefix-loss-mass diagnostic](prefix-mass-results.md) confirms prefix gains
 on fresh seeds but fails the predefined later teacher-forced cost tolerance in
 both graphs. It changes decoder allocation on identical reservoir trajectories.
-The next single experiment is independent-stream delayed-symbol decoding with
-matched 48-MBON observation in partial and whole-brain models; it is not yet run.
+The [independent-stream delayed-symbol comparison](delayed-symbol-results.md)
+is now complete: partial60.42% / whole-brain51.10% past-lag accuracy, with
+20 exact repeats. Whole-brain superiority fails. Next is one fixed-N128
+alphabet comparison at K2/4/10/16, matched within K; it is not yet executed.
 Network-alphabet scaling and additional families remain open. The paragraph
 below describes the staged scope, not an assertion that all stages are complete.
 

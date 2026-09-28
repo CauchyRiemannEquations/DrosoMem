@@ -1,0 +1,10 @@
+{
+  "event": "Premature main launch after smoke analysis failed exact score reconstruction",
+  "smoke": "results/delay_smoke",
+  "smoke_repeats_exact": 2,
+  "analysis_failure": "Maximum saved-score reconstruction difference 4.99600361e-16; analyzer lacked fixed numerical thread limit",
+  "action": "Stopped initial results/delay_main cohort; preserve every partial artifact; analyze smoke with single numerical thread then restart full cohort at fresh results/delay_main_v2",
+  "outcomes_used": false,
+  "criteria_changed": false,
+  "runner_changed": false
+}
