@@ -35,6 +35,7 @@ This is not a new execution of every historical experiment.
 | Does trained-prefix recall extend across alphabet sizes? | ACT II-A fixed-N128 comparison completed | 80 fits at K2/4/10/16; both graphs pass scoped trained-prefix gates at all K, no whole-brain superiority. Mean prefixes partial25.0/43.4/82.2/103.1; whole27.3/26.3/55.1/88.0. [Results](alphabet-memory-results.md). Full length-by-K design and additional families remain open |
 | Can finite-context distinctiveness help explain the K curve? | ACT II diagnostic completed; both scoped endpoints pass | 120 context tables on20 unique tasks; order2 ambiguity K16−K2=−0.2272; order3 prefix +59.0; all independently checked. Context5 completes K10/K16. A task-level explanation candidate, not neural causality; [results](context-memory-results.md) |
 | Does a fixed-K low/high context-conflict intervention change recall? | Completed within registered cohort scope | Main40 fits; confirmed graphs: none. [Results](context-intervention-results.md). Matched unigram counts and interface; ordering covariates remain |
+| Are past symbols accessible on held-out positions and portable across paired orderings? | Two ACT II diagnostics completed | All four blocked graph/arm and transfer graph/direction cells pass past-access criteria in both cohorts; no confirmed next-symbol benefit. Frozen-head transfer within5pp tolerance; [blocked](frozen-state-probe-results.md), [transfer](cross-arm-probe-results.md) |
 | Memory-critical subnetwork? | Partial prior ablations only | No comprehensive matched ablation/control study or causal circuit localization; ACT III open |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
@@ -213,4 +214,27 @@ all control orders, regional conflict diagnostics and negative paired difference
 K4, N128, symbol multiset, prompt010, input IDs,48 MBONs and428 head parameters
 are matched. Other ordering statistics can differ, so this does not isolate
 context conflict as a unique causal variable. Tests167 passed,8 optional skips.
-Next: one frozen-state representation/decoding diagnostic on these saved pairs; proposed, not executed. Current scope remains ACT II.
+The selected frozen-state diagnostic and its authorized cross-arm follow-up are completed below.
+
+## Frozen-state and cross-arm diagnostics completed
+
+Two scoped ACT II diagnostics completed, each with its own protocol committed
+before outcomes:0b86a86 and5080e94. All64 archived trajectories remain unchanged.
+Blocked probe:192 folds,1536 real+1536 null task heads; all four graph/arm cells
+pass past-access criteria in both seed cohorts, but no confirmed low-high next
+advantage. [Results](frozen-state-probe-results.md).
+
+Frozen transfer:192 folds with ZERO target-arm fits; all four graph/direction
+cells pass past access, both graphs pass the registered5pp retention tolerance.
+Main transfer-minus-within means−0.97pp partial/−0.83pp whole; confirmation
++0.06pp/+0.93pp. Next-symbol prediction remains weak. Related source/target pairs
+share about59–60% same-position symbols; changed-target diagnostics are retained.
+[Results](cross-arm-probe-results.md). This is not arbitrary-stream generalization,
+autonomous recall improvement, equivalence or formal memory capacity.
+
+All384 folds across the two studies pass exact checks and independent augmented
+least-squares verification. Tests172 passed,8 optional skips. The earlier
+fixed-K recall confirmation failure remains unchanged. Next is one scoped
+ACT III real-versus-role/degree-rewired comparison under current K4 dynamics,
+with independent streams. Earlier Phase3/3b controls already exist and remain
+negative within their original scopes. The new comparison is proposed, not run.

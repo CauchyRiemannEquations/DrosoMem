@@ -1,0 +1,26 @@
+{
+  "studies": {
+    "frozen_state_probe": {
+      "folds": 192,
+      "prior_files_unchanged": 5553,
+      "metrics_independently_reconstructed": true,
+      "alignment_checked": true
+    },
+    "cross_arm_probe": {
+      "folds": 192,
+      "prior_files_unchanged": 6012,
+      "metrics_independently_reconstructed": true,
+      "alignment_checked": true
+    }
+  },
+  "independent_gate_and_bootstrap_reconstruction": true,
+  "old_numerical_source_unchanged": true,
+  "protocols_unchanged": true,
+  "document_links_checked": 117,
+  "tests": {
+    "passed": 172,
+    "skipped": 8,
+    "seconds": 30.24,
+    "command": "python -m pytest -q"
+  }
+}

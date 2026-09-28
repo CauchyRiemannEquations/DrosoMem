@@ -1,0 +1,32 @@
+{
+  "study": "act2-frozen-cross-arm-transfer",
+  "source_probes": "results/frozen_state_probe",
+  "sources": {
+    "main": "results/intervention_main",
+    "confirmation": "results/intervention_confirmation"
+  },
+  "protocol": "docs/cross-arm-probe-protocol.md",
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    -1
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "alpha": 1.0,
+  "bootstrap_seed": 33399,
+  "bootstrap_draws": 10000,
+  "max_seconds": 900,
+  "max_rss_bytes": 1073741824
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "lag": 0,
+    "test_accuracy": 1.0,
+    "train_accuracy": 1.0,
+    "frequency_accuracy": 0.10256410256410256,
+    "null_accuracy": 0.20512820512820512,
+    "frequency_excess": 0.8974358974358975,
+    "null_excess": 0.7948717948717949,
+    "r2_vs_frequency": 0.9869382863709462
+  },
+  {
+    "lag": 1,
+    "test_accuracy": 1.0,
+    "train_accuracy": 1.0,
+    "frequency_accuracy": 0.10256410256410256,
+    "null_accuracy": 0.20512820512820512,
+    "frequency_excess": 0.8974358974358975,
+    "null_excess": 0.7948717948717949,
+    "r2_vs_frequency": 0.8734532333987387
+  },
+  {
+    "lag": 2,
+    "test_accuracy": 0.8461538461538461,
+    "train_accuracy": 0.9154929577464789,
+    "frequency_accuracy": 0.10256410256410256,
+    "null_accuracy": 0.15384615384615385,
+    "frequency_excess": 0.7435897435897436,
+    "null_excess": 0.6923076923076923,
+    "r2_vs_frequency": 0.5830922822350609
+  },
+  {
+    "lag": 3,
+    "test_accuracy": 0.6666666666666666,
+    "train_accuracy": 0.704225352112676,
+    "frequency_accuracy": 0.10256410256410256,
+    "null_accuracy": 0.15384615384615385,
+    "frequency_excess": 0.5641025641025641,
+    "null_excess": 0.5128205128205128,
+    "r2_vs_frequency": 0.4327559848279827
+  },
+  {
+    "lag": 4,
+    "test_accuracy": 0.6666666666666666,
+    "train_accuracy": 0.704225352112676,
+    "frequency_accuracy": 0.10256410256410256,
+    "null_accuracy": 0.07692307692307693,
+    "frequency_excess": 0.5641025641025641,
+    "null_excess": 0.5897435897435896,
+    "r2_vs_frequency": 0.3235619294718072
+  },
+  {
+    "lag": 5,
+    "test_accuracy": 0.5897435897435898,
+    "train_accuracy": 0.647887323943662,
+    "frequency_accuracy": 0.1282051282051282,
+    "null_accuracy": 0.28205128205128205,
+    "frequency_excess": 0.46153846153846156,
+    "null_excess": 0.3076923076923077,
+    "r2_vs_frequency": 0.2467258518053943
+  },
+  {
+    "lag": 8,
+    "test_accuracy": 0.3333333333333333,
+    "train_accuracy": 0.5633802816901409,
+    "frequency_accuracy": 0.10256410256410256,
+    "null_accuracy": 0.20512820512820512,
+    "frequency_excess": 0.23076923076923075,
+    "null_excess": 0.1282051282051282,
+    "r2_vs_frequency": 0.021289959000322933
+  },
+  {
+    "lag": -1,
+    "test_accuracy": 0.23076923076923078,
+    "train_accuracy": 0.5352112676056338,
+    "frequency_accuracy": 0.1282051282051282,
+    "null_accuracy": 0.3076923076923077,
+    "frequency_excess": 0.10256410256410259,
+    "null_excess": -0.07692307692307693,
+    "r2_vs_frequency": -0.25529068387993537
+  }
+]

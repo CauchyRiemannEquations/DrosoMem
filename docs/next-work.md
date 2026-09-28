@@ -1,14 +1,18 @@
 # Prioritized work — updated 2026-09-28
 
-**Latest: fixed-K context-conflict intervention complete.** Main40 fits, all exact
-replays and registered refits. legacy5:low43.2/high30.9; brain1:low30.6/high30.4. Confirmed graphs: none.
-[Results](context-intervention-results.md). No hyperparameter or seed changes.
+**Latest: both authorized ACT II state-decoding studies completed.**
+[Blocked probes](frozen-state-probe-results.md) find above-control past access in
+all four graph/arm cells across cohorts, without confirmed next-symbol gain.
+[Frozen transfer](cross-arm-probe-results.md) preserves past access in both
+directions and passes the descriptive5pp retention tolerance. All384 folds
+verify; tests172 passed,8 skips. Original recall confirmation still failed.
 
-Next single experiment: **one frozen-state representation/decoding diagnostic on these saved pairs**. Preregister exact endpoints/probes and
-budgets before outcomes. It is proposed, not yet registered or executed. Keep
-training-instance decoding separate from general memory capacity and unique
-topology effects. ACT III structural attribution and ACT IV useful internal
-learning remain separate.
+Next single experiment: **a matched real versus role-/degree-preserving rewired partial-graph comparison on independent K4 streams**. This is a scoped ACT III structural
+control under current dynamics. Reuse/audit existing Phase3 role-block swaps,
+report degree/weight/role preservation and mixing limits, and fit each graph's
+head separately. Older structural controls already exist; do not erase their
+negative findings. Preregister exact streams, normalization, budgets and gates.
+Proposed, not yet registered or executed. No ACT IV plasticity expansion.
 
 ## Historical handoff notes (superseded by the result above)
 

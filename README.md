@@ -9,17 +9,16 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 
 ## Current research
 
-Latest: [fixed-K context-conflict intervention](docs/context-intervention-results.md),
-with a [locked protocol](docs/context-intervention-protocol.md). Main40 fits
-compare two constructed orderings with K4, N128, the same symbol multiset,
-prompt, input map,48 MBONs and428-parameter head. The partial model's discovery
-gain (+12.3) failed fresh confirmation (+7.0, only2/3 positive seed blocks).
-No registered low-conflict benefit is confirmed.
-All seeds and negative differences are retained; reordering changes other
-sequence statistics too. This is not isolated biological causality.
+Latest: [blocked-state probes](docs/frozen-state-probe-results.md) and
+[frozen cross-arm transfer](docs/cross-arm-probe-results.md). Both studies are
+complete. Past symbols are decodable above controls in all registered conditions;
+frozen heads retain this access across the paired orderings. Next-symbol gains
+and improved autonomous recall are not established. Related sequences and
+small seed cohorts limit generalization.
 
-Next: one frozen-state representation/decoding diagnostic on these saved pairs, not yet executed. ACT III structural attribution and ACT IV
-internal learning remain separate. [Prior context diagnostic](docs/context-memory-results.md).
+Next is one scoped ACT III real-versus-role/degree-rewired partial-graph control
+on independent K4 streams under current dynamics. It is proposed, not executed;
+earlier structural negative results remain in the research-status index.
 
 The established models freeze recurrent connectivity and train an external
 readout. Distinguish **representation**, **decoding** and **internal learning**.
@@ -33,14 +32,13 @@ Use Python3.12 and a clean environment; commands run from the repository root.
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-act1-lock.txt
 $env:PYTHONPATH = 'src'
-.\.venv\Scripts\python.exe -m flying.training.phase6 prepare --cache outputs/act1-graphs
-.\.venv\Scripts\python.exe scripts/run_context_intervention.py run --config configs/context_intervention_main.json --out outputs/intervention_new
-.\.venv\Scripts\python.exe scripts/run_context_intervention.py verify --source outputs/intervention_new --out outputs/intervention_verify_new
-.\.venv\Scripts\python.exe scripts/summarize_context_intervention.py --source outputs/intervention_new --out outputs/intervention_analysis_new
+.\.venv\Scripts\python.exe scripts/frozen_state_probe.py --out outputs/frozen_probe_new
+.\.venv\Scripts\python.exe scripts/cross_arm_probe.py --out outputs/cross_arm_new
 ```
 
-Use fresh output directories. The config reuses committed sequence pairs;
-see the result document for independent sequence reconstruction. Raw downloads and sparse graph caches are excluded
-from Git; provenance and SHA-256 validation are mandatory.
+Use fresh output directories. These diagnostics use archived states and need no
+graph download. The cross-arm config defaults to the committed probe checkpoints;
+to chain an independent reconstruction, copy it and point `source_probes` to
+`outputs/frozen_probe_new`. See the detailed reports for hashes and validation.
 [ACT I protocol](docs/whole-brain-memory-protocol.md) · [Data and attribution](data/README.md) ·
 [Primary-source review](docs/research.md) · [Historical reproduction](docs/historical-reproduction.md) · [License](LICENSE)
