@@ -1,0 +1,6 @@
+{
+  "error": "Single-run raw sample variance is undefined (NaN); strict JSON refused it.",
+  "stage": "smoke analysis, after CSVs and before summary",
+  "repair": "Represent undefined single-run variance as null; no model or metric changes.",
+  "rerun_directory": "results/scaling_smoke_analysis_v2"
+}

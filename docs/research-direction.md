@@ -30,7 +30,10 @@
 ACT II의 π·무작위 숫자·섞은 π·주기 수열 pilot도 80회 비교를 완료했다.
 두 모델 모두 제한적 beyond-π 기준을 통과했지만 whole-brain 우위는 확인되지
 않았다. 주기 수열은 단순 전이 대조 모델도 완주했다. [결과](sequence-memory-results.md).
-다음은 무작위 수열의 길이별 회상 scaling 실험이다. ACT I→II→III→IV 순서를
+무작위 수열의 길이32–512 scaling도100회 실행·재현했다. 길이512의 평균 연속
+회상은 부분망14.6·전체망9.5이며, 고정 학습 절차에서 전체망 우위가 확인되지
+않았다. [결과](length-scaling-results.md). 다음은 길이512에서 초반 target의
+정규화된 학습 비중만 분리하는 대조 실험 하나다. ACT I→II→III→IV 순서를
 지키며 도파민 가소성 확장을 앞당기지 않는다. 강건성은 ACT V의 독립 축이다.
 [로드맵](research-roadmap.md).
 

@@ -8,7 +8,13 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 [Roadmap](docs/research-roadmap.md) · [ACT I protocol](docs/whole-brain-memory-protocol.md) ·
 [ACT I results](docs/whole-brain-memory-results.md)
 
-Latest: [ACT II four-family protocol](docs/sequence-memory-protocol.md) and
+Latest: [Random-sequence length scaling](docs/length-scaling-results.md),
+with a [locked protocol](docs/length-scaling-protocol.md): 100 paired fits,
+100 exact replays and 10 independent refits. Both models complete N32;
+at N512, mean prefixes are partial14.6 / whole-brain9.5. No whole-brain
+advantage is established under this fixed training procedure.
+
+Earlier: [ACT II four-family protocol](docs/sequence-memory-protocol.md) and
 [results](docs/sequence-memory-results.md). Eighty fits support limited trained
 random/shuffled-sequence recall beyond pi, with no established whole-brain
 advantage. Periodic recall is also solved by a simple first-order predictor.

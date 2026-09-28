@@ -1,0 +1,344 @@
+{
+  "conditions": {
+    "32": {
+      "legacy5": {
+        "prefix": {
+          "n": 1,
+          "mean": 15.0,
+          "median": 15.0,
+          "variance": 0.0,
+          "bootstrap95": [
+            15.0,
+            15.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "normalized": {
+          "n": 1,
+          "mean": 0.5172413793103449,
+          "median": 0.5172413793103449,
+          "variance": 0.0,
+          "bootstrap95": [
+            0.5172413793103449,
+            0.5172413793103449
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_median": 15.0,
+        "raw_variance": null,
+        "raw_min": 15,
+        "raw_max": 15,
+        "completed_runs": 0,
+        "total_runs": 1,
+        "operational_collapse": false,
+        "collapse_blocks": 0,
+        "teacher_forced_accuracy": 0.896551724137931,
+        "next_digit_accuracy": 0.8709677419354839,
+        "autonomous_accuracy": 0.5517241379310345,
+        "mean_bits": 49.82892142331043,
+        "control_advantage": {
+          "n": 1,
+          "mean": 15.0,
+          "median": 15.0,
+          "variance": 0.0,
+          "bootstrap95": [
+            15.0,
+            15.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "markov1_mean": 0.0,
+        "majority_mean": 0.0,
+        "prefix_weight_mass": 0.9830508474576272,
+        "weight_sum": 118
+      },
+      "brain1": {
+        "prefix": {
+          "n": 1,
+          "mean": 9.0,
+          "median": 9.0,
+          "variance": 0.0,
+          "bootstrap95": [
+            9.0,
+            9.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "normalized": {
+          "n": 1,
+          "mean": 0.3103448275862069,
+          "median": 0.3103448275862069,
+          "variance": 0.0,
+          "bootstrap95": [
+            0.3103448275862069,
+            0.3103448275862069
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_median": 9.0,
+        "raw_variance": null,
+        "raw_min": 9,
+        "raw_max": 9,
+        "completed_runs": 0,
+        "total_runs": 1,
+        "operational_collapse": false,
+        "collapse_blocks": 1,
+        "teacher_forced_accuracy": 0.9310344827586208,
+        "next_digit_accuracy": 0.935483870967742,
+        "autonomous_accuracy": 0.4137931034482758,
+        "mean_bits": 29.89735285398626,
+        "control_advantage": {
+          "n": 1,
+          "mean": 9.0,
+          "median": 9.0,
+          "variance": 0.0,
+          "bootstrap95": [
+            9.0,
+            9.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "markov1_mean": 0.0,
+        "majority_mean": 0.0,
+        "prefix_weight_mass": 0.9830508474576272,
+        "weight_sum": 118
+      }
+    },
+    "512": {
+      "legacy5": {
+        "prefix": {
+          "n": 1,
+          "mean": 7.0,
+          "median": 7.0,
+          "variance": 0.0,
+          "bootstrap95": [
+            7.0,
+            7.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "normalized": {
+          "n": 1,
+          "mean": 0.0137524557956778,
+          "median": 0.0137524557956778,
+          "variance": 0.0,
+          "bootstrap95": [
+            0.0137524557956778,
+            0.0137524557956778
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_median": 7.0,
+        "raw_variance": null,
+        "raw_min": 7,
+        "raw_max": 7,
+        "completed_runs": 0,
+        "total_runs": 1,
+        "operational_collapse": false,
+        "collapse_blocks": 1,
+        "teacher_forced_accuracy": 0.2200392927308448,
+        "next_digit_accuracy": 0.2211350293542074,
+        "autonomous_accuracy": 0.1080550098231827,
+        "mean_bits": 23.253496664211536,
+        "control_advantage": {
+          "n": 1,
+          "mean": 7.0,
+          "median": 7.0,
+          "variance": 0.0,
+          "bootstrap95": [
+            7.0,
+            7.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "markov1_mean": 0.0,
+        "majority_mean": 0.0,
+        "prefix_weight_mass": 0.21087314662273476,
+        "weight_sum": 607
+      },
+      "brain1": {
+        "prefix": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 1,
+          "losses": 0
+        },
+        "normalized": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 1,
+          "losses": 0
+        },
+        "raw_median": 0.0,
+        "raw_variance": null,
+        "raw_min": 0,
+        "raw_max": 0,
+        "completed_runs": 0,
+        "total_runs": 1,
+        "operational_collapse": false,
+        "collapse_blocks": 1,
+        "teacher_forced_accuracy": 0.2141453831041257,
+        "next_digit_accuracy": 0.2152641878669275,
+        "autonomous_accuracy": 0.1296660117878192,
+        "mean_bits": 0.0,
+        "control_advantage": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 1,
+          "losses": 0
+        },
+        "markov1_mean": 0.0,
+        "majority_mean": 0.0,
+        "prefix_weight_mass": 0.21087314662273476,
+        "weight_sum": 607
+      }
+    }
+  },
+  "graph_contrasts": {
+    "32": {
+      "n": 1,
+      "mean": -6.0,
+      "median": -6.0,
+      "variance": 0.0,
+      "bootstrap95": [
+        -6.0,
+        -6.0
+      ],
+      "paired_dz": null,
+      "wins": 0,
+      "ties": 0,
+      "losses": 1,
+      "qualifies": false
+    },
+    "512": {
+      "n": 1,
+      "mean": -7.0,
+      "median": -7.0,
+      "variance": 0.0,
+      "bootstrap95": [
+        -7.0,
+        -7.0
+      ],
+      "paired_dz": null,
+      "wins": 0,
+      "ties": 0,
+      "losses": 1,
+      "qualifies": false
+    }
+  },
+  "aggregate_graph_contrast": {
+    "n": 1,
+    "mean": -6.5,
+    "median": -6.5,
+    "variance": 0.0,
+    "bootstrap95": [
+      -6.5,
+      -6.5
+    ],
+    "paired_dz": null,
+    "wins": 0,
+    "ties": 0,
+    "losses": 1
+  },
+  "qualifying_adjacent_lengths": [],
+  "graph_criterion_passed": false,
+  "length_effect": {
+    "legacy5": {
+      "drop_first_to_last": {
+        "n": 1,
+        "mean": 0.503488923514667,
+        "median": 0.503488923514667,
+        "variance": 0.0,
+        "bootstrap95": [
+          0.503488923514667,
+          0.503488923514667
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "supports_length_drop": false,
+      "collapse_lengths": [],
+      "first_collapse_length": null,
+      "left_censored": false,
+      "later_noncollapse_lengths": []
+    },
+    "brain1": {
+      "drop_first_to_last": {
+        "n": 1,
+        "mean": 0.3103448275862069,
+        "median": 0.3103448275862069,
+        "variance": 0.0,
+        "bootstrap95": [
+          0.3103448275862069,
+          0.3103448275862069
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "supports_length_drop": false,
+      "collapse_lengths": [],
+      "first_collapse_length": null,
+      "left_censored": false,
+      "later_noncollapse_lengths": []
+    }
+  },
+  "nested_raw_features_exact": true,
+  "matched_input_observation_ids": true,
+  "worker_wall_seconds_sum": 36.985999999999876,
+  "maximum_sampled_rss_bytes": 854851584
+}

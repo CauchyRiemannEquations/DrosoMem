@@ -1,10 +1,11 @@
 # Prioritized work — updated 2026-09-28
 
-**Latest: the ACT II four-family pilot is complete.** Both networks passed the
-limited beyond-pi criterion, but no nonperiodic family established whole-brain
-superiority. All 80 runs replayed exactly; eight heads refitted exactly.
-[Results](sequence-memory-results.md). The next single experiment is paired
-random-sequence length scaling.
+**Latest: random-sequence length scaling is complete.** All100 fits replayed
+exactly;10 heads refitted exactly. Both graphs complete N32, but N512 means
+are legacy5=14.6 / brain1=9.5. Whole-brain superiority remains unestablished.
+[Results](length-scaling-results.md). The next single experiment holds the N512
+states and decoder setup fixed while changing only normalized prefix loss mass.
+The four-family pilot and earlier notes below are historical completed work.
 
 ## Historical handoff notes (superseded by the result above)
 

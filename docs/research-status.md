@@ -29,7 +29,8 @@ This is not a new execution of every historical experiment.
 | Can the complete source graph execute? | Engineering scope completed | results/phase6, phase6_analysis, phase6_validation: 138,639 nodes, 15,091,983 edges, 24 exact repeated probes, peak sampled worker RSS 541 MiB |
 | Does whole-brain connectivity improve matched-budget recall? | Completed; main improvement criteria failed | 50 new fits: legacy5 35.0, brain5 31.8, brain1 34.1. [Locked protocol](whole-brain-memory-protocol.md), [current results](whole-brain-memory-results.md). Before this audit, untested |
 | Does trained-prefix recall extend beyond pi? | ACT II four-family pilot complete, limited criterion passed | 80 fits: legacy5/brain1 means random26.0/28.8, shuffled-pi31.2/30.2. Both pass the registered limited beyond-pi rule, neither establishes whole-brain superiority. Periodic197/197 is also solved by a first-order control; [results](sequence-memory-results.md) |
-| Sequence-length/alphabet scaling? | Open | Generator-level integer alphabets tested, but all new network fits use K=10 and length200. Scaling curves remain unexecuted |
+| How does random-sequence recall scale with length? | Completed within fixed training procedure | 100 fits at N32/64/128/256/512; both graphs complete N32, N512 means legacy5=14.6 / brain1=9.5. Relative-collapse criterion first met at N256 / N128. No whole-brain superiority; [results](length-scaling-results.md) |
+| Does recall generalize across alphabet sizes? | Open | Generator-level integer alphabets tested; network experiments remain K=10. Length1024 and additional sequence families remain unexecuted |
 | Memory-critical subnetwork? | Partial prior ablations only | No comprehensive matched ablation/control study or causal circuit localization; ACT III open |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
@@ -85,7 +86,8 @@ Protocol 186a5f6 preceded outcomes. Five smoke conditions passed exact replay an
 independent refit. All 50 main heads replayed exactly; five first-seed/first-stratum
 heads independently refitted with identical parameters. Main comparison and
 weak-edge success criteria failed. Representation diagnostics were reported;
-no post-outcome tuning, fresh-seed positive confirmation or ACT II execution.
+no post-outcome tuning or fresh-seed positive confirmation. ACT II followed
+as separate studies described below.
 The extended rate test suite passed 132 tests with eight optional-dependency skips.
 
 ## ACT II pilot completion
@@ -95,9 +97,21 @@ replayed/refitted exactly. All80 main runs replayed exactly; eight first-block/
 first-stratum heads refitted exactly. The full rate suite passed141 tests with
 eight optional-dependency skips. [Protocol](sequence-memory-protocol.md) and
 [results](sequence-memory-results.md) preserve raw seeds, controls and limits.
-The next single study is random-sequence length scaling, not plasticity or
-memory-circuit localization. The pilot does not establish universal arbitrary
+The pilot's selected follow-up was random-sequence length scaling, now completed
+below. The pilot does not establish universal arbitrary
 memory, connectome-specific superiority, unseen prediction or recurrent learning.
+
+## ACT II length-scaling completion
+
+Protocol8885aca preceded outcomes; main execution070b4bf. All100 fits replayed
+exactly and10 independently refitted. Both networks meet the registered endpoint
+length-drop criterion; no graph-superiority confirmation was triggered. Raw
+teacher-forced features for shared prefixes match exactly across task lengths.
+Fixed prefix loss mass changes with N, so the curve is not intrinsic capacity.
+The rate suite passed144 tests with8 optional-dependency skips. All1,932 prior
+result artifacts remained unchanged. [Protocol](length-scaling-protocol.md),
+[results](length-scaling-results.md). Next: one controlled loss-mass diagnostic
+at N512, with frozen data/states and no multiplier sweep.
 
 Recent history puts research-only scope after Phase 6 execution/analysis,
 preceded by Phase 5B failed response and Stage B/C validation. No historical

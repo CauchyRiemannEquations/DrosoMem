@@ -1,0 +1,26 @@
+{
+  "records": [
+    {
+      "run": "random_legacy5_c701_s9142_d9242",
+      "source_manifest_sha256": "c28ca8809fa6a2572b258f17ea34e679376d95f74365647a54f763556e1d9bfe",
+      "exact_replay": true,
+      "exact_refit": true,
+      "features_probabilities_controls_decay_and_losses": true,
+      "expected_prefix": 33,
+      "actual_prefix": 33
+    },
+    {
+      "run": "random_brain1_c701_s9142_d9242",
+      "source_manifest_sha256": "e66911754123de3c84954f1ce3ae540808018a68c8c6ef4d3e4f5bcd757b095d",
+      "exact_replay": true,
+      "exact_refit": true,
+      "features_probabilities_controls_decay_and_losses": true,
+      "expected_prefix": 32,
+      "actual_prefix": 32
+    }
+  ],
+  "exact_replays": 2,
+  "exact_refits": 2,
+  "source_revision": "2528c9e",
+  "replay_revision": "da1638483691034cef987fa5efb7eef10d28961a"
+}

@@ -1,0 +1,33 @@
+{
+  "level": "brain1",
+  "circuit_seed": 702,
+  "seed": 11142,
+  "family": "random",
+  "dataset_seed": 11242,
+  "exact_prefix_symbols": 33,
+  "autonomous_prefix_bits": 109.62362713128296,
+  "first_error_position": 34,
+  "first_error_sequence_index": 36,
+  "censored": false,
+  "next_digit_accuracy": 0.9291338582677166,
+  "teacher_forced_accuracy": 0.944,
+  "autonomous_accuracy": 0.336,
+  "mean_confidence": 0.8727490697053358,
+  "region_accuracy": {
+    "1-32": 1.0,
+    "33-64": 0.09375,
+    "65-125": 0.11475409836065574
+  },
+  "pi_memory_score": null,
+  "train_loss": 0.12110942964288686,
+  "weighted_cross_entropy": 0.09225965643509568,
+  "effective_rank": 10.092994832798192,
+  "active_neurons_mean": 109444.91338582677,
+  "activity_sparsity": 0.21057629248749077,
+  "mean_observed_cosine": 0.9949672483954055,
+  "observed_mean_abs": 0.005863337204563374,
+  "observed_decay_ratio_32": 2.957696399181756e-06,
+  "majority_prefix": 0,
+  "markov1_prefix": 0,
+  "runtime_seconds": 17.230826200000593
+}

@@ -19,7 +19,10 @@ Do not tune a negative result into a positive headline.
 The initial four-family pilot is now executed: [protocol](sequence-memory-protocol.md),
 [results](sequence-memory-results.md). Both networks support the prespecified
 limited beyond-pi claim on these trained instances; whole-brain superiority is
-not established. Length and network-alphabet scaling remain open. The paragraph
+not established. The [random length curve](length-scaling-results.md) is also
+complete at N32–512, with no whole-brain superiority. The next diagnostic
+isolates normalized prefix loss mass at N512 before broadening the task.
+Network-alphabet scaling and additional families remain open. The paragraph
 below describes the staged scope, not an assertion that all stages are complete.
 
 After ACT I, begin with only pi, seeded random digits, shuffled pi (same multiset)
