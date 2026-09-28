@@ -70,7 +70,7 @@ def analyze(source,out):
         for level in levels:
             part=f[(f.length==n)&(f.level==level)];b=blocks.loc[(n,level)]
             conditions[str(n)][level]=dict(prefix=estimate(b.exact_prefix_symbols,spec),normalized=estimate(b.normalized_prefix,spec),
-                raw_median=float(part.exact_prefix_symbols.median()),raw_variance=float(part.exact_prefix_symbols.var()),
+                raw_median=float(part.exact_prefix_symbols.median()),raw_variance=float(part.exact_prefix_symbols.var()) if len(part)>1 else None,
                 raw_min=int(part.exact_prefix_symbols.min()),raw_max=int(part.exact_prefix_symbols.max()),
                 completed_runs=int(part.censored.sum()),total_runs=len(part),
                 operational_collapse=bool(b.normalized_prefix.mean()<.5 and (b.normalized_prefix<.5).sum()>=required),
