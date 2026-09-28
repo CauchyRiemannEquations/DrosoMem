@@ -1,0 +1,117 @@
+{
+  "protocol": "docs/structural-k4-protocol.md",
+  "conditions": [
+    "real",
+    "role_shuffled"
+  ],
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "alphabet_size": 4,
+  "warmup": 100,
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "alpha": 1.0,
+  "swaps_per_edge": 5,
+  "normalization": "incoming_l1",
+  "schedule": "mbon_after_kc",
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "activity_epsilon": 1e-08,
+  "decay_steps": 32,
+  "bootstrap_seed": 38399,
+  "bootstrap_draws": 10000,
+  "max_seconds": 1800,
+  "max_rss_bytes": 3221225472,
+  "blocks": [
+    {
+      "seed": 34142,
+      "train_seed": 35142,
+      "test_seed": 36142,
+      "rewire_seed": 37142
+    },
+    {
+      "seed": 34143,
+      "train_seed": 35143,
+      "test_seed": 36143,
+      "rewire_seed": 37143
+    },
+    {
+      "seed": 34144,
+      "train_seed": 35144,
+      "test_seed": 36144,
+      "rewire_seed": 37144
+    },
+    {
+      "seed": 34145,
+      "train_seed": 35145,
+      "test_seed": 36145,
+      "rewire_seed": 37145
+    },
+    {
+      "seed": 34146,
+      "train_seed": 35146,
+      "test_seed": 36146,
+      "rewire_seed": 37146
+    }
+  ],
+  "confirmation_blocks": [
+    {
+      "seed": 34147,
+      "train_seed": 35147,
+      "test_seed": 36147,
+      "rewire_seed": 37147
+    },
+    {
+      "seed": 34148,
+      "train_seed": 35148,
+      "test_seed": 36148,
+      "rewire_seed": 37148
+    },
+    {
+      "seed": 34149,
+      "train_seed": 35149,
+      "test_seed": 36149,
+      "rewire_seed": 37149
+    }
+  ],
+  "smoke": {
+    "circuit_seeds": [
+      701
+    ],
+    "train_samples": 200,
+    "test_samples": 100,
+    "blocks": [
+      {
+        "seed": 34001,
+        "train_seed": 35001,
+        "test_seed": 36001,
+        "rewire_seed": 37001
+      }
+    ]
+  }
+}

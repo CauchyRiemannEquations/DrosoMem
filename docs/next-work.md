@@ -1,18 +1,18 @@
 # Prioritized work — updated 2026-09-28
 
-**Latest: both authorized ACT II state-decoding studies completed.**
-[Blocked probes](frozen-state-probe-results.md) find above-control past access in
-all four graph/arm cells across cohorts, without confirmed next-symbol gain.
-[Frozen transfer](cross-arm-probe-results.md) preserves past access in both
-directions and passes the descriptive5pp retention tolerance. All384 folds
-verify; tests172 passed,8 skips. Original recall confirmation still failed.
+**Current K4 ACT III structural control complete.**
+[Results](structural-k4-results.md): real76.965% versus rewired78.603% on independent
+past-symbol decoding. All five real-minus-rewired blocks are negative; H2 fails.
+Both pass H1.20 runs replay/refit exactly; all220 lag rows independently verified.
+Full suite175 passed,8 optional-dependency skips. No positive confirmation triggered.
+Representation diagnostics were completed without tuning. Earlier Phase3/3b
+structural negatives and ACT I whole-brain negatives remain valid within scope.
 
-Next single experiment: **a matched real versus role-/degree-preserving rewired partial-graph comparison on independent K4 streams**. This is a scoped ACT III structural
-control under current dynamics. Reuse/audit existing Phase3 role-block swaps,
-report degree/weight/role preservation and mixing limits, and fit each graph's
-head separately. Older structural controls already exist; do not erase their
-negative findings. Preregister exact streams, normalization, budgets and gates.
-Proposed, not yet registered or executed. No ACT IV plasticity expansion.
+Next single proposed experiment: **fixed-original versus graph-specific incoming
+normalization on the same rewired raw partial graphs**, with matched independent
+streams and48-MBON refitted heads. Preregister gain/stability diagnostics, seeds,
+budget and gates. This isolates a renormalization contribution, not all topology
+effects. Proposed only; no new cohort or protocol yet. No ACT IV expansion.
 
 ## Historical handoff notes (superseded by the result above)
 

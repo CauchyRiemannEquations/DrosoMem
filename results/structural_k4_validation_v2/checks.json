@@ -1,0 +1,63 @@
+{
+  "studies": [
+    {
+      "root": "results\\structural_k4_smoke",
+      "manifest_sha256": "1c31594c112c715b5159ba7ce9237fb1e89b7e707bea27947944f2c51efc6f84",
+      "verified_graph_runs": 2,
+      "lag_rows": 22,
+      "artifact_hashes": 25,
+      "old_results_unchanged": 6472,
+      "alignment_predictions_metrics_bootstrap_gates_verified": true
+    },
+    {
+      "root": "results\\structural_k4_main",
+      "manifest_sha256": "54141c17146bafff3ba08f0f26c47484fb25bacb608676485a0ad8025a8bccbb",
+      "verified_graph_runs": 20,
+      "lag_rows": 220,
+      "artifact_hashes": 151,
+      "old_results_unchanged": 6472,
+      "alignment_predictions_metrics_bootstrap_gates_verified": true
+    }
+  ],
+  "pytest_exit_code": 0,
+  "verifier_sha256": "244b04fd37900b21b60499b7f9f0fcd043924ab46e473fafdff53a31f424277a",
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+    "cpu_count": 12,
+    "ram_bytes": 16905629696,
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "pandas": "2.2.3",
+      "mpmath": "1.4.1",
+      "threadpoolctl": "3.6.0",
+      "psutil": "7.2.2",
+      "pyarrow": "25.0.1"
+    },
+    "blas": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 12,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\USER\\Documents\\Codex\\2026-09-28\\github-cauchyriemannequations-flying-audit-readme-readme\\work\\venv-act1\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 12,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\USER\\Documents\\Codex\\2026-09-28\\github-cauchyriemannequations-flying-audit-readme-readme\\work\\venv-act1\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-64eda39e79589aedb16f58e5547eb599.dll",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ],
+    "numerical_threads": 1
+  }
+}

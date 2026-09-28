@@ -1,0 +1,6 @@
+{
+  "status": "verification_harness_failed_before_test_suite",
+  "cause": "Standalone verifier omitted the preregistered one-thread BLAS setting; exact recomputed scores differed by at most 2.886579864025407e-15. Original runner exact replay passed under one thread.",
+  "repair": "Apply threadpool_limits(1) to the verifier, retain exact equality checks and unchanged stored experiment outputs; rerun into a fresh validation_v2 directory.",
+  "earlier_preexecution_issue": "A syntax error in the new verifier was corrected before artifact verification. Neither issue changed study data, metrics or gates."
+}

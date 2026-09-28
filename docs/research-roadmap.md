@@ -7,22 +7,23 @@ information), and **learning** (experience modifies recurrent connections).
 
 ## Current position — 2026-09-28
 
-**ACT II blocked-state and frozen cross-arm diagnostics complete within scope.** Completion of a scoped experiment
-does not mean every question in its ACT is solved.
+**Current K4 ACT III structural control complete within scope.**
+Real-wiring advantage is not established; [results](structural-k4-results.md).
+Completion of a scoped experiment does not solve every question in its ACT.
 
 | Axis | Completed scope | Remaining scope |
 |---|---|---|
 | ACT I | Matched partial/expanded/whole graphs, thresholds5/1; no established whole-brain recall advantage | Broader tasks or dynamics would require separate protocols |
 | ACT II | Four-family pilot, random N32–512 scaling, prefix-weight tradeoff, independent-stream delay diagnostic, N128 K2/4/10/16 comparison,120 finite-context controls, fixed-K intervention and both state-decoding diagnostics | Next selected step: scoped ACT III structural control; additional families and a full length-by-K design remain open |
-| ACT III | Earlier limited controls/ablations exist | Next: current-protocol real vs role/degree-rewired partial graph on independent K4 streams; broader grouped ablations and critical-subnetwork analysis remain open |
+| ACT III | Historical Phase3/3b controls; current K4 real/role-degree rewiring with no real-wiring advantage | Normalization contribution, grouped ablations and critical-subnetwork analysis remain open |
 | ACT IV | Earlier local-rule implementation with negative functional results | Useful internal learning without external decoder dependence |
 | ACT V | Scoped robustness curves exposed strong fragility | Broader perturbation/physiological validation, kept separate from clean benchmarks |
 
-현재는 **ACT II의 저장 상태 해독과 고정 출력층 교차 수열 전이 진단까지 완료**했다.
-두 그래프 모두 과거 기호 접근성과 제한적 전이를 보였으나 다음 기호 개선이나
-자율 회상 개선을 새로 확인한 것은 아니다. 다음 한 실험은 **독립 K=4 입력에서 실제 부분망과 역할·입출력 차수를 보존한 재배선 망을 비교하는 구조 대조**이다.
-현행 조건에서의 ACT III 대조를 제안한 단계이며 아직 실행하지 않았다.
-ACT IV 내부 학습을 앞당기지 않는다. 추가 수열군과 전체 길이×K 설계는 여전히 열린다.
+현재는 **현행 K4 조건의 ACT III 구조 대조까지 완료**했다. 실제 부분망과
+재배선망 모두 독립 수열의 과거 기호를 해독했지만 실제 배선의 우위는 없었다.
+사전 기준에 따라 positive 확인은 실행하지 않고 저장 상태 다양성·감쇠를 분석했다.
+다음 한 실험은 동일 재배선망의 정규화 계수 고정 대조이며 아직 제안 단계다.
+광범위한 구조 제거와 기억 중요 부분망 식별, ACT IV 내부 학습은 남아 있다.
 
 ## ACT I — Can a Fly Brain Remember?
 
@@ -53,7 +54,7 @@ K2 toK16, so the registered load-drop endpoint fails. The subsequent
 [finite-context diagnostic](context-memory-results.md) is complete:120 controls
 on20 unique tasks, with both registered endpoints passing. Context distinctiveness
 is a supported explanation candidate, not an identified neural cause. Next is one
-[fixed-K intervention](context-intervention-results.md), now complete. Confirmed graphs: none. The selected [blocked-state diagnostic](frozen-state-probe-results.md) and [cross-arm transfer](cross-arm-probe-results.md) are now complete. Next is the scoped ACT III structural control listed above, not yet executed.
+[fixed-K intervention](context-intervention-results.md), now complete. Confirmed graphs: none. The selected [blocked-state diagnostic](frozen-state-probe-results.md), [cross-arm transfer](cross-arm-probe-results.md) and subsequent [K4 structural control](structural-k4-results.md) are complete. The latter finds no real-wiring advantage; next is the normalization control listed above.
 Full length-by-alphabet scaling and additional families remain open. The paragraph
 below describes the staged scope, not an assertion that all stages are complete.
 

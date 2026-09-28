@@ -39,6 +39,18 @@ This is not a new execution of every historical experiment.
 | Memory-critical subnetwork? | Partial prior ablations only | No comprehensive matched ablation/control study or causal circuit localization; ACT III open |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
+## Latest scoped ACT III update
+
+[Current K4 structural control](structural-k4-results.md) completed20 graph runs,
+20 exact replays and refits. Real76.965% versus role-/degree-rewired78.603%; paired
+delta−1.638pp (five blocks, all negative). Both pass past-access controls, but
+real-wiring superiority fails. Observed effective rank6.68 versus7.22; association
+only. Renormalization changes644–645 outgoing weight multisets per control, so
+this is not a pure topology effect. Historical6,472 result files unchanged.
+175 tests pass,8 optional skips. The standalone verifier's initial BLAS-thread
+mismatch is preserved with its corrected exact verification. Broad ACT III
+ablations, critical subnetworks, and ACT IV useful internal learning remain open.
+
 ## Baseline reproducibility
 
 Clean new Python 3.12.10 virtualenv, original rate dependency versions, one BLAS
@@ -197,7 +209,7 @@ recalls only7.2, and K4/data22143/context8 recalls0 despite zero long-context
 ambiguity because the short initial prompt is ambiguous. Every failure is kept.
 [Full results](context-memory-results.md). No neural training was repeated.
 
-Current position: ACT II-A plus task/decoding diagnostic completed within scope.
+Position at that study's completion: ACT II-A plus task/decoding diagnostic.
 Its selected fixed-K intervention is now complete below. Full length
 by K, additional families, comprehensive ACT III and useful ACT IV remain open.
 
@@ -234,7 +246,8 @@ autonomous recall improvement, equivalence or formal memory capacity.
 
 All384 folds across the two studies pass exact checks and independent augmented
 least-squares verification. Tests172 passed,8 optional skips. The earlier
-fixed-K recall confirmation failure remains unchanged. Next is one scoped
-ACT III real-versus-role/degree-rewired comparison under current K4 dynamics,
-with independent streams. Earlier Phase3/3b controls already exist and remain
-negative within their original scopes. The new comparison is proposed, not run.
+fixed-K recall confirmation failure remains unchanged. The selected scoped
+ACT III real-versus-role/degree-rewired comparison under current K4 dynamics
+has subsequently completed: real76.965% versus rewired78.603%, no established
+real-wiring advantage. See the latest update above and its linked report.
+Earlier Phase3/3b controls remain negative within their original scopes.
