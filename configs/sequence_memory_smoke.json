@@ -1,0 +1,64 @@
+{
+  "study": "act2-smoke",
+  "conditions": [
+    "legacy5",
+    "brain1"
+  ],
+  "families": [
+    "pi",
+    "random",
+    "shuffled_pi",
+    "periodic"
+  ],
+  "circuit_seeds": [
+    701
+  ],
+  "blocks": [
+    {
+      "model_seed": 9139,
+      "dataset_seed": 9239
+    }
+  ],
+  "initialization": 0,
+  "dataset": {
+    "alphabet_size": 10,
+    "offset": 0,
+    "length": 40,
+    "prompt": [
+      3,
+      1,
+      4
+    ],
+    "motif": [
+      3,
+      1,
+      4,
+      0,
+      2,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "prompt_length": 3,
+  "eval_length": 37,
+  "epochs": 20,
+  "hidden_units": 8,
+  "learning_rate": 0.03,
+  "l2": 1e-05,
+  "prefix_window": 32,
+  "prefix_weight": 4,
+  "leak": 0.6,
+  "gain": 0.9,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "schedule": "mbon_after_kc",
+  "normalization": "incoming_l1",
+  "activity_epsilon": 1e-08,
+  "decay_steps": 32,
+  "worker_seconds": 1800,
+  "worker_rss_bytes": 3221225472,
+  "protocol": "docs/sequence-memory-protocol.md"
+}
