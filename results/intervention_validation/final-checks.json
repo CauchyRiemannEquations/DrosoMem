@@ -1,0 +1,37 @@
+{
+  "verified": {
+    "smoke": {
+      "fits": 4,
+      "exact_replays": 4,
+      "exact_refits": 4,
+      "sequence_pairs": 1
+    },
+    "main": {
+      "fits": 40,
+      "exact_replays": 40,
+      "exact_refits": 4,
+      "sequence_pairs": 5
+    },
+    "confirmation": {
+      "fits": 24,
+      "exact_replays": 24,
+      "exact_refits": 4,
+      "sequence_pairs": 3
+    }
+  },
+  "old_result_files_unchanged": 4706,
+  "protocol_unchanged": true,
+  "numerical_core_unchanged": true,
+  "independent_bootstrap_and_gates": true,
+  "source_manifests": {
+    "smoke": "a4b46bbc454bbff0342b6bbf95de08fba5b0634a793928b51400484594086d71",
+    "main": "4fe56cbb4f6f441c2ec4f67a0d66278a0f742799b6d189e16ab05ace5cfcee0b",
+    "confirmation": "dca51e886c8e6764918eea3833aa29aa0606765ec7d07afb24edbd1d2a1b7303"
+  },
+  "tests": {
+    "command": "python -m pytest -q",
+    "passed": 167,
+    "skipped": 8,
+    "seconds": 58.31
+  }
+}

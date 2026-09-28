@@ -1,16 +1,14 @@
 # Prioritized work — updated 2026-09-28
 
-**Latest: ACT II finite-context diagnostic completed.** All120 count-table fits
-on20 unique saved sequences match an independent scan-based reference. Both
-registered endpoints pass: order2 ambiguity K16−K2=−0.2272; order3 prefix
-K16−K2=+59.0. [Results](context-memory-results.md). No neural fits were added.
+**Latest: fixed-K context-conflict intervention complete.** Main40 fits, all exact
+replays and registered refits. legacy5:low43.2/high30.9; brain1:low30.6/high30.4. Confirmed graphs: none.
+[Results](context-intervention-results.md). No hyperparameter or seed changes.
 
-The next single experiment is a fixed-K, fixed-N context-conflict intervention:
-paired low/high conflict sequences with matched symbol multiset and prompt,
-shared input mapping and head budgets. Register the generator, construction
-budget, failures and scientific criteria before neural outcomes. It is proposed,
-not yet registered or executed. This tests a task-level explanation; it does
-not establish connectome topology as the cause. ACT III/IV remain separate.
+Next single experiment: **one frozen-state representation/decoding diagnostic on these saved pairs**. Preregister exact endpoints/probes and
+budgets before outcomes. It is proposed, not yet registered or executed. Keep
+training-instance decoding separate from general memory capacity and unique
+topology effects. ACT III structural attribution and ACT IV useful internal
+learning remain separate.
 
 ## Historical handoff notes (superseded by the result above)
 

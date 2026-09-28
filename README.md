@@ -9,18 +9,17 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 
 ## Current research
 
-Latest: [finite-context diagnostic](docs/context-memory-results.md), with a
-[locked protocol](docs/context-memory-protocol.md). All120 context-table fits
-were independently verified on20 unique saved sequences. Both diagnostic
-endpoints pass: K2→K16 reduces order2 ambiguity and increases order3 recall.
-Context5 completes all saved K10/K16 instances without a connectome.
+Latest: [fixed-K context-conflict intervention](docs/context-intervention-results.md),
+with a [locked protocol](docs/context-intervention-protocol.md). Main40 fits
+compare two constructed orderings with K4, N128, the same symbol multiset,
+prompt, input map,48 MBONs and428-parameter head. The partial model's discovery
+gain (+12.3) failed fresh confirmation (+7.0, only2/3 positive seed blocks).
+No registered low-conflict benefit is confirmed.
+All seeds and negative differences are retained; reordering changes other
+sequence statistics too. This is not isolated biological causality.
 
-This supports a task-level explanation candidate for the
-[alphabet curve](docs/alphabet-memory-results.md), not a causal account of the
-neural model. The next single study is a fixed-K context-conflict intervention;
-it is not yet executed. ACT III controls and ACT IV internal learning remain
-separate. Historical findings, including negative
-whole-brain, plasticity and robustness results, remain in the research-status index.
+Next: one frozen-state representation/decoding diagnostic on these saved pairs, not yet executed. ACT III structural attribution and ACT IV
+internal learning remain separate. [Prior context diagnostic](docs/context-memory-results.md).
 
 The established models freeze recurrent connectivity and train an external
 readout. Distinguish **representation**, **decoding** and **internal learning**.
@@ -34,11 +33,14 @@ Use Python3.12 and a clean environment; commands run from the repository root.
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-act1-lock.txt
 $env:PYTHONPATH = 'src'
-.\.venv\Scripts\python.exe scripts/context_memory.py --config configs/context_memory.json --out outputs/context_new
+.\.venv\Scripts\python.exe -m flying.training.phase6 prepare --cache outputs/act1-graphs
+.\.venv\Scripts\python.exe scripts/run_context_intervention.py run --config configs/context_intervention_main.json --out outputs/intervention_new
+.\.venv\Scripts\python.exe scripts/run_context_intervention.py verify --source outputs/intervention_new --out outputs/intervention_verify_new
+.\.venv\Scripts\python.exe scripts/summarize_context_intervention.py --source outputs/intervention_new --out outputs/intervention_analysis_new
 ```
 
-Use fresh output directories. This diagnostic uses saved checkpoints and needs
-no graph download. Raw downloads and sparse graph caches are excluded
+Use fresh output directories. The config reuses committed sequence pairs;
+see the result document for independent sequence reconstruction. Raw downloads and sparse graph caches are excluded
 from Git; provenance and SHA-256 validation are mandatory.
 [ACT I protocol](docs/whole-brain-memory-protocol.md) · [Data and attribution](data/README.md) ·
 [Primary-source review](docs/research.md) · [Historical reproduction](docs/historical-reproduction.md) · [License](LICENSE)

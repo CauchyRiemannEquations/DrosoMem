@@ -34,6 +34,7 @@ This is not a new execution of every historical experiment.
 | Is past iid input linearly accessible under the current matched interface? | Completed ACT II diagnostic | 20 conditions /20 exact full repeats; mean past-lag accuracy legacy5=60.42% / brain1=51.10%. Whole-brain criterion fails; [results](delayed-symbol-results.md). Not autonomous recall or formal memory capacity |
 | Does trained-prefix recall extend across alphabet sizes? | ACT II-A fixed-N128 comparison completed | 80 fits at K2/4/10/16; both graphs pass scoped trained-prefix gates at all K, no whole-brain superiority. Mean prefixes partial25.0/43.4/82.2/103.1; whole27.3/26.3/55.1/88.0. [Results](alphabet-memory-results.md). Full length-by-K design and additional families remain open |
 | Can finite-context distinctiveness help explain the K curve? | ACT II diagnostic completed; both scoped endpoints pass | 120 context tables on20 unique tasks; order2 ambiguity K16−K2=−0.2272; order3 prefix +59.0; all independently checked. Context5 completes K10/K16. A task-level explanation candidate, not neural causality; [results](context-memory-results.md) |
+| Does a fixed-K low/high context-conflict intervention change recall? | Completed within registered cohort scope | Main40 fits; confirmed graphs: none. [Results](context-intervention-results.md). Matched unigram counts and interface; ordering covariates remain |
 | Memory-critical subnetwork? | Partial prior ablations only | No comprehensive matched ablation/control study or causal circuit localization; ACT III open |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
@@ -196,5 +197,20 @@ ambiguity because the short initial prompt is ambiguous. Every failure is kept.
 [Full results](context-memory-results.md). No neural training was repeated.
 
 Current position: ACT II-A plus task/decoding diagnostic completed within scope.
-Next is one fixed-K context-conflict intervention, not yet executed. Full length
+Its selected fixed-K intervention is now complete below. Full length
 by K, additional families, comprehensive ACT III and useful ACT IV remain open.
+
+## Fixed-K context intervention completion
+
+Protocol3b9e0f1 preceded bounded sequence construction and neural outcomes;
+implementation212e6b9. Main40 fits: legacy5:low43.2/high30.9; brain1:low30.6/high30.4.
+Discovery-qualified graphs: ['legacy5']; confirmation executed:
+True; confirmed graphs: none.
+All replay checks and registered independent refits passed. Four smoke runs
+are excluded. [Results](context-intervention-results.md), including every seed,
+all control orders, regional conflict diagnostics and negative paired differences.
+
+K4, N128, symbol multiset, prompt010, input IDs,48 MBONs and428 head parameters
+are matched. Other ordering statistics can differ, so this does not isolate
+context conflict as a unique causal variable. Tests167 passed,8 optional skips.
+Next: one frozen-state representation/decoding diagnostic on these saved pairs; proposed, not executed. Current scope remains ACT II.

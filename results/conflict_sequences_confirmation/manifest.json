@@ -1,0 +1,140 @@
+{
+  "config": {
+    "study": "act2-context-intervention-confirmation",
+    "conditions": [
+      "legacy5",
+      "brain1"
+    ],
+    "alphabet_sizes": [
+      4
+    ],
+    "circuit_seeds": [
+      701,
+      702
+    ],
+    "blocks": [
+      {
+        "model_seed": 29142,
+        "dataset_seed": 30142
+      },
+      {
+        "model_seed": 29143,
+        "dataset_seed": 30143
+      },
+      {
+        "model_seed": 29144,
+        "dataset_seed": 30144
+      }
+    ],
+    "dataset": {
+      "length": 128,
+      "offset": 0,
+      "prompt": [
+        0,
+        1,
+        0
+      ]
+    },
+    "prompt_length": 3,
+    "eval_length": 125,
+    "epochs": 2000,
+    "hidden_units": 8,
+    "initialization": 0,
+    "learning_rate": 0.03,
+    "l2": 1e-05,
+    "prefix_window": 32,
+    "prefix_weight": 4,
+    "leak": 0.6,
+    "gain": 0.9,
+    "input_fraction": 0.1,
+    "input_amplitude": 0.5,
+    "schedule": "mbon_after_kc",
+    "normalization": "incoming_l1",
+    "activity_epsilon": 1e-08,
+    "decay_steps": 32,
+    "worker_seconds": 1800,
+    "worker_rss_bytes": 3221225472,
+    "protocol": "docs/context-intervention-protocol.md",
+    "arms": [
+      "low",
+      "high"
+    ],
+    "sequences": "results/conflict_sequences_confirmation",
+    "construction": {
+      "order": 3,
+      "proposals": 2000,
+      "min_floor_gap": 0.1
+    },
+    "bootstrap_seed": 31399,
+    "bootstrap_draws": 10000
+  },
+  "git_commit": "212e6b96f05087863f0888476ea1bdc23f1f8c4a",
+  "protocol_sha256": "f61a44900ea8c76f8caedd6ea448064cd7ab509144e0a6acc446b4811791150e",
+  "generator_sha256": "8ee0e4e85a2998d742252774b186d2cf2f1cbb6fea003b2b173cf037b8d20dae",
+  "all_pairs_pass": true,
+  "pairs": [
+    {
+      "model_seed": 29142,
+      "dataset_seed": 30142,
+      "floor_gap": 0.432,
+      "passed": true
+    },
+    {
+      "model_seed": 29143,
+      "dataset_seed": 30143,
+      "floor_gap": 0.328,
+      "passed": true
+    },
+    {
+      "model_seed": 29144,
+      "dataset_seed": 30144,
+      "floor_gap": 0.344,
+      "passed": true
+    }
+  ],
+  "controls_verified": 36,
+  "artifacts": {
+    "d30142/construction.json": "3e1f0b7bbf01d7fd649e9f9dfb5d83a9559a57b5f09cca8f66726b97d06b03bc",
+    "d30142/diagnostics.json": "b9e33b3b93bb8af0827a9c77cf52f8a30b5274e7fe79cca76ed079bebacbb007",
+    "d30142/high_m1.json": "1b096df4497cb929a93f2a3e5fbb41409825a5cd9654368274ed638600fdcb25",
+    "d30142/high_m2.json": "8a6e87f8763a2b3b2ae51b5e63bfae0fa8a21c29adaa395574eacddbc381896d",
+    "d30142/high_m3.json": "6b8e2ce7f47c159500136f8fe49eb86e03815712662c42fb81105f498c82b397",
+    "d30142/high_m4.json": "0477259b163bd1e7d8d634560728e54ef6147e6b897a6bd179e48f3be90be87e",
+    "d30142/high_m5.json": "809262dfcb02d8d456c7983f79c3578513cbae7a4d3fcc262fb33e493ded7413",
+    "d30142/high_m8.json": "db2b1cfd178ce0dd2d6070cd485fbc542ca8a6fe0e89e4b3731cab8208013ad5",
+    "d30142/low_m1.json": "0902398ba346c5696fd39e4b0bd482c560b67b72a9fbdcc8e857a8a03cea0b0e",
+    "d30142/low_m2.json": "0baeaa750e90ec28a55f224f261ecda69ba6cbe4c23349d82bb00de41804ebdd",
+    "d30142/low_m3.json": "a20fb49a23fdd8389915513d64af0a676a5c696c7e9ac83b75aa27d63b22049f",
+    "d30142/low_m4.json": "732f3e95ad4c99bf8819d9952ba1e6e961b4a372233e03dd786dd5a694ae99af",
+    "d30142/low_m5.json": "f000751411865802964748975f47beb5c420f2dd9be6f7bbf8fbccc9a05ad357",
+    "d30142/low_m8.json": "f5be3433e762f9b6db5922efed72f7e5d33b35a9ae99edd40387e82eac858b20",
+    "d30143/construction.json": "e62c3930aa39a0cc37079004bbaa83720b7e1952bbb7b52a0423a30fdfe6dec2",
+    "d30143/diagnostics.json": "791069f11ffc5f71b7a08e9ac0248441886b0b4e1719d239d5fdedb5ae5d1d19",
+    "d30143/high_m1.json": "ecdaf85d09ea631f1d215f39a5e08c14d3c6e860098f1c1c33cc1bce3bd5c8a5",
+    "d30143/high_m2.json": "6d8124372702ce7146a4785ba55d0426dd37de59dde074f8ca225bb1c2e12848",
+    "d30143/high_m3.json": "a592449e72912da46868b5ffb4ed08d83dd3bd4ceede523419360e28670fa68b",
+    "d30143/high_m4.json": "45a3fc4be0ff1896e26dad74cad31601d77a695037099550300e954da17fcaf3",
+    "d30143/high_m5.json": "37f2da7f9e0880ac9a7af5f15dd898fcdceb2252d579d2cbb5169687fb2de9b7",
+    "d30143/high_m8.json": "ecf257a7af43df9653efc842558dd3e3fecfeca6a5d9462cf67667b98caefc0e",
+    "d30143/low_m1.json": "67e6118592f4e072165e8374413d92b9a3810aeaca3903cdd8c7ee975c8df027",
+    "d30143/low_m2.json": "1849ae6611c655792784cdd2a55e005f93c0fce7f39693d56e427b8ff6a0a189",
+    "d30143/low_m3.json": "99c17563592c2bdc3ed6e3d1e54a9f7f5205302e0ff247b85aa5b0e1f7d852aa",
+    "d30143/low_m4.json": "1686bedd6b1e5a90f423c0597945a36b12a9d5171f4f0a54905d560b86994159",
+    "d30143/low_m5.json": "a29718ecc33ce3b93160f2ec920f3b08bb7ef779a90174f062528187a02dcf6f",
+    "d30143/low_m8.json": "b5bf1e5fa36d51c2556f33873f5ea868ec03cc30783d81c56443ab18e1ef0b84",
+    "d30144/construction.json": "b9f6b02eff9ab7e318eee5f4c33a2719d2c843feb06b347f511ecd78fa6529f5",
+    "d30144/diagnostics.json": "f0b2c63037dc5f26cd4f812e81db03ac2388f139fb2fadcdfbf3a2765517afb0",
+    "d30144/high_m1.json": "968fd1773bf4210d1886a0f568591274e4c3110a2126b217422323b758f1829a",
+    "d30144/high_m2.json": "fd1037ff591ead8b7cf7c2d17b2ddcd42cfe2ea04e2056b1bcbd8395b49543f6",
+    "d30144/high_m3.json": "5b1c61eed82f7992112c22482bdafbd362c4f9a84e2afe12f02aa0c3ed6c023d",
+    "d30144/high_m4.json": "2878d070779f37bd484e65547794aa7ae8d531991143b30476bd2475bbd87b52",
+    "d30144/high_m5.json": "603bb2773730002df16f27dbc786ad975e476e03f33557f7860fdafca53cd5af",
+    "d30144/high_m8.json": "7c19af9d5ce404936892b9b073c2dc7b5332b0764afc56bdade18eb6287c5dc1",
+    "d30144/low_m1.json": "67624ebba64c219559dcb1992ad86d3266d63adae5aef93e6b48494a7556dc88",
+    "d30144/low_m2.json": "3bb0b67487d9437f359a7329c4a65b6e3079f72bb897e2f95e7a20ad8021637f",
+    "d30144/low_m3.json": "5257ee057f12dbd782b0250f6f01c0622c9aed973adc6994ccfb6b8f3d73bca9",
+    "d30144/low_m4.json": "4d0878ecf7f235887a9a822424613b96bff8005c321649e649b23fad5102c81c",
+    "d30144/low_m5.json": "840a4dade9aea25781893619bdefacd55183c5f319f8a248bf916a6d1b16d41c",
+    "d30144/low_m8.json": "1149ce46c4ed20883488585b760564973051ac7f1aec2ad851cc3c3bfa71eb1e"
+  }
+}

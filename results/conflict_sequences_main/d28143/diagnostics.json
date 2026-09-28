@@ -1,0 +1,1997 @@
+{
+  "low": {
+    "orders": {
+      "1": {
+        "order": 1,
+        "exact_prefix_symbols": 2,
+        "autonomous_prefix_bits": 4.0,
+        "first_error_position": 3,
+        "autonomous_accuracy": 0.264,
+        "teacher_accuracy": 0.33070866141732286,
+        "teacher_eval_accuracy": 0.336,
+        "accuracy_1_32": 0.4375,
+        "accuracy_33_64": 0.15625,
+        "accuracy_65_125": 0.22950819672131148,
+        "fallback_fraction": 0.0,
+        "table_contexts": 5,
+        "table_nonzero_cells": 20,
+        "table_dense_scalars": 20,
+        "table_json_bytes": 230,
+        "distinct_contexts": 4,
+        "singleton_contexts": 0,
+        "conflicting_contexts": 4,
+        "conflicting_occurrence_fraction": 1.0,
+        "ambiguity_error_floor": 0.664
+      },
+      "2": {
+        "order": 2,
+        "exact_prefix_symbols": 1,
+        "autonomous_prefix_bits": 2.0,
+        "first_error_position": 2,
+        "autonomous_accuracy": 0.272,
+        "teacher_accuracy": 0.4409448818897638,
+        "teacher_eval_accuracy": 0.44,
+        "accuracy_1_32": 0.28125,
+        "accuracy_33_64": 0.28125,
+        "accuracy_65_125": 0.26229508196721313,
+        "fallback_fraction": 0.0,
+        "table_contexts": 21,
+        "table_nonzero_cells": 77,
+        "table_dense_scalars": 84,
+        "table_json_bytes": 954,
+        "distinct_contexts": 16,
+        "singleton_contexts": 0,
+        "conflicting_contexts": 16,
+        "conflicting_occurrence_fraction": 1.0,
+        "ambiguity_error_floor": 0.528
+      },
+      "3": {
+        "order": 3,
+        "exact_prefix_symbols": 8,
+        "autonomous_prefix_bits": 16.0,
+        "first_error_position": 9,
+        "autonomous_accuracy": 0.288,
+        "teacher_accuracy": 0.7874015748031497,
+        "teacher_eval_accuracy": 0.792,
+        "accuracy_1_32": 0.3125,
+        "accuracy_33_64": 0.34375,
+        "accuracy_65_125": 0.2459016393442623,
+        "fallback_fraction": 0.0,
+        "table_contexts": 78,
+        "table_nonzero_cells": 155,
+        "table_dense_scalars": 312,
+        "table_json_bytes": 3635,
+        "distinct_contexts": 57,
+        "singleton_contexts": 24,
+        "conflicting_contexts": 17,
+        "conflicting_occurrence_fraction": 0.512,
+        "ambiguity_error_floor": 0.184
+      },
+      "4": {
+        "order": 4,
+        "exact_prefix_symbols": 8,
+        "autonomous_prefix_bits": 16.0,
+        "first_error_position": 9,
+        "autonomous_accuracy": 0.288,
+        "teacher_accuracy": 0.8346456692913385,
+        "teacher_eval_accuracy": 0.84,
+        "accuracy_1_32": 0.3125,
+        "accuracy_33_64": 0.34375,
+        "accuracy_65_125": 0.2459016393442623,
+        "fallback_fraction": 0.0,
+        "table_contexts": 156,
+        "table_nonzero_cells": 252,
+        "table_dense_scalars": 624,
+        "table_json_bytes": 7458,
+        "distinct_contexts": 79,
+        "singleton_contexts": 45,
+        "conflicting_contexts": 17,
+        "conflicting_occurrence_fraction": 0.352,
+        "ambiguity_error_floor": 0.152
+      },
+      "5": {
+        "order": 5,
+        "exact_prefix_symbols": 25,
+        "autonomous_prefix_bits": 50.0,
+        "first_error_position": 26,
+        "autonomous_accuracy": 0.432,
+        "teacher_accuracy": 0.889763779527559,
+        "teacher_eval_accuracy": 0.896,
+        "accuracy_1_32": 0.8125,
+        "accuracy_33_64": 0.28125,
+        "accuracy_65_125": 0.3114754098360656,
+        "fallback_fraction": 0.0,
+        "table_contexts": 253,
+        "table_nonzero_cells": 362,
+        "table_dense_scalars": 1012,
+        "table_json_bytes": 12405,
+        "distinct_contexts": 99,
+        "singleton_contexts": 75,
+        "conflicting_contexts": 12,
+        "conflicting_occurrence_fraction": 0.208,
+        "ambiguity_error_floor": 0.104
+      },
+      "8": {
+        "order": 8,
+        "exact_prefix_symbols": 35,
+        "autonomous_prefix_bits": 70.0,
+        "first_error_position": 36,
+        "autonomous_accuracy": 0.432,
+        "teacher_accuracy": 0.984251968503937,
+        "teacher_eval_accuracy": 0.992,
+        "accuracy_1_32": 1.0,
+        "accuracy_33_64": 0.28125,
+        "accuracy_65_125": 0.21311475409836064,
+        "fallback_fraction": 0.008,
+        "table_contexts": 594,
+        "table_nonzero_cells": 711,
+        "table_dense_scalars": 2376,
+        "table_json_bytes": 31172,
+        "distinct_contexts": 121,
+        "singleton_contexts": 117,
+        "conflicting_contexts": 1,
+        "conflicting_occurrence_fraction": 0.016,
+        "ambiguity_error_floor": 0.008
+      }
+    },
+    "early_ambiguity": {
+      "distinct_contexts": 27,
+      "singleton_contexts": 22,
+      "conflicting_contexts": 2,
+      "conflicting_occurrence_fraction": 0.125,
+      "ambiguity_error_floor": 0.0625,
+      "counts": [
+        {
+          "context": [
+            0,
+            0,
+            2
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            1,
+            0
+          ],
+          "counts": {
+            "2": 2
+          }
+        },
+        {
+          "context": [
+            0,
+            2,
+            1
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            2,
+            2
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            2,
+            3
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            0,
+            2
+          ],
+          "counts": {
+            "1": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            1,
+            3
+          ],
+          "counts": {
+            "0": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            2,
+            1
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            3,
+            0
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            3,
+            2
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            3,
+            3
+          ],
+          "counts": {
+            "2": 2
+          }
+        },
+        {
+          "context": [
+            2,
+            1,
+            1
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            1,
+            2
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            1,
+            3
+          ],
+          "counts": {
+            "3": 2
+          }
+        },
+        {
+          "context": [
+            2,
+            2,
+            1
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            2,
+            2
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            2,
+            3
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            3,
+            0
+          ],
+          "counts": {
+            "0": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            3,
+            3
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            0,
+            0
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            0,
+            1
+          ],
+          "counts": {
+            "0": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            1,
+            3
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            2,
+            1
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            2,
+            2
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            2,
+            3
+          ],
+          "counts": {
+            "0": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            3,
+            1
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            3,
+            2
+          ],
+          "counts": {
+            "1": 1,
+            "2": 1
+          }
+        }
+      ]
+    },
+    "late_ambiguity": {
+      "distinct_contexts": 50,
+      "singleton_contexts": 25,
+      "conflicting_contexts": 14,
+      "conflicting_occurrence_fraction": 0.4731182795698925,
+      "ambiguity_error_floor": 0.1935483870967742,
+      "counts": [
+        {
+          "context": [
+            0,
+            0,
+            2
+          ],
+          "counts": {
+            "2": 3
+          }
+        },
+        {
+          "context": [
+            0,
+            0,
+            3
+          ],
+          "counts": {
+            "0": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            1,
+            0
+          ],
+          "counts": {
+            "0": 1,
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            1,
+            1
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            1,
+            2
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            1,
+            3
+          ],
+          "counts": {
+            "0": 1,
+            "1": 2
+          }
+        },
+        {
+          "context": [
+            0,
+            2,
+            0
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            2,
+            1
+          ],
+          "counts": {
+            "3": 2
+          }
+        },
+        {
+          "context": [
+            0,
+            2,
+            2
+          ],
+          "counts": {
+            "0": 3
+          }
+        },
+        {
+          "context": [
+            0,
+            3,
+            0
+          ],
+          "counts": {
+            "1": 2,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            3,
+            1
+          ],
+          "counts": {
+            "0": 2,
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            3,
+            2
+          ],
+          "counts": {
+            "0": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            3,
+            3
+          ],
+          "counts": {
+            "0": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            0,
+            0
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            0,
+            1
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            0,
+            2
+          ],
+          "counts": {
+            "0": 1,
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            0,
+            3
+          ],
+          "counts": {
+            "1": 3,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            1,
+            0
+          ],
+          "counts": {
+            "3": 2
+          }
+        },
+        {
+          "context": [
+            1,
+            1,
+            2
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            2,
+            1
+          ],
+          "counts": {
+            "2": 1,
+            "3": 2
+          }
+        },
+        {
+          "context": [
+            1,
+            2,
+            2
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            2,
+            3
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            3,
+            0
+          ],
+          "counts": {
+            "0": 1,
+            "1": 2
+          }
+        },
+        {
+          "context": [
+            1,
+            3,
+            1
+          ],
+          "counts": {
+            "1": 2
+          }
+        },
+        {
+          "context": [
+            1,
+            3,
+            2
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            3,
+            3
+          ],
+          "counts": {
+            "2": 2
+          }
+        },
+        {
+          "context": [
+            2,
+            0,
+            0
+          ],
+          "counts": {
+            "2": 2
+          }
+        },
+        {
+          "context": [
+            2,
+            0,
+            1
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            0,
+            2
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            0,
+            3
+          ],
+          "counts": {
+            "0": 2
+          }
+        },
+        {
+          "context": [
+            2,
+            1,
+            2
+          ],
+          "counts": {
+            "1": 2
+          }
+        },
+        {
+          "context": [
+            2,
+            1,
+            3
+          ],
+          "counts": {
+            "0": 2,
+            "3": 2
+          }
+        },
+        {
+          "context": [
+            2,
+            2,
+            0
+          ],
+          "counts": {
+            "0": 2,
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            2,
+            1
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            2,
+            3
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            3,
+            0
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            3,
+            1
+          ],
+          "counts": {
+            "0": 2,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            0,
+            0
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            0,
+            1
+          ],
+          "counts": {
+            "0": 2,
+            "2": 1,
+            "3": 2
+          }
+        },
+        {
+          "context": [
+            3,
+            0,
+            2
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            0,
+            3
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            1,
+            0
+          ],
+          "counts": {
+            "1": 1,
+            "2": 1,
+            "3": 2
+          }
+        },
+        {
+          "context": [
+            3,
+            1,
+            1
+          ],
+          "counts": {
+            "0": 2
+          }
+        },
+        {
+          "context": [
+            3,
+            1,
+            2
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            1,
+            3
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            2,
+            0
+          ],
+          "counts": {
+            "3": 2
+          }
+        },
+        {
+          "context": [
+            3,
+            2,
+            2
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            2,
+            3
+          ],
+          "counts": {
+            "0": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            3,
+            0
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            3,
+            2
+          ],
+          "counts": {
+            "0": 1,
+            "2": 1
+          }
+        }
+      ]
+    },
+    "region_counts": {
+      "first32": [
+        4,
+        8,
+        10,
+        10
+      ],
+      "later93": [
+        26,
+        23,
+        22,
+        22
+      ]
+    },
+    "transition_counts": [
+      [
+        5,
+        9,
+        10,
+        8
+      ],
+      [
+        10,
+        4,
+        6,
+        12
+      ],
+      [
+        6,
+        10,
+        9,
+        6
+      ],
+      [
+        10,
+        9,
+        7,
+        6
+      ]
+    ],
+    "repeated_neighbor_fraction": 0.1889763779527559,
+    "symbols_sha256": "19355d8bae08f9f22c5c0541989bf0dc39a168ec3c36b699570fb2aba00e98e6"
+  },
+  "high": {
+    "orders": {
+      "1": {
+        "order": 1,
+        "exact_prefix_symbols": 0,
+        "autonomous_prefix_bits": 0.0,
+        "first_error_position": 1,
+        "autonomous_accuracy": 0.24,
+        "teacher_accuracy": 0.33858267716535434,
+        "teacher_eval_accuracy": 0.344,
+        "accuracy_1_32": 0.1875,
+        "accuracy_33_64": 0.1875,
+        "accuracy_65_125": 0.29508196721311475,
+        "fallback_fraction": 0.0,
+        "table_contexts": 5,
+        "table_nonzero_cells": 20,
+        "table_dense_scalars": 20,
+        "table_json_bytes": 231,
+        "distinct_contexts": 4,
+        "singleton_contexts": 0,
+        "conflicting_contexts": 4,
+        "conflicting_occurrence_fraction": 1.0,
+        "ambiguity_error_floor": 0.632
+      },
+      "2": {
+        "order": 2,
+        "exact_prefix_symbols": 0,
+        "autonomous_prefix_bits": 0.0,
+        "first_error_position": 1,
+        "autonomous_accuracy": 0.272,
+        "teacher_accuracy": 0.36220472440944884,
+        "teacher_eval_accuracy": 0.36,
+        "accuracy_1_32": 0.28125,
+        "accuracy_33_64": 0.25,
+        "accuracy_65_125": 0.2786885245901639,
+        "fallback_fraction": 0.0,
+        "table_contexts": 21,
+        "table_nonzero_cells": 73,
+        "table_dense_scalars": 84,
+        "table_json_bytes": 952,
+        "distinct_contexts": 16,
+        "singleton_contexts": 0,
+        "conflicting_contexts": 16,
+        "conflicting_occurrence_fraction": 1.0,
+        "ambiguity_error_floor": 0.624
+      },
+      "3": {
+        "order": 3,
+        "exact_prefix_symbols": 0,
+        "autonomous_prefix_bits": 0.0,
+        "first_error_position": 1,
+        "autonomous_accuracy": 0.256,
+        "teacher_accuracy": 0.44881889763779526,
+        "teacher_eval_accuracy": 0.448,
+        "accuracy_1_32": 0.21875,
+        "accuracy_33_64": 0.3125,
+        "accuracy_65_125": 0.2459016393442623,
+        "fallback_fraction": 0.0,
+        "table_contexts": 74,
+        "table_nonzero_cells": 194,
+        "table_dense_scalars": 296,
+        "table_json_bytes": 3443,
+        "distinct_contexts": 53,
+        "singleton_contexts": 8,
+        "conflicting_contexts": 45,
+        "conflicting_occurrence_fraction": 0.936,
+        "ambiguity_error_floor": 0.552
+      },
+      "4": {
+        "order": 4,
+        "exact_prefix_symbols": 0,
+        "autonomous_prefix_bits": 0.0,
+        "first_error_position": 1,
+        "autonomous_accuracy": 0.288,
+        "teacher_accuracy": 0.9606299212598425,
+        "teacher_eval_accuracy": 0.968,
+        "accuracy_1_32": 0.21875,
+        "accuracy_33_64": 0.34375,
+        "accuracy_65_125": 0.29508196721311475,
+        "fallback_fraction": 0.0,
+        "table_contexts": 194,
+        "table_nonzero_cells": 317,
+        "table_dense_scalars": 776,
+        "table_json_bytes": 9323,
+        "distinct_contexts": 121,
+        "singleton_contexts": 117,
+        "conflicting_contexts": 3,
+        "conflicting_occurrence_fraction": 0.048,
+        "ambiguity_error_floor": 0.024
+      },
+      "5": {
+        "order": 5,
+        "exact_prefix_symbols": 0,
+        "autonomous_prefix_bits": 0.0,
+        "first_error_position": 1,
+        "autonomous_accuracy": 0.256,
+        "teacher_accuracy": 0.9763779527559056,
+        "teacher_eval_accuracy": 0.984,
+        "accuracy_1_32": 0.21875,
+        "accuracy_33_64": 0.28125,
+        "accuracy_65_125": 0.26229508196721313,
+        "fallback_fraction": 0.0,
+        "table_contexts": 316,
+        "table_nonzero_cells": 440,
+        "table_dense_scalars": 1264,
+        "table_json_bytes": 15545,
+        "distinct_contexts": 124,
+        "singleton_contexts": 123,
+        "conflicting_contexts": 1,
+        "conflicting_occurrence_fraction": 0.016,
+        "ambiguity_error_floor": 0.008
+      },
+      "8": {
+        "order": 8,
+        "exact_prefix_symbols": 0,
+        "autonomous_prefix_bits": 0.0,
+        "first_error_position": 1,
+        "autonomous_accuracy": 0.24,
+        "teacher_accuracy": 0.984251968503937,
+        "teacher_eval_accuracy": 0.992,
+        "accuracy_1_32": 0.21875,
+        "accuracy_33_64": 0.28125,
+        "accuracy_65_125": 0.22950819672131148,
+        "fallback_fraction": 0.04,
+        "table_contexts": 679,
+        "table_nonzero_cells": 803,
+        "table_dense_scalars": 2716,
+        "table_json_bytes": 35506,
+        "distinct_contexts": 125,
+        "singleton_contexts": 125,
+        "conflicting_contexts": 0,
+        "conflicting_occurrence_fraction": 0.0,
+        "ambiguity_error_floor": 0.0
+      }
+    },
+    "early_ambiguity": {
+      "distinct_contexts": 28,
+      "singleton_contexts": 24,
+      "conflicting_contexts": 4,
+      "conflicting_occurrence_fraction": 0.25,
+      "ambiguity_error_floor": 0.125,
+      "counts": [
+        {
+          "context": [
+            0,
+            0,
+            0
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            0,
+            1
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            0,
+            3
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            1,
+            0
+          ],
+          "counts": {
+            "0": 1,
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            1,
+            3
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            2,
+            1
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            3,
+            1
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            0,
+            0
+          ],
+          "counts": {
+            "0": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            0,
+            2
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            1,
+            2
+          ],
+          "counts": {
+            "0": 1,
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            2,
+            0
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            2,
+            1
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            2,
+            2
+          ],
+          "counts": {
+            "0": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            2,
+            3
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            3,
+            2
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            3,
+            3
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            0,
+            0
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            0,
+            1
+          ],
+          "counts": {
+            "0": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            1,
+            1
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            1,
+            2
+          ],
+          "counts": {
+            "1": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            2,
+            0
+          ],
+          "counts": {
+            "0": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            3,
+            3
+          ],
+          "counts": {
+            "1": 1,
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            1,
+            1
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            1,
+            3
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            2,
+            1
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            2,
+            3
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            3,
+            1
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            3,
+            2
+          ],
+          "counts": {
+            "3": 1
+          }
+        }
+      ]
+    },
+    "late_ambiguity": {
+      "distinct_contexts": 49,
+      "singleton_contexts": 16,
+      "conflicting_contexts": 33,
+      "conflicting_occurrence_fraction": 0.8279569892473119,
+      "ambiguity_error_floor": 0.44086021505376344,
+      "counts": [
+        {
+          "context": [
+            0,
+            0,
+            0
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            0,
+            1
+          ],
+          "counts": {
+            "0": 1,
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            0,
+            3
+          ],
+          "counts": {
+            "0": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            1,
+            0
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            1,
+            1
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            1,
+            2
+          ],
+          "counts": {
+            "0": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            1,
+            3
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            2,
+            0
+          ],
+          "counts": {
+            "0": 1,
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            2,
+            1
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            3,
+            0
+          ],
+          "counts": {
+            "0": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            3,
+            1
+          ],
+          "counts": {
+            "0": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            3,
+            2
+          ],
+          "counts": {
+            "0": 1,
+            "2": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            0,
+            3,
+            3
+          ],
+          "counts": {
+            "1": 1,
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            0,
+            1
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            0,
+            3
+          ],
+          "counts": {
+            "0": 1,
+            "1": 1,
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            1,
+            1
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            1,
+            2
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            1,
+            3
+          ],
+          "counts": {
+            "1": 1,
+            "2": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            2,
+            0
+          ],
+          "counts": {
+            "0": 1,
+            "1": 1,
+            "3": 2
+          }
+        },
+        {
+          "context": [
+            1,
+            2,
+            1
+          ],
+          "counts": {
+            "0": 1,
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            2,
+            2
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            2,
+            3
+          ],
+          "counts": {
+            "0": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            3,
+            1
+          ],
+          "counts": {
+            "1": 1,
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            3,
+            2
+          ],
+          "counts": {
+            "0": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            1,
+            3,
+            3
+          ],
+          "counts": {
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            0,
+            0
+          ],
+          "counts": {
+            "0": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            0,
+            1
+          ],
+          "counts": {
+            "2": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            0,
+            2
+          ],
+          "counts": {
+            "0": 2,
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            0,
+            3
+          ],
+          "counts": {
+            "0": 1,
+            "1": 1,
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            1,
+            0
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            1,
+            1
+          ],
+          "counts": {
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            1,
+            2
+          ],
+          "counts": {
+            "0": 1,
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            2,
+            0
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            2,
+            1
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            2,
+            3
+          ],
+          "counts": {
+            "1": 1,
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            3,
+            0
+          ],
+          "counts": {
+            "0": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            3,
+            1
+          ],
+          "counts": {
+            "0": 1,
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            2,
+            3,
+            2
+          ],
+          "counts": {
+            "2": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            0,
+            0
+          ],
+          "counts": {
+            "1": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            0,
+            3
+          ],
+          "counts": {
+            "2": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            1,
+            0
+          ],
+          "counts": {
+            "1": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            1,
+            1
+          ],
+          "counts": {
+            "1": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            1,
+            2
+          ],
+          "counts": {
+            "0": 2,
+            "1": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            1,
+            3
+          ],
+          "counts": {
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            2,
+            0
+          ],
+          "counts": {
+            "1": 1,
+            "2": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            2,
+            2
+          ],
+          "counts": {
+            "0": 1,
+            "1": 1,
+            "3": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            2,
+            3
+          ],
+          "counts": {
+            "0": 1,
+            "1": 1,
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            3,
+            1
+          ],
+          "counts": {
+            "1": 1,
+            "2": 1
+          }
+        },
+        {
+          "context": [
+            3,
+            3,
+            2
+          ],
+          "counts": {
+            "0": 1,
+            "2": 1
+          }
+        }
+      ]
+    },
+    "region_counts": {
+      "first32": [
+        6,
+        9,
+        9,
+        8
+      ],
+      "later93": [
+        24,
+        22,
+        23,
+        24
+      ]
+    },
+    "transition_counts": [
+      [
+        8,
+        8,
+        4,
+        11
+      ],
+      [
+        6,
+        7,
+        12,
+        7
+      ],
+      [
+        12,
+        7,
+        5,
+        8
+      ],
+      [
+        5,
+        10,
+        11,
+        6
+      ]
+    ],
+    "repeated_neighbor_fraction": 0.2047244094488189,
+    "symbols_sha256": "7d72c393f9860987e069246da8c84b1d9882260f6d8e9f3ec4e947afc21eb49b"
+  }
+}

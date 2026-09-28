@@ -7,20 +7,20 @@ information), and **learning** (experience modifies recurrent connections).
 
 ## Current position — 2026-09-28
 
-**ACT II-A and finite-context task diagnostic complete within scope.** Completion of a scoped experiment
+**ACT II fixed-K context-conflict intervention complete within scope.** Completion of a scoped experiment
 does not mean every question in its ACT is solved.
 
 | Axis | Completed scope | Remaining scope |
 |---|---|---|
 | ACT I | Matched partial/expanded/whole graphs, thresholds5/1; no established whole-brain recall advantage | Broader tasks or dynamics would require separate protocols |
-| ACT II | Four-family pilot, random N32–512 scaling, prefix-weight tradeoff, independent-stream delay diagnostic, N128 K2/4/10/16 comparison and120 finite-context controls | Next: fixed-K context-conflict intervention; additional families and a full length-by-K design remain open |
+| ACT II | Four-family pilot, random N32–512 scaling, prefix-weight tradeoff, independent-stream delay diagnostic, N128 K2/4/10/16 comparison,120 finite-context controls and fixed-K intervention | Next: saved-pair task/decoding follow-up; additional families and a full length-by-K design remain open |
 | ACT III | Earlier limited controls/ablations exist | Comprehensive matched structural controls, grouped ablations and critical-subnetwork analysis |
 | ACT IV | Earlier local-rule implementation with negative functional results | Useful internal learning without external decoder dependence |
 | ACT V | Scoped robustness curves exposed strong fragility | Broader perturbation/physiological validation, kept separate from clean benchmarks |
 
 현재는 **ACT II-A와 문맥 충돌·n-gram 진단까지 완료**했다. ACT I의 비교는 끝났으며
 전체망 우위는 확인되지 않았다. 짧은 문맥의 구별 가능성이라는 설명 후보를
-지지하는 진단 기준은 통과했다. 다음 한 실험은 K와 길이를 고정한 문맥 충돌 개입이다. ACT III의 체계적인 구조 제거와
+지지하는 진단 기준은 통과했다. 그 후 고정K 문맥 개입도 완료했다. 다음 한 실험은 저장된 상태에서 과거 기호 접근성과 다음 기호 해독을 비교하는 진단이다. ACT III의 체계적인 구조 제거와
 ACT IV의 내부 학습 확장을 시작한 것으로 표시하지 않는다.
 
 ## ACT I — Can a Fly Brain Remember?
@@ -52,7 +52,7 @@ K2 toK16, so the registered load-drop endpoint fails. The subsequent
 [finite-context diagnostic](context-memory-results.md) is complete:120 controls
 on20 unique tasks, with both registered endpoints passing. Context distinctiveness
 is a supported explanation candidate, not an identified neural cause. Next is one
-fixed-K context-conflict intervention, proposed but not yet registered or executed.
+[fixed-K intervention](context-intervention-results.md), now complete. Confirmed graphs: none. The next single study is one frozen-state representation/decoding diagnostic on these saved pairs, not yet executed.
 Full length-by-alphabet scaling and additional families remain open. The paragraph
 below describes the staged scope, not an assertion that all stages are complete.
 
