@@ -1,0 +1,75 @@
+{
+  "study": "act2-delayed-symbol-main",
+  "conditions": [
+    "legacy5",
+    "brain1"
+  ],
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "blocks": [
+    {
+      "seed": 14142,
+      "train_seed": 15142,
+      "test_seed": 16142
+    },
+    {
+      "seed": 14143,
+      "train_seed": 15143,
+      "test_seed": 16143
+    },
+    {
+      "seed": 14144,
+      "train_seed": 15144,
+      "test_seed": 16144
+    },
+    {
+      "seed": 14145,
+      "train_seed": 15145,
+      "test_seed": 16145
+    },
+    {
+      "seed": 14146,
+      "train_seed": 15146,
+      "test_seed": 16146
+    }
+  ],
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "warmup": 100,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "null_shift": 1000,
+  "alpha": 1.0,
+  "leak": 0.6,
+  "gain": 0.9,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "schedule": "mbon_after_kc",
+  "normalization": "incoming_l1",
+  "activity_epsilon": 1e-08,
+  "decay_steps": 32,
+  "worker_seconds": 1800,
+  "worker_rss_bytes": 3221225472,
+  "protocol": "docs/delayed-symbol-protocol.md"
+}

@@ -1,0 +1,65 @@
+{
+  "study": "act2-delayed-symbol-confirmation",
+  "conditions": [
+    "legacy5",
+    "brain1"
+  ],
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "blocks": [
+    {
+      "seed": 18142,
+      "train_seed": 19142,
+      "test_seed": 20142
+    },
+    {
+      "seed": 18143,
+      "train_seed": 19143,
+      "test_seed": 20143
+    },
+    {
+      "seed": 18144,
+      "train_seed": 19144,
+      "test_seed": 20144
+    }
+  ],
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "warmup": 100,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "null_shift": 1000,
+  "alpha": 1.0,
+  "leak": 0.6,
+  "gain": 0.9,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "schedule": "mbon_after_kc",
+  "normalization": "incoming_l1",
+  "activity_epsilon": 1e-08,
+  "decay_steps": 32,
+  "worker_seconds": 1800,
+  "worker_rss_bytes": 3221225472,
+  "protocol": "docs/delayed-symbol-protocol.md"
+}
