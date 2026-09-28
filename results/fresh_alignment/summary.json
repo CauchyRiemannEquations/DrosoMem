@@ -1,0 +1,313 @@
+{
+  "cohort": "fresh_confirmation",
+  "n_blocks": 3,
+  "cells": {
+    "fixed_original_to_renormalized": {
+      "test_accuracy": {
+        "n": 3,
+        "mean": 0.47255555555555545,
+        "median": 0.495,
+        "variance": 0.0050814884259259225,
+        "bootstrap95": [
+          0.39275,
+          0.5299166666666666
+        ]
+      },
+      "frequency_accuracy": {
+        "n": 3,
+        "mean": 0.24694444444444444,
+        "median": 0.24650000000000002,
+        "variance": 0.00010350925925925964,
+        "bootstrap95": [
+          0.237,
+          0.25733333333333336
+        ]
+      },
+      "null_accuracy": {
+        "n": 3,
+        "mean": 0.22769444444444442,
+        "median": 0.21600000000000003,
+        "variance": 0.0006411967592592587,
+        "bootstrap95": [
+          0.21033333333333334,
+          0.25675
+        ]
+      },
+      "frequency_excess": {
+        "n": 3,
+        "mean": 0.22561111111111112,
+        "median": 0.2376666666666667,
+        "variance": 0.0041836967592592585,
+        "bootstrap95": [
+          0.15575,
+          0.28341666666666665
+        ]
+      },
+      "null_excess": {
+        "n": 3,
+        "mean": 0.2448611111111111,
+        "median": 0.27316666666666667,
+        "variance": 0.003512405092592592,
+        "bootstrap95": [
+          0.17675000000000005,
+          0.2846666666666667
+        ]
+      },
+      "r2_vs_frequency": {
+        "n": 3,
+        "mean": -2.695091078097698,
+        "median": -1.3701449742456604,
+        "variance": 8.660548925302232,
+        "bootstrap95": [
+          -6.067534109879159,
+          -0.6475941501682742
+        ]
+      },
+      "test_mse": {
+        "n": 3,
+        "mean": 0.693270398887703,
+        "median": 0.44446949793588036,
+        "variance": 0.30495556952501446,
+        "bootstrap95": [
+          0.3092132274429815,
+          1.3261284712842476
+        ]
+      },
+      "source_within_accuracy": {
+        "n": 3,
+        "mean": 0.8010833333333333,
+        "median": 0.7989999999999999,
+        "variance": 0.00022700694444444672,
+        "bootstrap95": [
+          0.7871666666666665,
+          0.8170833333333333
+        ]
+      },
+      "target_refit_accuracy": {
+        "n": 3,
+        "mean": 0.7760555555555556,
+        "median": 0.7781666666666667,
+        "variance": 0.00014734259259259136,
+        "bootstrap95": [
+          0.7630000000000002,
+          0.787
+        ]
+      },
+      "transfer_minus_source": {
+        "n": 3,
+        "mean": -0.3285277777777778,
+        "median": -0.29216666666666663,
+        "variance": 0.007017238425925928,
+        "bootstrap95": [
+          -0.4243333333333334,
+          -0.26908333333333334
+        ],
+        "paired_dz": -3.9218319440159513,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "transfer_minus_target_refit": {
+        "n": 3,
+        "mean": -0.30350000000000005,
+        "median": -0.268,
+        "variance": 0.006274187499999996,
+        "bootstrap95": [
+          -0.39425,
+          -0.24825
+        ],
+        "paired_dz": -3.8315980964638214,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "unaligned_accuracy": {
+        "n": 3,
+        "mean": 0.2606111111111111,
+        "median": 0.259,
+        "variance": 0.0001380578703703705,
+        "bootstrap95": [
+          0.24975,
+          0.27308333333333334
+        ]
+      },
+      "aligned_minus_unaligned": {
+        "n": 3,
+        "mean": 0.21194444444444446,
+        "median": 0.236,
+        "variance": 0.0036735092592592587,
+        "bootstrap95": [
+          0.14300000000000002,
+          0.25683333333333336
+        ],
+        "paired_dz": 3.496885946977673,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "renormalized_to_fixed_original": {
+      "test_accuracy": {
+        "n": 3,
+        "mean": 0.45141666666666663,
+        "median": 0.4641666666666667,
+        "variance": 0.0021581874999999978,
+        "bootstrap95": [
+          0.3999166666666667,
+          0.49016666666666664
+        ]
+      },
+      "frequency_accuracy": {
+        "n": 3,
+        "mean": 0.24694444444444444,
+        "median": 0.24650000000000002,
+        "variance": 0.00010350925925925964,
+        "bootstrap95": [
+          0.237,
+          0.25733333333333336
+        ]
+      },
+      "null_accuracy": {
+        "n": 3,
+        "mean": 0.2222777777777778,
+        "median": 0.21133333333333332,
+        "variance": 0.00041084259259259275,
+        "bootstrap95": [
+          0.20983333333333334,
+          0.24566666666666667
+        ]
+      },
+      "frequency_excess": {
+        "n": 3,
+        "mean": 0.20447222222222225,
+        "median": 0.2068333333333333,
+        "variance": 0.0016343217592592598,
+        "bootstrap95": [
+          0.16291666666666668,
+          0.2436666666666667
+        ]
+      },
+      "null_excess": {
+        "n": 3,
+        "mean": 0.2291388888888889,
+        "median": 0.25283333333333335,
+        "variance": 0.0043953217592592585,
+        "bootstrap95": [
+          0.15425,
+          0.2803333333333333
+        ]
+      },
+      "r2_vs_frequency": {
+        "n": 3,
+        "mean": -3.2475612406555867,
+        "median": -2.489755920464237,
+        "variance": 4.742581411125331,
+        "bootstrap95": [
+          -5.702970518521259,
+          -1.5499572829812642
+        ]
+      },
+      "test_mse": {
+        "n": 3,
+        "mean": 0.7969034640156458,
+        "median": 0.6544256512575102,
+        "variance": 0.16699794793583606,
+        "bootstrap95": [
+          0.47856182340913933,
+          1.257722917380288
+        ]
+      },
+      "source_within_accuracy": {
+        "n": 3,
+        "mean": 0.7760555555555556,
+        "median": 0.7781666666666667,
+        "variance": 0.00014734259259259136,
+        "bootstrap95": [
+          0.7630000000000002,
+          0.787
+        ]
+      },
+      "target_refit_accuracy": {
+        "n": 3,
+        "mean": 0.8010833333333333,
+        "median": 0.7989999999999999,
+        "variance": 0.00022700694444444672,
+        "bootstrap95": [
+          0.7871666666666665,
+          0.8170833333333333
+        ]
+      },
+      "transfer_minus_source": {
+        "n": 3,
+        "mean": -0.32463888888888887,
+        "median": -0.29883333333333334,
+        "variance": 0.00295382175925926,
+        "bootstrap95": [
+          -0.3870833333333333,
+          -0.288
+        ],
+        "paired_dz": -5.973218487250056,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "transfer_minus_target_refit": {
+        "n": 3,
+        "mean": -0.3496666666666666,
+        "median": -0.32299999999999995,
+        "variance": 0.0034673611111111094,
+        "bootstrap95": [
+          -0.41716666666666663,
+          -0.30883333333333335
+        ],
+        "paired_dz": -5.93819830240707,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "unaligned_accuracy": {
+        "n": 3,
+        "mean": 0.2503333333333333,
+        "median": 0.2505833333333333,
+        "variance": 4.923611111111022e-06,
+        "bootstrap95": [
+          0.248,
+          0.2524166666666666
+        ]
+      },
+      "aligned_minus_unaligned": {
+        "n": 3,
+        "mean": 0.2010833333333333,
+        "median": 0.21358333333333335,
+        "variance": 0.0023576319444444443,
+        "bootstrap95": [
+          0.1475,
+          0.24216666666666664
+        ],
+        "paired_dz": 4.141313157686639,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    }
+  },
+  "gates": {
+    "fixed_original_to_renormalized": {
+      "alignment_improvement": true,
+      "past_access": false,
+      "retention_tolerance": false,
+      "portable_decoding": false
+    },
+    "renormalized_to_fixed_original": {
+      "alignment_improvement": true,
+      "past_access": false,
+      "retention_tolerance": false,
+      "portable_decoding": false
+    }
+  },
+  "confirmed_improvement": [
+    "fixed_original_to_renormalized",
+    "renormalized_to_fixed_original"
+  ],
+  "confirmed_portability": []
+}

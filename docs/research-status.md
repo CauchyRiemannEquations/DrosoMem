@@ -39,7 +39,18 @@ This is not a new execution of every historical experiment.
 | Memory-critical subnetwork? | Partial prior ablations only | No comprehensive matched ablation/control study or causal circuit localization; ACT III open |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
-## Latest ACT III residual diagnostics — 2026-09-29
+## Latest ACT III fresh-seed alignment confirmation — 2026-09-29
+
+[Fresh cohort](fresh-alignment-results.md) uses new mapping55142–55144 and separate
+new train/test/rewire seeds on existing biological strata701/702. R→F45.142%,
+F→R47.256%, versus unaligned25.033%/26.061% and refit80.108%/77.606%.
+H1 improvement passes both directions/all3blocks; H2 access and H3 retention fail.
+12 new conditions/full replays,12 transfers,132 independently checked lag rows;
+194 tests pass/8 optional skips.7,511 historical result files unchanged.
+New pseudorandom realizations are not new biological connectome samples.
+Next proposed: matched KCγ ablation with readout refits, retaining normalization.
+
+## Preceding ACT III residual diagnostics — 2026-09-29
 
 [Two completed diagnostics](residual-orientation-results.md) reject low-half
 source-mode dominance and preferential decoder-sensitive residual orientation.
@@ -49,7 +60,7 @@ and both archived cohorts. Each study34 exact replays/374 rows; second5984
 signed-permutation control energies.192 tests pass/8 optional skips. These are
 geometric decoding diagnostics, not neuron-group ablations or memory improvements.
 Prior moment-alignment improvements and access/retention failures stay intact.
-Next: preregistered fresh-seed replication of the fixed alignment comparison.
+The subsequent fresh-seed replication is complete as reported above.
 
 ## Preceding moment-alignment update
 

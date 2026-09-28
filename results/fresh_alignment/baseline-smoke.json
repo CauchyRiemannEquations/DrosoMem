@@ -1,0 +1,56 @@
+[
+  {
+    "cohort": "main",
+    "arm": "renormalized",
+    "path": "results/normalization_control_main/renormalized_c701_s34142",
+    "manifest_sha256": "29436cebad739ebc9c8f079246e6b95a1ed7eea52972dfe7007e47f788fcf2ce",
+    "arrays_exact": 39,
+    "independent_source_refit": true,
+    "expected_primary_accuracy": 0.7673333333333332,
+    "actual_primary_accuracy": 0.7673333333333332
+  },
+  {
+    "cohort": "main",
+    "arm": "fixed_original",
+    "path": "results/normalization_control_main/fixed_original_c701_s34142",
+    "manifest_sha256": "23e7d7836ad94cf06290054d1d91d2e729ef1012b063e42f9883a83a0f9f953d",
+    "arrays_exact": 39,
+    "independent_source_refit": true,
+    "expected_primary_accuracy": 0.7885,
+    "actual_primary_accuracy": 0.7885
+  },
+  {
+    "cohort": "smoke",
+    "arm": "renormalized",
+    "path": "results/normalization_control_smoke/renormalized_c701_s34001",
+    "manifest_sha256": "69aba358a563672a5be92fd6cfec6f32eba4d1ffa0babfc181a0d587acc719eb",
+    "arrays_exact": 39,
+    "independent_source_refit": true,
+    "expected_primary_accuracy": 0.6983333333333334,
+    "actual_primary_accuracy": 0.6983333333333334
+  },
+  {
+    "cohort": "smoke",
+    "arm": "fixed_original",
+    "path": "results/normalization_control_smoke/fixed_original_c701_s34001",
+    "manifest_sha256": "8c0a5d27c0df7a897c65d13ef876af862383a13c9321d235849d7a8129a9bb96",
+    "arrays_exact": 39,
+    "independent_source_refit": true,
+    "expected_primary_accuracy": 0.7266666666666666,
+    "actual_primary_accuracy": 0.7266666666666666
+  },
+  {
+    "cohort": "smoke_transfer",
+    "direction": "renormalized_to_fixed_original",
+    "path": "results/moment_alignment/smoke/c701_s34001/renormalized_to_fixed_original",
+    "manifest_sha256": "54b568f14d69ce966fe03ee3524bfabaf4809181e56ce5e145cebd37a749dd19",
+    "all_arrays_exact": true
+  },
+  {
+    "cohort": "smoke_transfer",
+    "direction": "fixed_original_to_renormalized",
+    "path": "results/moment_alignment/smoke/c701_s34001/fixed_original_to_renormalized",
+    "manifest_sha256": "576df48a6695bf5a110ef5377a74fca2fb848980062ae531c8d6ead071ae5ebd",
+    "all_arrays_exact": true
+  }
+]

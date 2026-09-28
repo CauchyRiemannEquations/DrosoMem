@@ -60,8 +60,10 @@ trained-prefix 기준을 통과했지만 전체망 우위는 확인되지 않았
 개선했지만 R² 및5%p 유지 기준에 실패했다. Head는 고정, 전처리만 적응했다.
 후속 [source-mode 분해와 에너지 보존 방향 대조](residual-orientation-results.md)도
 완료했다. 저분산 하위 절반 지배와 특별한 readout-sensitive 방향 증폭 가설은
-모두 실패했다. 다음 한 제안은 미관찰 seed에서 기존 정렬 비교를 고정 설계로
-재현하는 독립 확인이다. 추가 gain 탐색이나 ACT IV 확장은 하지 않는다.
+모두 실패했다. 후속 [새 seed 정렬 확인](fresh-alignment-results.md)은 양방향 개선을
+재현했지만 접근성·유지 기준은 실패했다. 다음 한 제안은 조건별 readout refit을
+사용하는 KCγ 제거와 count/degree/input-exposure-matched 무작위 KC 대조다.
+추가 gain 탐색이나 ACT IV 확장은 하지 않는다.
 ACT I→II→III→IV 순서를 지키며 강건성은 ACT V의 독립 축으로 유지한다.
 [로드맵](research-roadmap.md).
 

@@ -1,19 +1,19 @@
 # Prioritized work — updated 2026-09-29
 
-**Two ACT III residual diagnostics complete; both registered hypotheses fail.**
-[Results](residual-orientation-results.md): source ranks25–48 account for only
-about0–1% mean signed score distortion, despite10–18% state residual energy.
-Energy-matched orientation references also do not support preferential
-amplification: geometric actual/reference ratios are below1 in all four cells.
-Each diagnostic verifies34 directions/374 lag rows; orientation verifies5984
-control energies.192 tests pass,8 optional skips. Historical results preserved.
+**Fresh-seed alignment confirmation complete: improvement replicates, portability fails.**
+[Results](fresh-alignment-results.md): R→F25.033→45.142%, F→R26.061→47.256%,
+target refits80.108%/77.606%. All3 fresh paired blocks improve. H1 passes,
+H2 access and H3 retention fail in both directions. No pooling with observed
+cohorts, tuning or seed replacement.12 conditions/full replays,12 transfers,
+132 transfer-lag rows independently verified.194 tests pass,8 optional skips.
 
-Next single proposed experiment: **fresh, previously unobserved paired seeds for
-the fixed unaligned/moment-aligned/target-refit comparison**. Preregister seeds
-and retain the existing improvement/access/retention criteria and hyperparameters.
-This resolves the reuse-of-observed-cohorts limitation of the49–53% alignment
-result; do not tune cutoff, gain, head or the two failed diagnostic hypotheses.
-Proposed, not executed. Broader ACT III ablations and ACT IV learning remain open.
+Next single proposed experiment: **KCγ population ablation versus equal-count,
+degree/input-exposure-matched random KC ablation, refit-only**. Keep48MBON
+observations/readout size and pre-lesion normalization factors fixed. Refit
+the readout on each condition's training states, evaluate independent test input.
+Do not mix frozen-head ablation with refit. Preregister annotation selection,
+matching, seeds and criteria before execution. Proposed, not run.
+Broader ACT III critical-subnetwork work and ACT IV internal learning remain open.
 
 ## Historical handoff notes (superseded by the result above)
 
