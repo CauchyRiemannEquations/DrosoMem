@@ -1,0 +1,173 @@
+{
+  "source_checkpoint": "results\\phase5_prefix_confirmation_windows\\checkpoints\\condition_000.npz",
+  "source_sha256": "7a41ceb47fc98564b28683eddedd5f2fbf273e42c7a1908393cd1ec2a68941fc",
+  "config": {
+    "source_commit": "cc7d68fc874959e604df157f038c27bd226cf4f8",
+    "circuits": [
+      "data/flywire_783_mb_left_kc512_s701",
+      "data/flywire_783_mb_left_kc512_s702"
+    ],
+    "seeds": [
+      1142,
+      1143,
+      1144
+    ],
+    "initializations": [
+      0,
+      1,
+      2
+    ],
+    "normalizations": [
+      "incoming_l1"
+    ],
+    "models": [
+      "fly",
+      "role_shuffled"
+    ],
+    "schedules": [
+      "mbon_after_kc"
+    ],
+    "epochs": 2000,
+    "hidden_units": 8,
+    "pi_length": 200,
+    "prompt_length": 3,
+    "prefix_window": 32,
+    "prefix_weight": 4.0,
+    "leak": 0.6,
+    "gain": 0.9,
+    "input_fraction": 0.1,
+    "input_amplitude": 0.5,
+    "learning_rate": 0.03,
+    "l2": 1e-05,
+    "offsets": [
+      0,
+      1000,
+      2000
+    ],
+    "protocol": "docs/phase5-prefix-confirmation-protocol.md"
+  },
+  "selected_condition": {
+    "circuit": "flywire_783_mb_left_kc512_s701",
+    "seed": 1142,
+    "normalization": "incoming_l1",
+    "model": "fly",
+    "schedule": "mbon_after_kc",
+    "offset": 0
+  },
+  "environment": {
+    "python": "3.12.10",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "pandas": "2.2.3",
+      "mpmath": "1.4.1",
+      "threadpoolctl": "3.6.0"
+    },
+    "blas": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\USER\\Documents\\Codex\\2026-09-28\\github-cauchyriemannequations-flying-audit-readme-readme\\work\\venv-act1\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\USER\\Documents\\Codex\\2026-09-28\\github-cauchyriemannequations-flying-audit-readme-readme\\work\\venv-act1\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-64eda39e79589aedb16f58e5547eb599.dll",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "initialization": 0,
+      "expected": 4,
+      "replay": 4,
+      "refit": 4,
+      "exact_saved_replay": true,
+      "exact_refit_parameters": true,
+      "expected_readout_hash": "266e7c7aed5b5df9966067a65e6bfa64834d79850003e9475fb2422e5ec753c5",
+      "actual_readout_hash": "266e7c7aed5b5df9966067a65e6bfa64834d79850003e9475fb2422e5ec753c5",
+      "refit_recall": {
+        "pi_memory_score": 4,
+        "prompt_length": 3,
+        "horizon": 197,
+        "correct_total_including_prompt": 7,
+        "censored": false,
+        "first_error_digit_index": 7,
+        "prompt": "314",
+        "target": "15926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819",
+        "prediction": "15925320418866432022841406286271993974686992248593203488644256038462719321325328132054515051505150515051505150515051505150515051505150515051505150515051505150515051505150515051505150515051505150515"
+      },
+      "metrics": {
+        "train_accuracy": 0.8994974874371859,
+        "early_accuracy": 0.96875,
+        "later_accuracy": 0.8848484848484849,
+        "cross_entropy": 0.3454519696399772
+      }
+    },
+    {
+      "initialization": 1,
+      "expected": 35,
+      "replay": 35,
+      "refit": 35,
+      "exact_saved_replay": true,
+      "exact_refit_parameters": true,
+      "expected_readout_hash": "7d4bfa0608d1ea907a8b1031d159d28db8fb897747690e04910592be6d8468c8",
+      "actual_readout_hash": "7d4bfa0608d1ea907a8b1031d159d28db8fb897747690e04910592be6d8468c8",
+      "refit_recall": {
+        "pi_memory_score": 35,
+        "prompt_length": 3,
+        "horizon": 197,
+        "correct_total_including_prompt": 38,
+        "censored": false,
+        "first_error_digit_index": 38,
+        "prompt": "314",
+        "target": "15926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819",
+        "prediction": "15926535897932384626433832795028841106725123828117086264323816470607108008086264299338326862633307800808266263343937502892811715550213827107542192755582233337208971080808086816274409555223333798502"
+      },
+      "metrics": {
+        "train_accuracy": 0.8241206030150754,
+        "early_accuracy": 1.0,
+        "later_accuracy": 0.8,
+        "cross_entropy": 0.46274459033885157
+      }
+    },
+    {
+      "initialization": 2,
+      "expected": 34,
+      "replay": 34,
+      "refit": 34,
+      "exact_saved_replay": true,
+      "exact_refit_parameters": true,
+      "expected_readout_hash": "c55828f6952a2d992fbe928fceb1e40e59d8f73fb64648a4569b6c9aace06359",
+      "actual_readout_hash": "c55828f6952a2d992fbe928fceb1e40e59d8f73fb64648a4569b6c9aace06359",
+      "refit_recall": {
+        "pi_memory_score": 34,
+        "prompt_length": 3,
+        "horizon": 197,
+        "correct_total_including_prompt": 37,
+        "censored": false,
+        "first_error_digit_index": 37,
+        "prompt": "314",
+        "target": "15926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819",
+        "prediction": "15926535897932384626433832795028848114672530428644097338327150059584207400700717979445935555822323832715005958420740070071797944593555582232383271500595842074007007179794459355558223238327150059584"
+      },
+      "metrics": {
+        "train_accuracy": 0.8090452261306532,
+        "early_accuracy": 1.0,
+        "later_accuracy": 0.7696969696969697,
+        "cross_entropy": 0.614044386235954
+      }
+    }
+  ],
+  "scope": "Exact saved-head replay and independent refit of first condition, all three weighted initializations; not the full historical context verifier."
+}

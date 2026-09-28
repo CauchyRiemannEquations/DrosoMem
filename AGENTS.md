@@ -14,8 +14,9 @@ results from biological claims without repeatedly explaining this to the user.
   scoring. Do not fabricate generated digits, generate by reference lookup,
   select the best seed after evaluation, or equate teacher-forced accuracy with
   autonomous recall.
-- Whole-brain trajectory feasibility is established within the Phase 6 scope;
-  whole-brain pi learning and broader physiological validation are not.
+- Whole-brain trajectory feasibility is established within the Phase 6 scope.
+  ACT I also executed matched rate-model pi training/recall without establishing
+  a whole-brain advantage. Broader physiological validation is not established.
 - Plan the next study around one explicit question with a fixed budget and
   acceptance criteria before observing outcomes. Keep proposals distinct from
   executed experiments and successful hypotheses.

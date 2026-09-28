@@ -1,0 +1,444 @@
+{
+  "conditions": {
+    "pi": {
+      "legacy5": {
+        "n": 5,
+        "mean": 34.5,
+        "median": 34.5,
+        "variance": 3.6250000000000004,
+        "bootstrap95": [
+          33.0,
+          36.0
+        ],
+        "raw_mean": 34.5,
+        "raw_median": 34.5,
+        "raw_variance": 7.388888888888889,
+        "prefix16_fraction": 1.0,
+        "prefix32_fraction": 1.0,
+        "full_fraction": 0.0,
+        "mean_bits": 114.606519273614,
+        "teacher_forced_accuracy": 0.8309644670050762,
+        "autonomous_accuracy": 0.2690355329949238,
+        "next_digit_accuracy": 0.8301507537688442,
+        "markov1_mean": 1.0,
+        "majority_mean": 0.0,
+        "effective_rank": 15.694986058607977
+      },
+      "brain1": {
+        "n": 5,
+        "mean": 33.7,
+        "median": 34.0,
+        "variance": 108.07499999999997,
+        "bootstrap95": [
+          25.7,
+          42.3
+        ],
+        "raw_mean": 33.7,
+        "raw_median": 35.0,
+        "raw_variance": 188.23333333333332,
+        "prefix16_fraction": 0.9,
+        "prefix32_fraction": 0.8,
+        "full_fraction": 0.0,
+        "mean_bits": 111.9489767977041,
+        "teacher_forced_accuracy": 0.7868020304568528,
+        "autonomous_accuracy": 0.26040609137055826,
+        "next_digit_accuracy": 0.7854271356783921,
+        "markov1_mean": 1.0,
+        "majority_mean": 0.0,
+        "effective_rank": 11.09727663829494
+      }
+    },
+    "random": {
+      "legacy5": {
+        "n": 5,
+        "mean": 26.0,
+        "median": 25.0,
+        "variance": 45.00000000000001,
+        "bootstrap95": [
+          21.4,
+          32.0
+        ],
+        "raw_mean": 26.0,
+        "raw_median": 32.5,
+        "raw_variance": 231.77777777777777,
+        "prefix16_fraction": 0.7,
+        "prefix32_fraction": 0.6,
+        "full_fraction": 0.0,
+        "mean_bits": 86.37013046707142,
+        "teacher_forced_accuracy": 0.8309644670050762,
+        "autonomous_accuracy": 0.22030456852791874,
+        "next_digit_accuracy": 0.8316582914572864,
+        "markov1_mean": 0.6,
+        "majority_mean": 0.0,
+        "effective_rank": 15.60416742487032
+      },
+      "brain1": {
+        "n": 5,
+        "mean": 28.8,
+        "median": 33.0,
+        "variance": 52.82499999999999,
+        "bootstrap95": [
+          22.3,
+          33.6
+        ],
+        "raw_mean": 28.8,
+        "raw_median": 33.0,
+        "raw_variance": 144.84444444444446,
+        "prefix16_fraction": 0.8,
+        "prefix32_fraction": 0.8,
+        "full_fraction": 0.0,
+        "mean_bits": 95.67152913275604,
+        "teacher_forced_accuracy": 0.7609137055837563,
+        "autonomous_accuracy": 0.23350253807106594,
+        "next_digit_accuracy": 0.7582914572864322,
+        "markov1_mean": 0.6,
+        "majority_mean": 0.0,
+        "effective_rank": 11.151569389057371
+      }
+    },
+    "shuffled_pi": {
+      "legacy5": {
+        "n": 5,
+        "mean": 31.2,
+        "median": 35.5,
+        "variance": 87.825,
+        "bootstrap95": [
+          23.2,
+          38.1
+        ],
+        "raw_mean": 31.2,
+        "raw_median": 34.5,
+        "raw_variance": 198.84444444444443,
+        "prefix16_fraction": 0.8,
+        "prefix32_fraction": 0.8,
+        "full_fraction": 0.0,
+        "mean_bits": 103.6441565604857,
+        "teacher_forced_accuracy": 0.797969543147208,
+        "autonomous_accuracy": 0.25076142131979695,
+        "next_digit_accuracy": 0.7979899497487437,
+        "markov1_mean": 1.2,
+        "majority_mean": 0.0,
+        "effective_rank": 15.61132135224712
+      },
+      "brain1": {
+        "n": 5,
+        "mean": 30.2,
+        "median": 32.5,
+        "variance": 36.2,
+        "bootstrap95": [
+          24.8,
+          33.3
+        ],
+        "raw_mean": 30.2,
+        "raw_median": 32.0,
+        "raw_variance": 68.4,
+        "prefix16_fraction": 0.9,
+        "prefix32_fraction": 0.8,
+        "full_fraction": 0.0,
+        "mean_bits": 100.32222846559834,
+        "teacher_forced_accuracy": 0.7807106598984772,
+        "autonomous_accuracy": 0.2461928934010152,
+        "next_digit_accuracy": 0.7804020100502512,
+        "markov1_mean": 1.2,
+        "majority_mean": 0.0,
+        "effective_rank": 11.144309056266275
+      }
+    },
+    "periodic": {
+      "legacy5": {
+        "n": 5,
+        "mean": 197.0,
+        "median": 197.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          197.0,
+          197.0
+        ],
+        "raw_mean": 197.0,
+        "raw_median": 197.0,
+        "raw_variance": 0.0,
+        "prefix16_fraction": 1.0,
+        "prefix32_fraction": 1.0,
+        "full_fraction": 1.0,
+        "mean_bits": 654.4198346928104,
+        "teacher_forced_accuracy": 1.0,
+        "autonomous_accuracy": 1.0,
+        "next_digit_accuracy": 0.9994974874371859,
+        "markov1_mean": 197.0,
+        "majority_mean": 1.0,
+        "effective_rank": 8.982881148582727
+      },
+      "brain1": {
+        "n": 5,
+        "mean": 197.0,
+        "median": 197.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          197.0,
+          197.0
+        ],
+        "raw_mean": 197.0,
+        "raw_median": 197.0,
+        "raw_variance": 0.0,
+        "prefix16_fraction": 1.0,
+        "prefix32_fraction": 1.0,
+        "full_fraction": 1.0,
+        "mean_bits": 654.4198346928104,
+        "teacher_forced_accuracy": 1.0,
+        "autonomous_accuracy": 1.0,
+        "next_digit_accuracy": 0.9989949748743718,
+        "markov1_mean": 197.0,
+        "majority_mean": 1.0,
+        "effective_rank": 7.726841558630949
+      }
+    }
+  },
+  "graph_contrasts": {
+    "pi": {
+      "n": 5,
+      "mean": -0.8,
+      "median": -1.5,
+      "variance": 136.7,
+      "bootstrap95": [
+        -9.3,
+        9.0
+      ],
+      "paired_dz": -0.06842356999239922,
+      "wins": 2,
+      "ties": 0,
+      "losses": 3,
+      "passes_graph_criterion": false
+    },
+    "random": {
+      "n": 5,
+      "mean": 2.8,
+      "median": 1.5,
+      "variance": 67.82499999999999,
+      "bootstrap95": [
+        -3.5,
+        9.2
+      ],
+      "paired_dz": 0.33998764098003176,
+      "wins": 3,
+      "ties": 0,
+      "losses": 2,
+      "passes_graph_criterion": false
+    },
+    "shuffled_pi": {
+      "n": 5,
+      "mean": -1.0,
+      "median": -3.0,
+      "variance": 181.375,
+      "bootstrap95": [
+        -11.6,
+        9.4
+      ],
+      "paired_dz": -0.07425253536129914,
+      "wins": 2,
+      "ties": 0,
+      "losses": 3,
+      "passes_graph_criterion": false
+    },
+    "periodic": {
+      "n": 5,
+      "mean": 0.0,
+      "median": 0.0,
+      "variance": 0.0,
+      "bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "paired_dz": null,
+      "wins": 0,
+      "ties": 5,
+      "losses": 0,
+      "passes_graph_criterion": false
+    }
+  },
+  "family_contrasts": {
+    "legacy5": {
+      "random-pi": {
+        "n": 5,
+        "mean": -8.5,
+        "median": -10.5,
+        "variance": 40.375,
+        "bootstrap95": [
+          -12.8,
+          -3.3
+        ],
+        "paired_dz": -1.3377121081198773,
+        "wins": 1,
+        "ties": 0,
+        "losses": 4
+      },
+      "shuffled_pi-pi": {
+        "n": 5,
+        "mean": -3.3,
+        "median": 1.0,
+        "variance": 69.32500000000002,
+        "bootstrap95": [
+          -9.8,
+          3.0
+        ],
+        "paired_dz": -0.39634099995304456,
+        "wins": 3,
+        "ties": 0,
+        "losses": 2
+      },
+      "periodic-pi": {
+        "n": 5,
+        "mean": 162.5,
+        "median": 162.5,
+        "variance": 3.6250000000000004,
+        "bootstrap95": [
+          161.0,
+          164.0
+        ],
+        "paired_dz": 85.34918135881966,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "brain1": {
+      "random-pi": {
+        "n": 5,
+        "mean": -4.9,
+        "median": -0.5,
+        "variance": 233.425,
+        "bootstrap95": [
+          -16.7,
+          6.9
+        ],
+        "paired_dz": -0.3207173067905962,
+        "wins": 2,
+        "ties": 0,
+        "losses": 3
+      },
+      "shuffled_pi-pi": {
+        "n": 5,
+        "mean": -3.5,
+        "median": -3.0,
+        "variance": 119.12499999999999,
+        "bootstrap95": [
+          -11.3,
+          5.4
+        ],
+        "paired_dz": -0.3206760958459633,
+        "wins": 1,
+        "ties": 0,
+        "losses": 4
+      },
+      "periodic-pi": {
+        "n": 5,
+        "mean": 163.3,
+        "median": 163.0,
+        "variance": 108.07499999999997,
+        "bootstrap95": [
+          154.7,
+          171.3
+        ],
+        "paired_dz": 15.70809657282653,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      }
+    }
+  },
+  "generalization": {
+    "legacy5": {
+      "families": {
+        "random": {
+          "prefix16_blocks": 5,
+          "mean": 26.0,
+          "control_advantage": {
+            "n": 5,
+            "mean": 25.4,
+            "median": 24.0,
+            "variance": 40.29999999999999,
+            "bootstrap95": [
+              21.2,
+              31.2
+            ],
+            "paired_dz": 4.001116469497156,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0
+          },
+          "passed": true
+        },
+        "shuffled_pi": {
+          "prefix16_blocks": 5,
+          "mean": 31.2,
+          "control_advantage": {
+            "n": 5,
+            "mean": 30.0,
+            "median": 34.5,
+            "variance": 67.12500000000001,
+            "bootstrap95": [
+              22.9,
+              35.9
+            ],
+            "paired_dz": 3.66166918618412,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0
+          },
+          "passed": true
+        }
+      },
+      "limited_beyond_pi_evidence": true
+    },
+    "brain1": {
+      "families": {
+        "random": {
+          "prefix16_blocks": 5,
+          "mean": 28.8,
+          "control_advantage": {
+            "n": 5,
+            "mean": 28.2,
+            "median": 32.5,
+            "variance": 49.32500000000001,
+            "bootstrap95": [
+              21.9,
+              32.9
+            ],
+            "paired_dz": 4.015277464519804,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0
+          },
+          "passed": true
+        },
+        "shuffled_pi": {
+          "prefix16_blocks": 5,
+          "mean": 30.2,
+          "control_advantage": {
+            "n": 5,
+            "mean": 29.0,
+            "median": 32.0,
+            "variance": 66.5,
+            "bootstrap95": [
+              21.7,
+              33.2
+            ],
+            "paired_dz": 3.556208169012802,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0
+          },
+          "passed": true
+        }
+      },
+      "limited_beyond_pi_evidence": true
+    }
+  },
+  "dataset_realizations": {
+    "pi": 1,
+    "random": 5,
+    "shuffled_pi": 5,
+    "periodic": 1
+  },
+  "qualifying_confirmation_families": [],
+  "general_nonpi_graph_superiority": false
+}

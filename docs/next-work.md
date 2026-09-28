@@ -1,12 +1,20 @@
 # Prioritized work — updated 2026-09-28
 
+**Latest: the ACT II four-family pilot is complete.** Both networks passed the
+limited beyond-pi criterion, but no nonperiodic family established whole-brain
+superiority. All 80 runs replayed exactly; eight heads refitted exactly.
+[Results](sequence-memory-results.md). The next single experiment is paired
+random-sequence length scaling.
+
+## Historical handoff notes (superseded by the result above)
+
 **ACT I follow-up is now complete with a negative main result:** 50 matched fits,
 50 exact replays, five exact independent refits; whole-brain means 31.8/34.1
 versus partial 35.0. See [results](whole-brain-memory-results.md) and
 [current research status](research-status.md). The table below records the prior
 execution pass. Its whole-brain proposal is now superseded by those results.
-The next single experiment is the small four-family ACT II comparison described
-in the result report; no new plasticity sweep is prioritized.
+The follow-up selected at that time was the small four-family ACT II comparison;
+it is now complete. No new plasticity sweep is prioritized.
 
 The repository had no open issues or pull requests when this work began. Priorities
 come from the latest handoff, measured results and failures observed on a fresh

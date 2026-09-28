@@ -16,6 +16,12 @@ Do not tune a negative result into a positive headline.
 
 ## ACT II — Beyond pi
 
+The initial four-family pilot is now executed: [protocol](sequence-memory-protocol.md),
+[results](sequence-memory-results.md). Both networks support the prespecified
+limited beyond-pi claim on these trained instances; whole-brain superiority is
+not established. Length and network-alphabet scaling remain open. The paragraph
+below describes the staged scope, not an assertion that all stages are complete.
+
 After ACT I, begin with only pi, seeded random digits, shuffled pi (same multiset)
 and a periodic sequence, comparing whole brain to the strongest established
 baseline/control. Later add e, sqrt(2), motifs and low-order Markov sequences.

@@ -8,6 +8,11 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 [Roadmap](docs/research-roadmap.md) · [ACT I protocol](docs/whole-brain-memory-protocol.md) ·
 [ACT I results](docs/whole-brain-memory-results.md)
 
+Latest: [ACT II four-family protocol](docs/sequence-memory-protocol.md) and
+[results](docs/sequence-memory-results.md). Eighty fits support limited trained
+random/shuffled-sequence recall beyond pi, with no established whole-brain
+advantage. Periodic recall is also solved by a simple first-order predictor.
+
 ## Current research
 
 Does whole-brain connectivity improve autonomous recall when input root IDs,

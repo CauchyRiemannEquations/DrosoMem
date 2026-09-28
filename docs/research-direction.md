@@ -27,9 +27,12 @@
 전체망 우위 기준을 통과하지 못했다. [설계](whole-brain-memory-protocol.md)와
 [결과](whole-brain-memory-results.md)에 모든 seed와 표현 진단을 보존한다.
 
-다음은 π·무작위 숫자·섞은 π·주기 수열을 비교하는 작은 ACT II 일반화 실험이다.
-아직 실행하지 않았다. ACT I→II→III→IV 순서를 지키며 도파민 가소성 확장을
-앞당기지 않는다. 강건성은 ACT V의 독립 축이다. [로드맵](research-roadmap.md).
+ACT II의 π·무작위 숫자·섞은 π·주기 수열 pilot도 80회 비교를 완료했다.
+두 모델 모두 제한적 beyond-π 기준을 통과했지만 whole-brain 우위는 확인되지
+않았다. 주기 수열은 단순 전이 대조 모델도 완주했다. [결과](sequence-memory-results.md).
+다음은 무작위 수열의 길이별 회상 scaling 실험이다. ACT I→II→III→IV 순서를
+지키며 도파민 가소성 확장을 앞당기지 않는다. 강건성은 ACT V의 독립 축이다.
+[로드맵](research-roadmap.md).
 
 ## 증거와 재현성
 
