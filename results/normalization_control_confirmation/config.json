@@ -1,0 +1,119 @@
+{
+  "protocol": "docs/normalization-control-protocol.md",
+  "conditions": [
+    "real",
+    "renormalized",
+    "fixed_original"
+  ],
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "alphabet_size": 4,
+  "warmup": 100,
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "alpha": 1.0,
+  "swaps_per_edge": 5,
+  "normalization": "incoming_l1",
+  "schedule": "mbon_after_kc",
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "activity_epsilon": 1e-08,
+  "decay_steps": 32,
+  "bootstrap_seed": 47399,
+  "bootstrap_draws": 10000,
+  "max_seconds": 1800,
+  "max_rss_bytes": 3221225472,
+  "blocks": [
+    {
+      "seed": 41142,
+      "train_seed": 42142,
+      "test_seed": 43142,
+      "rewire_seed": 44142,
+      "perturb_seed": 46147
+    },
+    {
+      "seed": 41143,
+      "train_seed": 42143,
+      "test_seed": 43143,
+      "rewire_seed": 44143,
+      "perturb_seed": 46148
+    },
+    {
+      "seed": 41144,
+      "train_seed": 42144,
+      "test_seed": 43144,
+      "rewire_seed": 44144,
+      "perturb_seed": 46149
+    }
+  ],
+  "confirmation_blocks": [
+    {
+      "seed": 41142,
+      "train_seed": 42142,
+      "test_seed": 43142,
+      "rewire_seed": 44142,
+      "perturb_seed": 46147
+    },
+    {
+      "seed": 41143,
+      "train_seed": 42143,
+      "test_seed": 43143,
+      "rewire_seed": 44143,
+      "perturb_seed": 46148
+    },
+    {
+      "seed": 41144,
+      "train_seed": 42144,
+      "test_seed": 43144,
+      "rewire_seed": 44144,
+      "perturb_seed": 46149
+    }
+  ],
+  "smoke": {
+    "circuit_seeds": [
+      701
+    ],
+    "train_samples": 200,
+    "test_samples": 100,
+    "blocks": [
+      {
+        "seed": 34001,
+        "train_seed": 39001,
+        "test_seed": 40001,
+        "rewire_seed": 37001,
+        "perturb_seed": 46001
+      }
+    ]
+  },
+  "archive": "results/structural_k4_main",
+  "smoke_archive": "results/structural_k4_smoke",
+  "perturbation_steps": 256,
+  "perturbation_amplitude": 1e-06,
+  "forgetting_ratio": 0.001,
+  "material_effect": 0.01
+}

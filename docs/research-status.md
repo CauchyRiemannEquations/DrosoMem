@@ -39,7 +39,20 @@ This is not a new execution of every historical experiment.
 | Memory-critical subnetwork? | Partial prior ablations only | No comprehensive matched ablation/control study or causal circuit localization; ACT III open |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
-## Latest scoped ACT III update
+## Latest ACT III normalization update
+
+[Normalization control](normalization-control-results.md) completed30 main and18
+fresh-seed confirmation runs, plus3 separate smoke runs. Same raw rewired graph,
+original versus graph-specific incoming factors. Fixed-original improvement
+1.245pp main,0.894pp confirmation; registered1pp confirmation fails despite all
+paired blocks having the same sign. Do not pool cohorts or promote this as an
+established >=1pp improvement. All51 runs and561 lag rows verified;178 tests pass,
+8 optional skips. Historical6,653 result files unchanged. Fixed factors lose the
+sufficient contraction certificate; observed finite states/one small perturbation
+do not establish global stability. Next proposed: frozen-head cross-normalization
+transfer on stored states, not a gain search or internal-plasticity expansion.
+
+## Preceding K4 structural control
 
 [Current K4 structural control](structural-k4-results.md) completed20 graph runs,
 20 exact replays and refits. Real76.965% versus role-/degree-rewired78.603%; paired

@@ -1,18 +1,20 @@
 # Prioritized work — updated 2026-09-28
 
-**Current K4 ACT III structural control complete.**
-[Results](structural-k4-results.md): real76.965% versus rewired78.603% on independent
-past-symbol decoding. All five real-minus-rewired blocks are negative; H2 fails.
-Both pass H1.20 runs replay/refit exactly; all220 lag rows independently verified.
-Full suite175 passed,8 optional-dependency skips. No positive confirmation triggered.
-Representation diagnostics were completed without tuning. Earlier Phase3/3b
-structural negatives and ACT I whole-brain negatives remain valid within scope.
+**ACT III normalization intervention complete; material-effect confirmation failed.**
+[Results](normalization-control-results.md): fixed-original minus renormalized
+past decoding+1.245pp main (5/5 positive),+0.894pp confirmation (3/3 positive).
+The preregistered1pp confirmation threshold failed. No pooled rescue or tuning.
+All48 main/confirmation runs and3 smoke runs replay/refit exactly;561 lag rows
+verified. Full suite178 passed,8 optional skips. Fixed coefficients lose the
+sufficient contraction bound, but sampled trajectories/initial perturbations
+pass the specified finite-range/forgetting checks. No global stability claim.
 
-Next single proposed experiment: **fixed-original versus graph-specific incoming
-normalization on the same rewired raw partial graphs**, with matched independent
-streams and48-MBON refitted heads. Preregister gain/stability diagnostics, seeds,
-budget and gates. This isolates a renormalization contribution, not all topology
-effects. Proposed only; no new cohort or protocol yet. No ACT IV expansion.
+Next single proposed study: **frozen-head cross-normalization transfer**, both
+directions, reusing saved states/coefficients. Keep source standardization and
+head fixed; separate transferred decoding from existing within-condition refits.
+Preregister gates and complete paired cohorts before predictions. This diagnoses
+decoder dependence without a normalization/gain sweep. Proposed, not executed.
+Broader ACT III ablations and ACT IV internal learning remain open.
 
 ## Historical handoff notes (superseded by the result above)
 

@@ -1,0 +1,80 @@
+{
+  "confirmation/fixed_original": {
+    "runs": 6,
+    "all_empirical_forgetting": true,
+    "sufficient_contraction_count": 0,
+    "max_row_l1_range": [
+      6.460714285714287,
+      13.009090909090908
+    ],
+    "max_abs_state": 0.618741359569618,
+    "effective_rank_mean": 7.687440669298738,
+    "mean_active_neurons": 646.9999166666666,
+    "silent_decay_ratio32_mean": 3.109573575219997e-06
+  },
+  "confirmation/real": {
+    "runs": 6,
+    "all_empirical_forgetting": true,
+    "sufficient_contraction_count": 6,
+    "max_row_l1_range": [
+      0.9000000000000001,
+      0.9000000000000002
+    ],
+    "max_abs_state": 0.5851298362809825,
+    "effective_rank_mean": 6.573501042061687,
+    "mean_active_neurons": 646.9999166666666,
+    "silent_decay_ratio32_mean": 5.539519587420636e-07
+  },
+  "confirmation/renormalized": {
+    "runs": 6,
+    "all_empirical_forgetting": true,
+    "sufficient_contraction_count": 6,
+    "max_row_l1_range": [
+      0.9000000000000002,
+      0.9000000000000002
+    ],
+    "max_abs_state": 0.5722614197883455,
+    "effective_rank_mean": 7.216684896589075,
+    "mean_active_neurons": 647.0,
+    "silent_decay_ratio32_mean": 7.59897737073787e-07
+  },
+  "main/fixed_original": {
+    "runs": 10,
+    "all_empirical_forgetting": true,
+    "sufficient_contraction_count": 0,
+    "max_row_l1_range": [
+      5.7857142857142865,
+      19.671428571428574
+    ],
+    "max_abs_state": 0.5706373126389463,
+    "effective_rank_mean": 7.859059999004446,
+    "mean_active_neurons": 647.0,
+    "silent_decay_ratio32_mean": 9.35079335244796e-06
+  },
+  "main/real": {
+    "runs": 10,
+    "all_empirical_forgetting": true,
+    "sufficient_contraction_count": 10,
+    "max_row_l1_range": [
+      0.9000000000000001,
+      0.9000000000000002
+    ],
+    "max_abs_state": 0.5496768816154288,
+    "effective_rank_mean": 6.6767487300664525,
+    "mean_active_neurons": 647.0,
+    "silent_decay_ratio32_mean": 5.96381540897604e-07
+  },
+  "main/renormalized": {
+    "runs": 10,
+    "all_empirical_forgetting": true,
+    "sufficient_contraction_count": 10,
+    "max_row_l1_range": [
+      0.9000000000000001,
+      0.9000000000000005
+    ],
+    "max_abs_state": 0.5489487952187215,
+    "effective_rank_mean": 7.236990326451935,
+    "mean_active_neurons": 646.9999,
+    "silent_decay_ratio32_mean": 7.378518268326046e-07
+  }
+}
