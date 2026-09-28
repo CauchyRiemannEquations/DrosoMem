@@ -1,0 +1,16 @@
+{
+  "protocol": "docs/residual-modes-protocol.md",
+  "source": "results/moment_alignment",
+  "circuit_seeds": [701,702],
+  "lags": [0,1,2,3,4,5,8,12,16,24,32],
+  "primary_lags": [1,2,3,4,5,8],
+  "split": 24,
+  "score_share_min": 0.75,
+  "state_share_max": 0.5,
+  "energy_floor": 1e-24,
+  "boundary_gap_min": 1e-8,
+  "bootstrap_seed": 50399,
+  "bootstrap_draws": 10000,
+  "max_seconds": 1800,
+  "max_rss_bytes": 3221225472
+}
