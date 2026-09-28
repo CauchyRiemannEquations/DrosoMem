@@ -1,0 +1,27 @@
+{
+  "source": "results\\scaling_main\\n512",
+  "source_manifest_sha256": "89245760366a32fa5bfd7cce2fd8dcb270da50554851e137f48548e3e7415293",
+  "existing_exact_replay_proofs_checked": 20,
+  "new_exact_replays": 2,
+  "new_exact_refits": 2,
+  "records": [
+    {
+      "run": "random_legacy5_c701_s11142_d11242",
+      "source_manifest_sha256": "b4b8c14e2fa49cfa5242db331e127473a4cf3788d90eb6dc85f1932f49b7c7a1",
+      "exact_replay": true,
+      "exact_refit": true,
+      "features_probabilities_controls_decay_and_losses": true,
+      "expected_prefix": 12,
+      "actual_prefix": 12
+    },
+    {
+      "run": "random_brain1_c701_s11142_d11242",
+      "source_manifest_sha256": "c6cfeb660f8b9a1566ddf1d98a7dc3290b7cee823b57da401ed095cd3e267a5d",
+      "exact_replay": true,
+      "exact_refit": true,
+      "features_probabilities_controls_decay_and_losses": true,
+      "expected_prefix": 33,
+      "actual_prefix": 33
+    }
+  ]
+}

@@ -1,0 +1,821 @@
+{
+  "conditions": {
+    "legacy5": {
+      "baseline": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 14.6,
+          "median": 14.5,
+          "variance": 70.17499999999998,
+          "bootstrap95": [
+            8.0,
+            21.3
+          ],
+          "paired_dz": 1.7428565588370015,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "early_teacher_accuracy": {
+          "n": 5,
+          "mean": 0.90625,
+          "median": 0.921875,
+          "variance": 0.0020751953125,
+          "bootstrap95": [
+            0.865625,
+            0.934375
+          ],
+          "paired_dz": 19.893835876531025,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "later_teacher_accuracy": {
+          "n": 5,
+          "mean": 0.4232704402515724,
+          "median": 0.42662473794549266,
+          "variance": 7.933054687534313e-05,
+          "bootstrap95": [
+            0.41593291404612154,
+            0.42914046121593297
+          ],
+          "paired_dz": 47.52232891128508,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "early_autonomous_accuracy": {
+          "n": 5,
+          "mean": 0.496875,
+          "median": 0.5,
+          "variance": 0.05009765625,
+          "bootstrap95": [
+            0.321875,
+            0.675
+          ],
+          "paired_dz": 2.2199257139459863,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "later_autonomous_accuracy": {
+          "n": 5,
+          "mean": 0.10146750524109016,
+          "median": 0.10167714884696016,
+          "variance": 0.00010295390917201753,
+          "bootstrap95": [
+            0.0945440251572327,
+            0.109853249475891
+          ],
+          "paired_dz": 10.000128067483038,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "unweighted_cross_entropy": {
+          "n": 5,
+          "mean": 1.5680331724435281,
+          "median": 1.5742081714669511,
+          "variance": 0.0012305358061075954,
+          "bootstrap95": [
+            1.5376136905418007,
+            1.5928730505320403
+          ],
+          "paired_dz": 44.70006127678603,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "common_4x_cross_entropy": {
+          "n": 5,
+          "mean": 1.4022081395238934,
+          "median": 1.4196285977464458,
+          "variance": 0.0017509440243255133,
+          "bootstrap95": [
+            1.3673137704436653,
+            1.4319488884249814
+          ],
+          "paired_dz": 33.51014851193506,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "early_cross_entropy": {
+          "n": 5,
+          "mean": 0.5195353080454193,
+          "median": 0.4823632359238932,
+          "variance": 0.016200247822608545,
+          "bootstrap95": [
+            0.43198009526552744,
+            0.627295367076776
+          ],
+          "paired_dz": 4.081823660931919,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "later_cross_entropy": {
+          "n": 5,
+          "mean": 1.6394849989147402,
+          "median": 1.6369105322290423,
+          "variance": 0.0012538803986640252,
+          "bootstrap95": [
+            1.610138175629538,
+            1.6656374313801448
+          ],
+          "paired_dz": 46.299829383366635,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 12.0,
+        "raw_prefix_variance": 138.04444444444442,
+        "raw_prefix_min": 0,
+        "raw_prefix_max": 37
+      },
+      "restored": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 33.8,
+          "median": 32.0,
+          "variance": 8.075000000000001,
+          "bootstrap95": [
+            32.0,
+            36.4
+          ],
+          "paired_dz": 11.894479298014597,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "early_teacher_accuracy": {
+          "n": 5,
+          "mean": 1.0,
+          "median": 1.0,
+          "variance": 0.0,
+          "bootstrap95": [
+            1.0,
+            1.0
+          ],
+          "paired_dz": null,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "later_teacher_accuracy": {
+          "n": 5,
+          "mean": 0.37232704402515726,
+          "median": 0.37735849056603776,
+          "variance": 0.0001238303688760552,
+          "bootstrap95": [
+            0.3626834381551363,
+            0.380293501048218
+          ],
+          "paired_dz": 33.458849164311964,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "early_autonomous_accuracy": {
+          "n": 5,
+          "mean": 1.0,
+          "median": 1.0,
+          "variance": 0.0,
+          "bootstrap95": [
+            1.0,
+            1.0
+          ],
+          "paired_dz": null,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "later_autonomous_accuracy": {
+          "n": 5,
+          "mean": 0.10440251572327044,
+          "median": 0.10272536687631027,
+          "variance": 8.273670609021264e-05,
+          "bootstrap95": [
+            0.0979035639412998,
+            0.1121593291404612
+          ],
+          "paired_dz": 11.47788450322283,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "unweighted_cross_entropy": {
+          "n": 5,
+          "mean": 1.7583239771567882,
+          "median": 1.7522881745098204,
+          "variance": 0.0005936172345995623,
+          "bootstrap95": [
+            1.7414611279078915,
+            1.7780891918992858
+          ],
+          "paired_dz": 72.16816248853424,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "common_4x_cross_entropy": {
+          "n": 5,
+          "mean": 1.5127254970563293,
+          "median": 1.5092691923411419,
+          "variance": 0.0005615912963207178,
+          "bootstrap95": [
+            1.4952721462839327,
+            1.5319494024947502
+          ],
+          "paired_dz": 63.83368891848602,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "early_cross_entropy": {
+          "n": 5,
+          "mean": 0.20542525402159448,
+          "median": 0.20758784516917123,
+          "variance": 0.0004834468678275795,
+          "bootstrap95": [
+            0.18883664800565234,
+            0.22201386003753668
+          ],
+          "paired_dz": 9.342851741911089,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "later_cross_entropy": {
+          "n": 5,
+          "mean": 1.8638024095823744,
+          "median": 1.8557903214387768,
+          "variance": 0.0006958127127496388,
+          "bootstrap95": [
+            1.8455153662791055,
+            1.885451124771479
+          ],
+          "paired_dz": 70.65675519982912,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 32.0,
+        "raw_prefix_variance": 9.955555555555556,
+        "raw_prefix_min": 32,
+        "raw_prefix_max": 41
+      }
+    },
+    "brain1": {
+      "baseline": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 9.5,
+          "median": 8.5,
+          "variance": 36.5,
+          "bootstrap95": [
+            4.9,
+            14.3
+          ],
+          "paired_dz": 1.5724511883444992,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "early_teacher_accuracy": {
+          "n": 5,
+          "mean": 0.9,
+          "median": 0.90625,
+          "variance": 0.00031738281250000007,
+          "bootstrap95": [
+            0.884375,
+            0.9125
+          ],
+          "paired_dz": 50.51854191208488,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "later_teacher_accuracy": {
+          "n": 5,
+          "mean": 0.380712788259958,
+          "median": 0.3752620545073375,
+          "variance": 0.0001534969168765299,
+          "bootstrap95": [
+            0.3727463312368973,
+            0.39161425576519915
+          ],
+          "paired_dz": 30.72894405708206,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "early_autonomous_accuracy": {
+          "n": 5,
+          "mean": 0.4125,
+          "median": 0.421875,
+          "variance": 0.020336914062500003,
+          "bootstrap95": [
+            0.3,
+            0.525
+          ],
+          "paired_dz": 2.892553672224368,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "later_autonomous_accuracy": {
+          "n": 5,
+          "mean": 0.10440251572327044,
+          "median": 0.09748427672955975,
+          "variance": 0.00020799546431443905,
+          "bootstrap95": [
+            0.09412997903563942,
+            0.1171907756813417
+          ],
+          "paired_dz": 7.239090923655461,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "unweighted_cross_entropy": {
+          "n": 5,
+          "mean": 1.660923236924905,
+          "median": 1.6587307621522687,
+          "variance": 0.00029134422197084483,
+          "bootstrap95": [
+            1.6477040991613598,
+            1.6741423746884496
+          ],
+          "paired_dz": 97.30750928492154,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "common_4x_cross_entropy": {
+          "n": 5,
+          "mean": 1.4888964708023888,
+          "median": 1.493727383920971,
+          "variance": 0.0003898227248782641,
+          "bootstrap95": [
+            1.4728836843024422,
+            1.5037118189240875
+          ],
+          "paired_dz": 75.41034436887823,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "early_cross_entropy": {
+          "n": 5,
+          "mean": 0.5732123302960812,
+          "median": 0.5582877781087593,
+          "variance": 0.0060821422904133405,
+          "bootstrap95": [
+            0.5135021293120505,
+            0.6350153278971564
+          ],
+          "paired_dz": 7.349998252043462,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "later_cross_entropy": {
+          "n": 5,
+          "mean": 1.733002982140508,
+          "median": 1.7363242402837211,
+          "variance": 0.0004690065159265531,
+          "bootstrap95": [
+            1.7168761857163168,
+            1.7491297785646993
+          ],
+          "paired_dz": 80.02208665192836,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 7.0,
+        "raw_prefix_variance": 103.38888888888889,
+        "raw_prefix_min": 0,
+        "raw_prefix_max": 33
+      },
+      "restored": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 29.2,
+          "median": 32.0,
+          "variance": 50.57500000000001,
+          "bootstrap95": [
+            22.8,
+            32.6
+          ],
+          "paired_dz": 4.105961810889917,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "early_teacher_accuracy": {
+          "n": 5,
+          "mean": 0.9875,
+          "median": 1.0,
+          "variance": 0.0007812499999999999,
+          "bootstrap95": [
+            0.9625,
+            1.0
+          ],
+          "paired_dz": 35.32987404449668,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "later_teacher_accuracy": {
+          "n": 5,
+          "mean": 0.3264150943396227,
+          "median": 0.3280922431865828,
+          "variance": 0.00022172997727762188,
+          "bootstrap95": [
+            0.31551362683438156,
+            0.3375262054507338
+          ],
+          "paired_dz": 21.92088215220867,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "early_autonomous_accuracy": {
+          "n": 5,
+          "mean": 0.915625,
+          "median": 1.0,
+          "variance": 0.035595703124999996,
+          "bootstrap95": [
+            0.746875,
+            1.0
+          ],
+          "paired_dz": 4.853095684499544,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "later_autonomous_accuracy": {
+          "n": 5,
+          "mean": 0.10503144654088051,
+          "median": 0.10587002096436059,
+          "variance": 1.0657982059429759e-05,
+          "bootstrap95": [
+            0.10251572327044026,
+            0.10754716981132076
+          ],
+          "paired_dz": 32.172281083303616,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "unweighted_cross_entropy": {
+          "n": 5,
+          "mean": 1.8284753419958721,
+          "median": 1.8230968455311272,
+          "variance": 0.0013771924829793876,
+          "bootstrap95": [
+            1.800685835638165,
+            1.858506987081353
+          ],
+          "paired_dz": 49.27104645371649,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "common_4x_cross_entropy": {
+          "n": 5,
+          "mean": 1.5760102994212062,
+          "median": 1.5845425352885991,
+          "variance": 0.0011384762514449762,
+          "bootstrap95": [
+            1.5507784074938697,
+            1.6012359896667718
+          ],
+          "paired_dz": 46.70862292361597,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "early_cross_entropy": {
+          "n": 5,
+          "mean": 0.2321599165498041,
+          "median": 0.2355729780505481,
+          "variance": 0.0033222853638282656,
+          "bootstrap95": [
+            0.18933586669858807,
+            0.27923822433762846
+          ],
+          "paired_dz": 4.0278081145981,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "later_cross_entropy": {
+          "n": 5,
+          "mean": 1.9317190243653262,
+          "median": 1.9232298357547064,
+          "variance": 0.0017825424032831135,
+          "bootstrap95": [
+            1.9003688160304464,
+            1.96624790694529
+          ],
+          "paired_dz": 45.75346842156756,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 32.0,
+        "raw_prefix_variance": 98.62222222222223,
+        "raw_prefix_min": 1,
+        "raw_prefix_max": 34
+      }
+    }
+  },
+  "contrasts": {
+    "legacy5": {
+      "exact_prefix_symbols": {
+        "n": 5,
+        "mean": 19.2,
+        "median": 17.5,
+        "variance": 61.699999999999996,
+        "bootstrap95": [
+          13.3,
+          25.1
+        ],
+        "paired_dz": 2.444323294805739,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "early_teacher_accuracy": {
+        "n": 5,
+        "mean": 0.09375,
+        "median": 0.078125,
+        "variance": 0.0020751953125,
+        "bootstrap95": [
+          0.065625,
+          0.134375
+        ],
+        "paired_dz": 2.057983021710106,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "later_teacher_accuracy": {
+        "n": 5,
+        "mean": -0.05094339622641508,
+        "median": -0.05136268343815509,
+        "variance": 0.00028600749794531623,
+        "bootstrap95": [
+          -0.06394129979035637,
+          -0.03710691823899372
+        ],
+        "paired_dz": -3.0123066822974076,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "early_autonomous_accuracy": {
+        "n": 5,
+        "mean": 0.503125,
+        "median": 0.5,
+        "variance": 0.05009765625,
+        "bootstrap95": [
+          0.325,
+          0.678125
+        ],
+        "paired_dz": 2.2478493078320994,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "later_autonomous_accuracy": {
+        "n": 5,
+        "mean": 0.002935010482180295,
+        "median": -0.0031446540880503138,
+        "variance": 0.000266119923174628,
+        "bootstrap95": [
+          -0.009433962264150936,
+          0.01614255765199161
+        ],
+        "paired_dz": 0.179916486727959,
+        "wins": 2,
+        "ties": 0,
+        "losses": 3
+      },
+      "unweighted_cross_entropy": {
+        "n": 5,
+        "mean": 0.19029080471326024,
+        "median": 0.1697788187534217,
+        "variance": 0.002001307966908306,
+        "bootstrap95": [
+          0.15761291035955777,
+          0.22819366890365728
+        ],
+        "paired_dz": 4.253641070212916,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "common_4x_cross_entropy": {
+        "n": 5,
+        "mean": 0.11051735753243612,
+        "median": 0.10221655406870389,
+        "variance": 0.001706785329176159,
+        "bootstrap95": [
+          0.08359818139827384,
+          0.14768460235089803
+        ],
+        "paired_dz": 2.675106285569924,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "early_cross_entropy": {
+        "n": 5,
+        "mean": -0.31411005402382475,
+        "median": -0.2958475390558025,
+        "variance": 0.012211352075149211,
+        "bootstrap95": [
+          -0.4110679166516791,
+          -0.23600745891554348
+        ],
+        "paired_dz": -2.8424966468758854,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "later_cross_entropy": {
+        "n": 5,
+        "mean": 0.22431741066763394,
+        "median": 0.20144085356400643,
+        "variance": 0.002631485389333607,
+        "bootstrap95": [
+          0.18596578082018284,
+          0.26266904051508505
+        ],
+        "paired_dz": 4.37282907169182,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "prefix_criterion": true,
+      "cost_free_criterion": false,
+      "later_within_margin_blocks": 0
+    },
+    "brain1": {
+      "exact_prefix_symbols": {
+        "n": 5,
+        "mean": 19.7,
+        "median": 19.5,
+        "variance": 28.825000000000003,
+        "bootstrap95": [
+          15.5,
+          23.9
+        ],
+        "paired_dz": 3.6692860364580535,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "early_teacher_accuracy": {
+        "n": 5,
+        "mean": 0.0875,
+        "median": 0.09375,
+        "variance": 0.00031738281250000007,
+        "bootstrap95": [
+          0.071875,
+          0.1
+        ],
+        "paired_dz": 4.911524908119363,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "later_teacher_accuracy": {
+        "n": 5,
+        "mean": -0.054297693920335434,
+        "median": -0.060796645702306085,
+        "variance": 0.00033644062954612354,
+        "bootstrap95": [
+          -0.06561844863731656,
+          -0.038155136268343826
+        ],
+        "paired_dz": -2.9602416622447603,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "early_autonomous_accuracy": {
+        "n": 5,
+        "mean": 0.503125,
+        "median": 0.53125,
+        "variance": 0.011767578124999997,
+        "bootstrap95": [
+          0.41875,
+          0.5875
+        ],
+        "paired_dz": 4.638017175421204,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "later_autonomous_accuracy": {
+        "n": 5,
+        "mean": 0.0006289308176100628,
+        "median": 0.009433962264150955,
+        "variance": 0.0002947975862417536,
+        "bootstrap95": [
+          -0.014046121593291406,
+          0.013207547169811314
+        ],
+        "paired_dz": 0.03663033698691399,
+        "wins": 3,
+        "ties": 0,
+        "losses": 2
+      },
+      "unweighted_cross_entropy": {
+        "n": 5,
+        "mean": 0.16755210507096754,
+        "median": 0.17609380943273067,
+        "variance": 0.0015046038291210231,
+        "bootstrap95": [
+          0.13713685716881527,
+          0.19634131688497258
+        ],
+        "paired_dz": 4.319553000988377,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "common_4x_cross_entropy": {
+        "n": 5,
+        "mean": 0.08711382861881703,
+        "median": 0.09081515136762808,
+        "variance": 0.0015120395205266012,
+        "bootstrap95": [
+          0.055747530159093686,
+          0.1161804383738549
+        ],
+        "paired_dz": 2.2402966525013985,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "early_cross_entropy": {
+        "n": 5,
+        "mean": -0.34105241374627704,
+        "median": -0.35769535383950246,
+        "variance": 0.0018232921240382515,
+        "bootstrap95": [
+          -0.3726797266486508,
+          -0.30528743447236467
+        ],
+        "paired_dz": -7.987171313636232,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "later_cross_entropy": {
+        "n": 5,
+        "mean": 0.19871604222481834,
+        "median": 0.21161752337409379,
+        "variance": 0.0018807649606708634,
+        "bootstrap95": [
+          0.16553862520926943,
+          0.2299797389936062
+        ],
+        "paired_dz": 4.582111640211592,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "prefix_criterion": true,
+      "cost_free_criterion": false,
+      "later_within_margin_blocks": 0
+    }
+  },
+  "qualifying_graphs": [
+    "legacy5",
+    "brain1"
+  ],
+  "intervention_effect_brain1_minus_legacy5": {
+    "n": 5,
+    "mean": 0.5,
+    "median": 2.0,
+    "variance": 162.125,
+    "bootstrap95": [
+      -9.2,
+      10.6
+    ],
+    "paired_dz": 0.03926856307863329,
+    "wins": 3,
+    "ties": 0,
+    "losses": 2
+  },
+  "all_cached_invariants_exact": true,
+  "source_manifest_sha256": "89245760366a32fa5bfd7cce2fd8dcb270da50554851e137f48548e3e7415293",
+  "treatment_manifest_sha256": "ab7db9c5962bd8c078b7279945ded1bda7b49f55b90fa640f4b6dc65370b92f9"
+}

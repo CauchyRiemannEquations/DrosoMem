@@ -8,11 +8,15 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 [Roadmap](docs/research-roadmap.md) · [ACT I protocol](docs/whole-brain-memory-protocol.md) ·
 [ACT I results](docs/whole-brain-memory-results.md)
 
-Latest: [Random-sequence length scaling](docs/length-scaling-results.md),
-with a [locked protocol](docs/length-scaling-protocol.md): 100 paired fits,
-100 exact replays and 10 independent refits. Both models complete N32;
-at N512, mean prefixes are partial14.6 / whole-brain9.5. No whole-brain
-advantage is established under this fixed training procedure.
+Latest: [N512 prefix-loss-mass experiment](docs/prefix-mass-results.md),
+with a [locked protocol](docs/prefix-mass-protocol.md): 44 new fits and exact
+replays, six independent refits. Prioritizing the first 32 targets improves
+prefix recall on fresh seeds in both graphs, but lowers later teacher-forced
+accuracy beyond the predefined tolerance. Reservoir states remain identical;
+this is a decoder tradeoff, not evidence of increased internal storage.
+
+The preceding [random-sequence length curve](docs/length-scaling-results.md)
+tested N32–512 in 100 fits. No whole-brain advantage is established.
 
 Earlier: [ACT II four-family protocol](docs/sequence-memory-protocol.md) and
 [results](docs/sequence-memory-results.md). Eighty fits support limited trained

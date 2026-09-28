@@ -1,11 +1,14 @@
 # Prioritized work — updated 2026-09-28
 
-**Latest: random-sequence length scaling is complete.** All100 fits replayed
-exactly;10 heads refitted exactly. Both graphs complete N32, but N512 means
-are legacy5=14.6 / brain1=9.5. Whole-brain superiority remains unestablished.
-[Results](length-scaling-results.md). The next single experiment holds the N512
-states and decoder setup fixed while changing only normalized prefix loss mass.
-The four-family pilot and earlier notes below are historical completed work.
+**Latest: the N512 prefix-loss-mass experiment and fresh-seed confirmation are
+complete.** All44 new scientific fits replayed exactly; six heads refitted
+exactly. Both graphs confirm increased prefix recall, but both fail the later
+teacher-forced accuracy tolerance. No new default is promoted.
+[Results](prefix-mass-results.md). The next single experiment compares delayed
+symbol decoding on independent random input streams in legacy5 and brain1,
+using the same 48 observed MBONs. It separates past-input representation from
+priority learning of one trained sequence. This probe is not yet executed.
+The length curve, four-family pilot and notes below are historical completed work.
 
 ## Historical handoff notes (superseded by the result above)
 

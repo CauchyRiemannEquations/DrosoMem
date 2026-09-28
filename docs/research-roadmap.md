@@ -20,8 +20,12 @@ The initial four-family pilot is now executed: [protocol](sequence-memory-protoc
 [results](sequence-memory-results.md). Both networks support the prespecified
 limited beyond-pi claim on these trained instances; whole-brain superiority is
 not established. The [random length curve](length-scaling-results.md) is also
-complete at N32–512, with no whole-brain superiority. The next diagnostic
-isolates normalized prefix loss mass at N512 before broadening the task.
+complete at N32–512, with no whole-brain superiority. The subsequent
+[N512 prefix-loss-mass diagnostic](prefix-mass-results.md) confirms prefix gains
+on fresh seeds but fails the predefined later teacher-forced cost tolerance in
+both graphs. It changes decoder allocation on identical reservoir trajectories.
+The next single experiment is independent-stream delayed-symbol decoding with
+matched 48-MBON observation in partial and whole-brain models; it is not yet run.
 Network-alphabet scaling and additional families remain open. The paragraph
 below describes the staged scope, not an assertion that all stages are complete.
 

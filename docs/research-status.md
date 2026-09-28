@@ -30,6 +30,7 @@ This is not a new execution of every historical experiment.
 | Does whole-brain connectivity improve matched-budget recall? | Completed; main improvement criteria failed | 50 new fits: legacy5 35.0, brain5 31.8, brain1 34.1. [Locked protocol](whole-brain-memory-protocol.md), [current results](whole-brain-memory-results.md). Before this audit, untested |
 | Does trained-prefix recall extend beyond pi? | ACT II four-family pilot complete, limited criterion passed | 80 fits: legacy5/brain1 means random26.0/28.8, shuffled-pi31.2/30.2. Both pass the registered limited beyond-pi rule, neither establishes whole-brain superiority. Periodic197/197 is also solved by a first-order control; [results](sequence-memory-results.md) |
 | How does random-sequence recall scale with length? | Completed within fixed training procedure | 100 fits at N32/64/128/256/512; both graphs complete N32, N512 means legacy5=14.6 / brain1=9.5. Relative-collapse criterion first met at N256 / N128. No whole-brain superiority; [results](length-scaling-results.md) |
+| Does restoring early-prefix loss mass explain part of the N512 drop? | Completed, prefix benefit confirmed with later cost | 44 new fits plus 20 reused baseline fits; fresh-seed means legacy5 10.83→33.00, brain1 11.17→23.33. Both pass prefix confirmation but fail later teacher-forced cost tolerance. Same reservoir states; external decoder tradeoff, not increased storage. [Results](prefix-mass-results.md) |
 | Does recall generalize across alphabet sizes? | Open | Generator-level integer alphabets tested; network experiments remain K=10. Length1024 and additional sequence families remain unexecuted |
 | Memory-critical subnetwork? | Partial prior ablations only | No comprehensive matched ablation/control study or causal circuit localization; ACT III open |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
@@ -110,8 +111,31 @@ teacher-forced features for shared prefixes match exactly across task lengths.
 Fixed prefix loss mass changes with N, so the curve is not intrinsic capacity.
 The rate suite passed144 tests with8 optional-dependency skips. All1,932 prior
 result artifacts remained unchanged. [Protocol](length-scaling-protocol.md),
-[results](length-scaling-results.md). Next: one controlled loss-mass diagnostic
-at N512, with frozen data/states and no multiplier sweep.
+[results](length-scaling-results.md). Its selected loss-mass diagnostic is now
+complete below, with frozen data/states and no multiplier sweep.
+
+## N512 prefix-loss-mass completion
+
+Protocol a7badad preceded outcomes; execution and analysis code 2dfc1d9.
+Two smoke fits passed replay/refit and were excluded from estimates. Main reused
+20 verified baseline fits and added20 treatment fits. Both graphs qualified for
+the registered fresh-seed confirmation, which added12 baseline and12 treatment
+fits. All44 new scientific heads replayed exactly; six independently refitted.
+Two selected historical baseline heads were also replayed/refitted exactly.
+
+Both graphs pass prefix confirmation, but neither passes the predefined later
+teacher-forced accuracy tolerance. Confirmation later accuracy changes are
+legacy5 −5.21 percentage points and brain1 −3.46 points. Brain1's individual
+seed13143/stratum701 worsens from7 to0 even though its paired-block mean improves.
+All low scores are retained; no509-target completion or new default promotion.
+The rate suite passed146 tests with8 optional-dependency skips. All3,054 prior
+result files remain unchanged. [Protocol](prefix-mass-protocol.md),
+[results and verification](prefix-mass-results.md).
+
+Next: one independent-stream delayed-symbol decoding experiment comparing
+legacy5 and brain1 with the same48 MBONs. Reuse the earlier delay-probe alignment
+tests but evaluate the current matched dynamics; the earlier small-network
+timing probes are not this whole-brain comparison. The new study is unexecuted.
 
 Recent history puts research-only scope after Phase 6 execution/analysis,
 preceded by Phase 5B failed response and Stage B/C validation. No historical
