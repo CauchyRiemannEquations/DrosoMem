@@ -10,8 +10,8 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 
 Latest: [Independent-stream delayed-symbol decoding](docs/delayed-symbol-results.md),
 with a [locked protocol](docs/delayed-symbol-protocol.md): 20 matched conditions
-and 20 exact trajectory/head repeats. Mean past-lag accuracy is partial60.42% /
-whole-brain51.10%; the whole-brain superiority criterion fails. This measures
+and 20 exact trajectory/head repeats. Mean past-lag accuracy is partial 60.42% /
+whole-brain 51.10%; the whole-brain superiority criterion fails. This measures
 linear access to past input, separately from autonomous trained-sequence recall.
 Current position: ACT II diagnostic; [completed and remaining scope](docs/research-roadmap.md).
 

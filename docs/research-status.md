@@ -142,7 +142,7 @@ Five paired seed blocks, two input strata, two graphs:20 scientific conditions,
 each with11 real and11 misaligned-target probes. Every trajectory and every
 head independently regenerated/refitted exactly. Same48 MBON observation,
 input IDs and train/test streams. Mean primary past-lag accuracy: legacy5
-60.420% / brain151.100%; paired difference-9.320pp. H2 whole-brain
+60.420% / brain1=51.100%; paired difference −9.320pp. H2 whole-brain
 superiority fails, so no fresh confirmation or tuning is triggered.
 [Results](delayed-symbol-results.md), [protocol](delayed-symbol-protocol.md).
 
