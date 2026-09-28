@@ -7,6 +7,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from threadpoolctl import threadpool_limits
 from flying.training import whole_brain_memory as core
 from run_delayed_symbol import check, read, measures, independent_checks
 
@@ -20,6 +21,7 @@ def estimate(values):
         positive=int((x>0).sum()),zero=int((x==0).sum()),negative=int((x<0).sum()))
 
 
+@threadpool_limits.wrap(limits=1)
 def analyze(source,out):
     m=check(source);c=m['config'];rows=[];matched={}
     for b in c['blocks']:
