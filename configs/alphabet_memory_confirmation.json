@@ -1,0 +1,60 @@
+{
+  "study": "act2-alphabet-confirmation",
+  "conditions": [
+    "legacy5",
+    "brain1"
+  ],
+  "alphabet_sizes": [
+    2,
+    4,
+    10,
+    16
+  ],
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "blocks": [
+    {
+      "model_seed": 23142,
+      "dataset_seed": 24142
+    },
+    {
+      "model_seed": 23143,
+      "dataset_seed": 24143
+    },
+    {
+      "model_seed": 23144,
+      "dataset_seed": 24144
+    }
+  ],
+  "dataset": {
+    "length": 128,
+    "offset": 0,
+    "prompt": [
+      0,
+      1,
+      0
+    ]
+  },
+  "prompt_length": 3,
+  "eval_length": 125,
+  "epochs": 2000,
+  "hidden_units": 8,
+  "initialization": 0,
+  "learning_rate": 0.03,
+  "l2": 1e-05,
+  "prefix_window": 32,
+  "prefix_weight": 4,
+  "leak": 0.6,
+  "gain": 0.9,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "schedule": "mbon_after_kc",
+  "normalization": "incoming_l1",
+  "activity_epsilon": 1e-08,
+  "decay_steps": 32,
+  "worker_seconds": 1800,
+  "worker_rss_bytes": 3221225472,
+  "protocol": "docs/alphabet-memory-protocol.md"
+}
