@@ -33,6 +33,7 @@ This is not a new execution of every historical experiment.
 | Does restoring early-prefix loss mass explain part of the N512 drop? | Completed, prefix benefit confirmed with later cost | 44 new fits plus 20 reused baseline fits; fresh-seed means legacy5 10.83→33.00, brain1 11.17→23.33. Both pass prefix confirmation but fail later teacher-forced cost tolerance. Same reservoir states; external decoder tradeoff, not increased storage. [Results](prefix-mass-results.md) |
 | Is past iid input linearly accessible under the current matched interface? | Completed ACT II diagnostic | 20 conditions /20 exact full repeats; mean past-lag accuracy legacy5=60.42% / brain1=51.10%. Whole-brain criterion fails; [results](delayed-symbol-results.md). Not autonomous recall or formal memory capacity |
 | Does trained-prefix recall extend across alphabet sizes? | ACT II-A fixed-N128 comparison completed | 80 fits at K2/4/10/16; both graphs pass scoped trained-prefix gates at all K, no whole-brain superiority. Mean prefixes partial25.0/43.4/82.2/103.1; whole27.3/26.3/55.1/88.0. [Results](alphabet-memory-results.md). Full length-by-K design and additional families remain open |
+| Can finite-context distinctiveness help explain the K curve? | ACT II diagnostic completed; both scoped endpoints pass | 120 context tables on20 unique tasks; order2 ambiguity K16−K2=−0.2272; order3 prefix +59.0; all independently checked. Context5 completes K10/K16. A task-level explanation candidate, not neural causality; [results](context-memory-results.md) |
 | Memory-critical subnetwork? | Partial prior ablations only | No comprehensive matched ablation/control study or causal circuit localization; ACT III open |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
@@ -171,12 +172,29 @@ block, so the registered alphabet-load decrease fails too. AtK16 the evaluation
 horizon is reached in5/10 partial and4/10 whole runs; this is censored performance.
 Low whole-brain K4 runs of0 and1 remain in the raw table. [Results](alphabet-memory-results.md).
 
-Current position: ACT II-A completed within fixed N128. Next is one saved-task
-context ambiguity/n-gram diagnostic, before attributing the K curve to memory
-capacity or topology. It is not yet executed. Comprehensive ACT III structural
+The selected saved-task context diagnostic is now completed below. Do not
+attribute the K curve to memory capacity or topology from these data alone. Comprehensive ACT III structural
 controls, additional ACT II families and ACT IV useful internal learning remain
 open; ACT V robustness remains separate.
 
 Recent history puts research-only scope after Phase 6 execution/analysis,
 preceded by Phase 5B failed response and Stage B/C validation. No historical
 result files were overwritten.
+
+## Finite-context diagnostic completion
+
+Protocol382501b preceded new diagnostic outcomes; implementation bffc0cc.
+All120 table fits on20 unique datasets match independent recounts, including
+probabilities, teacher outputs and ambiguity. All20 old order1 controls match;
+80 saved neural prefixes were rescored. Tests165 passed,8 optional skips;
+all4,574 prior result files and old numerical source are unchanged.
+
+Both endpoints pass: order2 ambiguity falls0.2272 fromK2 toK16 (all five seeds),
+order3 prefix rises59.0 (all five). Yet order1 ambiguity rises, K2 context8
+recalls only7.2, and K4/data22143/context8 recalls0 despite zero long-context
+ambiguity because the short initial prompt is ambiguous. Every failure is kept.
+[Full results](context-memory-results.md). No neural training was repeated.
+
+Current position: ACT II-A plus task/decoding diagnostic completed within scope.
+Next is one fixed-K context-conflict intervention, not yet executed. Full length
+by K, additional families, comprehensive ACT III and useful ACT IV remain open.

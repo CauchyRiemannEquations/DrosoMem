@@ -1,16 +1,16 @@
 # Prioritized work — updated 2026-09-28
 
-**Latest: ACT II-A fixed-N128 alphabet comparison is complete.** All80 heads
-replay exactly; eight independently refit. Both graphs pass the scoped
-trained-prefix criterion at K2/4/10/16. No K passes whole-brain superiority.
-The K16-minus-K2 decrease also fails: mean prefixes rise25.0→103.1 in legacy5
-and27.3→88.0 in brain1. [Results](alphabet-memory-results.md).
+**Latest: ACT II finite-context diagnostic completed.** All120 count-table fits
+on20 unique saved sequences match an independent scan-based reference. Both
+registered endpoints pass: order2 ambiguity K16−K2=−0.2272; order3 prefix
+K16−K2=+59.0. [Results](context-memory-results.md). No neural fits were added.
 
-The next single experiment is a fixed-context ambiguity and n-gram control
-study on the saved80 tasks. Preregister orders, reset handling, fallback and
-metrics; report every order rather than selecting a favorable one. It is not
-yet executed. This remains an ACT II task/decoding diagnostic before structural
-attribution; ACT III controls and ACT IV internal learning remain separate.
+The next single experiment is a fixed-K, fixed-N context-conflict intervention:
+paired low/high conflict sequences with matched symbol multiset and prompt,
+shared input mapping and head budgets. Register the generator, construction
+budget, failures and scientific criteria before neural outcomes. It is proposed,
+not yet registered or executed. This tests a task-level explanation; it does
+not establish connectome topology as the cause. ACT III/IV remain separate.
 
 ## Historical handoff notes (superseded by the result above)
 

@@ -9,22 +9,24 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 
 ## Current research
 
-Latest: [ACT II-A alphabet comparison](docs/alphabet-memory-results.md), with a
-[locked protocol](docs/alphabet-memory-protocol.md). Eighty fits at fixed N128
-compare K2/4/10/16 using matched48-MBON observations within each K. Both models
-pass scoped trained-prefix criteria, but no K establishes whole-brain superiority.
-Mean recall rises from K2 toK16; this is not evidence of increased intrinsic capacity.
+Latest: [finite-context diagnostic](docs/context-memory-results.md), with a
+[locked protocol](docs/context-memory-protocol.md). All120 context-table fits
+were independently verified on20 unique saved sequences. Both diagnostic
+endpoints pass: K2→K16 reduces order2 ambiguity and increases order3 recall.
+Context5 completes all saved K10/K16 instances without a connectome.
 
-The next diagnostic asks whether reduced short-context ambiguity helps explain
-that curve. It is not yet executed. ACT III structural controls and ACT IV
-internal learning remain separate. Historical findings, including negative
+This supports a task-level explanation candidate for the
+[alphabet curve](docs/alphabet-memory-results.md), not a causal account of the
+neural model. The next single study is a fixed-K context-conflict intervention;
+it is not yet executed. ACT III controls and ACT IV internal learning remain
+separate. Historical findings, including negative
 whole-brain, plasticity and robustness results, remain in the research-status index.
 
 The established models freeze recurrent connectivity and train an external
 readout. Distinguish **representation**, **decoding** and **internal learning**.
 Teacher-forced accuracy, autonomous recall and robustness are separate measurements.
 
-## Reproduce the alphabet study
+## Reproduce the latest diagnostic
 
 Use Python3.12 and a clean environment; commands run from the repository root.
 
@@ -32,13 +34,11 @@ Use Python3.12 and a clean environment; commands run from the repository root.
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-act1-lock.txt
 $env:PYTHONPATH = 'src'
-.\.venv\Scripts\python.exe -m flying.training.phase6 prepare --cache outputs/act1-graphs
-.\.venv\Scripts\python.exe scripts/run_alphabet_memory.py run --config configs/alphabet_memory.json --out outputs/alphabet_new
-.\.venv\Scripts\python.exe scripts/run_alphabet_memory.py verify --source outputs/alphabet_new --out outputs/alphabet_verify_new
-.\.venv\Scripts\python.exe scripts/summarize_alphabet_memory.py --source outputs/alphabet_new --out outputs/alphabet_analysis_new
+.\.venv\Scripts\python.exe scripts/context_memory.py --config configs/context_memory.json --out outputs/context_new
 ```
 
-Use fresh output directories. Raw downloads and sparse graph caches are excluded
+Use fresh output directories. This diagnostic uses saved checkpoints and needs
+no graph download. Raw downloads and sparse graph caches are excluded
 from Git; provenance and SHA-256 validation are mandatory.
 [ACT I protocol](docs/whole-brain-memory-protocol.md) · [Data and attribution](data/README.md) ·
 [Primary-source review](docs/research.md) · [Historical reproduction](docs/historical-reproduction.md) · [License](LICENSE)
