@@ -32,7 +32,7 @@ This is not a new execution of every historical experiment.
 | How does random-sequence recall scale with length? | Completed within fixed training procedure | 100 fits at N32/64/128/256/512; both graphs complete N32, N512 means legacy5=14.6 / brain1=9.5. Relative-collapse criterion first met at N256 / N128. No whole-brain superiority; [results](length-scaling-results.md) |
 | Does restoring early-prefix loss mass explain part of the N512 drop? | Completed, prefix benefit confirmed with later cost | 44 new fits plus 20 reused baseline fits; fresh-seed means legacy5 10.83→33.00, brain1 11.17→23.33. Both pass prefix confirmation but fail later teacher-forced cost tolerance. Same reservoir states; external decoder tradeoff, not increased storage. [Results](prefix-mass-results.md) |
 | Is past iid input linearly accessible under the current matched interface? | Completed ACT II diagnostic | 20 conditions /20 exact full repeats; mean past-lag accuracy legacy5=60.42% / brain1=51.10%. Whole-brain criterion fails; [results](delayed-symbol-results.md). Not autonomous recall or formal memory capacity |
-| Does recall generalize across alphabet sizes? | Open | Generator-level integer alphabets tested; network experiments remain K=10. Length1024 and additional sequence families remain unexecuted |
+| Does trained-prefix recall extend across alphabet sizes? | ACT II-A fixed-N128 comparison completed | 80 fits at K2/4/10/16; both graphs pass scoped trained-prefix gates at all K, no whole-brain superiority. Mean prefixes partial25.0/43.4/82.2/103.1; whole27.3/26.3/55.1/88.0. [Results](alphabet-memory-results.md). Full length-by-K design and additional families remain open |
 | Memory-critical subnetwork? | Partial prior ablations only | No comprehensive matched ablation/control study or causal circuit localization; ACT III open |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
@@ -154,10 +154,28 @@ condition matches the restart exactly. Execution deviations are documented,
 not hidden. All3,565 prior result files and numerical modules remain unchanged.
 Tests:148 passed,8 optional-dependency skips.
 
-Current roadmap position remains ACT II. Next: one N128 random-sequence
-alphabet-size comparison K2/4/10/16 with legacy5/brain1, not yet executed.
-Comprehensive ACT III structural interventions and ACT IV useful internal
-learning remain open; ACT V robustness remains separate.
+Its selected N128 alphabet-size comparison is now complete below.
+
+## ACT II-A alphabet comparison completion
+
+Protocol91c3032 preceded outcomes; adapters and runner e84f330. Existing
+numerical modules are unchanged, and the K10 adapter exactly reproduces the
+old N128314-prompt baseline (legacy5=34, brain1=38), including independent fits.
+The new study uses010 for every K. Eight smoke runs pass replay/refit and are
+excluded. All80 main runs replay exactly; eight designated heads refit exactly.
+Tests154 passed,8 optional-dependency skips; all3,792 prior result files unchanged.
+
+Both graphs pass H1 at all four K. Whole-brain H2 fails everywhere; no fresh
+confirmation or tuning. The K16-minus-K2 prefix fraction increases in every
+block, so the registered alphabet-load decrease fails too. AtK16 the evaluation
+horizon is reached in5/10 partial and4/10 whole runs; this is censored performance.
+Low whole-brain K4 runs of0 and1 remain in the raw table. [Results](alphabet-memory-results.md).
+
+Current position: ACT II-A completed within fixed N128. Next is one saved-task
+context ambiguity/n-gram diagnostic, before attributing the K curve to memory
+capacity or topology. It is not yet executed. Comprehensive ACT III structural
+controls, additional ACT II families and ACT IV useful internal learning remain
+open; ACT V robustness remains separate.
 
 Recent history puts research-only scope after Phase 6 execution/analysis,
 preceded by Phase 5B failed response and Stage B/C validation. No historical

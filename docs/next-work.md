@@ -1,13 +1,16 @@
 # Prioritized work — updated 2026-09-28
 
-**Latest: matched independent-stream delayed-symbol decoding is complete.**
-Twenty state conditions and all real/null heads independently replay/refit
-exactly. Past-lag accuracy averages legacy5=60.42% / brain1=51.10%; whole-brain
-superiority fails. [Results](delayed-symbol-results.md). Current position is
-ACT II, not completed ACT III or IV. The next single experiment is ACT II-A:
-random N128 sequences at K2/4/10/16 with matched graph comparisons within K.
-It is not yet executed. Preserve the prefix-weight tradeoff, failed robustness
-and plasticity findings; do not launch a tuning sweep.
+**Latest: ACT II-A fixed-N128 alphabet comparison is complete.** All80 heads
+replay exactly; eight independently refit. Both graphs pass the scoped
+trained-prefix criterion at K2/4/10/16. No K passes whole-brain superiority.
+The K16-minus-K2 decrease also fails: mean prefixes rise25.0→103.1 in legacy5
+and27.3→88.0 in brain1. [Results](alphabet-memory-results.md).
+
+The next single experiment is a fixed-context ambiguity and n-gram control
+study on the saved80 tasks. Preregister orders, reset handling, fallback and
+metrics; report every order rather than selecting a favorable one. It is not
+yet executed. This remains an ACT II task/decoding diagnostic before structural
+attribution; ACT III controls and ACT IV internal learning remain separate.
 
 ## Historical handoff notes (superseded by the result above)
 

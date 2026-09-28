@@ -1,0 +1,1952 @@
+{
+  "study": "act2-alphabet-smoke",
+  "conditions": {
+    "2": {
+      "legacy5": {
+        "exact_prefix_symbols": {
+          "n": 1,
+          "mean": 3.0,
+          "median": 3.0,
+          "variance": null,
+          "bootstrap95": [
+            3.0,
+            3.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_prefix_bits": {
+          "n": 1,
+          "mean": 3.0,
+          "median": 3.0,
+          "variance": null,
+          "bootstrap95": [
+            3.0,
+            3.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "prefix_fraction": {
+          "n": 1,
+          "mean": 0.024,
+          "median": 0.024,
+          "variance": null,
+          "bootstrap95": [
+            0.024,
+            0.024
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "teacher_forced_accuracy": {
+          "n": 1,
+          "mean": 0.616,
+          "median": 0.616,
+          "variance": null,
+          "bootstrap95": [
+            0.616,
+            0.616
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_accuracy": {
+          "n": 1,
+          "mean": 0.56,
+          "median": 0.56,
+          "variance": null,
+          "bootstrap95": [
+            0.56,
+            0.56
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "control_excess": {
+          "n": 1,
+          "mean": 3.0,
+          "median": 3.0,
+          "variance": null,
+          "bootstrap95": [
+            3.0,
+            3.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "full_completion": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": null,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 1,
+          "losses": 0
+        },
+        "effective_rank": {
+          "n": 1,
+          "mean": 4.649991442683372,
+          "median": 4.649991442683372,
+          "variance": null,
+          "bootstrap95": [
+            4.649991442683372,
+            4.649991442683372
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_mean_abs": {
+          "n": 1,
+          "mean": 0.011414629691359974,
+          "median": 0.011414629691359974,
+          "variance": null,
+          "bootstrap95": [
+            0.011414629691359974,
+            0.011414629691359974
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "mean_observed_cosine": {
+          "n": 1,
+          "mean": 0.9956008693913587,
+          "median": 0.9956008693913587,
+          "variance": null,
+          "bootstrap95": [
+            0.9956008693913587,
+            0.9956008693913587
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_decay_ratio_32": {
+          "n": 1,
+          "mean": 7.063689359304153e-07,
+          "median": 7.063689359304153e-07,
+          "variance": null,
+          "bootstrap95": [
+            7.063689359304153e-07,
+            7.063689359304153e-07
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 3.0,
+        "raw_prefix_variance": null,
+        "recall_gate": false
+      },
+      "brain1": {
+        "exact_prefix_symbols": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": null,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 1,
+          "losses": 0
+        },
+        "autonomous_prefix_bits": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": null,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 1,
+          "losses": 0
+        },
+        "prefix_fraction": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": null,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 1,
+          "losses": 0
+        },
+        "teacher_forced_accuracy": {
+          "n": 1,
+          "mean": 0.536,
+          "median": 0.536,
+          "variance": null,
+          "bootstrap95": [
+            0.536,
+            0.536
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_accuracy": {
+          "n": 1,
+          "mean": 0.552,
+          "median": 0.552,
+          "variance": null,
+          "bootstrap95": [
+            0.552,
+            0.552
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "control_excess": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": null,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 1,
+          "losses": 0
+        },
+        "full_completion": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": null,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 1,
+          "losses": 0
+        },
+        "effective_rank": {
+          "n": 1,
+          "mean": 2.9055910086361627,
+          "median": 2.9055910086361627,
+          "variance": null,
+          "bootstrap95": [
+            2.9055910086361627,
+            2.9055910086361627
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_mean_abs": {
+          "n": 1,
+          "mean": 0.005236627300240341,
+          "median": 0.005236627300240341,
+          "variance": null,
+          "bootstrap95": [
+            0.005236627300240341,
+            0.005236627300240341
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "mean_observed_cosine": {
+          "n": 1,
+          "mean": 0.9990480165341944,
+          "median": 0.9990480165341944,
+          "variance": null,
+          "bootstrap95": [
+            0.9990480165341944,
+            0.9990480165341944
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_decay_ratio_32": {
+          "n": 1,
+          "mean": 1.7146129271468226e-06,
+          "median": 1.7146129271468226e-06,
+          "variance": null,
+          "bootstrap95": [
+            1.7146129271468226e-06,
+            1.7146129271468226e-06
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 0.0,
+        "raw_prefix_variance": null,
+        "recall_gate": false
+      }
+    },
+    "4": {
+      "legacy5": {
+        "exact_prefix_symbols": {
+          "n": 1,
+          "mean": 6.0,
+          "median": 6.0,
+          "variance": null,
+          "bootstrap95": [
+            6.0,
+            6.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_prefix_bits": {
+          "n": 1,
+          "mean": 12.0,
+          "median": 12.0,
+          "variance": null,
+          "bootstrap95": [
+            12.0,
+            12.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "prefix_fraction": {
+          "n": 1,
+          "mean": 0.048,
+          "median": 0.048,
+          "variance": null,
+          "bootstrap95": [
+            0.048,
+            0.048
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "teacher_forced_accuracy": {
+          "n": 1,
+          "mean": 0.496,
+          "median": 0.496,
+          "variance": null,
+          "bootstrap95": [
+            0.496,
+            0.496
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_accuracy": {
+          "n": 1,
+          "mean": 0.328,
+          "median": 0.328,
+          "variance": null,
+          "bootstrap95": [
+            0.328,
+            0.328
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "control_excess": {
+          "n": 1,
+          "mean": 2.0,
+          "median": 2.0,
+          "variance": null,
+          "bootstrap95": [
+            2.0,
+            2.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "full_completion": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": null,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 1,
+          "losses": 0
+        },
+        "effective_rank": {
+          "n": 1,
+          "mean": 7.446302417234063,
+          "median": 7.446302417234063,
+          "variance": null,
+          "bootstrap95": [
+            7.446302417234063,
+            7.446302417234063
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_mean_abs": {
+          "n": 1,
+          "mean": 0.013144211558965536,
+          "median": 0.013144211558965536,
+          "variance": null,
+          "bootstrap95": [
+            0.013144211558965536,
+            0.013144211558965536
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "mean_observed_cosine": {
+          "n": 1,
+          "mean": 0.9802993727400974,
+          "median": 0.9802993727400974,
+          "variance": null,
+          "bootstrap95": [
+            0.9802993727400974,
+            0.9802993727400974
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_decay_ratio_32": {
+          "n": 1,
+          "mean": 7.086573864445156e-07,
+          "median": 7.086573864445156e-07,
+          "variance": null,
+          "bootstrap95": [
+            7.086573864445156e-07,
+            7.086573864445156e-07
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 6.0,
+        "raw_prefix_variance": null,
+        "recall_gate": false
+      },
+      "brain1": {
+        "exact_prefix_symbols": {
+          "n": 1,
+          "mean": 1.0,
+          "median": 1.0,
+          "variance": null,
+          "bootstrap95": [
+            1.0,
+            1.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_prefix_bits": {
+          "n": 1,
+          "mean": 2.0,
+          "median": 2.0,
+          "variance": null,
+          "bootstrap95": [
+            2.0,
+            2.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "prefix_fraction": {
+          "n": 1,
+          "mean": 0.008,
+          "median": 0.008,
+          "variance": null,
+          "bootstrap95": [
+            0.008,
+            0.008
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "teacher_forced_accuracy": {
+          "n": 1,
+          "mean": 0.416,
+          "median": 0.416,
+          "variance": null,
+          "bootstrap95": [
+            0.416,
+            0.416
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_accuracy": {
+          "n": 1,
+          "mean": 0.216,
+          "median": 0.216,
+          "variance": null,
+          "bootstrap95": [
+            0.216,
+            0.216
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "control_excess": {
+          "n": 1,
+          "mean": -3.0,
+          "median": -3.0,
+          "variance": null,
+          "bootstrap95": [
+            -3.0,
+            -3.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 0,
+          "losses": 1
+        },
+        "full_completion": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": null,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 1,
+          "losses": 0
+        },
+        "effective_rank": {
+          "n": 1,
+          "mean": 4.834800607962183,
+          "median": 4.834800607962183,
+          "variance": null,
+          "bootstrap95": [
+            4.834800607962183,
+            4.834800607962183
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_mean_abs": {
+          "n": 1,
+          "mean": 0.005948131394455882,
+          "median": 0.005948131394455882,
+          "variance": null,
+          "bootstrap95": [
+            0.005948131394455882,
+            0.005948131394455882
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "mean_observed_cosine": {
+          "n": 1,
+          "mean": 0.9970356450879377,
+          "median": 0.9970356450879377,
+          "variance": null,
+          "bootstrap95": [
+            0.9970356450879377,
+            0.9970356450879377
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_decay_ratio_32": {
+          "n": 1,
+          "mean": 2.073356430944406e-06,
+          "median": 2.073356430944406e-06,
+          "variance": null,
+          "bootstrap95": [
+            2.073356430944406e-06,
+            2.073356430944406e-06
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 1.0,
+        "raw_prefix_variance": null,
+        "recall_gate": false
+      }
+    },
+    "10": {
+      "legacy5": {
+        "exact_prefix_symbols": {
+          "n": 1,
+          "mean": 6.0,
+          "median": 6.0,
+          "variance": null,
+          "bootstrap95": [
+            6.0,
+            6.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_prefix_bits": {
+          "n": 1,
+          "mean": 19.931568569324174,
+          "median": 19.931568569324174,
+          "variance": null,
+          "bootstrap95": [
+            19.931568569324174,
+            19.931568569324174
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "prefix_fraction": {
+          "n": 1,
+          "mean": 0.048,
+          "median": 0.048,
+          "variance": null,
+          "bootstrap95": [
+            0.048,
+            0.048
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "teacher_forced_accuracy": {
+          "n": 1,
+          "mean": 0.456,
+          "median": 0.456,
+          "variance": null,
+          "bootstrap95": [
+            0.456,
+            0.456
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_accuracy": {
+          "n": 1,
+          "mean": 0.12,
+          "median": 0.12,
+          "variance": null,
+          "bootstrap95": [
+            0.12,
+            0.12
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "control_excess": {
+          "n": 1,
+          "mean": 5.0,
+          "median": 5.0,
+          "variance": null,
+          "bootstrap95": [
+            5.0,
+            5.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "full_completion": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": null,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 1,
+          "losses": 0
+        },
+        "effective_rank": {
+          "n": 1,
+          "mean": 16.348159166287125,
+          "median": 16.348159166287125,
+          "variance": null,
+          "bootstrap95": [
+            16.348159166287125,
+            16.348159166287125
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_mean_abs": {
+          "n": 1,
+          "mean": 0.013355588765552132,
+          "median": 0.013355588765552132,
+          "variance": null,
+          "bootstrap95": [
+            0.013355588765552132,
+            0.013355588765552132
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "mean_observed_cosine": {
+          "n": 1,
+          "mean": 0.9735905881624821,
+          "median": 0.9735905881624821,
+          "variance": null,
+          "bootstrap95": [
+            0.9735905881624821,
+            0.9735905881624821
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_decay_ratio_32": {
+          "n": 1,
+          "mean": 5.968623094408067e-07,
+          "median": 5.968623094408067e-07,
+          "variance": null,
+          "bootstrap95": [
+            5.968623094408067e-07,
+            5.968623094408067e-07
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 6.0,
+        "raw_prefix_variance": null,
+        "recall_gate": false
+      },
+      "brain1": {
+        "exact_prefix_symbols": {
+          "n": 1,
+          "mean": 11.0,
+          "median": 11.0,
+          "variance": null,
+          "bootstrap95": [
+            11.0,
+            11.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_prefix_bits": {
+          "n": 1,
+          "mean": 36.541209043760986,
+          "median": 36.541209043760986,
+          "variance": null,
+          "bootstrap95": [
+            36.541209043760986,
+            36.541209043760986
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "prefix_fraction": {
+          "n": 1,
+          "mean": 0.088,
+          "median": 0.088,
+          "variance": null,
+          "bootstrap95": [
+            0.088,
+            0.088
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "teacher_forced_accuracy": {
+          "n": 1,
+          "mean": 0.384,
+          "median": 0.384,
+          "variance": null,
+          "bootstrap95": [
+            0.384,
+            0.384
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_accuracy": {
+          "n": 1,
+          "mean": 0.2,
+          "median": 0.2,
+          "variance": null,
+          "bootstrap95": [
+            0.2,
+            0.2
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "control_excess": {
+          "n": 1,
+          "mean": 10.0,
+          "median": 10.0,
+          "variance": null,
+          "bootstrap95": [
+            10.0,
+            10.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "full_completion": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": null,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 1,
+          "losses": 0
+        },
+        "effective_rank": {
+          "n": 1,
+          "mean": 10.844835316999724,
+          "median": 10.844835316999724,
+          "variance": null,
+          "bootstrap95": [
+            10.844835316999724,
+            10.844835316999724
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_mean_abs": {
+          "n": 1,
+          "mean": 0.005610801625601668,
+          "median": 0.005610801625601668,
+          "variance": null,
+          "bootstrap95": [
+            0.005610801625601668,
+            0.005610801625601668
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "mean_observed_cosine": {
+          "n": 1,
+          "mean": 0.996782126143763,
+          "median": 0.996782126143763,
+          "variance": null,
+          "bootstrap95": [
+            0.996782126143763,
+            0.996782126143763
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_decay_ratio_32": {
+          "n": 1,
+          "mean": 3.656055641861726e-06,
+          "median": 3.656055641861726e-06,
+          "variance": null,
+          "bootstrap95": [
+            3.656055641861726e-06,
+            3.656055641861726e-06
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 11.0,
+        "raw_prefix_variance": null,
+        "recall_gate": false
+      }
+    },
+    "16": {
+      "legacy5": {
+        "exact_prefix_symbols": {
+          "n": 1,
+          "mean": 3.0,
+          "median": 3.0,
+          "variance": null,
+          "bootstrap95": [
+            3.0,
+            3.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_prefix_bits": {
+          "n": 1,
+          "mean": 12.0,
+          "median": 12.0,
+          "variance": null,
+          "bootstrap95": [
+            12.0,
+            12.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "prefix_fraction": {
+          "n": 1,
+          "mean": 0.024,
+          "median": 0.024,
+          "variance": null,
+          "bootstrap95": [
+            0.024,
+            0.024
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "teacher_forced_accuracy": {
+          "n": 1,
+          "mean": 0.4,
+          "median": 0.4,
+          "variance": null,
+          "bootstrap95": [
+            0.4,
+            0.4
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_accuracy": {
+          "n": 1,
+          "mean": 0.104,
+          "median": 0.104,
+          "variance": null,
+          "bootstrap95": [
+            0.104,
+            0.104
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "control_excess": {
+          "n": 1,
+          "mean": 1.0,
+          "median": 1.0,
+          "variance": null,
+          "bootstrap95": [
+            1.0,
+            1.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "full_completion": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": null,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 1,
+          "losses": 0
+        },
+        "effective_rank": {
+          "n": 1,
+          "mean": 19.957387497899784,
+          "median": 19.957387497899784,
+          "variance": null,
+          "bootstrap95": [
+            19.957387497899784,
+            19.957387497899784
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_mean_abs": {
+          "n": 1,
+          "mean": 0.013931732994476993,
+          "median": 0.013931732994476993,
+          "variance": null,
+          "bootstrap95": [
+            0.013931732994476993,
+            0.013931732994476993
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "mean_observed_cosine": {
+          "n": 1,
+          "mean": 0.9702245103286772,
+          "median": 0.9702245103286772,
+          "variance": null,
+          "bootstrap95": [
+            0.9702245103286772,
+            0.9702245103286772
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_decay_ratio_32": {
+          "n": 1,
+          "mean": 7.242331857187062e-07,
+          "median": 7.242331857187062e-07,
+          "variance": null,
+          "bootstrap95": [
+            7.242331857187062e-07,
+            7.242331857187062e-07
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 3.0,
+        "raw_prefix_variance": null,
+        "recall_gate": false
+      },
+      "brain1": {
+        "exact_prefix_symbols": {
+          "n": 1,
+          "mean": 5.0,
+          "median": 5.0,
+          "variance": null,
+          "bootstrap95": [
+            5.0,
+            5.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_prefix_bits": {
+          "n": 1,
+          "mean": 20.0,
+          "median": 20.0,
+          "variance": null,
+          "bootstrap95": [
+            20.0,
+            20.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "prefix_fraction": {
+          "n": 1,
+          "mean": 0.04,
+          "median": 0.04,
+          "variance": null,
+          "bootstrap95": [
+            0.04,
+            0.04
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "teacher_forced_accuracy": {
+          "n": 1,
+          "mean": 0.424,
+          "median": 0.424,
+          "variance": null,
+          "bootstrap95": [
+            0.424,
+            0.424
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_accuracy": {
+          "n": 1,
+          "mean": 0.136,
+          "median": 0.136,
+          "variance": null,
+          "bootstrap95": [
+            0.136,
+            0.136
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "control_excess": {
+          "n": 1,
+          "mean": 3.0,
+          "median": 3.0,
+          "variance": null,
+          "bootstrap95": [
+            3.0,
+            3.0
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "full_completion": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": null,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 1,
+          "losses": 0
+        },
+        "effective_rank": {
+          "n": 1,
+          "mean": 14.314901359252513,
+          "median": 14.314901359252513,
+          "variance": null,
+          "bootstrap95": [
+            14.314901359252513,
+            14.314901359252513
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_mean_abs": {
+          "n": 1,
+          "mean": 0.005706503014843237,
+          "median": 0.005706503014843237,
+          "variance": null,
+          "bootstrap95": [
+            0.005706503014843237,
+            0.005706503014843237
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "mean_observed_cosine": {
+          "n": 1,
+          "mean": 0.9965498228960402,
+          "median": 0.9965498228960402,
+          "variance": null,
+          "bootstrap95": [
+            0.9965498228960402,
+            0.9965498228960402
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_decay_ratio_32": {
+          "n": 1,
+          "mean": 1.5822604689556167e-06,
+          "median": 1.5822604689556167e-06,
+          "variance": null,
+          "bootstrap95": [
+            1.5822604689556167e-06,
+            1.5822604689556167e-06
+          ],
+          "paired_dz": null,
+          "wins": 1,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 5.0,
+        "raw_prefix_variance": null,
+        "recall_gate": false
+      }
+    }
+  },
+  "contrasts": {
+    "2": {
+      "exact_prefix_symbols": {
+        "n": 1,
+        "mean": -3.0,
+        "median": -3.0,
+        "variance": null,
+        "bootstrap95": [
+          -3.0,
+          -3.0
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "autonomous_prefix_bits": {
+        "n": 1,
+        "mean": -3.0,
+        "median": -3.0,
+        "variance": null,
+        "bootstrap95": [
+          -3.0,
+          -3.0
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "prefix_fraction": {
+        "n": 1,
+        "mean": -0.024,
+        "median": -0.024,
+        "variance": null,
+        "bootstrap95": [
+          -0.024,
+          -0.024
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "teacher_forced_accuracy": {
+        "n": 1,
+        "mean": -0.07999999999999996,
+        "median": -0.07999999999999996,
+        "variance": null,
+        "bootstrap95": [
+          -0.07999999999999996,
+          -0.07999999999999996
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "autonomous_accuracy": {
+        "n": 1,
+        "mean": -0.008000000000000007,
+        "median": -0.008000000000000007,
+        "variance": null,
+        "bootstrap95": [
+          -0.008000000000000007,
+          -0.008000000000000007
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "control_excess": {
+        "n": 1,
+        "mean": -3.0,
+        "median": -3.0,
+        "variance": null,
+        "bootstrap95": [
+          -3.0,
+          -3.0
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "full_completion": {
+        "n": 1,
+        "mean": 0.0,
+        "median": 0.0,
+        "variance": null,
+        "bootstrap95": [
+          0.0,
+          0.0
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 1,
+        "losses": 0
+      },
+      "effective_rank": {
+        "n": 1,
+        "mean": -1.744400434047209,
+        "median": -1.744400434047209,
+        "variance": null,
+        "bootstrap95": [
+          -1.744400434047209,
+          -1.744400434047209
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "observed_mean_abs": {
+        "n": 1,
+        "mean": -0.0061780023911196325,
+        "median": -0.0061780023911196325,
+        "variance": null,
+        "bootstrap95": [
+          -0.0061780023911196325,
+          -0.0061780023911196325
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "mean_observed_cosine": {
+        "n": 1,
+        "mean": 0.0034471471428356715,
+        "median": 0.0034471471428356715,
+        "variance": null,
+        "bootstrap95": [
+          0.0034471471428356715,
+          0.0034471471428356715
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "observed_decay_ratio_32": {
+        "n": 1,
+        "mean": 1.0082439912164073e-06,
+        "median": 1.0082439912164073e-06,
+        "variance": null,
+        "bootstrap95": [
+          1.0082439912164073e-06,
+          1.0082439912164073e-06
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "whole_brain_gate": false
+    },
+    "4": {
+      "exact_prefix_symbols": {
+        "n": 1,
+        "mean": -5.0,
+        "median": -5.0,
+        "variance": null,
+        "bootstrap95": [
+          -5.0,
+          -5.0
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "autonomous_prefix_bits": {
+        "n": 1,
+        "mean": -10.0,
+        "median": -10.0,
+        "variance": null,
+        "bootstrap95": [
+          -10.0,
+          -10.0
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "prefix_fraction": {
+        "n": 1,
+        "mean": -0.04,
+        "median": -0.04,
+        "variance": null,
+        "bootstrap95": [
+          -0.04,
+          -0.04
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "teacher_forced_accuracy": {
+        "n": 1,
+        "mean": -0.08000000000000002,
+        "median": -0.08000000000000002,
+        "variance": null,
+        "bootstrap95": [
+          -0.08000000000000002,
+          -0.08000000000000002
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "autonomous_accuracy": {
+        "n": 1,
+        "mean": -0.11200000000000002,
+        "median": -0.11200000000000002,
+        "variance": null,
+        "bootstrap95": [
+          -0.11200000000000002,
+          -0.11200000000000002
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "control_excess": {
+        "n": 1,
+        "mean": -5.0,
+        "median": -5.0,
+        "variance": null,
+        "bootstrap95": [
+          -5.0,
+          -5.0
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "full_completion": {
+        "n": 1,
+        "mean": 0.0,
+        "median": 0.0,
+        "variance": null,
+        "bootstrap95": [
+          0.0,
+          0.0
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 1,
+        "losses": 0
+      },
+      "effective_rank": {
+        "n": 1,
+        "mean": -2.6115018092718794,
+        "median": -2.6115018092718794,
+        "variance": null,
+        "bootstrap95": [
+          -2.6115018092718794,
+          -2.6115018092718794
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "observed_mean_abs": {
+        "n": 1,
+        "mean": -0.007196080164509655,
+        "median": -0.007196080164509655,
+        "variance": null,
+        "bootstrap95": [
+          -0.007196080164509655,
+          -0.007196080164509655
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "mean_observed_cosine": {
+        "n": 1,
+        "mean": 0.016736272347840364,
+        "median": 0.016736272347840364,
+        "variance": null,
+        "bootstrap95": [
+          0.016736272347840364,
+          0.016736272347840364
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "observed_decay_ratio_32": {
+        "n": 1,
+        "mean": 1.3646990444998902e-06,
+        "median": 1.3646990444998902e-06,
+        "variance": null,
+        "bootstrap95": [
+          1.3646990444998902e-06,
+          1.3646990444998902e-06
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "whole_brain_gate": false
+    },
+    "10": {
+      "exact_prefix_symbols": {
+        "n": 1,
+        "mean": 5.0,
+        "median": 5.0,
+        "variance": null,
+        "bootstrap95": [
+          5.0,
+          5.0
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "autonomous_prefix_bits": {
+        "n": 1,
+        "mean": 16.609640474436812,
+        "median": 16.609640474436812,
+        "variance": null,
+        "bootstrap95": [
+          16.609640474436812,
+          16.609640474436812
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "prefix_fraction": {
+        "n": 1,
+        "mean": 0.039999999999999994,
+        "median": 0.039999999999999994,
+        "variance": null,
+        "bootstrap95": [
+          0.039999999999999994,
+          0.039999999999999994
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "teacher_forced_accuracy": {
+        "n": 1,
+        "mean": -0.07200000000000001,
+        "median": -0.07200000000000001,
+        "variance": null,
+        "bootstrap95": [
+          -0.07200000000000001,
+          -0.07200000000000001
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "autonomous_accuracy": {
+        "n": 1,
+        "mean": 0.08000000000000002,
+        "median": 0.08000000000000002,
+        "variance": null,
+        "bootstrap95": [
+          0.08000000000000002,
+          0.08000000000000002
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "control_excess": {
+        "n": 1,
+        "mean": 5.0,
+        "median": 5.0,
+        "variance": null,
+        "bootstrap95": [
+          5.0,
+          5.0
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "full_completion": {
+        "n": 1,
+        "mean": 0.0,
+        "median": 0.0,
+        "variance": null,
+        "bootstrap95": [
+          0.0,
+          0.0
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 1,
+        "losses": 0
+      },
+      "effective_rank": {
+        "n": 1,
+        "mean": -5.503323849287401,
+        "median": -5.503323849287401,
+        "variance": null,
+        "bootstrap95": [
+          -5.503323849287401,
+          -5.503323849287401
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "observed_mean_abs": {
+        "n": 1,
+        "mean": -0.007744787139950464,
+        "median": -0.007744787139950464,
+        "variance": null,
+        "bootstrap95": [
+          -0.007744787139950464,
+          -0.007744787139950464
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "mean_observed_cosine": {
+        "n": 1,
+        "mean": 0.02319153798128093,
+        "median": 0.02319153798128093,
+        "variance": null,
+        "bootstrap95": [
+          0.02319153798128093,
+          0.02319153798128093
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "observed_decay_ratio_32": {
+        "n": 1,
+        "mean": 3.0591933324209193e-06,
+        "median": 3.0591933324209193e-06,
+        "variance": null,
+        "bootstrap95": [
+          3.0591933324209193e-06,
+          3.0591933324209193e-06
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "whole_brain_gate": false
+    },
+    "16": {
+      "exact_prefix_symbols": {
+        "n": 1,
+        "mean": 2.0,
+        "median": 2.0,
+        "variance": null,
+        "bootstrap95": [
+          2.0,
+          2.0
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "autonomous_prefix_bits": {
+        "n": 1,
+        "mean": 8.0,
+        "median": 8.0,
+        "variance": null,
+        "bootstrap95": [
+          8.0,
+          8.0
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "prefix_fraction": {
+        "n": 1,
+        "mean": 0.016,
+        "median": 0.016,
+        "variance": null,
+        "bootstrap95": [
+          0.016,
+          0.016
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "teacher_forced_accuracy": {
+        "n": 1,
+        "mean": 0.023999999999999966,
+        "median": 0.023999999999999966,
+        "variance": null,
+        "bootstrap95": [
+          0.023999999999999966,
+          0.023999999999999966
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "autonomous_accuracy": {
+        "n": 1,
+        "mean": 0.032000000000000015,
+        "median": 0.032000000000000015,
+        "variance": null,
+        "bootstrap95": [
+          0.032000000000000015,
+          0.032000000000000015
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "control_excess": {
+        "n": 1,
+        "mean": 2.0,
+        "median": 2.0,
+        "variance": null,
+        "bootstrap95": [
+          2.0,
+          2.0
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "full_completion": {
+        "n": 1,
+        "mean": 0.0,
+        "median": 0.0,
+        "variance": null,
+        "bootstrap95": [
+          0.0,
+          0.0
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 1,
+        "losses": 0
+      },
+      "effective_rank": {
+        "n": 1,
+        "mean": -5.642486138647271,
+        "median": -5.642486138647271,
+        "variance": null,
+        "bootstrap95": [
+          -5.642486138647271,
+          -5.642486138647271
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "observed_mean_abs": {
+        "n": 1,
+        "mean": -0.008225229979633757,
+        "median": -0.008225229979633757,
+        "variance": null,
+        "bootstrap95": [
+          -0.008225229979633757,
+          -0.008225229979633757
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 0,
+        "losses": 1
+      },
+      "mean_observed_cosine": {
+        "n": 1,
+        "mean": 0.026325312567363035,
+        "median": 0.026325312567363035,
+        "variance": null,
+        "bootstrap95": [
+          0.026325312567363035,
+          0.026325312567363035
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "observed_decay_ratio_32": {
+        "n": 1,
+        "mean": 8.580272832369105e-07,
+        "median": 8.580272832369105e-07,
+        "variance": null,
+        "bootstrap95": [
+          8.580272832369105e-07,
+          8.580272832369105e-07
+        ],
+        "paired_dz": null,
+        "wins": 1,
+        "ties": 0,
+        "losses": 0
+      },
+      "whole_brain_gate": false
+    }
+  },
+  "alphabet_endpoint": {
+    "legacy5": {
+      "n": 1,
+      "mean": 0.0,
+      "median": 0.0,
+      "variance": null,
+      "bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "paired_dz": null,
+      "wins": 0,
+      "ties": 1,
+      "losses": 0,
+      "load_drop_gate": false
+    },
+    "brain1": {
+      "n": 1,
+      "mean": 0.04,
+      "median": 0.04,
+      "variance": null,
+      "bootstrap95": [
+        0.04,
+        0.04
+      ],
+      "paired_dz": null,
+      "wins": 1,
+      "ties": 0,
+      "losses": 0,
+      "load_drop_gate": false
+    }
+  },
+  "qualifying_k": [],
+  "confirmation_triggered": false,
+  "source_manifest_sha256": "3625a5ff78a5ecab517dac29a8eb8148fdffe91fdfee82c01917aca9fb4787b4",
+  "matched_interfaces_and_sequences": true,
+  "nested_symbol_patterns": true
+}

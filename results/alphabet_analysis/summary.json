@@ -1,0 +1,1952 @@
+{
+  "study": "act2-alphabet-main",
+  "conditions": {
+    "2": {
+      "legacy5": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 25.0,
+          "median": 33.5,
+          "variance": 251.625,
+          "bootstrap95": [
+            12.9,
+            37.1
+          ],
+          "paired_dz": 1.5760250451281974,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_prefix_bits": {
+          "n": 5,
+          "mean": 25.0,
+          "median": 33.5,
+          "variance": 251.625,
+          "bootstrap95": [
+            12.9,
+            37.1
+          ],
+          "paired_dz": 1.5760250451281974,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "prefix_fraction": {
+          "n": 5,
+          "mean": 0.2,
+          "median": 0.268,
+          "variance": 0.016104,
+          "bootstrap95": [
+            0.1032,
+            0.2968
+          ],
+          "paired_dz": 1.5760250451281974,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "teacher_forced_accuracy": {
+          "n": 5,
+          "mean": 0.8879999999999999,
+          "median": 0.8999999999999999,
+          "variance": 0.0014719999999999998,
+          "bootstrap95": [
+            0.8568,
+            0.9144
+          ],
+          "paired_dz": 23.145099960335298,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_accuracy": {
+          "n": 5,
+          "mean": 0.6080000000000001,
+          "median": 0.608,
+          "variance": 0.0022320000000000005,
+          "bootstrap95": [
+            0.5712,
+            0.6448
+          ],
+          "paired_dz": 12.869346202685971,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "control_excess": {
+          "n": 5,
+          "mean": 23.8,
+          "median": 33.5,
+          "variance": 289.82500000000005,
+          "bootstrap95": [
+            10.9,
+            36.7
+          ],
+          "paired_dz": 1.3980059982543018,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "full_completion": {
+          "n": 5,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 5,
+          "losses": 0
+        },
+        "effective_rank": {
+          "n": 5,
+          "mean": 4.184454136214631,
+          "median": 4.374152926242523,
+          "variance": 0.15424676871163095,
+          "bootstrap95": [
+            3.8280635239476766,
+            4.394292109743956
+          ],
+          "paired_dz": 10.654443598522555,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_mean_abs": {
+          "n": 5,
+          "mean": 0.012783704180909544,
+          "median": 0.013279967237622887,
+          "variance": 7.629000043877976e-07,
+          "bootstrap95": [
+            0.012059709102426899,
+            0.013428330048057902
+          ],
+          "paired_dz": 14.636016946672548,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "mean_observed_cosine": {
+          "n": 5,
+          "mean": 0.9826101134695879,
+          "median": 0.9827313946801335,
+          "variance": 4.903187493081314e-05,
+          "bootstrap95": [
+            0.9768158991879912,
+            0.9872560612527401
+          ],
+          "paired_dz": 140.32723872174378,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_decay_ratio_32": {
+          "n": 5,
+          "mean": 6.3381912400642e-07,
+          "median": 6.134760003068637e-07,
+          "variance": 5.282192633385857e-15,
+          "bootstrap95": [
+            5.785382995034783e-07,
+            6.92091829044019e-07
+          ],
+          "paired_dz": 8.720838045002651,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 33.0,
+        "raw_prefix_variance": 229.33333333333334,
+        "recall_gate": true
+      },
+      "brain1": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 27.3,
+          "median": 31.5,
+          "variance": 201.825,
+          "bootstrap95": [
+            16.3,
+            38.3
+          ],
+          "paired_dz": 1.9216538770518499,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_prefix_bits": {
+          "n": 5,
+          "mean": 27.3,
+          "median": 31.5,
+          "variance": 201.825,
+          "bootstrap95": [
+            16.3,
+            38.3
+          ],
+          "paired_dz": 1.9216538770518499,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "prefix_fraction": {
+          "n": 5,
+          "mean": 0.2184,
+          "median": 0.252,
+          "variance": 0.0129168,
+          "bootstrap95": [
+            0.13040000000000002,
+            0.3064
+          ],
+          "paired_dz": 1.9216538770518499,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "teacher_forced_accuracy": {
+          "n": 5,
+          "mean": 0.8608,
+          "median": 0.864,
+          "variance": 0.0010191999999999985,
+          "bootstrap95": [
+            0.8336,
+            0.8816
+          ],
+          "paired_dz": 26.96326939355326,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_accuracy": {
+          "n": 5,
+          "mean": 0.6192,
+          "median": 0.612,
+          "variance": 0.0039311999999999975,
+          "bootstrap95": [
+            0.5704,
+            0.664
+          ],
+          "paired_dz": 9.875711130327293,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "control_excess": {
+          "n": 5,
+          "mean": 26.1,
+          "median": 30.5,
+          "variance": 190.675,
+          "bootstrap95": [
+            15.7,
+            36.5
+          ],
+          "paired_dz": 1.8901385066032825,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "full_completion": {
+          "n": 5,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 5,
+          "losses": 0
+        },
+        "effective_rank": {
+          "n": 5,
+          "mean": 2.843494200660089,
+          "median": 2.8582985371073417,
+          "variance": 0.0028398684531799395,
+          "bootstrap95": [
+            2.7999287618401985,
+            2.8837884858915297
+          ],
+          "paired_dz": 53.358453662411044,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_mean_abs": {
+          "n": 5,
+          "mean": 0.005489252655370246,
+          "median": 0.005548189062372363,
+          "variance": 5.557712303700119e-08,
+          "bootstrap95": [
+            0.005289163866315541,
+            0.005662007242881998
+          ],
+          "paired_dz": 23.284407421891814,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "mean_observed_cosine": {
+          "n": 5,
+          "mean": 0.9981027513332276,
+          "median": 0.9982563941611746,
+          "variance": 2.780701335019995e-07,
+          "bootstrap95": [
+            0.9976817163374904,
+            0.9984693604052847
+          ],
+          "paired_dz": 1892.7710293986738,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_decay_ratio_32": {
+          "n": 5,
+          "mean": 2.5985099416124287e-06,
+          "median": 2.709271961350174e-06,
+          "variance": 1.4948445807666953e-13,
+          "bootstrap95": [
+            2.2800269085822847e-06,
+            2.8556079413758155e-06
+          ],
+          "paired_dz": 6.720883417402664,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 24.5,
+        "raw_prefix_variance": 273.1222222222222,
+        "recall_gate": true
+      }
+    },
+    "4": {
+      "legacy5": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 43.4,
+          "median": 38.0,
+          "variance": 134.425,
+          "bootstrap95": [
+            35.4,
+            53.4
+          ],
+          "paired_dz": 3.7432575303889344,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_prefix_bits": {
+          "n": 5,
+          "mean": 86.8,
+          "median": 76.0,
+          "variance": 537.7,
+          "bootstrap95": [
+            70.8,
+            106.8
+          ],
+          "paired_dz": 3.7432575303889344,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "prefix_fraction": {
+          "n": 5,
+          "mean": 0.3472,
+          "median": 0.30400000000000005,
+          "variance": 0.0086032,
+          "bootstrap95": [
+            0.2832,
+            0.4271999999999999
+          ],
+          "paired_dz": 3.743257530388935,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "teacher_forced_accuracy": {
+          "n": 5,
+          "mean": 0.9016,
+          "median": 0.92,
+          "variance": 0.002956799999999996,
+          "bootstrap95": [
+            0.8583999999999999,
+            0.9423999999999999
+          ],
+          "paired_dz": 16.58070254753089,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_accuracy": {
+          "n": 5,
+          "mean": 0.5096,
+          "median": 0.464,
+          "variance": 0.010084799999999996,
+          "bootstrap95": [
+            0.44159999999999994,
+            0.5936
+          ],
+          "paired_dz": 5.074529416818639,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "control_excess": {
+          "n": 5,
+          "mean": 42.4,
+          "median": 38.0,
+          "variance": 129.175,
+          "bootstrap95": [
+            34.2,
+            52.3
+          ],
+          "paired_dz": 3.730582266720712,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "full_completion": {
+          "n": 5,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 5,
+          "losses": 0
+        },
+        "effective_rank": {
+          "n": 5,
+          "mean": 7.7855734554865155,
+          "median": 7.8184506420821585,
+          "variance": 0.036842637166130614,
+          "bootstrap95": [
+            7.623942143627666,
+            7.910662975898393
+          ],
+          "paired_dz": 40.56161625908033,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_mean_abs": {
+          "n": 5,
+          "mean": 0.012775081447879316,
+          "median": 0.012400300428928684,
+          "variance": 7.419265006649139e-07,
+          "bootstrap95": [
+            0.012125377408023299,
+            0.013432031333210848
+          ],
+          "paired_dz": 14.831437151529759,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "mean_observed_cosine": {
+          "n": 5,
+          "mean": 0.971814009458793,
+          "median": 0.9738590275085955,
+          "variance": 2.371244519490111e-05,
+          "bootstrap95": [
+            0.9677563882199818,
+            0.9752760933790394
+          ],
+          "paired_dz": 199.56987504221408,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_decay_ratio_32": {
+          "n": 5,
+          "mean": 6.465426931751777e-07,
+          "median": 6.368661203158869e-07,
+          "variance": 5.116204526657151e-15,
+          "bootstrap95": [
+            5.903687047680294e-07,
+            7.041201351983985e-07
+          ],
+          "paired_dz": 9.039059790802511,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 37.0,
+        "raw_prefix_variance": 226.7111111111111,
+        "recall_gate": true
+      },
+      "brain1": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 26.3,
+          "median": 29.5,
+          "variance": 45.45000000000001,
+          "bootstrap95": [
+            21.1,
+            31.5
+          ],
+          "paired_dz": 3.9011154648621997,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_prefix_bits": {
+          "n": 5,
+          "mean": 52.6,
+          "median": 59.0,
+          "variance": 181.80000000000004,
+          "bootstrap95": [
+            42.2,
+            63.0
+          ],
+          "paired_dz": 3.9011154648621997,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "prefix_fraction": {
+          "n": 5,
+          "mean": 0.2104,
+          "median": 0.236,
+          "variance": 0.0029087999999999996,
+          "bootstrap95": [
+            0.1688,
+            0.252
+          ],
+          "paired_dz": 3.9011154648622,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "teacher_forced_accuracy": {
+          "n": 5,
+          "mean": 0.868,
+          "median": 0.86,
+          "variance": 0.0010639999999999994,
+          "bootstrap95": [
+            0.844,
+            0.892
+          ],
+          "paired_dz": 26.610247333647525,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_accuracy": {
+          "n": 5,
+          "mean": 0.42960000000000004,
+          "median": 0.44,
+          "variance": 0.00033279999999999947,
+          "bootstrap95": [
+            0.4152,
+            0.44320000000000004
+          ],
+          "paired_dz": 23.549007818393754,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "control_excess": {
+          "n": 5,
+          "mean": 25.3,
+          "median": 28.5,
+          "variance": 46.449999999999996,
+          "bootstrap95": [
+            20.0,
+            30.5
+          ],
+          "paired_dz": 3.7121683362595057,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "full_completion": {
+          "n": 5,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 5,
+          "losses": 0
+        },
+        "effective_rank": {
+          "n": 5,
+          "mean": 5.342907639264747,
+          "median": 5.35497474115685,
+          "variance": 0.0012310061695103415,
+          "bootstrap95": [
+            5.312426078972869,
+            5.367974801247715
+          ],
+          "paired_dz": 152.28164234986957,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_mean_abs": {
+          "n": 5,
+          "mean": 0.0054498805413711465,
+          "median": 0.005328137780539801,
+          "variance": 9.404341937174639e-08,
+          "bootstrap95": [
+            0.005239129600883961,
+            0.005714626814487473
+          ],
+          "paired_dz": 17.77144644496485,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "mean_observed_cosine": {
+          "n": 5,
+          "mean": 0.9972371420890621,
+          "median": 0.9972696129195495,
+          "variance": 9.325636167532871e-08,
+          "bootstrap95": [
+            0.996998087814694,
+            0.9974686761887472
+          ],
+          "paired_dz": 3265.571608383248,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_decay_ratio_32": {
+          "n": 5,
+          "mean": 2.4586828953865987e-06,
+          "median": 2.4245599561127664e-06,
+          "variance": 1.567149688725705e-13,
+          "bootstrap95": [
+            2.1529008309098434e-06,
+            2.7644649598633536e-06
+          ],
+          "paired_dz": 6.210796213361353,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 32.0,
+        "raw_prefix_variance": 208.67777777777778,
+        "recall_gate": true
+      }
+    },
+    "10": {
+      "legacy5": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 82.2,
+          "median": 91.5,
+          "variance": 632.8249999999999,
+          "bootstrap95": [
+            61.1,
+            99.5
+          ],
+          "paired_dz": 3.267608398603521,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_prefix_bits": {
+          "n": 5,
+          "mean": 273.0624893997412,
+          "median": 303.95642068219365,
+          "variance": 6983.354406295221,
+          "bootstrap95": [
+            202.96980659761783,
+            330.53184544129255
+          ],
+          "paired_dz": 3.267608398603521,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "prefix_fraction": {
+          "n": 5,
+          "mean": 0.6576000000000001,
+          "median": 0.732,
+          "variance": 0.04050080000000001,
+          "bootstrap95": [
+            0.4888,
+            0.7959999999999999
+          ],
+          "paired_dz": 3.2676083986035205,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "teacher_forced_accuracy": {
+          "n": 5,
+          "mean": 0.9864,
+          "median": 0.988,
+          "variance": 5.28000000000001e-05,
+          "bootstrap95": [
+            0.9808,
+            0.992
+          ],
+          "paired_dz": 135.74883224008016,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_accuracy": {
+          "n": 5,
+          "mean": 0.7023999999999999,
+          "median": 0.78,
+          "variance": 0.032644799999999995,
+          "bootstrap95": [
+            0.5496000000000001,
+            0.8248
+          ],
+          "paired_dz": 3.887563507771522,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "control_excess": {
+          "n": 5,
+          "mean": 81.6,
+          "median": 91.5,
+          "variance": 629.9250000000001,
+          "bootstrap95": [
+            60.5,
+            99.1
+          ],
+          "paired_dz": 3.251215347872645,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "full_completion": {
+          "n": 5,
+          "mean": 0.1,
+          "median": 0.0,
+          "variance": 0.05000000000000001,
+          "bootstrap95": [
+            0.0,
+            0.3
+          ],
+          "paired_dz": 0.4472135954999579,
+          "wins": 1,
+          "ties": 4,
+          "losses": 0
+        },
+        "effective_rank": {
+          "n": 5,
+          "mean": 15.644738903626768,
+          "median": 15.776871710391129,
+          "variance": 0.129293885624251,
+          "bootstrap95": [
+            15.3643983981321,
+            15.92157459127009
+          ],
+          "paired_dz": 43.509022460865786,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_mean_abs": {
+          "n": 5,
+          "mean": 0.012925912297749743,
+          "median": 0.01279268454771101,
+          "variance": 2.3069796058720226e-07,
+          "bootstrap95": [
+            0.012572729818111927,
+            0.013316303276158814
+          ],
+          "paired_dz": 26.911588116409778,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "mean_observed_cosine": {
+          "n": 5,
+          "mean": 0.9696615433271827,
+          "median": 0.9698771540560562,
+          "variance": 4.266726635392179e-06,
+          "bootstrap95": [
+            0.968040524279895,
+            0.9712825623744703
+          ],
+          "paired_dz": 469.4320771332532,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_decay_ratio_32": {
+          "n": 5,
+          "mean": 6.8371510632847e-07,
+          "median": 6.783413243907123e-07,
+          "variance": 1.1448570055660209e-15,
+          "bootstrap95": [
+            6.615381860979161e-07,
+            7.135394807030741e-07
+          ],
+          "paired_dz": 20.20689349929051,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 78.5,
+        "raw_prefix_variance": 1431.511111111111,
+        "recall_gate": true
+      },
+      "brain1": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 55.1,
+          "median": 58.5,
+          "variance": 311.17499999999995,
+          "bootstrap95": [
+            41.3,
+            68.9
+          ],
+          "paired_dz": 3.1235556636519015,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_prefix_bits": {
+          "n": 5,
+          "mean": 183.03823802829365,
+          "median": 194.3327935509107,
+          "variance": 3433.8803103210457,
+          "bootstrap95": [
+            137.19563031884806,
+            228.88084573773926
+          ],
+          "paired_dz": 3.1235556636519015,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "prefix_fraction": {
+          "n": 5,
+          "mean": 0.44079999999999997,
+          "median": 0.468,
+          "variance": 0.0199152,
+          "bootstrap95": [
+            0.3304,
+            0.5512
+          ],
+          "paired_dz": 3.1235556636519015,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "teacher_forced_accuracy": {
+          "n": 5,
+          "mean": 0.96,
+          "median": 0.96,
+          "variance": 0.00029600000000000047,
+          "bootstrap95": [
+            0.9480000000000001,
+            0.9743999999999999
+          ],
+          "paired_dz": 55.79886659703321,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_accuracy": {
+          "n": 5,
+          "mean": 0.4952,
+          "median": 0.516,
+          "variance": 0.017819200000000004,
+          "bootstrap95": [
+            0.39039999999999997,
+            0.5976
+          ],
+          "paired_dz": 3.709680736449206,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "control_excess": {
+          "n": 5,
+          "mean": 54.5,
+          "median": 56.5,
+          "variance": 298.37500000000006,
+          "bootstrap95": [
+            40.9,
+            68.1
+          ],
+          "paired_dz": 3.1551156749787888,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "full_completion": {
+          "n": 5,
+          "mean": 0.0,
+          "median": 0.0,
+          "variance": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "paired_dz": null,
+          "wins": 0,
+          "ties": 5,
+          "losses": 0
+        },
+        "effective_rank": {
+          "n": 5,
+          "mean": 10.5822597745175,
+          "median": 10.616078109114131,
+          "variance": 0.012385790473298332,
+          "bootstrap95": [
+            10.481995426648762,
+            10.644399689438998
+          ],
+          "paired_dz": 95.08599468980876,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_mean_abs": {
+          "n": 5,
+          "mean": 0.005643361944604979,
+          "median": 0.00561052752242089,
+          "variance": 1.9212182662085472e-08,
+          "bootstrap95": [
+            0.005535005199859344,
+            0.005751718689350614
+          ],
+          "paired_dz": 40.71454180522998,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "mean_observed_cosine": {
+          "n": 5,
+          "mean": 0.9967596541251685,
+          "median": 0.9967363438796781,
+          "variance": 7.714470920762084e-08,
+          "bootstrap95": [
+            0.9965391452155039,
+            0.9969810310690045
+          ],
+          "paired_dz": 3588.7018416051865,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_decay_ratio_32": {
+          "n": 5,
+          "mean": 2.527702707133419e-06,
+          "median": 2.4125938729611603e-06,
+          "variance": 7.830932134709227e-14,
+          "bootstrap95": [
+            2.327256593802962e-06,
+            2.7404238846179583e-06
+          ],
+          "paired_dz": 9.032734880113782,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 42.5,
+        "raw_prefix_variance": 774.7666666666668,
+        "recall_gate": true
+      }
+    },
+    "16": {
+      "legacy5": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 103.1,
+          "median": 103.5,
+          "variance": 324.42499999999995,
+          "bootstrap95": [
+            89.1,
+            117.1
+          ],
+          "paired_dz": 5.7240248251395,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_prefix_bits": {
+          "n": 5,
+          "mean": 412.4,
+          "median": 414.0,
+          "variance": 5190.799999999999,
+          "bootstrap95": [
+            356.4,
+            468.4
+          ],
+          "paired_dz": 5.7240248251395,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "prefix_fraction": {
+          "n": 5,
+          "mean": 0.8248000000000001,
+          "median": 0.8280000000000001,
+          "variance": 0.020763199999999992,
+          "bootstrap95": [
+            0.7128,
+            0.9368000000000001
+          ],
+          "paired_dz": 5.724024825139502,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "teacher_forced_accuracy": {
+          "n": 5,
+          "mean": 0.9928000000000001,
+          "median": 0.992,
+          "variance": 2.7200000000000048e-05,
+          "bootstrap95": [
+            0.9888,
+            0.9968
+          ],
+          "paired_dz": 190.3607102319172,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_accuracy": {
+          "n": 5,
+          "mean": 0.8416,
+          "median": 0.8360000000000001,
+          "variance": 0.0158768,
+          "bootstrap95": [
+            0.7448,
+            0.9384
+          ],
+          "paired_dz": 6.6791967973631285,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "control_excess": {
+          "n": 5,
+          "mean": 102.7,
+          "median": 103.5,
+          "variance": 325.0750000000001,
+          "bootstrap95": [
+            88.7,
+            116.7
+          ],
+          "paired_dz": 5.6961138092455785,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "full_completion": {
+          "n": 5,
+          "mean": 0.5,
+          "median": 0.5,
+          "variance": 0.12500000000000003,
+          "bootstrap95": [
+            0.2,
+            0.8
+          ],
+          "paired_dz": 1.414213562373095,
+          "wins": 4,
+          "ties": 1,
+          "losses": 0
+        },
+        "effective_rank": {
+          "n": 5,
+          "mean": 20.055671432688904,
+          "median": 20.052106226247403,
+          "variance": 0.017241779909612984,
+          "bootstrap95": [
+            19.951416831648988,
+            20.15992603372882
+          ],
+          "paired_dz": 152.7376687160712,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_mean_abs": {
+          "n": 5,
+          "mean": 0.012983086935848936,
+          "median": 0.013088063226938644,
+          "variance": 3.652120508438593e-07,
+          "bootstrap95": [
+            0.012512621287517465,
+            0.01342985449628594
+          ],
+          "paired_dz": 21.48351876121335,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "mean_observed_cosine": {
+          "n": 5,
+          "mean": 0.9667191707300559,
+          "median": 0.9669061943435464,
+          "variance": 1.8267173355079082e-06,
+          "bootstrap95": [
+            0.9656691858772675,
+            0.967769155582844
+          ],
+          "paired_dz": 715.2611817964049,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_decay_ratio_32": {
+          "n": 5,
+          "mean": 6.329077267429117e-07,
+          "median": 6.315189819576219e-07,
+          "variance": 4.475589272616904e-16,
+          "bootstrap95": [
+            6.163347519486465e-07,
+            6.49025855494113e-07
+          ],
+          "paired_dz": 29.91681016054618,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 118.5,
+        "raw_prefix_variance": 1022.988888888889,
+        "recall_gate": true
+      },
+      "brain1": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 88.0,
+          "median": 91.5,
+          "variance": 1442.1250000000002,
+          "bootstrap95": [
+            57.7,
+            118.3
+          ],
+          "paired_dz": 2.317294438516292,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_prefix_bits": {
+          "n": 5,
+          "mean": 352.0,
+          "median": 366.0,
+          "variance": 23074.000000000004,
+          "bootstrap95": [
+            230.8,
+            473.2
+          ],
+          "paired_dz": 2.317294438516292,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "prefix_fraction": {
+          "n": 5,
+          "mean": 0.704,
+          "median": 0.732,
+          "variance": 0.09229600000000002,
+          "bootstrap95": [
+            0.46159999999999995,
+            0.9464
+          ],
+          "paired_dz": 2.317294438516292,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "teacher_forced_accuracy": {
+          "n": 5,
+          "mean": 0.9928000000000001,
+          "median": 0.992,
+          "variance": 5.120000000000009e-05,
+          "bootstrap95": [
+            0.9872,
+            0.9984
+          ],
+          "paired_dz": 138.74801800386186,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "autonomous_accuracy": {
+          "n": 5,
+          "mean": 0.7256,
+          "median": 0.756,
+          "variance": 0.08020479999999999,
+          "bootstrap95": [
+            0.5,
+            0.9512
+          ],
+          "paired_dz": 2.5621060026563596,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "control_excess": {
+          "n": 5,
+          "mean": 87.6,
+          "median": 91.5,
+          "variance": 1481.1750000000002,
+          "bootstrap95": [
+            56.9,
+            118.3
+          ],
+          "paired_dz": 2.276150212611007,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "full_completion": {
+          "n": 5,
+          "mean": 0.4,
+          "median": 0.0,
+          "variance": 0.3000000000000001,
+          "bootstrap95": [
+            0.0,
+            0.8
+          ],
+          "paired_dz": 0.7302967433402214,
+          "wins": 2,
+          "ties": 3,
+          "losses": 0
+        },
+        "effective_rank": {
+          "n": 5,
+          "mean": 14.070749284589624,
+          "median": 14.123335625535503,
+          "variance": 0.056239737306532166,
+          "bootstrap95": [
+            13.875219613580999,
+            14.24669761831107
+          ],
+          "paired_dz": 59.33290099400017,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_mean_abs": {
+          "n": 5,
+          "mean": 0.005625702591607119,
+          "median": 0.005595155811550229,
+          "variance": 6.064533986141064e-09,
+          "bootstrap95": [
+            0.005572975714109042,
+            0.005689337801105887
+          ],
+          "paired_dz": 72.24005233179867,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "mean_observed_cosine": {
+          "n": 5,
+          "mean": 0.996575125585007,
+          "median": 0.9965014025405885,
+          "variance": 1.1824386305949034e-07,
+          "bootstrap95": [
+            0.9963235509115396,
+            0.9968263392836023
+          ],
+          "paired_dz": 2898.149189592458,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "observed_decay_ratio_32": {
+          "n": 5,
+          "mean": 2.5420833442040082e-06,
+          "median": 2.5237271945587455e-06,
+          "variance": 1.3594231527974976e-13,
+          "bootstrap95": [
+            2.251758919751753e-06,
+            2.8209725386009295e-06
+          ],
+          "paired_dz": 6.8946536427618526,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "raw_prefix_median": 93.5,
+        "raw_prefix_variance": 1522.888888888889,
+        "recall_gate": true
+      }
+    }
+  },
+  "contrasts": {
+    "2": {
+      "exact_prefix_symbols": {
+        "n": 5,
+        "mean": 2.3,
+        "median": 5.5,
+        "variance": 346.3250000000001,
+        "bootstrap95": [
+          -12.4,
+          16.9
+        ],
+        "paired_dz": 0.12359073487371645,
+        "wins": 3,
+        "ties": 0,
+        "losses": 2
+      },
+      "autonomous_prefix_bits": {
+        "n": 5,
+        "mean": 2.3,
+        "median": 5.5,
+        "variance": 346.3250000000001,
+        "bootstrap95": [
+          -12.4,
+          16.9
+        ],
+        "paired_dz": 0.12359073487371645,
+        "wins": 3,
+        "ties": 0,
+        "losses": 2
+      },
+      "prefix_fraction": {
+        "n": 5,
+        "mean": 0.01839999999999999,
+        "median": 0.043999999999999984,
+        "variance": 0.022164799999999995,
+        "bootstrap95": [
+          -0.09920000000000002,
+          0.1352
+        ],
+        "paired_dz": 0.12359073487371643,
+        "wins": 3,
+        "ties": 0,
+        "losses": 2
+      },
+      "teacher_forced_accuracy": {
+        "n": 5,
+        "mean": -0.027199999999999957,
+        "median": -0.039999999999999925,
+        "variance": 0.0005791999999999999,
+        "bootstrap95": [
+          -0.043199999999999975,
+          -0.005599999999999983
+        ],
+        "paired_dz": -1.1301982420347054,
+        "wins": 1,
+        "ties": 0,
+        "losses": 4
+      },
+      "autonomous_accuracy": {
+        "n": 5,
+        "mean": 0.01120000000000001,
+        "median": 0.02399999999999991,
+        "variance": 0.0069392,
+        "bootstrap95": [
+          -0.05359999999999996,
+          0.07600000000000003
+        ],
+        "paired_dz": 0.13445077820258475,
+        "wins": 3,
+        "ties": 0,
+        "losses": 2
+      },
+      "control_excess": {
+        "n": 5,
+        "mean": 2.3,
+        "median": 5.5,
+        "variance": 346.3250000000001,
+        "bootstrap95": [
+          -12.4,
+          16.9
+        ],
+        "paired_dz": 0.12359073487371645,
+        "wins": 3,
+        "ties": 0,
+        "losses": 2
+      },
+      "full_completion": {
+        "n": 5,
+        "mean": 0.0,
+        "median": 0.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          0.0,
+          0.0
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 5,
+        "losses": 0
+      },
+      "effective_rank": {
+        "n": 5,
+        "mean": -1.340959935554542,
+        "median": -1.4887482438227706,
+        "variance": 0.15845265052329302,
+        "bootstrap95": [
+          -1.539441629875163,
+          -0.9825029131938858
+        ],
+        "paired_dz": -3.36872879114433,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "observed_mean_abs": {
+        "n": 5,
+        "mean": -0.007294451525539298,
+        "median": -0.007522458770719375,
+        "variance": 6.164017980394249e-07,
+        "bootstrap95": [
+          -0.007911743191144701,
+          -0.006677159859933895
+        ],
+        "paired_dz": -9.290962220774922,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "mean_observed_cosine": {
+        "n": 5,
+        "mean": 0.015492637863639436,
+        "median": 0.015709913534357467,
+        "variance": 4.453764556015982e-05,
+        "bootstrap95": [
+          0.010993406724082088,
+          0.020829677261583312
+        ],
+        "paired_dz": 2.321462871333818,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "observed_decay_ratio_32": {
+        "n": 5,
+        "mean": 1.964690817606008e-06,
+        "median": 2.09579596104331e-06,
+        "variance": 1.493172022602465e-13,
+        "bootstrap95": [
+          1.6729659089847191e-06,
+          2.2352918587157267e-06
+        ],
+        "paired_dz": 5.08439512201579,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "whole_brain_gate": false
+    },
+    "4": {
+      "exact_prefix_symbols": {
+        "n": 5,
+        "mean": -17.1,
+        "median": -16.0,
+        "variance": 248.8,
+        "bootstrap95": [
+          -30.3,
+          -6.4
+        ],
+        "paired_dz": -1.0841039389663314,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "autonomous_prefix_bits": {
+        "n": 5,
+        "mean": -34.2,
+        "median": -32.0,
+        "variance": 995.2,
+        "bootstrap95": [
+          -60.6,
+          -12.8
+        ],
+        "paired_dz": -1.0841039389663314,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "prefix_fraction": {
+        "n": 5,
+        "mean": -0.1368,
+        "median": -0.128,
+        "variance": 0.0159232,
+        "bootstrap95": [
+          -0.24239999999999995,
+          -0.0512
+        ],
+        "paired_dz": -1.0841039389663314,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "teacher_forced_accuracy": {
+        "n": 5,
+        "mean": -0.03360000000000003,
+        "median": -0.016000000000000014,
+        "variance": 0.001572799999999995,
+        "bootstrap95": [
+          -0.06559999999999999,
+          -0.004800000000000093
+        ],
+        "paired_dz": -0.8472323441443902,
+        "wins": 1,
+        "ties": 0,
+        "losses": 4
+      },
+      "autonomous_accuracy": {
+        "n": 5,
+        "mean": -0.07999999999999999,
+        "median": -0.02400000000000002,
+        "variance": 0.009799999999999994,
+        "bootstrap95": [
+          -0.16639999999999994,
+          -0.009599999999999987
+        ],
+        "paired_dz": -0.8081220356417688,
+        "wins": 0,
+        "ties": 1,
+        "losses": 4
+      },
+      "control_excess": {
+        "n": 5,
+        "mean": -17.1,
+        "median": -16.0,
+        "variance": 248.8,
+        "bootstrap95": [
+          -30.3,
+          -6.4
+        ],
+        "paired_dz": -1.0841039389663314,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "full_completion": {
+        "n": 5,
+        "mean": 0.0,
+        "median": 0.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          0.0,
+          0.0
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 5,
+        "losses": 0
+      },
+      "effective_rank": {
+        "n": 5,
+        "mean": -2.442665816221767,
+        "median": -2.4866188593722622,
+        "variance": 0.0409147400117015,
+        "bootstrap95": [
+          -2.571145623048758,
+          -2.266793079630149
+        ],
+        "paired_dz": -12.076029264819494,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "observed_mean_abs": {
+        "n": 5,
+        "mean": -0.007325200906508169,
+        "median": -0.007166052552025527,
+        "variance": 3.674529010503715e-07,
+        "bootstrap95": [
+          -0.0077830638768824805,
+          -0.006867469826412009
+        ],
+        "paired_dz": -12.084222142057303,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "mean_observed_cosine": {
+        "n": 5,
+        "mean": 0.025423132630268852,
+        "median": 0.023410585410953977,
+        "variance": 2.523728395230718e-05,
+        "bootstrap95": [
+          0.0219001443038916,
+          0.029541042586011524
+        ],
+        "paired_dz": 5.060666942963917,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "observed_decay_ratio_32": {
+        "n": 5,
+        "mean": 1.8121402022114208e-06,
+        "median": 1.7477027636343334e-06,
+        "variance": 1.930618044671754e-13,
+        "bootstrap95": [
+          1.4647771245764635e-06,
+          2.159503279846378e-06
+        ],
+        "paired_dz": 4.124237005798016,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "whole_brain_gate": false
+    },
+    "10": {
+      "exact_prefix_symbols": {
+        "n": 5,
+        "mean": -27.1,
+        "median": -29.5,
+        "variance": 396.42500000000007,
+        "bootstrap95": [
+          -43.2,
+          -13.5
+        ],
+        "paired_dz": -1.3610960494020248,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "autonomous_prefix_bits": {
+        "n": 5,
+        "mean": -90.02425137144749,
+        "median": -97.99687879917715,
+        "variance": 4374.631644634116,
+        "bootstrap95": [
+          -143.507293699134,
+          -44.846029280979366
+        ],
+        "paired_dz": -1.361096049402024,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "prefix_fraction": {
+        "n": 5,
+        "mean": -0.21680000000000002,
+        "median": -0.2360000000000001,
+        "variance": 0.025371199999999997,
+        "bootstrap95": [
+          -0.3456,
+          -0.10800000000000003
+        ],
+        "paired_dz": -1.361096049402025,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "teacher_forced_accuracy": {
+        "n": 5,
+        "mean": -0.026400000000000024,
+        "median": -0.028000000000000025,
+        "variance": 0.00030080000000000054,
+        "bootstrap95": [
+          -0.03920000000000003,
+          -0.01120000000000001
+        ],
+        "paired_dz": -1.5221764932476605,
+        "wins": 0,
+        "ties": 1,
+        "losses": 4
+      },
+      "autonomous_accuracy": {
+        "n": 5,
+        "mean": -0.2072,
+        "median": -0.21200000000000008,
+        "variance": 0.0282992,
+        "bootstrap95": [
+          -0.3496,
+          -0.08720000000000003
+        ],
+        "paired_dz": -1.2316935632508617,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "control_excess": {
+        "n": 5,
+        "mean": -27.1,
+        "median": -29.5,
+        "variance": 396.42500000000007,
+        "bootstrap95": [
+          -43.2,
+          -13.5
+        ],
+        "paired_dz": -1.3610960494020248,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "full_completion": {
+        "n": 5,
+        "mean": -0.1,
+        "median": 0.0,
+        "variance": 0.05000000000000001,
+        "bootstrap95": [
+          -0.3,
+          0.0
+        ],
+        "paired_dz": -0.4472135954999579,
+        "wins": 0,
+        "ties": 4,
+        "losses": 1
+      },
+      "effective_rank": {
+        "n": 5,
+        "mean": -5.062479129109269,
+        "median": -5.1329388330853,
+        "variance": 0.18100710808038206,
+        "bootstrap95": [
+          -5.3958837780357545,
+          -4.729074480182784
+        ],
+        "paired_dz": -11.899136071418841,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "observed_mean_abs": {
+        "n": 5,
+        "mean": -0.007282550353144762,
+        "median": -0.007245091168119087,
+        "variance": 1.2470518591899844e-07,
+        "bootstrap95": [
+          -0.007572328999236645,
+          -0.0070135274321219436
+        ],
+        "paired_dz": -20.622496521830186,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "mean_observed_cosine": {
+        "n": 5,
+        "mean": 0.027098110797985898,
+        "median": 0.0268591898236219,
+        "variance": 5.208209966468498e-06,
+        "bootstrap95": [
+          0.025296301754444618,
+          0.028899919841527177
+        ],
+        "paired_dz": 11.873937866344527,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "observed_decay_ratio_32": {
+        "n": 5,
+        "mean": 1.843987600804949e-06,
+        "median": 1.734252548570448e-06,
+        "variance": 8.787284426220476e-14,
+        "bootstrap95": [
+          1.6230419162660454e-06,
+          2.086448593155387e-06
+        ],
+        "paired_dz": 6.2205767749639795,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "whole_brain_gate": false
+    },
+    "16": {
+      "exact_prefix_symbols": {
+        "n": 5,
+        "mean": -15.1,
+        "median": -12.0,
+        "variance": 1783.175,
+        "bootstrap95": [
+          -46.5,
+          18.6
+        ],
+        "paired_dz": -0.35758555267499165,
+        "wins": 1,
+        "ties": 1,
+        "losses": 3
+      },
+      "autonomous_prefix_bits": {
+        "n": 5,
+        "mean": -60.4,
+        "median": -48.0,
+        "variance": 28530.8,
+        "bootstrap95": [
+          -186.0,
+          74.4
+        ],
+        "paired_dz": -0.35758555267499165,
+        "wins": 1,
+        "ties": 1,
+        "losses": 3
+      },
+      "prefix_fraction": {
+        "n": 5,
+        "mean": -0.12079999999999999,
+        "median": -0.09600000000000009,
+        "variance": 0.11412319999999998,
+        "bootstrap95": [
+          -0.372,
+          0.1488
+        ],
+        "paired_dz": -0.35758555267499165,
+        "wins": 1,
+        "ties": 1,
+        "losses": 3
+      },
+      "teacher_forced_accuracy": {
+        "n": 5,
+        "mean": 0.0,
+        "median": 0.0,
+        "variance": 8.000000000000014e-05,
+        "bootstrap95": [
+          -0.007200000000000007,
+          0.007200000000000007
+        ],
+        "paired_dz": 0.0,
+        "wins": 2,
+        "ties": 1,
+        "losses": 2
+      },
+      "autonomous_accuracy": {
+        "n": 5,
+        "mean": -0.11599999999999999,
+        "median": -0.08000000000000007,
+        "variance": 0.098032,
+        "bootstrap95": [
+          -0.344,
+          0.12880000000000003
+        ],
+        "paired_dz": -0.37048792481248155,
+        "wins": 1,
+        "ties": 1,
+        "losses": 3
+      },
+      "control_excess": {
+        "n": 5,
+        "mean": -15.1,
+        "median": -12.0,
+        "variance": 1783.175,
+        "bootstrap95": [
+          -46.5,
+          18.6
+        ],
+        "paired_dz": -0.35758555267499165,
+        "wins": 1,
+        "ties": 1,
+        "losses": 3
+      },
+      "full_completion": {
+        "n": 5,
+        "mean": -0.1,
+        "median": 0.0,
+        "variance": 0.17500000000000002,
+        "bootstrap95": [
+          -0.4,
+          0.2
+        ],
+        "paired_dz": -0.23904572186687872,
+        "wins": 1,
+        "ties": 2,
+        "losses": 2
+      },
+      "effective_rank": {
+        "n": 5,
+        "mean": -5.984922148099281,
+        "median": -5.87064014580438,
+        "variance": 0.08459787966765732,
+        "bootstrap95": [
+          -6.246770056622259,
+          -5.808603881243394
+        ],
+        "paired_dz": -20.576844063161023,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "observed_mean_abs": {
+        "n": 5,
+        "mean": -0.007357384344241819,
+        "median": -0.007538871265271823,
+        "variance": 3.225282786292995e-07,
+        "bootstrap95": [
+          -0.007760617797157426,
+          -0.006941542852152332
+        ],
+        "paired_dz": -12.955063453873883,
+        "wins": 0,
+        "ties": 0,
+        "losses": 5
+      },
+      "mean_observed_cosine": {
+        "n": 5,
+        "mean": 0.02985595485495125,
+        "median": 0.02923705213255179,
+        "variance": 1.769647345923971e-06,
+        "bootstrap95": [
+          0.02884417652040998,
+          0.0309110730874131
+        ],
+        "paired_dz": 22.443345791849882,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "observed_decay_ratio_32": {
+        "n": 5,
+        "mean": 1.909175617461097e-06,
+        "median": 1.8922082126011236e-06,
+        "variance": 1.315539350842656e-13,
+        "bootstrap95": [
+          1.627790009438466e-06,
+          2.188418999977913e-06
+        ],
+        "paired_dz": 5.26373428172213,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "whole_brain_gate": false
+    }
+  },
+  "alphabet_endpoint": {
+    "legacy5": {
+      "n": 5,
+      "mean": 0.6247999999999999,
+      "median": 0.524,
+      "variance": 0.06837919999999996,
+      "bootstrap95": [
+        0.4232,
+        0.8263999999999999
+      ],
+      "paired_dz": 2.3893458286765865,
+      "wins": 5,
+      "ties": 0,
+      "losses": 0,
+      "load_drop_gate": false
+    },
+    "brain1": {
+      "n": 5,
+      "mean": 0.4856,
+      "median": 0.384,
+      "variance": 0.05109279999999998,
+      "bootstrap95": [
+        0.31200000000000006,
+        0.6592
+      ],
+      "paired_dz": 2.148319281104919,
+      "wins": 5,
+      "ties": 0,
+      "losses": 0,
+      "load_drop_gate": false
+    }
+  },
+  "qualifying_k": [],
+  "confirmation_triggered": false,
+  "source_manifest_sha256": "b1ce7d76b3dd0acd0407bcbc2c6d7b9508aa3107d4d9672ba0271d654458d1ce",
+  "matched_interfaces_and_sequences": true,
+  "nested_symbol_patterns": true
+}
