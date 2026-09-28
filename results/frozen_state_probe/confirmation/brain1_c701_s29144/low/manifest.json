@@ -1,0 +1,102 @@
+{
+  "identity": {
+    "cohort": "confirmation",
+    "level": "brain1",
+    "arm": "low",
+    "seed": 29144,
+    "dataset_seed": 30144,
+    "circuit_seed": 701
+  },
+  "source_manifest_sha256": "0d8c5fa649c380f081694e5f36564f745bdadf96f0402674dd15f4a12232fff9",
+  "source_checkpoint_sha256": "2391003424a19460784bf85cff9b341138c4a5b8f14d0499776e7ddd748d952a",
+  "metrics": [
+    {
+      "lag": 0,
+      "test_accuracy": 0.9915966386554622,
+      "train_accuracy": 1.0,
+      "frequency_accuracy": 0.19327731092436976,
+      "null_accuracy": 0.20168067226890757,
+      "frequency_excess": 0.7983193277310925,
+      "null_excess": 0.7899159663865547,
+      "r2_vs_frequency": 0.8568057560461316
+    },
+    {
+      "lag": 1,
+      "test_accuracy": 0.8823529411764706,
+      "train_accuracy": 0.9504950495049505,
+      "frequency_accuracy": 0.19327731092436976,
+      "null_accuracy": 0.21008403361344538,
+      "frequency_excess": 0.6890756302521008,
+      "null_excess": 0.6722689075630252,
+      "r2_vs_frequency": 0.5156984469560457
+    },
+    {
+      "lag": 2,
+      "test_accuracy": 0.7563025210084033,
+      "train_accuracy": 0.8217821782178217,
+      "frequency_accuracy": 0.15966386554621848,
+      "null_accuracy": 0.20168067226890757,
+      "frequency_excess": 0.5966386554621849,
+      "null_excess": 0.5546218487394958,
+      "r2_vs_frequency": 0.4509369740481355
+    },
+    {
+      "lag": 3,
+      "test_accuracy": 0.5882352941176471,
+      "train_accuracy": 0.7029702970297029,
+      "frequency_accuracy": 0.16806722689075632,
+      "null_accuracy": 0.2184873949579832,
+      "frequency_excess": 0.42016806722689076,
+      "null_excess": 0.3697478991596639,
+      "r2_vs_frequency": 0.24895914183448076
+    },
+    {
+      "lag": 4,
+      "test_accuracy": 0.48739495798319327,
+      "train_accuracy": 0.6633663366336634,
+      "frequency_accuracy": 0.19327731092436976,
+      "null_accuracy": 0.226890756302521,
+      "frequency_excess": 0.2941176470588235,
+      "null_excess": 0.26050420168067223,
+      "r2_vs_frequency": 0.14278375839387036
+    },
+    {
+      "lag": 5,
+      "test_accuracy": 0.453781512605042,
+      "train_accuracy": 0.6336633663366337,
+      "frequency_accuracy": 0.19327731092436976,
+      "null_accuracy": 0.23529411764705882,
+      "frequency_excess": 0.26050420168067223,
+      "null_excess": 0.2184873949579832,
+      "r2_vs_frequency": 0.12047806446460341
+    },
+    {
+      "lag": 8,
+      "test_accuracy": 0.36134453781512604,
+      "train_accuracy": 0.6435643564356436,
+      "frequency_accuracy": 0.18487394957983194,
+      "null_accuracy": 0.2773109243697479,
+      "frequency_excess": 0.1764705882352941,
+      "null_excess": 0.08403361344537813,
+      "r2_vs_frequency": -0.1425165224498841
+    },
+    {
+      "lag": -1,
+      "test_accuracy": 0.31092436974789917,
+      "train_accuracy": 0.5643564356435643,
+      "frequency_accuracy": 0.20168067226890757,
+      "null_accuracy": 0.2184873949579832,
+      "frequency_excess": 0.1092436974789916,
+      "null_excess": 0.09243697478991597,
+      "r2_vs_frequency": -0.30421031861403236
+    }
+  ],
+  "artifacts": {
+    "fold0-metrics.json": "7ec6ebea503e049ca491a344ddc85ac43d2ef4d331f33651f6a83396391ee86e",
+    "fold0.npz": "cc638c681ec4e245b012142f7711e0890f37dc21e3379b6f756f9aee797d09c5",
+    "fold1-metrics.json": "dde02fd3c1fac10fb87d28ce1356c6da8769f7d794bef482c8d74185c67f42e9",
+    "fold1.npz": "4f2e01a1d7e27b9de219a1035ffbb08a15bf5550e74084d955df92836c3733b4",
+    "fold2-metrics.json": "7ee4b3a8c0a413db5ca983db36989a83895bfa7a96c6f705ac298b4be32c978f",
+    "fold2.npz": "59109fbcab45046178e7ba18e3b91254cb0d4bf762a65f5a1d0d0205dada17a6"
+  }
+}

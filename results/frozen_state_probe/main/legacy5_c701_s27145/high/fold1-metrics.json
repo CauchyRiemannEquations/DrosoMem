@@ -1,0 +1,82 @@
+[
+  {
+    "lag": 0,
+    "test_accuracy": 1.0,
+    "train_accuracy": 1.0,
+    "frequency_accuracy": 0.2,
+    "null_accuracy": 0.2,
+    "frequency_excess": 0.8,
+    "null_excess": 0.8,
+    "r2_vs_frequency": 0.983885961697608
+  },
+  {
+    "lag": 1,
+    "test_accuracy": 1.0,
+    "train_accuracy": 1.0,
+    "frequency_accuracy": 0.25,
+    "null_accuracy": 0.325,
+    "frequency_excess": 0.75,
+    "null_excess": 0.675,
+    "r2_vs_frequency": 0.8684554466344201
+  },
+  {
+    "lag": 2,
+    "test_accuracy": 0.8,
+    "train_accuracy": 0.8360655737704918,
+    "frequency_accuracy": 0.25,
+    "null_accuracy": 0.175,
+    "frequency_excess": 0.55,
+    "null_excess": 0.625,
+    "r2_vs_frequency": 0.5158584860411479
+  },
+  {
+    "lag": 3,
+    "test_accuracy": 0.65,
+    "train_accuracy": 0.7540983606557377,
+    "frequency_accuracy": 0.225,
+    "null_accuracy": 0.175,
+    "frequency_excess": 0.42500000000000004,
+    "null_excess": 0.47500000000000003,
+    "r2_vs_frequency": 0.4199476521522637
+  },
+  {
+    "lag": 4,
+    "test_accuracy": 0.55,
+    "train_accuracy": 0.639344262295082,
+    "frequency_accuracy": 0.225,
+    "null_accuracy": 0.2,
+    "frequency_excess": 0.32500000000000007,
+    "null_excess": 0.35000000000000003,
+    "r2_vs_frequency": 0.22244355379212732
+  },
+  {
+    "lag": 5,
+    "test_accuracy": 0.55,
+    "train_accuracy": 0.6721311475409836,
+    "frequency_accuracy": 0.225,
+    "null_accuracy": 0.225,
+    "frequency_excess": 0.32500000000000007,
+    "null_excess": 0.32500000000000007,
+    "r2_vs_frequency": 0.1902858243816271
+  },
+  {
+    "lag": 8,
+    "test_accuracy": 0.4,
+    "train_accuracy": 0.5573770491803278,
+    "frequency_accuracy": 0.175,
+    "null_accuracy": 0.175,
+    "frequency_excess": 0.22500000000000003,
+    "null_excess": 0.22500000000000003,
+    "r2_vs_frequency": 0.00756987531630704
+  },
+  {
+    "lag": -1,
+    "test_accuracy": 0.25,
+    "train_accuracy": 0.45901639344262296,
+    "frequency_accuracy": 0.175,
+    "null_accuracy": 0.175,
+    "frequency_excess": 0.07500000000000001,
+    "null_excess": 0.07500000000000001,
+    "r2_vs_frequency": -0.18491115700116922
+  }
+]

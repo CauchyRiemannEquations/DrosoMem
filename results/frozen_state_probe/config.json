@@ -1,0 +1,35 @@
+{
+  "study": "act2-frozen-state-blocked-probes",
+  "sources": {
+    "main": "results/intervention_main",
+    "confirmation": "results/intervention_confirmation"
+  },
+  "protocol": "docs/frozen-state-probe-protocol.md",
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    -1
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "start": 8,
+  "stop": 127,
+  "folds": 3,
+  "purge": 9,
+  "alpha": 1.0,
+  "bootstrap_seed": 32399,
+  "bootstrap_draws": 10000,
+  "max_seconds": 900,
+  "max_rss_bytes": 1073741824
+}
