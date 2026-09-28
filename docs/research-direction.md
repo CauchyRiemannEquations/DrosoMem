@@ -54,8 +54,10 @@ trained-prefix 기준을 통과했지만 전체망 우위는 확인되지 않았
 해독은 실제 76.965% / 재배선 78.603%로 실제 배선 우위를 확인하지 못했다.
 후속 [정규화 계수 대조](normalization-control-results.md)는 본30회·확인18회를 마쳤다.
 계수 고정의 이득은1.245%p/0.894%p로 사전 확인 기준1%p에 못 미쳤다.
-현재는 제한된 ACT III 구조·정규화 대조 완료이며, 다음 한 제안은 저장된
-고정 출력층의 정규화 조건 간 교차 전이다. 추가 튜닝이나 ACT IV 확장은 하지 않는다.
+후속 [고정 출력층 전이](normalization-transfer-results.md)는 양방향·두 집단 모두
+실패했다. Target refit 약79–80%와 frozen 전이25–27%를 구분한다.
+현재는 제한된 ACT III 전이 진단까지 완료했으며, 다음 한 제안은 정답을 쓰지
+않는 학습 feature의 평균·표준편차 정렬이다. 추가 gain 탐색이나 ACT IV 확장은 하지 않는다.
 ACT I→II→III→IV 순서를 지키며 강건성은 ACT V의 독립 축으로 유지한다.
 [로드맵](research-roadmap.md).
 

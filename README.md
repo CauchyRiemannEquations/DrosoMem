@@ -9,15 +9,14 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 
 ## Current research
 
-Latest: the [normalization-factor control](docs/normalization-control-results.md)
-completed30 main and18 fresh-seed confirmation runs. Fixed original factors
-improved independent past-symbol decoding by1.245pp in main and0.894pp in
-confirmation. The preregistered1pp confirmation criterion **failed**.
-This is a decoding diagnostic, not autonomous recall or internal learning.
+Latest: [frozen-head normalization transfer](docs/normalization-transfer-results.md)
+fails both directions in both archived cohorts. Condition-specific refits decode
+past symbols at about79–80%; unchanged-head transfer drops to25–27%.
+This separates available target-state information from decoder portability.
 
-Current position: scoped ACT III structure and normalization controls complete.
-Next proposed diagnostic transfers frozen readouts between normalization
-conditions using saved states; broader ablations and internal learning remain open.
+Current position: scoped ACT III structure, normalization and transfer diagnostics
+complete. Next proposed: label-free train-only feature mean/std alignment before
+frozen-head transfer. Broader ablations and internal learning remain open.
 
 The established models freeze recurrent connectivity and train an external
 readout. Distinguish **representation**, **decoding** and **internal learning**.
@@ -31,13 +30,12 @@ Use Python3.12 and a clean environment; commands run from the repository root.
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-act1-lock.txt
 $env:PYTHONPATH = 'src'
-.\.venv\Scripts\python.exe scripts/normalization_control.py --cohort smoke --out outputs/norm_smoke_new
-.\.venv\Scripts\python.exe scripts/normalization_control.py --cohort main --out outputs/norm_main_new
+.\.venv\Scripts\python.exe scripts/normalization_transfer.py --out outputs/norm_transfer_new
+.\.venv\Scripts\python.exe scripts/verify_normalization_transfer.py --out outputs/norm_transfer_check_new outputs/norm_transfer_new
 ```
 
-Use fresh directories. This comparison uses committed partial graphs and needs
-no whole-brain graph download. The runner verifies archived structural graphs.
-See the result report for conditional confirmation and independent verification,
-source hashes, checkpoints and limitations. Historical results remain intact.
+Use fresh directories. This diagnostic reuses committed checkpoints; no new
+graph download or simulation is needed. See the report for source hashes,
+per-seed results, pairing checks and limitations. Historical results remain intact.
 [ACT I protocol](docs/whole-brain-memory-protocol.md) · [Data and attribution](data/README.md) ·
 [Primary-source review](docs/research.md) · [Historical reproduction](docs/historical-reproduction.md) · [License](LICENSE)

@@ -39,7 +39,18 @@ This is not a new execution of every historical experiment.
 | Memory-critical subnetwork? | Partial prior ablations only | No comprehensive matched ablation/control study or causal circuit localization; ACT III open |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
-## Latest ACT III normalization update
+## Latest ACT III frozen-transfer update
+
+[Frozen normalization transfer](normalization-transfer-results.md) completed both
+directions in both archived cohorts: main25.728% /25.468%; confirmation24.958%
+/27.172%, versus target refits about79–80%. All access/retention gates fail.
+32 analyzed plus2 smoke directions verify; zero new target fits.374 lag rows
+checked,181 tests pass,8 optional skips;7,053 historical result files unchanged.
+Train-feature means shift despite high centered temporal correlations. Next
+proposed: train-only label-free moment alignment, not target-head fitting.
+These results concern frozen decoder portability, not absent past information.
+
+## Preceding normalization intervention
 
 [Normalization control](normalization-control-results.md) completed30 main and18
 fresh-seed confirmation runs, plus3 separate smoke runs. Same raw rewired graph,
@@ -49,8 +60,8 @@ paired blocks having the same sign. Do not pool cohorts or promote this as an
 established >=1pp improvement. All51 runs and561 lag rows verified;178 tests pass,
 8 optional skips. Historical6,653 result files unchanged. Fixed factors lose the
 sufficient contraction certificate; observed finite states/one small perturbation
-do not establish global stability. Next proposed: frozen-head cross-normalization
-transfer on stored states, not a gain search or internal-plasticity expansion.
+do not establish global stability. The subsequent frozen-head transfer is now complete as described above;
+no gain search or internal-plasticity expansion was performed.
 
 ## Preceding K4 structural control
 

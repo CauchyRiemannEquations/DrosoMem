@@ -7,23 +7,22 @@ information), and **learning** (experience modifies recurrent connections).
 
 ## Current position — 2026-09-28
 
-**Scoped ACT III structural and normalization controls complete.**
-Real-wiring advantage remains unestablished. Normalization's main difference
-fails the preregistered1pp confirmation criterion; [results](normalization-control-results.md).
-This does not complete all ACT III mechanism/ablation questions.
+**Scoped ACT III structure, normalization and frozen-transfer diagnostics complete.**
+Frozen normalization transfer fails both directions; [results](normalization-transfer-results.md).
+Target refits retain past-symbol access. This does not complete ACT III ablations.
 
 | Axis | Completed scope | Remaining scope |
 |---|---|---|
 | ACT I | Matched partial/expanded/whole graphs, thresholds5/1; no established whole-brain recall advantage | Broader tasks or dynamics would require separate protocols |
 | ACT II | Four-family pilot, random N32–512 scaling, prefix-weight tradeoff, independent-stream delay diagnostic, N128 K2/4/10/16 comparison,120 finite-context controls, fixed-K intervention and both state-decoding diagnostics | Next selected step: scoped ACT III structural control; additional families and a full length-by-K design remain open |
-| ACT III | Historical controls; current K4 structure control and normalization intervention with failed material-effect confirmation | Frozen-head transfer, grouped ablations and critical-subnetwork analysis remain open |
+| ACT III | Historical/current structure controls, normalization intervention, failed frozen-head normalization transfer | Train-only coordinate alignment, grouped ablations and critical-subnetwork analysis remain open |
 | ACT IV | Earlier local-rule implementation with negative functional results | Useful internal learning without external decoder dependence |
 | ACT V | Scoped robustness curves exposed strong fragility | Broader perturbation/physiological validation, kept separate from clean benchmarks |
 
-현재는 **ACT III의 현행 구조 대조와 정규화 개입까지 완료**했다.
-정규화 계수 고정의 평균 이득은 본 집단1.245%p, 확인0.894%p로
-사전 확인 기준1%p를 통과하지 못했다. 다음 제안은 저장 상태에 대한
-고정 출력층의 정규화 조건 간 교차 전이다. 광범위한 제거 연구와
+현재는 **ACT III의 구조·정규화 대조와 고정 출력층 전이까지 완료**했다.
+양방향 전이는 본·확인 집단 모두 실패했지만 목표 조건에서 학습한 출력층은
+여전히 과거 기호를 잘 읽었다. 다음은 정답을 쓰지 않는 학습 feature의
+평균·표준편차 정렬을 검사하는 한 실험이다. 광범위한 제거 연구와
 기억 중요 부분망 식별, ACT IV 내부 학습은 남아 있다.
 
 ## ACT I — Can a Fly Brain Remember?
@@ -55,7 +54,7 @@ K2 toK16, so the registered load-drop endpoint fails. The subsequent
 [finite-context diagnostic](context-memory-results.md) is complete:120 controls
 on20 unique tasks, with both registered endpoints passing. Context distinctiveness
 is a supported explanation candidate, not an identified neural cause. Next is one
-[fixed-K intervention](context-intervention-results.md), now complete. Confirmed graphs: none. The selected [blocked-state diagnostic](frozen-state-probe-results.md), [cross-arm transfer](cross-arm-probe-results.md) and subsequent [K4 structural control](structural-k4-results.md) are complete. The latter finds no real-wiring advantage; the subsequent normalization control is also complete with failed material-effect confirmation. Next is frozen-head transfer as listed above.
+[fixed-K intervention](context-intervention-results.md), now complete. Confirmed graphs: none. The selected [blocked-state diagnostic](frozen-state-probe-results.md), [cross-arm transfer](cross-arm-probe-results.md) and subsequent [K4 structural control](structural-k4-results.md) are complete. The latter finds no real-wiring advantage; the subsequent normalization control is also complete with failed material-effect confirmation. Frozen-head transfer is also complete with both directions failing; next is train-only moment alignment as listed above.
 Full length-by-alphabet scaling and additional families remain open. The paragraph
 below describes the staged scope, not an assertion that all stages are complete.
 

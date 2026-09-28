@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "cohort": "smoke",
+    "direction": "renormalized_to_fixed_original",
+    "circuit_seed": 701,
+    "seed": 34001,
+    "train_seed": 39001,
+    "test_seed": 40001,
+    "rewire_seed": 37001,
+    "perturb_seed": 46001
+  },
+  "timestamp": "2026-09-28T06:58:54.076791+00:00",
+  "source_path": "results/normalization_control_smoke/renormalized_c701_s34001",
+  "target_path": "results/normalization_control_smoke/fixed_original_c701_s34001",
+  "source_manifest_sha256": "69aba358a563672a5be92fd6cfec6f32eba4d1ffa0babfc181a0d587acc719eb",
+  "target_manifest_sha256": "8c0a5d27c0df7a897c65d13ef876af862383a13c9321d235849d7a8129a9bb96",
+  "target_fits": 0,
+  "exact_replay": true,
+  "coefficients_per_task": 196,
+  "diagnostic": {
+    "cohort": "smoke",
+    "direction": "renormalized_to_fixed_original",
+    "circuit_seed": 701,
+    "seed": 34001,
+    "train_seed": 39001,
+    "test_seed": 40001,
+    "rewire_seed": 37001,
+    "perturb_seed": 46001,
+    "mean_abs_train_mean_shift_z": 2.835026925412107,
+    "median_train_scale_ratio": 1.0503462561160002,
+    "mean_train_feature_correlation": 0.9378253477164801,
+    "mean_paired_train_cosine": 0.7789386936483933
+  },
+  "artifacts": {
+    "checkpoint.npz": "ab878e84c91a5cfde54aa684978d00c902d6c09722c58ec1679e95ef73d93884",
+    "metrics.json": "ab60034a9a91bd4bc646346b03138e53dbb05189ea92a467172ced5b00d157e8"
+  }
+}

@@ -1,19 +1,19 @@
 # Prioritized work — updated 2026-09-28
 
-**ACT III normalization intervention complete; material-effect confirmation failed.**
-[Results](normalization-control-results.md): fixed-original minus renormalized
-past decoding+1.245pp main (5/5 positive),+0.894pp confirmation (3/3 positive).
-The preregistered1pp confirmation threshold failed. No pooled rescue or tuning.
-All48 main/confirmation runs and3 smoke runs replay/refit exactly;561 lag rows
-verified. Full suite178 passed,8 optional skips. Fixed coefficients lose the
-sufficient contraction bound, but sampled trajectories/initial perturbations
-pass the specified finite-range/forgetting checks. No global stability claim.
+**ACT III frozen-head normalization transfer complete; both directions failed.**
+[Results](normalization-transfer-results.md): main R→F25.728% / F→R25.468%;
+archived confirmation24.958% /27.172%. Target refits remain about79–80%.
+Both access and5pp retention gates fail in both cohorts.32 analyzed directions
+plus2 smoke directions replay exactly,374 lag rows independently checked,
+zero new target fits.181 tests pass,8 optional skips. Prior normalization's1pp
+confirmation failure and structural negatives remain unchanged.
 
-Next single proposed study: **frozen-head cross-normalization transfer**, both
-directions, reusing saved states/coefficients. Keep source standardization and
-head fixed; separate transferred decoding from existing within-condition refits.
-Preregister gates and complete paired cohorts before predictions. This diagnoses
-decoder dependence without a normalization/gain sweep. Proposed, not executed.
+Next single proposed experiment: **label-free train-only per-feature mean/std
+alignment before frozen-head transfer**, both directions. Use only source/target
+training features to align; keep source coefficients/intercepts frozen and held-out
+labels inaccessible to transformation. This tests a simple coordinate-shift
+explanation, not a gain/normalization sweep or target-head refit. Preregister
+the transform, cohorts and gates before predictions. Proposed, not executed.
 Broader ACT III ablations and ACT IV internal learning remain open.
 
 ## Historical handoff notes (superseded by the result above)

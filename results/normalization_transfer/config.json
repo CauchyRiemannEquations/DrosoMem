@@ -1,0 +1,50 @@
+{
+  "protocol": "docs/normalization-transfer-protocol.md",
+  "sources": {
+    "smoke": "results/normalization_control_smoke",
+    "main": "results/normalization_control_main",
+    "confirmation": "results/normalization_control_confirmation"
+  },
+  "directions": [
+    [
+      "renormalized",
+      "fixed_original"
+    ],
+    [
+      "fixed_original",
+      "renormalized"
+    ]
+  ],
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "alpha": 1.0,
+  "retention_tolerance": 0.05,
+  "access_margin": 0.05,
+  "bootstrap_seed": 48399,
+  "bootstrap_draws": 10000,
+  "max_seconds": 1800,
+  "max_rss_bytes": 3221225472
+}
