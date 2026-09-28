@@ -1,0 +1,13 @@
+{
+  "study": "act2-context-diagnostic",
+  "source": "results/alphabet_main",
+  "source_commit": "a88c609a92089f98320ca6e12a23fd0b1b43d28f",
+  "protocol": "docs/context-memory-protocol.md",
+  "orders": [1, 2, 3, 4, 5, 8],
+  "primary_ambiguity_order": 2,
+  "primary_recall_order": 3,
+  "bootstrap_seed": 26399,
+  "bootstrap_draws": 10000,
+  "max_seconds": 900,
+  "max_rss_bytes": 1073741824
+}
