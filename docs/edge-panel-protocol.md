@@ -52,7 +52,9 @@ NOT claimed; report raw/normalized removed L1 and endpoint role counts.
 Other families remove floor(0.05*E):165/162 edges. This count fits the sparse
 within-role pool217/220. Weak/strong rank absolute RAW weights ascending/descending.
 High betweenness uses exact unweighted directed shortest-path edge betweenness
-on binary intact connectivity, ignoring sign/weight as path costs. For all ranked
+on binary intact connectivity, ignoring sign/weight as path costs. For ranking,
+round betweenness to6 decimal places to prevent floating summation noise from
+breaking mathematical ties; retain unrounded scores for audit. For all ranked
 ties sort numeric (presynaptic root ID,postsynaptic root ID). No outcomes used.
 Three uniform random masks sample all edges. Three within-role masks sample
 edges with equal endpoint roles; three between-role masks sample unequal roles.
