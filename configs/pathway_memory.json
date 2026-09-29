@@ -1,0 +1,325 @@
+{
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "alphabet_size": 4,
+  "warmup": 100,
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "alpha": 1.0,
+  "swaps_per_edge": 5,
+  "normalization": "incoming_l1",
+  "schedule": "mbon_after_kc",
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "activity_epsilon": 1e-08,
+  "decay_steps": 32,
+  "bootstrap_draws": 10000,
+  "max_seconds": 3600,
+  "max_rss_bytes": 3221225472,
+  "material_effect": 0.05,
+  "access_margin": 0.05,
+  "protocol": "docs/pathway-memory-protocol.md",
+  "bootstrap_seed": 194399,
+  "weight_boundaries": [
+    10,
+    20,
+    50,
+    100
+  ],
+  "families": [
+    "KC_MBON",
+    "DAN_KC",
+    "DAN_MBON",
+    "KC_APL",
+    "APL_KC"
+  ],
+  "source": "results/structural_controls",
+  "source_manifest_sha256": "0056e41ff6db240deb35cd7344799889f7809f7630f79c6360d11273cb62fe4e",
+  "cohorts": {
+    "smoke": {
+      "circuit_seeds": [
+        701
+      ],
+      "train_samples": 200,
+      "test_samples": 100,
+      "blocks": [
+        {
+          "seed": 181001,
+          "train_seed": 182001,
+          "test_seed": 183001,
+          "edge_seeds": {
+            "KC_MBON": [
+              184001,
+              184002,
+              184003
+            ],
+            "DAN_KC": [
+              184004,
+              184005,
+              184006
+            ],
+            "DAN_MBON": [
+              184007,
+              184008,
+              184009
+            ],
+            "KC_APL": [
+              184010,
+              184011,
+              184012
+            ],
+            "APL_KC": [
+              184013,
+              184014,
+              184015
+            ]
+          }
+        }
+      ]
+    },
+    "discovery": {
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "blocks": [
+        {
+          "seed": 181142,
+          "train_seed": 182142,
+          "test_seed": 183142,
+          "edge_seeds": {
+            "KC_MBON": [
+              184142,
+              184143,
+              184144
+            ],
+            "DAN_KC": [
+              184145,
+              184146,
+              184147
+            ],
+            "DAN_MBON": [
+              184148,
+              184149,
+              184150
+            ],
+            "KC_APL": [
+              184151,
+              184152,
+              184153
+            ],
+            "APL_KC": [
+              184154,
+              184155,
+              184156
+            ]
+          }
+        },
+        {
+          "seed": 181143,
+          "train_seed": 182143,
+          "test_seed": 183143,
+          "edge_seeds": {
+            "KC_MBON": [
+              184157,
+              184158,
+              184159
+            ],
+            "DAN_KC": [
+              184160,
+              184161,
+              184162
+            ],
+            "DAN_MBON": [
+              184163,
+              184164,
+              184165
+            ],
+            "KC_APL": [
+              184166,
+              184167,
+              184168
+            ],
+            "APL_KC": [
+              184169,
+              184170,
+              184171
+            ]
+          }
+        },
+        {
+          "seed": 181144,
+          "train_seed": 182144,
+          "test_seed": 183144,
+          "edge_seeds": {
+            "KC_MBON": [
+              184172,
+              184173,
+              184174
+            ],
+            "DAN_KC": [
+              184175,
+              184176,
+              184177
+            ],
+            "DAN_MBON": [
+              184178,
+              184179,
+              184180
+            ],
+            "KC_APL": [
+              184181,
+              184182,
+              184183
+            ],
+            "APL_KC": [
+              184184,
+              184185,
+              184186
+            ]
+          }
+        }
+      ]
+    },
+    "confirmation": {
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "blocks": [
+        {
+          "seed": 191142,
+          "train_seed": 192142,
+          "test_seed": 193142,
+          "edge_seeds": {
+            "KC_MBON": [
+              194142,
+              194143,
+              194144
+            ],
+            "DAN_KC": [
+              194145,
+              194146,
+              194147
+            ],
+            "DAN_MBON": [
+              194148,
+              194149,
+              194150
+            ],
+            "KC_APL": [
+              194151,
+              194152,
+              194153
+            ],
+            "APL_KC": [
+              194154,
+              194155,
+              194156
+            ]
+          }
+        },
+        {
+          "seed": 191143,
+          "train_seed": 192143,
+          "test_seed": 193143,
+          "edge_seeds": {
+            "KC_MBON": [
+              194157,
+              194158,
+              194159
+            ],
+            "DAN_KC": [
+              194160,
+              194161,
+              194162
+            ],
+            "DAN_MBON": [
+              194163,
+              194164,
+              194165
+            ],
+            "KC_APL": [
+              194166,
+              194167,
+              194168
+            ],
+            "APL_KC": [
+              194169,
+              194170,
+              194171
+            ]
+          }
+        },
+        {
+          "seed": 191144,
+          "train_seed": 192144,
+          "test_seed": 193144,
+          "edge_seeds": {
+            "KC_MBON": [
+              194172,
+              194173,
+              194174
+            ],
+            "DAN_KC": [
+              194175,
+              194176,
+              194177
+            ],
+            "DAN_MBON": [
+              194178,
+              194179,
+              194180
+            ],
+            "KC_APL": [
+              194181,
+              194182,
+              194183
+            ],
+            "APL_KC": [
+              194184,
+              194185,
+              194186
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "primary_family": "DAN_MBON",
+  "relative_mass_tolerance": 0.005,
+  "numerical_guard": 1e-07,
+  "maximum_specificity_overlap": 0.8,
+  "mask_bank": "results/pathway_masks",
+  "solver_seconds": 60,
+  "draw_mip_gap": 0.001
+}
