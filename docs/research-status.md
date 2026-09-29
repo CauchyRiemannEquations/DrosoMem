@@ -12,7 +12,21 @@ The review covered README, docs, configurations, runners, dynamics/readout/data/
 evaluation modules, test coverage and archived result/checkpoint schemas.
 This is not a new execution of every historical experiment.
 
-## Latest — ACT IV-A bounded A/B/C/D comparison complete (2026-09-29)
+## Latest — ACT IV scalar reward/local eligibility complete (2026-09-29)
+
+[Results](local-reward-results.md):39 cases,78 primary decoder evaluations,
+39 independently exact local-training replays,78 trajectories,468 metric rows;
+229 tests pass,8 optional skips;19,587 prior result files unchanged. One local
+rate covariance rule receives scalar reward, no target-code vector or trained-head
+gradient. Fixed accuracy32.45/29.8333% versus frozen27.15/26.1333%, yoked25.85/24.2667%.
+Discovery fails the every-seed frequency-access gate; confirmation also contains
+negative paired effects and misses the5pp frozen mean gate. Neither full primary
+passes. Ridge frozen100/99.9333%, trained99.3/99.7333%; no representation improvement.
+Plastic changes are substantial (~0.70 relative L2), with effective rank decreasing;
+this is not a silent/no-update failure. Next one: local update/reward directional
+alignment diagnostic. No learning-rate tuning; biological ACT IV remains open.
+
+## Preceding — ACT IV-A bounded A/B/C/D comparison complete (2026-09-29)
 
 [Results](readout-dependency-results.md):117 cases,234 primary decoder evaluations,
 117 independent exact internal-training replays,234 final trajectories,1404 metric
@@ -23,8 +37,7 @@ improvement and original-graph superiority criteria fail (random/role ridge100%)
 This is internal recoding under an artificial vector teacher, not biological learning
 or increased memory capacity. KC→MBON could function as an internal trained readout.
 The retrospective common-lag analysis retains lags1–5 and observation sensitivity;
-it is not fresh confirmatory evidence. Next one proposal: scalar-reward/local-trace
-learning without target vectors. The broader biological ACT IV objective remains open.
+it is not fresh confirmatory evidence. That scalar-reward/local-trace proposal is now completed above. The broader biological ACT IV objective remains open.
 
 ## Preceding — Observation-location diagnostic complete (2026-09-29)
 
@@ -81,6 +94,7 @@ Its proposed observation-location diagnostic is now complete; see the latest res
 | Which predefined pathways matter beyond matched edge/weight removal? | Bounded III-D complete; primary and one secondary refit candidate confirm | DAN→MBON7.33/8.32pp and KC→MBON5.49/5.71pp; access versus storage unresolved, APL controls not identifiable. [Results](pathway-memory-results.md) |
 | Is DAN→MBON lesion impairment observation-dependent? | ACT IV-A entry diagnostic complete; scoped hypothesis passes | MBON loss7.88/7.27pp, non-input KC48 retain access; baseline/lag profiles differ. [Results](observation-location-results.md) |
 | Can internal teaching reduce dependence on a trained external head? | Bounded ACT IV-A comparison complete; artificial coding criterion passes | Fixed decoding improves to49.58/51.52%, ridge already near ceiling; no biological-learning or capacity claim. [Results](readout-dependency-results.md) |
+| Can scalar reward and local traces replace vector teaching? | Bounded ACT IV experiment complete; primary fails | Some gains, inconsistent confirmation; no increased memory capacity. [Results](local-reward-results.md) |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
 ## Preceding ACT III-C structural-controls closeout — 2026-09-29

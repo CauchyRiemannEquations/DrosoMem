@@ -7,12 +7,12 @@ information), and **learning** (experience modifies recurrent connections).
 
 ## Current position — 2026-09-29
 
-**ACT IV-A: current partial-model A/B/C/D comparison complete.**
-[Results](readout-dependency-results.md):117 cases and independent exact update,
-trajectory and decoder verification. Artificial internal teaching improves fixed
-code reading; learned ridge already reads lag2 almost perfectly. Biological
-learning and increased memory capacity are not established. Next one proposal:
-scalar reward with local eligibility, removing the explicit target-code vector.
+**ACT IV: first scalar-reward/local-eligibility experiment complete; primary failed.**
+[Results](local-reward-results.md):39 cases with exact independent local-update
+and trajectory verification. Fixed-code reading improves in some seeds but the
+predeclared full criteria fail in both cohorts. The bounded IV-A A/B/C/D comparison
+remains complete; biological internal learning remains open. Next one experiment:
+local-update versus reward-sensitivity directional alignment, without retuning.
 
 | Axis | Completed scope | Remaining scope |
 |---|---|---|
@@ -22,7 +22,7 @@ scalar reward with local eligibility, removing the explicit target-code vector.
 | ACT III-B | DAN/count/raw-bin and normalized-bin controls;weak/strong/random/betweenness/within-role/between-role panel | Whole-brain,detected biological modules,full dose curves remain untested extensions |
 | ACT III-C | Four controls including exact per-neuron incoming-weight and role/signed-degree preservation;169 cases | Whole-brain, uniform-ensemble mixing and autonomous-recall extensions |
 | ACT III-D | Five preregistered pathways, matched removal controls, sensitivity map and fresh confirmation;273 cases | Minimal/unique subnetwork, motifs, whole-brain localization and separation of storage from readout access |
-| ACT IV | Earlier negative biological/local-rule results; IV-A current A/B/C/D comparison and observation diagnostics completed | Useful internal learning without external decoder dependence |
+| ACT IV | Earlier negative biological/local-rule results; IV-A A/B/C/D, observation diagnostics and scalar/local39-case experiment completed | Useful internal learning without external decoder dependence |
 | ACT V | Scoped robustness curves exposed strong fragility | Broader perturbation/physiological validation, independent axis |
 
 현재 두 686-neuron 부분 모델의 **III-A/B/C/D의 제한된 연구 단락을 종료**했다.
@@ -109,6 +109,13 @@ The existing supervised delta rule is a computational control, not dopamine or
 strictly local reward learning. Fixed-code improvement shows internal recoding;
 near-ceiling ridge access does not establish additional memory capacity. Literal
 readout-free biology, whole-brain learning and stronger biological rules remain open.
+
+### First scalar-reward follow-up
+
+The target vector was removed in a separate preregistered local rate-covariance
+experiment with frozen and yoked rewards. Fixed-code primary and representation
+improvement fail; historical artificial-teacher success is not erased. This is
+neither physiological validation nor a general impossibility result for local rules.
 
 ## ACT V — Robustness (independent axis)
 

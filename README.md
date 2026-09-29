@@ -9,17 +9,17 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 
 ## Current research
 
-Latest: [ACT IV-A readout-dependency comparison](docs/readout-dependency-results.md).
-The bounded A/B/C/D comparison is complete:117 network/training cases across
-real,random and role-preserving graphs, with trained ridge and fixed-code decoding.
-On real graphs, artificial internal teaching raises fixed-code accuracy from
-21.92/27.83% to49.58/51.52% in discovery/confirmation. Ridge already reads lag2
-at99.93%, so increased memory capacity is not established. Random controls also
-reach100% with ridge; this endpoint has a ceiling and shows no original-wiring advantage.
+Latest: [scalar reward with local eligibility](docs/local-reward-results.md), an
+ACT IV follow-up to the completed [IV-A comparison](docs/readout-dependency-results.md).
+39 cases were independently replayed. Fixed-code accuracy is 32.45/29.83% with
+contingent reward versus 27.15/26.13% without learning in discovery/confirmation.
+Some seeds improve, but neither cohort passes the full preregistered primary.
+Frozen trained-ridge decoding already reaches 100/99.93%; representation improvement
+is not established. The prior artificial vector-teacher success remains separate.
 
-This is supervised internal recoding with an artificial target, not biological
-learning. Next one proposed study: scalar reward and local eligibility without
-the target-code vector. Earlier negative findings and all raw artifacts remain.
+Next: one diagnostic of whether local updates point toward higher fixed-code reward,
+with weights frozen during measurement and norm-matched direction controls.
+No post-outcome learning-rate search. All previous failures and artifacts remain.
 
 Historical recall baselines freeze recurrent connectivity and train an external
 readout; the latest diagnostic additionally trains existing KC→MBON weights. Distinguish **representation**, **decoding** and **internal learning**.
@@ -33,8 +33,8 @@ Use Python3.12 and a clean environment; commands run from the repository root.
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-act1-lock.txt
 $env:PYTHONPATH = 'src'
-.\.venv\Scripts\python.exe scripts/readout_dependency.py --out outputs/readout_dependency_new
-.\.venv\Scripts\python.exe scripts/verify_readout_dependency.py outputs/readout_dependency_new --out outputs/readout_dependency_check_new
+.\.venv\Scripts\python.exe scripts/local_reward.py --out outputs/local_reward_new
+.\.venv\Scripts\python.exe scripts/verify_local_reward.py outputs/local_reward_new --out outputs/local_reward_check_new
 ```
 
 Use the committed source artifacts and fresh output directories. The runner verifies an archived baseline, executes the locked

@@ -1,21 +1,21 @@
 # Prioritized work — updated 2026-09-29
 
-**ACT IV-A bounded current-model A/B/C/D comparison complete.**
-[Results](readout-dependency-results.md):117 cases,234 primary decoder evaluations,
-independently exact final weights after all117 internal-training replays. Real
-artificial teaching raises fixed-code accuracy21.92/27.83% to49.58/51.52%; both
-cohorts pass the aligned-versus-frozen/shifted primary. Ridge already~99.93%:
-no additional memory capacity or original-wiring superiority is established.
-The prior common-delay analysis also completed, explicitly retrospective.
-Biological internal learning remains open; do not call the artificial teacher dopamine.
+**ACT IV scalar reward/local eligibility experiment complete; primary failed.**
+[Results](local-reward-results.md):39 cases independently replayed,229 tests pass,
+8 optional skips. Fixed-code accuracy32.45/29.83% versus frozen27.15/26.13%,
+yoked25.85/24.27%. Some gains, but the full preregistered gates fail; ridge remains
+near ceiling. All19,587 prior result files preserved. No tuning was performed.
 
-Next single proposed experiment: **replace the target-code vector with scalar
-correctness reward and one local pre/post eligibility rule**. Keep the fixed code
-and matched input/observation interface. Predeclare no-learning and yoked-reward
-controls, one learning rate and bounded updates. Test whether the same code
-function can arise without vector teaching. Do not relabel Phase5A's trained-head
-gradient feedback as local biology. Protocol and source review must precede new
-outcomes. This proposed experiment has not been executed. Preserve prior negatives.
+Next single proposed experiment: **local update/reward directional alignment**.
+At frozen initial weights, accumulate the SAME registered local rule's expected
+update on training inputs without applying it. Test symmetric, small, sign/mass-
+constrained perturbations along that direction versus norm-matched random
+signed directions using shared exploration streams and held-out inputs. Fix the
+perturbation size, sample budget, seeds and criteria before outcomes. Do not fit
+an external head or change the learning rule. The question is whether local credit
+assignment points toward higher fixed-code correctness, rather than simply whether
+weights can move. This is a proposed diagnostic, not executed, and not a new
+learning-rate search. Retain old vector-teacher positives and local-rule negatives.
 
 ## Historical handoff notes (superseded by the result above)
 

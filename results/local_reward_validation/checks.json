@@ -1,0 +1,20 @@
+{
+  "all_checks_pass": true,
+  "internal_training_replayed": 39,
+  "exact_final_weights": true,
+  "independent_trajectories": 78,
+  "metric_rows": 468,
+  "confirmed": {
+    "reward_coding": false,
+    "representation_improvement": false,
+    "frozen_representation_access": true
+  },
+  "prior_files_unchanged": 19587,
+  "result_manifest_sha256": "33c04aef89209acc8ca16e9c9e4ba7ac7f3eaf7218e2ebcfdc6468d541582f31",
+  "verifier_sha256": "497f69055a74dab16811afd851ac96780938bc7134122f286531a6c40b58ca31",
+  "budget": {
+    "seconds": 233.2933325999984,
+    "peak_sampled_rss_bytes": 173387776,
+    "sample_seconds": 0.05
+  }
+}

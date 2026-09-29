@@ -1,0 +1,12 @@
+{
+  "source_manifest_sha256": "33c04aef89209acc8ca16e9c9e4ba7ac7f3eaf7218e2ebcfdc6468d541582f31",
+  "source_commit": "487f485429ce1e1ef5f56e91a4be7c0c77add0dd",
+  "tests_command": "python -m pytest -q --junitxml=../local-reward-tests.xml",
+  "tests_passed": 229,
+  "tests_skipped": 8,
+  "tests_source_sha256": "fefe9f6cfd7407ff23aa6423d4d3244b6e936043234d6cd3be8b07fbcfd04a5f",
+  "artifacts": {
+    "checks.json": "bfa3ca532a2fe03f537f4a79e27a60e3eda8aadf0d2fbdc6fbae1a50da58e058",
+    "tests.xml": "61d1ed1128168eae1993a271c8a5e21cdd9184faace677d9a7a52a6f96e7b966"
+  }
+}

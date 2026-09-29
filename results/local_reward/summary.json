@@ -1,0 +1,338 @@
+{
+  "discovery": {
+    "cells": {
+      "real/contingent/fixed": {
+        "n": 3,
+        "mean": 0.32449999999999996,
+        "median": 0.3145,
+        "variance": 0.0023790000000000013,
+        "bootstrap95": [
+          0.2815,
+          0.3775
+        ],
+        "paired_dz": 6.652999336249616,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/contingent/ridge": {
+        "n": 3,
+        "mean": 0.993,
+        "median": 0.996,
+        "variance": 7.900000000000012e-05,
+        "bootstrap95": [
+          0.983,
+          1.0
+        ],
+        "paired_dz": 111.72122856195409,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/frozen/fixed": {
+        "n": 3,
+        "mean": 0.2715,
+        "median": 0.268,
+        "variance": 0.0001982499999999995,
+        "bootstrap95": [
+          0.2595,
+          0.287
+        ],
+        "paired_dz": 19.282495377802036,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/frozen/ridge": {
+        "n": 3,
+        "mean": 1.0,
+        "median": 1.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          1.0,
+          1.0
+        ],
+        "paired_dz": null,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/yoked/fixed": {
+        "n": 3,
+        "mean": 0.2585,
+        "median": 0.2555,
+        "variance": 0.00020275000000000037,
+        "bootstrap95": [
+          0.246,
+          0.274
+        ],
+        "paired_dz": 18.1543254196531,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/yoked/ridge": {
+        "n": 3,
+        "mean": 0.9998333333333335,
+        "median": 1.0,
+        "variance": 8.333333333331497e-08,
+        "bootstrap95": [
+          0.9994999999999999,
+          1.0
+        ],
+        "paired_dz": 3463.524264868947,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "access": {
+      "real/contingent/fixed": false,
+      "real/contingent/ridge": true,
+      "real/frozen/fixed": false,
+      "real/frozen/ridge": true,
+      "real/yoked/fixed": false,
+      "real/yoked/ridge": true
+    },
+    "contrasts": {
+      "fixed_vs_frozen": {
+        "n": 3,
+        "mean": 0.05299999999999999,
+        "median": 0.046499999999999986,
+        "variance": 0.0012047500000000025,
+        "bootstrap95": [
+          0.021999999999999964,
+          0.09050000000000002
+        ],
+        "paired_dz": 1.5269590915390827,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "fixed_vs_yoked": {
+        "n": 3,
+        "mean": 0.06599999999999999,
+        "median": 0.059,
+        "variance": 0.0011927500000000002,
+        "bootstrap95": [
+          0.035499999999999976,
+          0.10349999999999998
+        ],
+        "paired_dz": 1.91103756025273,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "ridge_vs_frozen": {
+        "n": 3,
+        "mean": -0.007000000000000006,
+        "median": -0.0040000000000000036,
+        "variance": 7.900000000000012e-05,
+        "bootstrap95": [
+          -0.017000000000000015,
+          0.0
+        ],
+        "paired_dz": -0.7875615306482169,
+        "wins": 0,
+        "ties": 1,
+        "losses": 2
+      },
+      "ridge_vs_yoked": {
+        "n": 3,
+        "mean": -0.006833333333333358,
+        "median": -0.0035000000000000586,
+        "variance": 8.05833333333333e-05,
+        "bootstrap95": [
+          -0.017000000000000015,
+          0.0
+        ],
+        "paired_dz": -0.7612196530703986,
+        "wins": 0,
+        "ties": 1,
+        "losses": 2
+      }
+    },
+    "gates": {
+      "fixed_vs_frozen": true,
+      "fixed_vs_yoked": true,
+      "ridge_vs_frozen": false,
+      "ridge_vs_yoked": false
+    },
+    "endpoints": {
+      "reward_coding": false,
+      "representation_improvement": false,
+      "frozen_representation_access": true
+    }
+  },
+  "confirmation": {
+    "cells": {
+      "real/contingent/fixed": {
+        "n": 3,
+        "mean": 0.29833333333333334,
+        "median": 0.3235,
+        "variance": 0.002015583333333334,
+        "bootstrap95": [
+          0.24650000000000002,
+          0.325
+        ],
+        "paired_dz": 6.645098170457319,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/contingent/ridge": {
+        "n": 3,
+        "mean": 0.9973333333333333,
+        "median": 0.9984999999999999,
+        "variance": 1.1583333333333077e-05,
+        "bootstrap95": [
+          0.9935,
+          1.0
+        ],
+        "paired_dz": 293.03774075363924,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/frozen/fixed": {
+        "n": 3,
+        "mean": 0.26133333333333336,
+        "median": 0.2575,
+        "variance": 0.00018658333333333282,
+        "bootstrap95": [
+          0.25,
+          0.27649999999999997
+        ],
+        "paired_dz": 19.131912422683584,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/frozen/ridge": {
+        "n": 3,
+        "mean": 0.9993333333333334,
+        "median": 0.9995,
+        "variance": 5.833333333333897e-07,
+        "bootstrap95": [
+          0.9984999999999999,
+          1.0
+        ],
+        "paired_dz": 1308.434469854947,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/yoked/fixed": {
+        "n": 3,
+        "mean": 0.24266666666666667,
+        "median": 0.2475,
+        "variance": 0.003955083333333333,
+        "bootstrap95": [
+          0.1775,
+          0.303
+        ],
+        "paired_dz": 3.8586226151836076,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/yoked/ridge": {
+        "n": 3,
+        "mean": 0.9996666666666667,
+        "median": 1.0,
+        "variance": 3.33333333333334e-07,
+        "bootstrap95": [
+          0.999,
+          1.0
+        ],
+        "paired_dz": 1731.473457299686,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "access": {
+      "real/contingent/fixed": false,
+      "real/contingent/ridge": true,
+      "real/frozen/fixed": false,
+      "real/frozen/ridge": true,
+      "real/yoked/fixed": false,
+      "real/yoked/ridge": true
+    },
+    "contrasts": {
+      "fixed_vs_frozen": {
+        "n": 3,
+        "mean": 0.03700000000000001,
+        "median": 0.066,
+        "variance": 0.003386999999999998,
+        "bootstrap95": [
+          -0.02999999999999997,
+          0.07500000000000001
+        ],
+        "paired_dz": 0.635761355178275,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      },
+      "fixed_vs_yoked": {
+        "n": 3,
+        "mean": 0.05566666666666668,
+        "median": 0.07750000000000001,
+        "variance": 0.010609083333333333,
+        "bootstrap95": [
+          -0.056499999999999995,
+          0.14600000000000002
+        ],
+        "paired_dz": 0.5404509518259242,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      },
+      "ridge_vs_frozen": {
+        "n": 3,
+        "mean": -0.0020000000000000018,
+        "median": -0.001000000000000112,
+        "variance": 1.6749999999999865e-05,
+        "bootstrap95": [
+          -0.00649999999999995,
+          0.0015000000000000568
+        ],
+        "paired_dz": -0.48867777742522334,
+        "wins": 1,
+        "ties": 0,
+        "losses": 2
+      },
+      "ridge_vs_yoked": {
+        "n": 3,
+        "mean": -0.0023333333333333353,
+        "median": -0.000500000000000056,
+        "variance": 1.3083333333333026e-05,
+        "bootstrap95": [
+          -0.00649999999999995,
+          0.0
+        ],
+        "paired_dz": -0.645085948617736,
+        "wins": 0,
+        "ties": 1,
+        "losses": 2
+      }
+    },
+    "gates": {
+      "fixed_vs_frozen": false,
+      "fixed_vs_yoked": false,
+      "ridge_vs_frozen": false,
+      "ridge_vs_yoked": false
+    },
+    "endpoints": {
+      "reward_coding": false,
+      "representation_improvement": false,
+      "frozen_representation_access": true
+    }
+  },
+  "confirmed": {
+    "reward_coding": false,
+    "representation_improvement": false,
+    "frozen_representation_access": true
+  },
+  "cohorts_pooled": false
+}
