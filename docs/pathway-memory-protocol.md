@@ -100,3 +100,13 @@ outcomes. Stop after complete273-case panel, fresh confirmation, independent aud
 report and artifacts. No automatic extra sweep or ACT IV. If no eligible refit
 candidate confirms, explicitly report that no disproportionate critical pathway
 was identified by this bounded design; do not nominate the best seed or frozen hit.
+
+## Pre-outcome engineering amendment
+
+Initial graph-bank serialization rejected a NumPy boolean before any control
+draw or neural task outcome. The first repair helper lacked PYTHONPATH and did
+not apply its edit; the shell continued and reproduced the same failure at v2.
+Preserve results/pathway_masks and results/pathway_masks_v2, each with minimum
+masks and failure.json. Cast eligibility to built-in bool; verify the edit, then
+use fresh results/pathway_masks_v3. This path-only config revision changes no
+seeds, matching constraints, eligibility threshold, hypotheses or analysis.

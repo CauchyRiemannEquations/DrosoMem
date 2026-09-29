@@ -65,7 +65,7 @@ def build(config,out):
                 target=target_mask(raw,roles,family);A,lo,hi=constraints(raw,target,c)
                 mask,log=solve(A,lo,hi,target.astype(float),c,0);k=int((mask&target).sum())
                 assert abs(log['objective']-k)<1e-5 and log['dual_bound']>k-1+1e-6
-                minimum[str(ci)][family]=dict(**audit_mask(raw,target,mask,c,k),solver=log,eligible=k/target.sum()<=c['maximum_specificity_overlap'])
+                minimum[str(ci)][family]=dict(**audit_mask(raw,target,mask,c,k),solver=log,eligible=bool(k/target.sum()<=c['maximum_specificity_overlap']))
                 minmasks[f'c{ci}_{family}']=mask
         np.savez_compressed(out/'minimum-masks.npz',**minmasks);core.write_json(out/'minimum-overlap.json',minimum)
         for cohort,settings in c['cohorts'].items():
