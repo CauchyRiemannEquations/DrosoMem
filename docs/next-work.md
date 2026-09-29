@@ -1,19 +1,20 @@
 # Prioritized work — updated 2026-09-29
 
-**ACT III-A frozen/refit KC lesion comparison complete.**
-[Results](kc-frozen-results.md): full KCγ26.250% frozen versus79.219% refit,
-matched26.377% versus77.156%. Primary refit-benefit gate passes all3blocks.
-All4 groups fail frozen access/retention; full and subset specificity fail.
-70transfers/score replays,7source baselines,770metric rows independently checked;
-200tests pass,8optional skips;8,222prior result files unchanged.
-No new reservoir trajectories/target fits. Same cohort, not independent confirmation.
+**ACT III-A independent seeded frozen/refit confirmation complete.**
+[Results](kc-confirmation-results.md): KCγ26.047% frozen/79.367% refit,
+matched26.962%/77.323%. Primary H1 confirms in all3fresh blocks under fixed5pp
+criterion; cohorts separate. Frozen access/retention and KCγ specificity fail.
+Frozen specificity+0.915pp in all3blocks remains below5pp; do not call it zero.
+35new conditions/full replays,28transfers,693metric rows independently checked;
+202tests pass,8optional skips;8,446prior result files unchanged.
+New input/mapping/mask seeds, SAME biological graphs701/702.
 
-Next single proposed experiment: **a fresh3-block paired cohort confirming the
-full KCγ/matched frozen-versus-refit contrast**. Keep fixed dynamics/readout,
-intact/KCγ/3matched masks and5pp primary criterion. Preregister new mapping,
-train/test/matching seeds and check collisions before outcomes. Analyze separately;
-do not pool previously observed blocks or call existing circuits new biological
-samples. Proposed, not run. No ACT IV expansion or tuning.
+Next single proposed experiment: **input-only silencing on the same KCγ/matched
+masks, keeping all recurrent edges**, versus saved full neuron lesions.
+This isolates the additional effect of removing recurrent edges conditional on
+removed direct input. Keep fixed weights/observation/readout and distinguish
+frozen from refit. Preregister endpoints before outcomes. Proposed, not run.
+No ACT IV expansion or tuning; broad population/edge localization remains open.
 
 ## Historical handoff notes (superseded by the result above)
 

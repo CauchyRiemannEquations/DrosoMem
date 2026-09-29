@@ -63,8 +63,9 @@ trained-prefix 기준을 통과했지만 전체망 우위는 확인되지 않았
 모두 실패했다. 후속 [새 seed 정렬 확인](fresh-alignment-results.md)은 양방향 개선을
 재현했지만 접근성·유지 기준은 실패했다. 후속 [KCγ 제거 및 비중복 대조](kc-ablation-results.md)는
 두 refit 비교 모두 집단 특이적 손상 기준을 통과하지 못했다. 후속 [고정 출력층 비교](kc-frozen-results.md)는
-큰 재학습 이득을 확인했지만 고정 전이·KCγ 특이성은 실패했다. 다음 한 제안은
-새 paired seed cohort에서 같은 전체 집단 frozen/refit 비교를 확인하는 것이다.
+큰 재학습 이득을 확인했지만 고정 전이·KCγ 특이성은 실패했다. 후속 [새 seed 확인](kc-confirmation-results.md)은
+재학습 이득을 재현했다. 다음 한 제안은 직접 입력만 차단하고 recurrent 연결을
+남긴 대조를 전체 뉴런 제거와 비교해 추가 연결 제거의 효과를 구분하는 것이다.
 추가 gain 탐색이나 ACT IV 확장은 하지 않는다.
 ACT I→II→III→IV 순서를 지키며 강건성은 ACT V의 독립 축으로 유지한다.
 [로드맵](research-roadmap.md).

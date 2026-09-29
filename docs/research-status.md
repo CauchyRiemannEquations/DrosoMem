@@ -36,10 +36,21 @@ This is not a new execution of every historical experiment.
 | Can finite-context distinctiveness help explain the K curve? | ACT II diagnostic completed; both scoped endpoints pass | 120 context tables on20 unique tasks; order2 ambiguity K16−K2=−0.2272; order3 prefix +59.0; all independently checked. Context5 completes K10/K16. A task-level explanation candidate, not neural causality; [results](context-memory-results.md) |
 | Does a fixed-K low/high context-conflict intervention change recall? | Completed within registered cohort scope | Main40 fits; confirmed graphs: none. [Results](context-intervention-results.md). Matched unigram counts and interface; ordering covariates remain |
 | Are past symbols accessible on held-out positions and portable across paired orderings? | Two ACT II diagnostics completed | All four blocked graph/arm and transfer graph/direction cells pass past-access criteria in both cohorts; no confirmed next-symbol benefit. Frozen-head transfer within5pp tolerance; [blocked](frozen-state-probe-results.md), [transfer](cross-arm-probe-results.md) |
-| Memory-critical subnetwork? | Scoped KCγ refit, disjoint and frozen-head lesions completed | No population specificity established; broader matched group/edge mapping and circuit localization remain open. [Latest results](kc-frozen-results.md) |
+| Memory-critical subnetwork? | Scoped KCγ refit, disjoint and frozen-head lesions completed | No population specificity established; broader matched group/edge mapping and circuit localization remain open. [Latest results](kc-confirmation-results.md) |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
-## Latest ACT III-A frozen/refit lesions — 2026-09-29
+## Latest ACT III-A fresh-seed KC confirmation — 2026-09-29
+
+[Fresh cohort](kc-confirmation-results.md): KCγ26.047% frozen/79.367% refit,
+matched26.962%/77.323%. Primary refit benefit confirms across new3blocks without
+pooling discovery. Frozen access/retention and5pp specificity fail again.
+Frozen specificity+0.915pp,all3positive,is not evidence of equivalence or zero.
+35new condition replays,28frozen transfers,693metric rows checked;202tests pass,
+8optional skips;8,446prior result files unchanged. Same biological circuit strata.
+Next: input-only silencing versus full lesions to separate the added recurrent
+edge-removal effect. Useful internal plasticity and circuit localization remain open.
+
+## Preceding ACT III-A frozen/refit lesions — 2026-09-29
 
 [Frozen intact-head comparison](kc-frozen-results.md): full KCγ26.250% frozen
 versus79.219% refit; matched26.377%/77.156%. Primary refit-benefit criterion passes
@@ -48,7 +59,7 @@ All4 groups fail frozen access and5pp retention. Frozen KCγ-specific impairment
 fails both full and subset criteria. Decoder mismatch is not information loss.
 70transfers/score replays,7source baselines,770metric rows independently checked;
 200tests pass,8optional skips;8,222prior result files unchanged.
-Same cohort, no new target fits/trajectories. Next: fresh paired-seed confirmation.
+This was the same cohort with no new target fits/trajectories; fresh confirmation is now reported above.
 
 ## Preceding ACT III-A KCγ lesions — 2026-09-29
 

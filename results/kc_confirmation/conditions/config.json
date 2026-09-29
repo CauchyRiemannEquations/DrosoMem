@@ -1,0 +1,109 @@
+{
+  "protocol": "docs/kc-confirmation-protocol.md",
+  "conditions": [
+    "intact",
+    "gamma",
+    "matched0",
+    "matched1",
+    "matched2"
+  ],
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "alphabet_size": 4,
+  "warmup": 100,
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "alpha": 1.0,
+  "swaps_per_edge": 5,
+  "normalization": "incoming_l1",
+  "schedule": "mbon_after_kc",
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "activity_epsilon": 1e-08,
+  "decay_steps": 32,
+  "bootstrap_seed": 74399,
+  "bootstrap_draws": 10000,
+  "max_seconds": 1800,
+  "max_rss_bytes": 3221225472,
+  "blocks": [
+    {
+      "seed": 71142,
+      "train_seed": 72142,
+      "test_seed": 73142,
+      "match_seeds": [
+        74142,
+        74143,
+        74144
+      ]
+    },
+    {
+      "seed": 71143,
+      "train_seed": 72143,
+      "test_seed": 73143,
+      "match_seeds": [
+        74145,
+        74146,
+        74147
+      ]
+    },
+    {
+      "seed": 71144,
+      "train_seed": 72144,
+      "test_seed": 73144,
+      "match_seeds": [
+        74148,
+        74149,
+        74150
+      ]
+    }
+  ],
+  "smoke": {
+    "circuit_seeds": [
+      701
+    ],
+    "train_samples": 200,
+    "test_samples": 100,
+    "blocks": [
+      {
+        "seed": 71001,
+        "train_seed": 72001,
+        "test_seed": 73001,
+        "match_seeds": [
+          74001,
+          74002,
+          74003
+        ]
+      }
+    ]
+  },
+  "material_effect": 0.05,
+  "access_margin": 0.05,
+  "retention_tolerance": 0.05,
+  "discovery": "results/kc_frozen",
+  "discovery_manifest_sha256": "48a1024cd9295957b3742bc22e58f422255d5029cd356f4919f543fdd2fa6976"
+}
