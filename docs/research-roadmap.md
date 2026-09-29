@@ -7,21 +7,21 @@ information), and **learning** (experience modifies recurrent connections).
 
 ## Current position — 2026-09-29
 
-**ACT III-A first KCγ population-lesion and disjoint-control studies complete.**
-[Results](kc-ablation-results.md) fail both population-specific impairment gates.
-Next: frozen intact-head lesion decoding versus existing condition-specific refits.
+**ACT III-A frozen/refit KC lesion comparison complete.**
+[Results](kc-frozen-results.md) support a large refit benefit but fail frozen
+portability and population specificity. Next: fresh paired-seed confirmation.
 
 | Axis | Completed scope | Remaining scope |
 |---|---|---|
 | ACT I | Matched partial/expanded/whole graphs, thresholds5/1; no established whole-brain recall advantage | Broader tasks or dynamics would require separate protocols |
 | ACT II | Four-family pilot, random N32–512 scaling, prefix-weight tradeoff, independent-stream delay diagnostic, N128 K2/4/10/16 comparison,120 finite-context controls, fixed-K intervention and both state-decoding diagnostics | Additional families and a full length-by-K design remain open |
-| ACT III | Structure/normalization, transfer, alignment, residual diagnostics, fresh-seed confirmation, KCγ refit lesions and disjoint controls | Frozen-head lesions, broader group/edge controls, critical-subnetwork analysis |
+| ACT III | Structure/normalization, transfer, alignment, residual diagnostics, fresh-seed confirmation, KCγ refit/disjoint/frozen-head lesions | Fresh cohort confirmation, broader group/edge controls, critical-subnetwork analysis |
 | ACT IV | Earlier local-rule implementation with negative functional results | Useful internal learning without external decoder dependence |
 | ACT V | Scoped robustness curves exposed strong fragility | Broader perturbation/physiological validation, kept separate from clean benchmarks |
 
-현재는 **ACT III-A 첫 KCγ 집단 제거와 비중복 대조까지 완료**했다.
-조건별 출력층을 다시 학습하면 KCγ 특이적5%p 성능 저하는 지지되지 않았다.
-다음은 같은 제거 상태에서 기존 출력층을 고정 적용하는 별도 비교다.
+현재는 **ACT III-A 고정 출력층/재학습 제거 비교까지 완료**했다.
+재학습의 큰 이득은 사전 기준을 통과했지만 KCγ 특이성은 지지되지 않았다.
+다음은 같은 설계의 새로운 paired seed cohort 확인이다.
 광범위한 제거 연구와 기억 중요 부분망 식별, ACT IV 내부 학습은 남아 있다.
 
 ## ACT I — Can a Fly Brain Remember?
@@ -53,7 +53,7 @@ K2 toK16, so the registered load-drop endpoint fails. The subsequent
 [finite-context diagnostic](context-memory-results.md) is complete:120 controls
 on20 unique tasks, with both registered endpoints passing. Context distinctiveness
 is a supported explanation candidate, not an identified neural cause. Next is one
-[fixed-K intervention](context-intervention-results.md), now complete. Confirmed graphs: none. The selected [blocked-state diagnostic](frozen-state-probe-results.md), [cross-arm transfer](cross-arm-probe-results.md) and subsequent [K4 structural control](structural-k4-results.md) are complete. The latter finds no real-wiring advantage; the subsequent normalization control is also complete with failed material-effect confirmation. Frozen-head transfer and train-only moment alignment are complete; the residual mode/orientation diagnostics are also complete, and fresh-seed alignment confirmation is complete with replicated improvement but failed portability; KCγ refit ablation and a disjoint follow-up are complete without specificity support. Frozen-head lesion decoding is proposed next.
+[fixed-K intervention](context-intervention-results.md), now complete. Confirmed graphs: none. The selected [blocked-state diagnostic](frozen-state-probe-results.md), [cross-arm transfer](cross-arm-probe-results.md) and subsequent [K4 structural control](structural-k4-results.md) are complete. The latter finds no real-wiring advantage; the subsequent normalization control is also complete with failed material-effect confirmation. Frozen-head transfer and train-only moment alignment are complete; the residual mode/orientation diagnostics are also complete, and fresh-seed alignment confirmation is complete with replicated improvement but failed portability; KCγ refit ablation and a disjoint follow-up are complete without specificity support. Frozen-head lesion decoding is complete with a large refit benefit but no specificity; fresh paired-seed confirmation is proposed next.
 Full length-by-alphabet scaling and additional families remain open. The paragraph
 below describes the staged scope, not an assertion that all stages are complete.
 

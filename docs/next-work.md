@@ -1,18 +1,19 @@
 # Prioritized work — updated 2026-09-29
 
-**ACT III-A KCγ refit lesions and disjoint matched follow-up complete.**
-[Results](kc-ablation-results.md): whole-population extra impairment−2.064pp;
-disjoint subset extra impairment+0.115pp,1positive/2negative blocks.
-Both registered5pp specificity gates fail.77conditions/full replays,726main lag
-rows,847including smoke independently audited;198tests pass,8optional skips.
-Subset follow-up reused the SAME cohort; it is not independent confirmation.
+**ACT III-A frozen/refit KC lesion comparison complete.**
+[Results](kc-frozen-results.md): full KCγ26.250% frozen versus79.219% refit,
+matched26.377% versus77.156%. Primary refit-benefit gate passes all3blocks.
+All4 groups fail frozen access/retention; full and subset specificity fail.
+70transfers/score replays,7source baselines,770metric rows independently checked;
+200tests pass,8optional skips;8,222prior result files unchanged.
+No new reservoir trajectories/target fits. Same cohort, not independent confirmation.
 
-Next single proposed experiment: **frozen intact-head decoding on the same KCγ
-lesion states versus the already available refit results**. Freeze source mean,
-scale and coefficients; preserve paired masks/streams and all controls. Register
-endpoint and criteria before calculating frozen-head performance. This separates
-decoder reuse from remaining refittable information. Proposed, not run.
-No gain search or ACT IV expansion. Broader critical-subnetwork work remains open.
+Next single proposed experiment: **a fresh3-block paired cohort confirming the
+full KCγ/matched frozen-versus-refit contrast**. Keep fixed dynamics/readout,
+intact/KCγ/3matched masks and5pp primary criterion. Preregister new mapping,
+train/test/matching seeds and check collisions before outcomes. Analyze separately;
+do not pool previously observed blocks or call existing circuits new biological
+samples. Proposed, not run. No ACT IV expansion or tuning.
 
 ## Historical handoff notes (superseded by the result above)
 
