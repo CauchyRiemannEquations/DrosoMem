@@ -7,12 +7,11 @@ information), and **learning** (experience modifies recurrent connections).
 
 ## Current position — 2026-09-29
 
-**ACT III-B current-model edge panel complete.**
-[Results](edge-panel-results.md):221 edge-panel cases plus65 prospective
-effective-strength controls, all independently verified. The stricter DAN refit
-contrast fails the5pp criterion despite small consistent positive differences.
-Next one study: role/degree and per-postsynaptic incoming-weight-preserving
-rewiring (III-C). No new plasticity study.
+**ACT III-C current-model structural controls complete.**
+[Results](structural-controls-results.md):169 conditions with all graph invariants,
+independent trajectories and statistics checked. The primary intact advantage
+fails; role-preserving controls decode slightly better after refitting.
+Next one study: a role-pathway ablation sensitivity map (III-D).
 
 | Axis | Completed scope | Remaining scope |
 |---|---|---|
@@ -20,13 +19,14 @@ rewiring (III-C). No new plasticity study.
 | ACT II | Four-family pilot,length/alphabet scopes,context and delayed-state diagnostics | Additional families and full length-by-K design |
 | ACT III-A | Current partial-model population panel,input controls,frozen/refit and fresh confirmation | Whole-brain/downstream and autonomous-recall localization |
 | ACT III-B | DAN/count/raw-bin and normalized-bin controls;weak/strong/random/betweenness/within-role/between-role panel | Whole-brain,detected biological modules,full dose curves remain untested extensions |
-| ACT III-C/D | Earlier scoped topology controls available | New normalization-controlled structural comparisons and critical-subnetwork mechanisms |
+| ACT III-C | Four controls including exact per-neuron incoming-weight and role/signed-degree preservation;169 cases | Whole-brain, uniform-ensemble mixing and autonomous-recall extensions |
+| ACT III-D | Prior population/edge sensitivity evidence available | Pathway sensitivity map and independently confirmed critical-subnetwork mechanisms |
 | ACT IV | Earlier local-rule implementation with negative functional results | Useful internal learning without external decoder dependence |
 | ACT V | Scoped robustness curves exposed strong fragility | Broader perturbation/physiological validation, independent axis |
 
-현재 두686-neuron 부분 모델의 **III-A와 III-B 연구 단락을 종료**했다.
+현재 두 686-neuron 부분 모델의 **III-A/B/C 연구 단락을 종료**했다.
 완료는 고정한 실험·검증을 끝냈다는 뜻이다. 전체 뇌의 기억 위치나 내부 학습을
-규명했다는 뜻은 아니다. 다음은 정규화와 입력·관측 조건을 보존한 구조 대조다.
+규명했다는 뜻은 아니다. 다음은 III-D의 역할별 경로 민감도 지도다.
 
 ## ACT I — Can a Fly Brain Remember?
 
@@ -76,7 +76,7 @@ statistical-prediction controls because predictability can mimic memory.
 
 ## ACT III — Where does the model store useful information?
 
-The bounded current-model neuron and edge panels are now executed: see [III-A](neuron-panel-results.md) and [III-B completion scope](edge-panel-results.md). Downstream populations absent from the partial
+The bounded current-model neuron, edge and structural-control panels are now executed: see [III-A](neuron-panel-results.md) [III-B completion scope](edge-panel-results.md) and [III-C](structural-controls-results.md). Downstream populations absent from the partial
 graphs and whole-brain localization remain untested. The broader blueprint follows.
 
 Test annotated KC/MBON/DAN/APL and downstream groups, hubs and matched random

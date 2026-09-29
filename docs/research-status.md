@@ -37,9 +37,28 @@ This is not a new execution of every historical experiment.
 | Does a fixed-K low/high context-conflict intervention change recall? | Completed within registered cohort scope | Main40 fits; confirmed graphs: none. [Results](context-intervention-results.md). Matched unigram counts and interface; ordering covariates remain |
 | Are past symbols accessible on held-out positions and portable across paired orderings? | Two ACT II diagnostics completed | All four blocked graph/arm and transfer graph/direction cells pass past-access criteria in both cohorts; no confirmed next-symbol benefit. Frozen-head transfer within5pp tolerance; [blocked](frozen-state-probe-results.md), [transfer](cross-arm-probe-results.md) |
 | Which populations/edges affect decoding in the current model? | Bounded III-A and III-B panels complete | DAN refit sensitivity passes count/raw-bin controls but not the later effective-strength5pp criterion; APL frozen sensitivity remains scoped. Whole-brain/downstream localization open. [Latest results](edge-panel-results.md) |
+| Does original wiring outperform incoming-strength-preserving structural controls? | Current-model III-C complete; primary fails | Role control refit exceeds intact by1.33/1.12pp; all frozen controls show transfer loss. [Results](structural-controls-results.md) |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
-## Latest ACT III-B edge-ablation closeout — 2026-09-29
+## Latest ACT III-C structural-controls closeout — 2026-09-29
+
+[Report](structural-controls-results.md):169 exact fits/replays,156 frozen
+checks,338 independently reconstructed train/test trajectories,3575 metric rows.
+218 tests pass,8 optional skips. Four families: random, signed degree with
+incoming-weight preservation, role-constrained degree with incoming weights,
+and fixed-adjacency weight permutation. Three draws per family inside each of
+three paired computational blocks per cohort; two existing partial graphs.
+Primary intact-minus-role refit difference −1.3278/−1.1185pp; all6 seed blocks
+favor the control. No refit family passes the fixed5pp intact-advantage criterion.
+Degree-only contrasts4.6843/4.6676pp also fall short. Frozen contrasts all pass
+as decoder-transfer sensitivity, not unique intact memory information.
+Role edge overlap49.08–50.94%; outgoing strengths are not preserved. Finite
+swaps are not claimed to be a uniform graph ensemble. A preflight-only unused
+source line-ending assertion was preserved and repaired before new outcomes.
+Current-model III-C is complete; next one proposal is a role-pathway ablation
+sensitivity map (III-D), before any internal-learning expansion.
+
+## Preceding ACT III-B edge-ablation closeout — 2026-09-29
 
 [Report](edge-panel-results.md): original edge panel221 conditions plus a separate
 prospectively registered effective-strength follow-up65;286 exact replays/refits,
@@ -54,8 +73,8 @@ claim that normalization alone explains the effect change. Other5%-edge families
 fail material-effect confirmation. A between/betweenness aggregation collision
 was caught independently; original raw artifacts/failure preserved and analysis_v2
 fully revalidated. Original derived between aggregates/plots are superseded.
-Current-model III-B scope complete; next one study is a role/degree and per-postsynaptic
-incoming-weight-preserving rewired graph control (III-C). No internal learning claim.
+Current-model III-B scope complete. Its proposed III-C study is now completed
+above. No internal learning claim.
 
 ## Preceding ACT III-A current-model population closeout — 2026-09-29
 

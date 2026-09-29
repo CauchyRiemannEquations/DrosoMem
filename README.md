@@ -9,16 +9,16 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 
 ## Current research
 
-Latest: [ACT III-B edge-ablation closeout](docs/edge-panel-results.md).
-The raw-weight-bin control replicated a DAN-associated refit loss of about7pp.
-A separately preregistered effective-normalized-weight control on fresh cohorts
-found2.59/1.77pp, below the fixed5pp criterion. Greater target/control overlap
-and changed cohorts limit attributing this difference to normalization alone.
+Latest: [ACT III-C structural controls](docs/structural-controls-results.md).
+With signed degrees, role connectivity and each postsynaptic incoming-weight
+multiset preserved, rewired controls exceed intact refit accuracy by1.33/1.12pp
+in discovery/confirmation. The preregistered5pp intact-advantage criterion fails.
+Frozen decoders fall to about25%, while refitting recovers73–81% across controls.
 
-Current position: ACT III-B current-model panel complete:286 conditions with
-frozen/refit separation and independent verification. Whole-brain,full dose curves
-and autonomous-recall localization remain untested. Next: one role/degree and
-postsynaptic incoming-weight-preserving rewired control (ACT III-C).
+Current position: III-A/B/C complete within the two partial-model diagnostic
+scopes. III-C adds169 fits/replays and156 frozen evaluations with independent
+verification. Next: one role-pathway ablation sensitivity map (III-D).
+Whole-brain localization and autonomous-recall mechanisms remain untested.
 
 The established models freeze recurrent connectivity and train an external
 readout. Distinguish **representation**, **decoding** and **internal learning**.
@@ -32,8 +32,8 @@ Use Python3.12 and a clean environment; commands run from the repository root.
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-act1-lock.txt
 $env:PYTHONPATH = 'src'
-.\.venv\Scripts\python.exe scripts/edge_strength.py --out outputs/edge_strength_new
-.\.venv\Scripts\python.exe scripts/verify_edge_strength.py outputs/edge_strength_new --out outputs/edge_strength_check_new
+.\.venv\Scripts\python.exe scripts/run_structural_controls.py --out outputs/structural_controls_new
+.\.venv\Scripts\python.exe scripts/verify_structural_controls.py outputs/structural_controls_new --out outputs/structural_controls_check_new
 ```
 
 Use fresh directories. The runner verifies an archived baseline, executes the locked

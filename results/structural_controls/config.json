@@ -1,0 +1,276 @@
+{
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "alphabet_size": 4,
+  "warmup": 100,
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "alpha": 1.0,
+  "swaps_per_edge": 10,
+  "normalization": "incoming_l1",
+  "schedule": "mbon_after_kc",
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "activity_epsilon": 1e-08,
+  "decay_steps": 32,
+  "bootstrap_draws": 10000,
+  "max_seconds": 3600,
+  "max_rss_bytes": 3221225472,
+  "material_effect": 0.05,
+  "access_margin": 0.05,
+  "protocol": "docs/structural-controls-protocol.md",
+  "bootstrap_seed": 174399,
+  "families": [
+    "random",
+    "degree",
+    "role",
+    "weight"
+  ],
+  "source": "results/edge_strength",
+  "source_manifest_sha256": "cab70c85ab70cf53427d09b81626ec2068fdd646763ece6d7497fc0091d79061",
+  "cohorts": {
+    "smoke": {
+      "circuit_seeds": [
+        701
+      ],
+      "train_samples": 200,
+      "test_samples": 100,
+      "blocks": [
+        {
+          "seed": 161001,
+          "train_seed": 162001,
+          "test_seed": 163001,
+          "graph_seeds": {
+            "random": [
+              164001,
+              164002,
+              164003
+            ],
+            "degree": [
+              164004,
+              164005,
+              164006
+            ],
+            "role": [
+              164007,
+              164008,
+              164009
+            ],
+            "weight": [
+              164010,
+              164011,
+              164012
+            ]
+          }
+        }
+      ]
+    },
+    "discovery": {
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "blocks": [
+        {
+          "seed": 161142,
+          "train_seed": 162142,
+          "test_seed": 163142,
+          "graph_seeds": {
+            "random": [
+              164142,
+              164143,
+              164144
+            ],
+            "degree": [
+              164145,
+              164146,
+              164147
+            ],
+            "role": [
+              164148,
+              164149,
+              164150
+            ],
+            "weight": [
+              164151,
+              164152,
+              164153
+            ]
+          }
+        },
+        {
+          "seed": 161143,
+          "train_seed": 162143,
+          "test_seed": 163143,
+          "graph_seeds": {
+            "random": [
+              164154,
+              164155,
+              164156
+            ],
+            "degree": [
+              164157,
+              164158,
+              164159
+            ],
+            "role": [
+              164160,
+              164161,
+              164162
+            ],
+            "weight": [
+              164163,
+              164164,
+              164165
+            ]
+          }
+        },
+        {
+          "seed": 161144,
+          "train_seed": 162144,
+          "test_seed": 163144,
+          "graph_seeds": {
+            "random": [
+              164166,
+              164167,
+              164168
+            ],
+            "degree": [
+              164169,
+              164170,
+              164171
+            ],
+            "role": [
+              164172,
+              164173,
+              164174
+            ],
+            "weight": [
+              164175,
+              164176,
+              164177
+            ]
+          }
+        }
+      ]
+    },
+    "confirmation": {
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "blocks": [
+        {
+          "seed": 171142,
+          "train_seed": 172142,
+          "test_seed": 173142,
+          "graph_seeds": {
+            "random": [
+              174142,
+              174143,
+              174144
+            ],
+            "degree": [
+              174145,
+              174146,
+              174147
+            ],
+            "role": [
+              174148,
+              174149,
+              174150
+            ],
+            "weight": [
+              174151,
+              174152,
+              174153
+            ]
+          }
+        },
+        {
+          "seed": 171143,
+          "train_seed": 172143,
+          "test_seed": 173143,
+          "graph_seeds": {
+            "random": [
+              174154,
+              174155,
+              174156
+            ],
+            "degree": [
+              174157,
+              174158,
+              174159
+            ],
+            "role": [
+              174160,
+              174161,
+              174162
+            ],
+            "weight": [
+              174163,
+              174164,
+              174165
+            ]
+          }
+        },
+        {
+          "seed": 171144,
+          "train_seed": 172144,
+          "test_seed": 173144,
+          "graph_seeds": {
+            "random": [
+              174166,
+              174167,
+              174168
+            ],
+            "degree": [
+              174169,
+              174170,
+              174171
+            ],
+            "role": [
+              174172,
+              174173,
+              174174
+            ],
+            "weight": [
+              174175,
+              174176,
+              174177
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

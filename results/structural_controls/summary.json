@@ -1,0 +1,750 @@
+{
+  "statistics": {
+    "discovery/refit/random": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7760833333333332,
+        "median": 0.7725,
+        "variance": 4.034027777777785e-05,
+        "bootstrap95": [
+          0.7723333333333334,
+          0.7834166666666667
+        ],
+        "paired_dz": 122.19091437525772,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.8024999999999999,
+        "median": 0.8016388888888889,
+        "variance": 3.3804012345677496e-06,
+        "bootstrap95": [
+          0.80125,
+          0.804611111111111
+        ],
+        "paired_dz": 436.476549350426,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "difference": {
+        "n": 3,
+        "mean": -0.026416666666666682,
+        "median": -0.0289166666666667,
+        "variance": 5.2912808641975054e-05,
+        "bootstrap95": [
+          -0.03211111111111109,
+          -0.01822222222222225
+        ],
+        "paired_dz": -3.6315966666540382,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "intact_access": true
+    },
+    "discovery/refit/degree": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7760833333333332,
+        "median": 0.7725,
+        "variance": 4.034027777777785e-05,
+        "bootstrap95": [
+          0.7723333333333334,
+          0.7834166666666667
+        ],
+        "paired_dz": 122.19091437525772,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.7292407407407407,
+        "median": 0.7293333333333333,
+        "variance": 1.4331275720163153e-06,
+        "bootstrap95": [
+          0.7280000000000001,
+          0.7303888888888889
+        ],
+        "paired_dz": 609.1559601023389,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "difference": {
+        "n": 3,
+        "mean": 0.04684259259259257,
+        "median": 0.043166666666666687,
+        "variance": 5.5509516460904316e-05,
+        "bootstrap95": [
+          0.04194444444444445,
+          0.05541666666666656
+        ],
+        "paired_dz": 6.287198929221595,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true
+    },
+    "discovery/refit/role": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7760833333333332,
+        "median": 0.7725,
+        "variance": 4.034027777777785e-05,
+        "bootstrap95": [
+          0.7723333333333334,
+          0.7834166666666667
+        ],
+        "paired_dz": 122.19091437525772,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.7893611111111111,
+        "median": 0.7900277777777779,
+        "variance": 6.082716049382632e-05,
+        "bootstrap95": [
+          0.78125,
+          0.7968055555555554
+        ],
+        "paired_dz": 101.21082264039505,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "difference": {
+        "n": 3,
+        "mean": -0.013277777777777796,
+        "median": -0.008916666666666684,
+        "variance": 9.253780864197346e-05,
+        "bootstrap95": [
+          -0.02430555555555547,
+          -0.006611111111111234
+        ],
+        "paired_dz": -1.3802755352926561,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "intact_access": true
+    },
+    "discovery/refit/weight": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7760833333333332,
+        "median": 0.7725,
+        "variance": 4.034027777777785e-05,
+        "bootstrap95": [
+          0.7723333333333334,
+          0.7834166666666667
+        ],
+        "paired_dz": 122.19091437525772,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.7706574074074074,
+        "median": 0.7686388888888889,
+        "variance": 1.589609053497993e-05,
+        "bootstrap95": [
+          0.7680833333333333,
+          0.7752500000000001
+        ],
+        "paired_dz": 193.29302970504523,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "difference": {
+        "n": 3,
+        "mean": 0.005425925925925871,
+        "median": 0.004249999999999976,
+        "variance": 7.784284979423989e-05,
+        "bootstrap95": [
+          -0.0027500000000001412,
+          0.014777777777777779
+        ],
+        "paired_dz": 0.6149849631651668,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      },
+      "intact_access": true
+    },
+    "discovery/frozen/random": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7760833333333332,
+        "median": 0.7725,
+        "variance": 4.034027777777785e-05,
+        "bootstrap95": [
+          0.7723333333333334,
+          0.7834166666666667
+        ],
+        "paired_dz": 122.19091437525772,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.252712962962963,
+        "median": 0.25372222222222224,
+        "variance": 6.104192386831279e-05,
+        "bootstrap95": [
+          0.24444444444444444,
+          0.2599722222222222
+        ],
+        "paired_dz": 32.3454660656781,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "difference": {
+        "n": 3,
+        "mean": 0.5233703703703704,
+        "median": 0.5278888888888889,
+        "variance": 8.898636831275809e-05,
+        "bootstrap95": [
+          0.5125277777777777,
+          0.5296944444444445
+        ],
+        "paired_dz": 55.48139737259504,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true
+    },
+    "discovery/frozen/degree": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7760833333333332,
+        "median": 0.7725,
+        "variance": 4.034027777777785e-05,
+        "bootstrap95": [
+          0.7723333333333334,
+          0.7834166666666667
+        ],
+        "paired_dz": 122.19091437525772,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.2537777777777777,
+        "median": 0.25463888888888886,
+        "variance": 7.158179012345601e-06,
+        "bootstrap95": [
+          0.25077777777777777,
+          0.2559166666666666
+        ],
+        "paired_dz": 94.85327111877456,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "difference": {
+        "n": 3,
+        "mean": 0.5223055555555556,
+        "median": 0.5215555555555556,
+        "variance": 3.759799382716023e-05,
+        "bootstrap95": [
+          0.5165833333333334,
+          0.5287777777777778
+        ],
+        "paired_dz": 85.18091662251834,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true
+    },
+    "discovery/frozen/role": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7760833333333332,
+        "median": 0.7725,
+        "variance": 4.034027777777785e-05,
+        "bootstrap95": [
+          0.7723333333333334,
+          0.7834166666666667
+        ],
+        "paired_dz": 122.19091437525772,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.24753703703703703,
+        "median": 0.2520833333333333,
+        "variance": 7.321939300411541e-05,
+        "bootstrap95": [
+          0.23766666666666666,
+          0.25286111111111115
+        ],
+        "paired_dz": 28.928580659717344,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "difference": {
+        "n": 3,
+        "mean": 0.5285462962962962,
+        "median": 0.52025,
+        "variance": 0.00022206893004115278,
+        "bootstrap95": [
+          0.5196388888888888,
+          0.54575
+        ],
+        "paired_dz": 35.46819878811357,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true
+    },
+    "discovery/frozen/weight": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7760833333333332,
+        "median": 0.7725,
+        "variance": 4.034027777777785e-05,
+        "bootstrap95": [
+          0.7723333333333334,
+          0.7834166666666667
+        ],
+        "paired_dz": 122.19091437525772,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.25472222222222224,
+        "median": 0.2548888888888889,
+        "variance": 6.992901234567856e-05,
+        "bootstrap95": [
+          0.2462777777777778,
+          0.26299999999999996
+        ],
+        "paired_dz": 30.460577839442855,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "difference": {
+        "n": 3,
+        "mean": 0.521361111111111,
+        "median": 0.5204166666666667,
+        "variance": 1.8496141975308633e-05,
+        "bootstrap95": [
+          0.517611111111111,
+          0.5260555555555555
+        ],
+        "paired_dz": 121.22663727325515,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true
+    },
+    "confirmation/refit/random": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7744444444444444,
+        "median": 0.7764166666666666,
+        "variance": 0.00010208564814814722,
+        "bootstrap95": [
+          0.7635000000000001,
+          0.7834166666666667
+        ],
+        "paired_dz": 76.64925241819692,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.8066481481481481,
+        "median": 0.81075,
+        "variance": 7.20372942386829e-05,
+        "bootstrap95": [
+          0.7968888888888889,
+          0.8123055555555555
+        ],
+        "paired_dz": 95.03978497590123,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "difference": {
+        "n": 3,
+        "mean": -0.03220370370370366,
+        "median": -0.0333888888888888,
+        "variance": 1.9352880658436058e-05,
+        "bootstrap95": [
+          -0.03588888888888886,
+          -0.02733333333333332
+        ],
+        "paired_dz": -7.320369669337734,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "intact_access": true
+    },
+    "confirmation/refit/degree": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7744444444444444,
+        "median": 0.7764166666666666,
+        "variance": 0.00010208564814814722,
+        "bootstrap95": [
+          0.7635000000000001,
+          0.7834166666666667
+        ],
+        "paired_dz": 76.64925241819692,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.7277685185185185,
+        "median": 0.7267222222222222,
+        "variance": 7.142772633744831e-05,
+        "bootstrap95": [
+          0.7198888888888889,
+          0.7366944444444444
+        ],
+        "paired_dz": 86.1112417881043,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "difference": {
+        "n": 3,
+        "mean": 0.046675925925925954,
+        "median": 0.043611111111111156,
+        "variance": 7.905889917695512e-05,
+        "bootstrap95": [
+          0.039722222222222214,
+          0.05669444444444449
+        ],
+        "paired_dz": 5.249495412183941,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true
+    },
+    "confirmation/refit/role": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7744444444444444,
+        "median": 0.7764166666666666,
+        "variance": 0.00010208564814814722,
+        "bootstrap95": [
+          0.7635000000000001,
+          0.7834166666666667
+        ],
+        "paired_dz": 76.64925241819692,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.7856296296296296,
+        "median": 0.791611111111111,
+        "variance": 0.0001484454732510287,
+        "bootstrap95": [
+          0.7716111111111111,
+          0.7936666666666667
+        ],
+        "paired_dz": 64.48138764996885,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "difference": {
+        "n": 3,
+        "mean": -0.011185185185185187,
+        "median": -0.010250000000000092,
+        "variance": 1.3199331275720028e-05,
+        "bootstrap95": [
+          -0.0151944444444444,
+          -0.008111111111111069
+        ],
+        "paired_dz": -3.078698884641796,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "intact_access": true
+    },
+    "confirmation/refit/weight": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7744444444444444,
+        "median": 0.7764166666666666,
+        "variance": 0.00010208564814814722,
+        "bootstrap95": [
+          0.7635000000000001,
+          0.7834166666666667
+        ],
+        "paired_dz": 76.64925241819692,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.7789259259259259,
+        "median": 0.7844444444444445,
+        "variance": 0.0001596005658436244,
+        "bootstrap95": [
+          0.7644722222222221,
+          0.7878611111111112
+        ],
+        "paired_dz": 61.65651106906505,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "difference": {
+        "n": 3,
+        "mean": -0.004481481481481493,
+        "median": -0.004444444444444584,
+        "variance": 1.2446244855967986e-05,
+        "bootstrap95": [
+          -0.008027777777777856,
+          -0.0009722222222220411
+        ],
+        "paired_dz": -1.2702887030627028,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "intact_access": true
+    },
+    "confirmation/frozen/random": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7744444444444444,
+        "median": 0.7764166666666666,
+        "variance": 0.00010208564814814722,
+        "bootstrap95": [
+          0.7635000000000001,
+          0.7834166666666667
+        ],
+        "paired_dz": 76.64925241819692,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.24928703703703706,
+        "median": 0.25025000000000003,
+        "variance": 1.759670781893002e-05,
+        "bootstrap95": [
+          0.24469444444444446,
+          0.2529166666666667
+        ],
+        "paired_dz": 59.42702429269612,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "difference": {
+        "n": 3,
+        "mean": 0.5251574074074074,
+        "median": 0.5235,
+        "variance": 0.00016426877572016475,
+        "bootstrap95": [
+          0.51325,
+          0.5387222222222222
+        ],
+        "paired_dz": 40.97434175500789,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true
+    },
+    "confirmation/frozen/degree": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7744444444444444,
+        "median": 0.7764166666666666,
+        "variance": 0.00010208564814814722,
+        "bootstrap95": [
+          0.7635000000000001,
+          0.7834166666666667
+        ],
+        "paired_dz": 76.64925241819692,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.24871296296296297,
+        "median": 0.2457777777777778,
+        "variance": 8.133204732510248e-05,
+        "bootstrap95": [
+          0.24152777777777779,
+          0.2588333333333333
+        ],
+        "paired_dz": 27.578304916756178,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "difference": {
+        "n": 3,
+        "mean": 0.5257314814814815,
+        "median": 0.5219722222222223,
+        "variance": 0.00011115534979423885,
+        "bootstrap95": [
+          0.5175833333333333,
+          0.5376388888888889
+        ],
+        "paired_dz": 49.865341665260246,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true
+    },
+    "confirmation/frozen/role": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7744444444444444,
+        "median": 0.7764166666666666,
+        "variance": 0.00010208564814814722,
+        "bootstrap95": [
+          0.7635000000000001,
+          0.7834166666666667
+        ],
+        "paired_dz": 76.64925241819692,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.2487314814814815,
+        "median": 0.2505277777777778,
+        "variance": 2.1926954732510257e-05,
+        "bootstrap95": [
+          0.2434166666666667,
+          0.25225000000000003
+        ],
+        "paired_dz": 53.11798556542291,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "difference": {
+        "n": 3,
+        "mean": 0.525712962962963,
+        "median": 0.5258888888888889,
+        "variance": 0.00020666383744855885,
+        "bootstrap95": [
+          0.51125,
+          0.5399999999999999
+        ],
+        "paired_dz": 36.56928265298785,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true
+    },
+    "confirmation/frozen/weight": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7744444444444444,
+        "median": 0.7764166666666666,
+        "variance": 0.00010208564814814722,
+        "bootstrap95": [
+          0.7635000000000001,
+          0.7834166666666667
+        ],
+        "paired_dz": 76.64925241819692,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.250037037037037,
+        "median": 0.24902777777777776,
+        "variance": 7.083590534979565e-06,
+        "bootstrap95": [
+          0.24802777777777776,
+          0.2530555555555556
+        ],
+        "paired_dz": 93.94585414808262,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "difference": {
+        "n": 3,
+        "mean": 0.5244074074074074,
+        "median": 0.5283888888888889,
+        "variance": 0.00015522325102880643,
+        "bootstrap95": [
+          0.5104444444444445,
+          0.5343888888888889
+        ],
+        "paired_dz": 42.091114960730025,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true
+    }
+  },
+  "gates": {
+    "discovery/refit/random": false,
+    "discovery/refit/degree": false,
+    "discovery/refit/role": false,
+    "discovery/refit/weight": false,
+    "discovery/frozen/random": true,
+    "discovery/frozen/degree": true,
+    "discovery/frozen/role": true,
+    "discovery/frozen/weight": true,
+    "confirmation/refit/random": false,
+    "confirmation/refit/degree": false,
+    "confirmation/refit/role": false,
+    "confirmation/refit/weight": false,
+    "confirmation/frozen/random": true,
+    "confirmation/frozen/degree": true,
+    "confirmation/frozen/role": true,
+    "confirmation/frozen/weight": true
+  },
+  "confirmed": [
+    "frozen/random",
+    "frozen/degree",
+    "frozen/role",
+    "frozen/weight"
+  ],
+  "primary_role_refit": false,
+  "cohorts_pooled": false
+}

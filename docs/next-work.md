@@ -1,22 +1,22 @@
 # Prioritized work — updated 2026-09-29
 
-**ACT III-B current-model edge panel complete.**
-[Results](edge-panel-results.md): raw-bin DAN effect replicates at~7pp, but the
-separate effective-normalized-weight control gives2.59/1.77pp and fails the
-unchanged5pp gate in both fresh cohorts. Greater overlap limits interpretation.
-Weak/strong/betweenness/within-role/between-role5%-edge families also fail material
-confirmation.286 conditions,260 frozen evaluations,572 independent trajectories,
-6,006 metric rows verified;212 tests pass,8 optional skips. A derived between/
-betweenness name collision was corrected in analysis_v2; old raw results/failure
-remain preserved. Use corrected analysis paths from the report.
+**ACT III-C current-model structural controls complete.**
+[Results](structural-controls-results.md):169 fits/replays,156 frozen evaluations,
+338 independent trajectories,3575 audited metric rows;218 tests pass,8 optional skips.
+Primary intact-minus-role refit effect −1.3278/−1.1185pp, failing the preregistered
+5pp advantage. Degree-only differences4.6843/4.6676pp also fail; no refit family
+confirms intact advantage. Frozen transfer fails for all four graph families,
+while refit recovers73–81%. Keep representation and decoder portability distinct.
+Role/incoming weights preserved, but outgoing strengths and finite-sampler
+limitations remain. Source preflight failure is preserved; no old artifacts changed.
 
-Next single proposed experiment: **ACT III-C role/in-out-degree and per-postsynaptic
-incoming-weight-multiset preserving rewiring**, compared with the original graph.
-Preserve input,48 MBON observations,readout budgets and normalization coefficients;
-document changed properties including possible outgoing-strength changes.
-Audit graph-only feasibility and preregister before outcomes. No new III-B sweep,
-no III-D mechanism claim or ACT IV expansion. Whole-brain/detected-module/full
-dose-curve/autonomous-recall localization remain explicitly untested extensions.
+Next single proposed experiment: **ACT III-D role-pathway ablation sensitivity map**.
+Predefine KC→MBON and DAN/APL-related edge blocks; compare refit impairment with
+count/effective-weight-matched controls. Frozen is secondary. Audit matching
+feasibility/overlap and preregister before outcomes. Aim for memory-critical
+pathway candidates in this model, not a biological memory circuit claim.
+Do not jump to ACT IV or restart a III-C tuning sweep. Whole-brain,autonomous
+recall and broader biological localization remain untested extensions.
 
 ## Historical handoff notes (superseded by the result above)
 

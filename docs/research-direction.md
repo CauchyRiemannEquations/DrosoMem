@@ -70,8 +70,11 @@ trained-prefix 기준을 통과했지만 전체망 우위는 확인되지 않았
 후속 [III-B 연결 제거와 정규화 가중치 대조](edge-panel-results.md)도 완료했다.
 Raw-bin 대조의 약7%p 차이는 새 cohort의 유효 가중치 대조에서2.59/1.77%p였고
 사전5%p 기준은 실패했다. 겹침 증가와 cohort 차이도 함께 기록한다.
-현행 부분 모델의 III-A/B 단락을 종료하고, 다음 한 제안은 역할·in/out degree와
-각 postsynaptic 뉴런의 incoming weight 분포를 보존하는 III-C 재배선 대조다.
+후속 [III-C 구조 대조](structural-controls-results.md)도 169조건과 독립 검증을 마쳤다.
+역할·signed degree·뉴런별 incoming weights를 보존한 대조가 refit에서 원본보다
+1.33/1.12%p 높았다. 원본 배선의 5%p 우위는 확인되지 않았다. Frozen 전이 손상과
+refit 해독 가능성을 구분한다. 현행 부분 모델의 III-A/B/C 단락을 종료한다.
+다음 제안 하나는 III-D의 사전 정의한 역할별 경로 ablation sensitivity map이다.
 Whole-brain/downstream 위치 규명과 자율 회상으로의 확장은 미검증으로 유지한다.
 추가 gain 탐색이나 ACT IV 확장은 하지 않는다.
 ACT I→II→III→IV 순서를 지키며 강건성은 ACT V의 독립 축으로 유지한다.
