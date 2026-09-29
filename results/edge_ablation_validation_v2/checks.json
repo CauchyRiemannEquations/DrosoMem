@@ -1,0 +1,30 @@
+{
+  "cases": 221,
+  "frozen": 208,
+  "independent_trajectories": 442,
+  "metric_rows": 4719,
+  "centrality": {
+    "701": {
+      "edges": 3309,
+      "max_absolute_difference": 2.4556356947869062e-11,
+      "rounded_ranking_exact": true
+    },
+    "702": {
+      "edges": 3241,
+      "max_absolute_difference": 2.6830093702301383e-11,
+      "rounded_ranking_exact": true
+    }
+  },
+  "all_checks_pass": true,
+  "source_git_bytes_verified": true,
+  "result_manifest_sha256": "d5fc50e93d3f75446b0c286e306f288461609874a7f65dcfcd061b7f6c362602",
+  "prior_files_unchanged": 11435,
+  "budget": {
+    "seconds": 120.49352779999936,
+    "peak_sampled_rss_bytes": 182751232,
+    "sample_seconds": 0.05
+  },
+  "analysis_path": "results/edge_ablation_analysis_v2",
+  "analysis_manifest_sha256": "5b60619849a6c82b6867851e57c4ab54a772f328c950498745e0b99becb54866",
+  "verifier_sha256": "7519c76a3301bd69e2f65f73acadc3934544fe42b8d7fbc9a96d1f94b6754418"
+}
