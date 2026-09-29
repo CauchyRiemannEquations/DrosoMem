@@ -1,0 +1,250 @@
+{
+  "statistics": {
+    "discovery/refit/DAN": {
+      "target": {
+        "n": 3,
+        "mean": 0.6966388888888889,
+        "median": 0.6960833333333334,
+        "variance": 2.3592592592592825e-05,
+        "bootstrap95": [
+          0.6920833333333333,
+          0.7017500000000001
+        ],
+        "paired_dz": 143.4233560456343,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.7224907407407407,
+        "median": 0.7232777777777778,
+        "variance": 1.1855195473251202e-05,
+        "bootstrap95": [
+          0.7187222222222222,
+          0.7254722222222222
+        ],
+        "paired_dz": 209.8349984672843,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.07769444444444436,
+        "median": 0.07724999999999993,
+        "variance": 0.00013048842592592637,
+        "bootstrap95": [
+          0.06649999999999989,
+          0.08933333333333326
+        ],
+        "paired_dz": 6.801488521465864,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": 0.025851851851851754,
+        "median": 0.029388888888888798,
+        "variance": 5.99508744855977e-05,
+        "bootstrap95": [
+          0.016972222222222055,
+          0.031194444444444414
+        ],
+        "paired_dz": 3.338826849476041,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true
+    },
+    "discovery/frozen/DAN": {
+      "target": {
+        "n": 3,
+        "mean": 0.273,
+        "median": 0.27616666666666667,
+        "variance": 3.7770833333333314e-05,
+        "bootstrap95": [
+          0.2659166666666667,
+          0.2769166666666667
+        ],
+        "paired_dz": 44.42059420121697,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.25400925925925927,
+        "median": 0.25605555555555554,
+        "variance": 9.956198559670788e-05,
+        "bootstrap95": [
+          0.24316666666666667,
+          0.26280555555555557
+        ],
+        "paired_dz": 25.456739202704807,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.5013333333333333,
+        "median": 0.5045,
+        "variance": 6.629861111111086e-05,
+        "bootstrap95": [
+          0.49208333333333326,
+          0.5074166666666666
+        ],
+        "paired_dz": 61.570739011138436,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": -0.018990740740740763,
+        "median": -0.01411111111111113,
+        "variance": 0.00015171013374485552,
+        "bootstrap95": [
+          -0.033,
+          -0.009861111111111154
+        ],
+        "paired_dz": -1.541823317178751,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "intact_access": true
+    },
+    "confirmation/refit/DAN": {
+      "target": {
+        "n": 3,
+        "mean": 0.6879722222222222,
+        "median": 0.6903333333333332,
+        "variance": 4.0682870370370246e-05,
+        "bootstrap95": [
+          0.6807500000000001,
+          0.6928333333333333
+        ],
+        "paired_dz": 107.86116579113495,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.7057037037037036,
+        "median": 0.7033055555555556,
+        "variance": 5.2731738683127396e-05,
+        "bootstrap95": [
+          0.6999444444444444,
+          0.7138611111111111
+        ],
+        "paired_dz": 97.18211603256277,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.07588888888888896,
+        "median": 0.07791666666666686,
+        "variance": 5.266898148148261e-05,
+        "bootstrap95": [
+          0.0678333333333333,
+          0.08191666666666675
+        ],
+        "paired_dz": 10.456846532433213,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": 0.017731481481481515,
+        "median": 0.019194444444444403,
+        "variance": 1.782818930041062e-05,
+        "bootstrap95": [
+          0.012972222222222385,
+          0.021027777777777756
+        ],
+        "paired_dz": 4.199440230273529,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true
+    },
+    "confirmation/frozen/DAN": {
+      "target": {
+        "n": 3,
+        "mean": 0.266,
+        "median": 0.26966666666666667,
+        "variance": 9.56458333333334e-05,
+        "bootstrap95": [
+          0.2549166666666667,
+          0.2734166666666667
+        ],
+        "paired_dz": 27.198728941306292,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.25352777777777774,
+        "median": 0.2519166666666667,
+        "variance": 2.000925925925926e-05,
+        "bootstrap95": [
+          0.2500833333333333,
+          0.25858333333333333
+        ],
+        "paired_dz": 56.67741627541194,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.4978611111111111,
+        "median": 0.4948333333333334,
+        "variance": 3.946064814814824e-05,
+        "bootstrap95": [
+          0.49366666666666664,
+          0.5050833333333333
+        ],
+        "paired_dz": 79.25489534956561,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": -0.012472222222222237,
+        "median": -0.011083333333333334,
+        "variance": 0.00010480787037037077,
+        "bootstrap95": [
+          -0.023333333333333373,
+          -0.0030000000000000027
+        ],
+        "paired_dz": -1.2182793754488592,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "intact_access": true
+    }
+  },
+  "gates": {
+    "discovery/refit/DAN": false,
+    "discovery/frozen/DAN": false,
+    "confirmation/refit/DAN": false,
+    "confirmation/frozen/DAN": false
+  },
+  "confirmed": [],
+  "cohorts_pooled": false,
+  "primary_DAN_refit": false,
+  "strength_matched": true
+}

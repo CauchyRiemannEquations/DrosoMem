@@ -1,0 +1,179 @@
+{
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "alphabet_size": 4,
+  "warmup": 100,
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "alpha": 1.0,
+  "swaps_per_edge": 5,
+  "normalization": "incoming_l1",
+  "schedule": "mbon_after_kc",
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "activity_epsilon": 1e-08,
+  "decay_steps": 32,
+  "bootstrap_draws": 10000,
+  "max_seconds": 3600,
+  "max_rss_bytes": 3221225472,
+  "material_effect": 0.05,
+  "access_margin": 0.05,
+  "protocol": "docs/edge-strength-protocol.md",
+  "bootstrap_seed": 154399,
+  "edge_fraction": 0.05,
+  "weight_boundaries": [
+    10,
+    20,
+    50,
+    100
+  ],
+  "families": [
+    "DAN"
+  ],
+  "random_families": [
+    "dan_control"
+  ],
+  "source": "results/edge_ablation",
+  "source_manifest_sha256": "d5fc50e93d3f75446b0c286e306f288461609874a7f65dcfcd061b7f6c362602",
+  "cohorts": {
+    "smoke": {
+      "circuit_seeds": [
+        701
+      ],
+      "train_samples": 200,
+      "test_samples": 100,
+      "blocks": [
+        {
+          "seed": 141001,
+          "train_seed": 142001,
+          "test_seed": 143001,
+          "edge_seeds": {
+            "dan_control": [
+              144001,
+              144002,
+              144003
+            ]
+          }
+        }
+      ]
+    },
+    "discovery": {
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "blocks": [
+        {
+          "seed": 141142,
+          "train_seed": 142142,
+          "test_seed": 143142,
+          "edge_seeds": {
+            "dan_control": [
+              144142,
+              144143,
+              144144
+            ]
+          }
+        },
+        {
+          "seed": 141143,
+          "train_seed": 142143,
+          "test_seed": 143143,
+          "edge_seeds": {
+            "dan_control": [
+              144145,
+              144146,
+              144147
+            ]
+          }
+        },
+        {
+          "seed": 141144,
+          "train_seed": 142144,
+          "test_seed": 143144,
+          "edge_seeds": {
+            "dan_control": [
+              144148,
+              144149,
+              144150
+            ]
+          }
+        }
+      ]
+    },
+    "confirmation": {
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "blocks": [
+        {
+          "seed": 151142,
+          "train_seed": 152142,
+          "test_seed": 153142,
+          "edge_seeds": {
+            "dan_control": [
+              154142,
+              154143,
+              154144
+            ]
+          }
+        },
+        {
+          "seed": 151143,
+          "train_seed": 152143,
+          "test_seed": 153143,
+          "edge_seeds": {
+            "dan_control": [
+              154145,
+              154146,
+              154147
+            ]
+          }
+        },
+        {
+          "seed": 151144,
+          "train_seed": 152144,
+          "test_seed": 153144,
+          "edge_seeds": {
+            "dan_control": [
+              154148,
+              154149,
+              154150
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "normalized_bin_width": 0.001
+}

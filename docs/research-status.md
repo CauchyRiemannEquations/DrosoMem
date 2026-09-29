@@ -36,10 +36,28 @@ This is not a new execution of every historical experiment.
 | Can finite-context distinctiveness help explain the K curve? | ACT II diagnostic completed; both scoped endpoints pass | 120 context tables on20 unique tasks; order2 ambiguity K16−K2=−0.2272; order3 prefix +59.0; all independently checked. Context5 completes K10/K16. A task-level explanation candidate, not neural causality; [results](context-memory-results.md) |
 | Does a fixed-K low/high context-conflict intervention change recall? | Completed within registered cohort scope | Main40 fits; confirmed graphs: none. [Results](context-intervention-results.md). Matched unigram counts and interface; ordering covariates remain |
 | Are past symbols accessible on held-out positions and portable across paired orderings? | Two ACT II diagnostics completed | All four blocked graph/arm and transfer graph/direction cells pass past-access criteria in both cohorts; no confirmed next-symbol benefit. Frozen-head transfer within5pp tolerance; [blocked](frozen-state-probe-results.md), [transfer](cross-arm-probe-results.md) |
-| Which populations affect decoding in the current model? | Bounded ACT III-A panel completed with confirmation | DAN refit and APL frozen sensitivity confirmed under count/input matching; degree/edge-strength confounds remain. Whole-brain/downstream and critical-subnetwork localization open. [Latest results](neuron-panel-results.md) |
+| Which populations/edges affect decoding in the current model? | Bounded III-A and III-B panels complete | DAN refit sensitivity passes count/raw-bin controls but not the later effective-strength5pp criterion; APL frozen sensitivity remains scoped. Whole-brain/downstream localization open. [Latest results](edge-panel-results.md) |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
-## Latest ACT III-A current-model population closeout — 2026-09-29
+## Latest ACT III-B edge-ablation closeout — 2026-09-29
+
+[Report](edge-panel-results.md): original edge panel221 conditions plus a separate
+prospectively registered effective-strength follow-up65;286 exact replays/refits,
+260 frozen evaluations,572 independent trajectories,6,006 audited lag rows.
+212 tests pass,8 optional skips. Every prior result file remains unchanged.
+Raw sign/weight-bin matched DAN refit extra loss6.997/6.994pp passes discovery/
+confirmation. It leaves normalized removed L1 88.023 versus58.774 in controls.
+Joint sign/raw/normalized-bin matching on fresh cohorts yields2.585/1.773pp:
+all seed differences positive but BOTH5pp gates fail. Actual normalized mass
+error<=0.0167%; target overlap rises to63.41–70.42%, cohorts also change, so no
+claim that normalization alone explains the effect change. Other5%-edge families
+fail material-effect confirmation. A between/betweenness aggregation collision
+was caught independently; original raw artifacts/failure preserved and analysis_v2
+fully revalidated. Original derived between aggregates/plots are superseded.
+Current-model III-B scope complete; next one study is a role/degree and per-postsynaptic
+incoming-weight-preserving rewired graph control (III-C). No internal learning claim.
+
+## Preceding ACT III-A current-model population closeout — 2026-09-29
 
 [Report](neuron-panel-results.md), [preregistered protocol](neuron-panel-protocol.md).
 Input-only28 + population299 conditions;327 exact full replays/refits,314 frozen

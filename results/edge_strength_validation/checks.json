@@ -1,0 +1,28 @@
+{
+  "cases": 65,
+  "frozen": 52,
+  "independent_trajectories": 130,
+  "metric_rows": 1287,
+  "normalized_matching": {
+    "701": {
+      "edges": 3309,
+      "normalized_bin_width": 0.001
+    },
+    "702": {
+      "edges": 3241,
+      "normalized_bin_width": 0.001
+    }
+  },
+  "all_checks_pass": true,
+  "source_git_bytes_verified": true,
+  "result_manifest_sha256": "cab70c85ab70cf53427d09b81626ec2068fdd646763ece6d7497fc0091d79061",
+  "prior_files_unchanged": 13211,
+  "budget": {
+    "seconds": 79.24832359999891,
+    "peak_sampled_rss_bytes": 179281920,
+    "sample_seconds": 0.05
+  },
+  "analysis_path": "results/edge_strength",
+  "analysis_manifest_sha256": "cab70c85ab70cf53427d09b81626ec2068fdd646763ece6d7497fc0091d79061",
+  "verifier_sha256": "79326c0cb85dd0304b7fa22d97e7a0adf5debac5483934653ff3d178fa475a43"
+}

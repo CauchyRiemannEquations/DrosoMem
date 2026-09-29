@@ -9,15 +9,16 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 
 ## Current research
 
-Latest: [ACT III-A population-panel closeout](docs/neuron-panel-results.md).
-In the current two partial circuits, DAN-group removal impairs refit decoding
-beyond count/input-matched controls in both seed cohorts; APL removal shows a
-confirmed frozen-head sensitivity with substantial refit recovery. Edge count
-and strength are not matched for these groups, limiting cell-type attribution.
+Latest: [ACT III-B edge-ablation closeout](docs/edge-panel-results.md).
+The raw-weight-bin control replicated a DAN-associated refit loss of about7pp.
+A separately preregistered effective-normalized-weight control on fresh cohorts
+found2.59/1.77pp, below the fixed5pp criterion. Greater target/control overlap
+and changed cohorts limit attributing this difference to normalization alone.
 
-Current position: ACT III-A current-model panel complete, including input-only
-controls and fresh-seed confirmation. Whole-brain/downstream localization remains
-untested. Next: one DAN-associated edge-count/weight-matched control study (III-B).
+Current position: ACT III-B current-model panel complete:286 conditions with
+frozen/refit separation and independent verification. Whole-brain,full dose curves
+and autonomous-recall localization remain untested. Next: one role/degree and
+postsynaptic incoming-weight-preserving rewired control (ACT III-C).
 
 The established models freeze recurrent connectivity and train an external
 readout. Distinguish **representation**, **decoding** and **internal learning**.
@@ -31,8 +32,8 @@ Use Python3.12 and a clean environment; commands run from the repository root.
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-act1-lock.txt
 $env:PYTHONPATH = 'src'
-.\.venv\Scripts\python.exe scripts/neuron_panel.py --package panel --out outputs/neuron_panel_new
-.\.venv\Scripts\python.exe scripts/verify_neuron_panel.py outputs/neuron_panel_new --out outputs/neuron_panel_check_new
+.\.venv\Scripts\python.exe scripts/edge_strength.py --out outputs/edge_strength_new
+.\.venv\Scripts\python.exe scripts/verify_edge_strength.py outputs/edge_strength_new --out outputs/edge_strength_check_new
 ```
 
 Use fresh directories. The runner verifies an archived baseline, executes the locked

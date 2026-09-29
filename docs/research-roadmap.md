@@ -7,24 +7,26 @@ information), and **learning** (experience modifies recurrent connections).
 
 ## Current position — 2026-09-29
 
-**ACT III-A current-model population panel complete.**
-[Results](neuron-panel-results.md): input-only controls, broader group panel and
-fresh-seed confirmation complete; DAN refit/APL frozen sensitivity confirmed with
-count/input-matching limitations. Next one study: DAN edge-count/weight-matched
-ablation controls (ACT III-B).
+**ACT III-B current-model edge panel complete.**
+[Results](edge-panel-results.md):221 edge-panel cases plus65 prospective
+effective-strength controls, all independently verified. The stricter DAN refit
+contrast fails the5pp criterion despite small consistent positive differences.
+Next one study: role/degree and per-postsynaptic incoming-weight-preserving
+rewiring (III-C). No new plasticity study.
 
 | Axis | Completed scope | Remaining scope |
 |---|---|---|
-| ACT I | Matched partial/expanded/whole graphs, thresholds5/1; no established whole-brain recall advantage | Broader tasks or dynamics require separate protocols |
-| ACT II | Four-family pilot, length/alphabet scaling scopes, context and delayed-state diagnostics | Additional families and full length-by-K design remain open |
-| ACT III-A | KCγ/full/disjoint/frozen/refit confirmation; input-only28 and broader population299 conditions; sensitivity map | Whole-brain/downstream and autonomous-recall population localization are untested extensions |
-| ACT III-B/C/D | Earlier scoped topology controls available | Matched edge studies and broader critical-subnetwork mechanisms remain open |
+| ACT I | Matched partial/expanded/whole graphs, thresholds5/1; no established whole-brain recall advantage | Broader tasks/dynamics require separate protocols |
+| ACT II | Four-family pilot,length/alphabet scopes,context and delayed-state diagnostics | Additional families and full length-by-K design |
+| ACT III-A | Current partial-model population panel,input controls,frozen/refit and fresh confirmation | Whole-brain/downstream and autonomous-recall localization |
+| ACT III-B | DAN/count/raw-bin and normalized-bin controls;weak/strong/random/betweenness/within-role/between-role panel | Whole-brain,detected biological modules,full dose curves remain untested extensions |
+| ACT III-C/D | Earlier scoped topology controls available | New normalization-controlled structural comparisons and critical-subnetwork mechanisms |
 | ACT IV | Earlier local-rule implementation with negative functional results | Useful internal learning without external decoder dependence |
-| ACT V | Scoped robustness curves exposed strong fragility | Broader perturbation/physiological validation, kept separate |
+| ACT V | Scoped robustness curves exposed strong fragility | Broader perturbation/physiological validation, independent axis |
 
-현재 두686-neuron 부분 회로의 **ACT III-A 연구 단락을 종료**했다.
-완료는 고정한 실험·검증을 끝냈다는 뜻이며 전체 뇌의 기억 위치를 규명했다는
-뜻이 아니다. 다음은 DAN 집단의 효과와 제거 연결량을 구분하는 edge 대조다.
+현재 두686-neuron 부분 모델의 **III-A와 III-B 연구 단락을 종료**했다.
+완료는 고정한 실험·검증을 끝냈다는 뜻이다. 전체 뇌의 기억 위치나 내부 학습을
+규명했다는 뜻은 아니다. 다음은 정규화와 입력·관측 조건을 보존한 구조 대조다.
 
 ## ACT I — Can a Fly Brain Remember?
 
@@ -74,8 +76,7 @@ statistical-prediction controls because predictability can mimic memory.
 
 ## ACT III — Where does the model store useful information?
 
-The bounded current-model neuron panel is now executed: see [completion scope
-ledger](neuron-panel-results.md). Downstream populations absent from the partial
+The bounded current-model neuron and edge panels are now executed: see [III-A](neuron-panel-results.md) and [III-B completion scope](edge-panel-results.md). Downstream populations absent from the partial
 graphs and whole-brain localization remain untested. The broader blueprint follows.
 
 Test annotated KC/MBON/DAN/APL and downstream groups, hubs and matched random

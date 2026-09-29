@@ -1,19 +1,22 @@
 # Prioritized work — updated 2026-09-29
 
-**ACT III-A current-model population panel complete.**
-[Results](neuron-panel-results.md): fixed two-cohort gates confirm DAN refit
-impairment and APL frozen sensitivity, with matching limits. Input-only contrast
-also complete.327 new conditions exactly replayed/refit,314 frozen evaluations,
-654 independently reconstructed trajectories,7,051 lag rows;206 tests pass,
-8 optional skips.9,046 preceding result files unchanged.
+**ACT III-B current-model edge panel complete.**
+[Results](edge-panel-results.md): raw-bin DAN effect replicates at~7pp, but the
+separate effective-normalized-weight control gives2.59/1.77pp and fails the
+unchanged5pp gate in both fresh cohorts. Greater overlap limits interpretation.
+Weak/strong/betweenness/within-role/between-role5%-edge families also fail material
+confirmation.286 conditions,260 frozen evaluations,572 independent trajectories,
+6,006 metric rows verified;212 tests pass,8 optional skips. A derived between/
+betweenness name collision was corrected in analysis_v2; old raw results/failure
+remain preserved. Use corrected analysis paths from the report.
 
-Next single proposed experiment: **ACT III-B DAN-associated edge ablation versus
-random edge removal matched for edge count and preregistered weight bins**.
-Keep direct input,48 observation slots and frozen/refit separation. Test whether
-the replicated DAN-group refit loss exceeds connection-quantity effects.
-Write a new protocol before outcomes; do not start plasticity or tune the present
-panel. Whole-brain/downstream localization is an explicitly untested extension;
-ACT III-B/C/D and IV/V are not declared complete.
+Next single proposed experiment: **ACT III-C role/in-out-degree and per-postsynaptic
+incoming-weight-multiset preserving rewiring**, compared with the original graph.
+Preserve input,48 MBON observations,readout budgets and normalization coefficients;
+document changed properties including possible outgoing-strength changes.
+Audit graph-only feasibility and preregister before outcomes. No new III-B sweep,
+no III-D mechanism claim or ACT IV expansion. Whole-brain/detected-module/full
+dose-curve/autonomous-recall localization remain explicitly untested extensions.
 
 ## Historical handoff notes (superseded by the result above)
 
