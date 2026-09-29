@@ -12,7 +12,21 @@ The review covered README, docs, configurations, runners, dynamics/readout/data/
 evaluation modules, test coverage and archived result/checkpoint schemas.
 This is not a new execution of every historical experiment.
 
-## Latest — Observation-location diagnostic complete (2026-09-29)
+## Latest — ACT IV-A bounded A/B/C/D comparison complete (2026-09-29)
+
+[Results](readout-dependency-results.md):117 cases,234 primary decoder evaluations,
+117 independent exact internal-training replays,234 final trajectories,1404 metric
+rows;227 tests pass,8 optional skips. Real artificial teaching increases fixed-code
+accuracy21.9167→49.5833% /27.8333→51.5167%; aligned beats both frozen and shifted
+teachers in both cohorts. Frozen real ridge already99.9333% in both; representation
+improvement and original-graph superiority criteria fail (random/role ridge100%).
+This is internal recoding under an artificial vector teacher, not biological learning
+or increased memory capacity. KC→MBON could function as an internal trained readout.
+The retrospective common-lag analysis retains lags1–5 and observation sensitivity;
+it is not fresh confirmatory evidence. Next one proposal: scalar-reward/local-trace
+learning without target vectors. The broader biological ACT IV objective remains open.
+
+## Preceding — Observation-location diagnostic complete (2026-09-29)
 
 [Results](observation-location-results.md):130 exact fits/replays,260 independent
 site-specific train/test reconstructions,1430 metric rows;224 tests pass,8 optional
@@ -21,7 +35,7 @@ skips. DAN→MBON cuts cause MBON losses7.8833/7.2722pp but unstimulated KC48 lo
 both new-task cohorts. Old matched masks are reused explicitly. KC baseline~50%
 versus MBON~77%; temporal profiles differ. This is evidence of observation-dependent
 decoding impairment, not identified storage, biological learning or total ACT IV completion.
-Next one proposed analysis: impairment at jointly accessible delays.
+That proposed common-delay analysis is now complete and explicitly retrospective.
 
 ## Preceding — ACT III-D pathway panel complete (2026-09-29)
 
@@ -66,6 +80,7 @@ Its proposed observation-location diagnostic is now complete; see the latest res
 | Does original wiring outperform incoming-strength-preserving structural controls? | Current-model III-C complete; primary fails | Role control refit exceeds intact by1.33/1.12pp; all frozen controls show transfer loss. [Results](structural-controls-results.md) |
 | Which predefined pathways matter beyond matched edge/weight removal? | Bounded III-D complete; primary and one secondary refit candidate confirm | DAN→MBON7.33/8.32pp and KC→MBON5.49/5.71pp; access versus storage unresolved, APL controls not identifiable. [Results](pathway-memory-results.md) |
 | Is DAN→MBON lesion impairment observation-dependent? | ACT IV-A entry diagnostic complete; scoped hypothesis passes | MBON loss7.88/7.27pp, non-input KC48 retain access; baseline/lag profiles differ. [Results](observation-location-results.md) |
+| Can internal teaching reduce dependence on a trained external head? | Bounded ACT IV-A comparison complete; artificial coding criterion passes | Fixed decoding improves to49.58/51.52%, ridge already near ceiling; no biological-learning or capacity claim. [Results](readout-dependency-results.md) |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
 ## Preceding ACT III-C structural-controls closeout — 2026-09-29

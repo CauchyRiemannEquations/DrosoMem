@@ -1,20 +1,21 @@
 # Prioritized work — updated 2026-09-29
 
-**Observation-location diagnostic complete after scoped ACT III-D.**
-[Results](observation-location-results.md):130 fits/replays,260 independent site
-trajectory checks,1430 lag rows,224 tests pass. DAN→MBON removal causes7.88/7.27pp
-MBON loss, while48 unstimulated KCs retain access (loss−0.08/−0.04pp). Both cohorts
-pass the preregistered observation-dependence gate. Fresh tasks, reused mask bank.
-KC baseline and temporal profiles differ from MBON; this does not identify storage.
+**ACT IV-A bounded current-model A/B/C/D comparison complete.**
+[Results](readout-dependency-results.md):117 cases,234 primary decoder evaluations,
+independently exact final weights after all117 internal-training replays. Real
+artificial teaching raises fixed-code accuracy21.92/27.83% to49.58/51.52%; both
+cohorts pass the aligned-versus-frozen/shifted primary. Ridge already~99.93%:
+no additional memory capacity or original-wiring superiority is established.
+The prior common-delay analysis also completed, explicitly retrospective.
+Biological internal learning remains open; do not call the artificial teacher dopamine.
 
-Next single proposed analysis: **compare lesion impairment at jointly accessible
-delays**. Use archived states, fix the delay-selection/access rule and cohort
-separation before the new analysis, report all eligible and ineligible delays.
-Do not retrospectively change the completed primary endpoint or cherry-pick a
-successful lag. Ask whether the mean interaction partly reflects different
-baseline temporal access. This is not yet executed and is not a plasticity sweep.
-Preserve III-B/C negative results and all prior artifacts. ACT IV internal learning,
-whole-brain localization and unique/minimal subnetworks remain open.
+Next single proposed experiment: **replace the target-code vector with scalar
+correctness reward and one local pre/post eligibility rule**. Keep the fixed code
+and matched input/observation interface. Predeclare no-learning and yoked-reward
+controls, one learning rate and bounded updates. Test whether the same code
+function can arise without vector teaching. Do not relabel Phase5A's trained-head
+gradient feedback as local biology. Protocol and source review must precede new
+outcomes. This proposed experiment has not been executed. Preserve prior negatives.
 
 ## Historical handoff notes (superseded by the result above)
 

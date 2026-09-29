@@ -1,0 +1,128 @@
+{
+  "retrospective": true,
+  "previous_outcomes_seen": true,
+  "eligible_lags": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "eligibility": {
+    "1": {
+      "MBON": true,
+      "KC_unstimulated": true
+    },
+    "2": {
+      "MBON": true,
+      "KC_unstimulated": true
+    },
+    "3": {
+      "MBON": true,
+      "KC_unstimulated": true
+    },
+    "4": {
+      "MBON": true,
+      "KC_unstimulated": true
+    },
+    "5": {
+      "MBON": true,
+      "KC_unstimulated": true
+    },
+    "8": {
+      "MBON": true,
+      "KC_unstimulated": false
+    }
+  },
+  "statistics": {
+    "discovery": {
+      "mbon_loss": {
+        "n": 3,
+        "mean": 0.08530000000000003,
+        "median": 0.08670000000000003,
+        "variance": 2.0830000000000033e-05,
+        "bootstrap95": [
+          0.08020000000000001,
+          0.08900000000000001
+        ],
+        "paired_dz": 18.689788905000768,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "kc_loss": {
+        "n": 3,
+        "mean": -0.0006666666666666635,
+        "median": -0.00040000000000000034,
+        "variance": 1.0533333333333005e-06,
+        "bootstrap95": [
+          -0.0017999999999999794,
+          0.0001999999999999891
+        ],
+        "paired_dz": -0.649569802461638,
+        "wins": 1,
+        "ties": 0,
+        "losses": 2
+      },
+      "interaction": {
+        "n": 3,
+        "mean": 0.08596666666666668,
+        "median": 0.0885,
+        "variance": 2.1623333333333344e-05,
+        "bootstrap95": [
+          0.0806,
+          0.08880000000000003
+        ],
+        "paired_dz": 18.487098953234803,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "confirmation": {
+      "mbon_loss": {
+        "n": 3,
+        "mean": 0.07553333333333333,
+        "median": 0.07559999999999997,
+        "variance": 1.2963333333333376e-05,
+        "bootstrap95": [
+          0.0719,
+          0.07910000000000002
+        ],
+        "paired_dz": 20.978783766075697,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "kc_loss": {
+        "n": 3,
+        "mean": -0.00023333333333331504,
+        "median": -0.0001000000000000223,
+        "variance": 5.333333333331421e-08,
+        "bootstrap95": [
+          -0.0004999999999999339,
+          -9.999999999998899e-05
+        ],
+        "paired_dz": -1.010362971081947,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "interaction": {
+        "n": 3,
+        "mean": 0.07576666666666665,
+        "median": 0.07609999999999992,
+        "variance": 1.3043333333333441e-05,
+        "bootstrap95": [
+          0.072,
+          0.07920000000000003
+        ],
+        "paired_dz": 20.978956594985615,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    }
+  },
+  "new_confirmatory_claim": false
+}

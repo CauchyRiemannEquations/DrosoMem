@@ -9,19 +9,20 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 
 ## Current research
 
-Latest: [Observation-location diagnostic](docs/observation-location-results.md).
-After DAN→MBON removal, MBON decoding loses7.88/7.27 percentage points in fresh
-discovery/confirmation tasks;48 non-directly-stimulated KCs retain past-symbol
-access with losses−0.08/−0.04pp. Both cohorts pass the locked location-dependence
-rule. KC baseline accuracy is lower (~50% versus77%): this does not locate storage.
+Latest: [ACT IV-A readout-dependency comparison](docs/readout-dependency-results.md).
+The bounded A/B/C/D comparison is complete:117 network/training cases across
+real,random and role-preserving graphs, with trained ridge and fixed-code decoding.
+On real graphs, artificial internal teaching raises fixed-code accuracy from
+21.92/27.83% to49.58/51.52% in discovery/confirmation. Ridge already reads lag2
+at99.93%, so increased memory capacity is not established. Random controls also
+reach100% with ridge; this endpoint has a ceiling and shows no original-wiring advantage.
 
-III-A/B/C/D are complete within their partial-model scopes. This ACT IV-A entry
-diagnostic adds130 fits/replays; it does not establish internal synaptic learning.
-Next proposed analysis: compare impairment at jointly accessible delays, under
-separate rules fixed before that analysis. Earlier negative findings remain intact.
+This is supervised internal recoding with an artificial target, not biological
+learning. Next one proposed study: scalar reward and local eligibility without
+the target-code vector. Earlier negative findings and all raw artifacts remain.
 
-The established models freeze recurrent connectivity and train an external
-readout. Distinguish **representation**, **decoding** and **internal learning**.
+Historical recall baselines freeze recurrent connectivity and train an external
+readout; the latest diagnostic additionally trains existing KC→MBON weights. Distinguish **representation**, **decoding** and **internal learning**.
 Teacher-forced accuracy, autonomous recall and robustness are separate measurements.
 
 ## Reproduce the latest diagnostic
@@ -32,12 +33,12 @@ Use Python3.12 and a clean environment; commands run from the repository root.
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-act1-lock.txt
 $env:PYTHONPATH = 'src'
-.\.venv\Scripts\python.exe scripts/observation_location.py --out outputs/observation_location_new
-.\.venv\Scripts\python.exe scripts/verify_observation_location.py outputs/observation_location_new --out outputs/observation_location_check_new
+.\.venv\Scripts\python.exe scripts/readout_dependency.py --out outputs/readout_dependency_new
+.\.venv\Scripts\python.exe scripts/verify_readout_dependency.py outputs/readout_dependency_new --out outputs/readout_dependency_check_new
 ```
 
-Use the committed mask bank and source artifacts; use fresh output directories. The runner verifies an archived baseline, executes the locked
-discovery and confirmation cohorts, and checks frozen/refit decoding. See the report for source hashes,
+Use the committed source artifacts and fresh output directories. The runner verifies an archived baseline, executes the locked
+discovery and confirmation cohorts, and checks internal updates plus trained/fixed decoding. See the report for source hashes,
 per-seed results, pairing checks and limitations. Historical results remain intact.
 [ACT I protocol](docs/whole-brain-memory-protocol.md) · [Data and attribution](data/README.md) ·
 [Primary-source review](docs/research.md) · [Historical reproduction](docs/historical-reproduction.md) · [License](LICENSE)

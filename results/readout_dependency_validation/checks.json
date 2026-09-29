@@ -1,0 +1,33 @@
+{
+  "all_checks_pass": true,
+  "internal_training_replayed": 117,
+  "exact_final_weights": true,
+  "independent_trajectories": 234,
+  "metric_rows": 1404,
+  "common_delays": {
+    "eligible_lags": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "rows": 36,
+    "retrospective": true
+  },
+  "confirmed": {
+    "internal_coding": true,
+    "representation_access": true,
+    "original_graph_advantage": false,
+    "representation_improvement": false,
+    "external_head_dependence": true
+  },
+  "prior_files_unchanged": 18279,
+  "result_manifest_sha256": "3d931e9a45edd6025bab4468b0bccb8cb914d614083882ec322f5bdafccb7486",
+  "verifier_sha256": "95f524b9dc5149ae3aade8b204c5565e7e7daae905ea5f3baadf11e9d6ab4598",
+  "budget": {
+    "seconds": 486.1864768999985,
+    "peak_sampled_rss_bytes": 165036032,
+    "sample_seconds": 0.05
+  }
+}

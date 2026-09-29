@@ -1,0 +1,794 @@
+{
+  "discovery": {
+    "cells": {
+      "random/aligned/fixed": {
+        "n": 3,
+        "mean": 0.448,
+        "median": 0.4565,
+        "variance": 0.0007432500000000014,
+        "bootstrap95": [
+          0.4175,
+          0.47000000000000003
+        ],
+        "paired_dz": 16.432761612745583,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "random/aligned/ridge": {
+        "n": 3,
+        "mean": 1.0,
+        "median": 1.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          1.0,
+          1.0
+        ],
+        "paired_dz": null,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "random/frozen/fixed": {
+        "n": 3,
+        "mean": 0.27416666666666667,
+        "median": 0.2525,
+        "variance": 0.002953083333333332,
+        "bootstrap95": [
+          0.23399999999999999,
+          0.336
+        ],
+        "paired_dz": 5.045181570538382,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "random/frozen/ridge": {
+        "n": 3,
+        "mean": 1.0,
+        "median": 1.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          1.0,
+          1.0
+        ],
+        "paired_dz": null,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "random/shifted/fixed": {
+        "n": 3,
+        "mean": 0.30083333333333334,
+        "median": 0.302,
+        "variance": 9.608333333333399e-05,
+        "bootstrap95": [
+          0.2905,
+          0.31000000000000005
+        ],
+        "paired_dz": 30.69035593445652,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "random/shifted/ridge": {
+        "n": 3,
+        "mean": 1.0,
+        "median": 1.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          1.0,
+          1.0
+        ],
+        "paired_dz": null,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/aligned/fixed": {
+        "n": 3,
+        "mean": 0.4958333333333333,
+        "median": 0.511,
+        "variance": 0.0007130833333333356,
+        "bootstrap95": [
+          0.465,
+          0.5115000000000001
+        ],
+        "paired_dz": 18.56801920794696,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/aligned/ridge": {
+        "n": 3,
+        "mean": 0.9993333333333334,
+        "median": 0.9995,
+        "variance": 5.833333333333897e-07,
+        "bootstrap95": [
+          0.9984999999999999,
+          1.0
+        ],
+        "paired_dz": 1308.434469854947,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/frozen/fixed": {
+        "n": 3,
+        "mean": 0.21916666666666665,
+        "median": 0.198,
+        "variance": 0.0031185833333333313,
+        "bootstrap95": [
+          0.17699999999999996,
+          0.2825
+        ],
+        "paired_dz": 3.9246038509829897,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/frozen/ridge": {
+        "n": 3,
+        "mean": 0.9993333333333334,
+        "median": 0.9995,
+        "variance": 5.833333333333897e-07,
+        "bootstrap95": [
+          0.9984999999999999,
+          1.0
+        ],
+        "paired_dz": 1308.434469854947,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/shifted/fixed": {
+        "n": 3,
+        "mean": 0.23766666666666666,
+        "median": 0.217,
+        "variance": 0.0038605833333333335,
+        "bootstrap95": [
+          0.1885,
+          0.3075
+        ],
+        "paired_dz": 3.8250913330426637,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/shifted/ridge": {
+        "n": 3,
+        "mean": 0.9996666666666667,
+        "median": 0.9995,
+        "variance": 8.333333333331497e-08,
+        "bootstrap95": [
+          0.9994999999999999,
+          1.0
+        ],
+        "paired_dz": 3462.946914599757,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "role/aligned/fixed": {
+        "n": 3,
+        "mean": 0.5065,
+        "median": 0.5145,
+        "variance": 0.0005102500000000005,
+        "bootstrap95": [
+          0.48100000000000004,
+          0.524
+        ],
+        "paired_dz": 22.422701889370906,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "role/aligned/ridge": {
+        "n": 3,
+        "mean": 1.0,
+        "median": 1.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          1.0,
+          1.0
+        ],
+        "paired_dz": null,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "role/frozen/fixed": {
+        "n": 3,
+        "mean": 0.246,
+        "median": 0.23,
+        "variance": 0.001452249999999999,
+        "bootstrap95": [
+          0.2185,
+          0.2895
+        ],
+        "paired_dz": 6.455270038937709,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "role/frozen/ridge": {
+        "n": 3,
+        "mean": 1.0,
+        "median": 1.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          1.0,
+          1.0
+        ],
+        "paired_dz": null,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "role/shifted/fixed": {
+        "n": 3,
+        "mean": 0.2021666666666667,
+        "median": 0.20500000000000002,
+        "variance": 0.0041340833333333325,
+        "bootstrap95": [
+          0.1365,
+          0.265
+        ],
+        "paired_dz": 3.1442707607088907,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "role/shifted/ridge": {
+        "n": 3,
+        "mean": 1.0,
+        "median": 1.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          1.0,
+          1.0
+        ],
+        "paired_dz": null,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "access": {
+      "random/aligned/fixed": true,
+      "random/aligned/ridge": true,
+      "random/frozen/fixed": false,
+      "random/frozen/ridge": true,
+      "random/shifted/fixed": false,
+      "random/shifted/ridge": true,
+      "real/aligned/fixed": true,
+      "real/aligned/ridge": true,
+      "real/frozen/fixed": false,
+      "real/frozen/ridge": true,
+      "real/shifted/fixed": false,
+      "real/shifted/ridge": true,
+      "role/aligned/fixed": true,
+      "role/aligned/ridge": true,
+      "role/frozen/fixed": false,
+      "role/frozen/ridge": true,
+      "role/shifted/fixed": false,
+      "role/shifted/ridge": true
+    },
+    "contrasts": {
+      "internal_vs_frozen": {
+        "n": 3,
+        "mean": 0.27666666666666667,
+        "median": 0.313,
+        "variance": 0.006766083333333337,
+        "bootstrap95": [
+          0.1825,
+          0.3345000000000001
+        ],
+        "paired_dz": 3.363474709146196,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "internal_vs_shifted": {
+        "n": 3,
+        "mean": 0.2581666666666667,
+        "median": 0.29400000000000004,
+        "variance": 0.00781058333333334,
+        "bootstrap95": [
+          0.15749999999999997,
+          0.32300000000000006
+        ],
+        "paired_dz": 2.9211807643086822,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real_vs_random": {
+        "n": 3,
+        "mean": -0.0006666666666666673,
+        "median": -0.0004999999999999449,
+        "variance": 5.833333333333899e-07,
+        "bootstrap95": [
+          -0.0015000000000000568,
+          0.0
+        ],
+        "paired_dz": -0.872871560943928,
+        "wins": 0,
+        "ties": 1,
+        "losses": 2
+      },
+      "real_vs_role": {
+        "n": 3,
+        "mean": -0.0006666666666666673,
+        "median": -0.0004999999999999449,
+        "variance": 5.833333333333899e-07,
+        "bootstrap95": [
+          -0.0015000000000000568,
+          0.0
+        ],
+        "paired_dz": -0.872871560943928,
+        "wins": 0,
+        "ties": 1,
+        "losses": 2
+      },
+      "representation_vs_frozen": {
+        "n": 3,
+        "mean": 0.0,
+        "median": 0.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          0.0,
+          0.0
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 3,
+        "losses": 0
+      },
+      "representation_vs_shifted": {
+        "n": 3,
+        "mean": -0.0003333333333333706,
+        "median": 0.0,
+        "variance": 3.33333333333408e-07,
+        "bootstrap95": [
+          -0.001000000000000112,
+          0.0
+        ],
+        "paired_dz": -0.5773502691896257,
+        "wins": 0,
+        "ties": 2,
+        "losses": 1
+      },
+      "external_head": {
+        "n": 3,
+        "mean": 0.7801666666666667,
+        "median": 0.8005,
+        "variance": 0.0030663333333333315,
+        "bootstrap95": [
+          0.7174999999999999,
+          0.8225000000000001
+        ],
+        "paired_dz": 14.088920180354116,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "gates": {
+      "internal_vs_frozen": true,
+      "internal_vs_shifted": true,
+      "real_vs_random": false,
+      "real_vs_role": false,
+      "representation_vs_frozen": false,
+      "representation_vs_shifted": false,
+      "external_head": true
+    },
+    "endpoints": {
+      "internal_coding": true,
+      "representation_access": true,
+      "original_graph_advantage": false,
+      "representation_improvement": false,
+      "external_head_dependence": true
+    }
+  },
+  "confirmation": {
+    "cells": {
+      "random/aligned/fixed": {
+        "n": 3,
+        "mean": 0.4371666666666667,
+        "median": 0.47950000000000004,
+        "variance": 0.008913083333333334,
+        "bootstrap95": [
+          0.329,
+          0.503
+        ],
+        "paired_dz": 4.630555103961219,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "random/aligned/ridge": {
+        "n": 3,
+        "mean": 1.0,
+        "median": 1.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          1.0,
+          1.0
+        ],
+        "paired_dz": null,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "random/frozen/fixed": {
+        "n": 3,
+        "mean": 0.2635,
+        "median": 0.2685,
+        "variance": 0.0006437499999999999,
+        "bootstrap95": [
+          0.236,
+          0.286
+        ],
+        "paired_dz": 10.38537059185165,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "random/frozen/ridge": {
+        "n": 3,
+        "mean": 1.0,
+        "median": 1.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          1.0,
+          1.0
+        ],
+        "paired_dz": null,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "random/shifted/fixed": {
+        "n": 3,
+        "mean": 0.2508333333333333,
+        "median": 0.2825,
+        "variance": 0.008234333333333335,
+        "bootstrap95": [
+          0.1485,
+          0.3215
+        ],
+        "paired_dz": 2.7642099614647098,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "random/shifted/ridge": {
+        "n": 3,
+        "mean": 1.0,
+        "median": 1.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          1.0,
+          1.0
+        ],
+        "paired_dz": null,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/aligned/fixed": {
+        "n": 3,
+        "mean": 0.5151666666666667,
+        "median": 0.517,
+        "variance": 2.0583333333333188e-05,
+        "bootstrap95": [
+          0.51,
+          0.5185
+        ],
+        "paired_dz": 113.5507222861836,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/aligned/ridge": {
+        "n": 3,
+        "mean": 0.9983333333333334,
+        "median": 0.9984999999999999,
+        "variance": 3.0833333333334314e-06,
+        "bootstrap95": [
+          0.9964999999999998,
+          1.0
+        ],
+        "paired_dz": 568.5456394557378,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/frozen/fixed": {
+        "n": 3,
+        "mean": 0.2783333333333333,
+        "median": 0.27049999999999996,
+        "variance": 0.0003100833333333332,
+        "bootstrap95": [
+          0.266,
+          0.2985
+        ],
+        "paired_dz": 15.80614671387992,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/frozen/ridge": {
+        "n": 3,
+        "mean": 0.9993333333333334,
+        "median": 0.9995,
+        "variance": 5.833333333333899e-07,
+        "bootstrap95": [
+          0.9984999999999999,
+          1.0
+        ],
+        "paired_dz": 1308.4344698549469,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/shifted/fixed": {
+        "n": 3,
+        "mean": 0.28350000000000003,
+        "median": 0.304,
+        "variance": 0.0014542500000000002,
+        "bootstrap95": [
+          0.23949999999999996,
+          0.307
+        ],
+        "paired_dz": 7.434187784448308,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real/shifted/ridge": {
+        "n": 3,
+        "mean": 0.999,
+        "median": 0.999,
+        "variance": 1.0000000000000019e-06,
+        "bootstrap95": [
+          0.9979999999999999,
+          1.0
+        ],
+        "paired_dz": 998.9999999999991,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "role/aligned/fixed": {
+        "n": 3,
+        "mean": 0.5143333333333333,
+        "median": 0.514,
+        "variance": 3.608333333333337e-05,
+        "bootstrap95": [
+          0.5085,
+          0.5205
+        ],
+        "paired_dz": 85.62317860483621,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "role/aligned/ridge": {
+        "n": 3,
+        "mean": 1.0,
+        "median": 1.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          1.0,
+          1.0
+        ],
+        "paired_dz": null,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "role/frozen/fixed": {
+        "n": 3,
+        "mean": 0.21633333333333335,
+        "median": 0.217,
+        "variance": 0.0046243333333333345,
+        "bootstrap95": [
+          0.14800000000000002,
+          0.28400000000000003
+        ],
+        "paired_dz": 3.181257886369807,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "role/frozen/ridge": {
+        "n": 3,
+        "mean": 1.0,
+        "median": 1.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          1.0,
+          1.0
+        ],
+        "paired_dz": null,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "role/shifted/fixed": {
+        "n": 3,
+        "mean": 0.24666666666666667,
+        "median": 0.25,
+        "variance": 0.004298583333333333,
+        "bootstrap95": [
+          0.1795,
+          0.3105
+        ],
+        "paired_dz": 3.762251203274059,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "role/shifted/ridge": {
+        "n": 3,
+        "mean": 1.0,
+        "median": 1.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          1.0,
+          1.0
+        ],
+        "paired_dz": null,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "access": {
+      "random/aligned/fixed": true,
+      "random/aligned/ridge": true,
+      "random/frozen/fixed": false,
+      "random/frozen/ridge": true,
+      "random/shifted/fixed": false,
+      "random/shifted/ridge": true,
+      "real/aligned/fixed": true,
+      "real/aligned/ridge": true,
+      "real/frozen/fixed": false,
+      "real/frozen/ridge": true,
+      "real/shifted/fixed": false,
+      "real/shifted/ridge": true,
+      "role/aligned/fixed": true,
+      "role/aligned/ridge": true,
+      "role/frozen/fixed": false,
+      "role/frozen/ridge": true,
+      "role/shifted/fixed": false,
+      "role/shifted/ridge": true
+    },
+    "contrasts": {
+      "internal_vs_frozen": {
+        "n": 3,
+        "mean": 0.23683333333333334,
+        "median": 0.244,
+        "variance": 0.00021408333333333425,
+        "bootstrap95": [
+          0.21999999999999997,
+          0.24650000000000005
+        ],
+        "paired_dz": 16.186442112620437,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "internal_vs_shifted": {
+        "n": 3,
+        "mean": 0.2316666666666667,
+        "median": 0.21149999999999997,
+        "variance": 0.0015830833333333348,
+        "bootstrap95": [
+          0.20600000000000004,
+          0.2775
+        ],
+        "paired_dz": 5.822529016744426,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "real_vs_random": {
+        "n": 3,
+        "mean": -0.0006666666666666673,
+        "median": -0.0004999999999999449,
+        "variance": 5.833333333333899e-07,
+        "bootstrap95": [
+          -0.0015000000000000568,
+          0.0
+        ],
+        "paired_dz": -0.872871560943928,
+        "wins": 0,
+        "ties": 1,
+        "losses": 2
+      },
+      "real_vs_role": {
+        "n": 3,
+        "mean": -0.0006666666666666673,
+        "median": -0.0004999999999999449,
+        "variance": 5.833333333333899e-07,
+        "bootstrap95": [
+          -0.0015000000000000568,
+          0.0
+        ],
+        "paired_dz": -0.872871560943928,
+        "wins": 0,
+        "ties": 1,
+        "losses": 2
+      },
+      "representation_vs_frozen": {
+        "n": 3,
+        "mean": -0.001000000000000038,
+        "median": -0.001000000000000112,
+        "variance": 6.250000000000288e-06,
+        "bootstrap95": [
+          -0.0035000000000000586,
+          0.0015000000000000568
+        ],
+        "paired_dz": -0.40000000000000596,
+        "wins": 1,
+        "ties": 0,
+        "losses": 2
+      },
+      "representation_vs_shifted": {
+        "n": 3,
+        "mean": -0.0006666666666667043,
+        "median": -0.0015000000000000568,
+        "variance": 5.583333333333491e-06,
+        "bootstrap95": [
+          -0.0025000000000000577,
+          0.0020000000000000018
+        ],
+        "paired_dz": -0.28213824634345125,
+        "wins": 1,
+        "ties": 0,
+        "losses": 2
+      },
+      "external_head": {
+        "n": 3,
+        "mean": 0.7210000000000001,
+        "median": 0.7290000000000001,
+        "variance": 0.0002882499999999996,
+        "bootstrap95": [
+          0.7014999999999999,
+          0.7324999999999999
+        ],
+        "paired_dz": 42.46690461827616,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "gates": {
+      "internal_vs_frozen": true,
+      "internal_vs_shifted": true,
+      "real_vs_random": false,
+      "real_vs_role": false,
+      "representation_vs_frozen": false,
+      "representation_vs_shifted": false,
+      "external_head": true
+    },
+    "endpoints": {
+      "internal_coding": true,
+      "representation_access": true,
+      "original_graph_advantage": false,
+      "representation_improvement": false,
+      "external_head_dependence": true
+    }
+  },
+  "confirmed": {
+    "internal_coding": true,
+    "representation_access": true,
+    "original_graph_advantage": false,
+    "representation_improvement": false,
+    "external_head_dependence": true
+  },
+  "cohorts_pooled": false
+}

@@ -7,12 +7,12 @@ information), and **learning** (experience modifies recurrent connections).
 
 ## Current position — 2026-09-29
 
-**ACT III-D scoped panel and one ACT IV-A entry diagnostic complete.**
-[Observation-location results](observation-location-results.md):130 conditions,
-full repeats and independent verification. DAN→MBON loss is substantial at MBON
-observation but near zero at48 non-input KCs with retained past access. Baseline
-accuracy/lag profiles differ; storage location and internal learning remain open.
-Next one analysis: impairment at jointly accessible delays. No plasticity sweep.
+**ACT IV-A: current partial-model A/B/C/D comparison complete.**
+[Results](readout-dependency-results.md):117 cases and independent exact update,
+trajectory and decoder verification. Artificial internal teaching improves fixed
+code reading; learned ridge already reads lag2 almost perfectly. Biological
+learning and increased memory capacity are not established. Next one proposal:
+scalar reward with local eligibility, removing the explicit target-code vector.
 
 | Axis | Completed scope | Remaining scope |
 |---|---|---|
@@ -22,12 +22,13 @@ Next one analysis: impairment at jointly accessible delays. No plasticity sweep.
 | ACT III-B | DAN/count/raw-bin and normalized-bin controls;weak/strong/random/betweenness/within-role/between-role panel | Whole-brain,detected biological modules,full dose curves remain untested extensions |
 | ACT III-C | Four controls including exact per-neuron incoming-weight and role/signed-degree preservation;169 cases | Whole-brain, uniform-ensemble mixing and autonomous-recall extensions |
 | ACT III-D | Five preregistered pathways, matched removal controls, sensitivity map and fresh confirmation;273 cases | Minimal/unique subnetwork, motifs, whole-brain localization and separation of storage from readout access |
-| ACT IV | Earlier negative local-rule results; fixed48-cell observation-dependence diagnostic completed | Useful internal learning without external decoder dependence |
+| ACT IV | Earlier negative biological/local-rule results; IV-A current A/B/C/D comparison and observation diagnostics completed | Useful internal learning without external decoder dependence |
 | ACT V | Scoped robustness curves exposed strong fragility | Broader perturbation/physiological validation, independent axis |
 
 현재 두 686-neuron 부분 모델의 **III-A/B/C/D의 제한된 연구 단락을 종료**했다.
 완료는 고정한 실험·검증을 끝냈다는 뜻이다. 전체 뇌의 기억 위치나 내부 학습을
-규명했다는 뜻은 아니다. 관측 위치 진단도 완료했다. 다음은 공통 접근 가능한 지연에서의 손상 비교 분석이다.
+규명했다는 뜻은 아니다. 관측 위치·공통 지연 진단과 ACT IV-A의 현재 A/B/C/D 비교도 완료했다.
+인공 정답 교사로 내부 코드를 바꾼 것과 생물학적 학습은 구분한다.
 
 ## ACT I — Can a Fly Brain Remember?
 
@@ -98,6 +99,16 @@ Compare frozen real reservoir + trained head, random reservoir + trained head,
 plastic reservoir + simple head, and possible direct internal decoding.
 Preserve Phase 5B's negative recall/response findings. Separate external decoder
 learning from internal synaptic learning.
+
+### ACT IV-A completion boundary
+
+A frozen real + learned ridge; B random and role-preserved + learned ridge;
+C artificially taught existing KC→MBON + simple ridge/fixed code; D zero-trained-
+parameter nearest-code proxy were all executed under one matched protocol.
+The existing supervised delta rule is a computational control, not dopamine or
+strictly local reward learning. Fixed-code improvement shows internal recoding;
+near-ceiling ridge access does not establish additional memory capacity. Literal
+readout-free biology, whole-brain learning and stronger biological rules remain open.
 
 ## ACT V — Robustness (independent axis)
 
