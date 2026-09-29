@@ -37,6 +37,13 @@ All per-seed values, means/medians/variance/bootstrap/paired dz are in
 [summary](../results/neuron_input_control/summary.json); diagnostics/checkpoints
 remain in each case directory. Both frozen and refit outputs preserved.
 
+Post-run source/Git byte audit found six recorded Python files with execution
+CRLF versus committed LF only, identical Python AST. Exact execution bytes are
+preserved in [source audit](../results/neuron_source_provenance/audit.json) and its
+execution-source directory. A canonical LF input-only case replays every array
+and metric exactly. For historical source hashes restore those byte snapshots;
+the original result manifest is unchanged.
+
 ```powershell
 $env:PYTHONPATH='src'
 python scripts/neuron_panel.py --package input --out outputs/neuron_input_new

@@ -40,6 +40,11 @@ DAN125,APL1. KCγ에 이어 KCab/KCapbp를 평가했다. Downstream 집단은 �
 seed 충돌0. 입력 대조는 기존 seed를 의도적으로 재사용했다.
 집단 패널 실행 전 9,046개 결과 파일의 해시가 보존됐다.
 
+마지막 source/Git 바이트 감사에서 기록 대상 Python 파일6개의 CRLF/LF 차이를
+발견했다. 실행 시 CRLF,Git 저장 시 LF였으며 Python AST는 동일했다. 기존 manifest를
+수정하지 않고 실행 당시 바이트를 별도로 보존했다. 사용하지 않은 과거 script도
+전체 scripts hash 목록에 포함되어 있었다. 아래 재현 절차에서 이 차이를 명시한다.
+
 ## 2. Reproduced baseline
 
 `results/structural_k4_main/real_c701_s34142`의 모든 checkpoint 배열·metric을 입력 대조와 패널 각각에서
@@ -297,6 +302,17 @@ Pinned config hash `2dd04199e44c141c8648005dc89ae0be0649d77d820b3812c5cf11a256af
 `weights.npz`는 개입 후 고정 회로다. Manifest가 config·dataset seed·그래프/소스
 해시·checkpoint 경로·환경을 묶는다. 전체 테스트 **206 passed,8 optional skipped**.
 과거 검증은 기록된 revision의 source를 사용한다.
+
+[Source byte audit](../results/neuron_source_provenance/audit.json)과
+[실행 소스 snapshot manifest](../results/neuron_source_provenance/manifest.json)에
+원래 실행 바이트와 Git 바이트의 해시 대응을 기록했다. 줄바꿈을 제외한 차이는0이며,
+Git의 LF runner로 입력-only와 DAN full lesion의 대표2조건을 다시 실행해 모든
+상태 배열과 metric이 정확히 일치함을 확인했다. 이 두 재실행은 위327조건과 별도의
+출처 검증이며 표본 수를 늘리지 않는다.
+정확한 과거 source hash까지 재현할 때는 기록된 실행 revision checkout에
+`results/neuron_source_provenance/execution-source/`의 파일들을 같은 상대 경로로
+바이트 그대로 복사한다. 일반적인 새 실행은 LF 소스를 사용하며 새 manifest에
+그 바이트의 해시를 기록한다. 과거 manifest/checkpoint는 덮어쓰지 않았다.
 
 ```powershell
 $env:PYTHONPATH='src'

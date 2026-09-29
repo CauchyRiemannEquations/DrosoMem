@@ -55,6 +55,12 @@ This closes the bounded two-partial-circuit III-A panel, not whole-brain/
 downstream localization or autonomous-recall mechanism. Next single experiment:
 DAN-associated edge removal with matched edge count/weight bins, ACT III-B.
 
+Source provenance follow-up: six recorded Python files had execution CRLF/Git LF
+hash differences only. Their exact execution bytes are preserved in
+[source audit](../results/neuron_source_provenance/audit.json); all Python ASTs
+match and two representative canonical-LF full replays match every array/metric.
+Historical manifests were not rewritten.
+
 ## Preceding ACT III-A fresh-seed KC confirmation — 2026-09-29
 
 [Fresh cohort](kc-confirmation-results.md): KCγ26.047% frozen/79.367% refit,
