@@ -25,7 +25,7 @@ def verify(root, out):
             raw,ids,_=core.load_connectome(data); roles,_=core.load_roles(data,ids)
             annotations=pd.read_csv(data/'annotations.csv',dtype=str).set_index('root_id').loc[list(map(str,ids))]
             gamma=np.array([r=='KC' and str(t).startswith('KCg') for r,t in zip(roles,annotations.cell_type)])
-            bank=symbol_bank(roles,b['seed'],.1,.5)[:4]
+            bank=symbol_bank(roles,b['seed'],.1,.5)[:4].copy()
             degree_in=np.asarray((raw!=0).sum(axis=1)).ravel(); degree_out=np.asarray((raw!=0).sum(axis=0)).ravel()
             exposure=np.sum((bank.T!=0)*(2**np.arange(4)),axis=1)
             keys=list(zip(degree_in.tolist(),degree_out.tolist(),exposure.tolist()))
@@ -96,6 +96,7 @@ def verify(root, out):
     for path,h in prior.items():assert core.sha256(path)==h,path
     out.mkdir(parents=True,exist_ok=False)
     core.write_json(out/'checks.json',dict(verified=True,conditions=counts,main_lag_rows=len(rows),
+        verifier_sha256=core.sha256(__file__),
         independently_regenerated_masks=True,independent_dense_weight_check=True,independent_lstsq=True,
         independent_pair_statistics=True,prior_results_unchanged=len(prior),source_manifest_sha256=core.sha256(root/'manifest.json')))
     print(read(out/'checks.json'),flush=True)
