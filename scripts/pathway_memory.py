@@ -188,7 +188,7 @@ def run(config,out):
     finally:budget.close()
 
 
-CONFIG_HASH='937d7260da6ef253294ea4d9c4dcd1ddbd11cf5eeecec8612928ec3272b7b86c'
+CONFIG_HASH='d4bc67f5ed08941b3715a4a7db8bcc75fd4fefa815698b63529e834b6e166b44'
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--config',type=Path,default=Path('configs/pathway_memory.json'));p.add_argument('--out',type=Path,required=True)
     args=p.parse_args();run(args.config,args.out)

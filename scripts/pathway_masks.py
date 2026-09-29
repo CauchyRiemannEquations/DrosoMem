@@ -1,5 +1,5 @@
 """Prospective minimum-overlap, mass-matched pathway cut bank."""
-import argparse,subprocess,hashlib,time
+import argparse,subprocess,hashlib,time,warnings
 from pathlib import Path
 import numpy as np
 from scipy.optimize import milp,Bounds,LinearConstraint
@@ -26,18 +26,19 @@ def constraints(raw,target,c):
 
 def solve(A,lo,hi,cost,c,gap):
     start=time.perf_counter()
+    warnings.filterwarnings('ignore',message='Unrecognized options detected.*mip_feasibility_tolerance.*',category=RuntimeWarning)
     limit=c['solver_seconds'] if gap==0 else c['draw_solver_seconds']
-    r=milp(cost,integrality=np.ones(len(cost)),bounds=Bounds(0,1),constraints=LinearConstraint(A,lo,hi),options={'time_limit':limit,'mip_rel_gap':gap})
+    r=milp(cost,integrality=np.ones(len(cost)),bounds=Bounds(0,1),constraints=LinearConstraint(A,lo,hi),options={'time_limit':limit,'mip_rel_gap':gap,'mip_feasibility_tolerance':c['solver_feasibility_tolerance']})
     retried=False
     if gap>0 and r.x is None:
         retried=True
-        r=milp(cost,integrality=np.ones(len(cost)),bounds=Bounds(0,1),constraints=LinearConstraint(A,lo,hi),options={'time_limit':c['solver_seconds'],'mip_rel_gap':gap})
+        r=milp(cost,integrality=np.ones(len(cost)),bounds=Bounds(0,1),constraints=LinearConstraint(A,lo,hi),options={'time_limit':c['solver_seconds'],'mip_rel_gap':gap,'mip_feasibility_tolerance':c['solver_feasibility_tolerance']})
     if (r.status!=0 and not (gap>0 and c['accept_feasible_time_limit'] and r.status==1)) or r.x is None:raise RuntimeError(('MILP did not solve',r.status,r.message))
     assert np.max(abs(r.x-np.rint(r.x)))<1e-5
     mask=r.x>.5;values=A@mask
     assert np.all(values>=lo-c['numerical_guard']) and np.all(values<=hi+c['numerical_guard'])
     if r.status==0:assert r.mip_gap<=gap+1e-10
-    return mask,dict(status=int(r.status),time_limited_feasible=bool(r.status==1),retried_without_incumbent=retried,message=r.message,objective=float(r.fun),dual_bound=float(r.mip_dual_bound),gap=float(r.mip_gap),nodes=int(r.mip_node_count),seconds=time.perf_counter()-start)
+    return mask,dict(status=int(r.status),time_limited_feasible=bool(r.status==1),retried_without_incumbent=retried,message=r.message,objective=float(r.fun),dual_bound=float(r.mip_dual_bound),gap=float(r.mip_gap),nodes=int(r.mip_node_count),seconds=time.perf_counter()-start,feasibility_tolerance=c['solver_feasibility_tolerance'])
 
 
 def audit_mask(raw,target,mask,c,minimum=None):
@@ -61,6 +62,10 @@ def build(config,out):
     for p in [config,Path(__file__),Path('docs/pathway-memory-seed-audit.json'),Path('docs/pathway-memory-graph-audit.json')]:
         p=p.resolve().relative_to(Path.cwd());context['source_sha256'][p.as_posix()]=core.sha256(p)
     for p,h in context['source_sha256'].items():assert hashlib.sha256(subprocess.check_output(['git','show',context['git_commit']+':'+p])).hexdigest()==h,p
+    for p in Path(c['bank_resume_from']).glob('*'):
+        if p.is_file():
+            context['source_sha256'][p.as_posix()]=core.sha256(p)
+            assert hashlib.sha256(subprocess.check_output(['git','show',context['git_commit']+':'+p.as_posix()])).hexdigest()==core.sha256(p)
     out.mkdir(parents=True,exist_ok=False);budget=Budget(c)
     try:
         graphs={ci:anatomy(ci) for ci in c['circuit_seeds']};minimum={};minmasks={}
@@ -77,6 +82,19 @@ def build(config,out):
             for block in settings['blocks']:
                 for ci in settings['circuit_seeds']:
                     raw,ids,roles=graphs[ci];masks=dict(intact=np.zeros(raw.nnz,bool));info={}
+                    name=f'c{ci}_s{block["seed"]}';oldroot=Path(c['bank_resume_from'])
+                    if (oldroot/(name+'.npz')).exists() and (oldroot/(name+'.json')).exists():
+                        with np.load(oldroot/(name+'.npz')) as z:prior=dict(z)
+                        record=read(oldroot/(name+'.json'));assert not prior['intact'].any()
+                        for family in c['families']:
+                            target=target_mask(raw,roles,family);np.testing.assert_array_equal(prior[family],target)
+                            for j,seed in enumerate(block['edge_seeds'][family]):
+                                arm=f'{family}_control{j}';assert record['controls'][arm]['seed']==seed
+                                audit_mask(raw,target,prior[arm],c,minimum[str(ci)][family]['overlap'])
+                        np.savez_compressed(out/(name+'.npz'),**prior)
+                        record['reused_from']=oldroot.as_posix();core.write_json(out/(name+'.json'),record)
+                        print(f'Revalidated and reused {name}:15 controls',flush=True);continue
+
                     for family in c['families']:
                         target=target_mask(raw,roles,family);masks[family]=target
                         A,lo,hi=constraints(raw,target,c);k=minimum[str(ci)][family]['overlap']

@@ -154,7 +154,7 @@ def verify(root,out,analysis=None):
         analysis_root=analysis or root
         if analysis is not None:
             am=check(analysis);assert am['source_manifest_sha256']==core.sha256(root/'manifest.json')
-        past=f[f.lag.isin(c['primary_lags'])];summary=read(analysis_root/'summary.json');confirmed=[]
+        past=f[f.lag.isin(c['primary_lags'])];summary=read(analysis_root/'summary.json');confirmed=[];pairs=[]
         for mode in ['refit','frozen']:
             for family in c['families']:
                 both=[]
@@ -163,6 +163,7 @@ def verify(root,out,analysis=None):
                     q=q[q['mode']==mode];target=reference_family(q,family).groupby('seed').test_accuracy.mean()
                     control=q[q.arm.isin([family+'_control'+str(j) for j in range(3)])].groupby('seed').test_accuracy.mean()
                     impairment=base.test_accuracy-target;excess=control-target;key=f'{cohort}/{mode}/{family}'
+                    pairs.extend(dict(cohort=cohort,seed=int(seed),mode=mode,family=family,intact=float(base.test_accuracy[seed]),target=float(target[seed]),control=float(control[seed]),impairment=float(impairment[seed]),excess_impairment=float(excess[seed])) for seed in target.index)
                     for name,x in [('target',target),('control',control),('impairment',impairment),('excess_impairment',excess)]:audit_stats(x,summary['statistics'][key][name],c)
                     access=bool((base.frequency_excess>=.05).all() and (base.null_excess>=.05).all() and base.r2_vs_frequency.mean()>0)
                     gate=bool(access and impairment.mean()>=.05 and excess.mean()>=.05 and (impairment>0).all() and (excess>0).all())
@@ -174,6 +175,8 @@ def verify(root,out,analysis=None):
                 if all(both):confirmed.append(f'{mode}/{family}')
         assert confirmed==summary['confirmed'] and summary['primary_DAN_MBON_refit']==('refit/DAN_MBON' in confirmed) and not summary['cohorts_pooled']
         assert summary['refit_candidates']==[family for family in c['families'] if 'refit/'+family in confirmed]
+        paircsv=pd.read_csv(analysis_root/'paired-differences.csv');keys=['cohort','mode','family','seed']
+        pd.testing.assert_frame_equal(paircsv.sort_values(keys).reset_index(drop=True),pd.DataFrame(pairs)[paircsv.columns].sort_values(keys).reset_index(drop=True),check_dtype=False,atol=1e-12,rtol=1e-12)
         for p,h in read(root/'prior-results-sha256.json').items():assert core.sha256(p)==h,p
         for p,h in m['context']['source_sha256'].items():
             assert hashlib.sha256(subprocess.check_output(['git','show',m['context']['git_commit']+':'+p])).hexdigest()==h,p

@@ -124,3 +124,16 @@ require status optimal and zero gap at60s. This sampler has time/solver dependen
 and is not uniform or necessarily random-cost optimal. Do not overstate it.
 Use fresh results/pathway_masks_v4; previous partial masks remain immutable.
 This replaces the earlier status-optimal requirement ONLY for random-cost draws.
+
+## Third pre-outcome amendment: solver precision, unchanged acceptance bounds
+
+V4 stopped on confirmation c701 APL_KC seed194154: normalized mass after binary
+rounding was below the lower bound by7.52e-7 relative, exceeding the declared1e-7
+guard. No task outcome exists. Keep the0.5% and1e-7 acceptance limits; tighten
+HiGHS mip_feasibility_tolerance to1e-9. The isolated failing draw passes this
+precision setting. The adapter passes this option through to HiGHS and records it.
+Preserve v4 including seven completed banks and failure. Fresh v5 independently
+rechecks and reuses those completed masks (unchanged scientific acceptance rules),
+records their source, and generates only missing banks at stricter solver precision.
+It does not discard or select masks by neural performance. Earlier reused draws
+retain their original solver metadata. No seed/hypothesis/statistical gate changes.
