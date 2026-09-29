@@ -1,0 +1,42 @@
+{
+  "cases": 273,
+  "frozen": 260,
+  "independent_trajectories": 546,
+  "metric_rows": 5863,
+  "graph_sizes": {
+    "701": {
+      "edges": 3309
+    },
+    "702": {
+      "edges": 3241
+    }
+  },
+  "bank_checks": {
+    "control_masks": 195,
+    "minimum_overlap_checks": {
+      "701/KC_MBON": "minimum minus one infeasible",
+      "701/DAN_KC": "zero overlap is lower bound",
+      "701/DAN_MBON": "zero overlap is lower bound",
+      "701/KC_APL": "minimum minus one infeasible",
+      "701/APL_KC": "minimum minus one infeasible",
+      "702/KC_MBON": "minimum minus one infeasible",
+      "702/DAN_KC": "zero overlap is lower bound",
+      "702/DAN_MBON": "zero overlap is lower bound",
+      "702/KC_APL": "minimum minus one infeasible",
+      "702/APL_KC": "minimum minus one infeasible"
+    },
+    "bank_manifest_sha256": "69ef8f4f496747f1933704f83d11ee1feaf928e5e93b8e3f930efea0c3756675"
+  },
+  "all_checks_pass": true,
+  "source_git_bytes_verified": true,
+  "result_manifest_sha256": "b32c6a94c6af2a1c3a9b0ff55eac9ff55271374effa0976121f5e48e231ec0dd",
+  "prior_files_unchanged": 15299,
+  "budget": {
+    "seconds": 170.60514709999916,
+    "peak_sampled_rss_bytes": 200622080,
+    "sample_seconds": 0.05
+  },
+  "analysis_path": "results/pathway_memory",
+  "analysis_manifest_sha256": "b32c6a94c6af2a1c3a9b0ff55eac9ff55271374effa0976121f5e48e231ec0dd",
+  "verifier_sha256": "223eba6d7da8f60f0d7e1e3b73bce022fc9b09407cb5a2d6c75e658cef871d1e"
+}

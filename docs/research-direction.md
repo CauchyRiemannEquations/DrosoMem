@@ -73,10 +73,16 @@ Raw-bin 대조의 약7%p 차이는 새 cohort의 유효 가중치 대조에서2.
 후속 [III-C 구조 대조](structural-controls-results.md)도 169조건과 독립 검증을 마쳤다.
 역할·signed degree·뉴런별 incoming weights를 보존한 대조가 refit에서 원본보다
 1.33/1.12%p 높았다. 원본 배선의 5%p 우위는 확인되지 않았다. Frozen 전이 손상과
-refit 해독 가능성을 구분한다. 현행 부분 모델의 III-A/B/C 단락을 종료한다.
-다음 제안 하나는 III-D의 사전 정의한 역할별 경로 ablation sensitivity map이다.
-Whole-brain/downstream 위치 규명과 자율 회상으로의 확장은 미검증으로 유지한다.
-추가 gain 탐색이나 ACT IV 확장은 하지 않는다.
+refit 해독 가능성을 구분한다. 후속 [III-D 경로 패널](pathway-memory-results.md)도
+273조건과 독립 검증을 마쳤다. DAN→MBON refit 추가 손상7.33/8.32%p가 본·확인
+기준을 통과했다. KC→MBON도5.49/5.71%p로 통과했지만 현재 기호 접근도 함께
+저하된다. 두 경로는 관측 MBON으로 들어가므로 저장 위치와 해독 접근 통로를
+아직 구분하지 못한다. DAN→KC는 실패했고 APL 특이성은 대조의 높은 겹침으로
+식별하지 못했다. 현재 부분 모델의 III-A/B/C/D 패널 단락을 종료한다.
+다음 제안 하나는 ACT IV-A 진입 전 DAN→MBON 제거의 관측 위치 대조다.
+48개 관측 예산과 같은 head를 유지하고 대체 관측 집단의 intact 접근성부터
+검사한다. Whole-brain/downstream 위치 규명과 자율 회상 확장은 미검증이다.
+대규모 plasticity 확장이나 gain 탐색은 하지 않는다.
 ACT I→II→III→IV 순서를 지키며 강건성은 ACT V의 독립 축으로 유지한다.
 [로드맵](research-roadmap.md).
 

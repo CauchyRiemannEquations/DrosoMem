@@ -1,0 +1,1279 @@
+{
+  "statistics": {
+    "discovery/refit/KC_MBON": {
+      "target": {
+        "n": 3,
+        "mean": 0.7114166666666667,
+        "median": 0.7108333333333333,
+        "variance": 7.590277777777974e-06,
+        "bootstrap95": [
+          0.709,
+          0.7144166666666667
+        ],
+        "paired_dz": 258.22316532546563,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.7663240740740741,
+        "median": 0.7655555555555557,
+        "variance": 4.38760288065844e-06,
+        "bootstrap95": [
+          0.7647222222222222,
+          0.7686944444444445
+        ],
+        "paired_dz": 365.8464225876466,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.06386111111111108,
+        "median": 0.06258333333333321,
+        "variance": 2.9668981481481298e-05,
+        "bootstrap95": [
+          0.0591666666666667,
+          0.0698333333333333
+        ],
+        "paired_dz": 11.724252194341789,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": 0.05490740740740744,
+        "median": 0.05572222222222223,
+        "variance": 1.1795010288065684e-05,
+        "bootstrap95": [
+          0.051138888888888956,
+          0.05786111111111114
+        ],
+        "paired_dz": 15.987544851606112,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true,
+      "specificity_eligible": true,
+      "numeric_specificity_gate": true
+    },
+    "discovery/refit/DAN_KC": {
+      "target": {
+        "n": 3,
+        "mean": 0.7748611111111111,
+        "median": 0.77675,
+        "variance": 2.3682870370369853e-05,
+        "bootstrap95": [
+          0.7693333333333334,
+          0.7784999999999999
+        ],
+        "paired_dz": 159.2233276285921,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.773212962962963,
+        "median": 0.7749722222222223,
+        "variance": 5.7740997942387444e-05,
+        "bootstrap95": [
+          0.7648888888888888,
+          0.7797777777777778
+        ],
+        "paired_dz": 101.7552870145127,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.00041666666666658375,
+        "median": 0.00024999999999986144,
+        "variance": 2.7986111111112535e-06,
+        "bootstrap95": [
+          -0.0011666666666667602,
+          0.00216666666666665
+        ],
+        "paired_dz": 0.24906774069330306,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": -0.0016481481481481763,
+        "median": -0.001777777777777767,
+        "variance": 8.198559670782412e-06,
+        "bootstrap95": [
+          -0.004444444444444584,
+          0.001277777777777822
+        ],
+        "paired_dz": -0.5756088543318717,
+        "wins": 1,
+        "ties": 0,
+        "losses": 2
+      },
+      "intact_access": true,
+      "specificity_eligible": true,
+      "numeric_specificity_gate": false
+    },
+    "discovery/refit/DAN_MBON": {
+      "target": {
+        "n": 3,
+        "mean": 0.7015555555555556,
+        "median": 0.6998333333333333,
+        "variance": 3.43356481481487e-05,
+        "bootstrap95": [
+          0.6967500000000001,
+          0.7080833333333333
+        ],
+        "paired_dz": 119.72626741714903,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.774861111111111,
+        "median": 0.7741111111111111,
+        "variance": 5.547067901234603e-06,
+        "bootstrap95": [
+          0.7729722222222222,
+          0.7775
+        ],
+        "paired_dz": 328.99714100976485,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.07372222222222218,
+        "median": 0.07258333333333322,
+        "variance": 3.6474537037036596e-05,
+        "bootstrap95": [
+          0.06833333333333336,
+          0.08024999999999993
+        ],
+        "paired_dz": 12.206847631827065,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": 0.07330555555555551,
+        "median": 0.07427777777777778,
+        "variance": 1.2287808641975586e-05,
+        "bootstrap95": [
+          0.06941666666666657,
+          0.07622222222222219
+        ],
+        "paired_dz": 20.91219739769089,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true,
+      "specificity_eligible": true,
+      "numeric_specificity_gate": true
+    },
+    "discovery/refit/KC_APL": {
+      "target": {
+        "n": 3,
+        "mean": 0.752611111111111,
+        "median": 0.7535,
+        "variance": 5.655092592592945e-06,
+        "bootstrap95": [
+          0.7499166666666666,
+          0.7544166666666667
+        ],
+        "paired_dz": 316.48327613670114,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.7548611111111111,
+        "median": 0.7548055555555555,
+        "variance": 3.757716049382794e-07,
+        "bootstrap95": [
+          0.7542777777777777,
+          0.7555
+        ],
+        "paired_dz": 1231.4167939120007,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.02266666666666665,
+        "median": 0.022583333333333178,
+        "variance": 1.9881944444444046e-05,
+        "bootstrap95": [
+          0.0182500000000001,
+          0.027166666666666672
+        ],
+        "paired_dz": 5.0834461813409,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": 0.0022499999999999742,
+        "median": 0.0013055555555555598,
+        "variance": 3.354938271605153e-06,
+        "bootstrap95": [
+          0.001083333333333214,
+          0.004361111111111149
+        ],
+        "paired_dz": 1.22840125415689,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true,
+      "specificity_eligible": false,
+      "numeric_specificity_gate": false
+    },
+    "discovery/refit/APL_KC": {
+      "target": {
+        "n": 3,
+        "mean": 0.7528333333333332,
+        "median": 0.75275,
+        "variance": 9.027777777772088e-08,
+        "bootstrap95": [
+          0.7525833333333334,
+          0.7531666666666665
+        ],
+        "paired_dz": 2505.580786350149,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.7475,
+        "median": 0.7450000000000001,
+        "variance": 2.3949845679012475e-05,
+        "bootstrap95": [
+          0.744361111111111,
+          0.7531388888888889
+        ],
+        "paired_dz": 152.74247984858263,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.022444444444444416,
+        "median": 0.02441666666666653,
+        "variance": 3.941898148148184e-05,
+        "bootstrap95": [
+          0.015416666666666634,
+          0.02750000000000008
+        ],
+        "paired_dz": 3.5748363117467523,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": -0.005333333333333301,
+        "median": -0.007583333333333275,
+        "variance": 2.127391975308743e-05,
+        "bootstrap95": [
+          -0.008388888888889001,
+          -2.777777777762669e-05
+        ],
+        "paired_dz": -1.1563118319468244,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "intact_access": true,
+      "specificity_eligible": false,
+      "numeric_specificity_gate": false
+    },
+    "discovery/frozen/KC_MBON": {
+      "target": {
+        "n": 3,
+        "mean": 0.2544722222222222,
+        "median": 0.25266666666666665,
+        "variance": 4.098842592592606e-05,
+        "bootstrap95": [
+          0.24916666666666665,
+          0.26158333333333333
+        ],
+        "paired_dz": 39.74749488598032,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.24732407407407409,
+        "median": 0.24616666666666664,
+        "variance": 1.1298096707819003e-05,
+        "bootstrap95": [
+          0.24469444444444444,
+          0.2511111111111111
+        ],
+        "paired_dz": 73.58067167558967,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.5208055555555555,
+        "median": 0.519,
+        "variance": 4.203009259259292e-05,
+        "bootstrap95": [
+          0.5154166666666666,
+          0.528
+        ],
+        "paired_dz": 80.33326805055792,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": -0.007148148148148144,
+        "median": -0.007972222222222214,
+        "variance": 1.4467849794238644e-05,
+        "bootstrap95": [
+          -0.010472222222222216,
+          -0.0030000000000000027
+        ],
+        "paired_dz": -1.8792802482230964,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "intact_access": true,
+      "specificity_eligible": true,
+      "numeric_specificity_gate": false
+    },
+    "discovery/frozen/DAN_KC": {
+      "target": {
+        "n": 3,
+        "mean": 0.7292222222222221,
+        "median": 0.7158333333333333,
+        "variance": 0.0005931203703703678,
+        "bootstrap95": [
+          0.7144999999999998,
+          0.7573333333333331
+        ],
+        "paired_dz": 29.94252872609207,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.41358333333333325,
+        "median": 0.41641666666666666,
+        "variance": 3.3292438271605205e-05,
+        "bootstrap95": [
+          0.4069444444444444,
+          0.41738888888888886
+        ],
+        "paired_dz": 71.67871772781425,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.04605555555555559,
+        "median": 0.05366666666666675,
+        "variance": 0.0004012870370370344,
+        "bootstrap95": [
+          0.023333333333333428,
+          0.06116666666666659
+        ],
+        "paired_dz": 2.299081993675826,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": -0.31563888888888886,
+        "median": -0.30888888888888894,
+        "variance": 0.00047226003086419565,
+        "bootstrap95": [
+          -0.3399444444444443,
+          -0.29808333333333326
+        ],
+        "paired_dz": -14.524457172483542,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "intact_access": true,
+      "specificity_eligible": true,
+      "numeric_specificity_gate": false
+    },
+    "discovery/frozen/DAN_MBON": {
+      "target": {
+        "n": 3,
+        "mean": 0.2724722222222223,
+        "median": 0.27608333333333335,
+        "variance": 7.922453703703696e-05,
+        "bootstrap95": [
+          0.26233333333333336,
+          0.279
+        ],
+        "paired_dz": 30.612047516113748,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.2901388888888889,
+        "median": 0.29438888888888887,
+        "variance": 6.876003086419733e-05,
+        "bootstrap95": [
+          0.28058333333333335,
+          0.29544444444444445
+        ],
+        "paired_dz": 34.98951414844896,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.5028055555555554,
+        "median": 0.5045833333333333,
+        "variance": 1.7710648148148652e-05,
+        "bootstrap95": [
+          0.49799999999999994,
+          0.5058333333333334
+        ],
+        "paired_dz": 119.47659583014848,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": 0.017666666666666647,
+        "median": 0.016444444444444428,
+        "variance": 0.00019094753086419674,
+        "bootstrap95": [
+          0.004500000000000004,
+          0.032055555555555504
+        ],
+        "paired_dz": 1.2784907535887065,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true,
+      "specificity_eligible": true,
+      "numeric_specificity_gate": false
+    },
+    "discovery/frozen/KC_APL": {
+      "target": {
+        "n": 3,
+        "mean": 0.25438888888888883,
+        "median": 0.2518333333333333,
+        "variance": 4.8238425925925796e-05,
+        "bootstrap95": [
+          0.24908333333333335,
+          0.26225
+        ],
+        "paired_dz": 36.62701906408794,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.25419444444444445,
+        "median": 0.2530833333333333,
+        "variance": 3.303703703703707e-05,
+        "bootstrap95": [
+          0.24908333333333335,
+          0.2604166666666667
+        ],
+        "paired_dz": 44.224762517941336,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.5208888888888888,
+        "median": 0.5190833333333333,
+        "variance": 5.203009259259247e-05,
+        "bootstrap95": [
+          0.5147499999999999,
+          0.5288333333333333
+        ],
+        "paired_dz": 72.21340016062794,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": -0.00019444444444442302,
+        "median": 0.0,
+        "variance": 2.405092592592576e-06,
+        "bootstrap95": [
+          -0.001833333333333298,
+          0.0012500000000000289
+        ],
+        "paired_dz": -0.12538039649078547,
+        "wins": 1,
+        "ties": 1,
+        "losses": 1
+      },
+      "intact_access": true,
+      "specificity_eligible": false,
+      "numeric_specificity_gate": false
+    },
+    "discovery/frozen/APL_KC": {
+      "target": {
+        "n": 3,
+        "mean": 0.2633055555555555,
+        "median": 0.2543333333333333,
+        "variance": 0.0003536412037037033,
+        "bootstrap95": [
+          0.2506666666666667,
+          0.28491666666666665
+        ],
+        "paired_dz": 14.001629852204713,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.2586851851851852,
+        "median": 0.26166666666666666,
+        "variance": 4.819778806584397e-05,
+        "bootstrap95": [
+          0.25075,
+          0.2636388888888889
+        ],
+        "paired_dz": 37.261300074870626,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.5119722222222222,
+        "median": 0.5175,
+        "variance": 0.00020404398148148124,
+        "bootstrap95": [
+          0.49574999999999997,
+          0.5226666666666666
+        ],
+        "paired_dz": 35.84136190776421,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": -0.004620370370370368,
+        "median": 0.009305555555555622,
+        "variance": 0.0006554555041152269,
+        "bootstrap95": [
+          -0.03416666666666668,
+          0.010999999999999954
+        ],
+        "paired_dz": -0.18047006832629703,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      },
+      "intact_access": true,
+      "specificity_eligible": false,
+      "numeric_specificity_gate": false
+    },
+    "confirmation/refit/KC_MBON": {
+      "target": {
+        "n": 3,
+        "mean": 0.7040555555555557,
+        "median": 0.7090000000000001,
+        "variance": 8.100925925925986e-05,
+        "bootstrap95": [
+          0.6936666666666667,
+          0.7094999999999999
+        ],
+        "paired_dz": 78.22392422903054,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.7611388888888889,
+        "median": 0.7625555555555555,
+        "variance": 7.5486111111113994e-06,
+        "bootstrap95": [
+          0.7579722222222222,
+          0.762888888888889
+        ],
+        "paired_dz": 277.0322861329528,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.06555555555555552,
+        "median": 0.06874999999999987,
+        "variance": 0.00019329398148148098,
+        "bootstrap95": [
+          0.05033333333333334,
+          0.07758333333333334
+        ],
+        "paired_dz": 4.715202364747322,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": 0.0570833333333333,
+        "median": 0.053888888888888875,
+        "variance": 0.00011186342592592669,
+        "bootstrap95": [
+          0.04847222222222214,
+          0.06888888888888889
+        ],
+        "paired_dz": 5.3971596829776125,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true,
+      "specificity_eligible": true,
+      "numeric_specificity_gate": true
+    },
+    "confirmation/refit/DAN_KC": {
+      "target": {
+        "n": 3,
+        "mean": 0.7696666666666667,
+        "median": 0.7714166666666666,
+        "variance": 7.384027777777795e-05,
+        "bootstrap95": [
+          0.7603333333333332,
+          0.77725
+        ],
+        "paired_dz": 89.56864769683531,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.7693981481481482,
+        "median": 0.7685833333333334,
+        "variance": 4.3838220164608966e-05,
+        "bootstrap95": [
+          0.7632222222222222,
+          0.7763888888888889
+        ],
+        "paired_dz": 116.20496385968413,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": -5.555555555554944e-05,
+        "median": -0.0001666666666666483,
+        "variance": 2.592592592592022e-07,
+        "bootstrap95": [
+          -0.0004999999999999449,
+          0.0004999999999999449
+        ],
+        "paired_dz": -0.10910894511799618,
+        "wins": 1,
+        "ties": 0,
+        "losses": 2
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": -0.00026851851851846426,
+        "median": -0.0008611111111110903,
+        "variance": 8.449331275720087e-06,
+        "bootstrap95": [
+          -0.0028333333333332433,
+          0.002888888888888941
+        ],
+        "paired_dz": -0.09237683393364107,
+        "wins": 1,
+        "ties": 0,
+        "losses": 2
+      },
+      "intact_access": true,
+      "specificity_eligible": true,
+      "numeric_specificity_gate": false
+    },
+    "confirmation/refit/DAN_MBON": {
+      "target": {
+        "n": 3,
+        "mean": 0.6858333333333334,
+        "median": 0.6848333333333334,
+        "variance": 7.01944444444439e-05,
+        "bootstrap95": [
+          0.678,
+          0.6946666666666667
+        ],
+        "paired_dz": 81.85914770699875,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.769037037037037,
+        "median": 0.7693333333333333,
+        "variance": 6.540612139917873e-05,
+        "bootstrap95": [
+          0.7608055555555554,
+          0.7769722222222223
+        ],
+        "paired_dz": 95.0907029708303,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.08377777777777773,
+        "median": 0.08308333333333329,
+        "variance": 5.613425925925784e-06,
+        "bootstrap95": [
+          0.08183333333333331,
+          0.08641666666666659
+        ],
+        "paired_dz": 35.36021022779675,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": 0.08320370370370363,
+        "median": 0.08280555555555535,
+        "variance": 1.3227880658435144e-06,
+        "bootstrap95": [
+          0.08230555555555563,
+          0.08449999999999991
+        ],
+        "paired_dz": 72.3431682636757,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true,
+      "specificity_eligible": true,
+      "numeric_specificity_gate": true
+    },
+    "confirmation/refit/KC_APL": {
+      "target": {
+        "n": 3,
+        "mean": 0.7510833333333333,
+        "median": 0.7531666666666665,
+        "variance": 5.284027777777665e-05,
+        "bootstrap95": [
+          0.743,
+          0.7570833333333334
+        ],
+        "paired_dz": 103.32503927077772,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.7508148148148148,
+        "median": 0.7507777777777779,
+        "variance": 5.54207818930054e-05,
+        "bootstrap95": [
+          0.7433888888888888,
+          0.7582777777777778
+        ],
+        "paired_dz": 100.85478526845868,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.01852777777777777,
+        "median": 0.01808333333333345,
+        "variance": 3.82175925925922e-06,
+        "bootstrap95": [
+          0.016833333333333256,
+          0.02066666666666661
+        ],
+        "paired_dz": 9.47745366663595,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": -0.0002685185185185013,
+        "median": 0.000388888888888661,
+        "variance": 3.5342078189294905e-06,
+        "bootstrap95": [
+          -0.002388888888888663,
+          0.001194444444444498
+        ],
+        "paired_dz": -0.14283288249476267,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      },
+      "intact_access": true,
+      "specificity_eligible": false,
+      "numeric_specificity_gate": false
+    },
+    "confirmation/refit/APL_KC": {
+      "target": {
+        "n": 3,
+        "mean": 0.7496111111111112,
+        "median": 0.7490833333333333,
+        "variance": 3.571064814814828e-05,
+        "bootstrap95": [
+          0.7439166666666667,
+          0.7558333333333334
+        ],
+        "paired_dz": 125.44031874954244,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.7385462962962963,
+        "median": 0.7386111111111111,
+        "variance": 9.051723251028785e-05,
+        "bootstrap95": [
+          0.729,
+          0.7480277777777777
+        ],
+        "paired_dz": 77.62687279248901,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.01999999999999998,
+        "median": 0.021916666666666584,
+        "variance": 1.2520833333333081e-05,
+        "bootstrap95": [
+          0.01591666666666669,
+          0.022166666666666668
+        ],
+        "paired_dz": 5.652146088668842,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": -0.011064814814814842,
+        "median": -0.010472222222222216,
+        "variance": 1.290534979423856e-05,
+        "bootstrap95": [
+          -0.01491666666666669,
+          -0.007805555555555621
+        ],
+        "paired_dz": -3.0800605878643204,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "intact_access": true,
+      "specificity_eligible": false,
+      "numeric_specificity_gate": false
+    },
+    "confirmation/frozen/KC_MBON": {
+      "target": {
+        "n": 3,
+        "mean": 0.2554166666666667,
+        "median": 0.24916666666666665,
+        "variance": 0.00013693750000000023,
+        "bootstrap95": [
+          0.24816666666666673,
+          0.2689166666666667
+        ],
+        "paired_dz": 21.826697793035613,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.24947222222222223,
+        "median": 0.25286111111111115,
+        "variance": 0.0001827067901234568,
+        "bootstrap95": [
+          0.23458333333333334,
+          0.2609722222222222
+        ],
+        "paired_dz": 18.4563089612559,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.5141944444444444,
+        "median": 0.5106666666666667,
+        "variance": 0.0001949745370370367,
+        "bootstrap95": [
+          0.5023333333333333,
+          0.5295833333333333
+        ],
+        "paired_dz": 36.824633327373604,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": -0.005944444444444447,
+        "median": -0.013583333333333364,
+        "variance": 0.0002378248456790127,
+        "bootstrap95": [
+          -0.016055555555555545,
+          0.011805555555555569
+        ],
+        "paired_dz": -0.3854629677347006,
+        "wins": 1,
+        "ties": 0,
+        "losses": 2
+      },
+      "intact_access": true,
+      "specificity_eligible": true,
+      "numeric_specificity_gate": false
+    },
+    "confirmation/frozen/DAN_KC": {
+      "target": {
+        "n": 3,
+        "mean": 0.7283333333333334,
+        "median": 0.7373333333333334,
+        "variance": 0.0003670000000000032,
+        "bootstrap95": [
+          0.7063333333333333,
+          0.7413333333333334
+        ],
+        "paired_dz": 38.01869052911847,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.39738888888888896,
+        "median": 0.40525000000000005,
+        "variance": 0.00029924614197530855,
+        "bootstrap95": [
+          0.3775555555555556,
+          0.4093611111111111
+        ],
+        "paired_dz": 22.97213923806085,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.04127777777777775,
+        "median": 0.040416666666666545,
+        "variance": 0.00013959953703703926,
+        "bootstrap95": [
+          0.02991666666666659,
+          0.0535000000000001
+        ],
+        "paired_dz": 3.493609176468759,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": -0.33094444444444443,
+        "median": -0.33608333333333335,
+        "variance": 0.0010059405864197568,
+        "bootstrap95": [
+          -0.3597777777777778,
+          -0.29697222222222214
+        ],
+        "paired_dz": -10.43443479683312,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "intact_access": true,
+      "specificity_eligible": true,
+      "numeric_specificity_gate": false
+    },
+    "confirmation/frozen/DAN_MBON": {
+      "target": {
+        "n": 3,
+        "mean": 0.26052777777777775,
+        "median": 0.25925,
+        "variance": 9.956481481481517e-05,
+        "bootstrap95": [
+          0.25125,
+          0.27108333333333334
+        ],
+        "paired_dz": 26.109652392276388,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.28743518518518524,
+        "median": 0.278,
+        "variance": 0.00030744778806584416,
+        "bootstrap95": [
+          0.2766388888888889,
+          0.3076666666666667
+        ],
+        "paired_dz": 16.392841621138352,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.5090833333333333,
+        "median": 0.5005833333333334,
+        "variance": 0.00022754861111111033,
+        "bootstrap95": [
+          0.5001666666666666,
+          0.5265
+        ],
+        "paired_dz": 33.74829094845532,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": 0.026907407407407435,
+        "median": 0.025388888888888905,
+        "variance": 0.00043229192386831357,
+        "bootstrap95": [
+          0.006916666666666682,
+          0.04841666666666672
+        ],
+        "paired_dz": 1.294146056931258,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "intact_access": true,
+      "specificity_eligible": true,
+      "numeric_specificity_gate": false
+    },
+    "confirmation/frozen/KC_APL": {
+      "target": {
+        "n": 3,
+        "mean": 0.2578611111111111,
+        "median": 0.2554166666666666,
+        "variance": 0.0001464884259259262,
+        "bootstrap95": [
+          0.24716666666666667,
+          0.271
+        ],
+        "paired_dz": 21.30513024389603,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.25975,
+        "median": 0.25372222222222224,
+        "variance": 0.0002444035493827166,
+        "bootstrap95": [
+          0.24802777777777776,
+          0.2775
+        ],
+        "paired_dz": 16.615055712772325,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.51175,
+        "median": 0.5044166666666667,
+        "variance": 0.00027036111111111016,
+        "bootstrap95": [
+          0.50025,
+          0.5305833333333333
+        ],
+        "paired_dz": 31.123307243540456,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": 0.0018888888888889028,
+        "median": 0.0008611111111110903,
+        "variance": 1.7579475308641823e-05,
+        "bootstrap95": [
+          -0.0016944444444443874,
+          0.006500000000000006
+        ],
+        "paired_dz": 0.4505089856321193,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      },
+      "intact_access": true,
+      "specificity_eligible": false,
+      "numeric_specificity_gate": false
+    },
+    "confirmation/frozen/APL_KC": {
+      "target": {
+        "n": 3,
+        "mean": 0.2638888888888889,
+        "median": 0.2659166666666667,
+        "variance": 0.0003049745370370372,
+        "bootstrap95": [
+          0.24549999999999997,
+          0.28025
+        ],
+        "paired_dz": 15.110864601543012,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "control": {
+        "n": 3,
+        "mean": 0.2597777777777777,
+        "median": 0.2589722222222222,
+        "variance": 4.002314814814774e-06,
+        "bootstrap95": [
+          0.25830555555555557,
+          0.26205555555555554
+        ],
+        "paired_dz": 129.85132160281412,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "impairment": {
+        "n": 3,
+        "mean": 0.5057222222222221,
+        "median": 0.5053333333333333,
+        "variance": 7.095370370370399e-05,
+        "bootstrap95": [
+          0.4974999999999999,
+          0.5143333333333333
+        ],
+        "paired_dz": 60.03776306659511,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "excess_impairment": {
+        "n": 3,
+        "mean": -0.004111111111111121,
+        "median": -0.006944444444444475,
+        "variance": 0.0002462708333333338,
+        "bootstrap95": [
+          -0.018194444444444458,
+          0.01280555555555557
+        ],
+        "paired_dz": -0.26197070246843035,
+        "wins": 1,
+        "ties": 0,
+        "losses": 2
+      },
+      "intact_access": true,
+      "specificity_eligible": false,
+      "numeric_specificity_gate": false
+    }
+  },
+  "gates": {
+    "discovery/refit/KC_MBON": true,
+    "discovery/refit/DAN_KC": false,
+    "discovery/refit/DAN_MBON": true,
+    "discovery/refit/KC_APL": false,
+    "discovery/refit/APL_KC": false,
+    "discovery/frozen/KC_MBON": false,
+    "discovery/frozen/DAN_KC": false,
+    "discovery/frozen/DAN_MBON": false,
+    "discovery/frozen/KC_APL": false,
+    "discovery/frozen/APL_KC": false,
+    "confirmation/refit/KC_MBON": true,
+    "confirmation/refit/DAN_KC": false,
+    "confirmation/refit/DAN_MBON": true,
+    "confirmation/refit/KC_APL": false,
+    "confirmation/refit/APL_KC": false,
+    "confirmation/frozen/KC_MBON": false,
+    "confirmation/frozen/DAN_KC": false,
+    "confirmation/frozen/DAN_MBON": false,
+    "confirmation/frozen/KC_APL": false,
+    "confirmation/frozen/APL_KC": false
+  },
+  "confirmed": [
+    "refit/KC_MBON",
+    "refit/DAN_MBON"
+  ],
+  "cohorts_pooled": false,
+  "primary_DAN_MBON_refit": true,
+  "sensitivity_gates": {
+    "discovery/refit/KC_MBON": true,
+    "discovery/refit/DAN_KC": false,
+    "discovery/refit/DAN_MBON": true,
+    "discovery/refit/KC_APL": false,
+    "discovery/refit/APL_KC": false,
+    "discovery/frozen/KC_MBON": true,
+    "discovery/frozen/DAN_KC": false,
+    "discovery/frozen/DAN_MBON": true,
+    "discovery/frozen/KC_APL": true,
+    "discovery/frozen/APL_KC": true,
+    "confirmation/refit/KC_MBON": true,
+    "confirmation/refit/DAN_KC": false,
+    "confirmation/refit/DAN_MBON": true,
+    "confirmation/refit/KC_APL": false,
+    "confirmation/refit/APL_KC": false,
+    "confirmation/frozen/KC_MBON": true,
+    "confirmation/frozen/DAN_KC": false,
+    "confirmation/frozen/DAN_MBON": true,
+    "confirmation/frozen/KC_APL": true,
+    "confirmation/frozen/APL_KC": true
+  },
+  "refit_candidates": [
+    "KC_MBON",
+    "DAN_MBON"
+  ],
+  "strength_matched": true
+}

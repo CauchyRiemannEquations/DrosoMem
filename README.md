@@ -9,15 +9,16 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 
 ## Current research
 
-Latest: [ACT III-C structural controls](docs/structural-controls-results.md).
-With signed degrees, role connectivity and each postsynaptic incoming-weight
-multiset preserved, rewired controls exceed intact refit accuracy by1.33/1.12pp
-in discovery/confirmation. The preregistered5pp intact-advantage criterion fails.
-Frozen decoders fall to about25%, while refitting recovers73–81% across controls.
+Latest: [ACT III-D pathway sensitivity](docs/pathway-memory-results.md).
+DAN→MBON cuts impair refit past-symbol decoding more than matched cuts by
+7.33/8.32 percentage points in discovery/confirmation. KC→MBON also passes
+(5.49/5.71pp), but loses current-symbol access too. Both feed the observed MBONs:
+these are model decoding-pathway candidates, not identified storage locations.
 
-Current position: III-A/B/C complete within the two partial-model diagnostic
-scopes. III-C adds169 fits/replays and156 frozen evaluations with independent
-verification. Next: one role-pathway ablation sensitivity map (III-D).
+III-A/B/C/D are complete within their two partial-model diagnostic scopes.
+III-D adds273 fits/replays and260 frozen evaluations, with independent verification.
+Earlier negative structural-control results remain valid. Next proposed study:
+readout dependence using a fixed48-neuron observation budget and different locations.
 Whole-brain localization and autonomous-recall mechanisms remain untested.
 
 The established models freeze recurrent connectivity and train an external
@@ -32,11 +33,11 @@ Use Python3.12 and a clean environment; commands run from the repository root.
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-act1-lock.txt
 $env:PYTHONPATH = 'src'
-.\.venv\Scripts\python.exe scripts/run_structural_controls.py --out outputs/structural_controls_new
-.\.venv\Scripts\python.exe scripts/verify_structural_controls.py outputs/structural_controls_new --out outputs/structural_controls_check_new
+.\.venv\Scripts\python.exe scripts/pathway_memory.py --out outputs/pathway_memory_new
+.\.venv\Scripts\python.exe scripts/verify_pathway_memory.py outputs/pathway_memory_new --out outputs/pathway_memory_check_new
 ```
 
-Use fresh directories. The runner verifies an archived baseline, executes the locked
+Use the committed mask bank and source artifacts; use fresh output directories. The runner verifies an archived baseline, executes the locked
 discovery and confirmation cohorts, and checks frozen/refit decoding. See the report for source hashes,
 per-seed results, pairing checks and limitations. Historical results remain intact.
 [ACT I protocol](docs/whole-brain-memory-protocol.md) · [Data and attribution](data/README.md) ·

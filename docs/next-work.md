@@ -1,22 +1,22 @@
 # Prioritized work — updated 2026-09-29
 
-**ACT III-C current-model structural controls complete.**
-[Results](structural-controls-results.md):169 fits/replays,156 frozen evaluations,
-338 independent trajectories,3575 audited metric rows;218 tests pass,8 optional skips.
-Primary intact-minus-role refit effect −1.3278/−1.1185pp, failing the preregistered
-5pp advantage. Degree-only differences4.6843/4.6676pp also fail; no refit family
-confirms intact advantage. Frozen transfer fails for all four graph families,
-while refit recovers73–81%. Keep representation and decoder portability distinct.
-Role/incoming weights preserved, but outgoing strengths and finite-sampler
-limitations remain. Source preflight failure is preserved; no old artifacts changed.
+**ACT III-D current-model pathway panel complete.**
+[Results](pathway-memory-results.md):273 conditions,260 frozen evaluations,
+546 independent trajectories and5863 metric rows. DAN→MBON refit primary
+confirms7.3306/8.3204pp extra impairment; KC→MBON secondary5.4907/5.7083pp
+also confirms but impairs current-symbol access. No frozen specificity confirms.
+APL specificity is graph-control limited, not demonstrated absent.
+All previous artifacts and graph/verification failures are preserved.
 
-Next single proposed experiment: **ACT III-D role-pathway ablation sensitivity map**.
-Predefine KC→MBON and DAN/APL-related edge blocks; compare refit impairment with
-count/effective-weight-matched controls. Frozen is secondary. Audit matching
-feasibility/overlap and preregister before outcomes. Aim for memory-critical
-pathway candidates in this model, not a biological memory circuit claim.
-Do not jump to ACT IV or restart a III-C tuning sweep. Whole-brain,autonomous
-recall and broader biological localization remain untested extensions.
+Next single proposed experiment: **ACT IV-A entry diagnostic — observation
+location and readout dependence after DAN→MBON removal**. Keep48 observed
+neurons and the same linear head size; predefine an alternative observation set.
+Establish intact past-symbol access for each observation set, then compare the
+same lesion's refit impairment. This tests a blocked MBON access route versus
+broader loss of accessible information; observation composition is an explicit
+covariate. Preregister first. This proposal has not been executed, and does not
+launch a large plasticity sweep. Whole-brain and minimal-subnetwork work remain
+separate open extensions. Preserve III-B/C negatives.
 
 ## Historical handoff notes (superseded by the result above)
 

@@ -154,7 +154,13 @@ def verify(root,out,analysis=None):
         analysis_root=analysis or root
         if analysis is not None:
             am=check(analysis);assert am['source_manifest_sha256']==core.sha256(root/'manifest.json')
-        past=f[f.lag.isin(c['primary_lags'])];summary=read(analysis_root/'summary.json');confirmed=[];pairs=[]
+        # Preserve the preregistered hierarchy (lags, circuits, then control
+        # draws). Flattening equal-weight means can turn an exact tie into a
+        # positive 2.8e-17 rounding residual and change a strict sign count.
+        columns=['test_accuracy','frequency_excess','null_excess','r2_vs_frequency']
+        per_case=f[f.lag.isin(c['primary_lags'])].groupby(['cohort','seed','circuit_seed','arm','mode'])[columns].mean()
+        past=per_case.groupby(['cohort','seed','arm','mode'])[columns].mean().reset_index()
+        summary=read(analysis_root/'summary.json');confirmed=[];pairs=[]
         for mode in ['refit','frozen']:
             for family in c['families']:
                 both=[]

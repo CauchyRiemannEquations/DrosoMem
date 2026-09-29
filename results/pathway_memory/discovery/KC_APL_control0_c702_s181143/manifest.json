@@ -1,0 +1,602 @@
+{
+  "config": {
+    "circuit_seeds": [
+      701,
+      702
+    ],
+    "alphabet_size": 4,
+    "warmup": 100,
+    "train_samples": 2000,
+    "test_samples": 1000,
+    "lags": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      12,
+      16,
+      24,
+      32
+    ],
+    "primary_lags": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "alpha": 1.0,
+    "swaps_per_edge": 5,
+    "normalization": "incoming_l1",
+    "schedule": "mbon_after_kc",
+    "gain": 0.9,
+    "leak": 0.6,
+    "input_fraction": 0.1,
+    "input_amplitude": 0.5,
+    "activity_epsilon": 1e-08,
+    "decay_steps": 32,
+    "bootstrap_draws": 10000,
+    "max_seconds": 3600,
+    "max_rss_bytes": 3221225472,
+    "material_effect": 0.05,
+    "access_margin": 0.05,
+    "protocol": "docs/pathway-memory-protocol.md",
+    "bootstrap_seed": 194399,
+    "weight_boundaries": [
+      10,
+      20,
+      50,
+      100
+    ],
+    "families": [
+      "KC_MBON",
+      "DAN_KC",
+      "DAN_MBON",
+      "KC_APL",
+      "APL_KC"
+    ],
+    "source": "results/structural_controls",
+    "source_manifest_sha256": "0056e41ff6db240deb35cd7344799889f7809f7630f79c6360d11273cb62fe4e",
+    "cohorts": {
+      "smoke": {
+        "circuit_seeds": [
+          701
+        ],
+        "train_samples": 200,
+        "test_samples": 100,
+        "blocks": [
+          {
+            "seed": 181001,
+            "train_seed": 182001,
+            "test_seed": 183001,
+            "edge_seeds": {
+              "KC_MBON": [
+                184001,
+                184002,
+                184003
+              ],
+              "DAN_KC": [
+                184004,
+                184005,
+                184006
+              ],
+              "DAN_MBON": [
+                184007,
+                184008,
+                184009
+              ],
+              "KC_APL": [
+                184010,
+                184011,
+                184012
+              ],
+              "APL_KC": [
+                184013,
+                184014,
+                184015
+              ]
+            }
+          }
+        ]
+      },
+      "discovery": {
+        "circuit_seeds": [
+          701,
+          702
+        ],
+        "train_samples": 2000,
+        "test_samples": 1000,
+        "blocks": [
+          {
+            "seed": 181142,
+            "train_seed": 182142,
+            "test_seed": 183142,
+            "edge_seeds": {
+              "KC_MBON": [
+                184142,
+                184143,
+                184144
+              ],
+              "DAN_KC": [
+                184145,
+                184146,
+                184147
+              ],
+              "DAN_MBON": [
+                184148,
+                184149,
+                184150
+              ],
+              "KC_APL": [
+                184151,
+                184152,
+                184153
+              ],
+              "APL_KC": [
+                184154,
+                184155,
+                184156
+              ]
+            }
+          },
+          {
+            "seed": 181143,
+            "train_seed": 182143,
+            "test_seed": 183143,
+            "edge_seeds": {
+              "KC_MBON": [
+                184157,
+                184158,
+                184159
+              ],
+              "DAN_KC": [
+                184160,
+                184161,
+                184162
+              ],
+              "DAN_MBON": [
+                184163,
+                184164,
+                184165
+              ],
+              "KC_APL": [
+                184166,
+                184167,
+                184168
+              ],
+              "APL_KC": [
+                184169,
+                184170,
+                184171
+              ]
+            }
+          },
+          {
+            "seed": 181144,
+            "train_seed": 182144,
+            "test_seed": 183144,
+            "edge_seeds": {
+              "KC_MBON": [
+                184172,
+                184173,
+                184174
+              ],
+              "DAN_KC": [
+                184175,
+                184176,
+                184177
+              ],
+              "DAN_MBON": [
+                184178,
+                184179,
+                184180
+              ],
+              "KC_APL": [
+                184181,
+                184182,
+                184183
+              ],
+              "APL_KC": [
+                184184,
+                184185,
+                184186
+              ]
+            }
+          }
+        ]
+      },
+      "confirmation": {
+        "circuit_seeds": [
+          701,
+          702
+        ],
+        "train_samples": 2000,
+        "test_samples": 1000,
+        "blocks": [
+          {
+            "seed": 191142,
+            "train_seed": 192142,
+            "test_seed": 193142,
+            "edge_seeds": {
+              "KC_MBON": [
+                194142,
+                194143,
+                194144
+              ],
+              "DAN_KC": [
+                194145,
+                194146,
+                194147
+              ],
+              "DAN_MBON": [
+                194148,
+                194149,
+                194150
+              ],
+              "KC_APL": [
+                194151,
+                194152,
+                194153
+              ],
+              "APL_KC": [
+                194154,
+                194155,
+                194156
+              ]
+            }
+          },
+          {
+            "seed": 191143,
+            "train_seed": 192143,
+            "test_seed": 193143,
+            "edge_seeds": {
+              "KC_MBON": [
+                194157,
+                194158,
+                194159
+              ],
+              "DAN_KC": [
+                194160,
+                194161,
+                194162
+              ],
+              "DAN_MBON": [
+                194163,
+                194164,
+                194165
+              ],
+              "KC_APL": [
+                194166,
+                194167,
+                194168
+              ],
+              "APL_KC": [
+                194169,
+                194170,
+                194171
+              ]
+            }
+          },
+          {
+            "seed": 191144,
+            "train_seed": 192144,
+            "test_seed": 193144,
+            "edge_seeds": {
+              "KC_MBON": [
+                194172,
+                194173,
+                194174
+              ],
+              "DAN_KC": [
+                194175,
+                194176,
+                194177
+              ],
+              "DAN_MBON": [
+                194178,
+                194179,
+                194180
+              ],
+              "KC_APL": [
+                194181,
+                194182,
+                194183
+              ],
+              "APL_KC": [
+                194184,
+                194185,
+                194186
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "primary_family": "DAN_MBON",
+    "relative_mass_tolerance": 0.005,
+    "numerical_guard": 1e-07,
+    "maximum_specificity_overlap": 0.8,
+    "mask_bank": "results/pathway_masks_v5",
+    "solver_seconds": 60,
+    "draw_mip_gap": 0.001,
+    "draw_solver_seconds": 10,
+    "accept_feasible_time_limit": true,
+    "bank_resume_from": "results/pathway_masks_v4",
+    "solver_feasibility_tolerance": 1e-09,
+    "blocks": [
+      {
+        "seed": 181142,
+        "train_seed": 182142,
+        "test_seed": 183142,
+        "edge_seeds": {
+          "KC_MBON": [
+            184142,
+            184143,
+            184144
+          ],
+          "DAN_KC": [
+            184145,
+            184146,
+            184147
+          ],
+          "DAN_MBON": [
+            184148,
+            184149,
+            184150
+          ],
+          "KC_APL": [
+            184151,
+            184152,
+            184153
+          ],
+          "APL_KC": [
+            184154,
+            184155,
+            184156
+          ]
+        }
+      },
+      {
+        "seed": 181143,
+        "train_seed": 182143,
+        "test_seed": 183143,
+        "edge_seeds": {
+          "KC_MBON": [
+            184157,
+            184158,
+            184159
+          ],
+          "DAN_KC": [
+            184160,
+            184161,
+            184162
+          ],
+          "DAN_MBON": [
+            184163,
+            184164,
+            184165
+          ],
+          "KC_APL": [
+            184166,
+            184167,
+            184168
+          ],
+          "APL_KC": [
+            184169,
+            184170,
+            184171
+          ]
+        }
+      },
+      {
+        "seed": 181144,
+        "train_seed": 182144,
+        "test_seed": 183144,
+        "edge_seeds": {
+          "KC_MBON": [
+            184172,
+            184173,
+            184174
+          ],
+          "DAN_KC": [
+            184175,
+            184176,
+            184177
+          ],
+          "DAN_MBON": [
+            184178,
+            184179,
+            184180
+          ],
+          "KC_APL": [
+            184181,
+            184182,
+            184183
+          ],
+          "APL_KC": [
+            184184,
+            184185,
+            184186
+          ]
+        }
+      }
+    ]
+  },
+  "context": {
+    "git_commit": "bd3419e1771d8d93160a990d8b49c51c572f55c6",
+    "source_sha256": {
+      "src/flying/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "src/flying/brain/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "src/flying/brain/constrained_bptt.py": "c8994023957d13ad3c6cd68114c90a5b5a2deeff5a8fa4dcc9ccd762c04f0508",
+      "src/flying/brain/diagnostics.py": "6cd44d3971490d4be13445d53571537bea0782e4d96a4b9e209510bbcdb619d0",
+      "src/flying/brain/dopamine.py": "b41673ca1cfebd665da89d4a984d654d8f8c06867a7e33bb48a2cff821ab3946",
+      "src/flying/brain/fly_network.py": "5b6393e9343d9516050a714e10ec94faea1aaa82c7799b4ee87b184436301e7a",
+      "src/flying/brain/lif.py": "c2636413867ec57c2b7ae962c42aa007f3c46a781b63f930922efc8c47d63afa",
+      "src/flying/brain/lif_reference.py": "9437bfa887f77f6e77bdaf60547a8802f3c52e1cfdfb5c008e6d038a5de195a9",
+      "src/flying/brain/mushroom_body.py": "c47ab26f28d8f969f7bfc45c32d046a6af93e56dce3c26dae1ab8eda263386b6",
+      "src/flying/brain/plasticity.py": "22a213c0ca0f81954ae59ea6b5773885caec3b9a9b6e19c4a3f064df7d48ebef",
+      "src/flying/brain/random_network.py": "95efa4ccc748cde4b71872bcef3d611958d4f8b21eabbce459af667e80e303cf",
+      "src/flying/brain/reservoir.py": "2221db2706b6b01c92d83b6aa27bf6e1cedc8744e615d70f4081b41eb75f4630",
+      "src/flying/brain/reward_plasticity.py": "c1d481e72a712296ba9743714e2dad4d7f183aca27feb94245a72793de18b1fe",
+      "src/flying/brain/role_random.py": "31bc1ae01f3420f8743c7d155df303651960ff931841203827ed3bc8b3b252c7",
+      "src/flying/brain/shuffled_network.py": "8ec288b891c91823e425fd3982b61ad0d065d8f76abb192d45ac021d03a3a9c9",
+      "src/flying/brain/sparse_lif.py": "cd34efcff7f76631cfbfb8d250b8a9b5dcf3624a24a9b6844093da6d3b8bfdfe",
+      "src/flying/brain/timed_reservoir.py": "7378dadb9e03e131abb8483bd6a3e058e8453dcf007109ec14918ae55dbb0ce2",
+      "src/flying/data/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "src/flying/data/compartments.py": "4ad9b45297b22d19f3ff1b945fcd07c64628c9ec020ea90b26f089456c5a73b9",
+      "src/flying/data/connectome.py": "08adf495f49cffdd0d1b868220993362f8a3a8b9a453349649b0d90b7673a13e",
+      "src/flying/data/mushroom_body.py": "914598925bff65d702118d881327df10e30323148e2e39255da424def69ae6be",
+      "src/flying/data/pi_digits.py": "8892f5f70730ab8d29698214f81328e557916c1866afe73a4e118edfe00d6091",
+      "src/flying/data/sequences.py": "b1cff877f02487b61dc693c1e6f08f5c5ef230fb21fbb5dcd79399199c612e99",
+      "src/flying/data/subsets.py": "0b84efc98944e534a5206b955b277f2be423393075b2c4905ace3ecb980294d8",
+      "src/flying/data/whole_brain.py": "f6dcf5b24dff88913ed6053a9bdcff8804b77e516b83d14e3209b50143ace31c",
+      "src/flying/encoding/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "src/flying/encoding/digit_encoder.py": "e83dffff85555862e597b02b53da8f8dac497808af27ffe8f766a51b01735b89",
+      "src/flying/evaluation/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "src/flying/evaluation/delayed_memory.py": "17d708b0f7958effecfe685285c92aab54005ffe6ef2ac0054014a2b3ab3c465",
+      "src/flying/evaluation/free_recall.py": "39f27d2310fcd136eb56acf5681de06801853cf547283a96e8efcf93b2055154",
+      "src/flying/evaluation/metrics.py": "aa64b8d4e03002d940e81116ecef99f206fc4d28ad4c7985a352f9c52d0c51e9",
+      "src/flying/evaluation/next_digit.py": "cb7e74cb472ad255d79fcbeb5449e20c540433cd484bbec599457aa07d68e2b7",
+      "src/flying/evaluation/perturbation.py": "9b1af2184173f16af3edb9a9791af828089828fa6ed28f6797c868952d0dfa7b",
+      "src/flying/models/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "src/flying/models/nonlinear_readout.py": "de9350e9ed782c84a9e47cf28984d01ca5cc8141c42482e45d28dd0d360aa5ed",
+      "src/flying/models/readout.py": "7efbba8619a7018cbf5c62c6b6df64084299051a631ab330f0a8c0f7b55bfd83",
+      "src/flying/models/ridge.py": "1a0427ffa6af4b95692ce4350e62c727df4eac16266810c42dad0cd158205514",
+      "src/flying/training/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "src/flying/training/phase2.py": "3bd639ba2a0c1c2bdc2f6be212b33edf146ae781d6a71941b49eaeae6c9919a6",
+      "src/flying/training/phase2_robustness.py": "8d30c20d5af302a4a64d8b9444b11c115e32b8c10801777659ddf2d9cdf0d027",
+      "src/flying/training/phase3.py": "6443932e7022e7a26a8e3facd049d5a0905afb7777f55098b3aac0ce1d546208",
+      "src/flying/training/phase3b.py": "5853d1df143fb8d51c8ca6000881bc6203c536d72c4d2e34bd6c482570594fc1",
+      "src/flying/training/phase4.py": "a9d093d323dbaba7c46e0620532ae40082ae56cc054f520b231d0350d5a80aaf",
+      "src/flying/training/phase5.py": "0781b81165590d7cb88bbb7cf29be5b917904ba7f74f97357f00667081e04505",
+      "src/flying/training/phase5_bptt.py": "1fd743d72dfc1a11904ff8323eba45eb8dbf6340e5ddbf8dc5965f3fbe88d6ab",
+      "src/flying/training/phase5_curriculum.py": "c19aa9c406091511a347edd4bee2d4c3d9324ca82e7dcd6c66f126958b7c5707",
+      "src/flying/training/phase5_diagnostic.py": "80c2a924c8a2fcfcf3b5ccc84cef2635832e3dade6a8f19643bce69d89dcb7f3",
+      "src/flying/training/phase5_prefix.py": "b4d5ca3b7fdf7d9d3bafa41e0ac02e88a8c4f2ac9a790d6620a2b02894693d16",
+      "src/flying/training/phase5_prefix_confirmation.py": "18d9f7dd0715a61e8d2ee8e90137b41eebb9bb4160fb7b6c2acab69a86adbc77",
+      "src/flying/training/phase5_readout.py": "f62a4fa7a8c3eacbe3f2dec95debe71d0703a70cef4ce53906f7a14ee87c8091",
+      "src/flying/training/phase5_retention.py": "643ef1f766651ba600e4dee233687dc1f796e829b9593fe2dde35268f85f5af4",
+      "src/flying/training/phase5_retention_confirmation.py": "cc8d3612562e8d29aa248fd5309cceb2de77f890ba1d7ee5a93ea9c963a7715b",
+      "src/flying/training/phase5_timing.py": "9beef32dc395d7abd24bb2cf9d8ee10afe856ce3055b2128fd6355825ab5a95c",
+      "src/flying/training/phase5b.py": "1515c30a29ba132930c801592cb64dbf2007121032b6e6b24d91aa52f6be0129",
+      "src/flying/training/phase6.py": "f14a6aaaa76d280ec03ef0f1530c60212a77fecd8c7df05fc92dd8a9c2605047",
+      "src/flying/training/sequence_memory.py": "67fd43d53741090a3d4630a7dd30f96d7a5064bf2853d905a4e4bc9e29417e65",
+      "src/flying/training/stage_bc.py": "1e9bce43e07d8121ec365547225f460b621045f2bd0dd16e6b7622c538e2c878",
+      "src/flying/training/train.py": "d9a09c93431fca0cebacb13c202a345e23a26a94eae7f6fc035c0dfe6f353063",
+      "src/flying/training/whole_brain_memory.py": "f3046ac2494365d2849e700b4ca118443392d42a17f032796dcd1b7f66822d78",
+      "src/flying/visualization/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "src/flying/visualization/activity.py": "06b8cc7ea84082a95cea57252a541e487d1c828bdae00519ce91687ad164fe20",
+      "src/flying/visualization/pi_memory.py": "93b513a51e540e5befb3d8045979d957de850223a93182d13ba420b4bb01316e",
+      "docs/pathway-memory-protocol.md": "6d1075f13ffeab18d107a18e6d63f7b980789b3857c0171d2beafa7946c7bb6c",
+      "data/flywire_783_mb_left_kc512_s701/annotations.csv": "10f9c9d4db8ee2741bd19cf464e4b46fd6e24f086a5ce1dbb550bcea633cdb16",
+      "data/flywire_783_mb_left_kc512_s701/edges.csv": "d8c47ea1202575994d430f55e5bd8602f939f320ef02f71522fc1bc54b97db51",
+      "data/flywire_783_mb_left_kc512_s701/neurons.json": "05d83a288b1d42337001015be2d54167aed00cdc9fea58b578423d18756aa77b",
+      "data/flywire_783_mb_left_kc512_s701/provenance.json": "e1a50d254628fb0573d7853b8e66926697b353da317bd701b17e60bfd4942061",
+      "data/flywire_783_mb_left_kc512_s702/annotations.csv": "a84ec1dd485ac0e22fc68b67854dd3f30b93d9fad6d6d6bdac86c163ba4e71d5",
+      "data/flywire_783_mb_left_kc512_s702/edges.csv": "88bec1c0c812a31951e2edbf26852ce1115910bc4756fefc49f7272cc59f9859",
+      "data/flywire_783_mb_left_kc512_s702/neurons.json": "36e104e38baea40351743e3b9bc5d1bc1a709d6e61dfd24e5ac79cde2ac606a5",
+      "data/flywire_783_mb_left_kc512_s702/provenance.json": "af5237c9d8741adbc21a4a7c0a42b481d3242ee77901fca8d7fb912469eb5f1d",
+      "results/pathway_masks_v5/c701_s181001.json": "ca1906fd978d68be79b57583d7f41b8cf237f3d8193e708b4679356f814b9f29",
+      "results/pathway_masks_v5/c701_s181001.npz": "9048b967517a2a708d9d8f0ee9fb50e028cabaaf7f761ea5c3bf147e0f54309b",
+      "results/pathway_masks_v5/c701_s181142.json": "4ed12d53cc0b1ce75e28c30a9fb7052c77bc32311e8a3b164f2e1ee5eccb2394",
+      "results/pathway_masks_v5/c701_s181142.npz": "35044fc0af2c003e38817186da9f50880e392ada9e44dd2ca1a64f665c176cd4",
+      "results/pathway_masks_v5/c701_s181143.json": "aa64baf1003a6f80ee4f3a38317e3f74c16e9572b0e0ce8db612bb65797018d6",
+      "results/pathway_masks_v5/c701_s181143.npz": "70f148157ac61a6cbf0dd82f5af03a62c0a5945fcd7118c01b4c791b2fdf868e",
+      "results/pathway_masks_v5/c701_s181144.json": "49b655be2a2a8f2ffa1c7dc826690b738002c55d3d98e530a4d9a9d1e695b921",
+      "results/pathway_masks_v5/c701_s181144.npz": "e62b4972252f0e00df33eaa30023be4ce6ab6539fb912572afe8725e759528ab",
+      "results/pathway_masks_v5/c701_s191142.json": "dab617b0226abd39b413e51f8a499ad79a575bf197134252d7606a3859656b39",
+      "results/pathway_masks_v5/c701_s191142.npz": "6ff45d5384fd48e4c9d858b76a3f67317187d89a578b7badc56ac6fd9cb2494a",
+      "results/pathway_masks_v5/c701_s191143.json": "f0941f0d0ab298be509c10a232aeda1c85190ab3b3e37812335c507e74d839d7",
+      "results/pathway_masks_v5/c701_s191143.npz": "88668b68ceda9c2fa492eb4782f06ee541affdd7cf84fd4f5cc00ddbbefd7bd5",
+      "results/pathway_masks_v5/c701_s191144.json": "8c5d1e9837cf160e36e67e3afa2f07e49edbb3b096bc8cc53a50dd7b3251a639",
+      "results/pathway_masks_v5/c701_s191144.npz": "9ee9202ef6e20ab5e20d9e1040d16ca315b8e812dd129f5043850876afd3cc07",
+      "results/pathway_masks_v5/c702_s181142.json": "a3ee65a68c8359983c842ea25b0fbbcc6c97e101394aa2bcd39f92095a08f055",
+      "results/pathway_masks_v5/c702_s181142.npz": "de89087e6678162a77f6ad62496ffcbe00f048801d85ce95d35b433eb658d145",
+      "results/pathway_masks_v5/c702_s181143.json": "112daa2c6a6d34a6f135202bee012f65e65a5f3370e8ab7e06d806b7d2072691",
+      "results/pathway_masks_v5/c702_s181143.npz": "e0a3f527cdf126e5e20d08f05a3a91db3ee57b3271f94df3ddfc1cd9a8c6b56d",
+      "results/pathway_masks_v5/c702_s181144.json": "fdc1020ddc77c5d14507c67c7ecaf90c6a58ce9b29e1d1e514c0f9b5e149126f",
+      "results/pathway_masks_v5/c702_s181144.npz": "5614c1d79f59070d9c2f1d706fed9244e5c6944af90932c5a1f8e47302c873f9",
+      "results/pathway_masks_v5/c702_s191142.json": "30cfd8529d2641460fd35b364fd4005194dbe50f6a46ef778f1acd8cf51dcb46",
+      "results/pathway_masks_v5/c702_s191142.npz": "90874aeecd860e20fb2e840e04ee3594f03f36634c5a1f5d5c077dfd061c256a",
+      "results/pathway_masks_v5/c702_s191143.json": "e84ff8a1cd236078a3e1c00d5793134ff4a484f1b29606ffc1d106d037234e53",
+      "results/pathway_masks_v5/c702_s191143.npz": "e13f9c8b2ec77ec930a85f3b4a0a66aa036c5c4c457c6eaeef86cddbdae2d1e3",
+      "results/pathway_masks_v5/c702_s191144.json": "786dc629a4437ac3ac503b88a4d450ab8310e78a1c65c854ccd4b782c8aae08b",
+      "results/pathway_masks_v5/c702_s191144.npz": "7008954c6a0a157f5baa4fbb8ef97c97bd3c966ee51bce639947e9b9bade7841",
+      "results/pathway_masks_v5/manifest.json": "69ef8f4f496747f1933704f83d11ee1feaf928e5e93b8e3f930efea0c3756675",
+      "results/pathway_masks_v5/minimum-masks.npz": "41e06ee90fc0671866a459e6811a696eef3be9a141d621c6642844f400539108",
+      "results/pathway_masks_v5/minimum-overlap.json": "56e0271b6d4e96c21c0675ca75f177699630a9d77c7a31a60649d184a7cb6f01",
+      "configs/pathway_memory.json": "70ecd2958d44366573885b96cad62c2e5087836ba4c0e024ea52ba3be9f582cc",
+      "docs/pathway-memory-seed-audit.json": "6adc9829de67595933b4cf1b4b0586d5875390a50bf79757e44a8a88d8ca7c8b",
+      "docs/pathway-memory-graph-audit.json": "79c5e37c13c6e3c0b637bc7867a45bcc3f84a267e827af3c2edfc1bfe97f4cbb",
+      "scripts/pathway_memory.py": "ff9d949f34c482758ae6c9647e76c5287d59449ce565412614c74c8f4fb50509",
+      "scripts/pathway_masks.py": "ae110340b0ff084ba8bd460db9bbabadf53f24dbb353e9b7214a10cc2d6fac0f",
+      "scripts/verify_pathway_memory.py": "b2dd3d08dc87d3ed48b638ccf2694dce42607c52c7e41d2a88b152ffacab9cd7",
+      "scripts/edge_panel.py": "9f59671ad90ba50a83ff75d9a54c6a1754724612f203980e92589698cb3eb5a3",
+      "scripts/edge_masks.py": "8b2d90ab1fec14be38d28d6994dd61f7068b6f342f51686a3231c2807020295f",
+      "scripts/structural_k4.py": "6051d331a0499b58996c549fe212701ca0b9dcdb2333c79f7985589e27049ca4",
+      "scripts/kc_ablation.py": "b44a8d9b2a40c96351052f4c8100be1a43c69dc0138310199f6025742e86e70c",
+      "scripts/kc_frozen.py": "5f87be9a6d1b53e2b1f4a545714eefea40209732554d10f00d44df7aefce117d",
+      "scripts/alphabet_memory.py": "066d84f8ac8b73f92ad9ebb37d23b263ffc597d51866512ae29da07882e63121",
+      "scripts/frozen_state_probe.py": "c3188f397015d1f3977b60836f236fc3f7ca3d2486a87ef6a9df61fb1647afab",
+      "scripts/normalization_transfer.py": "a7455830dc1f8289439331a6bb02074c355a71911cb5b5678bc5bda95a7adde2",
+      "scripts/context_memory.py": "66fddc9a7baeed6a5755c8b7809cdc6e3d653ac5c8ea14014bc868d78450fcf8",
+      "scripts/verify_neuron_panel.py": "fdb983222184acb2ed23b68f897dbf544d6137337fd19be857e9328f71b13167"
+    },
+    "config_sha256": "d4bc67f5ed08941b3715a4a7db8bcc75fd4fefa815698b63529e834b6e166b44"
+  },
+  "timestamp": "2026-09-29T04:29:55.706663+00:00",
+  "identity": {
+    "cohort": "discovery",
+    "circuit_seed": 702,
+    "seed": 181143,
+    "arm": "KC_APL_control0",
+    "train_seed": 182143,
+    "test_seed": 183143,
+    "edge_seeds": {
+      "KC_MBON": [
+        184157,
+        184158,
+        184159
+      ],
+      "DAN_KC": [
+        184160,
+        184161,
+        184162
+      ],
+      "DAN_MBON": [
+        184163,
+        184164,
+        184165
+      ],
+      "KC_APL": [
+        184166,
+        184167,
+        184168
+      ],
+      "APL_KC": [
+        184169,
+        184170,
+        184171
+      ]
+    }
+  },
+  "source_path": "results/pathway_memory/discovery/intact_c702_s181143",
+  "source_manifest_sha256": "a7ca29d48611143fe1eafb09ab2578f2a667d11648a39dba9be1acfe6bc9f046",
+  "exact_full_replay": true,
+  "independent_lstsq": true,
+  "coefficients_per_lag": 196,
+  "seconds": 1.360669900001085,
+  "artifacts": {
+    "checkpoint.npz": "679fcc7b139f7bcc4341338559bb896ea6a0c1fbafb33f9d35e23e1d03ca31f3",
+    "frozen-metrics.json": "e0d8f089409afb3884a580b5853210c432ddf2387fef58644ee15e9105164be0",
+    "frozen.npz": "9fb6b17171accb5dd6a2f9e004aee02afe9a1fd0c4f1032e381687d11e08dd8a",
+    "graph.json": "19d7cc384f594f078c9585ca225458bc849dec703304553605095f78b914b4ab",
+    "metrics.json": "3d6083aae49a15e6957445d9a4478142684c58cd9d5c1a1374cde3a0bebfb6bb",
+    "neural.json": "b4713b63e83f134c4a1d0f140ca5ac1eb512230aa044ea0a949bac0654fedbc9",
+    "weights.npz": "980b446a30bc4c031128c2cca4d642492cbb1c617ce4dd188999d69539a282be"
+  }
+}

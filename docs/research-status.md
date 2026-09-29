@@ -12,6 +12,22 @@ The review covered README, docs, configurations, runners, dynamics/readout/data/
 evaluation modules, test coverage and archived result/checkpoint schemas.
 This is not a new execution of every historical experiment.
 
+## Latest — ACT III-D pathway panel complete (2026-09-29)
+
+[Results](pathway-memory-results.md):273 fits/replays,260 frozen evaluations,
+546 independently reconstructed trajectories and5863 metric rows. Primary
+DAN→MBON refit excess impairment7.3306/8.3204pp passes both discovery and fresh
+confirmation. Secondary KC→MBON5.4907/5.7083pp also passes, with an immediate
+input-access confound (confirmation lag0 target24.02% versus controls100%).
+DAN→MBON retains100% lag0 decoding. No frozen specificity confirms. DAN→KC
+fails; APL specificity is unidentifiable under the declared overlap limit.
+These are model decoding/access pathway candidates, not localized storage or
+biological memory circuits. III-C and III-B negative findings remain unchanged.
+The first verifier stopped at a rounding-sensitive tie; its failure is preserved,
+and hierarchical reduction was repaired without changing outcomes or criteria.
+Next one proposal: fixed48-neuron observation-location diagnostic for DAN→MBON
+readout dependence, before any ACT IV plasticity expansion.
+
 ## Research questions and evidence
 
 | Question | Status | Evidence and interpretation |
@@ -38,9 +54,10 @@ This is not a new execution of every historical experiment.
 | Are past symbols accessible on held-out positions and portable across paired orderings? | Two ACT II diagnostics completed | All four blocked graph/arm and transfer graph/direction cells pass past-access criteria in both cohorts; no confirmed next-symbol benefit. Frozen-head transfer within5pp tolerance; [blocked](frozen-state-probe-results.md), [transfer](cross-arm-probe-results.md) |
 | Which populations/edges affect decoding in the current model? | Bounded III-A and III-B panels complete | DAN refit sensitivity passes count/raw-bin controls but not the later effective-strength5pp criterion; APL frozen sensitivity remains scoped. Whole-brain/downstream localization open. [Latest results](edge-panel-results.md) |
 | Does original wiring outperform incoming-strength-preserving structural controls? | Current-model III-C complete; primary fails | Role control refit exceeds intact by1.33/1.12pp; all frozen controls show transfer loss. [Results](structural-controls-results.md) |
+| Which predefined pathways matter beyond matched edge/weight removal? | Bounded III-D complete; primary and one secondary refit candidate confirm | DAN→MBON7.33/8.32pp and KC→MBON5.49/5.71pp; access versus storage unresolved, APL controls not identifiable. [Results](pathway-memory-results.md) |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
-## Latest ACT III-C structural-controls closeout — 2026-09-29
+## Preceding ACT III-C structural-controls closeout — 2026-09-29
 
 [Report](structural-controls-results.md):169 exact fits/replays,156 frozen
 checks,338 independently reconstructed train/test trajectories,3575 metric rows.
@@ -55,8 +72,8 @@ as decoder-transfer sensitivity, not unique intact memory information.
 Role edge overlap49.08–50.94%; outgoing strengths are not preserved. Finite
 swaps are not claimed to be a uniform graph ensemble. A preflight-only unused
 source line-ending assertion was preserved and repaired before new outcomes.
-Current-model III-C is complete; next one proposal is a role-pathway ablation
-sensitivity map (III-D), before any internal-learning expansion.
+Current-model III-C is complete. Its proposed role-pathway ablation map (III-D)
+is now completed; see the latest result above.
 
 ## Preceding ACT III-B edge-ablation closeout — 2026-09-29
 
