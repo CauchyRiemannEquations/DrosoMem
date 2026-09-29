@@ -1,0 +1,27 @@
+{
+  "protocol": "docs/reward-noise-protocol.md",
+  "source": "results/local_reward",
+  "source_manifest_sha256": "33c04aef89209acc8ca16e9c9e4ba7ac7f3eaf7218e2ebcfdc6468d541582f31",
+  "direction_source": "results/reward_direction",
+  "direction_manifest_sha256": "469a0d5cbb8b2de8b5ad9143cafd4936cda1f852b3f6e5f053400e9c4dc2ba54",
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "noise_std": 0.02,
+  "evaluation_replicates": 32,
+  "smoke_replicates": 2,
+  "bootstrap_seed": 298399,
+  "bootstrap_draws": 10000,
+  "max_seconds": 7200,
+  "max_rss_bytes": 3221225472,
+  "evaluation_seeds": {
+    "241001": 281001,
+    "241142": 281142,
+    "241143": 281143,
+    "241144": 281144,
+    "251142": 291142,
+    "251143": 291143,
+    "251144": 291144
+  }
+}
