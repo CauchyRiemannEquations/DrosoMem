@@ -1,0 +1,291 @@
+{
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "alphabet_size": 4,
+  "warmup": 100,
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "alpha": 1.0,
+  "swaps_per_edge": 5,
+  "normalization": "incoming_l1",
+  "schedule": "mbon_after_kc",
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "activity_epsilon": 1e-08,
+  "decay_steps": 32,
+  "bootstrap_draws": 10000,
+  "max_seconds": 3600,
+  "max_rss_bytes": 3221225472,
+  "material_effect": 0.05,
+  "access_margin": 0.05,
+  "protocol": "docs/edge-panel-protocol.md",
+  "bootstrap_seed": 134399,
+  "edge_fraction": 0.05,
+  "weight_boundaries": [
+    10,
+    20,
+    50,
+    100
+  ],
+  "families": [
+    "DAN",
+    "weak",
+    "strong",
+    "betweenness",
+    "within",
+    "between"
+  ],
+  "random_families": [
+    "dan_control",
+    "uniform",
+    "within",
+    "between"
+  ],
+  "source": "results/neuron_population_panel",
+  "source_manifest_sha256": "26f6fb8c18751727304f561630885f798fa75692dc82113c7d8c43675ef279ab",
+  "cohorts": {
+    "smoke": {
+      "circuit_seeds": [
+        701
+      ],
+      "train_samples": 200,
+      "test_samples": 100,
+      "blocks": [
+        {
+          "seed": 121001,
+          "train_seed": 122001,
+          "test_seed": 123001,
+          "edge_seeds": {
+            "dan_control": [
+              124001,
+              124002,
+              124003
+            ],
+            "uniform": [
+              124004,
+              124005,
+              124006
+            ],
+            "within": [
+              124007,
+              124008,
+              124009
+            ],
+            "between": [
+              124010,
+              124011,
+              124012
+            ]
+          }
+        }
+      ]
+    },
+    "discovery": {
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "blocks": [
+        {
+          "seed": 121142,
+          "train_seed": 122142,
+          "test_seed": 123142,
+          "edge_seeds": {
+            "dan_control": [
+              124142,
+              124143,
+              124144
+            ],
+            "uniform": [
+              124145,
+              124146,
+              124147
+            ],
+            "within": [
+              124148,
+              124149,
+              124150
+            ],
+            "between": [
+              124151,
+              124152,
+              124153
+            ]
+          }
+        },
+        {
+          "seed": 121143,
+          "train_seed": 122143,
+          "test_seed": 123143,
+          "edge_seeds": {
+            "dan_control": [
+              124154,
+              124155,
+              124156
+            ],
+            "uniform": [
+              124157,
+              124158,
+              124159
+            ],
+            "within": [
+              124160,
+              124161,
+              124162
+            ],
+            "between": [
+              124163,
+              124164,
+              124165
+            ]
+          }
+        },
+        {
+          "seed": 121144,
+          "train_seed": 122144,
+          "test_seed": 123144,
+          "edge_seeds": {
+            "dan_control": [
+              124166,
+              124167,
+              124168
+            ],
+            "uniform": [
+              124169,
+              124170,
+              124171
+            ],
+            "within": [
+              124172,
+              124173,
+              124174
+            ],
+            "between": [
+              124175,
+              124176,
+              124177
+            ]
+          }
+        }
+      ]
+    },
+    "confirmation": {
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "blocks": [
+        {
+          "seed": 131142,
+          "train_seed": 132142,
+          "test_seed": 133142,
+          "edge_seeds": {
+            "dan_control": [
+              134142,
+              134143,
+              134144
+            ],
+            "uniform": [
+              134145,
+              134146,
+              134147
+            ],
+            "within": [
+              134148,
+              134149,
+              134150
+            ],
+            "between": [
+              134151,
+              134152,
+              134153
+            ]
+          }
+        },
+        {
+          "seed": 131143,
+          "train_seed": 132143,
+          "test_seed": 133143,
+          "edge_seeds": {
+            "dan_control": [
+              134154,
+              134155,
+              134156
+            ],
+            "uniform": [
+              134157,
+              134158,
+              134159
+            ],
+            "within": [
+              134160,
+              134161,
+              134162
+            ],
+            "between": [
+              134163,
+              134164,
+              134165
+            ]
+          }
+        },
+        {
+          "seed": 131144,
+          "train_seed": 132144,
+          "test_seed": 133144,
+          "edge_seeds": {
+            "dan_control": [
+              134166,
+              134167,
+              134168
+            ],
+            "uniform": [
+              134169,
+              134170,
+              134171
+            ],
+            "within": [
+              134172,
+              134173,
+              134174
+            ],
+            "between": [
+              134175,
+              134176,
+              134177
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
