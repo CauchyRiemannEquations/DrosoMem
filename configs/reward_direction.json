@@ -1,0 +1,137 @@
+{
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "alphabet_size": 4,
+  "warmup": 100,
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "normalization": "incoming_l1",
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "activity_epsilon": 1e-08,
+  "bootstrap_draws": 10000,
+  "max_rss_bytes": 3221225472,
+  "protocol": "docs/reward-direction-protocol.md",
+  "source": "results/local_reward",
+  "source_manifest_sha256": "33c04aef89209acc8ca16e9c9e4ba7ac7f3eaf7218e2ebcfdc6468d541582f31",
+  "schedule": "synchronous",
+  "target_lag": 2,
+  "plastic_epochs": 10,
+  "plastic_learning_rate": 0.05,
+  "plastic_floor": 0.0001,
+  "code_amplitude": 0.25,
+  "bootstrap_seed": 278399,
+  "max_seconds": 7200,
+  "cohorts": {
+    "smoke": {
+      "blocks": [
+        {
+          "seed": 261001,
+          "train_seed": 262001,
+          "test_seed": 263001,
+          "code_seed": 264001,
+          "noise_seed": 265001,
+          "direction_seed": 266001,
+          "evaluation_seed": 267001
+        }
+      ],
+      "circuit_seeds": [
+        701
+      ],
+      "train_samples": 200,
+      "test_samples": 100,
+      "plastic_epochs": 1,
+      "evaluation_replicates": 2
+    },
+    "discovery": {
+      "blocks": [
+        {
+          "seed": 261142,
+          "train_seed": 262142,
+          "test_seed": 263142,
+          "code_seed": 264142,
+          "noise_seed": 265142,
+          "direction_seed": 266142,
+          "evaluation_seed": 267142
+        },
+        {
+          "seed": 261143,
+          "train_seed": 262143,
+          "test_seed": 263143,
+          "code_seed": 264143,
+          "noise_seed": 265143,
+          "direction_seed": 266143,
+          "evaluation_seed": 267143
+        },
+        {
+          "seed": 261144,
+          "train_seed": 262144,
+          "test_seed": 263144,
+          "code_seed": 264144,
+          "noise_seed": 265144,
+          "direction_seed": 266144,
+          "evaluation_seed": 267144
+        }
+      ],
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "plastic_epochs": 10,
+      "evaluation_replicates": 32
+    },
+    "confirmation": {
+      "blocks": [
+        {
+          "seed": 271142,
+          "train_seed": 272142,
+          "test_seed": 273142,
+          "code_seed": 274142,
+          "noise_seed": 275142,
+          "direction_seed": 276142,
+          "evaluation_seed": 277142
+        },
+        {
+          "seed": 271143,
+          "train_seed": 272143,
+          "test_seed": 273143,
+          "code_seed": 274143,
+          "noise_seed": 275143,
+          "direction_seed": 276143,
+          "evaluation_seed": 277143
+        },
+        {
+          "seed": 271144,
+          "train_seed": 272144,
+          "test_seed": 273144,
+          "code_seed": 274144,
+          "noise_seed": 275144,
+          "direction_seed": 276144,
+          "evaluation_seed": 277144
+        }
+      ],
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "plastic_epochs": 10,
+      "evaluation_replicates": 32
+    }
+  },
+  "trace_decay": 0.8,
+  "activity_rate": 0.05,
+  "baseline_rate": 0.05,
+  "noise_std": 0.02,
+  "random_directions": 5,
+  "nominal_relative_radius": 0.01,
+  "boundary_fraction": 0.5,
+  "evaluation_replicates": 32
+}
