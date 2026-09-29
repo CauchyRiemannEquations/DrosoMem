@@ -12,7 +12,18 @@ The review covered README, docs, configurations, runners, dynamics/readout/data/
 evaluation modules, test coverage and archived result/checkpoint schemas.
 This is not a new execution of every historical experiment.
 
-## Latest — ACT III-D pathway panel complete (2026-09-29)
+## Latest — Observation-location diagnostic complete (2026-09-29)
+
+[Results](observation-location-results.md):130 exact fits/replays,260 independent
+site-specific train/test reconstructions,1430 metric rows;224 tests pass,8 optional
+skips. DAN→MBON cuts cause MBON losses7.8833/7.2722pp but unstimulated KC48 losses
+−0.0778/−0.0361pp. All required past-access and location-interaction gates pass in
+both new-task cohorts. Old matched masks are reused explicitly. KC baseline~50%
+versus MBON~77%; temporal profiles differ. This is evidence of observation-dependent
+decoding impairment, not identified storage, biological learning or total ACT IV completion.
+Next one proposed analysis: impairment at jointly accessible delays.
+
+## Preceding — ACT III-D pathway panel complete (2026-09-29)
 
 [Results](pathway-memory-results.md):273 fits/replays,260 frozen evaluations,
 546 independently reconstructed trajectories and5863 metric rows. Primary
@@ -25,8 +36,7 @@ These are model decoding/access pathway candidates, not localized storage or
 biological memory circuits. III-C and III-B negative findings remain unchanged.
 The first verifier stopped at a rounding-sensitive tie; its failure is preserved,
 and hierarchical reduction was repaired without changing outcomes or criteria.
-Next one proposal: fixed48-neuron observation-location diagnostic for DAN→MBON
-readout dependence, before any ACT IV plasticity expansion.
+Its proposed observation-location diagnostic is now complete; see the latest result above.
 
 ## Research questions and evidence
 
@@ -55,6 +65,7 @@ readout dependence, before any ACT IV plasticity expansion.
 | Which populations/edges affect decoding in the current model? | Bounded III-A and III-B panels complete | DAN refit sensitivity passes count/raw-bin controls but not the later effective-strength5pp criterion; APL frozen sensitivity remains scoped. Whole-brain/downstream localization open. [Latest results](edge-panel-results.md) |
 | Does original wiring outperform incoming-strength-preserving structural controls? | Current-model III-C complete; primary fails | Role control refit exceeds intact by1.33/1.12pp; all frozen controls show transfer loss. [Results](structural-controls-results.md) |
 | Which predefined pathways matter beyond matched edge/weight removal? | Bounded III-D complete; primary and one secondary refit candidate confirm | DAN→MBON7.33/8.32pp and KC→MBON5.49/5.71pp; access versus storage unresolved, APL controls not identifiable. [Results](pathway-memory-results.md) |
+| Is DAN→MBON lesion impairment observation-dependent? | ACT IV-A entry diagnostic complete; scoped hypothesis passes | MBON loss7.88/7.27pp, non-input KC48 retain access; baseline/lag profiles differ. [Results](observation-location-results.md) |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
 ## Preceding ACT III-C structural-controls closeout — 2026-09-29

@@ -1,22 +1,20 @@
 # Prioritized work — updated 2026-09-29
 
-**ACT III-D current-model pathway panel complete.**
-[Results](pathway-memory-results.md):273 conditions,260 frozen evaluations,
-546 independent trajectories and5863 metric rows. DAN→MBON refit primary
-confirms7.3306/8.3204pp extra impairment; KC→MBON secondary5.4907/5.7083pp
-also confirms but impairs current-symbol access. No frozen specificity confirms.
-APL specificity is graph-control limited, not demonstrated absent.
-All previous artifacts and graph/verification failures are preserved.
+**Observation-location diagnostic complete after scoped ACT III-D.**
+[Results](observation-location-results.md):130 fits/replays,260 independent site
+trajectory checks,1430 lag rows,224 tests pass. DAN→MBON removal causes7.88/7.27pp
+MBON loss, while48 unstimulated KCs retain access (loss−0.08/−0.04pp). Both cohorts
+pass the preregistered observation-dependence gate. Fresh tasks, reused mask bank.
+KC baseline and temporal profiles differ from MBON; this does not identify storage.
 
-Next single proposed experiment: **ACT IV-A entry diagnostic — observation
-location and readout dependence after DAN→MBON removal**. Keep48 observed
-neurons and the same linear head size; predefine an alternative observation set.
-Establish intact past-symbol access for each observation set, then compare the
-same lesion's refit impairment. This tests a blocked MBON access route versus
-broader loss of accessible information; observation composition is an explicit
-covariate. Preregister first. This proposal has not been executed, and does not
-launch a large plasticity sweep. Whole-brain and minimal-subnetwork work remain
-separate open extensions. Preserve III-B/C negatives.
+Next single proposed analysis: **compare lesion impairment at jointly accessible
+delays**. Use archived states, fix the delay-selection/access rule and cohort
+separation before the new analysis, report all eligible and ineligible delays.
+Do not retrospectively change the completed primary endpoint or cherry-pick a
+successful lag. Ask whether the mean interaction partly reflects different
+baseline temporal access. This is not yet executed and is not a plasticity sweep.
+Preserve III-B/C negative results and all prior artifacts. ACT IV internal learning,
+whole-brain localization and unique/minimal subnetworks remain open.
 
 ## Historical handoff notes (superseded by the result above)
 

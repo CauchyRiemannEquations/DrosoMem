@@ -9,17 +9,16 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 
 ## Current research
 
-Latest: [ACT III-D pathway sensitivity](docs/pathway-memory-results.md).
-DAN→MBON cuts impair refit past-symbol decoding more than matched cuts by
-7.33/8.32 percentage points in discovery/confirmation. KC→MBON also passes
-(5.49/5.71pp), but loses current-symbol access too. Both feed the observed MBONs:
-these are model decoding-pathway candidates, not identified storage locations.
+Latest: [Observation-location diagnostic](docs/observation-location-results.md).
+After DAN→MBON removal, MBON decoding loses7.88/7.27 percentage points in fresh
+discovery/confirmation tasks;48 non-directly-stimulated KCs retain past-symbol
+access with losses−0.08/−0.04pp. Both cohorts pass the locked location-dependence
+rule. KC baseline accuracy is lower (~50% versus77%): this does not locate storage.
 
-III-A/B/C/D are complete within their two partial-model diagnostic scopes.
-III-D adds273 fits/replays and260 frozen evaluations, with independent verification.
-Earlier negative structural-control results remain valid. Next proposed study:
-readout dependence using a fixed48-neuron observation budget and different locations.
-Whole-brain localization and autonomous-recall mechanisms remain untested.
+III-A/B/C/D are complete within their partial-model scopes. This ACT IV-A entry
+diagnostic adds130 fits/replays; it does not establish internal synaptic learning.
+Next proposed analysis: compare impairment at jointly accessible delays, under
+separate rules fixed before that analysis. Earlier negative findings remain intact.
 
 The established models freeze recurrent connectivity and train an external
 readout. Distinguish **representation**, **decoding** and **internal learning**.
@@ -33,8 +32,8 @@ Use Python3.12 and a clean environment; commands run from the repository root.
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-act1-lock.txt
 $env:PYTHONPATH = 'src'
-.\.venv\Scripts\python.exe scripts/pathway_memory.py --out outputs/pathway_memory_new
-.\.venv\Scripts\python.exe scripts/verify_pathway_memory.py outputs/pathway_memory_new --out outputs/pathway_memory_check_new
+.\.venv\Scripts\python.exe scripts/observation_location.py --out outputs/observation_location_new
+.\.venv\Scripts\python.exe scripts/verify_observation_location.py outputs/observation_location_new --out outputs/observation_location_check_new
 ```
 
 Use the committed mask bank and source artifacts; use fresh output directories. The runner verifies an archived baseline, executes the locked

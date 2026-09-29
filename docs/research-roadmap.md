@@ -7,13 +7,12 @@ information), and **learning** (experience modifies recurrent connections).
 
 ## Current position — 2026-09-29
 
-**ACT III-D current-model pathway panel complete.**
-[Results](pathway-memory-results.md):273 conditions,260 frozen evaluations and
-independent graph/trajectory/statistical verification. DAN→MBON primary and
-KC→MBON secondary refit impairment exceed matched controls in both cohorts.
-These identify decoding/access candidates; storage localization remains unresolved.
-Next one proposal: fixed-budget observation-location test of readout dependence,
-a diagnostic entry to ACT IV-A before attempting internal plasticity.
+**ACT III-D scoped panel and one ACT IV-A entry diagnostic complete.**
+[Observation-location results](observation-location-results.md):130 conditions,
+full repeats and independent verification. DAN→MBON loss is substantial at MBON
+observation but near zero at48 non-input KCs with retained past access. Baseline
+accuracy/lag profiles differ; storage location and internal learning remain open.
+Next one analysis: impairment at jointly accessible delays. No plasticity sweep.
 
 | Axis | Completed scope | Remaining scope |
 |---|---|---|
@@ -23,12 +22,12 @@ a diagnostic entry to ACT IV-A before attempting internal plasticity.
 | ACT III-B | DAN/count/raw-bin and normalized-bin controls;weak/strong/random/betweenness/within-role/between-role panel | Whole-brain,detected biological modules,full dose curves remain untested extensions |
 | ACT III-C | Four controls including exact per-neuron incoming-weight and role/signed-degree preservation;169 cases | Whole-brain, uniform-ensemble mixing and autonomous-recall extensions |
 | ACT III-D | Five preregistered pathways, matched removal controls, sensitivity map and fresh confirmation;273 cases | Minimal/unique subnetwork, motifs, whole-brain localization and separation of storage from readout access |
-| ACT IV | Earlier local-rule implementation with negative functional results | Useful internal learning without external decoder dependence |
+| ACT IV | Earlier negative local-rule results; fixed48-cell observation-dependence diagnostic completed | Useful internal learning without external decoder dependence |
 | ACT V | Scoped robustness curves exposed strong fragility | Broader perturbation/physiological validation, independent axis |
 
 현재 두 686-neuron 부분 모델의 **III-A/B/C/D의 제한된 연구 단락을 종료**했다.
 완료는 고정한 실험·검증을 끝냈다는 뜻이다. 전체 뇌의 기억 위치나 내부 학습을
-규명했다는 뜻은 아니다. 다음 제안은 ACT IV-A에 앞선 관측 위치와 출력층 의존성 진단이다.
+규명했다는 뜻은 아니다. 관측 위치 진단도 완료했다. 다음은 공통 접근 가능한 지연에서의 손상 비교 분석이다.
 
 ## ACT I — Can a Fly Brain Remember?
 
