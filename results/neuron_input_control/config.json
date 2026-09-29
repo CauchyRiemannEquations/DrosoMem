@@ -1,0 +1,380 @@
+{
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "alphabet_size": 4,
+  "warmup": 100,
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "alpha": 1.0,
+  "swaps_per_edge": 5,
+  "normalization": "incoming_l1",
+  "schedule": "mbon_after_kc",
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "activity_epsilon": 1e-08,
+  "decay_steps": 32,
+  "bootstrap_draws": 10000,
+  "max_seconds": 3600,
+  "max_rss_bytes": 3221225472,
+  "material_effect": 0.05,
+  "access_margin": 0.05,
+  "retention_tolerance": 0.05,
+  "protocol": "docs/neuron-panel-protocol.md",
+  "bootstrap_seed": 94399,
+  "source": "results/kc_confirmation",
+  "source_manifest_sha256": "d7bffb9a49d516990689b2009f4c3559715622113f4f080918ccbce5725cefca",
+  "groups": [
+    "KCab",
+    "KCapbp",
+    "DAN",
+    "APL",
+    "hub"
+  ],
+  "controls_per_group": 3,
+  "hub_fraction": 0.05,
+  "positive_controls": [
+    "all_KC",
+    "all_MBON"
+  ],
+  "input_cohorts": {
+    "smoke": {
+      "circuit_seeds": [
+        701
+      ],
+      "train_samples": 200,
+      "test_samples": 100,
+      "blocks": [
+        {
+          "seed": 71001,
+          "train_seed": 72001,
+          "test_seed": 73001,
+          "match_seeds": [
+            74001,
+            74002,
+            74003
+          ]
+        }
+      ]
+    },
+    "main": {
+      "blocks": [
+        {
+          "seed": 71142,
+          "train_seed": 72142,
+          "test_seed": 73142,
+          "match_seeds": [
+            74142,
+            74143,
+            74144
+          ]
+        },
+        {
+          "seed": 71143,
+          "train_seed": 72143,
+          "test_seed": 73143,
+          "match_seeds": [
+            74145,
+            74146,
+            74147
+          ]
+        },
+        {
+          "seed": 71144,
+          "train_seed": 72144,
+          "test_seed": 73144,
+          "match_seeds": [
+            74148,
+            74149,
+            74150
+          ]
+        }
+      ],
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000
+    }
+  },
+  "cohorts": {
+    "smoke": {
+      "circuit_seeds": [
+        701
+      ],
+      "train_samples": 200,
+      "test_samples": 100,
+      "blocks": [
+        {
+          "seed": 81001,
+          "train_seed": 82001,
+          "test_seed": 83001,
+          "control_seeds": {
+            "KCab": [
+              84001,
+              84002,
+              84003
+            ],
+            "KCapbp": [
+              84004,
+              84005,
+              84006
+            ],
+            "DAN": [
+              84007,
+              84008,
+              84009
+            ],
+            "APL": [
+              84010,
+              84011,
+              84012
+            ],
+            "hub": [
+              84013,
+              84014,
+              84015
+            ]
+          }
+        }
+      ]
+    },
+    "discovery": {
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "blocks": [
+        {
+          "seed": 81142,
+          "train_seed": 82142,
+          "test_seed": 83142,
+          "control_seeds": {
+            "KCab": [
+              84142,
+              84143,
+              84144
+            ],
+            "KCapbp": [
+              84145,
+              84146,
+              84147
+            ],
+            "DAN": [
+              84148,
+              84149,
+              84150
+            ],
+            "APL": [
+              84151,
+              84152,
+              84153
+            ],
+            "hub": [
+              84154,
+              84155,
+              84156
+            ]
+          }
+        },
+        {
+          "seed": 81143,
+          "train_seed": 82143,
+          "test_seed": 83143,
+          "control_seeds": {
+            "KCab": [
+              84157,
+              84158,
+              84159
+            ],
+            "KCapbp": [
+              84160,
+              84161,
+              84162
+            ],
+            "DAN": [
+              84163,
+              84164,
+              84165
+            ],
+            "APL": [
+              84166,
+              84167,
+              84168
+            ],
+            "hub": [
+              84169,
+              84170,
+              84171
+            ]
+          }
+        },
+        {
+          "seed": 81144,
+          "train_seed": 82144,
+          "test_seed": 83144,
+          "control_seeds": {
+            "KCab": [
+              84172,
+              84173,
+              84174
+            ],
+            "KCapbp": [
+              84175,
+              84176,
+              84177
+            ],
+            "DAN": [
+              84178,
+              84179,
+              84180
+            ],
+            "APL": [
+              84181,
+              84182,
+              84183
+            ],
+            "hub": [
+              84184,
+              84185,
+              84186
+            ]
+          }
+        }
+      ]
+    },
+    "confirmation": {
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "blocks": [
+        {
+          "seed": 91142,
+          "train_seed": 92142,
+          "test_seed": 93142,
+          "control_seeds": {
+            "KCab": [
+              94142,
+              94143,
+              94144
+            ],
+            "KCapbp": [
+              94145,
+              94146,
+              94147
+            ],
+            "DAN": [
+              94148,
+              94149,
+              94150
+            ],
+            "APL": [
+              94151,
+              94152,
+              94153
+            ],
+            "hub": [
+              94154,
+              94155,
+              94156
+            ]
+          }
+        },
+        {
+          "seed": 91143,
+          "train_seed": 92143,
+          "test_seed": 93143,
+          "control_seeds": {
+            "KCab": [
+              94157,
+              94158,
+              94159
+            ],
+            "KCapbp": [
+              94160,
+              94161,
+              94162
+            ],
+            "DAN": [
+              94163,
+              94164,
+              94165
+            ],
+            "APL": [
+              94166,
+              94167,
+              94168
+            ],
+            "hub": [
+              94169,
+              94170,
+              94171
+            ]
+          }
+        },
+        {
+          "seed": 91144,
+          "train_seed": 92144,
+          "test_seed": 93144,
+          "control_seeds": {
+            "KCab": [
+              94172,
+              94173,
+              94174
+            ],
+            "KCapbp": [
+              94175,
+              94176,
+              94177
+            ],
+            "DAN": [
+              94178,
+              94179,
+              94180
+            ],
+            "APL": [
+              94181,
+              94182,
+              94183
+            ],
+            "hub": [
+              94184,
+              94185,
+              94186
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

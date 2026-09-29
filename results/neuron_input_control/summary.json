@@ -1,0 +1,74 @@
+{
+  "gamma/frozen": {
+    "difference": {
+      "n": 3,
+      "mean": -0.000861111111111112,
+      "median": 0.0004166666666666622,
+      "variance": 1.4668981481481479e-05,
+      "bootstrap95": [
+        -0.005166666666666667,
+        0.0021666666666666683
+      ],
+      "paired_dz": -0.22483256384071645,
+      "wins": 2,
+      "ties": 0,
+      "losses": 1
+    },
+    "gate": false,
+    "exactly_equal_all_features": false
+  },
+  "gamma/refit": {
+    "difference": {
+      "n": 3,
+      "mean": 0.004166666666666661,
+      "median": 0.004583333333333319,
+      "variance": 3.965277777777759e-06,
+      "bootstrap95": [
+        0.0020000000000000018,
+        0.005916666666666663
+      ],
+      "paired_dz": 2.092434876593438,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0
+    },
+    "gate": false,
+    "exactly_equal_all_features": false
+  },
+  "matched/frozen": {
+    "difference": {
+      "n": 3,
+      "mean": -0.00550925925925926,
+      "median": -0.005916666666666671,
+      "variance": 4.4647633744856e-06,
+      "bootstrap95": [
+        -0.007388888888888889,
+        -0.003222222222222222
+      ],
+      "paired_dz": -2.607317903472572,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3
+    },
+    "gate": false,
+    "exactly_equal_all_features": false
+  },
+  "matched/refit": {
+    "difference": {
+      "n": 3,
+      "mean": 0.011037037037037038,
+      "median": 0.0115,
+      "variance": 3.031893004115253e-06,
+      "bootstrap95": [
+        0.009111111111111103,
+        0.012500000000000006
+      ],
+      "paired_dz": 6.338632374399463,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0
+    },
+    "gate": false,
+    "exactly_equal_all_features": false
+  }
+}
