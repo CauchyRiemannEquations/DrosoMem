@@ -1,9 +1,9 @@
 # Original research phases: completion audit — 2026-09-27
 
-Latest follow-up (2026-09-29): bounded ACT IV-A A/B/C/D comparison and the
-[scalar reward/local eligibility study](local-reward-results.md) are complete.
-The latter39-case experiment fails its primary coding criterion; biological ACT IV
-remains open. The original historical phase audit below is retained unchanged.
+Latest follow-up (2026-09-29): bounded IV-A comparison, scalar/local learning,
+[initial-direction](reward-direction-results.md) and [noise-match](reward-noise-results.md)
+diagnostics are complete within their registered scopes. Full learning/directional
+criteria remain unconfirmed; biological ACT IV is open. Original audit retained.
 
 Update 2026-09-28: the subsequent [ACT I matched-memory study](whole-brain-memory-results.md)
 has also completed, with no established whole-brain recall improvement. Its scope

@@ -200,3 +200,6 @@ $env:PYTHONPATH='src'
 먼저 고정하고 출력층이나 내부 연결을 재학습하지 않는다. 두 대조군 대비 학습 이득의
 noisy-minus-clean 상호작용을 평가하여, 단순한 잡음 효과와 학습 효과를 구분한다.
 이 보고서의 실험에는 포함하지 않은 별도 후속 비교이며 결과는 별도 문서로 기록한다.
+
+후속 실행 완료: [최종 가중치 잡음 일치 결과](reward-noise-results.md). 별도 protocol과
+새 noise seeds로 평가했고, 기존 학습 primary를 회복하지 못했다.

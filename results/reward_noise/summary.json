@@ -1,0 +1,392 @@
+{
+  "discovery": {
+    "cells": {
+      "contingent/clean": {
+        "n": 3,
+        "mean": 0.32449999999999996,
+        "median": 0.3145,
+        "variance": 0.0023790000000000013,
+        "bootstrap95": [
+          0.2815,
+          0.3775
+        ],
+        "paired_dz": 6.652999336249616,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "contingent/noisy": {
+        "n": 3,
+        "mean": 0.314671875,
+        "median": 0.3075625,
+        "variance": 0.002074878173828125,
+        "bootstrap95": [
+          0.27309374999999997,
+          0.363359375
+        ],
+        "paired_dz": 6.908147896310619,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "frozen/clean": {
+        "n": 3,
+        "mean": 0.2715,
+        "median": 0.268,
+        "variance": 0.0001982499999999995,
+        "bootstrap95": [
+          0.2595,
+          0.287
+        ],
+        "paired_dz": 19.282495377802036,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "frozen/noisy": {
+        "n": 3,
+        "mean": 0.2611822916666667,
+        "median": 0.262390625,
+        "variance": 1.1255208333333388e-05,
+        "bootstrap95": [
+          0.257390625,
+          0.263765625
+        ],
+        "paired_dz": 77.8514953972575,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "yoked/clean": {
+        "n": 3,
+        "mean": 0.2585,
+        "median": 0.2555,
+        "variance": 0.00020275000000000037,
+        "bootstrap95": [
+          0.246,
+          0.274
+        ],
+        "paired_dz": 18.1543254196531,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "yoked/noisy": {
+        "n": 3,
+        "mean": 0.2510572916666666,
+        "median": 0.25475000000000003,
+        "variance": 7.997566731770841e-05,
+        "bootstrap95": [
+          0.240859375,
+          0.25756249999999997
+        ],
+        "paired_dz": 28.073328216475936,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "access": {
+      "clean": false,
+      "noisy": false
+    },
+    "contrasts": {
+      "clean_vs_frozen": {
+        "n": 3,
+        "mean": 0.05299999999999999,
+        "median": 0.046499999999999986,
+        "variance": 0.0012047500000000025,
+        "bootstrap95": [
+          0.021999999999999964,
+          0.09050000000000002
+        ],
+        "paired_dz": 1.5269590915390827,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "clean_vs_yoked": {
+        "n": 3,
+        "mean": 0.06599999999999999,
+        "median": 0.059,
+        "variance": 0.0011927500000000002,
+        "bootstrap95": [
+          0.035499999999999976,
+          0.10349999999999998
+        ],
+        "paired_dz": 1.91103756025273,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "noisy_vs_frozen": {
+        "n": 3,
+        "mean": 0.05348958333333333,
+        "median": 0.05017187500000003,
+        "variance": 0.00210775642903646,
+        "bootstrap95": [
+          0.009328124999999965,
+          0.10096875
+        ],
+        "paired_dz": 1.1650887360509847,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "noisy_vs_yoked": {
+        "n": 3,
+        "mean": 0.06361458333333332,
+        "median": 0.052812499999999984,
+        "variance": 0.0014403741048177098,
+        "bootstrap95": [
+          0.03223437499999998,
+          0.10579687500000001
+        ],
+        "paired_dz": 1.6761737478157899,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "interaction_vs_frozen": {
+        "n": 3,
+        "mean": 0.0004895833333333396,
+        "median": 0.0036718750000000466,
+        "variance": 0.0001414673665364582,
+        "bootstrap95": [
+          -0.012671874999999999,
+          0.010468749999999971
+        ],
+        "paired_dz": 0.04116219164756995,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      },
+      "interaction_vs_yoked": {
+        "n": 3,
+        "mean": -0.0023854166666666585,
+        "median": -0.0032656249999999942,
+        "variance": 1.857722981770853e-05,
+        "bootstrap95": [
+          -0.0061875000000000124,
+          0.0022968750000000315
+        ],
+        "paired_dz": -0.5534441132749651,
+        "wins": 1,
+        "ties": 0,
+        "losses": 2
+      }
+    },
+    "gates": {
+      "clean_vs_frozen": true,
+      "clean_vs_yoked": true,
+      "noisy_vs_frozen": true,
+      "noisy_vs_yoked": true,
+      "interaction_vs_frozen": false,
+      "interaction_vs_yoked": false
+    },
+    "endpoints": {
+      "noisy_coding": false,
+      "clean_coding": false,
+      "noise_interaction": false
+    }
+  },
+  "confirmation": {
+    "cells": {
+      "contingent/clean": {
+        "n": 3,
+        "mean": 0.29833333333333334,
+        "median": 0.3235,
+        "variance": 0.002015583333333334,
+        "bootstrap95": [
+          0.24650000000000002,
+          0.325
+        ],
+        "paired_dz": 6.645098170457319,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "contingent/noisy": {
+        "n": 3,
+        "mean": 0.30522916666666666,
+        "median": 0.31743750000000004,
+        "variance": 0.001891567708333333,
+        "bootstrap95": [
+          0.2569375,
+          0.34131249999999996
+        ],
+        "paired_dz": 7.018027817045555,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "frozen/clean": {
+        "n": 3,
+        "mean": 0.26133333333333336,
+        "median": 0.2575,
+        "variance": 0.00018658333333333282,
+        "bootstrap95": [
+          0.25,
+          0.27649999999999997
+        ],
+        "paired_dz": 19.131912422683584,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "frozen/noisy": {
+        "n": 3,
+        "mean": 0.2592291666666667,
+        "median": 0.25346875,
+        "variance": 0.00015893977864583295,
+        "bootstrap95": [
+          0.25053125,
+          0.2736875
+        ],
+        "paired_dz": 20.562104492992553,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "yoked/clean": {
+        "n": 3,
+        "mean": 0.24266666666666667,
+        "median": 0.2475,
+        "variance": 0.003955083333333333,
+        "bootstrap95": [
+          0.1775,
+          0.303
+        ],
+        "paired_dz": 3.8586226151836076,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "yoked/noisy": {
+        "n": 3,
+        "mean": 0.2506041666666667,
+        "median": 0.24376562499999999,
+        "variance": 0.00042544539388020833,
+        "bootstrap95": [
+          0.234265625,
+          0.27378125
+        ],
+        "paired_dz": 12.149722939588452,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "access": {
+      "clean": false,
+      "noisy": false
+    },
+    "contrasts": {
+      "clean_vs_frozen": {
+        "n": 3,
+        "mean": 0.03700000000000001,
+        "median": 0.066,
+        "variance": 0.003386999999999998,
+        "bootstrap95": [
+          -0.02999999999999997,
+          0.07500000000000001
+        ],
+        "paired_dz": 0.635761355178275,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      },
+      "clean_vs_yoked": {
+        "n": 3,
+        "mean": 0.05566666666666668,
+        "median": 0.07750000000000001,
+        "variance": 0.010609083333333333,
+        "bootstrap95": [
+          -0.056499999999999995,
+          0.14600000000000002
+        ],
+        "paired_dz": 0.5404509518259242,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      },
+      "noisy_vs_frozen": {
+        "n": 3,
+        "mean": 0.046000000000000006,
+        "median": 0.06396875000000002,
+        "variance": 0.0031328994140624998,
+        "bootstrap95": [
+          -0.016749999999999987,
+          0.09078124999999998
+        ],
+        "paired_dz": 0.8218349489869016,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      },
+      "noisy_vs_yoked": {
+        "n": 3,
+        "mean": 0.054625000000000014,
+        "median": 0.08317187500000006,
+        "variance": 0.0038824968261718744,
+        "bootstrap95": [
+          -0.01684374999999999,
+          0.09754687499999998
+        ],
+        "paired_dz": 0.8766694957780523,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      },
+      "interaction_vs_frozen": {
+        "n": 3,
+        "mean": 0.008999999999999989,
+        "median": 0.013249999999999984,
+        "variance": 9.286816406249955e-05,
+        "bootstrap95": [
+          -0.0020312499999999845,
+          0.01578124999999997
+        ],
+        "paired_dz": 0.9339187172760626,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      },
+      "interaction_vs_yoked": {
+        "n": 3,
+        "mean": -0.001041666666666663,
+        "median": 0.020046874999999964,
+        "variance": 0.002959306722005205,
+        "bootstrap95": [
+          -0.06282812499999996,
+          0.039656250000000004
+        ],
+        "paired_dz": -0.01914845668139396,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      }
+    },
+    "gates": {
+      "clean_vs_frozen": false,
+      "clean_vs_yoked": false,
+      "noisy_vs_frozen": false,
+      "noisy_vs_yoked": false,
+      "interaction_vs_frozen": false,
+      "interaction_vs_yoked": false
+    },
+    "endpoints": {
+      "noisy_coding": false,
+      "clean_coding": false,
+      "noise_interaction": false
+    }
+  },
+  "confirmed": {
+    "noisy_coding": false,
+    "clean_coding": false,
+    "noise_interaction": false
+  },
+  "noise_removal_explanation_supported": false,
+  "new_training_seeds": false,
+  "cohorts_pooled": false
+}

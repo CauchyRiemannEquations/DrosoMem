@@ -1,21 +1,21 @@
 # Prioritized work — updated 2026-09-29
 
-**ACT IV scalar reward/local eligibility experiment complete; primary failed.**
-[Results](local-reward-results.md):39 cases independently replayed,229 tests pass,
-8 optional skips. Fixed-code accuracy32.45/29.83% versus frozen27.15/26.13%,
-yoked25.85/24.27%. Some gains, but the full preregistered gates fail; ridge remains
-near ceiling. All19,587 prior result files preserved. No tuning was performed.
+**ACT IV direction and noise diagnostics complete; full criteria failed.**
+[Direction](reward-direction-results.md):169graphs/5187 exact trajectories, noisy
+forward gains6/6 but one above-random failure. [Noise matching](reward-noise-results.md):
+39old final checkpoints/1197 exact trajectories, no retraining; original coding
+failure persists and no learning-specific noise interaction is confirmed.
 
-Next single proposed experiment: **local update/reward directional alignment**.
-At frozen initial weights, accumulate the SAME registered local rule's expected
-update on training inputs without applying it. Test symmetric, small, sign/mass-
-constrained perturbations along that direction versus norm-matched random
-signed directions using shared exploration streams and held-out inputs. Fix the
-perturbation size, sample budget, seeds and criteria before outcomes. Do not fit
-an external head or change the learning rule. The question is whether local credit
-assignment points toward higher fixed-code correctness, rather than simply whether
-weights can move. This is a proposed diagnostic, not executed, and not a new
-learning-rate search. Retain old vector-teacher positives and local-rule negatives.
+Next single proposed experiment: **local direction over the learning trajectory**.
+Replay the original scalar-reward runs exactly and retain predefined epochs0,1,5,10.
+At each frozen checkpoint estimate the same local proposal and compare its symmetric
+response with norm-matched random axes, keeping task/input/code seed paired THROUGH
+TIME. The prior initial-direction study used different task seeds, so do not splice
+its values onto the older final-learning outcomes. Predeclare noise,probe radius,
+replicate budget and temporal contrasts before outcomes. Do not change the learning
+rule/rate, choose the best epoch, add a trained head or interpret this as autonomous
+recall. The question is whether useful directional credit survives learning, not
+whether a selected checkpoint can improve the headline. This next study is unexecuted.
 
 ## Historical handoff notes (superseded by the result above)
 

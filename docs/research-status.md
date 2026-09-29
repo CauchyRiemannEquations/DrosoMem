@@ -12,7 +12,23 @@ The review covered README, docs, configurations, runners, dynamics/readout/data/
 evaluation modules, test coverage and archived result/checkpoint schemas.
 This is not a new execution of every historical experiment.
 
-## Latest — ACT IV scalar reward/local eligibility complete (2026-09-29)
+## Latest — ACT IV direction and noise diagnostics complete (2026-09-29)
+
+[Direction study](reward-direction-results.md):13 frozen proposal blocks,169 probe
+graphs,5187 exact scalar trajectory replays. Noisy local+ gains occur in6/6seed
+blocks; mean directional responses0.51615/0.88750pp. One discovery block has
+above-random−0.00594pp, so the complete criterion fails; confirmation alone passes.
+All actual radii are1%, without boundary reduction. Clean outcomes are secondary.
+
+[Noise-match follow-up](reward-noise-results.md):39 frozen final checkpoints,
+1197 exact scalar replays, no retraining. Contingent noisy accuracy31.46719/30.52292%
+versus frozen26.11823/25.92292%,yoked25.10573/25.06042%. Coding and both-control
+noise-interaction criteria fail; matching training noise does not rescue the old
+primary. Reused model/task seeds are not fresh independent training confirmation.
+233 tests pass,8 optional skips. Next one: directional probes at fixed epochs along
+identical learning trajectories. Biological ACT IV remains open.
+
+## Preceding — ACT IV scalar reward/local eligibility complete (2026-09-29)
 
 [Results](local-reward-results.md):39 cases,78 primary decoder evaluations,
 39 independently exact local-training replays,78 trajectories,468 metric rows;
@@ -23,8 +39,7 @@ Discovery fails the every-seed frequency-access gate; confirmation also contains
 negative paired effects and misses the5pp frozen mean gate. Neither full primary
 passes. Ridge frozen100/99.9333%, trained99.3/99.7333%; no representation improvement.
 Plastic changes are substantial (~0.70 relative L2), with effective rank decreasing;
-this is not a silent/no-update failure. Next one: local update/reward directional
-alignment diagnostic. No learning-rate tuning; biological ACT IV remains open.
+this is not a silent/no-update failure. That direction diagnostic and noise follow-up are now completed above. No learning-rate tuning; biological ACT IV remains open.
 
 ## Preceding — ACT IV-A bounded A/B/C/D comparison complete (2026-09-29)
 
@@ -95,6 +110,8 @@ Its proposed observation-location diagnostic is now complete; see the latest res
 | Is DAN→MBON lesion impairment observation-dependent? | ACT IV-A entry diagnostic complete; scoped hypothesis passes | MBON loss7.88/7.27pp, non-input KC48 retain access; baseline/lag profiles differ. [Results](observation-location-results.md) |
 | Can internal teaching reduce dependence on a trained external head? | Bounded ACT IV-A comparison complete; artificial coding criterion passes | Fixed decoding improves to49.58/51.52%, ridge already near ceiling; no biological-learning or capacity claim. [Results](readout-dependency-results.md) |
 | Can scalar reward and local traces replace vector teaching? | Bounded ACT IV experiment complete; primary fails | Some gains, inconsistent confirmation; no increased memory capacity. [Results](local-reward-results.md) |
+| Do local proposals point toward higher reward? | Initial directional diagnostic complete; full gate failed | Positive noisy forward response6/6, above-random5/6; [results](reward-direction-results.md) |
+| Does matching evaluation noise resolve the learning failure? | Frozen-checkpoint diagnostic complete; criteria failed | Coding and learning-specific interaction remain unconfirmed; [results](reward-noise-results.md) |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
 ## Preceding ACT III-C structural-controls closeout — 2026-09-29

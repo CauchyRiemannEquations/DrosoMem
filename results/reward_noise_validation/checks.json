@@ -1,0 +1,19 @@
+{
+  "all_checks_pass": true,
+  "checkpoints": 39,
+  "scalar_trajectories": 1197,
+  "exact_scores": true,
+  "confirmed": {
+    "noisy_coding": false,
+    "clean_coding": false,
+    "noise_interaction": false
+  },
+  "prior_files_unchanged": 20285,
+  "result_manifest_sha256": "eac742af2ed664a2ac64badaa7698f71a6523693bd8643e107883e87e1c66386",
+  "verifier_sha256": "a8c4a8670b29fba8df7eb7976bea6ac37f580edab60756329d950fc15eb034c6",
+  "budget": {
+    "seconds": 61.62921060000008,
+    "peak_sampled_rss_bytes": 153235456,
+    "sample_seconds": 0.05
+  }
+}
