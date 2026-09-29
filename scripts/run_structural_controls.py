@@ -111,7 +111,7 @@ def run(config,out):
     assert not subprocess.check_output(['git','status','--porcelain'],text=True).strip(),'Commit before execution'
     check(Path(c['source']));assert core.sha256(Path(c['source'])/'manifest.json')==c['source_manifest_sha256']
     context=core.source_context(c)
-    for p in [config,Path('docs/structural-controls-seed-audit.json'),Path('docs/structural-controls-graph-audit.json')]+sorted(Path('scripts').glob('*.py')):
+    for p in [config,Path('docs/structural-controls-seed-audit.json'),Path('docs/structural-controls-graph-audit.json')]+[Path('scripts')/(name+'.py') for name in ['alphabet_memory','context_memory','frozen_state_probe','normalization_transfer','edge_masks','structural_k4','kc_ablation','kc_frozen','edge_panel','structural_controls','run_structural_controls','verify_neuron_panel','verify_structural_controls']]:
         context['source_sha256'][p.as_posix()]=core.sha256(p)
     for p,h in context['source_sha256'].items():assert hashlib.sha256(subprocess.check_output(['git','show',context['git_commit']+':'+p])).hexdigest()==h,p
     out.mkdir(parents=True,exist_ok=False);budget=Budget(c)

@@ -1,0 +1,8 @@
+{
+  "stage": "before output directory, baseline or new experiment",
+  "git_commit": "1516db830fb91d4fdb1f031142c140721368e0e9",
+  "failed_path": "scripts/kc_exclusive.py",
+  "error": "Source Git byte assertion: an unused historical script has checkout line endings differing from Git blob",
+  "new_experiments_executed": 0,
+  "repair": "Capture all 13 actual runner/verifier script dependencies, retaining exact source-byte checks; historical source untouched"
+}
