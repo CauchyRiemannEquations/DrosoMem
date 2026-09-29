@@ -1,0 +1,137 @@
+{
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "alphabet_size": 4,
+  "warmup": 100,
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "alpha": 1.0,
+  "normalization": "incoming_l1",
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "activity_epsilon": 1e-08,
+  "bootstrap_draws": 10000,
+  "max_rss_bytes": 3221225472,
+  "protocol": "docs/readout-dependency-protocol.md",
+  "source": "results/observation_location",
+  "source_manifest_sha256": "77a8e30917606353232318f544c202c73cdece587c179cec1996b29973a3a68c",
+  "networks": [
+    "real",
+    "random",
+    "role"
+  ],
+  "training_arms": [
+    "frozen",
+    "aligned",
+    "shifted"
+  ],
+  "schedule": "synchronous",
+  "target_lag": 2,
+  "plastic_epochs": 10,
+  "plastic_learning_rate": 0.05,
+  "plastic_floor": 0.0001,
+  "code_amplitude": 0.25,
+  "swaps_per_edge": 10,
+  "bootstrap_seed": 236399,
+  "max_seconds": 7200,
+  "cohorts": {
+    "smoke": {
+      "blocks": [
+        {
+          "seed": 221001,
+          "train_seed": 222001,
+          "test_seed": 223001,
+          "code_seed": 224001,
+          "graph_seed": 226001
+        }
+      ],
+      "circuit_seeds": [
+        701
+      ],
+      "train_samples": 200,
+      "test_samples": 100,
+      "plastic_epochs": 1
+    },
+    "discovery": {
+      "blocks": [
+        {
+          "seed": 221142,
+          "train_seed": 222142,
+          "test_seed": 223142,
+          "code_seed": 224142,
+          "graph_seed": 226142
+        },
+        {
+          "seed": 221143,
+          "train_seed": 222143,
+          "test_seed": 223143,
+          "code_seed": 224143,
+          "graph_seed": 226143
+        },
+        {
+          "seed": 221144,
+          "train_seed": 222144,
+          "test_seed": 223144,
+          "code_seed": 224144,
+          "graph_seed": 226144
+        }
+      ],
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "plastic_epochs": 10
+    },
+    "confirmation": {
+      "blocks": [
+        {
+          "seed": 231142,
+          "train_seed": 232142,
+          "test_seed": 233142,
+          "code_seed": 234142,
+          "graph_seed": 236142
+        },
+        {
+          "seed": 231143,
+          "train_seed": 232143,
+          "test_seed": 233143,
+          "code_seed": 234143,
+          "graph_seed": 236143
+        },
+        {
+          "seed": 231144,
+          "train_seed": 232144,
+          "test_seed": 233144,
+          "code_seed": 234144,
+          "graph_seed": 236144
+        }
+      ],
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "plastic_epochs": 10
+    }
+  }
+}
