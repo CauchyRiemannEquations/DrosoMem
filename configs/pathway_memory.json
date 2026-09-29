@@ -319,7 +319,9 @@
   "relative_mass_tolerance": 0.005,
   "numerical_guard": 1e-07,
   "maximum_specificity_overlap": 0.8,
-  "mask_bank": "results/pathway_masks_v3",
+  "mask_bank": "results/pathway_masks_v4",
   "solver_seconds": 60,
-  "draw_mip_gap": 0.001
+  "draw_mip_gap": 0.001,
+  "draw_solver_seconds": 10,
+  "accept_feasible_time_limit": true
 }

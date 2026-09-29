@@ -26,13 +26,18 @@ def constraints(raw,target,c):
 
 def solve(A,lo,hi,cost,c,gap):
     start=time.perf_counter()
-    r=milp(cost,integrality=np.ones(len(cost)),bounds=Bounds(0,1),constraints=LinearConstraint(A,lo,hi),options={'time_limit':c['solver_seconds'],'mip_rel_gap':gap})
-    if r.status!=0 or r.x is None:raise RuntimeError(('MILP did not solve',r.status,r.message))
+    limit=c['solver_seconds'] if gap==0 else c['draw_solver_seconds']
+    r=milp(cost,integrality=np.ones(len(cost)),bounds=Bounds(0,1),constraints=LinearConstraint(A,lo,hi),options={'time_limit':limit,'mip_rel_gap':gap})
+    retried=False
+    if gap>0 and r.x is None:
+        retried=True
+        r=milp(cost,integrality=np.ones(len(cost)),bounds=Bounds(0,1),constraints=LinearConstraint(A,lo,hi),options={'time_limit':c['solver_seconds'],'mip_rel_gap':gap})
+    if (r.status!=0 and not (gap>0 and c['accept_feasible_time_limit'] and r.status==1)) or r.x is None:raise RuntimeError(('MILP did not solve',r.status,r.message))
     assert np.max(abs(r.x-np.rint(r.x)))<1e-5
     mask=r.x>.5;values=A@mask
     assert np.all(values>=lo-c['numerical_guard']) and np.all(values<=hi+c['numerical_guard'])
-    assert r.mip_gap<=gap+1e-10
-    return mask,dict(status=int(r.status),message=r.message,objective=float(r.fun),dual_bound=float(r.mip_dual_bound),gap=float(r.mip_gap),nodes=int(r.mip_node_count),seconds=time.perf_counter()-start)
+    if r.status==0:assert r.mip_gap<=gap+1e-10
+    return mask,dict(status=int(r.status),time_limited_feasible=bool(r.status==1),retried_without_incumbent=retried,message=r.message,objective=float(r.fun),dual_bound=float(r.mip_dual_bound),gap=float(r.mip_gap),nodes=int(r.mip_node_count),seconds=time.perf_counter()-start)
 
 
 def audit_mask(raw,target,mask,c,minimum=None):

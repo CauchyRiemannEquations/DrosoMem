@@ -1,0 +1,323 @@
+{
+  "cohort": "discovery",
+  "circuit_seed": 702,
+  "seed": 181142,
+  "raw_sha256": "d59af6dbb0244543878e9d3947681c5805401c308f389dcdf6eb73da02477f1e",
+  "controls": {
+    "KC_MBON_control0": {
+      "seed": 184142,
+      "count": 1431,
+      "negative": 0,
+      "overlap": 1018,
+      "overlap_fraction": 0.7113906359189378,
+      "raw_l1_error": 0.004967371189247061,
+      "normalized_l1_error": 0.0049815069361685005,
+      "raw_l1": 10318.0,
+      "normalized_l1": 12.899612930200739,
+      "solver": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "objective": -5.755816537539777,
+        "dual_bound": -5.755816537539777,
+        "gap": 0.0,
+        "nodes": 519,
+        "seconds": 1.330265500000678
+      },
+      "cost_sha256": "8c68eda75ff1a4550bf96b86dc485842bc8d73bdec2135c250f9e8b2ca0d9c19"
+    },
+    "KC_MBON_control1": {
+      "seed": 184143,
+      "count": 1431,
+      "negative": 0,
+      "overlap": 1018,
+      "overlap_fraction": 0.7113906359189378,
+      "raw_l1_error": 0.004967371189247061,
+      "normalized_l1_error": 0.0049913798899947626,
+      "raw_l1": 10318.0,
+      "normalized_l1": 12.899739656197145,
+      "solver": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "objective": -25.51804199352947,
+        "dual_bound": -25.54328957187378,
+        "gap": 0.000989401081427467,
+        "nodes": 8192,
+        "seconds": 6.619680499999959
+      },
+      "cost_sha256": "a4f107d25c59a8a9c59cd954aa062f33a385ca4b2c69b95dbb35c498ae86f8f9"
+    },
+    "KC_MBON_control2": {
+      "seed": 184144,
+      "count": 1431,
+      "negative": 0,
+      "overlap": 1018,
+      "overlap_fraction": 0.7113906359189378,
+      "raw_l1_error": 0.004967371189247061,
+      "normalized_l1_error": 0.004990944810436604,
+      "raw_l1": 10318.0,
+      "normalized_l1": 12.899734071658669,
+      "solver": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "objective": -29.2744361140403,
+        "dual_bound": -29.302833419416416,
+        "gap": 0.0009700376555672637,
+        "nodes": 1249,
+        "seconds": 1.6796670999974594
+      },
+      "cost_sha256": "fc306a53cfd99d273961df9bf005aab67715c538ab4ff7067ba3749d8f22ac99"
+    },
+    "DAN_KC_control0": {
+      "seed": 184145,
+      "count": 20,
+      "negative": 0,
+      "overlap": 0,
+      "overlap_fraction": 0.0,
+      "raw_l1_error": 0.0,
+      "normalized_l1_error": -0.004669240520408513,
+      "raw_l1": 104.0,
+      "normalized_l1": 2.7475978865493373,
+      "solver": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "objective": -18.920159735432108,
+        "dual_bound": -18.939021656479092,
+        "gap": 0.000996921871207079,
+        "nodes": 1,
+        "seconds": 0.2926108999999997
+      },
+      "cost_sha256": "064e0335e5c2026c284546eda6af5136764391cf0612e18c2baaa4d23bdc849e"
+    },
+    "DAN_KC_control1": {
+      "seed": 184146,
+      "count": 20,
+      "negative": 0,
+      "overlap": 0,
+      "overlap_fraction": 0.0,
+      "raw_l1_error": 0.0,
+      "normalized_l1_error": 0.0002951801108641572,
+      "raw_l1": 104.0,
+      "normalized_l1": 2.761302106482778,
+      "solver": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "objective": -19.042566725215966,
+        "dual_bound": -19.054685402481557,
+        "gap": 0.0006363993594173901,
+        "nodes": 1,
+        "seconds": 0.14915579999797046
+      },
+      "cost_sha256": "ed0b482f75fe4632d233d5c7229c249797ac562b710bf86fe9f36ab0146278d9"
+    },
+    "DAN_KC_control2": {
+      "seed": 184147,
+      "count": 20,
+      "negative": 0,
+      "overlap": 0,
+      "overlap_fraction": 0.0,
+      "raw_l1_error": 0.0,
+      "normalized_l1_error": -0.00349439811759944,
+      "raw_l1": 104.0,
+      "normalized_l1": 2.750841024041315,
+      "solver": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "objective": -19.110376954485375,
+        "dual_bound": -19.113725394865952,
+        "gap": 0.0001752158206273025,
+        "nodes": 1,
+        "seconds": 0.4638023000006797
+      },
+      "cost_sha256": "f28e03fd2a7aead8fdf921020e73da97c5a1a8296ae57fefae7f4e16d970837f"
+    },
+    "DAN_MBON_control0": {
+      "seed": 184148,
+      "count": 189,
+      "negative": 0,
+      "overlap": 0,
+      "overlap_fraction": 0.0,
+      "raw_l1_error": 0.003215434083601254,
+      "normalized_l1_error": -0.0041161122119988125,
+      "raw_l1": 3120.0,
+      "normalized_l1": 7.306519677582054,
+      "solver": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "objective": -173.72281271528783,
+        "dual_bound": -173.8243432492183,
+        "gap": 0.000584439846117704,
+        "nodes": 1,
+        "seconds": 0.04272969999874476
+      },
+      "cost_sha256": "7ca5bd18696f14129e55087f621edea9c9cad4b81ee75abdcf6ed9eee7fd5d4b"
+    },
+    "DAN_MBON_control1": {
+      "seed": 184149,
+      "count": 189,
+      "negative": 0,
+      "overlap": 0,
+      "overlap_fraction": 0.0,
+      "raw_l1_error": -0.004823151125401881,
+      "normalized_l1_error": -0.00484725016296339,
+      "raw_l1": 3095.0,
+      "normalized_l1": 7.301155524299471,
+      "solver": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "objective": -168.2663610337909,
+        "dual_bound": -168.29082585983616,
+        "gap": 0.00014539344581385286,
+        "nodes": 1,
+        "seconds": 0.7496378999967419
+      },
+      "cost_sha256": "babc7975250f6e6f413b6db357a1bcb436cab705e19e5a57ba3c3d3d731530ce"
+    },
+    "DAN_MBON_control2": {
+      "seed": 184150,
+      "count": 189,
+      "negative": 0,
+      "overlap": 0,
+      "overlap_fraction": 0.0,
+      "raw_l1_error": -0.004823151125401881,
+      "normalized_l1_error": -0.004901060919888955,
+      "raw_l1": 3095.0,
+      "normalized_l1": 7.300760729927192,
+      "solver": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "objective": -169.6165618663801,
+        "dual_bound": -169.6460386117653,
+        "gap": 0.00017378459426875637,
+        "nodes": 1,
+        "seconds": 1.136244400000578
+      },
+      "cost_sha256": "d25cf0f6fa3d7f4387252697346d7a09867b1f0dbc9a215a4cfd0fc1e1079eb8"
+    },
+    "KC_APL_control0": {
+      "seed": 184151,
+      "count": 512,
+      "negative": 0,
+      "overlap": 466,
+      "overlap_fraction": 0.91015625,
+      "raw_l1_error": -0.004918716131721568,
+      "normalized_l1_error": 0.00489087249895781,
+      "raw_l1": 11936.0,
+      "normalized_l1": 0.7985498280502392,
+      "solver": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "objective": -55.75084466341156,
+        "dual_bound": -55.75084466341156,
+        "gap": 0.0,
+        "nodes": 477,
+        "seconds": 5.678702500001236
+      },
+      "cost_sha256": "c602797c75854a885bd6d29b9417c28751b35b04c677fe74a2856eae266f703e"
+    },
+    "KC_APL_control1": {
+      "seed": 184152,
+      "count": 512,
+      "negative": 0,
+      "overlap": 466,
+      "overlap_fraction": 0.91015625,
+      "raw_l1_error": -0.0048353480616923905,
+      "normalized_l1_error": 0.004974240568987209,
+      "raw_l1": 11937.0,
+      "normalized_l1": 0.7986160775901731,
+      "solver": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "objective": -51.13809121340032,
+        "dual_bound": -51.140911578941505,
+        "gap": 5.515195178899969e-05,
+        "nodes": 1,
+        "seconds": 0.1606037000019569
+      },
+      "cost_sha256": "93a19620b5195642efbc915aa8d44cf2fd27428887c7c791bbe102a0dc641856"
+    },
+    "KC_APL_control2": {
+      "seed": 184153,
+      "count": 512,
+      "negative": 0,
+      "overlap": 466,
+      "overlap_fraction": 0.91015625,
+      "raw_l1_error": -0.004918716131721568,
+      "normalized_l1_error": 0.00489087249895781,
+      "raw_l1": 11936.0,
+      "normalized_l1": 0.7985498280502392,
+      "solver": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "objective": -61.323189295266324,
+        "dual_bound": -61.38436356419612,
+        "gap": 0.0009975715489166836,
+        "nodes": 5,
+        "seconds": 0.8290707000014663
+      },
+      "cost_sha256": "6dbaf9c7d860cc34cf71078fd85f0a205f89ef4fd46e5c1f8e260a4027a55276"
+    },
+    "APL_KC_control0": {
+      "seed": 184154,
+      "count": 512,
+      "negative": 512,
+      "overlap": 464,
+      "overlap_fraction": 0.90625,
+      "raw_l1_error": -0.004629192253188474,
+      "normalized_l1_error": -0.004958928638065685,
+      "raw_l1": 10536.0,
+      "normalized_l1": 448.05060501537525,
+      "solver": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "objective": 0.365687582251567,
+        "dual_bound": 0.36568758225156706,
+        "gap": 0.0,
+        "nodes": 1,
+        "seconds": 0.14633539999704226
+      },
+      "cost_sha256": "513a07ab9f859227aeacd8c6b1f306305d229b9e2073b945fb31fbc722e29220"
+    },
+    "APL_KC_control1": {
+      "seed": 184155,
+      "count": 512,
+      "negative": 512,
+      "overlap": 464,
+      "overlap_fraction": 0.90625,
+      "raw_l1_error": -0.004723665564478008,
+      "normalized_l1_error": -0.004994620435655017,
+      "raw_l1": 10535.0,
+      "normalized_l1": 448.0345335868039,
+      "solver": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "objective": 17.562702636863545,
+        "dual_bound": 17.562702636863545,
+        "gap": 0.0,
+        "nodes": 9,
+        "seconds": 0.48897869999927934
+      },
+      "cost_sha256": "5a8669ab6e66e61ca52650a9e1b499514db478d86998330dae4bdc6219840b95"
+    },
+    "APL_KC_control2": {
+      "seed": 184156,
+      "count": 512,
+      "negative": 512,
+      "overlap": 464,
+      "overlap_fraction": 0.90625,
+      "raw_l1_error": 0.0017005196032120473,
+      "normalized_l1_error": -0.004983196729476447,
+      "raw_l1": 10603.0,
+      "normalized_l1": 448.0396774935351,
+      "solver": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "objective": 9.7271907828368,
+        "dual_bound": 9.7271907828368,
+        "gap": 0.0,
+        "nodes": 7,
+        "seconds": 1.2910510000001523
+      },
+      "cost_sha256": "1c090614bd19e8120cf935408411455354eb9dbe4254b0f4815138bfe59f0818"
+    }
+  }
+}

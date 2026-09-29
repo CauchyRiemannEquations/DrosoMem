@@ -110,3 +110,17 @@ Preserve results/pathway_masks and results/pathway_masks_v2, each with minimum
 masks and failure.json. Cast eligibility to built-in bool; verify the edit, then
 use fresh results/pathway_masks_v3. This path-only config revision changes no
 seeds, matching constraints, eligibility threshold, hypotheses or analysis.
+
+## Second pre-outcome amendment: bounded random-cost generation
+
+The v3 bank stopped at a random-cost solve reaching60s after four completed
+block/circuit banks. Preserve that partial bank/failure. No neural tasks executed.
+Keep all graph matching, minimum-overlap proofs, seeds and scientific criteria.
+For random-cost draws only, request gap0.001 with a10s cap; accept a time-limited
+incumbent only after strict integer/count/sign/mass/minimum-overlap audits. If no
+incumbent exists, retry identical costs with60s; if still none, fail. Store solver
+status, gap, dual bound and retry flag for every draw. Minimum-overlap solves still
+require status optimal and zero gap at60s. This sampler has time/solver dependence
+and is not uniform or necessarily random-cost optimal. Do not overstate it.
+Use fresh results/pathway_masks_v4; previous partial masks remain immutable.
+This replaces the earlier status-optimal requirement ONLY for random-cost draws.
