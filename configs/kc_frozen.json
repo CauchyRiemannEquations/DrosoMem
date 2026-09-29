@@ -1,0 +1,121 @@
+{
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "alphabet_size": 4,
+  "warmup": 100,
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "alpha": 1.0,
+  "gain": 0.9,
+  "leak": 0.6,
+  "normalization": "incoming_l1",
+  "schedule": "mbon_after_kc",
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "blocks": [
+    {
+      "seed": 61142,
+      "train_seed": 62142,
+      "test_seed": 63142,
+      "match_seeds": [
+        64142,
+        64143,
+        64144
+      ]
+    },
+    {
+      "seed": 61143,
+      "train_seed": 62143,
+      "test_seed": 63143,
+      "match_seeds": [
+        64145,
+        64146,
+        64147
+      ]
+    },
+    {
+      "seed": 61144,
+      "train_seed": 62144,
+      "test_seed": 63144,
+      "match_seeds": [
+        64148,
+        64149,
+        64150
+      ]
+    }
+  ],
+  "smoke": {
+    "circuit_seeds": [
+      701
+    ],
+    "train_samples": 200,
+    "test_samples": 100,
+    "blocks": [
+      {
+        "seed": 61001,
+        "train_seed": 62001,
+        "test_seed": 63001,
+        "match_seeds": [
+          64001,
+          64002,
+          64003
+        ]
+      }
+    ]
+  },
+  "bootstrap_draws": 10000,
+  "max_seconds": 1800,
+  "max_rss_bytes": 3221225472,
+  "protocol": "docs/kc-frozen-protocol.md",
+  "bootstrap_seed": 65399,
+  "material_effect": 0.05,
+  "access_margin": 0.05,
+  "retention_tolerance": 0.05,
+  "sources": {
+    "full": "results/kc_ablation",
+    "subset": "results/kc_exclusive"
+  },
+  "conditions": {
+    "full": [
+      "gamma",
+      "matched0",
+      "matched1",
+      "matched2"
+    ],
+    "subset": [
+      "gamma0",
+      "nongamma0",
+      "gamma1",
+      "nongamma1",
+      "gamma2",
+      "nongamma2"
+    ]
+  },
+  "source_manifest_sha256": {
+    "full": "6509d72ec666dbb02af4a7a70581ae2e25156bbc50b389a8da407c191acd2938",
+    "subset": "76a5de1401b7ed33e113b00e9367c35b6da99e95f1ef53f381d4cc5747292d0a"
+  }
+}
