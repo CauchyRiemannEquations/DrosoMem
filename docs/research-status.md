@@ -39,7 +39,19 @@ This is not a new execution of every historical experiment.
 | Memory-critical subnetwork? | Partial prior ablations only | No comprehensive matched ablation/control study or causal circuit localization; ACT III open |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
-## Latest ACT III fresh-seed alignment confirmation — 2026-09-29
+## Latest ACT III-A KCγ lesions — 2026-09-29
+
+[Population and disjoint subset results](kc-ablation-results.md): intact77.303%,
+KCγ lesion79.219%, exact degree/input-matched KC lesions77.156%. Specificity
+criterion fails; opposite-direction gain is exploratory, not a revised success.
+Controls overlap61.9–72.0%. A separately registered same-cohort follow-up removes
+disjoint KCγ/non-KCγ subsets71–93neurons:76.957%/77.072%,criterion fails again.
+Dose/background changed too; do not attribute the difference only to overlap.
+77conditions/full replays,847including-smoke metric rows independently checked.
+198tests pass,8optional skips;7,908 earlier result files preserved by follow-up.
+No identified memory-critical subnetwork. Next: frozen-head lesion versus refit.
+
+## Preceding ACT III fresh-seed alignment confirmation — 2026-09-29
 
 [Fresh cohort](fresh-alignment-results.md) uses new mapping55142–55144 and separate
 new train/test/rewire seeds on existing biological strata701/702. R→F45.142%,
@@ -48,7 +60,7 @@ H1 improvement passes both directions/all3blocks; H2 access and H3 retention fai
 12 new conditions/full replays,12 transfers,132 independently checked lag rows;
 194 tests pass/8 optional skips.7,511 historical result files unchanged.
 New pseudorandom realizations are not new biological connectome samples.
-Next proposed: matched KCγ ablation with readout refits, retaining normalization.
+The matched KCγ refit study and disjoint follow-up are now complete above.
 
 ## Preceding ACT III residual diagnostics — 2026-09-29
 

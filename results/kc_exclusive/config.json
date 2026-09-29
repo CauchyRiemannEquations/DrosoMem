@@ -1,0 +1,108 @@
+{
+  "protocol": "docs/kc-exclusive-protocol.md",
+  "conditions": [
+    "gamma0",
+    "nongamma0",
+    "gamma1",
+    "nongamma1",
+    "gamma2",
+    "nongamma2"
+  ],
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "alphabet_size": 4,
+  "warmup": 100,
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "alpha": 1.0,
+  "swaps_per_edge": 5,
+  "normalization": "incoming_l1",
+  "schedule": "mbon_after_kc",
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "activity_epsilon": 1e-08,
+  "decay_steps": 32,
+  "bootstrap_seed": 64399,
+  "bootstrap_draws": 10000,
+  "max_seconds": 1800,
+  "max_rss_bytes": 3221225472,
+  "blocks": [
+    {
+      "seed": 61142,
+      "train_seed": 62142,
+      "test_seed": 63142,
+      "match_seeds": [
+        64142,
+        64143,
+        64144
+      ]
+    },
+    {
+      "seed": 61143,
+      "train_seed": 62143,
+      "test_seed": 63143,
+      "match_seeds": [
+        64145,
+        64146,
+        64147
+      ]
+    },
+    {
+      "seed": 61144,
+      "train_seed": 62144,
+      "test_seed": 63144,
+      "match_seeds": [
+        64148,
+        64149,
+        64150
+      ]
+    }
+  ],
+  "smoke": {
+    "circuit_seeds": [
+      701
+    ],
+    "train_samples": 200,
+    "test_samples": 100,
+    "blocks": [
+      {
+        "seed": 61001,
+        "train_seed": 62001,
+        "test_seed": 63001,
+        "match_seeds": [
+          64001,
+          64002,
+          64003
+        ]
+      }
+    ]
+  },
+  "material_effect": 0.05,
+  "source": "results/kc_ablation",
+  "source_manifest_sha256": "6509d72ec666dbb02af4a7a70581ae2e25156bbc50b389a8da407c191acd2938"
+}

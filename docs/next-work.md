@@ -1,19 +1,18 @@
 # Prioritized work — updated 2026-09-29
 
-**Fresh-seed alignment confirmation complete: improvement replicates, portability fails.**
-[Results](fresh-alignment-results.md): R→F25.033→45.142%, F→R26.061→47.256%,
-target refits80.108%/77.606%. All3 fresh paired blocks improve. H1 passes,
-H2 access and H3 retention fail in both directions. No pooling with observed
-cohorts, tuning or seed replacement.12 conditions/full replays,12 transfers,
-132 transfer-lag rows independently verified.194 tests pass,8 optional skips.
+**ACT III-A KCγ refit lesions and disjoint matched follow-up complete.**
+[Results](kc-ablation-results.md): whole-population extra impairment−2.064pp;
+disjoint subset extra impairment+0.115pp,1positive/2negative blocks.
+Both registered5pp specificity gates fail.77conditions/full replays,726main lag
+rows,847including smoke independently audited;198tests pass,8optional skips.
+Subset follow-up reused the SAME cohort; it is not independent confirmation.
 
-Next single proposed experiment: **KCγ population ablation versus equal-count,
-degree/input-exposure-matched random KC ablation, refit-only**. Keep48MBON
-observations/readout size and pre-lesion normalization factors fixed. Refit
-the readout on each condition's training states, evaluate independent test input.
-Do not mix frozen-head ablation with refit. Preregister annotation selection,
-matching, seeds and criteria before execution. Proposed, not run.
-Broader ACT III critical-subnetwork work and ACT IV internal learning remain open.
+Next single proposed experiment: **frozen intact-head decoding on the same KCγ
+lesion states versus the already available refit results**. Freeze source mean,
+scale and coefficients; preserve paired masks/streams and all controls. Register
+endpoint and criteria before calculating frozen-head performance. This separates
+decoder reuse from remaining refittable information. Proposed, not run.
+No gain search or ACT IV expansion. Broader critical-subnetwork work remains open.
 
 ## Historical handoff notes (superseded by the result above)
 

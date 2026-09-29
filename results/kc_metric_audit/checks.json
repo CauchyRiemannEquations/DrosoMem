@@ -1,0 +1,22 @@
+{
+  "verified": true,
+  "records": [
+    {
+      "root": "results/kc_ablation",
+      "condition_lag_rows": 385,
+      "all_metric_formulas": true,
+      "raw_tables": true,
+      "cell_statistics": true,
+      "source_manifest_sha256": "6509d72ec666dbb02af4a7a70581ae2e25156bbc50b389a8da407c191acd2938"
+    },
+    {
+      "root": "results/kc_exclusive",
+      "condition_lag_rows": 462,
+      "all_metric_formulas": true,
+      "raw_tables": true,
+      "cell_statistics": true,
+      "source_manifest_sha256": "76a5de1401b7ed33e113b00e9367c35b6da99e95f1ef53f381d4cc5747292d0a"
+    }
+  ],
+  "verifier_sha256": "fb88f43a87d1dac9d3d360560d122ef15d6da4f7fee282dafb00d940835a50a8"
+}

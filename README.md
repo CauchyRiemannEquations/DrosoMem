@@ -9,14 +9,14 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 
 ## Current research
 
-Latest: [fresh-seed alignment confirmation](docs/fresh-alignment-results.md)
-replicates partial improvement in both directions:25–26% unaligned becomes45–47%
-aligned, versus78–80% target refit. All three new paired seeds improve; the
-registered access/retention gates still fail. Existing negative findings remain.
+Latest: [KCγ population and disjoint subset lesions](docs/kc-ablation-results.md)
+do not support population-specific impairment after readout refitting.
+Intact77.303%, whole-KCγ lesion79.219%, matched77.156%; disjoint subsets76.957%
+versus77.072%. All registered conditions and negative results are preserved.
 
-Current position: scoped ACT III normalization/readout diagnostics and fresh-seed
-confirmation complete. Next proposed: a matched KCγ ablation with condition-specific
-readout refits. Broader ablations and internal learning remain open.
+Current position: ACT III-A first population-lesion study and matched follow-up
+complete. Next: frozen-head lesion decoding versus the existing refit comparison.
+Broader critical-subnetwork work and internal learning remain open.
 
 The established models freeze recurrent connectivity and train an external
 readout. Distinguish **representation**, **decoding** and **internal learning**.
@@ -30,8 +30,8 @@ Use Python3.12 and a clean environment; commands run from the repository root.
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-act1-lock.txt
 $env:PYTHONPATH = 'src'
-.\.venv\Scripts\python.exe scripts/fresh_alignment.py --out outputs/fresh_alignment_new
-.\.venv\Scripts\python.exe scripts/verify_fresh_alignment.py outputs/fresh_alignment_new --out outputs/fresh_alignment_check_new
+.\.venv\Scripts\python.exe scripts/kc_ablation.py --out outputs/kc_ablation_new
+.\.venv\Scripts\python.exe scripts/verify_kc_ablation.py outputs/kc_ablation_new --out outputs/kc_ablation_check_new
 ```
 
 Use fresh directories. The runner checks archived baselines, then simulates new
