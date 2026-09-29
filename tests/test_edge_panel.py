@@ -6,7 +6,7 @@ from scipy import sparse
 sys.path.insert(0,str(Path('scripts').resolve()))
 from edge_masks import edge_betweenness,cut_edges,select_masks
 from verify_edge_panel import independent_centrality
-from edge_panel import validate
+from edge_panel import validate,family_rows
 from alphabet_memory import read
 
 
@@ -34,3 +34,9 @@ def test_preregistration_rejects_changed_criteria_and_seed():
         with pytest.raises(ValueError):validate(changed)
     changed=copy.deepcopy(c);changed['cohorts']['confirmation']['blocks'][0]['seed']=121142
     with pytest.raises(ValueError):validate(changed)
+
+
+def test_between_family_never_includes_betweenness():
+    import pandas as pd
+    f=pd.DataFrame(dict(arm=['between0','between1','between2','betweenness','within0']))
+    assert family_rows(f,'between').arm.tolist()==['between0','between1','between2']

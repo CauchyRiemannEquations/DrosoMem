@@ -62,7 +62,7 @@ def reference_family(q,family):
 
 
 @threadpool_limits.wrap(limits=1)
-def verify(root,out):
+def verify(root,out,analysis=None):
     m=check(root);c=m['config'];out.mkdir(parents=True,exist_ok=False);budget=Budget(c)
     try:
         scores={};graphs={};ranking={}
@@ -117,7 +117,10 @@ def verify(root,out):
             if count%25==0:print(f'Independently audited {count} cases',flush=True)
         f=pd.DataFrame(rows);saved=pd.read_csv(root/'raw-lag-table.csv');keys=['cohort','seed','circuit_seed','arm','mode','lag']
         pd.testing.assert_frame_equal(saved.sort_values(keys).reset_index(drop=True),f[saved.columns].sort_values(keys).reset_index(drop=True),check_dtype=False,atol=1e-12,rtol=1e-12)
-        past=f[f.lag.isin(c['primary_lags'])];summary=read(root/'summary.json');confirmed=[]
+        analysis_root=analysis or root
+        if analysis is not None:
+            am=check(analysis);assert am['source_manifest_sha256']==core.sha256(root/'manifest.json')
+        past=f[f.lag.isin(c['primary_lags'])];summary=read(analysis_root/'summary.json');confirmed=[]
         for mode in ['refit','frozen']:
             for family in c['families']:
                 both=[]
@@ -142,11 +145,14 @@ def verify(root,out):
         assert(count,fcount,metriccount)==(221,208,4719);budget.check();usage=budget.close()
         core.write_json(out/'checks.json',dict(cases=count,frozen=fcount,independent_trajectories=2*count,metric_rows=metriccount,centrality=ranking,
             all_checks_pass=True,source_git_bytes_verified=True,result_manifest_sha256=core.sha256(root/'manifest.json'),
-            prior_files_unchanged=len(read(root/'prior-results-sha256.json')),budget=usage))
+            prior_files_unchanged=len(read(root/'prior-results-sha256.json')),budget=usage,
+            analysis_path=analysis_root.as_posix(),analysis_manifest_sha256=core.sha256(analysis_root/'manifest.json'),
+            verifier_sha256=core.sha256(__file__)))
         print(dict(cases=count,frozen=fcount,metric_rows=metriccount,confirmed=confirmed),flush=True)
     finally:budget.close()
 
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('root',type=Path);p.add_argument('--out',type=Path,required=True)
-    args=p.parse_args();verify(args.root,args.out)
+    p.add_argument('--analysis',type=Path)
+    args=p.parse_args();verify(args.root,args.out,args.analysis)

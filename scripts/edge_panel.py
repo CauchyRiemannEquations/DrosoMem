@@ -86,7 +86,7 @@ def baseline(c,centrality):
 
 
 def family_rows(frame,family):
-    return frame[frame.arm.str.startswith(family)] if family in ['within','between'] else frame[frame.arm==family]
+    return frame[frame.arm.isin([f'{family}{j}' for j in range(3)])] if family in ['within','between'] else frame[frame.arm==family]
 
 
 def summarize(rows,c,out):
