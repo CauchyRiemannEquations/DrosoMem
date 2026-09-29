@@ -1,0 +1,141 @@
+{
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "alphabet_size": 4,
+  "warmup": 100,
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "alpha": 1.0,
+  "normalization": "incoming_l1",
+  "schedule": "mbon_after_kc",
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "activity_epsilon": 1e-08,
+  "decay_steps": 32,
+  "bootstrap_draws": 10000,
+  "max_seconds": 3600,
+  "max_rss_bytes": 3221225472,
+  "protocol": "docs/observation-location-protocol.md",
+  "source": "results/pathway_memory",
+  "source_manifest_sha256": "b32c6a94c6af2a1c3a9b0ff55eac9ff55271374effa0976121f5e48e231ec0dd",
+  "mask_bank": "results/pathway_masks_v5",
+  "mask_manifest_sha256": "69ef8f4f496747f1933704f83d11ee1feaf928e5e93b8e3f930efea0c3756675",
+  "bootstrap_seed": 214399,
+  "observation_budget": 48,
+  "arms": [
+    "intact",
+    "DAN_MBON",
+    "DAN_MBON_control0",
+    "DAN_MBON_control1",
+    "DAN_MBON_control2"
+  ],
+  "sites": [
+    "MBON",
+    "KC_unstimulated"
+  ],
+  "cohorts": {
+    "smoke": {
+      "circuit_seeds": [
+        701
+      ],
+      "train_samples": 200,
+      "test_samples": 100,
+      "blocks": [
+        {
+          "seed": 201001,
+          "train_seed": 202001,
+          "test_seed": 203001,
+          "observation_seed": 204001,
+          "mask_block_seed": 181001
+        }
+      ]
+    },
+    "discovery": {
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "blocks": [
+        {
+          "seed": 201142,
+          "train_seed": 202142,
+          "test_seed": 203142,
+          "observation_seed": 204142,
+          "mask_block_seed": 181142
+        },
+        {
+          "seed": 201143,
+          "train_seed": 202143,
+          "test_seed": 203143,
+          "observation_seed": 204143,
+          "mask_block_seed": 181143
+        },
+        {
+          "seed": 201144,
+          "train_seed": 202144,
+          "test_seed": 203144,
+          "observation_seed": 204144,
+          "mask_block_seed": 181144
+        }
+      ]
+    },
+    "confirmation": {
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "blocks": [
+        {
+          "seed": 211142,
+          "train_seed": 212142,
+          "test_seed": 213142,
+          "observation_seed": 214142,
+          "mask_block_seed": 191142
+        },
+        {
+          "seed": 211143,
+          "train_seed": 212143,
+          "test_seed": 213143,
+          "observation_seed": 214143,
+          "mask_block_seed": 191143
+        },
+        {
+          "seed": 211144,
+          "train_seed": 212144,
+          "test_seed": 213144,
+          "observation_seed": 214144,
+          "mask_block_seed": 191144
+        }
+      ]
+    }
+  }
+}
