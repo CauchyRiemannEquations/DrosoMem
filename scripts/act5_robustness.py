@@ -287,13 +287,17 @@ def supervise(c,case,out,smoke,deadline):
         process=subprocess.Popen(args,stdout=log,stderr=subprocess.STDOUT,env=env);p=psutil.Process(process.pid)
         while process.poll() is None:
             try:
-                peak=max(peak,p.memory_info().rss)
+                tree=[p]+p.children(recursive=True)
+                peak=max(peak,sum(child.memory_info().rss for child in tree if child.is_running()))
                 if peak>c['worker_rss_bytes'] or time.monotonic()-t>c['worker_seconds'] or time.monotonic()>deadline:
-                    process.kill();process.wait();raise RuntimeError(f'Resource limit: {out}; partial outputs preserved')
+                    for child in reversed(tree):
+                        try:child.kill()
+                        except psutil.NoSuchProcess:pass
+                    process.wait();raise RuntimeError(f'Resource limit: {out}; partial outputs preserved')
             except psutil.NoSuchProcess:pass
             time.sleep(.2)
         if process.returncode:raise RuntimeError(f'Worker failed: {out.with_suffix(".log")}')
-    return dict(case=stem(case),seconds=time.monotonic()-t,peak_sampled_rss_bytes=peak,sample_seconds=.2)
+    return dict(case=stem(case),seconds=time.monotonic()-t,peak_sampled_rss_bytes=peak,sample_seconds=.2,scope='worker_process_tree')
 
 
 def run(c,out,smoke):
