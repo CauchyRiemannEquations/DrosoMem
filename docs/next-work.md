@@ -1,20 +1,19 @@
 # Prioritized work — updated 2026-09-29
 
-**ACT III-A independent seeded frozen/refit confirmation complete.**
-[Results](kc-confirmation-results.md): KCγ26.047% frozen/79.367% refit,
-matched26.962%/77.323%. Primary H1 confirms in all3fresh blocks under fixed5pp
-criterion; cohorts separate. Frozen access/retention and KCγ specificity fail.
-Frozen specificity+0.915pp in all3blocks remains below5pp; do not call it zero.
-35new conditions/full replays,28transfers,693metric rows independently checked;
-202tests pass,8optional skips;8,446prior result files unchanged.
-New input/mapping/mask seeds, SAME biological graphs701/702.
+**ACT III-A current-model population panel complete.**
+[Results](neuron-panel-results.md): fixed two-cohort gates confirm DAN refit
+impairment and APL frozen sensitivity, with matching limits. Input-only contrast
+also complete.327 new conditions exactly replayed/refit,314 frozen evaluations,
+654 independently reconstructed trajectories,7,051 lag rows;206 tests pass,
+8 optional skips.9,046 preceding result files unchanged.
 
-Next single proposed experiment: **input-only silencing on the same KCγ/matched
-masks, keeping all recurrent edges**, versus saved full neuron lesions.
-This isolates the additional effect of removing recurrent edges conditional on
-removed direct input. Keep fixed weights/observation/readout and distinguish
-frozen from refit. Preregister endpoints before outcomes. Proposed, not run.
-No ACT IV expansion or tuning; broad population/edge localization remains open.
+Next single proposed experiment: **ACT III-B DAN-associated edge ablation versus
+random edge removal matched for edge count and preregistered weight bins**.
+Keep direct input,48 observation slots and frozen/refit separation. Test whether
+the replicated DAN-group refit loss exceeds connection-quantity effects.
+Write a new protocol before outcomes; do not start plasticity or tune the present
+panel. Whole-brain/downstream localization is an explicitly untested extension;
+ACT III-B/C/D and IV/V are not declared complete.
 
 ## Historical handoff notes (superseded by the result above)
 

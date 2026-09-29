@@ -36,10 +36,26 @@ This is not a new execution of every historical experiment.
 | Can finite-context distinctiveness help explain the K curve? | ACT II diagnostic completed; both scoped endpoints pass | 120 context tables on20 unique tasks; order2 ambiguity K16−K2=−0.2272; order3 prefix +59.0; all independently checked. Context5 completes K10/K16. A task-level explanation candidate, not neural causality; [results](context-memory-results.md) |
 | Does a fixed-K low/high context-conflict intervention change recall? | Completed within registered cohort scope | Main40 fits; confirmed graphs: none. [Results](context-intervention-results.md). Matched unigram counts and interface; ordering covariates remain |
 | Are past symbols accessible on held-out positions and portable across paired orderings? | Two ACT II diagnostics completed | All four blocked graph/arm and transfer graph/direction cells pass past-access criteria in both cohorts; no confirmed next-symbol benefit. Frozen-head transfer within5pp tolerance; [blocked](frozen-state-probe-results.md), [transfer](cross-arm-probe-results.md) |
-| Memory-critical subnetwork? | Scoped KCγ refit, disjoint and frozen-head lesions completed | No population specificity established; broader matched group/edge mapping and circuit localization remain open. [Latest results](kc-confirmation-results.md) |
+| Which populations affect decoding in the current model? | Bounded ACT III-A panel completed with confirmation | DAN refit and APL frozen sensitivity confirmed under count/input matching; degree/edge-strength confounds remain. Whole-brain/downstream and critical-subnetwork localization open. [Latest results](neuron-panel-results.md) |
 | Internal plasticity without external decoder dependence? | Unestablished | ACT IV open; do not turn A+B representation/decoding into C learning |
 
-## Latest ACT III-A fresh-seed KC confirmation — 2026-09-29
+## Latest ACT III-A current-model population closeout — 2026-09-29
+
+[Report](neuron-panel-results.md), [preregistered protocol](neuron-panel-protocol.md).
+Input-only28 + population299 conditions;327 exact full replays/refits,314 frozen
+evaluations,654 independent train/test trajectories,7,051 audited lag rows.
+206 tests passed,8 optional skips;9,046 preceding result files unchanged.
+Confirmed under the fixed two-cohort criterion: **refit/DAN** and **frozen/APL**.
+DAN refit control-minus-target6.798/6.417pp; APL frozen48.618/50.499pp.
+APL refit extra loss1.975/2.242pp remains below5pp. KCab/KCapbp fail specificity;
+hub passes different modes in different cohorts and is NOT confirmed.
+Count/input controls for DAN/APL/hubs do not match edge count or strength;
+APL removes1,140 edges versus3.94 for its one-neuron random controls.
+This closes the bounded two-partial-circuit III-A panel, not whole-brain/
+downstream localization or autonomous-recall mechanism. Next single experiment:
+DAN-associated edge removal with matched edge count/weight bins, ACT III-B.
+
+## Preceding ACT III-A fresh-seed KC confirmation — 2026-09-29
 
 [Fresh cohort](kc-confirmation-results.md): KCγ26.047% frozen/79.367% refit,
 matched26.962%/77.323%. Primary refit benefit confirms across new3blocks without
