@@ -9,17 +9,16 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 
 ## Current research
 
-Latest ACT IV diagnostics: [local update directions](docs/reward-direction-results.md)
-and [training/evaluation noise matching](docs/reward-noise-results.md), both complete.
-Initial local directions improve noisy correctness in all six seed blocks, but one
-misses the random-direction comparison, so the full confirmation criterion fails.
-Re-evaluating the older final weights with training noise yields31.47/30.52%
-fixed-code accuracy; coding and noise-interaction criteria still fail. Neither
-study establishes reliable internal memory learning or increased memory capacity.
+Latest ACT IV study: [local directions through learning](docs/reward-trajectory-results.md),
+complete with **inconclusive temporal endpoints**. The original 13 learning runs,
+50 checkpoints and 11,130 evaluation trajectories replay exactly. Tiny learned
+connections constrain the common probe radius below the preregistered resolution
+threshold. This does not show that useful learning signals disappear.
 
-Next: inspect local update directions at fixed points along the same learning
-trajectory. No new learning rule, parameter search or best-epoch selection.
-Prior vector-teacher positives and scalar-reward negatives remain preserved.
+Prior [initial-direction](docs/reward-direction-results.md) and
+[noise-match](docs/reward-noise-results.md) negatives remain preserved.
+Next: diagnose infinitesimal changes in fixed-code score margins on the same
+checkpoints; predeclare a distinct sensitivity metric, without changing learning.
 
 Historical recall baselines freeze recurrent connectivity and train an external
 readout; the latest diagnostic additionally trains existing KC→MBON weights. Distinguish **representation**, **decoding** and **internal learning**.
@@ -33,12 +32,12 @@ Use Python3.12 and a clean environment; commands run from the repository root.
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-act1-lock.txt
 $env:PYTHONPATH = 'src'
-.\.venv\Scripts\python.exe scripts/reward_noise.py --out outputs/reward_noise_new
-.\.venv\Scripts\python.exe scripts/verify_reward_noise.py outputs/reward_noise_new --out outputs/reward_noise_check_new
+.\.venv\Scripts\python.exe scripts/reward_trajectory.py --out outputs/reward_trajectory_new
+.\.venv\Scripts\python.exe scripts/verify_reward_trajectory.py outputs/reward_trajectory_new --out outputs/reward_trajectory_check_new
 ```
 
-Use the committed source artifacts and fresh output directories. The runner exactly replays archived clean scores and evaluates the locked
-noise conditions without retraining. See the report for source hashes,
+Use the committed source artifacts and fresh output directories. The runner exactly replays original training, captures fixed epochs and evaluates
+locked local/random directional probes. See the report for source hashes,
 per-seed results, pairing checks and limitations. Historical results remain intact.
 [ACT I protocol](docs/whole-brain-memory-protocol.md) · [Data and attribution](data/README.md) ·
 [Primary-source review](docs/research.md) · [Historical reproduction](docs/historical-reproduction.md) · [License](LICENSE)

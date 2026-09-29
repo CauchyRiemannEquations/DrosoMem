@@ -12,7 +12,18 @@ The review covered README, docs, configurations, runners, dynamics/readout/data/
 evaluation modules, test coverage and archived result/checkpoint schemas.
 This is not a new execution of every historical experiment.
 
-## Latest — ACT IV direction and noise diagnostics complete (2026-09-29)
+## Latest — ACT IV same-trajectory probes complete, inconclusive (2026-09-29)
+
+[Results](reward-trajectory-results.md): 13 original training runs and 50 fixed
+checkpoints replay exactly;350 graph probes, 11,130 exact scalar trajectories,
+700 metrics. The common finite probe radius is below the preregistered resolution
+limit, so temporal attenuation/persistence cannot be established by this study.
+Do not label this as proof of absent local learning signals. The one-sided probe
+change was declared before outcomes; boundary limitations were not tuned away.
+237 tests pass,8 optional skips. Next one: fixed-code margin directional sensitivity
+at these same checkpoints. The full biological ACT IV remains open.
+
+## Preceding — ACT IV direction and noise diagnostics complete (2026-09-29)
 
 [Direction study](reward-direction-results.md):13 frozen proposal blocks,169 probe
 graphs,5187 exact scalar trajectory replays. Noisy local+ gains occur in6/6seed
@@ -25,8 +36,8 @@ All actual radii are1%, without boundary reduction. Clean outcomes are secondary
 versus frozen26.11823/25.92292%,yoked25.10573/25.06042%. Coding and both-control
 noise-interaction criteria fail; matching training noise does not rescue the old
 primary. Reused model/task seeds are not fresh independent training confirmation.
-233 tests pass,8 optional skips. Next one: directional probes at fixed epochs along
-identical learning trajectories. Biological ACT IV remains open.
+233 tests passed,8 optional skips at that revision. The subsequent same-trajectory
+study is completed above. Biological ACT IV remains open.
 
 ## Preceding — ACT IV scalar reward/local eligibility complete (2026-09-29)
 

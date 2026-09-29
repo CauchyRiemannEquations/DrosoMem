@@ -1,9 +1,10 @@
 # Original research phases: completion audit — 2026-09-27
 
 Latest follow-up (2026-09-29): bounded IV-A comparison, scalar/local learning,
-[initial-direction](reward-direction-results.md) and [noise-match](reward-noise-results.md)
-diagnostics are complete within their registered scopes. Full learning/directional
-criteria remain unconfirmed; biological ACT IV is open. Original audit retained.
+[initial-direction](reward-direction-results.md), [noise-match](reward-noise-results.md)
+and [same-trajectory](reward-trajectory-results.md) diagnostics are complete within
+their registered scopes. The last study is resolution-limited and inconclusive;
+full learning criteria remain unconfirmed. Biological ACT IV is open. Original audit retained.
 
 Update 2026-09-28: the subsequent [ACT I matched-memory study](whole-brain-memory-results.md)
 has also completed, with no established whole-brain recall improvement. Its scope

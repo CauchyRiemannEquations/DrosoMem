@@ -1,21 +1,23 @@
 # Prioritized work — updated 2026-09-29
 
-**ACT IV direction and noise diagnostics complete; full criteria failed.**
-[Direction](reward-direction-results.md):169graphs/5187 exact trajectories, noisy
-forward gains6/6 but one above-random failure. [Noise matching](reward-noise-results.md):
-39old final checkpoints/1197 exact trajectories, no retraining; original coding
-failure persists and no learning-specific noise interaction is confirmed.
+**ACT IV same-trajectory diagnostic complete; temporal endpoints inconclusive.**
+[Results](reward-trajectory-results.md): 13 exact original training replays,
+50 checkpoints, 350 probes, 11,130 exact scalar trajectories. The common finite
+radius becomes resolution-limited; do not interpret this as absent local signal.
+The earlier direction and noise-match studies retain their original failed gates.
 
-Next single proposed experiment: **local direction over the learning trajectory**.
-Replay the original scalar-reward runs exactly and retain predefined epochs0,1,5,10.
-At each frozen checkpoint estimate the same local proposal and compare its symmetric
-response with norm-matched random axes, keeping task/input/code seed paired THROUGH
-TIME. The prior initial-direction study used different task seeds, so do not splice
-its values onto the older final-learning outcomes. Predeclare noise,probe radius,
-replicate budget and temporal contrasts before outcomes. Do not change the learning
-rule/rate, choose the best epoch, add a trained head or interpret this as autonomous
-recall. The question is whether useful directional credit survives learning, not
-whether a selected checkpoint can improve the headline. This next study is unexecuted.
+Next single proposed experiment: **directional sensitivity of fixed-code score
+margins at the same learning checkpoints**. Before outcomes, define a smooth
+correct-code minus mean-incorrect-code score contrast, tangent dynamics, fixed
+local/random axes, same noise/inputs/epochs and seed-level criteria. Validate
+analytic derivatives by central finite differences on synthetic circuits.
+Compute infinitesimal sensitivity without changing actual weights, so positive
+weight boundaries do not force the diagnostic step to zero. This is a different
+metric, not a rescue of the failed finite-accuracy endpoint. Do not provide label
+gradients to the learner, fit a head, tune learning rates or choose best epochs.
+The question is whether the local proposal points toward better code margins;
+it does not establish finite-step accuracy, autonomous recall or biological
+memory. Proposed only, unexecuted. Biological ACT IV remains open.
 
 ## Historical handoff notes (superseded by the result above)
 

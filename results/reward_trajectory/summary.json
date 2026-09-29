@@ -1,0 +1,1441 @@
+{
+  "discovery": {
+    "noisy": {
+      "epochs": {
+        "0": {
+          "statistics": {
+            "baseline": {
+              "n": 3,
+              "mean": 0.2593541666666667,
+              "median": 0.2598125,
+              "variance": 1.2960530598958033e-05,
+              "bootstrap95": [
+                0.25554687500000006,
+                0.262703125
+              ],
+              "paired_dz": 72.04134935672585,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "local": {
+              "n": 3,
+              "mean": 0.2594947916666667,
+              "median": 0.260046875,
+              "variance": 1.3256184895833309e-05,
+              "bootstrap95": [
+                0.255609375,
+                0.262828125
+              ],
+              "paired_dz": 71.27206943897541,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "random_mean": {
+              "n": 3,
+              "mean": 0.2593489583333333,
+              "median": 0.2598,
+              "variance": 1.294437825520805e-05,
+              "bootstrap95": [
+                0.25554687500000006,
+                0.2627
+              ],
+              "paired_dz": 72.084835279594,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "forward_gain": {
+              "n": 3,
+              "mean": 0.00014062500000000533,
+              "median": 0.00012500000000004174,
+              "variance": 7.568359375000502e-09,
+              "bootstrap95": [
+                6.249999999997924e-05,
+                0.000234374999999995
+              ],
+              "paired_dz": 1.6164477182409818,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "above_random": {
+              "n": 3,
+              "mean": 0.0001458333333333404,
+              "median": 0.00012812500000003446,
+              "variance": 8.733723958335214e-09,
+              "bootstrap95": [
+                6.249999999997924e-05,
+                0.0002468750000000075
+              ],
+              "paired_dz": 1.5604759221914661,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            }
+          },
+          "gates": {
+            "forward_gain": false,
+            "above_random": false
+          },
+          "utility": false
+        },
+        "1": {
+          "statistics": {
+            "baseline": {
+              "n": 3,
+              "mean": 0.2719479166666667,
+              "median": 0.2700625,
+              "variance": 8.032625325520792e-05,
+              "bootstrap95": [
+                0.26407812500000005,
+                0.281703125
+              ],
+              "paired_dz": 30.342892680803626,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "local": {
+              "n": 3,
+              "mean": 0.2720677083333333,
+              "median": 0.27023437499999997,
+              "variance": 8.045662434895829e-05,
+              "bootstrap95": [
+                0.26415625000000004,
+                0.2818125
+              ],
+              "paired_dz": 30.331654112689716,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "random_mean": {
+              "n": 3,
+              "mean": 0.27195104166666667,
+              "median": 0.270065625,
+              "variance": 8.043644856770867e-05,
+              "bootstrap95": [
+                0.264075,
+                0.28171250000000003
+              ],
+              "paired_dz": 30.322449606955118,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "forward_gain": {
+              "n": 3,
+              "mean": 0.00011979166666666967,
+              "median": 0.00010937500000002265,
+              "variance": 2.278645833331241e-09,
+              "bootstrap95": [
+                7.812500000001221e-05,
+                0.00017187499999997413
+              ],
+              "paired_dz": 2.5095057377151275,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "above_random": {
+              "n": 3,
+              "mean": 0.00011666666666667695,
+              "median": 0.00010000000000001674,
+              "variance": 2.122395833330929e-09,
+              "bootstrap95": [
+                8.125000000003268e-05,
+                0.00016874999999998141
+              ],
+              "paired_dz": 2.532407537220011,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            }
+          },
+          "gates": {
+            "forward_gain": false,
+            "above_random": false
+          },
+          "utility": false
+        },
+        "5": {
+          "statistics": {
+            "baseline": {
+              "n": 3,
+              "mean": 0.2922708333333333,
+              "median": 0.28807812499999996,
+              "variance": 0.00037626521809895744,
+              "bootstrap95": [
+                0.2753125,
+                0.31342187499999996
+              ],
+              "paired_dz": 15.06740426782685,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "local": {
+              "n": 3,
+              "mean": 0.2923645833333333,
+              "median": 0.288140625,
+              "variance": 0.0003800440266927085,
+              "bootstrap95": [
+                0.275328125,
+                0.313625
+              ],
+              "paired_dz": 14.997117915058892,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "random_mean": {
+              "n": 3,
+              "mean": 0.2922854166666667,
+              "median": 0.288103125,
+              "variance": 0.00037631888997395797,
+              "bootstrap95": [
+                0.27531875,
+                0.313434375
+              ],
+              "paired_dz": 15.067081506662884,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "forward_gain": {
+              "n": 3,
+              "mean": 9.37499999999943e-05,
+              "median": 6.249999999999312e-05,
+              "variance": 9.521484375000723e-09,
+              "bootstrap95": [
+                1.562499999999134e-05,
+                0.00020312499999999845
+              ],
+              "paired_dz": 0.9607689228304279,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "above_random": {
+              "n": 3,
+              "mean": 7.916666666664869e-05,
+              "median": 3.7499999999968114e-05,
+              "variance": 9.51497395833617e-09,
+              "bootstrap95": [
+                9.37499999997815e-06,
+                0.00019062499999999982
+              ],
+              "paired_dz": 0.8115934945868264,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            }
+          },
+          "gates": {
+            "forward_gain": false,
+            "above_random": false
+          },
+          "utility": false
+        },
+        "10": {
+          "statistics": {
+            "baseline": {
+              "n": 3,
+              "mean": 0.31338541666666664,
+              "median": 0.306546875,
+              "variance": 0.0020495410970052088,
+              "bootstrap95": [
+                0.271921875,
+                0.3616875
+              ],
+              "paired_dz": 6.922300802022025,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "local": {
+              "n": 3,
+              "mean": 0.3133697916666667,
+              "median": 0.306578125,
+              "variance": 0.0020469585774739564,
+              "bootstrap95": [
+                0.27190625,
+                0.3616249999999999
+              ],
+              "paired_dz": 6.926320787634834,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "random_mean": {
+              "n": 3,
+              "mean": 0.31338333333333335,
+              "median": 0.30655625,
+              "variance": 0.0020504055891927097,
+              "bootstrap95": [
+                0.271903125,
+                0.36169062500000004
+              ],
+              "paired_dz": 6.920795349047351,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "forward_gain": {
+              "n": 3,
+              "mean": -1.5625000000000593e-05,
+              "median": -1.562499999999134e-05,
+              "variance": 2.1972656249988656e-09,
+              "bootstrap95": [
+                -6.249999999999312e-05,
+                3.124999999998268e-05
+              ],
+              "paired_dz": -0.33333333333343207,
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            "above_random": {
+              "n": 3,
+              "mean": -1.3541666666662863e-05,
+              "median": 3.1250000000204725e-06,
+              "variance": 2.1223958333345428e-09,
+              "bootstrap95": [
+                -6.562500000001359e-05,
+                2.187500000000453e-05
+              ],
+              "paired_dz": -0.29394016056982114,
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            }
+          },
+          "gates": {
+            "forward_gain": false,
+            "above_random": false
+          },
+          "utility": false
+        }
+      },
+      "identifiable": false,
+      "attenuation_statistics": {
+        "forward_gain": {
+          "n": 3,
+          "mean": 0.0001562500000000059,
+          "median": 0.00014062500000003308,
+          "variance": 1.7822265624998243e-08,
+          "bootstrap95": [
+            3.124999999999656e-05,
+            0.0002968749999999881
+          ],
+          "paired_dz": 1.1704114719614076,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        },
+        "above_random": {
+          "n": 3,
+          "mean": 0.00015937500000000326,
+          "median": 0.000125000000000014,
+          "variance": 1.9365234375005752e-08,
+          "bootstrap95": [
+            4.062499999997471e-05,
+            0.0003125000000000211
+          ],
+          "paired_dz": 1.1452724639321057,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "attenuation_gates": {
+        "forward_gain": false,
+        "above_random": false
+      },
+      "attenuation": false,
+      "persistent_utility": false
+    },
+    "clean": {
+      "epochs": {
+        "0": {
+          "statistics": {
+            "baseline": {
+              "n": 3,
+              "mean": 0.2715,
+              "median": 0.268,
+              "variance": 0.0001982499999999995,
+              "bootstrap95": [
+                0.2595,
+                0.287
+              ],
+              "paired_dz": 19.282495377802036,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "local": {
+              "n": 3,
+              "mean": 0.2718333333333333,
+              "median": 0.268,
+              "variance": 0.00017358333333333285,
+              "bootstrap95": [
+                0.261,
+                0.2865
+              ],
+              "paired_dz": 20.632350108976055,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "random_mean": {
+              "n": 3,
+              "mean": 0.2717,
+              "median": 0.268,
+              "variance": 0.00019116999999999962,
+              "bootstrap95": [
+                0.2601,
+                0.287
+              ],
+              "paired_dz": 19.65077885982037,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "forward_gain": {
+              "n": 3,
+              "mean": 0.00033333333333333365,
+              "median": 0.0,
+              "variance": 1.083333333333335e-06,
+              "bootstrap95": [
+                -0.0005000000000000004,
+                0.0015000000000000013
+              ],
+              "paired_dz": 0.3202563076101743,
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            },
+            "above_random": {
+              "n": 3,
+              "mean": 0.00013333333333333716,
+              "median": 0.0,
+              "variance": 5.033333333333427e-07,
+              "bootstrap95": [
+                -0.0005000000000000004,
+                0.0009000000000000119
+              ],
+              "paired_dz": 0.1879363942939795,
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            }
+          },
+          "gates": {
+            "forward_gain": false,
+            "above_random": false
+          },
+          "utility": false
+        },
+        "1": {
+          "statistics": {
+            "baseline": {
+              "n": 3,
+              "mean": 0.28683333333333333,
+              "median": 0.2835,
+              "variance": 0.000218583333333333,
+              "bootstrap95": [
+                0.274,
+                0.303
+              ],
+              "paired_dz": 19.40086517926203,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "local": {
+              "n": 3,
+              "mean": 0.28683333333333333,
+              "median": 0.2835,
+              "variance": 0.000218583333333333,
+              "bootstrap95": [
+                0.274,
+                0.303
+              ],
+              "paired_dz": 19.40086517926203,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "random_mean": {
+              "n": 3,
+              "mean": 0.28683333333333333,
+              "median": 0.2835,
+              "variance": 0.000218583333333333,
+              "bootstrap95": [
+                0.274,
+                0.303
+              ],
+              "paired_dz": 19.40086517926203,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "forward_gain": {
+              "n": 3,
+              "mean": 0.0,
+              "median": 0.0,
+              "variance": 0.0,
+              "bootstrap95": [
+                0.0,
+                0.0
+              ],
+              "paired_dz": null,
+              "wins": 0,
+              "ties": 3,
+              "losses": 0
+            },
+            "above_random": {
+              "n": 3,
+              "mean": 0.0,
+              "median": 0.0,
+              "variance": 0.0,
+              "bootstrap95": [
+                0.0,
+                0.0
+              ],
+              "paired_dz": null,
+              "wins": 0,
+              "ties": 3,
+              "losses": 0
+            }
+          },
+          "gates": {
+            "forward_gain": false,
+            "above_random": false
+          },
+          "utility": false
+        },
+        "5": {
+          "statistics": {
+            "baseline": {
+              "n": 3,
+              "mean": 0.3145,
+              "median": 0.3065,
+              "variance": 0.0018542499999999985,
+              "bootstrap95": [
+                0.276,
+                0.361
+              ],
+              "paired_dz": 7.3035920285027,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "local": {
+              "n": 3,
+              "mean": 0.3146666666666667,
+              "median": 0.3065,
+              "variance": 0.0018775833333333346,
+              "bootstrap95": [
+                0.276,
+                0.3615000000000001
+              ],
+              "paired_dz": 7.261914457967657,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "random_mean": {
+              "n": 3,
+              "mean": 0.3145,
+              "median": 0.3065,
+              "variance": 0.0018542499999999985,
+              "bootstrap95": [
+                0.276,
+                0.361
+              ],
+              "paired_dz": 7.3035920285027,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "forward_gain": {
+              "n": 3,
+              "mean": 0.00016666666666666682,
+              "median": 0.0,
+              "variance": 8.333333333333347e-08,
+              "bootstrap95": [
+                0.0,
+                0.0005000000000000004
+              ],
+              "paired_dz": 0.5773502691896258,
+              "wins": 1,
+              "ties": 2,
+              "losses": 0
+            },
+            "above_random": {
+              "n": 3,
+              "mean": 0.00016666666666666682,
+              "median": 0.0,
+              "variance": 8.333333333333347e-08,
+              "bootstrap95": [
+                0.0,
+                0.0005000000000000004
+              ],
+              "paired_dz": 0.5773502691896258,
+              "wins": 1,
+              "ties": 2,
+              "losses": 0
+            }
+          },
+          "gates": {
+            "forward_gain": false,
+            "above_random": false
+          },
+          "utility": false
+        },
+        "10": {
+          "statistics": {
+            "baseline": {
+              "n": 3,
+              "mean": 0.32449999999999996,
+              "median": 0.3145,
+              "variance": 0.0023790000000000013,
+              "bootstrap95": [
+                0.2815,
+                0.3775
+              ],
+              "paired_dz": 6.652999336249616,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "local": {
+              "n": 3,
+              "mean": 0.32449999999999996,
+              "median": 0.3145,
+              "variance": 0.0023790000000000013,
+              "bootstrap95": [
+                0.2815,
+                0.3775
+              ],
+              "paired_dz": 6.652999336249616,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "random_mean": {
+              "n": 3,
+              "mean": 0.32449999999999996,
+              "median": 0.3145,
+              "variance": 0.0023790000000000013,
+              "bootstrap95": [
+                0.2815,
+                0.3775
+              ],
+              "paired_dz": 6.652999336249616,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "forward_gain": {
+              "n": 3,
+              "mean": 0.0,
+              "median": 0.0,
+              "variance": 0.0,
+              "bootstrap95": [
+                0.0,
+                0.0
+              ],
+              "paired_dz": null,
+              "wins": 0,
+              "ties": 3,
+              "losses": 0
+            },
+            "above_random": {
+              "n": 3,
+              "mean": 0.0,
+              "median": 0.0,
+              "variance": 0.0,
+              "bootstrap95": [
+                0.0,
+                0.0
+              ],
+              "paired_dz": null,
+              "wins": 0,
+              "ties": 3,
+              "losses": 0
+            }
+          },
+          "gates": {
+            "forward_gain": false,
+            "above_random": false
+          },
+          "utility": false
+        }
+      },
+      "identifiable": false,
+      "attenuation_statistics": {
+        "forward_gain": {
+          "n": 3,
+          "mean": 0.00033333333333333365,
+          "median": 0.0,
+          "variance": 1.083333333333335e-06,
+          "bootstrap95": [
+            -0.0005000000000000004,
+            0.0015000000000000013
+          ],
+          "paired_dz": 0.3202563076101743,
+          "wins": 1,
+          "ties": 1,
+          "losses": 1
+        },
+        "above_random": {
+          "n": 3,
+          "mean": 0.00013333333333333716,
+          "median": 0.0,
+          "variance": 5.033333333333427e-07,
+          "bootstrap95": [
+            -0.0005000000000000004,
+            0.0009000000000000119
+          ],
+          "paired_dz": 0.1879363942939795,
+          "wins": 1,
+          "ties": 1,
+          "losses": 1
+        }
+      },
+      "attenuation_gates": {
+        "forward_gain": false,
+        "above_random": false
+      },
+      "attenuation": false,
+      "persistent_utility": false
+    }
+  },
+  "confirmation": {
+    "noisy": {
+      "epochs": {
+        "0": {
+          "statistics": {
+            "baseline": {
+              "n": 3,
+              "mean": 0.2582708333333333,
+              "median": 0.25110937499999997,
+              "variance": 0.00018415730794270842,
+              "bootstrap95": [
+                0.24978124999999998,
+                0.273921875
+              ],
+              "paired_dz": 19.03184469025735,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "local": {
+              "n": 3,
+              "mean": 0.2583958333333333,
+              "median": 0.25125,
+              "variance": 0.0001822972005208331,
+              "bootstrap95": [
+                0.24996875,
+                0.27396875
+              ],
+              "paired_dz": 19.13795401120087,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "random_mean": {
+              "n": 3,
+              "mean": 0.2582625,
+              "median": 0.251103125,
+              "variance": 0.00018436133789062484,
+              "bootstrap95": [
+                0.2497625,
+                0.273921875
+              ],
+              "paired_dz": 19.02069690624305,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "forward_gain": {
+              "n": 3,
+              "mean": 0.00012499999999999548,
+              "median": 0.00014062499999997757,
+              "variance": 5.126953125003858e-09,
+              "bootstrap95": [
+                4.687499999997402e-05,
+                0.00018750000000003486
+              ],
+              "paired_dz": 1.7457431218872193,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "above_random": {
+              "n": 3,
+              "mean": 0.00013333333333332328,
+              "median": 0.00014687499999997689,
+              "variance": 6.487630208336647e-09,
+              "bootstrap95": [
+                4.687499999997402e-05,
+                0.00020625000000001892
+              ],
+              "paired_dz": 1.655372335202385,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            }
+          },
+          "gates": {
+            "forward_gain": false,
+            "above_random": false
+          },
+          "utility": false
+        },
+        "1": {
+          "statistics": {
+            "baseline": {
+              "n": 3,
+              "mean": 0.2717916666666667,
+              "median": 0.26471875,
+              "variance": 0.00026865462239583366,
+              "bootstrap95": [
+                0.260125,
+                0.29053125
+              ],
+              "paired_dz": 16.582078934378078,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "local": {
+              "n": 3,
+              "mean": 0.27196354166666664,
+              "median": 0.264921875,
+              "variance": 0.00026548201497395794,
+              "bootstrap95": [
+                0.260375,
+                0.29059375
+              ],
+              "paired_dz": 16.69141424634096,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "random_mean": {
+              "n": 3,
+              "mean": 0.27177604166666675,
+              "median": 0.26469687500000005,
+              "variance": 0.000268246106770833,
+              "bootstrap95": [
+                0.26012812500000004,
+                0.29050312500000003
+              ],
+              "paired_dz": 16.593746656079094,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "forward_gain": {
+              "n": 3,
+              "mean": 0.00017187499999999264,
+              "median": 0.0002031249999999707,
+              "variance": 9.52148437500094e-09,
+              "bootstrap95": [
+                6.249999999999312e-05,
+                0.0002500000000000141
+              ],
+              "paired_dz": 1.7614096918557962,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "above_random": {
+              "n": 3,
+              "mean": 0.0001874999999999886,
+              "median": 0.00022499999999997522,
+              "variance": 7.158203125001156e-09,
+              "bootstrap95": [
+                9.062499999998308e-05,
+                0.0002468750000000075
+              ],
+              "paired_dz": 2.2161505654590394,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            }
+          },
+          "gates": {
+            "forward_gain": false,
+            "above_random": false
+          },
+          "utility": false
+        },
+        "5": {
+          "statistics": {
+            "baseline": {
+              "n": 3,
+              "mean": 0.30744791666666665,
+              "median": 0.30712500000000004,
+              "variance": 0.00027594954427083266,
+              "bootstrap95": [
+                0.29100000000000004,
+                0.32421875
+              ],
+              "paired_dz": 18.507881659597736,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "local": {
+              "n": 3,
+              "mean": 0.30750520833333334,
+              "median": 0.3071875,
+              "variance": 0.0002782876790364578,
+              "bootstrap95": [
+                0.29098437499999996,
+                0.32434374999999993
+              ],
+              "paired_dz": 18.433401670525363,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "random_mean": {
+              "n": 3,
+              "mean": 0.3074364583333334,
+              "median": 0.307109375,
+              "variance": 0.00027512173177083465,
+              "bootstrap95": [
+                0.291015625,
+                0.3241843750000001
+              ],
+              "paired_dz": 18.535014074958088,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "forward_gain": {
+              "n": 3,
+              "mean": 5.729166666663491e-05,
+              "median": 6.249999999996536e-05,
+              "variance": 4.9641927083317346e-09,
+              "bootstrap95": [
+                -1.5625000000019096e-05,
+                0.00012499999999995848
+              ],
+              "paired_dz": 0.8131433980497104,
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            "above_random": {
+              "n": 3,
+              "mean": 6.874999999996005e-05,
+              "median": 7.812499999998446e-05,
+              "variance": 9.15039062499239e-09,
+              "bootstrap95": [
+                -3.1250000000010436e-05,
+                0.00015937499999990612
+              ],
+              "paired_dz": 0.7187086724231625,
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            }
+          },
+          "gates": {
+            "forward_gain": false,
+            "above_random": false
+          },
+          "utility": false
+        },
+        "10": {
+          "statistics": {
+            "baseline": {
+              "n": 3,
+              "mean": 0.3058958333333333,
+              "median": 0.317546875,
+              "variance": 0.0018848926595052067,
+              "bootstrap95": [
+                0.25784375000000004,
+                0.342296875
+              ],
+              "paired_dz": 7.045799003636055,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "local": {
+              "n": 3,
+              "mean": 0.3058697916666666,
+              "median": 0.317578125,
+              "variance": 0.0018786460774739598,
+              "bootstrap95": [
+                0.25787499999999997,
+                0.34215625
+              ],
+              "paired_dz": 7.0569022579561125,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "random_mean": {
+              "n": 3,
+              "mean": 0.305890625,
+              "median": 0.31755625,
+              "variance": 0.001884356025390625,
+              "bootstrap95": [
+                0.25784062500000005,
+                0.34227500000000005
+              ],
+              "paired_dz": 7.046682214679471,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "forward_gain": {
+              "n": 3,
+              "mean": -2.604166666667999e-05,
+              "median": 3.124999999998268e-05,
+              "variance": 9.847005208331959e-09,
+              "bootstrap95": [
+                -0.00014062500000000533,
+                3.124999999998268e-05
+              ],
+              "paired_dz": -0.2624319405408916,
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            "above_random": {
+              "n": 3,
+              "mean": -2.0833333333368047e-05,
+              "median": 2.1874999999976774e-05,
+              "variance": 7.229817708336497e-09,
+              "bootstrap95": [
+                -0.00011875000000005631,
+                3.43749999999754e-05
+              ],
+              "paired_dz": -0.24501636304573984,
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            }
+          },
+          "gates": {
+            "forward_gain": false,
+            "above_random": false
+          },
+          "utility": false
+        }
+      },
+      "identifiable": false,
+      "attenuation_statistics": {
+        "forward_gain": {
+          "n": 3,
+          "mean": 0.00015104166666667548,
+          "median": 0.00015625000000005218,
+          "variance": 1.7659505208332546e-08,
+          "bootstrap95": [
+            1.562499999999134e-05,
+            0.0002812499999999829
+          ],
+          "paired_dz": 1.1365996124210413,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        },
+        "above_random": {
+          "n": 3,
+          "mean": 0.00015416666666669132,
+          "median": 0.00018437500000004214,
+          "variance": 1.67024739583385e-08,
+          "bootstrap95": [
+            1.2499999999998623e-05,
+            0.0002656250000000332
+          ],
+          "paired_dz": 1.1928891287382823,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "attenuation_gates": {
+        "forward_gain": false,
+        "above_random": false
+      },
+      "attenuation": false,
+      "persistent_utility": false
+    },
+    "clean": {
+      "epochs": {
+        "0": {
+          "statistics": {
+            "baseline": {
+              "n": 3,
+              "mean": 0.26133333333333336,
+              "median": 0.2575,
+              "variance": 0.00018658333333333282,
+              "bootstrap95": [
+                0.25,
+                0.27649999999999997
+              ],
+              "paired_dz": 19.131912422683584,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "local": {
+              "n": 3,
+              "mean": 0.26133333333333336,
+              "median": 0.2575,
+              "variance": 0.00018658333333333282,
+              "bootstrap95": [
+                0.25,
+                0.27649999999999997
+              ],
+              "paired_dz": 19.131912422683584,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "random_mean": {
+              "n": 3,
+              "mean": 0.26133333333333336,
+              "median": 0.2575,
+              "variance": 0.00018658333333333282,
+              "bootstrap95": [
+                0.25,
+                0.27649999999999997
+              ],
+              "paired_dz": 19.131912422683584,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "forward_gain": {
+              "n": 3,
+              "mean": 0.0,
+              "median": 0.0,
+              "variance": 0.0,
+              "bootstrap95": [
+                0.0,
+                0.0
+              ],
+              "paired_dz": null,
+              "wins": 0,
+              "ties": 3,
+              "losses": 0
+            },
+            "above_random": {
+              "n": 3,
+              "mean": 0.0,
+              "median": 0.0,
+              "variance": 1.925929944387236e-34,
+              "bootstrap95": [
+                -1.3877787807814457e-17,
+                1.3877787807814457e-17
+              ],
+              "paired_dz": 0.0,
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            }
+          },
+          "gates": {
+            "forward_gain": false,
+            "above_random": false
+          },
+          "utility": false
+        },
+        "1": {
+          "statistics": {
+            "baseline": {
+              "n": 3,
+              "mean": 0.2833333333333333,
+              "median": 0.28,
+              "variance": 0.000584333333333333,
+              "bootstrap95": [
+                0.261,
+                0.309
+              ],
+              "paired_dz": 11.721072177538325,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "local": {
+              "n": 3,
+              "mean": 0.2841666666666667,
+              "median": 0.28,
+              "variance": 0.0005305833333333329,
+              "bootstrap95": [
+                0.2635,
+                0.309
+              ],
+              "paired_dz": 12.33662407618851,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "random_mean": {
+              "n": 3,
+              "mean": 0.28336666666666666,
+              "median": 0.28,
+              "variance": 0.0005821033333333332,
+              "bootstrap95": [
+                0.2611,
+                0.309
+              ],
+              "paired_dz": 11.744883637191037,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "forward_gain": {
+              "n": 3,
+              "mean": 0.000833333333333334,
+              "median": 0.0,
+              "variance": 2.0833333333333372e-06,
+              "bootstrap95": [
+                0.0,
+                0.0025000000000000022
+              ],
+              "paired_dz": 0.5773502691896257,
+              "wins": 1,
+              "ties": 2,
+              "losses": 0
+            },
+            "above_random": {
+              "n": 3,
+              "mean": 0.0008000000000000044,
+              "median": 0.0,
+              "variance": 1.9200000000000214e-06,
+              "bootstrap95": [
+                0.0,
+                0.0024000000000000132
+              ],
+              "paired_dz": 0.5773502691896256,
+              "wins": 1,
+              "ties": 2,
+              "losses": 0
+            }
+          },
+          "gates": {
+            "forward_gain": false,
+            "above_random": false
+          },
+          "utility": false
+        },
+        "5": {
+          "statistics": {
+            "baseline": {
+              "n": 3,
+              "mean": 0.32666666666666666,
+              "median": 0.3285,
+              "variance": 0.005079083333333336,
+              "bootstrap95": [
+                0.2545,
+                0.397
+              ],
+              "paired_dz": 4.583657425434899,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "local": {
+              "n": 3,
+              "mean": 0.32666666666666666,
+              "median": 0.3285,
+              "variance": 0.005079083333333336,
+              "bootstrap95": [
+                0.2545,
+                0.397
+              ],
+              "paired_dz": 4.583657425434899,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "random_mean": {
+              "n": 3,
+              "mean": 0.32666666666666666,
+              "median": 0.3285,
+              "variance": 0.005079083333333336,
+              "bootstrap95": [
+                0.2545,
+                0.397
+              ],
+              "paired_dz": 4.583657425434899,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "forward_gain": {
+              "n": 3,
+              "mean": 0.0,
+              "median": 0.0,
+              "variance": 0.0,
+              "bootstrap95": [
+                0.0,
+                0.0
+              ],
+              "paired_dz": null,
+              "wins": 0,
+              "ties": 3,
+              "losses": 0
+            },
+            "above_random": {
+              "n": 3,
+              "mean": 0.0,
+              "median": 0.0,
+              "variance": 0.0,
+              "bootstrap95": [
+                0.0,
+                0.0
+              ],
+              "paired_dz": null,
+              "wins": 0,
+              "ties": 3,
+              "losses": 0
+            }
+          },
+          "gates": {
+            "forward_gain": false,
+            "above_random": false
+          },
+          "utility": false
+        },
+        "10": {
+          "statistics": {
+            "baseline": {
+              "n": 3,
+              "mean": 0.29833333333333334,
+              "median": 0.3235,
+              "variance": 0.002015583333333334,
+              "bootstrap95": [
+                0.24650000000000002,
+                0.325
+              ],
+              "paired_dz": 6.645098170457319,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "local": {
+              "n": 3,
+              "mean": 0.29850000000000004,
+              "median": 0.3235,
+              "variance": 0.002029000000000001,
+              "bootstrap95": [
+                0.24650000000000002,
+                0.3255
+              ],
+              "paired_dz": 6.626791582892517,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "random_mean": {
+              "n": 3,
+              "mean": 0.29840000000000005,
+              "median": 0.3235,
+              "variance": 0.0020209300000000015,
+              "bootstrap95": [
+                0.24650000000000002,
+                0.32520000000000004
+              ],
+              "paired_dz": 6.637785030452076,
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            "forward_gain": {
+              "n": 3,
+              "mean": 0.00016666666666666682,
+              "median": 0.0,
+              "variance": 8.333333333333347e-08,
+              "bootstrap95": [
+                0.0,
+                0.0005000000000000004
+              ],
+              "paired_dz": 0.5773502691896258,
+              "wins": 1,
+              "ties": 2,
+              "losses": 0
+            },
+            "above_random": {
+              "n": 3,
+              "mean": 9.999999999998899e-05,
+              "median": 0.0,
+              "variance": 2.9999999999993386e-08,
+              "bootstrap95": [
+                0.0,
+                0.00029999999999996696
+              ],
+              "paired_dz": 0.5773502691896258,
+              "wins": 1,
+              "ties": 2,
+              "losses": 0
+            }
+          },
+          "gates": {
+            "forward_gain": false,
+            "above_random": false
+          },
+          "utility": false
+        }
+      },
+      "identifiable": false,
+      "attenuation_statistics": {
+        "forward_gain": {
+          "n": 3,
+          "mean": -0.00016666666666666682,
+          "median": 0.0,
+          "variance": 8.333333333333347e-08,
+          "bootstrap95": [
+            -0.0005000000000000004,
+            0.0
+          ],
+          "paired_dz": -0.5773502691896258,
+          "wins": 0,
+          "ties": 2,
+          "losses": 1
+        },
+        "above_random": {
+          "n": 3,
+          "mean": -9.999999999998899e-05,
+          "median": -1.3877787807814457e-17,
+          "variance": 2.999999999998923e-08,
+          "bootstrap95": [
+            -0.0002999999999999531,
+            0.0
+          ],
+          "paired_dz": -0.5773502691896658,
+          "wins": 0,
+          "ties": 1,
+          "losses": 2
+        }
+      },
+      "attenuation_gates": {
+        "forward_gain": false,
+        "above_random": false
+      },
+      "attenuation": false,
+      "persistent_utility": false
+    }
+  },
+  "confirmed": {
+    "attenuation": false,
+    "persistent_utility": false
+  },
+  "primary_identifiable": false,
+  "cohorts_pooled": false,
+  "clean_secondary_only": true
+}

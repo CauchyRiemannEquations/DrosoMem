@@ -1,0 +1,67 @@
+{
+  "protocol": "docs/reward-trajectory-protocol.md",
+  "source": "results/local_reward",
+  "source_manifest_sha256": "33c04aef89209acc8ca16e9c9e4ba7ac7f3eaf7218e2ebcfdc6468d541582f31",
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "epochs": [
+    0,
+    1,
+    5,
+    10
+  ],
+  "smoke_epochs": [
+    0,
+    1
+  ],
+  "proposal_epochs": 10,
+  "smoke_proposal_epochs": 1,
+  "random_directions": 5,
+  "nominal_relative_radius": 0.01,
+  "boundary_fraction": 0.5,
+  "evaluation_replicates": 32,
+  "smoke_replicates": 2,
+  "bootstrap_seed": 338399,
+  "bootstrap_draws": 10000,
+  "max_seconds": 7200,
+  "max_rss_bytes": 3221225472,
+  "probe_seeds": {
+    "241001": {
+      "proposal_noise": 321001,
+      "direction": 322001,
+      "evaluation_noise": 323001
+    },
+    "241142": {
+      "proposal_noise": 321142,
+      "direction": 322142,
+      "evaluation_noise": 323142
+    },
+    "241143": {
+      "proposal_noise": 321143,
+      "direction": 322143,
+      "evaluation_noise": 323143
+    },
+    "241144": {
+      "proposal_noise": 321144,
+      "direction": 322144,
+      "evaluation_noise": 323144
+    },
+    "251142": {
+      "proposal_noise": 331142,
+      "direction": 332142,
+      "evaluation_noise": 333142
+    },
+    "251143": {
+      "proposal_noise": 331143,
+      "direction": 332143,
+      "evaluation_noise": 333143
+    },
+    "251144": {
+      "proposal_noise": 331144,
+      "direction": 332144,
+      "evaluation_noise": 333144
+    }
+  }
+}

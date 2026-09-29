@@ -7,12 +7,13 @@ information), and **learning** (experience modifies recurrent connections).
 
 ## Current position — 2026-09-29
 
-**ACT IV: initial-direction and frozen-checkpoint noise diagnostics complete.**
-[Direction results](reward-direction-results.md) show partial useful directional
-signals but no full confirmation. [Noise matching](reward-noise-results.md) does
-not rescue the prior coding criterion. The current local rule has not established
-stable internal memory learning. Next one: same-trajectory fixed-epoch direction
-probes. Broader biological ACT IV remains open; ACT V remains a separate axis.
+**ACT IV: same-trajectory directional probes complete; inference inconclusive.**
+[Results](reward-trajectory-results.md) replay 13 learning runs,50 checkpoints and
+11,130 scalar trajectories exactly. Small learned weights force a common radius
+below the preregistered resolution threshold. This does not establish temporal
+loss of useful signal. Prior direction/noise findings are retained. Next one:
+fixed-code score-margin directional sensitivity, with a separate preregistration.
+Broader biological ACT IV remains open; ACT V remains a separate axis.
 
 | Axis | Completed scope | Remaining scope |
 |---|---|---|
@@ -22,7 +23,7 @@ probes. Broader biological ACT IV remains open; ACT V remains a separate axis.
 | ACT III-B | DAN/count/raw-bin and normalized-bin controls;weak/strong/random/betweenness/within-role/between-role panel | Whole-brain,detected biological modules,full dose curves remain untested extensions |
 | ACT III-C | Four controls including exact per-neuron incoming-weight and role/signed-degree preservation;169 cases | Whole-brain, uniform-ensemble mixing and autonomous-recall extensions |
 | ACT III-D | Five preregistered pathways, matched removal controls, sensitivity map and fresh confirmation;273 cases | Minimal/unique subnetwork, motifs, whole-brain localization and separation of storage from readout access |
-| ACT IV | Earlier negative biological/local-rule results; IV-A A/B/C/D, observation diagnostics and scalar/local39-case experiment plus direction/noise diagnostics completed | Useful internal learning without external decoder dependence |
+| ACT IV | Earlier negative biological/local-rule results; IV-A A/B/C/D, observation diagnostics and scalar/local39-case experiment plus direction/noise/trajectory diagnostics completed | Useful internal learning without external decoder dependence |
 | ACT V | Scoped robustness curves exposed strong fragility | Broader perturbation/physiological validation, independent axis |
 
 현재 두 686-neuron 부분 모델의 **III-A/B/C/D의 제한된 연구 단락을 종료**했다.
