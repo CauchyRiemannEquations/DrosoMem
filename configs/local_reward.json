@@ -1,0 +1,139 @@
+{
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "alphabet_size": 4,
+  "warmup": 100,
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "alpha": 1.0,
+  "normalization": "incoming_l1",
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "activity_epsilon": 1e-08,
+  "bootstrap_draws": 10000,
+  "max_rss_bytes": 3221225472,
+  "protocol": "docs/local-reward-protocol.md",
+  "source": "results/readout_dependency",
+  "source_manifest_sha256": "3d931e9a45edd6025bab4468b0bccb8cb914d614083882ec322f5bdafccb7486",
+  "networks": [
+    "real"
+  ],
+  "training_arms": [
+    "contingent",
+    "frozen",
+    "yoked"
+  ],
+  "schedule": "synchronous",
+  "target_lag": 2,
+  "plastic_epochs": 10,
+  "plastic_learning_rate": 0.05,
+  "plastic_floor": 0.0001,
+  "code_amplitude": 0.25,
+  "swaps_per_edge": 10,
+  "bootstrap_seed": 256399,
+  "max_seconds": 7200,
+  "cohorts": {
+    "smoke": {
+      "blocks": [
+        {
+          "seed": 241001,
+          "train_seed": 242001,
+          "test_seed": 243001,
+          "code_seed": 244001,
+          "noise_seed": 245001
+        }
+      ],
+      "circuit_seeds": [
+        701
+      ],
+      "train_samples": 200,
+      "test_samples": 100,
+      "plastic_epochs": 1
+    },
+    "discovery": {
+      "blocks": [
+        {
+          "seed": 241142,
+          "train_seed": 242142,
+          "test_seed": 243142,
+          "code_seed": 244142,
+          "noise_seed": 245142
+        },
+        {
+          "seed": 241143,
+          "train_seed": 242143,
+          "test_seed": 243143,
+          "code_seed": 244143,
+          "noise_seed": 245143
+        },
+        {
+          "seed": 241144,
+          "train_seed": 242144,
+          "test_seed": 243144,
+          "code_seed": 244144,
+          "noise_seed": 245144
+        }
+      ],
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "plastic_epochs": 10
+    },
+    "confirmation": {
+      "blocks": [
+        {
+          "seed": 251142,
+          "train_seed": 252142,
+          "test_seed": 253142,
+          "code_seed": 254142,
+          "noise_seed": 255142
+        },
+        {
+          "seed": 251143,
+          "train_seed": 252143,
+          "test_seed": 253143,
+          "code_seed": 254143,
+          "noise_seed": 255143
+        },
+        {
+          "seed": 251144,
+          "train_seed": 252144,
+          "test_seed": 253144,
+          "code_seed": 254144,
+          "noise_seed": 255144
+        }
+      ],
+      "circuit_seeds": [
+        701,
+        702
+      ],
+      "train_samples": 2000,
+      "test_samples": 1000,
+      "plastic_epochs": 10
+    }
+  },
+  "trace_decay": 0.8,
+  "activity_rate": 0.05,
+  "baseline_rate": 0.05,
+  "noise_std": 0.02
+}
