@@ -1,0 +1,23 @@
+{
+  "all_checks_pass": true,
+  "cases": 19,
+  "snapshots": 74,
+  "scalar_trajectories": 2382,
+  "adjoint_directional_means": 14292,
+  "exact_scores": true,
+  "per_time_slopes_independently_replayed": false,
+  "maximum_adjoint_error": 4.743384504624082e-20,
+  "fresh_training_runs": 6,
+  "confirmed": {
+    "attenuation": true,
+    "persistent_utility": false
+  },
+  "prior_files_unchanged": 20949,
+  "result_manifest_sha256": "1a31b5d28ad0596613e56a6715a4cfa0c495329c3114c88dd29d56957614c7dd",
+  "verifier_sha256": "30f68df6da1ac56eeede6475b754d382353b448d6542ed5100bdc263a0252e5b",
+  "budget": {
+    "seconds": 428.82309339999847,
+    "peak_sampled_rss_bytes": 168099840,
+    "sample_seconds": 0.05
+  }
+}

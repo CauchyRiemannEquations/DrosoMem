@@ -96,8 +96,10 @@ KC48개에서는 정보 접근성이 유지됐다. 두 cohort의 사전 기준�
 실패를 해소하지 못했다. 이어 [같은 학습 궤적 진단](reward-trajectory-results.md)도
 13학습·50checkpoint·11,130평가 궤적의 정확한 재현까지 완료했다. 공통 변화량이
 작은 연결의 경계에 제한되어 temporal endpoint는 판별 불가다. 유용한 신호가
-없다는 증거로 해석하지 않는다. 다음 하나는 같은 checkpoint에서 고정 코드
-점수 차이의 방향 미분 진단이다. 별도 protocol을 먼저 고정하며 학습률 탐색은 하지 않는다.
+없다는 증거로 해석하지 않는다. 이어 [점수 차이 미분 진단](reward-margin-results.md)도
+새 paired seed3개를 포함해 완료했다. [ACT IV 종료 감사](act4-results.md)는 현재
+부분 모델의 지정 실험을 닫되,생리학적·전체 뇌 학습과 literal decoder-free biology는
+미해결 확장으로 남긴다. 다음 하나는 ACT V의 동일 관측·고정 출력층 noise curve다.
 생물학적 학습·전체 뇌·자율 회상 개선은 아직 입증하지 않았다.
 ACT I→II→III→IV 순서를 지키며 강건성은 ACT V의 독립 축으로 유지한다.
 [로드맵](research-roadmap.md).

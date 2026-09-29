@@ -1,5 +1,10 @@
 # Original research phases: completion audit — 2026-09-27
 
+Current update (2026-09-29): the [bounded ACT IV programme](act4-results.md) is
+closed after [margin diagnostics with fresh seeds](reward-margin-results.md).
+This closes specified experiments, not physiological/whole-brain learning questions.
+Earlier completion audits below are retained as historical scope records.
+
 Latest follow-up (2026-09-29): bounded IV-A comparison, scalar/local learning,
 [initial-direction](reward-direction-results.md), [noise-match](reward-noise-results.md)
 and [same-trajectory](reward-trajectory-results.md) diagnostics are complete within

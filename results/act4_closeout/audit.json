@@ -1,0 +1,139 @@
+{
+  "bounded_programme_complete": true,
+  "all_biological_questions_answered": false,
+  "shutdown_is_not_scientific_criterion": true,
+  "evidence": [
+    {
+      "study": "phase5b",
+      "root_manifest_sha256": "28fcbe6c146be41207cf614e79df810d4558220783b1e79c8c0d6a38e74a787f",
+      "artifact_count": 19,
+      "validation_path": "results/phase5b/verification.json",
+      "validation_sha256": "350c9869b9a5be442140fe736401472a4695eb77b5888ad44a151c9516fc967d",
+      "all_checks_pass": true
+    },
+    {
+      "study": "readout_dependency",
+      "root_manifest_sha256": "3d931e9a45edd6025bab4468b0bccb8cb914d614083882ec322f5bdafccb7486",
+      "artifact_count": 1300,
+      "validation_path": "results/readout_dependency_validation/checks.json",
+      "validation_sha256": "7f6eadec8a699d890809d173f2e0b637b749928e1be0ffda60afc2c67796c98c",
+      "all_checks_pass": true
+    },
+    {
+      "study": "local_reward",
+      "root_manifest_sha256": "33c04aef89209acc8ca16e9c9e4ba7ac7f3eaf7218e2ebcfdc6468d541582f31",
+      "artifact_count": 438,
+      "validation_path": "results/local_reward_validation/checks.json",
+      "validation_sha256": "bfa3ca532a2fe03f537f4a79e27a60e3eda8aadf0d2fbdc6fbae1a50da58e058",
+      "all_checks_pass": true
+    },
+    {
+      "study": "reward_direction",
+      "root_manifest_sha256": "469a0d5cbb8b2de8b5ad9143cafd4936cda1f852b3f6e5f053400e9c4dc2ba54",
+      "artifact_count": 243,
+      "validation_path": "results/reward_direction_validation/checks.json",
+      "validation_sha256": "764b03ce25c39f6bf58706b1ad2049364c86ca02719ae2b506674cfaf9f2bb6a",
+      "all_checks_pass": true
+    },
+    {
+      "study": "reward_noise",
+      "root_manifest_sha256": "eac742af2ed664a2ac64badaa7698f71a6523693bd8643e107883e87e1c66386",
+      "artifact_count": 85,
+      "validation_path": "results/reward_noise_validation/checks.json",
+      "validation_sha256": "18c9e07b2e72ae2792a0f3b917b9c847c1a1024a6e6601ee1cae9129b7704513",
+      "all_checks_pass": true
+    },
+    {
+      "study": "reward_trajectory",
+      "root_manifest_sha256": "0c61a3b4637033f66a3a7f0b1e3860ea517328374c521383e552b45ca218104b",
+      "artifact_count": 563,
+      "validation_path": "results/reward_trajectory_validation/checks.json",
+      "validation_sha256": "7e3d5673802865fd97c499ae4fb4899a7f6b9034b808b1ca9dbae5e376a38e6a",
+      "all_checks_pass": true
+    },
+    {
+      "study": "reward_margin",
+      "root_manifest_sha256": "1a31b5d28ad0596613e56a6715a4cfa0c495329c3114c88dd29d56957614c7dd",
+      "artifact_count": 323,
+      "validation_path": "results/reward_margin_validation/checks.json",
+      "validation_sha256": "f698b10e2fc2f3df8e8956ea844e1330518e45c0729fe38412638c9fb31458cc",
+      "all_checks_pass": true
+    }
+  ],
+  "coverage": [
+    {
+      "question": "A/B frozen real versus matched/random + trained readout",
+      "execution": "complete",
+      "finding": "Lag2 access near ceiling; no original-graph advantage",
+      "source": "readout_dependency"
+    },
+    {
+      "question": "C plastic connectivity + simple decoder",
+      "execution": "complete",
+      "finding": "Artificial vector teacher supports internal recoding, not increased capacity",
+      "source": "readout_dependency"
+    },
+    {
+      "question": "D zero-fitted-parameter fixed-code proxy",
+      "execution": "complete",
+      "finding": "A fixed external interpretation remains; literal decoder-free biology untested",
+      "source": "readout_dependency"
+    },
+    {
+      "question": "One scalar-reward local eligibility rule",
+      "execution": "complete",
+      "finding": "Full coding and representation-improvement criteria fail",
+      "source": "local_reward"
+    },
+    {
+      "question": "Earlier dopamine/compartment rule",
+      "execution": "complete_in_gamma1_pedc_scope",
+      "finding": "Local causal controls pass; neural response and pi recall benefit not established",
+      "source": "phase5b"
+    },
+    {
+      "question": "Initial local direction and noise mismatch",
+      "execution": "complete",
+      "finding": "Full initial alignment and matched-noise rescue fail",
+      "source": "reward_direction + reward_noise"
+    },
+    {
+      "question": "Finite directional utility through learning",
+      "execution": "complete_inconclusive",
+      "finding": "Common finite radius below preregistered resolution",
+      "source": "reward_trajectory"
+    },
+    {
+      "question": "Analytic margin sensitivity with fresh seeds",
+      "execution": "complete",
+      "finding": {
+        "attenuation": true,
+        "persistent_utility": false
+      },
+      "source": "reward_margin"
+    }
+  ],
+  "unresolved_extensions": [
+    "Physiological validation and literal decoder-free biology",
+    "Whole-brain local learning",
+    "Autonomous recall improvement under local-only learning",
+    "Other preregistered plasticity families, not automatically required sweeps"
+  ],
+  "documentation_discrepancies": [
+    {
+      "path": "docs/phase5b-results.md",
+      "issue": "Historical next-step text says Phase 6 unfinished; later phase6 and ACT I artifacts establish completed scoped execution",
+      "resolution": "Preserve dated historical text; current closeout/roadmap takes precedence"
+    }
+  ],
+  "new_margin_confirmed": {
+    "attenuation": true,
+    "persistent_utility": false
+  },
+  "deliverable_sha256": {
+    "docs/reward-margin-results.md": "54deea77d8d98aa1b951efc02f5bbedaa0e09476e9e2c88945bd019830ad4f78",
+    "docs/act4-results.md": "1bdd074b440bacad54cee2160a80949ab7c856f391085519f3cb6866f3d2e63f",
+    "results/reward_margin_validation/tests.xml": "366e821bde02c03e97146acd3ebd87de9ded2b241e2976438571905ac2e4dbb9",
+    "results/reward_margin_analysis/margin-sensitivity.png": "373e77f795aae9eb549621c6c599fa97b2e96da235e6b6867d46937b4cd5a4ea"
+  }
+}

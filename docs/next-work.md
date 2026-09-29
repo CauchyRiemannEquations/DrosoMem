@@ -1,23 +1,20 @@
 # Prioritized work — updated 2026-09-29
 
-**ACT IV same-trajectory diagnostic complete; temporal endpoints inconclusive.**
-[Results](reward-trajectory-results.md): 13 exact original training replays,
-50 checkpoints, 350 probes, 11,130 exact scalar trajectories. The common finite
-radius becomes resolution-limited; do not interpret this as absent local signal.
-The earlier direction and noise-match studies retain their original failed gates.
+**The bounded ACT IV current-model programme is complete.**
+[Question-by-question closeout](act4-results.md), [last diagnostic](reward-margin-results.md).
+The analytic margin study includes all archival checkpoints plus three fresh paired
+seeds:74 checkpoints,2382 exact scalar trajectories and14292 reverse-adjoint mean
+checks. Margin endpoints are a separate diagnostic; old coding/accuracy criteria
+are unchanged. Completion does not imply biological success or general rule impossibility.
+Whole-brain learning,physiological validation,literal decoder-free biology and other
+candidate plasticity families remain explicit research extensions, not executed work.
 
-Next single proposed experiment: **directional sensitivity of fixed-code score
-margins at the same learning checkpoints**. Before outcomes, define a smooth
-correct-code minus mean-incorrect-code score contrast, tangent dynamics, fixed
-local/random axes, same noise/inputs/epochs and seed-level criteria. Validate
-analytic derivatives by central finite differences on synthetic circuits.
-Compute infinitesimal sensitivity without changing actual weights, so positive
-weight boundaries do not force the diagnostic step to zero. This is a different
-metric, not a rescue of the failed finite-accuracy endpoint. Do not provide label
-gradients to the learner, fit a head, tune learning rates or choose best epochs.
-The question is whether the local proposal points toward better code margins;
-it does not establish finite-step accuracy, autonomous recall or biological
-memory. Proposed only, unexecuted. Biological ACT IV remains open.
+Next single proposed experiment: **ACT V ongoing-noise robustness curves under
+matched observation budgets and frozen readouts in partial versus whole-brain models**.
+Reuse established checkpoints. Predeclare one small noise grid,paired seeds,evaluation
+lengths,resource budget and curve-level criteria before outcomes. Keep clean recall,
+teacher-forced accuracy and perturbed recall separate; do not mix this axis into the
+ACT I clean result or tune a new local learning rule. This study is unexecuted.
 
 ## Historical handoff notes (superseded by the result above)
 

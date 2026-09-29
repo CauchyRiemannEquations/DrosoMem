@@ -12,7 +12,18 @@ The review covered README, docs, configurations, runners, dynamics/readout/data/
 evaluation modules, test coverage and archived result/checkpoint schemas.
 This is not a new execution of every historical experiment.
 
-## Latest — ACT IV same-trajectory probes complete, inconclusive (2026-09-29)
+## Latest — bounded ACT IV current-model programme closed (2026-09-29)
+
+[Closeout](act4-results.md) audits seven study roots by research question and
+separates completed experiments from unresolved biology. The final
+[margin-sensitivity diagnostic](reward-margin-results.md) includes three fresh
+paired task seeds,74 checkpoints,2382 exact scalar baseline trajectories and14292
+independent reverse-adjoint mean checks.240 tests pass,8 optional skips.
+Margin confirmed endpoints: `{"attenuation": true, "persistent_utility": false}`. This does not change the older coding
+failure or finite-probe inconclusiveness. Physiological/whole-brain/literal decoder-free
+learning remains unestablished. Next: one ACT V matched frozen-readout noise curve.
+
+## Preceding — ACT IV same-trajectory probes complete, inconclusive (2026-09-29)
 
 [Results](reward-trajectory-results.md): 13 original training runs and 50 fixed
 checkpoints replay exactly;350 graph probes, 11,130 exact scalar trajectories,
@@ -21,7 +32,7 @@ limit, so temporal attenuation/persistence cannot be established by this study.
 Do not label this as proof of absent local learning signals. The one-sided probe
 change was declared before outcomes; boundary limitations were not tuned away.
 237 tests pass,8 optional skips. Next one: fixed-code margin directional sensitivity
-at these same checkpoints. The full biological ACT IV remains open.
+at these same checkpoints, now completed above. The biological question remains open.
 
 ## Preceding — ACT IV direction and noise diagnostics complete (2026-09-29)
 
