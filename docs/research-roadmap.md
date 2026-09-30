@@ -7,14 +7,17 @@ information), and **learning** (experience modifies recurrent connections).
 
 ## Current position — 2026-09-30
 
-**ACT V is closed; one separate autonomous-feedback extension is complete.**
-[Additional research briefing](additional-research-brief.md), [results](feedback-noise-results.md),
-[audit](../results/feedback_noise_closeout/audit.json).
-Brain1 joint prefix/retention improvement: confirmed. This is not a new
-whole-brain superiority or internal-learning claim. The original ACT V evidence
-and [closeout](act5-final-results.md) remain preserved.
-Next one: the same observation-allocation contrast on seeded random digits;
-not registered or executed. Other candidates remain proposals in the briefing.
+**The three additional computational studies are complete and independently verified.**
+[Synthesis](additional-research-results.md), [prospective plan](additional-research-completion-plan.md),
+[closeout audit](../results/research_suite_closeout/audit.json).
+Sequence generalization: confirmed. Intact-over-role wiring advantage: not confirmed.
+Synthetic spatial-correlation allocation criterion: confirmed.
+There are 100 new readout fits, 1,144 actual evaluation paths and 1,074 independent full replays.
+8,640 certificate evaluations include 2,304 parent-condition repeats; they are not independent samples.
+The original ACT V closeout and all negative results remain unchanged.
+Next single proposal: **graph-relative noise calibration in the structural comparison** to
+separate signal scale from wiring effects. This is not registered or executed. Physiology,
+other dynamics and whole-brain rewiring remain outside this completed boundary.
 
 | Axis | Completed scope | Remaining scope |
 |---|---|---|
@@ -22,10 +25,10 @@ not registered or executed. Other candidates remain proposals in the briefing.
 | ACT II | Four-family pilot,length/alphabet scopes,context and delayed-state diagnostics | Additional families and full length-by-K design |
 | ACT III-A | Current partial-model population panel,input controls,frozen/refit and fresh confirmation | Whole-brain/downstream and autonomous-recall localization |
 | ACT III-B | DAN/count/raw-bin and normalized-bin controls;weak/strong/random/betweenness/within-role/between-role panel | Whole-brain,detected biological modules,full dose curves remain untested extensions |
-| ACT III-C | Four controls including exact per-neuron incoming-weight and role/signed-degree preservation;169 cases | Whole-brain, uniform-ensemble mixing and autonomous-recall extensions |
+| ACT III-C | Four controls including exact per-neuron incoming-weight and role/signed-degree preservation;169 cases | Whole-brain, uniform-ensemble mixing and broader autonomous tasks; current partial K10 comparison is completed separately |
 | ACT III-D | Five preregistered pathways, matched removal controls, sensitivity map and fresh confirmation;273 cases | Minimal/unique subnetwork, motifs, whole-brain localization and separation of storage from readout access |
 | ACT IV | Earlier negative biological/local-rule results; IV-A A/B/C/D, observation diagnostics and scalar/local39-case experiment plus direction/noise/trajectory/margin diagnostics and explicit closeout completed | Unanswered extensions: physiological and whole-brain local learning, literal decoder-free biology; no claim of successful internal memory formation |
-| ACT V | Five perturbation curves, relative-noise calibration, instantaneous-observation and matched-energy coordinate allocation; frozen heads, declared fresh seeds/draws, final audit | Physiological calibration, other dynamics/tasks and correlated noise; autonomous translation now has a separate scoped extension |
+| ACT V | Five perturbation curves, relative-noise calibration, instantaneous-observation and matched-energy coordinate allocation; frozen heads, declared fresh seeds/draws, final audit | Physiological calibration, other dynamics/tasks and temporal noise; autonomous and synthetic spatial-correlation studies are separately completed |
 
 현재 두 686-neuron 부분 모델의 **III-A/B/C/D의 제한된 연구 단락을 종료**했다.
 완료는 고정한 실험·검증을 끝냈다는 뜻이다. 전체 뇌의 기억 위치나 내부 학습을

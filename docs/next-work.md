@@ -1,19 +1,16 @@
 # Prioritized work — updated 2026-09-30
 
-**ACT V remains closed; the first additional research extension is now complete.**
-[Briefing](additional-research-brief.md), [feedback results](feedback-noise-results.md),
-[completion audit](../results/feedback_noise_closeout/audit.json).
-Brain1 primary: confirmed. Fresh-noise prefix gains 3.700/6.167, retention gains
-10.986/16.283pp. All model cohorts are reused; fresh noise is not a new model holdout.
-Archived 1152 plus fresh 864 prefix certificates, 336 actual full paths, 140 independently
-replayed paths. Do not treat certificates as complete autonomous sequences.
-
-Next single proposed experiment: **the same observation-noise allocation contrast
-on fixed-seed random digit sequences**. Keep graph/head/observation/training budgets
-matched and preregister task/model seeds, dose grid, stopping rule and criteria.
-This tests whether the pi-specific observation translates to arbitrary sequences.
-Proposed only; not registered or executed. Structural and physiological extensions
-remain later candidates. No further experiment was automatically added this turn.
+**The three additional computational studies are complete and independently verified.**
+[Synthesis](additional-research-results.md), [prospective plan](additional-research-completion-plan.md),
+[closeout audit](../results/research_suite_closeout/audit.json).
+Sequence generalization: confirmed. Intact-over-role wiring advantage: not confirmed.
+Synthetic spatial-correlation allocation criterion: confirmed.
+There are 100 new readout fits, 1,144 actual evaluation paths and 1,074 independent full replays.
+8,640 certificate evaluations include 2,304 parent-condition repeats; they are not independent samples.
+The original ACT V closeout and all negative results remain unchanged.
+Next single proposal: **graph-relative noise calibration in the structural comparison** to
+separate signal scale from wiring effects. This is not registered or executed. Physiology,
+other dynamics and whole-brain rewiring remain outside this completed boundary.
 
 ## Historical handoff notes (superseded by the result above)
 

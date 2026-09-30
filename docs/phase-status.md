@@ -1,5 +1,21 @@
 # Original research phases: completion audit — 2026-09-27
 
+Current additional-programme closeout (2026-09-30):
+
+**The three additional computational studies are complete and independently verified.**
+[Synthesis](additional-research-results.md), [prospective plan](additional-research-completion-plan.md),
+[closeout audit](../results/research_suite_closeout/audit.json).
+Sequence generalization: confirmed. Intact-over-role wiring advantage: not confirmed.
+Synthetic spatial-correlation allocation criterion: confirmed.
+There are 100 new readout fits, 1,144 actual evaluation paths and 1,074 independent full replays.
+8,640 certificate evaluations include 2,304 parent-condition repeats; they are not independent samples.
+The original ACT V closeout and all negative results remain unchanged.
+Next single proposal: **graph-relative noise calibration in the structural comparison** to
+separate signal scale from wiring effects. This is not registered or executed. Physiology,
+other dynamics and whole-brain rewiring remain outside this completed boundary.
+
+Earlier milestone summaries follow as historical scope records.
+
 Current extension update (2026-09-30): [autonomous feedback](feedback-noise-results.md)
 is complete after the ACT V closeout. Brain1 joint gate: confirmed.
 All 2016 prefix certificates and 336 actual paths are checked, with 140 independent full

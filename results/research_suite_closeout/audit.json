@@ -1,0 +1,884 @@
+{
+  "bounded_additional_programme_complete": true,
+  "stages": {
+    "sequence": true,
+    "structure": false,
+    "correlation": true
+  },
+  "evidence": [
+    {
+      "path": "results/research_suite_sequence",
+      "manifest_sha256": "31e80b95d93fcd7fede86c8e0995028545aa10212d755b0d921762a65ff7fbc2"
+    },
+    {
+      "path": "results/research_suite_sequence_validation",
+      "manifest_sha256": "6b88439446a13c904b2eb0ff717e4f8a8512405d011028095b2fac968a69463e"
+    },
+    {
+      "path": "results/research_suite_sequence_smoke",
+      "manifest_sha256": "6c4308e35f767de4ce706b73b3ccc25d0826df7afbc19e4ac86a1bec5865232e"
+    },
+    {
+      "path": "results/research_suite_sequence_smoke_validation",
+      "manifest_sha256": "ce850450f2e64b7b146b5b62b24fe0df6a22af8d5f0365f58f61eab51c4eca63"
+    },
+    {
+      "path": "results/research_suite_sequence_analysis",
+      "manifest_sha256": "82698e39a0ab651771b8a1c921fd7d77238ea321df9908d8a0b5c0d3835f7d86"
+    },
+    {
+      "path": "results/research_suite_structure",
+      "manifest_sha256": "3d7776e1662e18a0a847f52f64722127fd1f254f56def2dc26d06a6bc9263fc1"
+    },
+    {
+      "path": "results/research_suite_structure_validation",
+      "manifest_sha256": "a7a15c1af7f5dd0016946e1afd9dd64552d5b5401f7598b4a6685c82aa53d3ed"
+    },
+    {
+      "path": "results/research_suite_structure_smoke",
+      "manifest_sha256": "6252cc16a992e5212453ab2e4fc445e8c6103e9d81beb5a978b9d6bf8d28260b"
+    },
+    {
+      "path": "results/research_suite_structure_smoke_validation",
+      "manifest_sha256": "724885b3b8549920358d34e7a563d4c37f3d650de21a62c142a6364f9f2eba86"
+    },
+    {
+      "path": "results/research_suite_structure_analysis",
+      "manifest_sha256": "8cefa685c26356810a40e6bdd1ed1d07987b27347a0075f7372adea86e197ab9"
+    },
+    {
+      "path": "results/research_suite_correlation",
+      "manifest_sha256": "c2b72af2c8e189ff64eca3800032862d8729b5c5dce10ce50ea454baaa1a2c7a"
+    },
+    {
+      "path": "results/research_suite_correlation_validation",
+      "manifest_sha256": "3f1c82cab7d8c09faccfc452fbb70b6bb8dfb09127a065e9c12cabc0c34f9a73"
+    },
+    {
+      "path": "results/research_suite_correlation_smoke",
+      "manifest_sha256": "a8ab750d9cb760b5a3241a50f7ca187e7875e7a7169818e7ec90b2b54e859b0f"
+    },
+    {
+      "path": "results/research_suite_correlation_smoke_validation",
+      "manifest_sha256": "936250a53d187f8c5a8809e854b04ff4c781ee83c8b70d26cb50a276854d72e6"
+    },
+    {
+      "path": "results/research_suite_correlation_analysis",
+      "manifest_sha256": "8d0e500f7939bd352dde4ad2f4feeda796fbdd4595b1f09815441616881aa863"
+    },
+    {
+      "path": "results/research_suite_correlation_rho_analysis",
+      "manifest_sha256": "2cc6a15040c46ff65004c563c12aa25912448682880e34dbd0a96513633d4ea1"
+    }
+  ],
+  "main_certificates": 8640,
+  "distinct_certificate_exposure_settings": 6336,
+  "correlated_rho0_parent_repeats": 1728,
+  "structural_intact_parent_repeats": 576,
+  "total_parent_repeat_evaluations": 2304,
+  "posthoc_structural_signal_scale": {
+    "definition": "own training SD median / paired intact training SD median",
+    "rows": [
+      {
+        "cohort": "confirmation",
+        "seed": 440142,
+        "dataset_seed": 440242,
+        "family": "pi",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.009663366265674732,
+        "used_q": 0.0038941648605583614,
+        "ratio": 2.4814990149875573
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440143,
+        "dataset_seed": 440243,
+        "family": "pi",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.010915435148687761,
+        "used_q": 0.004039276697566896,
+        "ratio": 2.7023241946417773
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440144,
+        "dataset_seed": 440244,
+        "family": "pi",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.010167744881376489,
+        "used_q": 0.004124907224213985,
+        "ratio": 2.464963289765623
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440142,
+        "dataset_seed": 440242,
+        "family": "pi",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.011437995914160264,
+        "used_q": 0.00434118041232207,
+        "ratio": 2.634766314179086
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440143,
+        "dataset_seed": 440243,
+        "family": "pi",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.009660156085668758,
+        "used_q": 0.0032961633126628396,
+        "ratio": 2.9307273849440127
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440144,
+        "dataset_seed": 440244,
+        "family": "pi",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.010462192191476353,
+        "used_q": 0.004133560328782673,
+        "ratio": 2.531036530089172
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440142,
+        "dataset_seed": 440242,
+        "family": "pi",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.004113280899864376,
+        "used_q": 0.0038941648605583614,
+        "ratio": 1.0562677870999526
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440143,
+        "dataset_seed": 440243,
+        "family": "pi",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0032954896692784733,
+        "used_q": 0.004039276697566896,
+        "ratio": 0.8158613326152052
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440144,
+        "dataset_seed": 440244,
+        "family": "pi",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.003575621583751263,
+        "used_q": 0.004124907224213985,
+        "ratio": 0.8668368497506291
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440142,
+        "dataset_seed": 440242,
+        "family": "pi",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0037921521204736914,
+        "used_q": 0.00434118041232207,
+        "ratio": 0.8735301831064177
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440143,
+        "dataset_seed": 440243,
+        "family": "pi",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0035749899060004827,
+        "used_q": 0.0032961633126628396,
+        "ratio": 1.0845912556172437
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440144,
+        "dataset_seed": 440244,
+        "family": "pi",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0032208256829247737,
+        "used_q": 0.004133560328782673,
+        "ratio": 0.779189228350588
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440142,
+        "dataset_seed": 440242,
+        "family": "random",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.00862190336499287,
+        "used_q": 0.004053968868825931,
+        "ratio": 2.12678085204188
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440143,
+        "dataset_seed": 440243,
+        "family": "random",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.010054048619053891,
+        "used_q": 0.004219009919936425,
+        "ratio": 2.3830350745431272
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440144,
+        "dataset_seed": 440244,
+        "family": "random",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.010268434784241717,
+        "used_q": 0.004208916093227336,
+        "ratio": 2.4396862652512588
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440142,
+        "dataset_seed": 440242,
+        "family": "random",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.011745657753582429,
+        "used_q": 0.004389829566381113,
+        "ratio": 2.675652340476925
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440143,
+        "dataset_seed": 440243,
+        "family": "random",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.008491798907284008,
+        "used_q": 0.0033054067416215206,
+        "ratio": 2.5690632261245465
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440144,
+        "dataset_seed": 440244,
+        "family": "random",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.009591967597849181,
+        "used_q": 0.004402337138491746,
+        "ratio": 2.1788353086323187
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440142,
+        "dataset_seed": 440242,
+        "family": "random",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.003934682157982346,
+        "used_q": 0.004053968868825931,
+        "ratio": 0.9705753263768571
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440143,
+        "dataset_seed": 440243,
+        "family": "random",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.003349433745431809,
+        "used_q": 0.004219009919936425,
+        "ratio": 0.7938909386309954
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440144,
+        "dataset_seed": 440244,
+        "family": "random",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0035974804506342804,
+        "used_q": 0.004208916093227336,
+        "ratio": 0.8547284790074741
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440142,
+        "dataset_seed": 440242,
+        "family": "random",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.003912266099396381,
+        "used_q": 0.004389829566381113,
+        "ratio": 0.8912113876488318
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440143,
+        "dataset_seed": 440243,
+        "family": "random",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0034472693625745643,
+        "used_q": 0.0033054067416215206,
+        "ratio": 1.0429183553015478
+      },
+      {
+        "cohort": "confirmation",
+        "seed": 440144,
+        "dataset_seed": 440244,
+        "family": "random",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.003413734337902846,
+        "used_q": 0.004402337138491746,
+        "ratio": 0.7754368260565346
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9142,
+        "dataset_seed": 9242,
+        "family": "pi",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.010259179056203376,
+        "used_q": 0.004019780884517672,
+        "ratio": 2.552173700739999
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9143,
+        "dataset_seed": 9243,
+        "family": "pi",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.007038004948660257,
+        "used_q": 0.003965073512061398,
+        "ratio": 1.7749998650091297
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9144,
+        "dataset_seed": 9244,
+        "family": "pi",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.01049969022796475,
+        "used_q": 0.004822506034335143,
+        "ratio": 2.177226975603421
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9145,
+        "dataset_seed": 9245,
+        "family": "pi",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.010411946531126686,
+        "used_q": 0.003969051929004404,
+        "ratio": 2.6232830200683255
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9146,
+        "dataset_seed": 9246,
+        "family": "pi",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.012489701036155175,
+        "used_q": 0.0033728848340879272,
+        "ratio": 3.702972870561279
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9142,
+        "dataset_seed": 9242,
+        "family": "pi",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.010658568838262352,
+        "used_q": 0.0030982465612384457,
+        "ratio": 3.4401938734023347
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9143,
+        "dataset_seed": 9243,
+        "family": "pi",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.010523646803214607,
+        "used_q": 0.003639017019859553,
+        "ratio": 2.891892713274742
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9144,
+        "dataset_seed": 9244,
+        "family": "pi",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.009938232964447225,
+        "used_q": 0.0035083943054622837,
+        "ratio": 2.832701258514246
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9145,
+        "dataset_seed": 9245,
+        "family": "pi",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.012697298323505576,
+        "used_q": 0.004040895958451567,
+        "ratio": 3.142198773256973
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9146,
+        "dataset_seed": 9246,
+        "family": "pi",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.008907905806842458,
+        "used_q": 0.0035014781161964974,
+        "ratio": 2.5440415479502487
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9142,
+        "dataset_seed": 9242,
+        "family": "pi",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0035768475081948553,
+        "used_q": 0.004019780884517672,
+        "ratio": 0.8898115621105641
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9143,
+        "dataset_seed": 9243,
+        "family": "pi",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.003461404601645464,
+        "used_q": 0.003965073512061398,
+        "ratio": 0.8729736261171909
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9144,
+        "dataset_seed": 9244,
+        "family": "pi",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0035075374386644717,
+        "used_q": 0.004822506034335143,
+        "ratio": 0.7273267080832259
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9145,
+        "dataset_seed": 9245,
+        "family": "pi",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0031278346599331883,
+        "used_q": 0.003969051929004404,
+        "ratio": 0.788055867215064
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9146,
+        "dataset_seed": 9246,
+        "family": "pi",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0035791712694258843,
+        "used_q": 0.0033728848340879272,
+        "ratio": 1.061160236855149
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9142,
+        "dataset_seed": 9242,
+        "family": "pi",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0031892393929865643,
+        "used_q": 0.0030982465612384457,
+        "ratio": 1.0293691383011643
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9143,
+        "dataset_seed": 9243,
+        "family": "pi",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0034209500261895096,
+        "used_q": 0.003639017019859553,
+        "ratio": 0.9400753026215691
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9144,
+        "dataset_seed": 9244,
+        "family": "pi",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.003361733506425616,
+        "used_q": 0.0035083943054622837,
+        "ratio": 0.9581971733313075
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9145,
+        "dataset_seed": 9245,
+        "family": "pi",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.003343251418180485,
+        "used_q": 0.004040895958451567,
+        "ratio": 0.8273539958850084
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9146,
+        "dataset_seed": 9246,
+        "family": "pi",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.002893895434490994,
+        "used_q": 0.0035014781161964974,
+        "ratio": 0.8264782296096445
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9142,
+        "dataset_seed": 9242,
+        "family": "random",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.010437904136939319,
+        "used_q": 0.004138865193732915,
+        "ratio": 2.5219241623874176
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9143,
+        "dataset_seed": 9243,
+        "family": "random",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.007283098536466243,
+        "used_q": 0.003751873578019917,
+        "ratio": 1.9411897509377063
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9144,
+        "dataset_seed": 9244,
+        "family": "random",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.01078071352936152,
+        "used_q": 0.004677430793678724,
+        "ratio": 2.304836566247229
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9145,
+        "dataset_seed": 9245,
+        "family": "random",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.010881028143158947,
+        "used_q": 0.0038757630662027763,
+        "ratio": 2.8074544179552956
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9146,
+        "dataset_seed": 9246,
+        "family": "random",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.013791147798400995,
+        "used_q": 0.0038963545684201108,
+        "ratio": 3.5395002062127556
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9142,
+        "dataset_seed": 9242,
+        "family": "random",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.011090852992911938,
+        "used_q": 0.003293150860148624,
+        "ratio": 3.3678545149952206
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9143,
+        "dataset_seed": 9243,
+        "family": "random",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.010098330159323056,
+        "used_q": 0.0037379967210239727,
+        "ratio": 2.7015353177080255
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9144,
+        "dataset_seed": 9244,
+        "family": "random",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.00995752443798615,
+        "used_q": 0.0034153766730692326,
+        "ratio": 2.9154981693535453
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9145,
+        "dataset_seed": 9245,
+        "family": "random",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.012546812253206542,
+        "used_q": 0.004091266688538006,
+        "ratio": 3.0667304794276524
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9146,
+        "dataset_seed": 9246,
+        "family": "random",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "degree",
+        "own_q": 0.008910856103502132,
+        "used_q": 0.0036042423912070395,
+        "ratio": 2.472324315712279
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9142,
+        "dataset_seed": 9242,
+        "family": "random",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0036858144397402953,
+        "used_q": 0.004138865193732915,
+        "ratio": 0.890537446187271
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9143,
+        "dataset_seed": 9243,
+        "family": "random",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.003487779249147416,
+        "used_q": 0.003751873578019917,
+        "ratio": 0.9296100139355232
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9144,
+        "dataset_seed": 9244,
+        "family": "random",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0034410390492169143,
+        "used_q": 0.004677430793678724,
+        "ratio": 0.735668618307999
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9145,
+        "dataset_seed": 9245,
+        "family": "random",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.003528511967385201,
+        "used_q": 0.0038757630662027763,
+        "ratio": 0.9104044563906251
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9146,
+        "dataset_seed": 9246,
+        "family": "random",
+        "circuit_seed": 701,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.004048953489050834,
+        "used_q": 0.0038963545684201108,
+        "ratio": 1.0391645364791835
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9142,
+        "dataset_seed": 9242,
+        "family": "random",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.003213504011572278,
+        "used_q": 0.003293150860148624,
+        "ratio": 0.9758143941900216
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9143,
+        "dataset_seed": 9243,
+        "family": "random",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0036845550735769258,
+        "used_q": 0.0037379967210239727,
+        "ratio": 0.9857031315339391
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9144,
+        "dataset_seed": 9244,
+        "family": "random",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0033689260970635546,
+        "used_q": 0.0034153766730692326,
+        "ratio": 0.9863995744973174
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9145,
+        "dataset_seed": 9245,
+        "family": "random",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0036839817279678555,
+        "used_q": 0.004091266688538006,
+        "ratio": 0.9004501560088493
+      },
+      {
+        "cohort": "discovery",
+        "seed": 9146,
+        "dataset_seed": 9246,
+        "family": "random",
+        "circuit_seed": 702,
+        "level": "legacy5",
+        "topology": "role",
+        "own_q": 0.0031859641149028176,
+        "used_q": 0.0036042423912070395,
+        "ratio": 0.8839483500541863
+      }
+    ],
+    "summary": {
+      "degree": {
+        "cells": 32,
+        "minimum": 1.7749998650091297,
+        "median": 2.596173123096436,
+        "maximum": 3.702972870561279
+      },
+      "role": {
+        "cells": 32,
+        "minimum": 0.7273267080832259,
+        "median": 0.8908744169180514,
+        "maximum": 1.0845912556172437
+      }
+    },
+    "changes_primary_endpoint": false,
+    "new_experiment": false
+  },
+  "main_actual_evaluation_paths": 1144,
+  "independent_main_full_replays": 1074,
+  "new_head_fits": 100,
+  "independent_head_refits": 102,
+  "new_internal_learning": false,
+  "physiological_validation": false,
+  "whole_brain_structural_controls": false,
+  "old_sealed_reports_unchanged": true,
+  "report_sha256": {
+    "docs/sequence-noise-results.md": "68114a3896faa6c625524286ebb383ac6fc736108faabab7328024d447cfb45b",
+    "docs/structure-noise-results.md": "a973e8dd9b23e2c6c1e0ae033b3d386eb33d3d978b031294ece041d3f549d952",
+    "docs/correlated-noise-results.md": "c0e3b73e81e2eddfb37ade64c37ec2ddd473dd4d6f163f1bb3fd4b2179ace534",
+    "docs/additional-research-results.md": "edd3b54a2a5f551d5c4331a9b2c8d06c26a7cfda1ab7a08f6bdcb95cc908aa6d",
+    "docs/additional-research-completion-plan.md": "ef274ed669ce6a2811563b4d5c3377619884fa724cb0bec0c1a3074f799951c8"
+  },
+  "next_experiment_executed": false
+}

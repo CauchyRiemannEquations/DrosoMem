@@ -12,7 +12,23 @@ The review covered README, docs, configurations, runners, dynamics/readout/data/
 evaluation modules, test coverage and archived result/checkpoint schemas.
 This is not a new execution of every historical experiment.
 
-## Latest — autonomous-feedback extension completed (2026-09-30)
+## Latest — three additional studies completed (2026-09-30)
+
+**The three additional computational studies are complete and independently verified.**
+[Synthesis](additional-research-results.md), [prospective plan](additional-research-completion-plan.md),
+[closeout audit](../results/research_suite_closeout/audit.json).
+Sequence generalization: confirmed. Intact-over-role wiring advantage: not confirmed.
+Synthetic spatial-correlation allocation criterion: confirmed.
+There are 100 new readout fits, 1,144 actual evaluation paths and 1,074 independent full replays.
+8,640 certificate evaluations include 2,304 parent-condition repeats; they are not independent samples.
+The original ACT V closeout and all negative results remain unchanged.
+Next single proposal: **graph-relative noise calibration in the structural comparison** to
+separate signal scale from wiring effects. This is not registered or executed. Physiology,
+other dynamics and whole-brain rewiring remain outside this completed boundary.
+
+The historical briefing and paragraphs below describe their own earlier milestones.
+
+## Preceding — autonomous-feedback extension completed (2026-09-30)
 
 [Results](feedback-noise-results.md), [briefing](additional-research-brief.md).
 The completed ACT V remains unchanged. Fresh seeds 418001–418003 are noise streams,

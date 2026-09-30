@@ -1,0 +1,22 @@
+{
+  "all_checks_pass": true,
+  "stage": "structure",
+  "smoke": true,
+  "cases": 3,
+  "certificates": 54,
+  "actual_paths_checked": 21,
+  "independent_full_paths": 21,
+  "independent_teacher_paths": 3,
+  "exact_refits": 2,
+  "structural_audits": 2,
+  "reused_rho0_certificates": 0,
+  "maximum_numeric_error": 1.4432899320127035e-15,
+  "min_teacher_probability_margin": 0.004050482357166041,
+  "prior_files_unchanged": 26952,
+  "result_manifest_sha256": "6252cc16a992e5212453ab2e4fc445e8c6103e9d81beb5a978b9d6bf8d28260b",
+  "budget": {
+    "seconds": 72.28371809999953,
+    "peak_sampled_rss_bytes": 185528320,
+    "sample_seconds": 0.05
+  }
+}

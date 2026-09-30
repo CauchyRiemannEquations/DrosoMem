@@ -1,0 +1,1108 @@
+{
+  "stage": "sequence",
+  "statistics": {
+    "confirmation/pi/brain1/intact/0.0": {
+      "exact_prefix_symbols": {
+        "n": 3,
+        "mean": 5.518518518518519,
+        "median": 5.611111111111111,
+        "variance": 0.7479423868312765,
+        "bootstrap95": [
+          4.611111111111111,
+          6.333333333333333
+        ],
+        "paired_dz": 6.3809953962274415,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.2082219173776191,
+        "median": 0.1735058922558922,
+        "variance": 0.003920769741539975,
+        "bootstrap95": [
+          0.17065390749601284,
+          0.2805059523809524
+        ],
+        "paired_dz": 3.3253761095117063,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "flat": {
+        "exact_prefix_symbols": {
+          "n": 3,
+          "mean": 10.425925925925926,
+          "median": 11.777777777777779,
+          "variance": 8.630658436213993,
+          "bootstrap95": [
+            7.0555555555555545,
+            12.444444444444445
+          ],
+          "paired_dz": 3.54889107831212,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.35631930204298623,
+          "median": 0.3568948412698412,
+          "variance": 4.1142084900863914e-05,
+          "bootstrap95": [
+            0.34963671805777063,
+            0.3624263468013467
+          ],
+          "paired_dz": 55.55155253653355,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "training_sd": {
+        "exact_prefix_symbols": {
+          "n": 3,
+          "mean": 15.944444444444445,
+          "median": 17.38888888888889,
+          "variance": 14.206790123456793,
+          "bootstrap95": [
+            11.666666666666666,
+            18.77777777777778
+          ],
+          "paired_dz": 4.2302049518186005,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.5645412194206054,
+          "median": 0.535932239057239,
+          "variance": 0.004042553186001106,
+          "bootstrap95": [
+            0.5202906255537835,
+            0.6374007936507936
+          ],
+          "paired_dz": 8.879076254794516,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      }
+    },
+    "confirmation/pi/legacy5/intact/0.0": {
+      "exact_prefix_symbols": {
+        "n": 3,
+        "mean": 8.666666666666666,
+        "median": 7.722222222222221,
+        "variance": 3.5401234567901274,
+        "bootstrap95": [
+          7.444444444444443,
+          10.833333333333334
+        ],
+        "paired_dz": 4.606201043788439,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.24290065441381237,
+        "median": 0.25357142857142867,
+        "variance": 0.00034900358789680835,
+        "bootstrap95": [
+          0.221329365079365,
+          0.25380116959064336
+        ],
+        "paired_dz": 13.002107098744485,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "flat": {
+        "exact_prefix_symbols": {
+          "n": 3,
+          "mean": 12.574074074074076,
+          "median": 13.0,
+          "variance": 12.19238683127572,
+          "bootstrap95": [
+            8.88888888888889,
+            15.833333333333334
+          ],
+          "paired_dz": 3.601070698996221,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.3749634502923976,
+          "median": 0.38839285714285715,
+          "variance": 0.000585759691495866,
+          "bootstrap95": [
+            0.34702380952380957,
+            0.38947368421052636
+          ],
+          "paired_dz": 15.492774345632753,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "training_sd": {
+        "exact_prefix_symbols": {
+          "n": 3,
+          "mean": 21.240740740740744,
+          "median": 20.444444444444443,
+          "variance": 25.75411522633746,
+          "bootstrap95": [
+            16.61111111111111,
+            26.666666666666668
+          ],
+          "paired_dz": 4.185490310449903,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.61786410470621,
+          "median": 0.6097222222222222,
+          "variance": 0.0005051050869887994,
+          "bootstrap95": [
+            0.6005952380952382,
+            0.6432748538011697
+          ],
+          "paired_dz": 27.491731524978118,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      }
+    },
+    "confirmation/random/brain1/intact/0.0": {
+      "exact_prefix_symbols": {
+        "n": 3,
+        "mean": 6.12962962962963,
+        "median": 5.055555555555556,
+        "variance": 7.976337448559661,
+        "bootstrap95": [
+          4.000000000000002,
+          9.333333333333332
+        ],
+        "paired_dz": 2.170363486736717,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.21241303973350042,
+        "median": 0.26041666666666663,
+        "variance": 0.008778435598385545,
+        "bootstrap95": [
+          0.10444590932395809,
+          0.27237654320987653
+        ],
+        "paired_dz": 2.267110092395342,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "flat": {
+        "exact_prefix_symbols": {
+          "n": 3,
+          "mean": 10.592592592592593,
+          "median": 12.277777777777779,
+          "variance": 17.4701646090535,
+          "bootstrap95": [
+            5.833333333333333,
+            13.666666666666666
+          ],
+          "paired_dz": 2.5342751811736637,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.42376577966855744,
+          "median": 0.36091820987654316,
+          "variance": 0.013744737294884306,
+          "bootstrap95": [
+            0.35135135135135137,
+            0.5590277777777778
+          ],
+          "paired_dz": 3.614578503740689,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "training_sd": {
+        "exact_prefix_symbols": {
+          "n": 3,
+          "mean": 16.722222222222225,
+          "median": 17.666666666666668,
+          "variance": 29.410493827160497,
+          "bootstrap95": [
+            10.888888888888891,
+            21.61111111111111
+          ],
+          "paired_dz": 3.083492043425098,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.6361788194020579,
+          "median": 0.6332947530864197,
+          "variance": 0.0330660569446905,
+          "bootstrap95": [
+            0.4557972606753095,
+            0.8194444444444443
+          ],
+          "paired_dz": 3.4985493241888133,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      }
+    },
+    "confirmation/random/legacy5/intact/0.0": {
+      "exact_prefix_symbols": {
+        "n": 3,
+        "mean": 5.777777777777778,
+        "median": 5.722222222222223,
+        "variance": 0.04012345679012307,
+        "bootstrap95": [
+          5.611111111111111,
+          5.999999999999997
+        ],
+        "paired_dz": 28.84441020371205,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.18882080610021787,
+        "median": 0.18749999999999994,
+        "variance": 0.0002596930089210694,
+        "bootstrap95": [
+          0.1734068627450981,
+          0.20555555555555557
+        ],
+        "paired_dz": 11.717088715784842,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "flat": {
+        "exact_prefix_symbols": {
+          "n": 3,
+          "mean": 11.75925925925926,
+          "median": 11.88888888888889,
+          "variance": 0.5751028806584363,
+          "bootstrap95": [
+            10.944444444444445,
+            12.444444444444445
+          ],
+          "paired_dz": 15.506264723549762,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.3791938997821351,
+          "median": 0.38819444444444445,
+          "variance": 0.00026226280045424247,
+          "bootstrap95": [
+            0.36049836601307184,
+            0.3888888888888889
+          ],
+          "paired_dz": 23.41493707087652,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "training_sd": {
+        "exact_prefix_symbols": {
+          "n": 3,
+          "mean": 17.537037037037038,
+          "median": 17.5,
+          "variance": 0.7911522633744832,
+          "bootstrap95": [
+            16.666666666666668,
+            18.444444444444443
+          ],
+          "paired_dz": 19.7163346869894,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.5680147058823529,
+          "median": 0.5763888888888888,
+          "variance": 0.0009479443670169593,
+          "bootstrap95": [
+            0.5339052287581699,
+            0.59375
+          ],
+          "paired_dz": 18.448801352798363,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      }
+    },
+    "confirmation/shuffled_pi/brain1/intact/0.0": {
+      "exact_prefix_symbols": {
+        "n": 3,
+        "mean": 8.0,
+        "median": 7.666666666666666,
+        "variance": 0.5277777777777785,
+        "bootstrap95": [
+          7.5,
+          8.833333333333334
+        ],
+        "paired_dz": 11.011955225786958,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.2242193459748105,
+        "median": 0.22431445868945876,
+        "variance": 0.0023423397775707436,
+        "bootstrap95": [
+          0.17577413479052828,
+          0.2725694444444444
+        ],
+        "paired_dz": 4.632848885744058,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "flat": {
+        "exact_prefix_symbols": {
+          "n": 3,
+          "mean": 13.129629629629632,
+          "median": 13.055555555555555,
+          "variance": 4.460905349794241,
+          "bootstrap95": [
+            11.055555555555555,
+            15.277777777777779
+          ],
+          "paired_dz": 6.216428903710163,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.349514392205649,
+          "median": 0.34022516835016836,
+          "variance": 0.0002768357001096279,
+          "bootstrap95": [
+            0.33959471766848814,
+            0.3687232905982906
+          ],
+          "paired_dz": 21.00651537036131,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "training_sd": {
+        "exact_prefix_symbols": {
+          "n": 3,
+          "mean": 21.12962962962963,
+          "median": 20.72222222222222,
+          "variance": 2.21090534979424,
+          "bootstrap95": [
+            19.88888888888889,
+            22.777777777777782
+          ],
+          "paired_dz": 14.210416573645032,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.5737337381804596,
+          "median": 0.5930377492877493,
+          "variance": 0.002652428327865042,
+          "bootstrap95": [
+            0.5153688524590164,
+            0.6127946127946128
+          ],
+          "paired_dz": 11.140086431925573,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      }
+    },
+    "confirmation/shuffled_pi/legacy5/intact/0.0": {
+      "exact_prefix_symbols": {
+        "n": 3,
+        "mean": 7.148148148148148,
+        "median": 7.166666666666668,
+        "variance": 0.0936213991769541,
+        "bootstrap95": [
+          6.833333333333333,
+          7.444444444444443
+        ],
+        "paired_dz": 23.361782761015853,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.18514855144224282,
+        "median": 0.1821895424836601,
+        "variance": 0.00025604006215095124,
+        "bootstrap95": [
+          0.1708333333333333,
+          0.202422778509735
+        ],
+        "paired_dz": 11.570879121054864,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "flat": {
+        "exact_prefix_symbols": {
+          "n": 3,
+          "mean": 14.981481481481481,
+          "median": 14.555555555555555,
+          "variance": 0.6183127572016465,
+          "bootstrap95": [
+            14.5,
+            15.888888888888891
+          ],
+          "paired_dz": 19.052442440554376,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.37074383003091443,
+          "median": 0.3656492460840287,
+          "variance": 0.00010786807675150968,
+          "bootstrap95": [
+            0.3638888888888889,
+            0.38269335511982566
+          ],
+          "paired_dz": 35.69665027550613,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "training_sd": {
+        "exact_prefix_symbols": {
+          "n": 3,
+          "mean": 22.12962962962963,
+          "median": 21.666666666666668,
+          "variance": 1.1059670781892978,
+          "bootstrap95": [
+            21.38888888888889,
+            23.333333333333332
+          ],
+          "paired_dz": 21.042776661182433,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.5558923814731572,
+          "median": 0.5648828976034858,
+          "variance": 0.0003386743647724919,
+          "bootstrap95": [
+            0.5347222222222222,
+            0.5680720245937637
+          ],
+          "paired_dz": 30.206441069732314,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      }
+    },
+    "discovery/pi/brain1/intact/0.0": {
+      "exact_prefix_symbols": {
+        "n": 5,
+        "mean": 5.222222222222223,
+        "median": 5.888888888888889,
+        "variance": 4.936728395061729,
+        "bootstrap95": [
+          3.422222222222223,
+          6.911111111111111
+        ],
+        "paired_dz": 2.350367273581988,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.1764324051792634,
+        "median": 0.19810956790123457,
+        "variance": 0.0021768606473467843,
+        "bootstrap95": [
+          0.13507265026365195,
+          0.20753507884635333
+        ],
+        "paired_dz": 3.7814907326404037,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "flat": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 11.444444444444445,
+          "median": 11.777777777777779,
+          "variance": 9.939814814814817,
+          "bootstrap95": [
+            8.811111111111112,
+            13.777777777777777
+          ],
+          "paired_dz": 3.629991170105976,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 5,
+          "mean": 0.34533489147089386,
+          "median": 0.34711779448621555,
+          "variance": 0.00017413450139518914,
+          "bootstrap95": [
+            0.3337889567415974,
+            0.35399633001348685
+          ],
+          "paired_dz": 26.16965798690022,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "training_sd": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 16.666666666666664,
+          "median": 16.38888888888889,
+          "variance": 25.41203703703704,
+          "bootstrap95": [
+            12.411111111111111,
+            20.288888888888888
+          ],
+          "paired_dz": 3.3061991492831075,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 5,
+          "mean": 0.5217672966501572,
+          "median": 0.5443672839506173,
+          "variance": 0.0027571397381151537,
+          "bootstrap95": [
+            0.4781395931321029,
+            0.560879370266625
+          ],
+          "paired_dz": 9.936820987442033,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        }
+      }
+    },
+    "discovery/pi/legacy5/intact/0.0": {
+      "exact_prefix_symbols": {
+        "n": 5,
+        "mean": 8.655555555555555,
+        "median": 8.000000000000002,
+        "variance": 2.5067901234567906,
+        "bootstrap95": [
+          7.622222222222222,
+          9.955555555555557
+        ],
+        "paired_dz": 5.466834931334716,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.2511358453637865,
+        "median": 0.23824404761904766,
+        "variance": 0.002224870027742489,
+        "bootstrap95": [
+          0.2153066418875243,
+          0.28913614163614165
+        ],
+        "paired_dz": 5.324224781813681,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "flat": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 12.966666666666669,
+          "median": 12.555555555555555,
+          "variance": 1.136728395061729,
+          "bootstrap95": [
+            12.366666666666665,
+            13.911111111111111
+          ],
+          "paired_dz": 12.161859790328045,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 5,
+          "mean": 0.37594988208958796,
+          "median": 0.3704481792717087,
+          "variance": 0.0003998821883481916,
+          "bootstrap95": [
+            0.36069728746199325,
+            0.39197878510378514
+          ],
+          "paired_dz": 18.800262920905116,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "training_sd": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 21.622222222222224,
+          "median": 21.5,
+          "variance": 2.7799382716049386,
+          "bootstrap95": [
+            20.322222222222223,
+            22.922222222222224
+          ],
+          "paired_dz": 12.968291089266621,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 5,
+          "mean": 0.6270857274533745,
+          "median": 0.6154660154660154,
+          "variance": 0.001826961763833054,
+          "bootstrap95": [
+            0.5940234085087026,
+            0.6601480463980464
+          ],
+          "paired_dz": 14.671083443679905,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        }
+      }
+    },
+    "discovery/random/brain1/intact/0.0": {
+      "exact_prefix_symbols": {
+        "n": 5,
+        "mean": 5.533333333333333,
+        "median": 6.166666666666664,
+        "variance": 3.8543209876543196,
+        "bootstrap95": [
+          3.9111111111111114,
+          7.011111111111111
+        ],
+        "paired_dz": 2.8184666050609315,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.20225917328858506,
+        "median": 0.22275641025641024,
+        "variance": 0.002323184868853133,
+        "bootstrap95": [
+          0.16000198059021592,
+          0.23623959373959372
+        ],
+        "paired_dz": 4.196298198447938,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "flat": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 10.0,
+          "median": 11.38888888888889,
+          "variance": 6.1219135802469165,
+          "bootstrap95": [
+            7.811111111111112,
+            11.7
+          ],
+          "paired_dz": 4.041628605491104,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 5,
+          "mean": 0.3779459919165801,
+          "median": 0.34640522875816987,
+          "variance": 0.005337424096429276,
+          "bootstrap95": [
+            0.3425797350797351,
+            0.4442328042328042
+          ],
+          "paired_dz": 5.173255022509011,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "training_sd": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 15.533333333333335,
+          "median": 15.777777777777779,
+          "variance": 16.039506172839506,
+          "bootstrap95": [
+            12.077777777777778,
+            18.23333333333333
+          ],
+          "paired_dz": 3.8785479546414283,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 5,
+          "mean": 0.5802051652051652,
+          "median": 0.5617521367521368,
+          "variance": 0.011359946017566167,
+          "bootstrap95": [
+            0.5085392385392385,
+            0.6755988455988456
+          ],
+          "paired_dz": 5.443690893938685,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        }
+      }
+    },
+    "discovery/random/legacy5/intact/0.0": {
+      "exact_prefix_symbols": {
+        "n": 5,
+        "mean": 5.311111111111112,
+        "median": 4.5,
+        "variance": 9.335802469135805,
+        "bootstrap95": [
+          2.9888888888888885,
+          7.777777777777777
+        ],
+        "paired_dz": 1.7382392815872318,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.19081342736651202,
+        "median": 0.17728758169934644,
+        "variance": 0.004949150852209133,
+        "bootstrap95": [
+          0.13617180205415505,
+          0.24545505267886902
+        ],
+        "paired_dz": 2.712336614202159,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "flat": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 10.711111111111112,
+          "median": 10.11111111111111,
+          "variance": 7.320061728395061,
+          "bootstrap95": [
+            8.844444444444445,
+            13.055555555555554
+          ],
+          "paired_dz": 3.958923891993223,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 5,
+          "mean": 0.4547568696116042,
+          "median": 0.41385398702471876,
+          "variance": 0.005190191751966148,
+          "bootstrap95": [
+            0.40151418364833,
+            0.5146249610955493
+          ],
+          "paired_dz": 6.312299064185085,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "training_sd": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 16.022222222222222,
+          "median": 14.277777777777779,
+          "variance": 29.024074074074072,
+          "bootstrap95": [
+            12.38888888888889,
+            20.477777777777778
+          ],
+          "paired_dz": 2.9740178036925173,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 5,
+          "mean": 0.6455702969781163,
+          "median": 0.6590277777777778,
+          "variance": 0.0027455074777259316,
+          "bootstrap95": [
+            0.5980671846220627,
+            0.6774101307189543
+          ],
+          "paired_dz": 12.320610399925595,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        }
+      }
+    },
+    "discovery/shuffled_pi/brain1/intact/0.0": {
+      "exact_prefix_symbols": {
+        "n": 5,
+        "mean": 4.388888888888889,
+        "median": 4.5,
+        "variance": 1.5802469135802473,
+        "bootstrap95": [
+          3.3111111111111113,
+          5.311111111111112
+        ],
+        "paired_dz": 3.491339732108578,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.16570607755973032,
+        "median": 0.15666069295101553,
+        "variance": 0.006626154955325721,
+        "bootstrap95": [
+          0.10666035353535357,
+          0.2373501294457177
+        ],
+        "paired_dz": 2.035671251010532,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "flat": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 10.466666666666669,
+          "median": 11.055555555555555,
+          "variance": 4.3049382716049385,
+          "bootstrap95": [
+            8.6,
+            11.78888888888889
+          ],
+          "paired_dz": 5.044579017037392,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 5,
+          "mean": 0.3492062027917499,
+          "median": 0.34022516835016836,
+          "variance": 0.00021809705599258367,
+          "bootstrap95": [
+            0.3381291634987872,
+            0.3604307253204312
+          ],
+          "paired_dz": 23.64596528500464,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "training_sd": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 14.855555555555558,
+          "median": 15.166666666666666,
+          "variance": 6.798765432098767,
+          "bootstrap95": [
+            12.9,
+            16.9
+          ],
+          "paired_dz": 5.6973627137595235,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 5,
+          "mean": 0.5149122803514803,
+          "median": 0.4933293508562326,
+          "variance": 0.008581622647340569,
+          "bootstrap95": [
+            0.45027418795801155,
+            0.5931650736758264
+          ],
+          "paired_dz": 5.558383950187027,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        }
+      }
+    },
+    "discovery/shuffled_pi/legacy5/intact/0.0": {
+      "exact_prefix_symbols": {
+        "n": 5,
+        "mean": 5.688888888888888,
+        "median": 6.111111111111111,
+        "variance": 4.352777777777778,
+        "bootstrap95": [
+          3.9111111111111114,
+          7.155555555555554
+        ],
+        "paired_dz": 2.7267429797991847,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.19271377390745353,
+        "median": 0.20240130240130239,
+        "variance": 0.004189538071193032,
+        "bootstrap95": [
+          0.14555778794514715,
+          0.24119607244607258
+        ],
+        "paired_dz": 2.9773485934224455,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "flat": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 11.522222222222222,
+          "median": 13.444444444444445,
+          "variance": 10.934567901234567,
+          "bootstrap95": [
+            8.833333333333332,
+            13.977777777777778
+          ],
+          "paired_dz": 3.4844596041861893,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 5,
+          "mean": 0.3826769588995809,
+          "median": 0.3666259666259666,
+          "variance": 0.0020264414319363516,
+          "bootstrap95": [
+            0.3555653899130119,
+            0.42269205331705334
+          ],
+          "paired_dz": 8.500907407734225,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "training_sd": {
+        "exact_prefix_symbols": {
+          "n": 5,
+          "mean": 17.21111111111111,
+          "median": 19.77777777777778,
+          "variance": 24.08549382716049,
+          "bootstrap95": [
+            12.944444444444446,
+            20.68888888888889
+          ],
+          "paired_dz": 3.506962570812993,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 5,
+          "mean": 0.5753907328070345,
+          "median": 0.5926816239316239,
+          "variance": 0.0028790389949284157,
+          "bootstrap95": [
+            0.5299595915834965,
+            0.6118709299959301
+          ],
+          "paired_dz": 10.723562549037895,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        }
+      }
+    }
+  },
+  "gates": {
+    "confirmation/pi/brain1/intact/0.0": true,
+    "confirmation/pi/legacy5/intact/0.0": true,
+    "confirmation/random/brain1/intact/0.0": true,
+    "confirmation/random/legacy5/intact/0.0": true,
+    "confirmation/shuffled_pi/brain1/intact/0.0": true,
+    "confirmation/shuffled_pi/legacy5/intact/0.0": true,
+    "discovery/pi/brain1/intact/0.0": true,
+    "discovery/pi/legacy5/intact/0.0": true,
+    "discovery/random/brain1/intact/0.0": true,
+    "discovery/random/legacy5/intact/0.0": true,
+    "discovery/shuffled_pi/brain1/intact/0.0": true,
+    "discovery/shuffled_pi/legacy5/intact/0.0": true
+  },
+  "structural_statistics": {},
+  "structural_gates": {},
+  "primary_keys": [
+    "discovery/random/brain1/intact/0.0",
+    "confirmation/random/brain1/intact/0.0"
+  ],
+  "primary_confirmed": true,
+  "cohorts_pooled": false,
+  "undefined_retention_propagated": true
+}
