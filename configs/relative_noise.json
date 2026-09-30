@@ -1,0 +1,21 @@
+{
+  "study": "observed-scale-relative-ongoing-noise",
+  "protocol": "docs/relative-noise-protocol.md",
+  "source": "results/act1_main",
+  "source_manifest_sha256": "84a6d1d4cc82cb5cb565b2376321343b49ca88e79a34cd624a598f2ba08da768",
+  "cache": "outputs/act1-graphs",
+  "conditions": ["legacy5", "brain5", "brain1"],
+  "circuit_seeds": [701, 702],
+  "cohorts": {"discovery": [7142,7143,7144,7145,7146], "confirmation": [381142,381143,381144]},
+  "relative_strengths": [0.0003,0.03,0.3],
+  "perturbation_seed": 372001,
+  "bootstrap_seed": 388399,
+  "bootstrap_draws": 10000,
+  "curve_retention_gain": 0.1,
+  "curve_prefix_gain": 2.0,
+  "workers": 2,
+  "worker_seconds": 900,
+  "worker_rss_bytes": 3221225472,
+  "max_seconds": 5400,
+  "verification_seconds": 3600
+}
