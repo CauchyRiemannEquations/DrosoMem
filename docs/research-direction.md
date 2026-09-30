@@ -153,3 +153,19 @@ ACT V 종료와 과거 실패를 바꾸지 않는 별도 확장이다. 다음 �
 상관 잡음은 합성 관측 조건에 한정한다. 생리 자료·전체망 재배선·다른 동역학은 미실행이다.
 다음 제안은 하나: 구조 대조의 잡음을 graph별 신호 규모에 맞춰, 신호 크기와 배선 효과를
 분리하는 비교다. 새 protocol을 등록하거나 실행하지 않았다. 기존 실패를 대체하지 않는다.
+
+
+## 망별 상대 잡음 보정 완료 — 2026-09-30
+
+**Graph-relative noise calibration is complete and independently verified.**
+[Results and all seed blocks](graph-relative-noise-results.md), [prospective protocol](graph-relative-noise-protocol.md),
+[closeout audit](../results/graph_relative_noise_closeout/audit.json).
+The registered random/degree gap-attenuation criterion is **not confirmed**.
+96 existing partial-graph heads were reused with fresh noise; there were no new fits.
+All 1,824 actual paths were independently replayed. 1,728 labeled noisy evaluations
+contain 288 exact intact-null repeats, leaving 1,440 distinct fresh noisy settings.
+The 96 clean paths reproduce the parent models. These are not new model cohorts.
+The [previous three extensions](additional-research-results.md) and ACT I–V negatives remain unchanged.
+Next single proposal: coordinate-SD noise matching, with amplitude r times each
+coordinate's training SD, to remove the remaining median/RMS scale factor. It is
+not registered or executed. Physiology and whole-brain rewiring remain open.

@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "evidence": {
+    "results/graph_relative_noise": "f73ed240c0625740e8d87b51e14b6471ea056aa7486653019f31bbd34e768f3a",
+    "results/graph_relative_noise_validation": "5629cd7845c21c740726fffe4b03eedc4f1de23f77272565e52c2bba1ff32466",
+    "results/graph_relative_noise_smoke": "684b1832352084692f8e0316153830f85c29fcd8bde30b0f8cb73b26fb94400f",
+    "results/graph_relative_noise_smoke_validation": "14932b84014e858fb4bee59e850b6cae8c61b7abca90bd2f2a798ebca1aa9a7c",
+    "results/graph_relative_noise_analysis": "d5a05b438ca2a87c5d5740d58084d7c853ea724127949bdd8db66405c26d6d53",
+    "results/graph_relative_noise_tests": "ac9f6a06a0fc77a5afad922bae33ce80e288bca9cd56610a03e5403f9d78e17f"
+  },
+  "primary_confirmed": false,
+  "new_models": 0,
+  "new_fits": 0,
+  "actual_main_paths": 1824,
+  "independent_main_replays": 1824,
+  "unique_fresh_noisy_settings": 1440,
+  "repeated_intact_settings": 288,
+  "clean_parent_repeats": 96,
+  "all_sealed_historical_reports_unchanged": true,
+  "report_sha256": {
+    "docs/graph-relative-noise-protocol.md": "444364a041186f09abc7112d06ae66907ca6a1f9e13b310615170fb3fe5e159f",
+    "docs/graph-relative-noise-results.md": "d31ea9555e370259ac1774cef979eae78240ba80f66ce77a2eb12b3ae5addbb2"
+  },
+  "physiology": false,
+  "whole_brain_rewiring": false,
+  "next_experiment_executed": false
+}

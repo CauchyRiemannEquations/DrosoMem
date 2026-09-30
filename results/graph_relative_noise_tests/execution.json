@@ -1,0 +1,9 @@
+{
+  "command": "python -m pytest tests/test_graph_relative_noise.py tests/test_feedback_noise.py tests/test_allocation_noise.py tests/test_structural_controls.py -q --junitxml=results/graph_relative_noise_tests/pytest.xml",
+  "tests": 26,
+  "passed": 26,
+  "executed_before_prereg_commit": true,
+  "tested_source_unchanged": true,
+  "base_commit": "52fabf110e21231d9813fabcc0db3ca5e0749b21",
+  "preregistered_commit": "a26ad9e810821b330410fc58c16d71dd34f9bb0b"
+}

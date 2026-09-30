@@ -5,9 +5,14 @@ connectome structure**. Pi is a trained-sequence benchmark, not evidence of a li
 fly memorizing pi or a model predicting unseen pi digits.
 
 [한국어 설명](docs/README-ko.md) · [Research status / audit](docs/research-status.md) ·
-[Roadmap](docs/research-roadmap.md) · [Latest results](docs/additional-research-results.md)
+[Roadmap](docs/research-roadmap.md) · [Latest results](docs/graph-relative-noise-results.md)
 
 ## Current research
+
+The [graph-relative noise follow-up](docs/graph-relative-noise-results.md) is complete: its
+random/degree gap-attenuation criterion is **not confirmed**. It reused 96 partial-graph
+heads with fresh noise, reproduced every clean baseline and independently replayed
+all 1,824 paths. This tests a noise calibration effect, not intact wiring superiority.
 
 The bounded ACT I–V studies and the [three additional computational studies](docs/additional-research-results.md)
 are complete within their registered scopes. Completion does not mean every hypothesis succeeded.
@@ -24,9 +29,11 @@ There are 8,640 certificate evaluations (6,336 distinct exposure settings), 1,14
 trajectories, 1,074 independent full replays and 100 new readout fits. Certificates stop at the first
 error; they are not full autonomous sequences. Physiological validation remains open.
 
-## Reproduce the latest studies
+## Reproduce the studies
 
 Use Python 3.12, a fresh environment and new output directories. Run from the repository root.
+For the latest frozen-head calibration, see the [exact commands](docs/graph-relative-noise-results.md#10-reproducibility).
+The commands below reproduce the preceding extensions.
 
 ```powershell
 py -3.12 -m venv .venv

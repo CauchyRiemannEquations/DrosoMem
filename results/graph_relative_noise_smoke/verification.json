@@ -1,0 +1,56 @@
+{
+  "complete": true,
+  "smoke": true,
+  "cases": 3,
+  "actual_paths": 57,
+  "certificates": 54,
+  "unique_fresh_noisy_settings": 45,
+  "repeated_noisy_settings": 9,
+  "clean_parent_repeats": 3,
+  "new_fits": 0,
+  "prior_files_unchanged": 29175,
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+    "cpu_count": 12,
+    "ram_bytes": 16905629696,
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "pandas": "2.2.3",
+      "mpmath": "1.4.1",
+      "threadpoolctl": "3.6.0",
+      "psutil": "7.2.2",
+      "pyarrow": "25.0.1"
+    },
+    "blas": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\USER\\Documents\\Codex\\2026-09-28\\github-cauchyriemannequations-flying-audit-readme-readme\\work\\venv-act1\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\USER\\Documents\\Codex\\2026-09-28\\github-cauchyriemannequations-flying-audit-readme-readme\\work\\venv-act1\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-64eda39e79589aedb16f58e5547eb599.dll",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ],
+    "numerical_threads": 1
+  },
+  "budget": {
+    "seconds": 231.03447769999912,
+    "peak_sampled_rss_bytes": 161517568,
+    "sample_seconds": 0.05
+  }
+}

@@ -7,17 +7,18 @@ information), and **learning** (experience modifies recurrent connections).
 
 ## Current position — 2026-09-30
 
-**The three additional computational studies are complete and independently verified.**
-[Synthesis](additional-research-results.md), [prospective plan](additional-research-completion-plan.md),
-[closeout audit](../results/research_suite_closeout/audit.json).
-Sequence generalization: confirmed. Intact-over-role wiring advantage: not confirmed.
-Synthetic spatial-correlation allocation criterion: confirmed.
-There are 100 new readout fits, 1,144 actual evaluation paths and 1,074 independent full replays.
-8,640 certificate evaluations include 2,304 parent-condition repeats; they are not independent samples.
-The original ACT V closeout and all negative results remain unchanged.
-Next single proposal: **graph-relative noise calibration in the structural comparison** to
-separate signal scale from wiring effects. This is not registered or executed. Physiology,
-other dynamics and whole-brain rewiring remain outside this completed boundary.
+**Graph-relative noise calibration is complete and independently verified.**
+[Results and all seed blocks](graph-relative-noise-results.md), [prospective protocol](graph-relative-noise-protocol.md),
+[closeout audit](../results/graph_relative_noise_closeout/audit.json).
+The registered random/degree gap-attenuation criterion is **not confirmed**.
+96 existing partial-graph heads were reused with fresh noise; there were no new fits.
+All 1,824 actual paths were independently replayed. 1,728 labeled noisy evaluations
+contain 288 exact intact-null repeats, leaving 1,440 distinct fresh noisy settings.
+The 96 clean paths reproduce the parent models. These are not new model cohorts.
+The [previous three extensions](additional-research-results.md) and ACT I–V negatives remain unchanged.
+Next single proposal: coordinate-SD noise matching, with amplitude r times each
+coordinate's training SD, to remove the remaining median/RMS scale factor. It is
+not registered or executed. Physiology and whole-brain rewiring remain open.
 
 | Axis | Completed scope | Remaining scope |
 |---|---|---|
