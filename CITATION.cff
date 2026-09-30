@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use DrosoMem in research, teaching, software, or derivative analyses, please cite this software and the underlying data sources."
+title: "DrosoMem: Sequence Memory in a Fly Connectome"
+type: software
+authors:
+  - name: "CauchyRiemannEquations"
+    website: "https://github.com/CauchyRiemannEquations"
+abstract: >-
+  DrosoMem is exploratory research software for studying sequential recall in
+  computational models constrained by Drosophila connectome structure. The
+  project evaluates representation, decoding, autonomous recall, structural
+  controls, and robustness under explicitly scoped computational experiments.
+  It does not claim that living flies memorize mathematical constants, that
+  unseen digits are predicted, or that the implemented dynamics constitute a
+  validated biological model of memory.
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/CauchyRiemannEquations/DrosoMem"
+url: "https://github.com/CauchyRiemannEquations/DrosoMem"
+keywords:
+  - Drosophila
+  - connectome
+  - sequence memory
+  - reservoir computing
+  - neural networks
+  - computational neuroscience
+  - reproducible research
