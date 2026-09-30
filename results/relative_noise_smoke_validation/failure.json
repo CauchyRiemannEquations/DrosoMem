@@ -1,0 +1,11 @@
+{
+  "all_checks_pass": false,
+  "stage": "CSV sigma calibration assertion before main",
+  "exception": "AssertionError",
+  "absolute_difference": 7.5379156e-17,
+  "relative_difference": 6.74086167e-13,
+  "required_rtol": 1e-13,
+  "required_atol": 1e-18,
+  "cause": "Default pandas CSV float parser did not round-trip the written value",
+  "action": "Preserve original; use round_trip parser and repeat smoke in a new directory; no tolerance or scientific criterion change"
+}

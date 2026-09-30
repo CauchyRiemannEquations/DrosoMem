@@ -1,0 +1,68 @@
+{
+  "fixed_scope_complete": true,
+  "physiological_calibration": false,
+  "evidence": [
+    {
+      "path": "results/relative_noise_smoke",
+      "manifest_sha256": "dfc0ca8f495e7756bf514a8d4d5fecd7fd3dc10ed74abf16bf0d37fa8a21bd95",
+      "artifacts": 48
+    },
+    {
+      "path": "results/relative_noise_smoke_validation",
+      "manifest_sha256": "847f0acaf177a19b95b8ce71acf06200b6124f6a94afe9ec799c49d4397fbd3b",
+      "artifacts": 1
+    },
+    {
+      "path": "results/relative_noise_tests",
+      "manifest_sha256": "d9e4c2752b860b7d33a037a0425fdfbaa76503556a67ffe767a945b793336426",
+      "artifacts": 1
+    },
+    {
+      "path": "results/relative_noise_tests_v2",
+      "manifest_sha256": "2136b681228b7da72b428a95de59933d276f91e01f983cadf7e067ac4e7c8a2b",
+      "artifacts": 1
+    },
+    {
+      "path": "results/relative_noise_smoke_v2",
+      "manifest_sha256": "8edf55922b50c84dd3b67e01b655f1ae605e7eadec07aafcecab49f86009d0e4",
+      "artifacts": 48
+    },
+    {
+      "path": "results/relative_noise_smoke_v2_validation",
+      "manifest_sha256": "18608a6a2f0c5821aaecadf9d8be49c0aecbfa788627682e96b770ed952ef3a2",
+      "artifacts": 1
+    },
+    {
+      "path": "results/relative_noise_smoke_equivalence",
+      "manifest_sha256": "0fd3deec58873904e1297309d25a87513af6780ec2fd337fd976667f8b1a6d9d",
+      "artifacts": 1
+    },
+    {
+      "path": "results/relative_noise_main",
+      "manifest_sha256": "cc7b8219ff64f72335a36316eaeebb1eab7c196902a245f3f1ac51a877e38af2",
+      "artifacts": 683
+    },
+    {
+      "path": "results/relative_noise_validation",
+      "manifest_sha256": "b03559dc8291925407f5204345c092566163b5c11b234d0faca67a9b8ac18764",
+      "artifacts": 1
+    },
+    {
+      "path": "results/relative_noise_analysis",
+      "manifest_sha256": "ddc8b6a389bbacacb6bf0b6ca654329e28acec235baeaf0713b3c125486487d4",
+      "artifacts": 1
+    }
+  ],
+  "primary_confirmed": false,
+  "confirmed_comparisons": [],
+  "paired_mode_first_error_checks": 192,
+  "original_smoke_failure_preserved": true,
+  "round_trip_array_equivalence": {
+    "all_arrays_exact": true,
+    "files": 27,
+    "arrays": 231,
+    "purpose": "Parser-only correction preserves numerical simulations"
+  },
+  "previous_absolute_noise_result_unchanged": true,
+  "report_sha256": "3a3ace59138190ab5b5442cd6dfc3b620e23cda37d7b9a8af027194e0a17165f"
+}
