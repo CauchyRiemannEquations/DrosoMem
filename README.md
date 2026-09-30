@@ -58,3 +58,15 @@ The subsequent graph-relative and coordinate-SD calibrations are also complete.
 One future proposal is fresh model/data/graph seeds under coordinate-SD calibration;
 this fresh-model study is not registered or executed. [Data and attribution](data/README.md) · [Primary-source review](docs/research.md) ·
 [Historical reproduction](docs/historical-reproduction.md) · [License](LICENSE)
+
+
+## Citation, data terms, and archival
+
+For release and reuse metadata, see [`CITATION.cff`](CITATION.cff),
+[Data sources and attribution](DATA_SOURCES.md),
+[Limitations](LIMITATIONS.md), and the
+[Zenodo release guide](docs/ZENODO.md).
+
+DrosoMem source code is MIT-licensed. FlyWire-derived public data retain their
+upstream CC BY-NC 4.0 terms and attribution requirements; the code license does
+not relicense those data.
