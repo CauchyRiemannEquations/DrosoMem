@@ -9,19 +9,22 @@ that a living fly memorized pi or that the model predicts unseen pi digits.
 
 ## Current research
 
-The [bounded ACT V rate-model programme](docs/act5-robustness-results.md) is complete:
-five perturbation curves in partial/whole graphs, 30 archived heads and 18 fresh
-confirmation heads, under fixed 48-MBON observation and frozen readouts.
-The main ongoing-noise brain1-versus-legacy5 criterion is **not confirmed**.
-Brain1's mean capped retention was lower by 22.1 percentage points in discovery
-and 21.0 in fresh confirmation. Equal absolute noise had unequal size relative
-to each model's observed-state variation, limiting a topology-only interpretation.
-All per-seed results, secondary comparisons and failures remain available.
+The [bounded ACT V programme](docs/act5-robustness-results.md) and two follow-ups
+are complete. [Relative-noise calibration](docs/relative-noise-results.md) still
+does **not confirm a whole-brain recall advantage**: brain1 minus partial capped
+retention is −2.07 percentage points in discovery and −5.71 in fresh confirmation.
+The discovery gap is smaller than under the earlier absolute-dose definition.
 
-The [completion audit](results/act5_closeout/audit.json) distinguishes execution
-from biological validation. Computational noise is not physiologically calibrated.
-Next proposal: compare ongoing noise at matched dose relative to clean observed-state
-variation, retaining frozen heads. Preregister it before execution; it has not been run.
+The [observation-noise diagnostic](docs/observation-noise-results.md) reuses those
+48 frozen heads. Corrupting only current observations of otherwise clean states
+also sharply lowers teacher-forced decoding accuracy. Accumulated state noise adds
+0.54/0.76 percentage points of mean loss in brain1. This is not evidence of lost
+internal memory or recovered autonomous recall. All seeds and failures are retained.
+
+The [two-study audit](results/observation_noise_closeout/audit.json) distinguishes
+completed computation from physiological validation. Next proposal, not executed:
+redistribute observation noise by each MBON's clean training variation while matching
+expected total squared noise and keeping the readout fixed.
 
 Historical recall baselines freeze recurrent connectivity and train an external
 readout. ACT IV also studied internal KC→MBON learning; ACT V reuses frozen ACT I
@@ -38,12 +41,13 @@ py -3.12 -m venv .venv
 $env:PYTHONPATH = 'src'
 # Prepare the pinned graph cache if it is not already present:
 .\.venv\Scripts\python.exe -m flying.training.phase6 prepare --cache outputs/act1-graphs
-.\.venv\Scripts\python.exe scripts/act5_robustness.py run --out outputs/act5_new
-.\.venv\Scripts\python.exe scripts/verify_act5_robustness.py outputs/act5_new --out outputs/act5_check_new
+.\.venv\Scripts\python.exe scripts/observation_noise.py run --out outputs/observation_noise_new
+.\.venv\Scripts\python.exe scripts/verify_observation_noise.py outputs/observation_noise_new --out outputs/observation_noise_check_new
 ```
 
-Use the committed source artifacts and fresh output directories. The runner reuses archived clean heads, fits fixed fresh-seed clean heads and
-evaluates five registered perturbation families without refitting under perturbation. See the report for source hashes,
-per-seed results, pairing checks and limitations. Historical results remain intact.
+Use the committed source artifacts and fresh output directories. This diagnostic
+reuses clean heads and saved states, computes 144 observation controls and performs
+no new training or autonomous rollout. See both reports for the parent dynamical
+experiment, source hashes, per-seed results and independent verification scope.
 [ACT I protocol](docs/whole-brain-memory-protocol.md) · [Data and attribution](data/README.md) ·
 [Primary-source review](docs/research.md) · [Historical reproduction](docs/historical-reproduction.md) · [License](LICENSE)

@@ -7,12 +7,15 @@ information), and **learning** (experience modifies recurrent connections).
 
 ## Current position — 2026-09-30
 
-**The bounded ACT V rate-model programme is complete.**
-[Five-family robustness results](act5-robustness-results.md) and
-[completion audit](../results/act5_closeout/audit.json) cover paired partial/whole
-graphs, frozen readouts, fresh confirmation and explicit numerical checks.
+**The bounded ACT V rate-model programme and two noise follow-ups are complete.**
+The [relative-noise comparison](relative-noise-results.md) still finds no confirmed
+whole-brain recall advantage, including fresh confirmation seeds. The
+[current-observation diagnostic](observation-noise-results.md) finds that corrupting
+observations of clean states also causes substantial fixed-head decoding loss.
+[Two-study audit](../results/observation_noise_closeout/audit.json).
 Completion does not establish physiological realism or erase prior failures.
-Next proposal: a relative-noise comparison with frozen readouts, to preregister before execution.
+Next proposal: redistribute observation noise by coordinate training SD at matched
+expected total squared noise, with a fixed head; not yet registered or executed.
 
 | Axis | Completed scope | Remaining scope |
 |---|---|---|
@@ -23,7 +26,7 @@ Next proposal: a relative-noise comparison with frozen readouts, to preregister 
 | ACT III-C | Four controls including exact per-neuron incoming-weight and role/signed-degree preservation;169 cases | Whole-brain, uniform-ensemble mixing and autonomous-recall extensions |
 | ACT III-D | Five preregistered pathways, matched removal controls, sensitivity map and fresh confirmation;273 cases | Minimal/unique subnetwork, motifs, whole-brain localization and separation of storage from readout access |
 | ACT IV | Earlier negative biological/local-rule results; IV-A A/B/C/D, observation diagnostics and scalar/local39-case experiment plus direction/noise/trajectory/margin diagnostics and explicit closeout completed | Unanswered extensions: physiological and whole-brain local learning, literal decoder-free biology; no claim of successful internal memory formation |
-| ACT V | Five registered perturbation curves in partial/whole rate models, frozen readouts, fresh confirmation and completion audit | Physiological calibration, other dynamics/tasks, correlated noise and decoder-adaptation extensions |
+| ACT V | Five perturbation curves plus train-scale relative noise and instantaneous-observation diagnostics; frozen readouts, fresh seeds in the relative study, independent checks | Physiological calibration, other dynamics/tasks, correlated noise and matched-energy coordinate allocation |
 
 현재 두 686-neuron 부분 모델의 **III-A/B/C/D의 제한된 연구 단락을 종료**했다.
 완료는 고정한 실험·검증을 끝냈다는 뜻이다. 전체 뇌의 기억 위치나 내부 학습을
@@ -132,6 +135,10 @@ The [current five-family panel](act5-robustness-results.md) is executed and chec
 30 archived clean heads and18 fresh heads were evaluated without perturbation
 refits. Previous partial real/shuffled robustness failures remain preserved.
 This completes the declared rate-model scope, not physiological validation.
+The subsequent [relative-dose study](relative-noise-results.md) and
+[observation diagnostic](observation-noise-results.md) are also complete. The first
+uses new confirmation seeds; the second reuses both cohorts and is exploratory.
+Do not treat its teacher-forced diagnostic as recovery of autonomous memory.
 The principles below remain the blueprint for future extensions.
 
 Use predefined curves for initial/ongoing noise, edge/neuron dropout and weight

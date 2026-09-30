@@ -1,20 +1,25 @@
 # Prioritized work — updated 2026-09-30
 
-**Bounded ACT V five-family rate-model robustness programme complete.**
-[Results](act5-robustness-results.md), [completion audit](../results/act5_closeout/audit.json).
-30 archived ACT I heads plus18 fresh heads,48 paired cases,1056 actual trajectories;
-240 zero rows explicitly reuse clean output. Full metrics/hashes and a registered
-440-trajectory independent replay subset pass;6 fresh heads refit exactly.
-The first smoke's launcher-only RSS error is preserved in the engineering audit;
-main memory measurements include the complete worker process tree.
+**Bounded ACT V and the two requested noise follow-ups are complete.**
+[Relative-noise results](relative-noise-results.md),
+[observation diagnostic](observation-noise-results.md),
+[two-study audit](../results/observation_noise_closeout/audit.json).
+The first follow-up evaluated 48 models and 384 actual neural trajectories, with
+18 newly trained clean confirmation heads. Its registered whole-brain advantage
+failed; 160 independent trajectories and six exact fresh refits pass verification.
+The second reuses all 48 models and computes 144 current-observation controls;
+all 144 independently reproduce exactly, with no new neural rollout or training.
+24 targeted tests pass. The original smoke CSV-parser failure is preserved;
+round-trip parsing was fixed before main without altering outcomes or tolerances.
 
-Next single proposed experiment: **match ongoing-noise amplitude relative to clean MBON variation**.
-At absolute sigma .001 the partial model's median observed training SD ratio was
-about .27, versus1.3–2.3 in whole graphs. Keep frozen heads and all-neuron exposure;
-predeclare a common relative-dose grid using each model's clean48-MBON SD median.
-This scalar calibration tests an amplitude confound, not biological noise calibration.
-Do not substitute its outcomes for the completed absolute-noise experiment.
-Proposed only; not executed.
+Next single proposed experiment: **redistribute observation noise in proportion
+to each MBON's clean training SD, with matched expected total squared noise**.
+Keep the clean head, preprocessing and paired Gaussian draws fixed. Normalize the
+coordinate-dependent noise amplitudes to preserve the expected raw squared sum.
+This tests whether heterogeneous feature scales matter after median calibration.
+It does not retrain a better decoder or establish physiological noise amplitudes.
+Preregister the precise doses, seeds, budgets and acceptance rule before execution.
+Proposed only; neither registered nor executed.
 
 Physiological calibration, other dynamics/tasks and population-correlated noise
 remain open extensions. ACT I clean and ACT IV learning conclusions are unchanged.

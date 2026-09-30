@@ -1,6 +1,13 @@
 # Original research phases: completion audit — 2026-09-27
 
-Current update (2026-09-30): [ACT V five-family rate-model robustness](act5-robustness-results.md)
+Current update (2026-09-30): the [relative-noise comparison](relative-noise-results.md)
+and [current-observation diagnostic](observation-noise-results.md) are complete.
+The first adds fresh confirmation seeds and does not confirm whole-brain advantage;
+the second reuses those heads and does not execute new autonomous trajectories.
+[Two-study completion audit](../results/observation_noise_closeout/audit.json).
+The next matched-energy coordinate-noise proposal is unregistered and unexecuted.
+
+Preceding update (2026-09-30): [ACT V five-family rate-model robustness](act5-robustness-results.md)
 is complete within its preregistered partial/whole-graph scope. Fresh confirmation,
 full metric/hash checks and the specified independent replay subset are complete.
 This is not physiological validation. Earlier scope audits below are historical.

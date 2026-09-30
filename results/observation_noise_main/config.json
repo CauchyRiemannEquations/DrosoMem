@@ -1,0 +1,46 @@
+{
+  "study": "instantaneous-observation-versus-accumulated-state-noise",
+  "protocol": "docs/observation-noise-protocol.md",
+  "source": "results/relative_noise_main",
+  "source_validation": "results/relative_noise_validation",
+  "source_manifest_sha256": "cc7b8219ff64f72335a36316eaeebb1eab7c196902a245f3f1ac51a877e38af2",
+  "cache": "outputs/act1-graphs",
+  "nodes_sha256": "e9827b294f19778508c21ed8effd22712ece0cbcb7fca98f70c1c141f82775f3",
+  "conditions": [
+    "legacy5",
+    "brain5",
+    "brain1"
+  ],
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "cohorts": {
+    "discovery": [
+      7142,
+      7143,
+      7144,
+      7145,
+      7146
+    ],
+    "confirmation": [
+      381142,
+      381143,
+      381144
+    ]
+  },
+  "relative_strengths": [
+    0.0003,
+    0.03,
+    0.3
+  ],
+  "perturbation_seed": 372001,
+  "bootstrap_seed": 398399,
+  "bootstrap_draws": 10000,
+  "history_cost_threshold": 0.05,
+  "near_mean_tolerance": 0.02,
+  "near_seed_tolerance": 0.05,
+  "max_seconds": 1200,
+  "verification_seconds": 1200,
+  "max_rss_bytes": 2147483648
+}

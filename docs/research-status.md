@@ -12,7 +12,36 @@ The review covered README, docs, configurations, runners, dynamics/readout/data/
 evaluation modules, test coverage and archived result/checkpoint schemas.
 This is not a new execution of every historical experiment.
 
-## Latest — bounded ACT V robustness programme closed (2026-09-30)
+## Latest — two ACT V noise follow-ups completed (2026-09-30)
+
+[Relative-noise comparison](relative-noise-results.md): 30 archived heads plus
+18 fresh clean heads, 384 actual neural evaluation trajectories and 48 zero aliases.
+Relative strength uses the clean training MBON-SD median, with the same fixed
+48-neuron interface and 482 readout parameters. Brain1 minus partial retention is
+−2.073/−5.714pp, mean prefix difference −1.033/−1.000 in discovery/confirmation.
+No comparison passes the registered joint improvement gate. The same discovery
+cohort had −22.10pp under absolute noise, so dose definition materially affects
+the gap; confirmation cohorts differ and are not a paired before/after comparison.
+160 independent dynamical trajectories and six exact fresh refits pass. Original
+CSV-parser smoke failure is preserved; the pre-main correction reproduces all
+231 numerical arrays exactly and changes neither tolerances nor scientific rules.
+
+[Observation diagnostic](observation-noise-results.md): 144 new stateless teacher
+evaluations and 48 clean rechecks, reusing the first study's models. All 144 controls
+independently reproduce with maximum error zero. Current-observation corruption
+alone causes large decoding loss; brain1's additional accumulated-history cost is
+0.541/0.761pp. Both whole graphs satisfy the separate descriptive near-tolerance
+rule, not a formal equivalence test. Partial does not; its middle-dose history cost
+is about 4.92/4.99pp. No graph confirms the 5pp material-history-cost gate.
+This is exploratory reuse, not a new independent cohort or autonomous recovery.
+
+[Two-study audit](../results/observation_noise_closeout/audit.json) pins reports,
+source manifests and verification evidence. 24 targeted tests pass; old results
+remain unchanged. Next one: matched expected total squared observation noise,
+allocated by each MBON's clean training SD, with the head fixed. Not yet registered
+or executed. Representation loss and decoding failure remain distinct questions.
+
+## Preceding — bounded ACT V robustness programme closed (2026-09-30)
 
 [Five-family results](act5-robustness-results.md), [completion audit](../results/act5_closeout/audit.json).
 48 cases,1056 evaluation trajectories and unconditional fresh-seed confirmation.
@@ -21,8 +50,8 @@ fresh refits pass. Primary ongoing-noise whole-brain advantage confirmed: `False
 The five curves cover pulse/ongoing state noise,edge/neuron dropout and multiplicative
 weight noise. A Windows launcher-only memory measurement defect in the first smoke
 was corrected before main; original artifacts remain untouched.
-Physiological validity is not established. Next proposal: a relative-noise comparison
-with frozen heads to test the observed-amplitude confound. Preregister before execution.
+Physiological validity is not established. The relative-noise follow-up proposed
+at that time is now completed above; it does not replace this absolute-dose result.
 
 ## Preceding — bounded ACT IV current-model programme closed (2026-09-29)
 

@@ -1,0 +1,45 @@
+{
+  "two_studies_complete": true,
+  "evidence": [
+    {
+      "study": "relative_noise_closeout",
+      "manifest_sha256": "c38899ec65c977eb076d2ef4ee98bf06774b99a148cb534477c0aa747c72a8ed",
+      "artifacts": 1
+    },
+    {
+      "study": "observation_noise_main",
+      "manifest_sha256": "556733b5aa7aacedb2f0c59b5c4a26ea2e703987651026772d3a1c1e700af10e",
+      "artifacts": 345
+    },
+    {
+      "study": "observation_noise_validation",
+      "manifest_sha256": "b50fd3946dee7f378d7368b32ae9152e5dfb21498ddef28fff2b37f5df924b46",
+      "artifacts": 1
+    },
+    {
+      "study": "observation_noise_analysis",
+      "manifest_sha256": "f75ed7a03a5e3790f881ee536a4d81f141a1c6dea1a0239658a821199e27544e",
+      "artifacts": 1
+    },
+    {
+      "study": "observation_noise_tests",
+      "manifest_sha256": "f51ff3e7d999dca59ec6e9d3b90d6a77fad854818155f8a8723d6eb6c611fe1d",
+      "artifacts": 1
+    }
+  ],
+  "relative_noise_primary_confirmed": false,
+  "observation_history_primary_confirmed": false,
+  "confirmed_history_cost": [],
+  "within_registered_near_tolerance": [
+    "brain5",
+    "brain1"
+  ],
+  "new_autonomous_runs_in_second_study": 0,
+  "independent_fresh_cohort_in_second_study": false,
+  "formal_equivalence_claimed": false,
+  "report_sha256": "8920aa52b80bb9681f2b11d1efdf15c2b36457ef09f97fba2a1f77e52e63dc98",
+  "relative_report_sha256": "3a3ace59138190ab5b5442cd6dfc3b620e23cda37d7b9a8af027194e0a17165f",
+  "old_parser_failure_preserved": true,
+  "physiological_validation": false,
+  "next_proposal": "Redistribute observation noise in proportion to each MBON training SD at matched expected total squared noise; fixed head; not executed"
+}
