@@ -1,0 +1,28 @@
+{
+  "study": "frozen-structural-heads-graph-relative-noise",
+  "protocol": "docs/graph-relative-noise-protocol.md",
+  "parent": "results/research_suite_structure",
+  "parent_sha256": "3d7776e1662e18a0a847f52f64722127fd1f254f56def2dc26d06a6bc9263fc1",
+  "parent_validation": "results/research_suite_structure_validation",
+  "parent_validation_sha256": "a7a15c1af7f5dd0016946e1afd9dd64552d5b5401f7598b4a6685c82aa53d3ed",
+  "base_config": "configs/sequence_memory.json",
+  "cache": "outputs/act1-graphs",
+  "circuit_seeds": [701,702],
+  "cohorts": {
+    "discovery": [[9142,9242],[9143,9243],[9144,9244],[9145,9245],[9146,9246]],
+    "confirmation": [[440142,440242],[440143,440243],[440144,440244]]
+  },
+  "families": ["pi","random"],
+  "topologies": ["intact","degree","role"],
+  "calibrations": ["common","own"],
+  "noise_seeds": [488001,488002,488003],
+  "smoke_noise_seeds": [488901,488902,488903],
+  "relative_strengths": [0.0003,0.03,0.3],
+  "curve_prefix_gain": 2.0,
+  "curve_retention_gain": 0.1,
+  "bootstrap_seed": 488399,
+  "bootstrap_draws": 10000,
+  "max_seconds": 3600,
+  "verification_seconds": 3600,
+  "max_rss_bytes": 3221225472
+}
