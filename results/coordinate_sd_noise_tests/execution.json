@@ -1,0 +1,9 @@
+{
+  "command": "python -m pytest tests/test_coordinate_sd_noise.py tests/test_graph_relative_noise.py tests/test_feedback_noise.py tests/test_allocation_noise.py tests/test_structural_controls.py -q --junitxml=results/coordinate_sd_noise_tests/pytest.xml",
+  "tests": 32,
+  "passed": 32,
+  "executed_before_prereg_commit": true,
+  "tested_source_unchanged": true,
+  "base_commit": "65870cdaef8306cc9ec9173c3d29ef7697156f30",
+  "preregistered_commit": "621afe6d26ec88247edd9c583513b057a705476d"
+}

@@ -5,14 +5,14 @@ connectome structure**. Pi is a trained-sequence benchmark, not evidence of a li
 fly memorizing pi or a model predicting unseen pi digits.
 
 [한국어 설명](docs/README-ko.md) · [Research status / audit](docs/research-status.md) ·
-[Roadmap](docs/research-roadmap.md) · [Latest results](docs/graph-relative-noise-results.md)
+[Roadmap](docs/research-roadmap.md) · [Extension closeout](docs/additional-research-closeout.md)
 
 ## Current research
 
-The [graph-relative noise follow-up](docs/graph-relative-noise-results.md) is complete: its
-random/degree gap-attenuation criterion is **not confirmed**. It reused 96 partial-graph
-heads with fresh noise, reproduced every clean baseline and independently replayed
-all 1,824 paths. This tests a noise calibration effect, not intact wiring superiority.
+The [bounded observation-noise extension](docs/additional-research-closeout.md) is closed.
+The final [coordinate-SD calibration](docs/coordinate-sd-noise-results.md) criterion is **not confirmed**:
+96 reused partial heads, no new fits, all 2,688 paths independently replayed.
+This does not establish biological memory, whole-brain superiority or physiological validity.
 
 The bounded ACT I–V studies and the [three additional computational studies](docs/additional-research-results.md)
 are complete within their registered scopes. Completion does not mean every hypothesis succeeded.
@@ -25,14 +25,14 @@ are complete within their registered scopes. Completion does not mean every hypo
 
 All use 48 observed MBONs and a 482-parameter readout. These studies test noise allocation
 and partial wiring; they establish no whole-brain superiority or internal learning. Strong-noise recall remains weak.
-There are 8,640 certificate evaluations (6,336 distinct exposure settings), 1,144 actual evaluation
+These three studies contain 8,640 certificate evaluations (6,336 distinct exposure settings), 1,144 actual evaluation
 trajectories, 1,074 independent full replays and 100 new readout fits. Certificates stop at the first
 error; they are not full autonomous sequences. Physiological validation remains open.
 
 ## Reproduce the studies
 
 Use Python 3.12, a fresh environment and new output directories. Run from the repository root.
-For the latest frozen-head calibration, see the [exact commands](docs/graph-relative-noise-results.md#10-reproducibility).
+For the final coordinate-SD calibration, see the [exact commands](docs/coordinate-sd-noise-results.md#10-reproducibility).
 The commands below reproduce the preceding extensions.
 
 ```powershell
@@ -52,6 +52,7 @@ $env:PYTHONPATH = 'src'
 Keep the committed parent artifacts. The [protocol](docs/additional-research-completion-plan.md)
 defines seeds, budgets, stopping rules and replay subsets; individual reports contain raw tables,
 checkpoints and plotting commands. Distinguish **representation**, **decoding** and **internal learning**.
-Next single proposal: graph-relative noise calibration to separate signal scale from wiring effects;
-not registered or executed. [Data and attribution](data/README.md) · [Primary-source review](docs/research.md) ·
+The subsequent graph-relative and coordinate-SD calibrations are also complete.
+One future proposal is fresh model/data/graph seeds under coordinate-SD calibration;
+this fresh-model study is not registered or executed. [Data and attribution](data/README.md) · [Primary-source review](docs/research.md) ·
 [Historical reproduction](docs/historical-reproduction.md) · [License](LICENSE)

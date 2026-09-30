@@ -147,6 +147,8 @@ ACT V 종료와 과거 실패를 바꾸지 않는 별도 확장이다. 다음 �
 
 ## 추가 연구 2–4 종료 — 2026-09-30
 
+아래는 당시 기록이다. 당시 다음 제안은 후속 두 보정 연구로 완료했으며, 최신 상태는 마지막 종료 절을 따른다.
+
 사용자가 지정한 수열·구조 대조·상관 잡음의 세 계산 연구와 독립 검증을 모두 마쳤다.
 현재 상태는 [종합 결과](additional-research-results.md)를 따른다. 이전 브리핑의 미실행 표시는
 그 문서를 봉인한 당시 상태다. 수열 일반화는 확인했고 원래 배선의 구조 대조 우위는 확인하지 못했다.
@@ -156,6 +158,8 @@ ACT V 종료와 과거 실패를 바꾸지 않는 별도 확장이다. 다음 �
 
 
 ## 망별 상대 잡음 보정 완료 — 2026-09-30
+
+아래는 당시 기록이다. 당시 제안한 coordinate-SD 실험도 이제 완료했으며, 최신 상태는 마지막 종료 절을 따른다.
 
 **Graph-relative noise calibration is complete and independently verified.**
 [Results and all seed blocks](graph-relative-noise-results.md), [prospective protocol](graph-relative-noise-protocol.md),
@@ -169,3 +173,19 @@ The [previous three extensions](additional-research-results.md) and ACT I–V ne
 Next single proposal: coordinate-SD noise matching, with amplitude r times each
 coordinate's training SD, to remove the remaining median/RMS scale factor. It is
 not registered or executed. Physiology and whole-brain rewiring remain open.
+
+
+## 지정 관측 잡음 추가 연구 종료 — 2026-09-30
+
+**The bounded observation-noise extension is closed, including coordinate-SD calibration.**
+[Programme synthesis](additional-research-closeout.md), [last experiment](coordinate-sd-noise-results.md),
+[prospective protocol](coordinate-sd-noise-protocol.md), [closeout audit](../results/coordinate_sd_noise_closeout/audit.json).
+The final random/degree incremental-gap criterion is **not confirmed**.
+96 existing partial heads, zero new fits; all 2,688 actual paths independently replayed.
+2,592 labeled noisy settings include 288 common/own intact repeats (2,304 distinct fresh settings).
+Six extension studies comprise 5,992 actual evaluation paths and 5,726 independent full replays;
+these are execution counts, not distinct models. Earlier negative results remain unchanged.
+No execution or verification remains in this bounded extension. Physiology, new dynamics,
+whole-brain rewiring and fresh-model generalization remain separate unexecuted research.
+One future proposal is fresh model/data/graph seeds under coordinate-SD calibration;
+it is not registered or executed. No further calibration sweep is included in this closeout.

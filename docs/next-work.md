@@ -1,17 +1,17 @@
 # Prioritized work — updated 2026-09-30
 
-**Graph-relative noise calibration is complete and independently verified.**
-[Results and all seed blocks](graph-relative-noise-results.md), [prospective protocol](graph-relative-noise-protocol.md),
-[closeout audit](../results/graph_relative_noise_closeout/audit.json).
-The registered random/degree gap-attenuation criterion is **not confirmed**.
-96 existing partial-graph heads were reused with fresh noise; there were no new fits.
-All 1,824 actual paths were independently replayed. 1,728 labeled noisy evaluations
-contain 288 exact intact-null repeats, leaving 1,440 distinct fresh noisy settings.
-The 96 clean paths reproduce the parent models. These are not new model cohorts.
-The [previous three extensions](additional-research-results.md) and ACT I–V negatives remain unchanged.
-Next single proposal: coordinate-SD noise matching, with amplitude r times each
-coordinate's training SD, to remove the remaining median/RMS scale factor. It is
-not registered or executed. Physiology and whole-brain rewiring remain open.
+**The bounded observation-noise extension is closed, including coordinate-SD calibration.**
+[Programme synthesis](additional-research-closeout.md), [last experiment](coordinate-sd-noise-results.md),
+[prospective protocol](coordinate-sd-noise-protocol.md), [closeout audit](../results/coordinate_sd_noise_closeout/audit.json).
+The final random/degree incremental-gap criterion is **not confirmed**.
+96 existing partial heads, zero new fits; all 2,688 actual paths independently replayed.
+2,592 labeled noisy settings include 288 common/own intact repeats (2,304 distinct fresh settings).
+Six extension studies comprise 5,992 actual evaluation paths and 5,726 independent full replays;
+these are execution counts, not distinct models. Earlier negative results remain unchanged.
+No execution or verification remains in this bounded extension. Physiology, new dynamics,
+whole-brain rewiring and fresh-model generalization remain separate unexecuted research.
+One future proposal is fresh model/data/graph seeds under coordinate-SD calibration;
+it is not registered or executed. No further calibration sweep is included in this closeout.
 
 ## Historical handoff notes (superseded by the result above)
 

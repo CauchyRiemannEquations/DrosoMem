@@ -1,0 +1,39 @@
+{
+  "all_checks_pass": true,
+  "result_manifest_sha256": "4f19a45c15f881bc086761c5b49e056eda504eb6ef7424a66f74d3a4fda70ef9",
+  "validation_manifest_sha256": "ce849e2202c92cb976a403498b2f43cb4d2469a6d95025159b73bc66193b25e9",
+  "scale_summary": {
+    "degree": {
+      "n": 32,
+      "minimum": 1.7749998650091297,
+      "median": 2.596173123096436,
+      "maximum": 3.702972870561279,
+      "median_over_rms_min": 0.3673335644791325,
+      "median_over_rms_median": 0.4470744394820058,
+      "median_over_rms_max": 0.6503984574056214,
+      "zero_sd_coordinate_cells": 4
+    },
+    "intact": {
+      "n": 32,
+      "minimum": 1.0,
+      "median": 1.0,
+      "maximum": 1.0,
+      "median_over_rms_min": 0.5663399726485675,
+      "median_over_rms_median": 0.6982127745863294,
+      "median_over_rms_max": 0.90177178085119,
+      "zero_sd_coordinate_cells": 0
+    },
+    "role": {
+      "n": 32,
+      "minimum": 0.7273267080832259,
+      "median": 0.8908744169180514,
+      "maximum": 1.0845912556172437,
+      "median_over_rms_min": 0.5414192753289698,
+      "median_over_rms_median": 0.6682702981023273,
+      "median_over_rms_max": 0.7749085169315987,
+      "zero_sd_coordinate_cells": 0
+    }
+  },
+  "descriptive_only": true,
+  "primary_decision": false
+}

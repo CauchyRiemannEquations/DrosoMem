@@ -1,0 +1,88 @@
+{
+  "complete": true,
+  "evidence": {
+    "results/coordinate_sd_noise": "4f19a45c15f881bc086761c5b49e056eda504eb6ef7424a66f74d3a4fda70ef9",
+    "results/coordinate_sd_noise_validation": "ce849e2202c92cb976a403498b2f43cb4d2469a6d95025159b73bc66193b25e9",
+    "results/coordinate_sd_noise_smoke": "13d34c7948d7aa6813bb47a30fa99bc63efa879519762d02748e7e839fb6db4c",
+    "results/coordinate_sd_noise_smoke_validation": "96ce70e8e78c62240ee888b5cde0ec24bd39b712dd54b32a952091f5231b92a0",
+    "results/coordinate_sd_noise_analysis": "83ba22e52f9e4d0953278c53df885162f2aaf46d97dc7d8e8695590dc45073bd",
+    "results/coordinate_sd_noise_tests": "259b0af0498ab0cc6168e54623e9f472db2b6d7584c49785bed0a5124245b507"
+  },
+  "primary_confirmed": false,
+  "new_models": 0,
+  "new_fits": 0,
+  "actual_main_paths": 2688,
+  "independent_main_replays": 2688,
+  "unique_fresh_noisy_settings": 2304,
+  "repeated_intact_settings": 288,
+  "clean_parent_repeats": 96,
+  "all_sealed_historical_reports_unchanged": true,
+  "report_sha256": {
+    "docs/coordinate-sd-noise-protocol.md": "63de9fa2db63622710bf4a93aea1ea334a88e9a975ea1693a6a2a68df6959efc",
+    "docs/coordinate-sd-noise-results.md": "a1a00039702da4b18e6852de3f7607d002707bbdd592c0a43abf4a921f04e26a",
+    "docs/additional-research-closeout.md": "a7d47aa02a1c8126815b56954bf67fc07124371d7f5f555fd25159da0ecfcb6d"
+  },
+  "bounded_observation_extension_closed": true,
+  "programme_evidence": [
+    {
+      "stage": "feedback_noise",
+      "result_path": "results/feedback_noise_main",
+      "validation_path": "results/feedback_noise_validation",
+      "actual_paths": 336,
+      "independent_full_replays": 140,
+      "manifest_sha256": "54898d1627de353ee5ed0f32069e9fbb030a6e1043c2b95136d6297f89945823",
+      "validation_manifest_sha256": "44b26f8b1ccd9e79ee4931d109ad6c01e6380c0d2372c99881b933bc6923e849"
+    },
+    {
+      "stage": "research_suite_sequence",
+      "result_path": "results/research_suite_sequence",
+      "validation_path": "results/research_suite_sequence_validation",
+      "actual_paths": 420,
+      "independent_full_replays": 350,
+      "manifest_sha256": "31e80b95d93fcd7fede86c8e0995028545aa10212d755b0d921762a65ff7fbc2",
+      "validation_manifest_sha256": "6b88439446a13c904b2eb0ff717e4f8a8512405d011028095b2fac968a69463e"
+    },
+    {
+      "stage": "research_suite_structure",
+      "result_path": "results/research_suite_structure",
+      "validation_path": "results/research_suite_structure_validation",
+      "actual_paths": 672,
+      "independent_full_replays": 672,
+      "manifest_sha256": "3d7776e1662e18a0a847f52f64722127fd1f254f56def2dc26d06a6bc9263fc1",
+      "validation_manifest_sha256": "a7a15c1af7f5dd0016946e1afd9dd64552d5b5401f7598b4a6685c82aa53d3ed"
+    },
+    {
+      "stage": "research_suite_correlation",
+      "result_path": "results/research_suite_correlation",
+      "validation_path": "results/research_suite_correlation_validation",
+      "actual_paths": 52,
+      "independent_full_replays": 52,
+      "manifest_sha256": "c2b72af2c8e189ff64eca3800032862d8729b5c5dce10ce50ea454baaa1a2c7a",
+      "validation_manifest_sha256": "3f1c82cab7d8c09faccfc452fbb70b6bb8dfb09127a065e9c12cabc0c34f9a73"
+    },
+    {
+      "stage": "graph_relative_noise",
+      "result_path": "results/graph_relative_noise",
+      "validation_path": "results/graph_relative_noise_validation",
+      "actual_paths": 1824,
+      "independent_full_replays": 1824,
+      "manifest_sha256": "f73ed240c0625740e8d87b51e14b6471ea056aa7486653019f31bbd34e768f3a",
+      "validation_manifest_sha256": "5629cd7845c21c740726fffe4b03eedc4f1de23f77272565e52c2bba1ff32466"
+    },
+    {
+      "stage": "coordinate_sd_noise",
+      "result_path": "results/coordinate_sd_noise",
+      "validation_path": "results/coordinate_sd_noise_validation",
+      "actual_paths": 2688,
+      "independent_full_replays": 2688,
+      "manifest_sha256": "4f19a45c15f881bc086761c5b49e056eda504eb6ef7424a66f74d3a4fda70ef9",
+      "validation_manifest_sha256": "ce849e2202c92cb976a403498b2f43cb4d2469a6d95025159b73bc66193b25e9"
+    }
+  ],
+  "programme_actual_paths": 5992,
+  "programme_independent_full_replays": 5726,
+  "counts_are_executions_not_distinct_models": true,
+  "physiology": false,
+  "whole_brain_rewiring": false,
+  "next_experiment_executed": false
+}

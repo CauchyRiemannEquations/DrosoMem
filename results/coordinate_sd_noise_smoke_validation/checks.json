@@ -1,0 +1,19 @@
+{
+  "all_checks_pass": true,
+  "smoke": true,
+  "cases": 3,
+  "independent_full_paths": 84,
+  "independent_teacher_paths": 3,
+  "graph_audits": 2,
+  "exact_clean_replays": 3,
+  "certificates": 81,
+  "intact_null_path_pairs": 9,
+  "maximum_numeric_error": 2.55351295663786e-15,
+  "prior_files_unchanged": 31587,
+  "result_manifest_sha256": "13d34c7948d7aa6813bb47a30fa99bc63efa879519762d02748e7e839fb6db4c",
+  "budget": {
+    "seconds": 84.02209260000018,
+    "peak_sampled_rss_bytes": 164433920,
+    "sample_seconds": 0.05
+  }
+}
