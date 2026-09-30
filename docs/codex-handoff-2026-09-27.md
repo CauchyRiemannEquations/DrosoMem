@@ -1,4 +1,4 @@
-# Flying — 최신 Codex 인계 (2026-09-27 KST)
+# DrosoMem — 최신 Codex 인계 (2026-09-27 KST)
 
 ## 최신 범위 결정: 순수 연구 저장소
 

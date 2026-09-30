@@ -1,6 +1,6 @@
-# Flying research scope and working agreement
+# DrosoMem research scope and working agreement
 
-Flying is a **research-only project** studying sequence learning and autonomous
+DrosoMem is a **research-only project** studying sequence learning and autonomous
 recall in computational models constrained by fruit-fly brain connectivity.
 Pi is a controlled sequence-memory benchmark. Distinguish computational model
 results from biological claims without repeatedly explaining this to the user.

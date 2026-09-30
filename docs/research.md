@@ -42,7 +42,7 @@ adj = flywire.get_adjacency(
     sources=root_ids, targets=root_ids,
     materialization=783, dataset="public", batch_size=100,
 )
-# adj rows = pre, cols = post. Flying's recurrent W must be adj.T.
+# adj rows = pre, cols = post. DrosoMem's recurrent W must be adj.T.
 ```
 
 This is a documentation-verified example, not a claim that authenticated API

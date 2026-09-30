@@ -1,6 +1,8 @@
-# Flying
+# DrosoMem
 
-Flying studies sequential recall in **computational models using actual Drosophila
+*Sequence Memory in a Fly Connectome*
+
+DrosoMem studies sequential recall in **computational models using actual Drosophila
 connectome structure**. Pi is a trained-sequence benchmark, not evidence of a living
 fly memorizing pi or a model predicting unseen pi digits.
 

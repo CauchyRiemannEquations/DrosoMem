@@ -1,6 +1,6 @@
-# Flying research roadmap
+# DrosoMem research roadmap
 
-Flying studies computational models using actual Drosophila connectome structure.
+DrosoMem studies computational models using actual Drosophila connectome structure.
 It does not demonstrate a living fly memorizing pi. Always distinguish
 **representation** (past inputs affect state), **decoding** (a head extracts useful
 information), and **learning** (experience modifies recurrent connections).

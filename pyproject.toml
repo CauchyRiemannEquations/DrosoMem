@@ -2,7 +2,7 @@
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 [project]
-name = "flying-pi"
+name = "drosomem"
 version = "0.1.0"
 description = "Sequential memory in computational models using Drosophila connectome structure"
 requires-python = ">=3.10"
@@ -13,6 +13,7 @@ data = ["pyarrow>=14,<26"]
 test = ["pytest>=8,<10"]
 notebooks = ["jupyterlab>=4,<5"]
 [project.scripts]
+drosomem = "flying.training.train:main"
 flying = "flying.training.train:main"
 [tool.setuptools.packages.find]
 where = ["src"]

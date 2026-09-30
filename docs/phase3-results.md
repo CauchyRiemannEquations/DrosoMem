@@ -1,6 +1,6 @@
 # Phase 3 — KC input, MBON output
 
-Flying — Can a Fly Brain Memorize Pi?
+DrosoMem — Experiment 1: Can a Fly Brain Memorize Pi?
 
 This experiment uses annotated FlyWire connectivity, keeps recurrent weights fixed, and trains only an affine softmax readout. It does not simulate a living fly's learning or establish special mathematical ability.
 
