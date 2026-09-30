@@ -1,0 +1,17 @@
+{
+  "all_checks_pass": true,
+  "smoke": true,
+  "cases": 3,
+  "certificates": 126,
+  "actual_rollouts_checked": 21,
+  "independent_full_rollouts": 21,
+  "all_whole_rollouts_independently_replayed": true,
+  "maximum_numeric_error": 4.496403249731884e-15,
+  "prior_files_unchanged": 25042,
+  "result_manifest_sha256": "07600174e553ac85f4fd244e53a78ead3a6999bc87af0bdb385caefb27e14f2e",
+  "budget": {
+    "seconds": 53.101349700000355,
+    "peak_sampled_rss_bytes": 942034944,
+    "sample_seconds": 0.05
+  }
+}

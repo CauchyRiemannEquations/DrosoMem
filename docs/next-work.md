@@ -1,23 +1,19 @@
 # Prioritized work — updated 2026-09-30
 
-**Bounded ACT V is complete, including its three noise diagnostics.**
-[Final synthesis](act5-final-results.md), [completion plan](act5-completion-plan.md),
-[final audit](../results/act5_final_closeout/audit.json).
-The last [coordinate-allocation control](allocation-noise-results.md) evaluates
-1152 paired stateless counterfactuals in 48 archived models, with three fresh noise
-streams. All three graphs pass the registered teacher-decoding improvement gate;
-no new autonomous recall or learning occurred. Independent reconstruction covers
-every counterfactual; 22 targeted tests and 72 smoke evaluations pass.
-Earlier absolute/relative robustness failures and engineering failures are preserved.
+**ACT V remains closed; the first additional research extension is now complete.**
+[Briefing](additional-research-brief.md), [feedback results](feedback-noise-results.md),
+[completion audit](../results/feedback_noise_closeout/audit.json).
+Brain1 primary: confirmed. Fresh-noise prefix gains 3.700/6.167, retention gains
+10.986/16.283pp. All model cohorts are reused; fresh noise is not a new model holdout.
+Archived 1152 plus fresh 864 prefix certificates, 336 actual full paths, 140 independently
+replayed paths. Do not treat certificates as complete autonomous sequences.
 
-One future extension: **compare the same two observation-noise allocations under
-autonomous output feedback**. Keep the head fixed and match expected noise energy
-to test whether teacher-decoding improvement translates into longer exact recall.
-Predeclare seeds, doses, budget and criteria before executing it. This is proposed
-only, not registered or executed, and not a remaining condition of ACT V closeout.
-
-Physiological calibration, other dynamics/tasks and population-correlated noise
-remain open extensions. ACT I clean and ACT IV learning conclusions are unchanged.
+Next single proposed experiment: **the same observation-noise allocation contrast
+on fixed-seed random digit sequences**. Keep graph/head/observation/training budgets
+matched and preregister task/model seeds, dose grid, stopping rule and criteria.
+This tests whether the pi-specific observation translates to arbitrary sequences.
+Proposed only; not registered or executed. Structural and physiological extensions
+remain later candidates. No further experiment was automatically added this turn.
 
 ## Historical handoff notes (superseded by the result above)
 

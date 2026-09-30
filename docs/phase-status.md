@@ -1,6 +1,12 @@
 # Original research phases: completion audit — 2026-09-27
 
-Current update (2026-09-30): [ACT V final closeout](act5-final-results.md) completes
+Current extension update (2026-09-30): [autonomous feedback](feedback-noise-results.md)
+is complete after the ACT V closeout. Brain1 joint gate: confirmed.
+All 2016 prefix certificates and 336 actual paths are checked, with 140 independent full
+replays. The earlier ACT V completion boundary and negative findings stay unchanged.
+[Additional research briefing](additional-research-brief.md).
+
+Preceding update (2026-09-30): [ACT V final closeout](act5-final-results.md) completes
 the [predeclared boundary](act5-completion-plan.md): five perturbation families
 and three diagnostics. The final [coordinate-noise control](allocation-noise-results.md)
 passes the teacher-decoding improvement gate in all three graphs, including fresh

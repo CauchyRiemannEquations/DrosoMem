@@ -12,7 +12,21 @@ The review covered README, docs, configurations, runners, dynamics/readout/data/
 evaluation modules, test coverage and archived result/checkpoint schemas.
 This is not a new execution of every historical experiment.
 
-## Latest — final ACT V extension and closeout (2026-09-30)
+## Latest — autonomous-feedback extension completed (2026-09-30)
+
+[Results](feedback-noise-results.md), [briefing](additional-research-brief.md).
+The completed ACT V remains unchanged. Fresh seeds 418001–418003 are noise streams,
+not new model cohorts. The brain1 joint gate is confirmed: prefix gains
+3.700/6.167, retention gains 10.986/16.283pp in the two inherited model cohorts.
+Within-graph allocation improvement and whole-brain superiority are separate questions.
+1152 archived and 864 prospective certificates are independently checked. There are
+336 actual neural rollouts with full outputs and pre-error agreement; 140 full paths
+are independently replayed. 16 targeted tests and 21 smoke neural paths pass.
+Only the first fresh stream has post-error autonomous outcomes; no fabricated
+full sequences for the other certificates. [Audit](../results/feedback_noise_closeout/audit.json).
+Next one is the same contrast on seeded random digits; unregistered and unexecuted.
+
+## Preceding — final ACT V extension and closeout (2026-09-30)
 
 [Coordinate-noise allocation](allocation-noise-results.md) holds expected total
 squared observation noise fixed and reallocates by training SD. All 48 archived

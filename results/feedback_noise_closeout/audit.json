@@ -1,0 +1,60 @@
+{
+  "fixed_scope_complete": true,
+  "act5_closeout_unchanged": true,
+  "evidence": [
+    {
+      "root": "results/feedback_noise_tests",
+      "manifest_sha256": "4662a61eef21be8db4a25eec992df44f59f4636229b17a034ebf8b013807dba1",
+      "artifacts": 2
+    },
+    {
+      "root": "results/feedback_noise_smoke",
+      "manifest_sha256": "07600174e553ac85f4fd244e53a78ead3a6999bc87af0bdb385caefb27e14f2e",
+      "artifacts": 46
+    },
+    {
+      "root": "results/feedback_noise_smoke_validation",
+      "manifest_sha256": "976dc89acb79b418213786cd8c57c3b334c809d9597e12b149779045961c6604",
+      "artifacts": 1
+    },
+    {
+      "root": "results/feedback_noise_main",
+      "manifest_sha256": "54898d1627de353ee5ed0f32069e9fbb030a6e1043c2b95136d6297f89945823",
+      "artifacts": 636
+    },
+    {
+      "root": "results/feedback_noise_validation",
+      "manifest_sha256": "44b26f8b1ccd9e79ee4931d109ad6c01e6380c0d2372c99881b933bc6923e849",
+      "artifacts": 1
+    },
+    {
+      "root": "results/feedback_noise_analysis",
+      "manifest_sha256": "fb7ed944a359e3cd76f48f0ceed38f0651b637c1e5d11e4b1ceb4cc1d55d61bc",
+      "artifacts": 2
+    },
+    {
+      "root": "results/act5_final_closeout",
+      "manifest_sha256": "e5806b844b99d3f05fc3448de5a08d64583b7a1fc859f330aa24e5cfe5ed4391",
+      "artifacts": 1
+    }
+  ],
+  "primary_confirmed": true,
+  "confirmed": [
+    "legacy5",
+    "brain5",
+    "brain1"
+  ],
+  "archived_certificates": 1152,
+  "prospective_fresh_certificates": 864,
+  "actual_neural_trajectories": 336,
+  "independently_replayed_neural_trajectories": 140,
+  "all_whole_rollouts_independently_replayed": false,
+  "new_model_holdout": false,
+  "new_internal_learning": false,
+  "physiological_validation": false,
+  "report_sha256": "bc3ad25035901d0dc179f36bc8ea283b695348e531587d2bb98ae7cf033fbb21",
+  "research_brief_sha256": "cc26a9a5b841d83515b5025947b0fdb27b79da1519b8fe46b263d6b89d5dbcdc",
+  "prior_files_unchanged": 25091,
+  "targeted_tests": 16,
+  "next_experiment_executed": false
+}

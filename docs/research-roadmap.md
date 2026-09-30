@@ -7,15 +7,14 @@ information), and **learning** (experience modifies recurrent connections).
 
 ## Current position — 2026-09-30
 
-**The bounded ACT V programme is closed, including three noise diagnostics.**
-[Final synthesis](act5-final-results.md), [prospective completion boundary](act5-completion-plan.md),
-[final audit](../results/act5_final_closeout/audit.json).
-The last [matched-energy coordinate allocation](allocation-noise-results.md)
-improves teacher decoding in all three graphs, including fresh noise streams.
-Autonomous robustness and whole-brain superiority remain unconfirmed.
-The original/relative/observation results are preserved; physiological validation
-remains open. One future proposal is the same allocation contrast under autonomous
-feedback, not yet registered or executed and outside the completed scope.
+**ACT V is closed; one separate autonomous-feedback extension is complete.**
+[Additional research briefing](additional-research-brief.md), [results](feedback-noise-results.md),
+[audit](../results/feedback_noise_closeout/audit.json).
+Brain1 joint prefix/retention improvement: confirmed. This is not a new
+whole-brain superiority or internal-learning claim. The original ACT V evidence
+and [closeout](act5-final-results.md) remain preserved.
+Next one: the same observation-allocation contrast on seeded random digits;
+not registered or executed. Other candidates remain proposals in the briefing.
 
 | Axis | Completed scope | Remaining scope |
 |---|---|---|
@@ -26,7 +25,7 @@ feedback, not yet registered or executed and outside the completed scope.
 | ACT III-C | Four controls including exact per-neuron incoming-weight and role/signed-degree preservation;169 cases | Whole-brain, uniform-ensemble mixing and autonomous-recall extensions |
 | ACT III-D | Five preregistered pathways, matched removal controls, sensitivity map and fresh confirmation;273 cases | Minimal/unique subnetwork, motifs, whole-brain localization and separation of storage from readout access |
 | ACT IV | Earlier negative biological/local-rule results; IV-A A/B/C/D, observation diagnostics and scalar/local39-case experiment plus direction/noise/trajectory/margin diagnostics and explicit closeout completed | Unanswered extensions: physiological and whole-brain local learning, literal decoder-free biology; no claim of successful internal memory formation |
-| ACT V | Five perturbation curves, relative-noise calibration, instantaneous-observation and matched-energy coordinate allocation; frozen heads, declared fresh seeds/draws, final audit | Physiological calibration, other dynamics/tasks, correlated noise and autonomous translation of observation-allocation gains |
+| ACT V | Five perturbation curves, relative-noise calibration, instantaneous-observation and matched-energy coordinate allocation; frozen heads, declared fresh seeds/draws, final audit | Physiological calibration, other dynamics/tasks and correlated noise; autonomous translation now has a separate scoped extension |
 
 현재 두 686-neuron 부분 모델의 **III-A/B/C/D의 제한된 연구 단락을 종료**했다.
 완료는 고정한 실험·검증을 끝냈다는 뜻이다. 전체 뇌의 기억 위치나 내부 학습을
