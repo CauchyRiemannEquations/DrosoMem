@@ -1,0 +1,22 @@
+{
+  "study": "matched-expected-energy-observation-noise-allocation",
+  "protocol": "docs/allocation-noise-protocol.md",
+  "completion_plan": "docs/act5-completion-plan.md",
+  "source": "results/relative_noise_main",
+  "source_manifest_sha256": "cc7b8219ff64f72335a36316eaeebb1eab7c196902a245f3f1ac51a877e38af2",
+  "observation_source": "results/observation_noise_main",
+  "observation_manifest_sha256": "556733b5aa7aacedb2f0c59b5c4a26ea2e703987651026772d3a1c1e700af10e",
+  "validation_source": "results/observation_noise_validation",
+  "conditions": ["legacy5", "brain5", "brain1"],
+  "circuit_seeds": [701, 702],
+  "cohorts": {"discovery": [7142, 7143, 7144, 7145, 7146], "confirmation": [381142, 381143, 381144]},
+  "relative_strengths": [0.0003, 0.03, 0.3],
+  "archived_noise_seed": 372001,
+  "fresh_noise_seeds": [408001, 408002, 408003],
+  "accuracy_gain": 0.05,
+  "bootstrap_seed": 408399,
+  "bootstrap_draws": 10000,
+  "max_seconds": 1200,
+  "verification_seconds": 1200,
+  "max_rss_bytes": 2147483648
+}
