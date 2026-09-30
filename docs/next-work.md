@@ -1,20 +1,23 @@
-# Prioritized work — updated 2026-09-29
+# Prioritized work — updated 2026-09-30
 
-**The bounded ACT IV current-model programme is complete.**
-[Question-by-question closeout](act4-results.md), [last diagnostic](reward-margin-results.md).
-The analytic margin study includes all archival checkpoints plus three fresh paired
-seeds:74 checkpoints,2382 exact scalar trajectories and14292 reverse-adjoint mean
-checks. Margin endpoints are a separate diagnostic; old coding/accuracy criteria
-are unchanged. Completion does not imply biological success or general rule impossibility.
-Whole-brain learning,physiological validation,literal decoder-free biology and other
-candidate plasticity families remain explicit research extensions, not executed work.
+**Bounded ACT V five-family rate-model robustness programme complete.**
+[Results](act5-robustness-results.md), [completion audit](../results/act5_closeout/audit.json).
+30 archived ACT I heads plus18 fresh heads,48 paired cases,1056 actual trajectories;
+240 zero rows explicitly reuse clean output. Full metrics/hashes and a registered
+440-trajectory independent replay subset pass;6 fresh heads refit exactly.
+The first smoke's launcher-only RSS error is preserved in the engineering audit;
+main memory measurements include the complete worker process tree.
 
-Next single proposed experiment: **ACT V ongoing-noise robustness curves under
-matched observation budgets and frozen readouts in partial versus whole-brain models**.
-Reuse established checkpoints. Predeclare one small noise grid,paired seeds,evaluation
-lengths,resource budget and curve-level criteria before outcomes. Keep clean recall,
-teacher-forced accuracy and perturbed recall separate; do not mix this axis into the
-ACT I clean result or tune a new local learning rule. This study is unexecuted.
+Next single proposed experiment: **match ongoing-noise amplitude relative to clean MBON variation**.
+At absolute sigma .001 the partial model's median observed training SD ratio was
+about .27, versus1.3–2.3 in whole graphs. Keep frozen heads and all-neuron exposure;
+predeclare a common relative-dose grid using each model's clean48-MBON SD median.
+This scalar calibration tests an amplitude confound, not biological noise calibration.
+Do not substitute its outcomes for the completed absolute-noise experiment.
+Proposed only; not executed.
+
+Physiological calibration, other dynamics/tasks and population-correlated noise
+remain open extensions. ACT I clean and ACT IV learning conclusions are unchanged.
 
 ## Historical handoff notes (superseded by the result above)
 

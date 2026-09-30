@@ -1,0 +1,73 @@
+{
+  "bounded_rate_model_programme_complete": true,
+  "physiological_validation_complete": false,
+  "evidence": [
+    {
+      "study": "act5_smoke",
+      "manifest_sha256": "2d6ffb633719c0bf369aa379754ac340045a6c25a69670b1997abfdf6073b470",
+      "artifacts": 141
+    },
+    {
+      "study": "act5_smoke_validation",
+      "manifest_sha256": "e7f366b264a10eca12ea70898dee1c7a3e55e3336244db99a381027aa539d53b",
+      "artifacts": 1
+    },
+    {
+      "study": "act5_tests",
+      "manifest_sha256": "15083ddc3b0996ecc39d7ed235055b1ddfd11b5eec3773d1ff3a76696e7d1907",
+      "artifacts": 1
+    },
+    {
+      "study": "act5_resource_probe",
+      "manifest_sha256": "106b2e5de75876d52e2878386b9e8edd33174ab9ef93b99a0d583be78e816bf9",
+      "artifacts": 46
+    },
+    {
+      "study": "act5_main",
+      "manifest_sha256": "31bf94bd27006a4efe99cbbe202204dfb5d762184d3b2e8229e95db0dad1878d",
+      "artifacts": 2172
+    },
+    {
+      "study": "act5_validation",
+      "manifest_sha256": "c2e324fe8f52d4cbc3169390dd50330542d024d7c3b4105243ccf946b5874ed3",
+      "artifacts": 1
+    },
+    {
+      "study": "act5_analysis",
+      "manifest_sha256": "f6e8720731f77c9bbcc4d919833f7df71f7a6fea9014f9a493d4da435d1b1b5e",
+      "artifacts": 2
+    }
+  ],
+  "coverage": {
+    "pulse": "executed, independently checked within declared replay scope",
+    "ongoing": "executed, independently checked within declared replay scope",
+    "edge_dropout": "executed, independently checked within declared replay scope",
+    "neuron_dropout": "executed, independently checked within declared replay scope",
+    "weight_noise": "executed, independently checked within declared replay scope"
+  },
+  "paired_teacher_autonomous_first_error_checks": 288,
+  "primary_confirmed": false,
+  "confirmed_comparisons": [],
+  "confirmed_absolute_robustness": [],
+  "report_sha256": "ba48edb4a4d0ef90a0dfeae96de3fef3d620c74386bbdac8a229bd43ffd944d8",
+  "historical_robustness": {
+    "models": 72,
+    "full_replays": 16128,
+    "manifest_sha256": "f01a3ea5c32274cf5af1a4c8163c5beebee7797f5abad45eef49f0d8470d1b7d"
+  },
+  "engineering_discrepancy": "Initial smoke RSS measured launcher only; preserved and excluded. Corrected process-tree measurements validated before main.",
+  "unresolved_extensions": [
+    "Physiological parameter/noise calibration",
+    "Other dynamics and task distributions",
+    "Correlated/population-specific perturbations",
+    "Perturbation-trained readouts"
+  ],
+  "source_graph_cache": {
+    "brain1.npz": "160624b0ddc0261f7dc06c8012aa5675e4ffc20706edeb989ab43afc0c409b27",
+    "brain5.npz": "5225dff229b94b40e31ef81af4755ebe8fd09883b340ccd2bebbbdd4ac60b572",
+    "coverage.csv": "261e2e78afc00dce14ce3e4ee410450c7c3d65a9e970a620522dc2eb62f1d0cc",
+    "left5.npz": "f3ddb6f48ed7547fd52bfd2648d122875877f56367058554510b4397f2c3cac2",
+    "nodes.npz": "e9827b294f19778508c21ed8effd22712ece0cbcb7fca98f70c1c141f82775f3"
+  },
+  "model_assumptions_sha256": "05ad73057ee9d45a3349d8278f1ca892b9a3dd63938b63d07428cdbbe56296bc"
+}

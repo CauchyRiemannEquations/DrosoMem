@@ -99,7 +99,7 @@ KC48개에서는 정보 접근성이 유지됐다. 두 cohort의 사전 기준�
 없다는 증거로 해석하지 않는다. 이어 [점수 차이 미분 진단](reward-margin-results.md)도
 새 paired seed3개를 포함해 완료했다. [ACT IV 종료 감사](act4-results.md)는 현재
 부분 모델의 지정 실험을 닫되,생리학적·전체 뇌 학습과 literal decoder-free biology는
-미해결 확장으로 남긴다. 다음 하나는 ACT V의 동일 관측·고정 출력층 noise curve다.
+미해결 확장으로 남긴다. 해당 ACT V 비교도 이후 완료했으며 아래 최신 기록을 따른다.
 생물학적 학습·전체 뇌·자율 회상 개선은 아직 입증하지 않았다.
 ACT I→II→III→IV 순서를 지키며 강건성은 ACT V의 독립 축으로 유지한다.
 [로드맵](research-roadmap.md).
@@ -114,3 +114,12 @@ ACT I→II→III→IV 순서를 지키며 강건성은 ACT V의 독립 축으로
 manifest와 체크섬은 변경하지 않는다. 당시 소스와 프로토콜의 정확한 바이트를
 검사하는 재현은 기록된 Git revision에서 수행한다. 자세한 절차는
 [과거 결과 재현](historical-reproduction.md)을 따른다.
+
+
+## ACT V 현재 연구 단락 종료 — 2026-09-30
+
+[다섯 교란 곡선](act5-robustness-results.md)은 동일48 MBON의 부분망/전체망,
+기존30개 head와 새18개 head를 모두 실행하고 독립 검증까지 마쳤다.
+강건성 판정과 생물학적 타당성은 구분한다. 다음 하나는 고정 출력층에서
+관측 상태의 변동 대비 상대 잡음을 맞추는 비교로, 신호 진폭 차이의 영향을 검사한다.
+아직 실행하지 않았으며 ACT I/IV의 이전 결론은 보존한다.

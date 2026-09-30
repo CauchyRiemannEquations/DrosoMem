@@ -12,7 +12,19 @@ The review covered README, docs, configurations, runners, dynamics/readout/data/
 evaluation modules, test coverage and archived result/checkpoint schemas.
 This is not a new execution of every historical experiment.
 
-## Latest — bounded ACT IV current-model programme closed (2026-09-29)
+## Latest — bounded ACT V robustness programme closed (2026-09-30)
+
+[Five-family results](act5-robustness-results.md), [completion audit](../results/act5_closeout/audit.json).
+48 cases,1056 evaluation trajectories and unconditional fresh-seed confirmation.
+Full per-seed metrics/hashes,440 independently replayed trajectories and6 exact
+fresh refits pass. Primary ongoing-noise whole-brain advantage confirmed: `False`.
+The five curves cover pulse/ongoing state noise,edge/neuron dropout and multiplicative
+weight noise. A Windows launcher-only memory measurement defect in the first smoke
+was corrected before main; original artifacts remain untouched.
+Physiological validity is not established. Next proposal: a relative-noise comparison
+with frozen heads to test the observed-amplitude confound. Preregister before execution.
+
+## Preceding — bounded ACT IV current-model programme closed (2026-09-29)
 
 [Closeout](act4-results.md) audits seven study roots by research question and
 separates completed experiments from unresolved biology. The final

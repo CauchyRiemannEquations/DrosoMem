@@ -1,0 +1,2173 @@
+{
+  "statistics": {
+    "discovery/legacy5/pulse": {
+      "pi_memory_score": {
+        "n": 5,
+        "mean": 23.566666666666663,
+        "median": 23.833333333333332,
+        "variance": 1.7027777777777768,
+        "bootstrap95": [
+          22.53333333333334,
+          24.566666666666666
+        ],
+        "paired_dz": 18.060059309183444,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.6735035103785103,
+        "median": 0.6714285714285714,
+        "variance": 3.5517497220508235e-05,
+        "bootstrap95": [
+          0.6693284493284493,
+          0.6786309523809523
+        ],
+        "paired_dz": 113.01047129274583,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "discovery/brain5/pulse": {
+      "pi_memory_score": {
+        "n": 5,
+        "mean": 10.6,
+        "median": 11.166666666666668,
+        "variance": 3.397222222222224,
+        "bootstrap95": [
+          8.966666666666665,
+          11.566666666666666
+        ],
+        "paired_dz": 5.751006879740784,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.3333333333333333,
+        "median": 0.3333333333333333,
+        "variance": 0.0,
+        "bootstrap95": [
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "paired_dz": null,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "discovery/brain1/pulse": {
+      "pi_memory_score": {
+        "n": 5,
+        "mean": 11.4,
+        "median": 11.5,
+        "variance": 0.11944444444444492,
+        "bootstrap95": [
+          11.099999999999998,
+          11.633333333333333
+        ],
+        "paired_dz": 32.985409036456126,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.334375,
+        "median": 0.3333333333333333,
+        "variance": 5.425347222222184e-06,
+        "bootstrap95": [
+          0.3333333333333333,
+          0.3364583333333333
+        ],
+        "paired_dz": 143.555564155487,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "discovery/legacy5/ongoing": {
+      "pi_memory_score": {
+        "n": 5,
+        "mean": 12.9,
+        "median": 13.166666666666668,
+        "variance": 0.20277777777777814,
+        "bootstrap95": [
+          12.533333333333331,
+          13.233333333333334
+        ],
+        "paired_dz": 28.647025234647298,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.3692208811616706,
+        "median": 0.3727678571428571,
+        "variance": 0.00017585139959719537,
+        "bootstrap95": [
+          0.35807710110341695,
+          0.37893391330891324
+        ],
+        "paired_dz": 27.842827698113382,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "discovery/brain5/ongoing": {
+      "pi_memory_score": {
+        "n": 5,
+        "mean": 3.1333333333333333,
+        "median": 2.5,
+        "variance": 3.0888888888888895,
+        "bootstrap95": [
+          1.9666666666666663,
+          4.6
+        ],
+        "paired_dz": 1.7828116182555716,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.09954955815249933,
+        "median": 0.10243055555555555,
+        "variance": 0.0026205719863966045,
+        "bootstrap95": [
+          0.06546936546936546,
+          0.14234408157202275
+        ],
+        "paired_dz": 1.9446492913454685,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "discovery/brain1/ongoing": {
+      "pi_memory_score": {
+        "n": 5,
+        "mean": 5.133333333333335,
+        "median": 3.8333333333333335,
+        "variance": 5.075000000000001,
+        "bootstrap95": [
+          3.4333333333333336,
+          6.833333333333334
+        ],
+        "paired_dz": 2.27867004297484,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.1482428451178451,
+        "median": 0.10952380952380952,
+        "variance": 0.0038008447971311344,
+        "bootstrap95": [
+          0.1025901875901876,
+          0.19756944444444444
+        ],
+        "paired_dz": 2.40454923187935,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "discovery/legacy5/edge_dropout": {
+      "pi_memory_score": {
+        "n": 5,
+        "mean": 8.133333333333335,
+        "median": 10.166666666666668,
+        "variance": 13.54722222222222,
+        "bootstrap95": [
+          5.033333333333333,
+          10.7
+        ],
+        "paired_dz": 2.2097515347651107,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.24008128537733803,
+        "median": 0.312531328320802,
+        "variance": 0.012291830612558658,
+        "bootstrap95": [
+          0.14128175493307074,
+          0.3146491228070175
+        ],
+        "paired_dz": 2.1654592932519408,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "discovery/brain5/edge_dropout": {
+      "pi_memory_score": {
+        "n": 5,
+        "mean": 5.933333333333333,
+        "median": 6.5,
+        "variance": 7.508333333333335,
+        "bootstrap95": [
+          3.4666666666666663,
+          7.7
+        ],
+        "paired_dz": 2.1653443701207125,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.18486457236457238,
+        "median": 0.2009282009282009,
+        "variance": 0.0026883803551243732,
+        "bootstrap95": [
+          0.1418296137046137,
+          0.22125346125346126
+        ],
+        "paired_dz": 3.5654006054033793,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "discovery/brain1/edge_dropout": {
+      "pi_memory_score": {
+        "n": 5,
+        "mean": 5.5,
+        "median": 5.833333333333334,
+        "variance": 4.833333333333332,
+        "bootstrap95": [
+          3.5333333333333337,
+          7.033333333333334
+        ],
+        "paired_dz": 2.5017235438103813,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.16209317845347257,
+        "median": 0.18229166666666669,
+        "variance": 0.003967108475799307,
+        "bootstrap95": [
+          0.10957207207207209,
+          0.20450216450216452
+        ],
+        "paired_dz": 2.5735209048028134,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "discovery/legacy5/neuron_dropout": {
+      "pi_memory_score": {
+        "n": 5,
+        "mean": 14.633333333333335,
+        "median": 13.5,
+        "variance": 19.158333333333346,
+        "bootstrap95": [
+          11.466666666666667,
+          18.2
+        ],
+        "paired_dz": 3.34321574072826,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.42407268170426066,
+        "median": 0.40625,
+        "variance": 0.012252840104402222,
+        "bootstrap95": [
+          0.3421052631578948,
+          0.5156782581453635
+        ],
+        "paired_dz": 3.8310861094259816,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "discovery/brain5/neuron_dropout": {
+      "pi_memory_score": {
+        "n": 5,
+        "mean": 12.933333333333332,
+        "median": 12.666666666666666,
+        "variance": 16.286111111111108,
+        "bootstrap95": [
+          9.933333333333334,
+          16.133333333333333
+        ],
+        "paired_dz": 3.204806214993494,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.37828526865291573,
+        "median": 0.3619047619047619,
+        "variance": 0.013595149794802426,
+        "bootstrap95": [
+          0.29702380952380947,
+          0.4753825014854427
+        ],
+        "paired_dz": 3.244347989649076,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "discovery/brain1/neuron_dropout": {
+      "pi_memory_score": {
+        "n": 5,
+        "mean": 8.833333333333334,
+        "median": 7.666666666666666,
+        "variance": 35.59722222222222,
+        "bootstrap95": [
+          4.999999999999999,
+          14.066666666666666
+        ],
+        "paired_dz": 1.4805277923409188,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.2579351553616259,
+        "median": 0.23958333333333331,
+        "variance": 0.029108262499142678,
+        "bootstrap95": [
+          0.14645050895050896,
+          0.4043841779135896
+        ],
+        "paired_dz": 1.5118280439683676,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "discovery/legacy5/weight_noise": {
+      "pi_memory_score": {
+        "n": 5,
+        "mean": 18.0,
+        "median": 20.166666666666664,
+        "variance": 10.305555555555555,
+        "bootstrap95": [
+          15.5,
+          20.366666666666667
+        ],
+        "paired_dz": 5.607080621832583,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.5148614324272218,
+        "median": 0.5526315789473684,
+        "variance": 0.010434655033359897,
+        "bootstrap95": [
+          0.43634398496240595,
+          0.5933788798920376
+        ],
+        "paired_dz": 5.0402411140906676,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "discovery/brain5/weight_noise": {
+      "pi_memory_score": {
+        "n": 5,
+        "mean": 12.966666666666665,
+        "median": 13.0,
+        "variance": 9.17222222222223,
+        "bootstrap95": [
+          10.5,
+          15.466666666666669
+        ],
+        "paired_dz": 4.2814518332127856,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.4128995037818567,
+        "median": 0.39747023809523807,
+        "variance": 0.002781062146403932,
+        "bootstrap95": [
+          0.375293055182761,
+          0.45719001994737296
+        ],
+        "paired_dz": 7.829589880956584,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "discovery/brain1/weight_noise": {
+      "pi_memory_score": {
+        "n": 5,
+        "mean": 19.633333333333336,
+        "median": 21.333333333333336,
+        "variance": 25.866666666666678,
+        "bootstrap95": [
+          15.666666666666668,
+          23.6
+        ],
+        "paired_dz": 3.8603244437477744,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 5,
+        "mean": 0.5736338324573619,
+        "median": 0.625974025974026,
+        "variance": 0.019326012225392448,
+        "bootstrap95": [
+          0.46590090090090086,
+          0.6808228597199186
+        ],
+        "paired_dz": 4.126326915888309,
+        "wins": 5,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "confirmation/legacy5/pulse": {
+      "pi_memory_score": {
+        "n": 3,
+        "mean": 28.555555555555557,
+        "median": 27.833333333333332,
+        "variance": 13.231481481481476,
+        "bootstrap95": [
+          25.333333333333332,
+          32.5
+        ],
+        "paired_dz": 7.850302233658614,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.7261904761904762,
+        "median": 0.6746031746031745,
+        "variance": 0.00861363063744016,
+        "bootstrap95": [
+          0.6706349206349206,
+          0.8333333333333334
+        ],
+        "paired_dz": 7.824514984004934,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "confirmation/brain5/pulse": {
+      "pi_memory_score": {
+        "n": 3,
+        "mean": 9.555555555555555,
+        "median": 11.166666666666666,
+        "variance": 13.620370370370368,
+        "bootstrap95": [
+          5.333333333333333,
+          12.166666666666666
+        ],
+        "paired_dz": 2.5891754661243493,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.27777777777777773,
+        "median": 0.3333333333333333,
+        "variance": 0.00925925925925926,
+        "bootstrap95": [
+          0.16666666666666666,
+          0.3333333333333333
+        ],
+        "paired_dz": 2.886751345948128,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "confirmation/brain1/pulse": {
+      "pi_memory_score": {
+        "n": 3,
+        "mean": 10.333333333333334,
+        "median": 10.666666666666666,
+        "variance": 9.08333333333333,
+        "bootstrap95": [
+          7.166666666666667,
+          13.166666666666666
+        ],
+        "paired_dz": 3.428607834377853,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.38888888888888884,
+        "median": 0.3333333333333333,
+        "variance": 0.009259259259259262,
+        "bootstrap95": [
+          0.3333333333333333,
+          0.5
+        ],
+        "paired_dz": 4.041451884327379,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "confirmation/legacy5/ongoing": {
+      "pi_memory_score": {
+        "n": 3,
+        "mean": 15.333333333333334,
+        "median": 14.833333333333332,
+        "variance": 1.7500000000000002,
+        "bootstrap95": [
+          14.333333333333334,
+          16.833333333333332
+        ],
+        "paired_dz": 11.590910505616302,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.39176316005584294,
+        "median": 0.38550135501355015,
+        "variance": 0.00015974250517138223,
+        "bootstrap95": [
+          0.38347763347763353,
+          0.4063104916763452
+        ],
+        "paired_dz": 30.996549306040208,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "confirmation/brain5/ongoing": {
+      "pi_memory_score": {
+        "n": 3,
+        "mean": 1.3888888888888886,
+        "median": 1.3333333333333333,
+        "variance": 0.3425925925925926,
+        "bootstrap95": [
+          0.8333333333333334,
+          2.0
+        ],
+        "paired_dz": 2.372894989381247,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.04034826649958229,
+        "median": 0.03898809523809524,
+        "variance": 0.00022598829058208375,
+        "bootstrap95": [
+          0.026041666666666668,
+          0.056015037593984955
+        ],
+        "paired_dz": 2.683996295851768,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "confirmation/brain1/ongoing": {
+      "pi_memory_score": {
+        "n": 3,
+        "mean": 3.722222222222222,
+        "median": 2.0,
+        "variance": 16.287037037037027,
+        "bootstrap95": [
+          0.8333333333333334,
+          8.333333333333332
+        ],
+        "paired_dz": 0.9223192130267109,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.18212844254510918,
+        "median": 0.1898148148148148,
+        "variance": 0.0067898787897081436,
+        "bootstrap95": [
+          0.09615384615384615,
+          0.26041666666666663
+        ],
+        "paired_dz": 2.2102772980478855,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "confirmation/legacy5/edge_dropout": {
+      "pi_memory_score": {
+        "n": 3,
+        "mean": 8.722222222222221,
+        "median": 7.666666666666666,
+        "variance": 17.509259259259256,
+        "bootstrap95": [
+          5.166666666666666,
+          13.333333333333334
+        ],
+        "paired_dz": 2.0844585362602754,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.22708550858957363,
+        "median": 0.22366522366522368,
+        "variance": 0.008482381338831434,
+        "bootstrap95": [
+          0.13674345076784103,
+          0.3208478513356562
+        ],
+        "paired_dz": 2.4656448668787707,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "confirmation/brain5/edge_dropout": {
+      "pi_memory_score": {
+        "n": 3,
+        "mean": 7.444444444444444,
+        "median": 8.5,
+        "variance": 30.175925925925917,
+        "bootstrap95": [
+          1.5,
+          12.333333333333334
+        ],
+        "paired_dz": 1.3551956244490033,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.22171743697478993,
+        "median": 0.2542892156862745,
+        "variance": 0.02722612766001008,
+        "bootstrap95": [
+          0.04285714285714285,
+          0.3680059523809523
+        ],
+        "paired_dz": 1.3437142142256464,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "confirmation/brain1/edge_dropout": {
+      "pi_memory_score": {
+        "n": 3,
+        "mean": 6.055555555555556,
+        "median": 6.833333333333333,
+        "variance": 6.7037037037037015,
+        "bootstrap95": [
+          3.1666666666666665,
+          8.166666666666666
+        ],
+        "paired_dz": 2.338818861054667,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.40905872676706007,
+        "median": 0.41773504273504275,
+        "variance": 0.022410367393259332,
+        "bootstrap95": [
+          0.2552083333333333,
+          0.5542328042328042
+        ],
+        "paired_dz": 2.7325063133965757,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "confirmation/legacy5/neuron_dropout": {
+      "pi_memory_score": {
+        "n": 3,
+        "mean": 11.388888888888891,
+        "median": 11.666666666666668,
+        "variance": 0.3981481481481491,
+        "bootstrap95": [
+          10.666666666666666,
+          11.833333333333334
+        ],
+        "paired_dz": 18.04924357967527,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.2980707188024261,
+        "median": 0.2981029810298103,
+        "variance": 0.0002383164398168687,
+        "bootstrap95": [
+          0.28261711188540456,
+          0.31349206349206343
+        ],
+        "paired_dz": 19.3082233399706,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "confirmation/brain5/neuron_dropout": {
+      "pi_memory_score": {
+        "n": 3,
+        "mean": 10.888888888888891,
+        "median": 10.666666666666668,
+        "variance": 2.8148148148148118,
+        "bootstrap95": [
+          9.333333333333334,
+          12.666666666666666
+        ],
+        "paired_dz": 6.490208549618719,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.310578683227677,
+        "median": 0.32567401960784315,
+        "variance": 0.0013056334535329328,
+        "bootstrap95": [
+          0.269345238095238,
+          0.33671679197994986
+        ],
+        "paired_dz": 8.595299412736042,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "confirmation/brain1/neuron_dropout": {
+      "pi_memory_score": {
+        "n": 3,
+        "mean": 8.5,
+        "median": 8.5,
+        "variance": 0.11111111111111033,
+        "bootstrap95": [
+          8.166666666666668,
+          8.833333333333332
+        ],
+        "paired_dz": 25.500000000000092,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.44676985822819154,
+        "median": 0.3994708994708995,
+        "variance": 0.04361861434046637,
+        "bootstrap95": [
+          0.265625,
+          0.6752136752136751
+        ],
+        "paired_dz": 2.1391829715918553,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "confirmation/legacy5/weight_noise": {
+      "pi_memory_score": {
+        "n": 3,
+        "mean": 18.61111111111111,
+        "median": 17.166666666666664,
+        "variance": 7.009259259259266,
+        "bootstrap95": [
+          17.0,
+          21.666666666666668
+        ],
+        "paired_dz": 7.029691073084438,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.4760364973779608,
+        "median": 0.45670995670995673,
+        "variance": 0.0017398762918220906,
+        "bootstrap95": [
+          0.44749322493224925,
+          0.5239063104916764
+        ],
+        "paired_dz": 11.41250723576887,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "confirmation/brain5/weight_noise": {
+      "pi_memory_score": {
+        "n": 3,
+        "mean": 13.888888888888888,
+        "median": 13.666666666666666,
+        "variance": 1.0370370370370372,
+        "bootstrap95": [
+          13.0,
+          15.0
+        ],
+        "paired_dz": 13.638618139749521,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.4050804093567251,
+        "median": 0.3870535714285714,
+        "variance": 0.00176715752691697,
+        "bootstrap95": [
+          0.375062656641604,
+          0.453125
+        ],
+        "paired_dz": 9.636151242217622,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "confirmation/brain1/weight_noise": {
+      "pi_memory_score": {
+        "n": 3,
+        "mean": 11.888888888888888,
+        "median": 12.333333333333334,
+        "variance": 10.175925925925922,
+        "bootstrap95": [
+          8.5,
+          14.833333333333334
+        ],
+        "paired_dz": 3.726956293685771,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "retention": {
+        "n": 3,
+        "mean": 0.5689420533170533,
+        "median": 0.517094017094017,
+        "variance": 0.01926226343120757,
+        "bootstrap95": [
+          0.4635416666666667,
+          0.7261904761904763
+        ],
+        "paired_dz": 4.099344120514131,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    }
+  },
+  "comparisons": {
+    "discovery/brain1-legacy5/pulse": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 5,
+          "mean": -12.166666666666668,
+          "median": -12.5,
+          "variance": 1.3472222222222203,
+          "bootstrap95": [
+            -12.966666666666665,
+            -11.200000000000001
+          ],
+          "paired_dz": -10.482189115818985,
+          "wins": 0,
+          "ties": 0,
+          "losses": 5
+        },
+        "retention": {
+          "n": 5,
+          "mean": -0.33912851037851033,
+          "median": -0.3376488095238095,
+          "variance": 3.394553764073625e-05,
+          "bootstrap95": [
+            -0.3444345238095239,
+            -0.33514880952380943
+          ],
+          "paired_dz": -58.206697131278574,
+          "wins": 0,
+          "ties": 0,
+          "losses": 5
+        }
+      },
+      "passed": false
+    },
+    "discovery/brain5-legacy5/pulse": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 5,
+          "mean": -12.966666666666665,
+          "median": -13.333333333333332,
+          "variance": 5.477777777777777,
+          "bootstrap95": [
+            -14.766666666666666,
+            -11.26666666666667
+          ],
+          "paired_dz": -5.540208913687482,
+          "wins": 0,
+          "ties": 0,
+          "losses": 5
+        },
+        "retention": {
+          "n": 5,
+          "mean": -0.34017017704517705,
+          "median": -0.33809523809523806,
+          "variance": 3.5517497220508235e-05,
+          "bootstrap95": [
+            -0.345297619047619,
+            -0.33599511599511594
+          ],
+          "paired_dz": -57.07882948673471,
+          "wins": 0,
+          "ties": 0,
+          "losses": 5
+        }
+      },
+      "passed": false
+    },
+    "discovery/brain1-brain5/pulse": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 5,
+          "mean": 0.7999999999999995,
+          "median": 0.3333333333333339,
+          "variance": 3.4638888888888895,
+          "bootstrap95": [
+            -0.33333333333333465,
+            2.499999999999999
+          ],
+          "paired_dz": 0.4298411709426744,
+          "wins": 3,
+          "ties": 1,
+          "losses": 1
+        },
+        "retention": {
+          "n": 5,
+          "mean": 0.001041666666666663,
+          "median": 0.0,
+          "variance": 5.425347222222184e-06,
+          "bootstrap95": [
+            0.0,
+            0.003124999999999989
+          ],
+          "paired_dz": 0.4472135954999579,
+          "wins": 1,
+          "ties": 4,
+          "losses": 0
+        }
+      },
+      "passed": false
+    },
+    "discovery/brain1-legacy5/ongoing": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 5,
+          "mean": -7.7666666666666675,
+          "median": -9.166666666666666,
+          "variance": 5.744444444444445,
+          "bootstrap95": [
+            -9.566666666666666,
+            -5.933333333333333
+          ],
+          "paired_dz": -3.240489730641144,
+          "wins": 0,
+          "ties": 0,
+          "losses": 5
+        },
+        "retention": {
+          "n": 5,
+          "mean": -0.22097803604382546,
+          "median": -0.24170900223531805,
+          "variance": 0.003739332845130009,
+          "bootstrap95": [
+            -0.26697719283245597,
+            -0.17075918964076858
+          ],
+          "paired_dz": -3.613699597185528,
+          "wins": 0,
+          "ties": 0,
+          "losses": 5
+        }
+      },
+      "passed": false
+    },
+    "discovery/brain5-legacy5/ongoing": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 5,
+          "mean": -9.766666666666666,
+          "median": -10.666666666666668,
+          "variance": 4.022222222222225,
+          "bootstrap95": [
+            -10.999999999999998,
+            -7.966666666666666
+          ],
+          "paired_dz": -4.869824778178957,
+          "wins": 0,
+          "ties": 0,
+          "losses": 5
+        },
+        "retention": {
+          "n": 5,
+          "mean": -0.2696713230091713,
+          "median": -0.27310363247863245,
+          "variance": 0.0020084775575239452,
+          "bootstrap95": [
+            -0.30618801431301423,
+            -0.23308073870573867
+          ],
+          "paired_dz": -6.0172945937535465,
+          "wins": 0,
+          "ties": 0,
+          "losses": 5
+        }
+      },
+      "passed": false
+    },
+    "discovery/brain1-brain5/ongoing": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 5,
+          "mean": 2.0000000000000004,
+          "median": 1.333333333333334,
+          "variance": 1.7638888888888897,
+          "bootstrap95": [
+            1.2666666666666668,
+            3.2000000000000006
+          ],
+          "paired_dz": 1.5058939323315805,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0
+        },
+        "retention": {
+          "n": 5,
+          "mean": 0.04869328696534579,
+          "median": 0.0380952380952381,
+          "variance": 0.0023479765719487374,
+          "bootstrap95": [
+            0.014398058773058775,
+            0.08940624734742382
+          ],
+          "paired_dz": 1.0048985331975682,
+          "wins": 4,
+          "ties": 0,
+          "losses": 1
+        }
+      },
+      "passed": false
+    },
+    "discovery/brain1-legacy5/edge_dropout": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 5,
+          "mean": -2.6333333333333337,
+          "median": -4.5,
+          "variance": 29.63055555555555,
+          "bootstrap95": [
+            -6.5666666666666655,
+            2.1
+          ],
+          "paired_dz": -0.48376666540458346,
+          "wins": 1,
+          "ties": 0,
+          "losses": 4
+        },
+        "retention": {
+          "n": 5,
+          "mean": -0.07798810692386544,
+          "median": -0.13035714285714284,
+          "variance": 0.02630589523843535,
+          "bootstrap95": [
+            -0.19370856980377105,
+            0.06322040956909376
+          ],
+          "paired_dz": -0.4808413804816645,
+          "wins": 1,
+          "ties": 0,
+          "losses": 4
+        }
+      },
+      "passed": false
+    },
+    "discovery/brain5-legacy5/edge_dropout": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 5,
+          "mean": -2.2,
+          "median": -3.666666666666668,
+          "variance": 21.92222222222222,
+          "bootstrap95": [
+            -4.866666666666666,
+            1.9333333333333336
+          ],
+          "paired_dz": -0.46987289478423244,
+          "wins": 1,
+          "ties": 0,
+          "losses": 4
+        },
+        "retention": {
+          "n": 5,
+          "mean": -0.05521671301276567,
+          "median": -0.11172060859560862,
+          "variance": 0.017087118646247228,
+          "bootstrap95": [
+            -0.12319720138799088,
+            0.06108603838866995
+          ],
+          "paired_dz": -0.4224118883945258,
+          "wins": 1,
+          "ties": 0,
+          "losses": 4
+        }
+      },
+      "passed": false
+    },
+    "discovery/brain1-brain5/edge_dropout": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 5,
+          "mean": -0.433333333333333,
+          "median": -0.6666666666666661,
+          "variance": 11.813888888888888,
+          "bootstrap95": [
+            -2.9666666666666663,
+            2.6
+          ],
+          "paired_dz": -0.12607403614984386,
+          "wins": 1,
+          "ties": 0,
+          "losses": 4
+        },
+        "retention": {
+          "n": 5,
+          "mean": -0.022771393911099773,
+          "median": -0.01863653426153422,
+          "variance": 0.0064354739966805494,
+          "bootstrap95": [
+            -0.0916027797277797,
+            0.042545310780604896
+          ],
+          "paired_dz": -0.28385682847143956,
+          "wins": 1,
+          "ties": 0,
+          "losses": 4
+        }
+      },
+      "passed": false
+    },
+    "discovery/brain1-legacy5/neuron_dropout": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 5,
+          "mean": -5.800000000000002,
+          "median": -4.666666666666667,
+          "variance": 7.699999999999998,
+          "bootstrap95": [
+            -8.033333333333335,
+            -3.733333333333335
+          ],
+          "paired_dz": -2.0901749134536978,
+          "wins": 0,
+          "ties": 0,
+          "losses": 5
+        },
+        "retention": {
+          "n": 5,
+          "mean": -0.16613752634263473,
+          "median": -0.15791396103896105,
+          "variance": 0.010769376452051043,
+          "bootstrap95": [
+            -0.2459891628641629,
+            -0.0862858898211066
+          ],
+          "paired_dz": -1.6009304339431143,
+          "wins": 0,
+          "ties": 0,
+          "losses": 5
+        }
+      },
+      "passed": false
+    },
+    "discovery/brain5-legacy5/neuron_dropout": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 5,
+          "mean": -1.7000000000000006,
+          "median": -1.166666666666666,
+          "variance": 1.5888888888888903,
+          "bootstrap95": [
+            -2.7666666666666675,
+            -0.7666666666666668
+          ],
+          "paired_dz": -1.34865900763726,
+          "wins": 0,
+          "ties": 0,
+          "losses": 5
+        },
+        "retention": {
+          "n": 5,
+          "mean": -0.04578741305134497,
+          "median": -0.016702406640487166,
+          "variance": 0.0029795300813161563,
+          "bootstrap95": [
+            -0.09413239538239541,
+            -0.006933839724087431
+          ],
+          "paired_dz": -0.8388266499224238,
+          "wins": 1,
+          "ties": 0,
+          "losses": 4
+        }
+      },
+      "passed": false
+    },
+    "discovery/brain1-brain5/neuron_dropout": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 5,
+          "mean": -4.1000000000000005,
+          "median": -4.166666666666667,
+          "variance": 6.966666666666671,
+          "bootstrap95": [
+            -5.9333333333333345,
+            -1.9666666666666668
+          ],
+          "paired_dz": -1.5533572223693688,
+          "wins": 0,
+          "ties": 1,
+          "losses": 4
+        },
+        "retention": {
+          "n": 5,
+          "mean": -0.12035011329128978,
+          "median": -0.14228896103896105,
+          "variance": 0.003663794044935272,
+          "bootstrap95": [
+            -0.1615636578136578,
+            -0.06777492159845107
+          ],
+          "paired_dz": -1.9882957180213334,
+          "wins": 0,
+          "ties": 0,
+          "losses": 5
+        }
+      },
+      "passed": false
+    },
+    "discovery/brain1-legacy5/weight_noise": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 5,
+          "mean": 1.6333333333333353,
+          "median": 1.1666666666666714,
+          "variance": 36.491666666666674,
+          "bootstrap95": [
+            -3.133333333333332,
+            6.566666666666668
+          ],
+          "paired_dz": 0.2703821242446707,
+          "wins": 4,
+          "ties": 0,
+          "losses": 1
+        },
+        "retention": {
+          "n": 5,
+          "mean": 0.05877240003014002,
+          "median": 0.04617117117117131,
+          "variance": 0.026683350415005407,
+          "bootstrap95": [
+            -0.07253452332399696,
+            0.2026242009368945
+          ],
+          "paired_dz": 0.35979344449347345,
+          "wins": 4,
+          "ties": 0,
+          "losses": 1
+        }
+      },
+      "passed": false
+    },
+    "discovery/brain5-legacy5/weight_noise": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 5,
+          "mean": -5.033333333333331,
+          "median": -3.333333333333332,
+          "variance": 16.797222222222217,
+          "bootstrap95": [
+            -8.666666666666666,
+            -2.133333333333333
+          ],
+          "paired_dz": -1.2281091261764632,
+          "wins": 0,
+          "ties": 0,
+          "losses": 5
+        },
+        "retention": {
+          "n": 5,
+          "mean": -0.10196192864536516,
+          "median": -0.05739348370927311,
+          "variance": 0.0073035699493690966,
+          "bootstrap95": [
+            -0.17613319192847052,
+            -0.04149735835107349
+          ],
+          "paired_dz": -1.1930824165272231,
+          "wins": 0,
+          "ties": 0,
+          "losses": 5
+        }
+      },
+      "passed": false
+    },
+    "discovery/brain1-brain5/weight_noise": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 5,
+          "mean": 6.666666666666667,
+          "median": 10.000000000000002,
+          "variance": 51.958333333333364,
+          "bootstrap95": [
+            0.7999999999999993,
+            12.066666666666668
+          ],
+          "paired_dz": 0.924870942541819,
+          "wins": 4,
+          "ties": 0,
+          "losses": 1
+        },
+        "retention": {
+          "n": 5,
+          "mean": 0.16073432867550513,
+          "median": 0.19368235930735933,
+          "variance": 0.030174994254068735,
+          "bootstrap95": [
+            0.02033008658008656,
+            0.28819877220612516
+          ],
+          "paired_dz": 0.9253052848849787,
+          "wins": 4,
+          "ties": 0,
+          "losses": 1
+        }
+      },
+      "passed": true
+    },
+    "confirmation/brain1-legacy5/pulse": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 3,
+          "mean": -18.222222222222225,
+          "median": -14.66666666666667,
+          "variance": 37.92592592592591,
+          "bootstrap95": [
+            -25.333333333333332,
+            -14.666666666666666
+          ],
+          "paired_dz": -2.9589201295968333,
+          "wins": 0,
+          "ties": 0,
+          "losses": 3
+        },
+        "retention": {
+          "n": 3,
+          "mean": -0.33730158730158727,
+          "median": -0.3412698412698412,
+          "variance": 0.027132149155958674,
+          "bootstrap95": [
+            -0.49999999999999994,
+            -0.17063492063492058
+          ],
+          "paired_dz": -2.0477469464236413,
+          "wins": 0,
+          "ties": 0,
+          "losses": 3
+        }
+      },
+      "passed": false
+    },
+    "confirmation/brain5-legacy5/pulse": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 3,
+          "mean": -19.0,
+          "median": -16.666666666666664,
+          "variance": 53.08333333333333,
+          "bootstrap95": [
+            -27.166666666666668,
+            -13.16666666666667
+          ],
+          "paired_dz": -2.607801361968562,
+          "wins": 0,
+          "ties": 0,
+          "losses": 3
+        },
+        "retention": {
+          "n": 3,
+          "mean": -0.4484126984126984,
+          "median": -0.3412698412698412,
+          "variance": 0.03573003275384229,
+          "bootstrap95": [
+            -0.6666666666666666,
+            -0.33730158730158727
+          ],
+          "paired_dz": -2.372254043386592,
+          "wins": 0,
+          "ties": 0,
+          "losses": 3
+        }
+      },
+      "passed": false
+    },
+    "confirmation/brain1-brain5/pulse": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 3,
+          "mean": 0.777777777777778,
+          "median": 1.833333333333334,
+          "variance": 3.8981481481481484,
+          "bootstrap95": [
+            -1.5,
+            2.0
+          ],
+          "paired_dz": 0.39393662551834696,
+          "wins": 2,
+          "ties": 0,
+          "losses": 1
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.11111111111111112,
+          "median": 0.16666666666666666,
+          "variance": 0.00925925925925926,
+          "bootstrap95": [
+            0.0,
+            0.16666666666666666
+          ],
+          "paired_dz": 1.1547005383792515,
+          "wins": 2,
+          "ties": 1,
+          "losses": 0
+        }
+      },
+      "passed": false
+    },
+    "confirmation/brain1-legacy5/ongoing": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 3,
+          "mean": -11.611111111111109,
+          "median": -13.999999999999998,
+          "variance": 23.78703703703703,
+          "bootstrap95": [
+            -14.833333333333334,
+            -6.0
+          ],
+          "paired_dz": -2.3806941601250373,
+          "wins": 0,
+          "ties": 0,
+          "losses": 3
+        },
+        "retention": {
+          "n": 3,
+          "mean": -0.20963471751073381,
+          "median": -0.21649567686153046,
+          "variance": 0.006948108089041567,
+          "bootstrap95": [
+            -0.289347508859704,
+            -0.1230609668109669
+          ],
+          "paired_dz": -2.5149532971581587,
+          "wins": 0,
+          "ties": 0,
+          "losses": 3
+        }
+      },
+      "passed": false
+    },
+    "confirmation/brain5-legacy5/ongoing": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 3,
+          "mean": -13.944444444444443,
+          "median": -13.999999999999998,
+          "variance": 2.5092592592592577,
+          "bootstrap95": [
+            -15.499999999999998,
+            -12.333333333333334
+          ],
+          "paired_dz": -8.802954329090277,
+          "wins": 0,
+          "ties": 0,
+          "losses": 3
+        },
+        "retention": {
+          "n": 3,
+          "mean": -0.35141489355626065,
+          "median": -0.35945968834688347,
+          "variance": 0.0004457399674805755,
+          "bootstrap95": [
+            -0.3673223964382501,
+            -0.32746259588364857
+          ],
+          "paired_dz": -16.644830431489886,
+          "wins": 0,
+          "ties": 0,
+          "losses": 3
+        }
+      },
+      "passed": false
+    },
+    "confirmation/brain1-brain5/ongoing": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 3,
+          "mean": 2.333333333333333,
+          "median": 0.6666666666666667,
+          "variance": 12.111111111111104,
+          "bootstrap95": [
+            -1.1102230246251565e-16,
+            6.333333333333332
+          ],
+          "paired_dz": 0.670478399654806,
+          "wins": 2,
+          "ties": 0,
+          "losses": 1
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.1417801760455269,
+          "median": 0.15082671957671956,
+          "variance": 0.004569794029890608,
+          "bootstrap95": [
+            0.07011217948717947,
+            0.20440162907268167
+          ],
+          "paired_dz": 2.09733207318405,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "passed": false
+    },
+    "confirmation/brain1-legacy5/edge_dropout": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 3,
+          "mean": -2.666666666666666,
+          "median": -1.9999999999999991,
+          "variance": 12.58333333333333,
+          "bootstrap95": [
+            -6.499999999999999,
+            0.5
+          ],
+          "paired_dz": -0.7517455771759033,
+          "wins": 1,
+          "ties": 0,
+          "losses": 2
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.18197321817748646,
+          "median": 0.233384952897148,
+          "variance": 0.017538511180493748,
+          "bootstrap95": [
+            0.03154310966810964,
+            0.2809915919672017
+          ],
+          "paired_dz": 1.3740771373006067,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "passed": false
+    },
+    "confirmation/brain5-legacy5/edge_dropout": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 3,
+          "mean": -1.2777777777777775,
+          "median": -1.0,
+          "variance": 22.62037037037037,
+          "bootstrap95": [
+            -6.166666666666667,
+            3.333333333333334
+          ],
+          "paired_dz": -0.26866152473405003,
+          "wins": 1,
+          "ties": 0,
+          "losses": 2
+        },
+        "retention": {
+          "n": 3,
+          "mean": -0.0053680716147837355,
+          "median": 0.047158101045296164,
+          "variance": 0.02432300342568757,
+          "bootstrap95": [
+            -0.18080808080808083,
+            0.11754576491843345
+          ],
+          "paired_dz": -0.03441990763562596,
+          "wins": 2,
+          "ties": 0,
+          "losses": 1
+        }
+      },
+      "passed": false
+    },
+    "confirmation/brain1-brain5/edge_dropout": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 3,
+          "mean": -1.3888888888888886,
+          "median": -5.333333333333333,
+          "variance": 48.675925925925924,
+          "bootstrap95": [
+            -5.499999999999999,
+            6.666666666666667
+          ],
+          "paired_dz": -0.19907209769937564,
+          "wins": 1,
+          "ties": 0,
+          "losses": 2
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.18734128979227016,
+          "median": 0.18622685185185184,
+          "variance": 0.0005988651219343444,
+          "bootstrap95": [
+            0.16344582704876826,
+            0.21235119047619047
+          ],
+          "paired_dz": 7.655419528965641,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "passed": false
+    },
+    "confirmation/brain1-legacy5/neuron_dropout": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 3,
+          "mean": -2.8888888888888893,
+          "median": -2.8333333333333357,
+          "variance": 0.5648148148148147,
+          "bootstrap95": [
+            -3.666666666666666,
+            -2.166666666666666
+          ],
+          "paired_dz": -3.84395060896378,
+          "wins": 0,
+          "ties": 0,
+          "losses": 3
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.14869913942576543,
+          "median": 0.11685378758549492,
+          "variance": 0.045912118455187965,
+          "bootstrap95": [
+            -0.04786706349206343,
+            0.37711069418386484
+          ],
+          "paired_dz": 0.6939765395111807,
+          "wins": 2,
+          "ties": 0,
+          "losses": 1
+        }
+      },
+      "passed": false
+    },
+    "confirmation/brain5-legacy5/neuron_dropout": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 3,
+          "mean": -0.5,
+          "median": -1.0,
+          "variance": 5.25,
+          "bootstrap95": [
+            -2.5,
+            2.0
+          ],
+          "paired_dz": -0.2182178902359924,
+          "wins": 1,
+          "ties": 0,
+          "losses": 2
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.012507964425250909,
+          "median": 0.023224728487886426,
+          "variance": 0.0005031726466597502,
+          "bootstrap95": [
+            -0.013271873790166533,
+            0.027571038578032836
+          ],
+          "paired_dz": 0.5576068821677661,
+          "wins": 2,
+          "ties": 0,
+          "losses": 1
+        }
+      },
+      "passed": false
+    },
+    "confirmation/brain1-brain5/neuron_dropout": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 3,
+          "mean": -2.3888888888888893,
+          "median": -1.8333333333333357,
+          "variance": 2.481481481481479,
+          "bootstrap95": [
+            -4.166666666666666,
+            -1.166666666666666
+          ],
+          "paired_dz": -1.5164930740959872,
+          "wins": 0,
+          "ties": 0,
+          "losses": 3
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.13619117500051453,
+          "median": 0.13012566137566145,
+          "variance": 0.04426029651617754,
+          "bootstrap95": [
+            -0.07109179197994986,
+            0.34953965560583206
+          ],
+          "paired_dz": 0.6473539573777866,
+          "wins": 2,
+          "ties": 0,
+          "losses": 1
+        }
+      },
+      "passed": false
+    },
+    "confirmation/brain1-legacy5/weight_noise": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 3,
+          "mean": -6.722222222222221,
+          "median": -8.666666666666664,
+          "variance": 15.675925925925918,
+          "bootstrap95": [
+            -9.333333333333334,
+            -2.166666666666668
+          ],
+          "paired_dz": -1.6978380564002498,
+          "wins": 0,
+          "ties": 0,
+          "losses": 3
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.09290555593909251,
+          "median": 0.06960079216176773,
+          "variance": 0.009957749624941097,
+          "bootstrap95": [
+            0.006831709956709897,
+            0.20228416569879992
+          ],
+          "paired_dz": 0.9310244478546794,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "passed": false
+    },
+    "confirmation/brain5-legacy5/weight_noise": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 3,
+          "mean": -4.722222222222222,
+          "median": -3.333333333333334,
+          "variance": 12.009259259259268,
+          "bootstrap95": [
+            -8.666666666666668,
+            -2.1666666666666643
+          ],
+          "paired_dz": -1.3626625183950742,
+          "wins": 0,
+          "ties": 0,
+          "losses": 3
+        },
+        "retention": {
+          "n": 3,
+          "mean": -0.07095608802123567,
+          "median": -0.08164730006835275,
+          "variance": 0.005161185703053819,
+          "bootstrap95": [
+            -0.13685273906310497,
+            0.0056317750677506995
+          ],
+          "paired_dz": -0.9876769556992943,
+          "wins": 1,
+          "ties": 0,
+          "losses": 2
+        }
+      },
+      "passed": false
+    },
+    "confirmation/brain1-brain5/weight_noise": {
+      "identifiable": true,
+      "statistics": {
+        "pi_memory_score": {
+          "n": 3,
+          "mean": -2.0,
+          "median": -0.6666666666666661,
+          "variance": 16.027777777777775,
+          "bootstrap95": [
+            -6.5,
+            1.166666666666666
+          ],
+          "paired_dz": -0.499566536546176,
+          "wins": 1,
+          "ties": 0,
+          "losses": 2
+        },
+        "retention": {
+          "n": 3,
+          "mean": 0.16386164396032818,
+          "median": 0.08847901002506264,
+          "variance": 0.023191247725165526,
+          "bootstrap95": [
+            0.06396901709401703,
+            0.3391369047619049
+          ],
+          "paired_dz": 1.0760073803213228,
+          "wins": 3,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "passed": false
+    }
+  },
+  "absolute_robustness": {
+    "discovery/legacy5/pulse": {
+      "identifiable": true,
+      "mean_retention": 0.020510531135531133,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 10,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "discovery/brain5/pulse": {
+      "identifiable": true,
+      "mean_retention": 0.0,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 9,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "discovery/brain1/pulse": {
+      "identifiable": true,
+      "mean_retention": 0.0,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 10,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "discovery/legacy5/ongoing": {
+      "identifiable": true,
+      "mean_retention": 0.023903388278388275,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 10,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "discovery/brain5/ongoing": {
+      "identifiable": true,
+      "mean_retention": 0.0,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 9,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "discovery/brain1/ongoing": {
+      "identifiable": true,
+      "mean_retention": 0.0,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 10,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "discovery/legacy5/edge_dropout": {
+      "identifiable": true,
+      "mean_retention": 0.07996304104856736,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 10,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "discovery/brain5/edge_dropout": {
+      "identifiable": true,
+      "mean_retention": 0.04058419620919621,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 9,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "discovery/brain1/edge_dropout": {
+      "identifiable": true,
+      "mean_retention": 0.05607068585009761,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 10,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "discovery/legacy5/neuron_dropout": {
+      "identifiable": true,
+      "mean_retention": 0.18229323308270678,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 10,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "discovery/brain5/neuron_dropout": {
+      "identifiable": true,
+      "mean_retention": 0.09370766488413548,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 9,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "discovery/brain1/neuron_dropout": {
+      "identifiable": true,
+      "mean_retention": 0.0379995790289908,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 10,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "discovery/legacy5/weight_noise": {
+      "identifiable": true,
+      "mean_retention": 0.046649074609600924,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 10,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "discovery/brain5/weight_noise": {
+      "identifiable": true,
+      "mean_retention": 0.04298965839407016,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 9,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "discovery/brain1/weight_noise": {
+      "identifiable": true,
+      "mean_retention": 0.07602086330027506,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 10,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "confirmation/legacy5/pulse": {
+      "identifiable": true,
+      "mean_retention": 0.17857142857142858,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 6,
+      "prefix32_retention": 0.16666666666666666,
+      "passed": false
+    },
+    "confirmation/brain5/pulse": {
+      "identifiable": true,
+      "mean_retention": 0.0,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 6,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "confirmation/brain1/pulse": {
+      "identifiable": true,
+      "mean_retention": 0.0,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 4,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "confirmation/legacy5/ongoing": {
+      "identifiable": true,
+      "mean_retention": 0.01200154858691444,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 6,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "confirmation/brain5/ongoing": {
+      "identifiable": true,
+      "mean_retention": 0.0,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 6,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "confirmation/brain1/ongoing": {
+      "identifiable": true,
+      "mean_retention": 0.0,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 4,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "confirmation/legacy5/edge_dropout": {
+      "identifiable": true,
+      "mean_retention": 0.045651051748612725,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 6,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "confirmation/brain5/edge_dropout": {
+      "identifiable": true,
+      "mean_retention": 0.045675770308123254,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 6,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "confirmation/brain1/edge_dropout": {
+      "identifiable": true,
+      "mean_retention": 0.3211869149369149,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 4,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "confirmation/legacy5/neuron_dropout": {
+      "identifiable": true,
+      "mean_retention": 0.14400245192928118,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 6,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "confirmation/brain5/neuron_dropout": {
+      "identifiable": true,
+      "mean_retention": 0.11517212148017102,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 6,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "confirmation/brain1/neuron_dropout": {
+      "identifiable": true,
+      "mean_retention": 0.29329466829466827,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 4,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "confirmation/legacy5/weight_noise": {
+      "identifiable": true,
+      "mean_retention": 0.0639158718427011,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 6,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "confirmation/brain5/weight_noise": {
+      "identifiable": true,
+      "mean_retention": 0.019187675070028012,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 6,
+      "prefix32_retention": 0.0,
+      "passed": false
+    },
+    "confirmation/brain1/weight_noise": {
+      "identifiable": true,
+      "mean_retention": 0.1928482397232397,
+      "seed_blocks_passing": 0,
+      "eligible_heads": 4,
+      "prefix32_retention": 0.0,
+      "passed": false
+    }
+  },
+  "confirmed_comparisons": [],
+  "confirmed_absolute_robustness": [],
+  "primary_confirmed": false,
+  "cohorts_pooled": false,
+  "undefined_clean_conditions": []
+}

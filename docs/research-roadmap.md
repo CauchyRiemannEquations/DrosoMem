@@ -5,14 +5,14 @@ It does not demonstrate a living fly memorizing pi. Always distinguish
 **representation** (past inputs affect state), **decoding** (a head extracts useful
 information), and **learning** (experience modifies recurrent connections).
 
-## Current position — 2026-09-29
+## Current position — 2026-09-30
 
-**ACT IV: the bounded current-model programme is closed.**
-[Completion audit](act4-results.md) covers A/B/C/D, local learning and its diagnostics.
-The final [analytic margin study](reward-margin-results.md) adds fresh paired seeds
-and independent adjoint validation. Scientific failures remain failures; physiological,
-whole-brain and literal decoder-free learning are not established. The next one is
-an ACT V ongoing-noise curve comparison, under a new fixed protocol.
+**The bounded ACT V rate-model programme is complete.**
+[Five-family robustness results](act5-robustness-results.md) and
+[completion audit](../results/act5_closeout/audit.json) cover paired partial/whole
+graphs, frozen readouts, fresh confirmation and explicit numerical checks.
+Completion does not establish physiological realism or erase prior failures.
+Next proposal: a relative-noise comparison with frozen readouts, to preregister before execution.
 
 | Axis | Completed scope | Remaining scope |
 |---|---|---|
@@ -23,7 +23,7 @@ an ACT V ongoing-noise curve comparison, under a new fixed protocol.
 | ACT III-C | Four controls including exact per-neuron incoming-weight and role/signed-degree preservation;169 cases | Whole-brain, uniform-ensemble mixing and autonomous-recall extensions |
 | ACT III-D | Five preregistered pathways, matched removal controls, sensitivity map and fresh confirmation;273 cases | Minimal/unique subnetwork, motifs, whole-brain localization and separation of storage from readout access |
 | ACT IV | Earlier negative biological/local-rule results; IV-A A/B/C/D, observation diagnostics and scalar/local39-case experiment plus direction/noise/trajectory/margin diagnostics and explicit closeout completed | Unanswered extensions: physiological and whole-brain local learning, literal decoder-free biology; no claim of successful internal memory formation |
-| ACT V | Scoped robustness curves exposed strong fragility | Broader perturbation/physiological validation, independent axis |
+| ACT V | Five registered perturbation curves in partial/whole rate models, frozen readouts, fresh confirmation and completion audit | Physiological calibration, other dynamics/tasks, correlated noise and decoder-adaptation extensions |
 
 현재 두 686-neuron 부분 모델의 **III-A/B/C/D의 제한된 연구 단락을 종료**했다.
 완료는 고정한 실험·검증을 끝냈다는 뜻이다. 전체 뇌의 기억 위치나 내부 학습을
@@ -127,6 +127,12 @@ STDP and broader physiological extensions remain untested. Numerical completion,
 margin direction, fixed-code accuracy and autonomous memory are different claims.
 
 ## ACT V — Robustness (independent axis)
+
+The [current five-family panel](act5-robustness-results.md) is executed and checked.
+30 archived clean heads and18 fresh heads were evaluated without perturbation
+refits. Previous partial real/shuffled robustness failures remain preserved.
+This completes the declared rate-model scope, not physiological validation.
+The principles below remain the blueprint for future extensions.
 
 Use predefined curves for initial/ongoing noise, edge/neuron dropout and weight
 perturbation. Preserve the existing clean-versus-perturbed failures. Do not pool

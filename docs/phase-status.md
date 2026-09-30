@@ -1,5 +1,10 @@
 # Original research phases: completion audit — 2026-09-27
 
+Current update (2026-09-30): [ACT V five-family rate-model robustness](act5-robustness-results.md)
+is complete within its preregistered partial/whole-graph scope. Fresh confirmation,
+full metric/hash checks and the specified independent replay subset are complete.
+This is not physiological validation. Earlier scope audits below are historical.
+
 Current update (2026-09-29): the [bounded ACT IV programme](act4-results.md) is
 closed after [margin diagnostics with fresh seeds](reward-margin-results.md).
 This closes specified experiments, not physiological/whole-brain learning questions.
