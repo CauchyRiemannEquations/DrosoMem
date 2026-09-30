@@ -1,0 +1,120 @@
+{
+  "bounded_act5_complete": true,
+  "physiological_validation_complete": false,
+  "evidence": [
+    {
+      "root": "results/act5_closeout",
+      "manifest_sha256": "c91a8a9839df082fcaa342665baad0ff6c6dbcb565390e10ee830ce4d378fd2f",
+      "artifacts": 1
+    },
+    {
+      "root": "results/act5_main",
+      "manifest_sha256": "31bf94bd27006a4efe99cbbe202204dfb5d762184d3b2e8229e95db0dad1878d",
+      "artifacts": 2172
+    },
+    {
+      "root": "results/act5_validation",
+      "manifest_sha256": "c2e324fe8f52d4cbc3169390dd50330542d024d7c3b4105243ccf946b5874ed3",
+      "artifacts": 1
+    },
+    {
+      "root": "results/act5_analysis",
+      "manifest_sha256": "f6e8720731f77c9bbcc4d919833f7df71f7a6fea9014f9a493d4da435d1b1b5e",
+      "artifacts": 2
+    },
+    {
+      "root": "results/relative_noise_closeout",
+      "manifest_sha256": "c38899ec65c977eb076d2ef4ee98bf06774b99a148cb534477c0aa747c72a8ed",
+      "artifacts": 1
+    },
+    {
+      "root": "results/relative_noise_main",
+      "manifest_sha256": "cc7b8219ff64f72335a36316eaeebb1eab7c196902a245f3f1ac51a877e38af2",
+      "artifacts": 683
+    },
+    {
+      "root": "results/relative_noise_validation",
+      "manifest_sha256": "b03559dc8291925407f5204345c092566163b5c11b234d0faca67a9b8ac18764",
+      "artifacts": 1
+    },
+    {
+      "root": "results/observation_noise_closeout",
+      "manifest_sha256": "852e8e265dd2418bb7820df6e7d15914a08a21f032d88e98b81c66b72c0ac3c4",
+      "artifacts": 1
+    },
+    {
+      "root": "results/observation_noise_main",
+      "manifest_sha256": "556733b5aa7aacedb2f0c59b5c4a26ea2e703987651026772d3a1c1e700af10e",
+      "artifacts": 345
+    },
+    {
+      "root": "results/observation_noise_validation",
+      "manifest_sha256": "b50fd3946dee7f378d7368b32ae9152e5dfb21498ddef28fff2b37f5df924b46",
+      "artifacts": 1
+    },
+    {
+      "root": "results/allocation_noise_tests",
+      "manifest_sha256": "00cb8ecb5459921befa34c71b6bba9ad5983dce56cc2ffa91c8bf07eae5c7146",
+      "artifacts": 2
+    },
+    {
+      "root": "results/allocation_noise_smoke",
+      "manifest_sha256": "3655b8228c447c875b1a2b5a6037e265f78b837d0d87690fcefefff352b1f1b9",
+      "artifacts": 18
+    },
+    {
+      "root": "results/allocation_noise_smoke_validation",
+      "manifest_sha256": "a677452ea4111be835e8fbc61ae0c413b09ab1fecd81f65a11742a6e45792fbe",
+      "artifacts": 1
+    },
+    {
+      "root": "results/allocation_noise_main",
+      "manifest_sha256": "dbc4fc01565d783d4664135a5d55cd8b085b84cb8e41040cdcc83baffd4042d5",
+      "artifacts": 202
+    },
+    {
+      "root": "results/allocation_noise_validation",
+      "manifest_sha256": "4b960bd172099b42d20620a9efc0aee303c0136e2cc8b98a4abed9c786cac46c",
+      "artifacts": 1
+    },
+    {
+      "root": "results/allocation_noise_analysis",
+      "manifest_sha256": "f4c5b28d028010ecabc1c2996f60e8fbb9682dc369bac8fc0f4baa7ccabea04d",
+      "artifacts": 1
+    }
+  ],
+  "original_five_families": [
+    "pulse",
+    "ongoing",
+    "edge_dropout",
+    "neuron_dropout",
+    "weight_noise"
+  ],
+  "original_primary_confirmed": false,
+  "original_confirmed_comparisons": [],
+  "original_confirmed_absolute_robustness": [],
+  "relative_noise_confirmed": [],
+  "observation_history_confirmed": [],
+  "allocation_confirmed": [
+    "legacy5",
+    "brain5",
+    "brain1"
+  ],
+  "allocation_primary_confirmed": true,
+  "new_allocation_evaluations": 1152,
+  "new_neural_trajectories_in_allocation": 0,
+  "targeted_tests": 22,
+  "prior_artifacts_unchanged": 24830,
+  "historical_failures_preserved": true,
+  "report_sha256": {
+    "docs/allocation-noise-results.md": "a87f0446b85159ac29388619b4dd2e5a0e332cb411bc8b2d7a0009ba286f4804",
+    "docs/act5-final-results.md": "b08da35eff3f9c62215b508fc90b62dbb44c43af75f6657b5a28e5b337ea79d4"
+  },
+  "completion_plan_sha256": "a56a8fcd30c33c65a14c4e1353eb2805ce5768bb71a4dad402cc80b8de8c8055",
+  "biological_questions_remaining": [
+    "Physiological noise and parameter calibration",
+    "Other individuals and dynamics",
+    "Correlated noise and adaptive learning"
+  ],
+  "no_further_experiments_in_this_scope": true
+}

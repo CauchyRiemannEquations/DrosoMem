@@ -1,25 +1,20 @@
 # Prioritized work — updated 2026-09-30
 
-**Bounded ACT V and the two requested noise follow-ups are complete.**
-[Relative-noise results](relative-noise-results.md),
-[observation diagnostic](observation-noise-results.md),
-[two-study audit](../results/observation_noise_closeout/audit.json).
-The first follow-up evaluated 48 models and 384 actual neural trajectories, with
-18 newly trained clean confirmation heads. Its registered whole-brain advantage
-failed; 160 independent trajectories and six exact fresh refits pass verification.
-The second reuses all 48 models and computes 144 current-observation controls;
-all 144 independently reproduce exactly, with no new neural rollout or training.
-24 targeted tests pass. The original smoke CSV-parser failure is preserved;
-round-trip parsing was fixed before main without altering outcomes or tolerances.
+**Bounded ACT V is complete, including its three noise diagnostics.**
+[Final synthesis](act5-final-results.md), [completion plan](act5-completion-plan.md),
+[final audit](../results/act5_final_closeout/audit.json).
+The last [coordinate-allocation control](allocation-noise-results.md) evaluates
+1152 paired stateless counterfactuals in 48 archived models, with three fresh noise
+streams. All three graphs pass the registered teacher-decoding improvement gate;
+no new autonomous recall or learning occurred. Independent reconstruction covers
+every counterfactual; 22 targeted tests and 72 smoke evaluations pass.
+Earlier absolute/relative robustness failures and engineering failures are preserved.
 
-Next single proposed experiment: **redistribute observation noise in proportion
-to each MBON's clean training SD, with matched expected total squared noise**.
-Keep the clean head, preprocessing and paired Gaussian draws fixed. Normalize the
-coordinate-dependent noise amplitudes to preserve the expected raw squared sum.
-This tests whether heterogeneous feature scales matter after median calibration.
-It does not retrain a better decoder or establish physiological noise amplitudes.
-Preregister the precise doses, seeds, budgets and acceptance rule before execution.
-Proposed only; neither registered nor executed.
+One future extension: **compare the same two observation-noise allocations under
+autonomous output feedback**. Keep the head fixed and match expected noise energy
+to test whether teacher-decoding improvement translates into longer exact recall.
+Predeclare seeds, doses, budget and criteria before executing it. This is proposed
+only, not registered or executed, and not a remaining condition of ACT V closeout.
 
 Physiological calibration, other dynamics/tasks and population-correlated noise
 remain open extensions. ACT I clean and ACT IV learning conclusions are unchanged.

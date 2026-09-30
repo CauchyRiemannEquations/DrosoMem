@@ -12,7 +12,26 @@ The review covered README, docs, configurations, runners, dynamics/readout/data/
 evaluation modules, test coverage and archived result/checkpoint schemas.
 This is not a new execution of every historical experiment.
 
-## Latest — two ACT V noise follow-ups completed (2026-09-30)
+## Latest — final ACT V extension and closeout (2026-09-30)
+
+[Coordinate-noise allocation](allocation-noise-results.md) holds expected total
+squared observation noise fixed and reallocates by training SD. All 48 archived
+models and 1152 counterfactual evaluations completed, with three fresh noise draws
+regardless of initial outcomes. All graphs pass the registered gain gate across
+both model cohorts and both archived/fresh-noise stages. Fresh brain1 accuracy
+gains are21.004/20.192pp, with remaining clean losses18.455/18.002pp.
+This is teacher decoding with no new neural simulation, training or autonomous
+recall. All 1152 counterfactuals independently reconstruct; 22 targeted tests and
+72 smoke evaluations pass. Existing flat144 and clean48 checks also pass.
+
+[Final synthesis](act5-final-results.md) and [audit](../results/act5_final_closeout/audit.json)
+close the [prospective scope](act5-completion-plan.md). Five perturbation curves,
+three diagnostics, biological assumptions and negative results are accounted for.
+Physiological validation remains unestablished. The only next proposed extension
+is the same observation-allocation contrast under autonomous feedback; unregistered,
+unexecuted and not a required task remaining in this closeout.
+
+## Preceding — two ACT V noise follow-ups completed (2026-09-30)
 
 [Relative-noise comparison](relative-noise-results.md): 30 archived heads plus
 18 fresh clean heads, 384 actual neural evaluation trajectories and 48 zero aliases.
@@ -37,9 +56,8 @@ This is exploratory reuse, not a new independent cohort or autonomous recovery.
 
 [Two-study audit](../results/observation_noise_closeout/audit.json) pins reports,
 source manifests and verification evidence. 24 targeted tests pass; old results
-remain unchanged. Next one: matched expected total squared observation noise,
-allocated by each MBON's clean training SD, with the head fixed. Not yet registered
-or executed. Representation loss and decoding failure remain distinct questions.
+remain unchanged. The proposed matched-energy coordinate allocation is now
+completed above. Representation loss and decoding failure remain distinct questions.
 
 ## Preceding — bounded ACT V robustness programme closed (2026-09-30)
 
