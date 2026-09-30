@@ -2,8 +2,15 @@ import sys
 from pathlib import Path
 import numpy as np
 import pytest
+import pandas as pd
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import relative_noise as study
+
+
+def test_small_sigma_csv_round_trip(tmp_path):
+    values=np.array([.00011182421773467538,1.2345678912345678e-6,1.2345678912345678e-4])
+    path=tmp_path/'sigma.csv';pd.DataFrame({'sigma':values}).to_csv(path,index=False)
+    np.testing.assert_array_equal(study.read_table(path).sigma,values)
 
 
 def test_raw_population_scale_without_head_floor_and_multiplicative_equivariance():

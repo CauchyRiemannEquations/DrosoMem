@@ -16,6 +16,9 @@ import act5_robustness as old
 def config():return read('configs/relative_noise.json')
 
 
+def read_table(path):return pd.read_csv(path,float_precision='round_trip')
+
+
 def context(c):
     x=core.source_context(c)
     names=['relative_noise','verify_relative_noise','plot_relative_noise','act5_robustness',
@@ -155,7 +158,7 @@ def run(c,out,smoke):
         path=out/old.stem(case);check(path);g=read(path/'case.json')['graph'];key=(case['seed'],case['circuit_seed'])
         ids={k:g[k] for k in ['input_root_ids','observation_root_ids','input_mapping_sha256']}
         if key in identities:assert identities[key]==ids
-        identities[key]=ids;rows.extend(pd.read_csv(path/'metrics.csv').to_dict('records'))
+        identities[key]=ids;rows.extend(read_table(path/'metrics.csv').to_dict('records'))
     if smoke:pd.DataFrame(rows).to_csv(out/'raw-metrics.csv',index=False)
     else:summarize(rows,c,out)
     core.write_json(out/'resources.json',resources);assert context(c)==ctx

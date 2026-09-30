@@ -13,7 +13,7 @@ from flying.training import whole_brain_memory as core
 
 def plot(root,out):
     m=check(root);c=m['config'];out.mkdir(parents=True,exist_ok=False)
-    f=pd.read_csv(root/'raw-metrics.csv');f=f[~f.reused_clean];colors=dict(legacy5='#235c91',brain5='#c07822',brain1='#15836d')
+    f=pd.read_csv(root/'raw-metrics.csv',float_precision='round_trip');f=f[~f.reused_clean];colors=dict(legacy5='#235c91',brain5='#c07822',brain1='#15836d')
     auto=f[f['mode']=='autonomous'].copy();keys=['cohort','seed','circuit_seed','level']
     clean=auto[auto.strength==0][keys+['pi_memory_score']].rename(columns={'pi_memory_score':'baseline'})
     auto=auto.merge(clean,on=keys);auto['retention']=(auto.pi_memory_score/auto.baseline.replace(0,np.nan)).clip(upper=1)

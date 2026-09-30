@@ -38,7 +38,7 @@ def statistics(frame,c,root):
             assert s['comparisons'][key]['passed']==passed;gates[key]=passed
             audit_stats(p,s['comparisons'][key]['statistics']['pi_memory_score'],c)
             if np.isfinite(r).all():audit_stats(r,s['comparisons'][key]['statistics']['retention'],c)
-    b=pd.read_csv(root/'seed-blocks.csv').sort_values(['cohort','seed','level']).reset_index(drop=True)
+    b=pd.read_csv(root/'seed-blocks.csv',float_precision='round_trip').sort_values(['cohort','seed','level']).reset_index(drop=True)
     e=pd.DataFrame(expected).sort_values(['cohort','seed','level']).reset_index(drop=True)
     pd.testing.assert_frame_equal(b[e.columns],e,check_exact=False,atol=1e-12,rtol=1e-12)
     confirmed=[x for x in ['brain1-legacy5','brain5-legacy5','brain1-brain5'] if all(gates[f'{co}/{x}'] is True for co in c['cohorts'])]
@@ -73,7 +73,7 @@ def verify(root,out):
         clean={}
         for mode in ['autonomous','teacher']:
             with np.load(path/f'dose0_{mode}.npz') as z:clean[mode]=dict(z)
-        f=pd.read_csv(path/'metrics.csv');rows.extend(f.to_dict('records'))
+        f=pd.read_csv(path/'metrics.csv',float_precision='round_trip');rows.extend(f.to_dict('records'))
         for row in f.to_dict('records'):
             np.testing.assert_allclose(row['sigma'],q*row['strength'],rtol=1e-13,atol=1e-18)
             with np.load(path/row['artifact']) as z:a=dict(z)
@@ -87,7 +87,7 @@ def verify(root,out):
                     else:np.testing.assert_allclose(v,a[k],atol=1e-12,rtol=1e-10);error=max(error,float(np.max(np.abs(v-a[k]))))
                 counts['independent_trajectories']+=1
         counts['cases']+=1;print(f'Audit {counts["cases"]}/{len(run.old.case_list(c,smoke))}: {run.old.stem(case)}',flush=True)
-    frame=pd.DataFrame(rows);saved=pd.read_csv(root/'raw-metrics.csv')
+    frame=pd.DataFrame(rows);saved=pd.read_csv(root/'raw-metrics.csv',float_precision='round_trip')
     pd.testing.assert_frame_equal(saved[frame.columns],frame,check_dtype=False,check_exact=False,rtol=1e-12,atol=1e-12)
     if not smoke:statistics(frame,c,root)
     prior=read(root/'prior-artifacts.json')
