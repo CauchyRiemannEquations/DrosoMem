@@ -1,5 +1,22 @@
 # Research status
 
+## Latest — numbered follow-ups 3, 4, 4B and 5 (2026-10-02)
+
+All four bounded studies are executed with archived cases and independent
+verification. [Study 3](followup-3-results.md) passes the registered iid and
+Markov lag-2 historical-input criterion across discovery and confirmation;
+motif recall is separately checked for predictability. [Study 4](followup-4-results.md)
+fails the whole-brain-over-partial decoding criterion but passes its matched
+DAN→MBON pathway criterion. The separately preregistered
+[whole-brain rewiring control 4B](followup-4b-results.md) fails its real-wiring
+advantage criterion against one degree- and role-preserving null.
+[Study 5](followup-5-results.md) verifies local synaptic changes and zero-change
+controls, but fails its functional spiking-response and fixed-decoder benefit
+criteria. The biological physiology comparison uses different measurement
+units and does not calibrate model parameters. These outcomes do not establish
+a memory storage site, general whole-brain superiority or physiological
+learning. The older dated sections below are historical status snapshots.
+
 ## Latest — DAN→MBON temporal-pathway intervention (2026-10-02)
 
 [Precommitted protocol](temporal-pathway-protocol.md),

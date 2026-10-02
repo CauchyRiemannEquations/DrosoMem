@@ -2,6 +2,19 @@
 
 ## Latest — 2026-10-02
 
+The [full length × alphabet × family grid](followup-3-results.md) is complete;
+the independent-input historical-symbol criterion passes for iid and Markov
+streams, while periodic motif replay is not evidence of novel-motif prediction.
+The [whole-brain scale and DAN→MBON intervention](followup-4-results.md) is
+complete: no whole-brain decoding advantage, but the matched pathway cut
+criterion passes. A [separate whole-brain rewiring null](followup-4b-results.md)
+does not confirm a real-wiring advantage against one degree- and
+role-preserving graph. The [local dopamine-rule and physiology comparison](followup-5-results.md)
+is complete: local weight changes pass causal controls, but baseline MBON
+silence prevents the functional response gate and there is no fixed-decoder
+benefit. Additional graph-null ensembles or response-bearing physiological
+models would need new protocols. Older positions below are historical.
+
 The [DAN→MBON temporal-pathway intervention](temporal-pathway-results.md) is
 complete: 12 paired state panels, 96 fresh ridge fits and independent replay
 of 64 secondary autonomous paths. Current-only cutting improves refitted MBON

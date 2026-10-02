@@ -11,6 +11,21 @@ fly memorizing pi or a model predicting unseen pi digits.
 
 ## Current research
 
+The [length × alphabet × sequence-family follow-up](docs/followup-3-results.md)
+completed 162 trained-sequence cases and 54 independent-stream probes. Its
+registered lag-2 historical-input criterion passes for iid and Markov inputs;
+periodic motif recall also reflects easy prediction. The
+[whole-brain scale and pathway follow-up](docs/followup-4-results.md) finds no
+`brain5` decoding advantage over the partial graph, while its matched
+DAN→MBON cut criterion passes. A separate
+[whole-brain rewiring control](docs/followup-4b-results.md) finds no registered
+real-wiring advantage over one degree- and role-preserving graph. The
+[physiology and local-learning follow-up](docs/followup-5-results.md) verifies
+local synaptic changes, but its MBON response and fixed-decoder benefit criteria
+fail. Each result retains its prospective protocol, raw cases and independent
+verification. These are computational findings, not evidence of biological
+memory storage or calibrated physiology.
+
 The [DAN→MBON temporal-pathway study](docs/temporal-pathway-results.md) is
 complete: 12 paired state panels, 96 new readout fits and 64 independently
 replayed autonomous paths. Its preregistered current-path-dominance criterion

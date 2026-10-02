@@ -1,5 +1,14 @@
 # Original research phases: completion audit — 2026-09-27
 
+Current numbered follow-ups (2026-10-02): [3 sequence grid](followup-3-results.md),
+[4 whole-brain scale/pathway](followup-4-results.md),
+[4B whole-brain rewiring](followup-4b-results.md), and
+[5 physiology/local rule](followup-5-results.md) are completed and independently
+audited. Their registered gates respectively pass historical-symbol access,
+fail scale advantage/pass pathway specificity, fail real-wiring advantage,
+and fail functional response/fixed-decoder benefit. Earlier scope notes below
+are retained as historical records.
+
 Current additional-programme closeout (2026-09-30):
 
 **The bounded observation-noise extension is closed, including coordinate-SD calibration.**

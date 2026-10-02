@@ -1,0 +1,7 @@
+{
+  "status": "verification_rejected_after_first_case",
+  "failure": "The independent verifier compared two mathematically equivalent accuracy reductions by exact floating equality. The second case differed by 1.1102230246251565e-16; predictions were identical.",
+  "repair_commit": "6bd8ea9",
+  "repair_scope": "Verifier comparison tolerance only; graph seed, swap count, model, labels, head, and acceptance rule unchanged.",
+  "disposition": "First graph, smoke and main artifacts preserved separately; no first-attempt outcome used as a substitute for the fresh verified run."
+}

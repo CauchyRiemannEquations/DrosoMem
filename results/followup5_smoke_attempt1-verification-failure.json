@@ -1,0 +1,8 @@
+{
+  "result_manifest_sha256": "14c56554c8db03816b1a01d0278b7001bfa23219a1e67d01e0556813b4467fa6",
+  "status": "verification_rejected_before_main",
+  "failure": "Verifier demanded bit-identical SHA256 of closed-form reconstructed LTD weights after its numerical allclose check. The model's archived weight hash and independently reconstructed floating values need different checks.",
+  "repair_commit": "7d0e4ce",
+  "repair_scope": "Independent verifier only; no stimulus, rule constant, seed, gate, or experimental runner changed.",
+  "disposition": "First smoke excluded from main statistics; fresh smoke and verification saved separately."
+}

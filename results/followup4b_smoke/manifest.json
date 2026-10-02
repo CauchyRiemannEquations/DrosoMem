@@ -1,0 +1,71 @@
+{
+  "config": {
+    "protocol": "docs/followup-4b-protocol.md",
+    "parent": "results/followup4_main",
+    "cache": "outputs/followup_whole_cache",
+    "graph": "results/followup4b_graph",
+    "graph_seed": 825001,
+    "swaps_per_edge": 1,
+    "level": "brain5",
+    "circuit_seeds": [
+      701,
+      702
+    ],
+    "blocks": [
+      {
+        "seed": 820001,
+        "input_seed": 821001,
+        "train_seed": 822001,
+        "test_seed": 823001
+      },
+      {
+        "seed": 820002,
+        "input_seed": 821002,
+        "train_seed": 822002,
+        "test_seed": 823002
+      },
+      {
+        "seed": 820003,
+        "input_seed": 821003,
+        "train_seed": 822003,
+        "test_seed": 823003
+      }
+    ],
+    "alphabet_size": 4,
+    "warmup": 100,
+    "train_samples": 1000,
+    "test_samples": 500,
+    "primary_lags": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "alpha": 1.0,
+    "gain": 0.9,
+    "leak": 0.6,
+    "input_fraction": 0.1,
+    "input_amplitude": 0.5,
+    "schedule": "mbon_after_kc",
+    "normalization": "incoming_l1",
+    "activity_epsilon": 1e-08,
+    "max_seconds": 3600,
+    "max_rss_bytes": 4294967296
+  },
+  "smoke": true,
+  "complete": true,
+  "artifacts": {
+    "config.json": "9f9f9713b497a4baa956669f1c61b86300ab206d35ac58b03c02d6b74815fa27",
+    "raw-cases.csv": "4b1d6984d3e1eaa01240c58428dc8a896cba9464a1f95ceec4b9117a468a4ade",
+    "raw-lags.csv": "599e3ddc7af8575cd9750e455029c7aa047d4dbdb94aecf58ad15d22c8041806",
+    "seed-blocks.csv": "af3cca091ad8b7629438d2201c8be98c4ad38058c16a08283083239da85dbfe9",
+    "source-hashes.json": "3aa01cf3f8c141ad7a7d78bc192e169040fd102142643b8c8b42c21d49ee6fb9",
+    "summary.json": "4044eeaaa679514885c7b3112c7b1fe6f0e61d362f25282a73f4d39196aa6408",
+    "verification.json": "405eef90d7f9184e212896b8800644b9862571cf84e6fe1d94830deb6994cfbf",
+    "s820001_c701/case.npz": "a1e4e77157844e4ea213939036564f97dba384a146bbdf2b6e40ad0c114abda7",
+    "s820001_c701/manifest.json": "70ec1bb50e4dada0e5924014642cd62732ba1fc6c464c976609e75a87a2c927d",
+    "s820001_c701/metrics.json": "b8a58e204ac2fe67c1489251651d970cf80d30fa7731098ae8aa5a4d885adcdc"
+  }
+}

@@ -2,6 +2,16 @@
 
 ## Current handoff — 2026-10-02
 
+The requested [sequence grid and novel-family study](followup-3-results.md),
+[whole-brain scale/pathway study](followup-4-results.md), separate
+[whole-brain rewiring control](followup-4b-results.md) and
+[physiology/local-rule study](followup-5-results.md) are complete within their
+registered budgets. Independent audits and negative results are preserved.
+The next prospective questions, if pursued, are independent graph-null
+realizations and response-bearing physiological targets; neither is an
+unfinished execution step in these studies. Earlier handoff notes below are
+retained as historical context.
+
 The [DAN→MBON temporal-pathway study](temporal-pathway-results.md) is now
 executed and independently verified. Its registered current-path-dominance
 criterion fails in both cohorts: a current-only cut improves refitted MBON

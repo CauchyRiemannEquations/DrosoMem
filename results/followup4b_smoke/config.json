@@ -1,0 +1,55 @@
+{
+  "protocol": "docs/followup-4b-protocol.md",
+  "parent": "results/followup4_main",
+  "cache": "outputs/followup_whole_cache",
+  "graph": "results/followup4b_graph",
+  "graph_seed": 825001,
+  "swaps_per_edge": 1,
+  "level": "brain5",
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "blocks": [
+    {
+      "seed": 820001,
+      "input_seed": 821001,
+      "train_seed": 822001,
+      "test_seed": 823001
+    },
+    {
+      "seed": 820002,
+      "input_seed": 821002,
+      "train_seed": 822002,
+      "test_seed": 823002
+    },
+    {
+      "seed": 820003,
+      "input_seed": 821003,
+      "train_seed": 822003,
+      "test_seed": 823003
+    }
+  ],
+  "alphabet_size": 4,
+  "warmup": 100,
+  "train_samples": 1000,
+  "test_samples": 500,
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "alpha": 1.0,
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "schedule": "mbon_after_kc",
+  "normalization": "incoming_l1",
+  "activity_epsilon": 1e-08,
+  "max_seconds": 3600,
+  "max_rss_bytes": 4294967296
+}

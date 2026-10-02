@@ -1,0 +1,41 @@
+{
+  "source_edges": 2700513,
+  "shuffled_edges": 2700513,
+  "source_weight_sha256": "95677906fec28ff87c50900f563432cc30ad062f4b4495a388db8fe872637f10",
+  "shuffled_weight_sha256": "42126330785fc659633d1233918b2c03c0f832ca970292c7ca195b2b7b483112",
+  "degree_and_role_blocks_exact": true,
+  "global_weight_multiset_exact": true,
+  "swap_log": {
+    "requested_swaps": 2700513,
+    "accepted_swaps": 2700513,
+    "attempts": 2740750,
+    "edge_overlap": 0.1398645368491098
+  },
+  "role_blocks": {
+    "APL->APL": 0,
+    "APL->DAN": 88,
+    "APL->KC": 5166,
+    "APL->MBON": 68,
+    "APL->OTHER": 202,
+    "DAN->APL": 99,
+    "DAN->DAN": 31,
+    "DAN->KC": 324,
+    "DAN->MBON": 735,
+    "DAN->OTHER": 641,
+    "KC->APL": 5177,
+    "KC->DAN": 2066,
+    "KC->KC": 2133,
+    "KC->MBON": 21438,
+    "KC->OTHER": 5102,
+    "MBON->APL": 62,
+    "MBON->DAN": 480,
+    "MBON->KC": 39,
+    "MBON->MBON": 566,
+    "MBON->OTHER": 7006,
+    "OTHER->APL": 323,
+    "OTHER->DAN": 3758,
+    "OTHER->KC": 24485,
+    "OTHER->MBON": 3480,
+    "OTHER->OTHER": 2617044
+  }
+}
