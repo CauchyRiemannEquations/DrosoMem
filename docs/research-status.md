@@ -1,4 +1,18 @@
-# Research status — audit 2026-09-28
+# Research status
+
+## Latest — fresh-model coordinate-SD structural confirmation (2026-10-02)
+
+[Precommitted protocol](fresh-coordinate-sd-protocol.md), [results](fresh-coordinate-sd-results.md),
+[main evidence](../results/fresh_coordinate_sd/manifest.json),
+[independent audit](../results/fresh_coordinate_sd_validation/checks.json).
+Fresh model/data/control-graph seeds produced 96 new fits and 1,824 actual
+autonomous paths; all 1,824 were independently replayed. Random-digit
+coordinate-SD intact−degree prefix advantage is −0.967/−0.241 symbols in
+discovery/confirmation, so the preregistered joint intact advantage fails in
+both. The secondary own→coordinate gap reduction is +4.089/+2.426 symbols;
+it does not replace the primary outcome. The previous bounded calibration
+extension remains closed and unchanged. No further seed or dose search is
+included in this study.
 
 Audit base: bd438e3d4b69b782e23cec41a157871fd1868e07. Evidence has priority
 over summaries. Inventory: 822 tracked files, 23 experiment/analysis manifests,

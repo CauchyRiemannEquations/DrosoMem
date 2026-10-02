@@ -11,6 +11,13 @@ fly memorizing pi or a model predicting unseen pi digits.
 
 ## Current research
 
+The [fresh-model coordinate-SD structural confirmation](docs/fresh-coordinate-sd-results.md)
+is complete: 96 new readout fits and 1,824 independently replayed autonomous
+paths. The registered intact-over-degree criterion fails in both fresh cohorts.
+Coordinate-SD versus own-median calibration changes the structural gap, but
+does not establish an intact-wiring advantage. The prior bounded extension and
+its negative results remain closed.
+
 The [bounded observation-noise extension](docs/additional-research-closeout.md) is closed.
 The final [coordinate-SD calibration](docs/coordinate-sd-noise-results.md) criterion is **not confirmed**:
 96 reused partial heads, no new fits, all 2,688 paths independently replayed.

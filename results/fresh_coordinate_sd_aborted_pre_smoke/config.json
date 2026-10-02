@@ -1,0 +1,84 @@
+{
+  "study": "fresh-model-coordinate-sd-structural-confirmation",
+  "protocol": "docs/fresh-coordinate-sd-protocol.md",
+  "base_config": "configs/sequence_memory.json",
+  "cohorts": {
+    "discovery": [
+      [
+        680001,
+        690001
+      ],
+      [
+        680002,
+        690002
+      ],
+      [
+        680003,
+        690003
+      ],
+      [
+        680004,
+        690004
+      ],
+      [
+        680005,
+        690005
+      ]
+    ],
+    "confirmation": [
+      [
+        681001,
+        691001
+      ],
+      [
+        681002,
+        691002
+      ],
+      [
+        681003,
+        691003
+      ]
+    ]
+  },
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "families": [
+    "random",
+    "pi"
+  ],
+  "topologies": [
+    "intact",
+    "degree",
+    "role"
+  ],
+  "calibrations": [
+    "own",
+    "coordinate"
+  ],
+  "graph_seed_base": 698000,
+  "swaps_per_edge": 10,
+  "noise_seeds": [
+    699001,
+    699002,
+    699003
+  ],
+  "smoke_noise_seeds": [
+    699901,
+    699902,
+    699903
+  ],
+  "relative_strengths": [
+    0.0003,
+    0.03,
+    0.3
+  ],
+  "bootstrap_seed": 699399,
+  "bootstrap_draws": 10000,
+  "minimum_prefix_advantage": 2.0,
+  "minimum_retention_advantage": 0.1,
+  "max_seconds": 7200,
+  "verification_seconds": 7200,
+  "max_rss_bytes": 3221225472
+}

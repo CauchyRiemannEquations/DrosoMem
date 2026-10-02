@@ -1,4 +1,14 @@
-# Prioritized work — updated 2026-09-30
+# Prioritized work — updated 2026-10-02
+
+## Current handoff — 2026-10-02
+
+The single [fresh-model coordinate-SD study](fresh-coordinate-sd-results.md)
+proposed by the closed extension is now executed and independently verified.
+Its registered intact-over-degree criterion fails in both fresh cohorts.
+There is no remaining execution or verification in this bounded study. Any
+whole-brain, physiological, new-dynamics or local-learning extension requires
+a separate question, fixed budget and prospective criteria. The older handoff
+notes below describe their historical state.
 
 **The bounded observation-noise extension is closed, including coordinate-SD calibration.**
 [Programme synthesis](additional-research-closeout.md), [last experiment](coordinate-sd-noise-results.md),

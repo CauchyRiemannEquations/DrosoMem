@@ -1,0 +1,199 @@
+{
+  "config": {
+    "study": "fresh-model-coordinate-sd-structural-confirmation",
+    "protocol": "docs/fresh-coordinate-sd-protocol.md",
+    "base_config": "configs/sequence_memory.json",
+    "cohorts": {
+      "discovery": [
+        [
+          680001,
+          690001
+        ],
+        [
+          680002,
+          690002
+        ],
+        [
+          680003,
+          690003
+        ],
+        [
+          680004,
+          690004
+        ],
+        [
+          680005,
+          690005
+        ]
+      ],
+      "confirmation": [
+        [
+          681001,
+          691001
+        ],
+        [
+          681002,
+          691002
+        ],
+        [
+          681003,
+          691003
+        ]
+      ]
+    },
+    "circuit_seeds": [
+      701,
+      702
+    ],
+    "families": [
+      "random",
+      "pi"
+    ],
+    "topologies": [
+      "intact",
+      "degree",
+      "role"
+    ],
+    "calibrations": [
+      "own",
+      "coordinate"
+    ],
+    "graph_seed_base": 698000,
+    "swaps_per_edge": 10,
+    "noise_seeds": [
+      699001,
+      699002,
+      699003
+    ],
+    "smoke_noise_seeds": [
+      699901,
+      699902,
+      699903
+    ],
+    "relative_strengths": [
+      0.0003,
+      0.03,
+      0.3
+    ],
+    "bootstrap_seed": 699399,
+    "bootstrap_draws": 10000,
+    "minimum_prefix_advantage": 2.0,
+    "minimum_retention_advantage": 0.1,
+    "max_seconds": 7200,
+    "verification_seconds": 7200,
+    "max_rss_bytes": 3221225472
+  },
+  "context": {
+    "src/flying/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+    "src/flying/brain/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/flying/brain/constrained_bptt.py": "c8994023957d13ad3c6cd68114c90a5b5a2deeff5a8fa4dcc9ccd762c04f0508",
+    "src/flying/brain/diagnostics.py": "6cd44d3971490d4be13445d53571537bea0782e4d96a4b9e209510bbcdb619d0",
+    "src/flying/brain/dopamine.py": "b41673ca1cfebd665da89d4a984d654d8f8c06867a7e33bb48a2cff821ab3946",
+    "src/flying/brain/fly_network.py": "5b6393e9343d9516050a714e10ec94faea1aaa82c7799b4ee87b184436301e7a",
+    "src/flying/brain/lif.py": "c2636413867ec57c2b7ae962c42aa007f3c46a781b63f930922efc8c47d63afa",
+    "src/flying/brain/lif_reference.py": "9437bfa887f77f6e77bdaf60547a8802f3c52e1cfdfb5c008e6d038a5de195a9",
+    "src/flying/brain/local_reward.py": "dc80495aafa5da9ac4e3fd8ff27b8e2bff232d06afa3e5c1944f8b47699b3995",
+    "src/flying/brain/mushroom_body.py": "c47ab26f28d8f969f7bfc45c32d046a6af93e56dce3c26dae1ab8eda263386b6",
+    "src/flying/brain/plasticity.py": "22a213c0ca0f81954ae59ea6b5773885caec3b9a9b6e19c4a3f064df7d48ebef",
+    "src/flying/brain/random_network.py": "95efa4ccc748cde4b71872bcef3d611958d4f8b21eabbce459af667e80e303cf",
+    "src/flying/brain/reservoir.py": "2221db2706b6b01c92d83b6aa27bf6e1cedc8744e615d70f4081b41eb75f4630",
+    "src/flying/brain/reward_plasticity.py": "c1d481e72a712296ba9743714e2dad4d7f183aca27feb94245a72793de18b1fe",
+    "src/flying/brain/role_random.py": "31bc1ae01f3420f8743c7d155df303651960ff931841203827ed3bc8b3b252c7",
+    "src/flying/brain/shuffled_network.py": "8ec288b891c91823e425fd3982b61ad0d065d8f76abb192d45ac021d03a3a9c9",
+    "src/flying/brain/sparse_lif.py": "cd34efcff7f76631cfbfb8d250b8a9b5dcf3624a24a9b6844093da6d3b8bfdfe",
+    "src/flying/brain/timed_reservoir.py": "7378dadb9e03e131abb8483bd6a3e058e8453dcf007109ec14918ae55dbb0ce2",
+    "src/flying/data/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/flying/data/compartments.py": "4ad9b45297b22d19f3ff1b945fcd07c64628c9ec020ea90b26f089456c5a73b9",
+    "src/flying/data/connectome.py": "08adf495f49cffdd0d1b868220993362f8a3a8b9a453349649b0d90b7673a13e",
+    "src/flying/data/mushroom_body.py": "914598925bff65d702118d881327df10e30323148e2e39255da424def69ae6be",
+    "src/flying/data/pi_digits.py": "8892f5f70730ab8d29698214f81328e557916c1866afe73a4e118edfe00d6091",
+    "src/flying/data/sequences.py": "b1cff877f02487b61dc693c1e6f08f5c5ef230fb21fbb5dcd79399199c612e99",
+    "src/flying/data/subsets.py": "0b84efc98944e534a5206b955b277f2be423393075b2c4905ace3ecb980294d8",
+    "src/flying/data/whole_brain.py": "f6dcf5b24dff88913ed6053a9bdcff8804b77e516b83d14e3209b50143ace31c",
+    "src/flying/encoding/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/flying/encoding/digit_encoder.py": "e83dffff85555862e597b02b53da8f8dac497808af27ffe8f766a51b01735b89",
+    "src/flying/evaluation/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/flying/evaluation/delayed_memory.py": "17d708b0f7958effecfe685285c92aab54005ffe6ef2ac0054014a2b3ab3c465",
+    "src/flying/evaluation/free_recall.py": "39f27d2310fcd136eb56acf5681de06801853cf547283a96e8efcf93b2055154",
+    "src/flying/evaluation/metrics.py": "aa64b8d4e03002d940e81116ecef99f206fc4d28ad4c7985a352f9c52d0c51e9",
+    "src/flying/evaluation/next_digit.py": "cb7e74cb472ad255d79fcbeb5449e20c540433cd484bbec599457aa07d68e2b7",
+    "src/flying/evaluation/perturbation.py": "9b1af2184173f16af3edb9a9791af828089828fa6ed28f6797c868952d0dfa7b",
+    "src/flying/models/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/flying/models/nonlinear_readout.py": "de9350e9ed782c84a9e47cf28984d01ca5cc8141c42482e45d28dd0d360aa5ed",
+    "src/flying/models/readout.py": "7efbba8619a7018cbf5c62c6b6df64084299051a631ab330f0a8c0f7b55bfd83",
+    "src/flying/models/ridge.py": "1a0427ffa6af4b95692ce4350e62c727df4eac16266810c42dad0cd158205514",
+    "src/flying/training/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/flying/training/phase2.py": "3bd639ba2a0c1c2bdc2f6be212b33edf146ae781d6a71941b49eaeae6c9919a6",
+    "src/flying/training/phase2_robustness.py": "8d30c20d5af302a4a64d8b9444b11c115e32b8c10801777659ddf2d9cdf0d027",
+    "src/flying/training/phase3.py": "6443932e7022e7a26a8e3facd049d5a0905afb7777f55098b3aac0ce1d546208",
+    "src/flying/training/phase3b.py": "5853d1df143fb8d51c8ca6000881bc6203c536d72c4d2e34bd6c482570594fc1",
+    "src/flying/training/phase4.py": "a9d093d323dbaba7c46e0620532ae40082ae56cc054f520b231d0350d5a80aaf",
+    "src/flying/training/phase5.py": "0781b81165590d7cb88bbb7cf29be5b917904ba7f74f97357f00667081e04505",
+    "src/flying/training/phase5_bptt.py": "1fd743d72dfc1a11904ff8323eba45eb8dbf6340e5ddbf8dc5965f3fbe88d6ab",
+    "src/flying/training/phase5_curriculum.py": "c19aa9c406091511a347edd4bee2d4c3d9324ca82e7dcd6c66f126958b7c5707",
+    "src/flying/training/phase5_diagnostic.py": "80c2a924c8a2fcfcf3b5ccc84cef2635832e3dade6a8f19643bce69d89dcb7f3",
+    "src/flying/training/phase5_prefix.py": "b4d5ca3b7fdf7d9d3bafa41e0ac02e88a8c4f2ac9a790d6620a2b02894693d16",
+    "src/flying/training/phase5_prefix_confirmation.py": "18d9f7dd0715a61e8d2ee8e90137b41eebb9bb4160fb7b6c2acab69a86adbc77",
+    "src/flying/training/phase5_readout.py": "f62a4fa7a8c3eacbe3f2dec95debe71d0703a70cef4ce53906f7a14ee87c8091",
+    "src/flying/training/phase5_retention.py": "643ef1f766651ba600e4dee233687dc1f796e829b9593fe2dde35268f85f5af4",
+    "src/flying/training/phase5_retention_confirmation.py": "cc8d3612562e8d29aa248fd5309cceb2de77f890ba1d7ee5a93ea9c963a7715b",
+    "src/flying/training/phase5_timing.py": "9beef32dc395d7abd24bb2cf9d8ee10afe856ce3055b2128fd6355825ab5a95c",
+    "src/flying/training/phase5b.py": "1515c30a29ba132930c801592cb64dbf2007121032b6e6b24d91aa52f6be0129",
+    "src/flying/training/phase6.py": "f14a6aaaa76d280ec03ef0f1530c60212a77fecd8c7df05fc92dd8a9c2605047",
+    "src/flying/training/sequence_memory.py": "67fd43d53741090a3d4630a7dd30f96d7a5064bf2853d905a4e4bc9e29417e65",
+    "src/flying/training/stage_bc.py": "1e9bce43e07d8121ec365547225f460b621045f2bd0dd16e6b7622c538e2c878",
+    "src/flying/training/train.py": "d9a09c93431fca0cebacb13c202a345e23a26a94eae7f6fc035c0dfe6f353063",
+    "src/flying/training/whole_brain_memory.py": "f3046ac2494365d2849e700b4ca118443392d42a17f032796dcd1b7f66822d78",
+    "src/flying/visualization/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/flying/visualization/activity.py": "06b8cc7ea84082a95cea57252a541e487d1c828bdae00519ce91687ad164fe20",
+    "src/flying/visualization/pi_memory.py": "93b513a51e540e5befb3d8045979d957de850223a93182d13ba420b4bb01316e",
+    "docs/fresh-coordinate-sd-protocol.md": "1df30760582fed4931e0d71185dd77a2654fae82d81fcf3ab7d39f92017a0a94",
+    "configs/sequence_memory.json": "ec30f14d95cb89cb3048b0cdad7757408c9cc2413555f98c97ea176cbd53ef8b",
+    "configs/fresh_coordinate_sd.json": "861a1786a0bdbda1153a94632925a855ce878c00f10c78108b8cc66394a4487c",
+    "scripts/fresh_coordinate_sd.py": "43f2e8cfe9281325e1daeba30d0c89d70c4da77aaa36942deb778c4e0b4a86fa",
+    "scripts/verify_fresh_coordinate_sd.py": "9bf07804108cdfb03311f8c51ed7b314d1e2a383ef188466e7f0ff6e56669b30",
+    "scripts/structural_controls.py": "d419f481a11b3130f62d04133884ef04cb0cf63af25942c923dde27fdf5abae3",
+    "scripts/feedback_noise.py": "6d9ac2005ee8bcdc85d49c7a9f8e79ed56b4d33e15104fe286c92e9cfedb9194",
+    "scripts/allocation_noise.py": "55fbec42e269f950f4c5307fa6becc17bfaa5a43130e6e8b22da462891cf963a",
+    "scripts/research_suite.py": "d001a74fe9eadcebfa02ab1335b63b163c50ced815a9ebd71d149af7deec5802",
+    "data/flywire_783_mb_left_kc512_s701/annotations.csv": "10f9c9d4db8ee2741bd19cf464e4b46fd6e24f086a5ce1dbb550bcea633cdb16",
+    "data/flywire_783_mb_left_kc512_s701/edges.csv": "d8c47ea1202575994d430f55e5bd8602f939f320ef02f71522fc1bc54b97db51",
+    "data/flywire_783_mb_left_kc512_s701/neurons.json": "05d83a288b1d42337001015be2d54167aed00cdc9fea58b578423d18756aa77b",
+    "data/flywire_783_mb_left_kc512_s701/provenance.json": "e1a50d254628fb0573d7853b8e66926697b353da317bd701b17e60bfd4942061",
+    "data/flywire_783_mb_left_kc512_s702/annotations.csv": "a84ec1dd485ac0e22fc68b67854dd3f30b93d9fad6d6d6bdac86c163ba4e71d5",
+    "data/flywire_783_mb_left_kc512_s702/edges.csv": "88bec1c0c812a31951e2edbf26852ce1115910bc4756fefc49f7272cc59f9859",
+    "data/flywire_783_mb_left_kc512_s702/neurons.json": "36e104e38baea40351743e3b9bc5d1bc1a709d6e61dfd24e5ac79cde2ac606a5",
+    "data/flywire_783_mb_left_kc512_s702/provenance.json": "af5237c9d8741adbc21a4a7c0a42b481d3242ee77901fca8d7fb912469eb5f1d"
+  },
+  "timestamp": "2026-10-02T05:36:21.241697+00:00",
+  "purpose": "Fresh-model coordinate-SD case",
+  "artifacts": {
+    "calibration.npz": "bb4691225ace7938c10d6906de880632bdfc461a573f148b0e257a73ab4eb3fd",
+    "case.json": "01bee057787d137fbf118540e8a03e8bd66b32051f65dc8b95341d8a48d16494",
+    "certificates.csv": "87827f9e5d5173d74ac22ee1febfd3180a0b9dae729fe909b3bbdfcc57cf07dd",
+    "checkpoint.npz": "2a2b05de753be6b88dd18c07eeefc1b5f29990429ad97e09b483daaa7e4984e2",
+    "clean.npz": "00211b186dc30158ef12774eed8b92bc76544b4f97cd021d848adc144f6005ea",
+    "coordinate_dose0_noise0.npz": "0971b0685664983a2ee2035ba77a9d720b4060972df871478df39f6469235237",
+    "coordinate_dose0_noise1.npz": "a86a463c77dea312855ff5525fc242f223c6442758b5446ee6cbb02bd38496c0",
+    "coordinate_dose0_noise2.npz": "17a024fdd9e330b8a1d21c45cea3731a6546e63e319103e264661964a019e8e0",
+    "coordinate_dose1_noise0.npz": "70ffbf61a019421561661dc6f196d8f7695959fd216110a94b4a64d3a87b628b",
+    "coordinate_dose1_noise1.npz": "4cbc83639026849f68604097271dd9413ac994c58829d97bb8452849f45a4be9",
+    "coordinate_dose1_noise2.npz": "029ef2f8c8d79a86818e25ee1ea3c213472debbca3e1d4390e272c1a833bc00b",
+    "coordinate_dose2_noise0.npz": "036455b84d80d111cf5f85c9d96f348f6cadc4382d32479b3ad6b7e6b8d504a4",
+    "coordinate_dose2_noise1.npz": "a40c1fc0c3ded7b34bbb6ca4c6cd0db73a2f497c6996730d8fee1ef21ac83d66",
+    "coordinate_dose2_noise2.npz": "1d9f37416a26f8bf37e39293979eaefb9b02b2a6c04a2a974aed5ab69a821bc4",
+    "own_dose0_noise0.npz": "ba0f88125eb8525d7cf7576f5d1e28fef45b857f4c59c86fb68b7aff64b8dccf",
+    "own_dose0_noise1.npz": "d46513e8fdec26054ec324fdb3eb87026a1d70d0e11237ffdf8bbbeb928af217",
+    "own_dose0_noise2.npz": "393722b2768c113d30cc9b694f87b0291a532bf6510a45f364542c2199731a6d",
+    "own_dose1_noise0.npz": "5434e2c7eab15a27a6668c6d3446b9b953406a11152211ab0b57681a1197450d",
+    "own_dose1_noise1.npz": "e71c54397f0863d886b5aa2f8ac8506c4a82e227986da8e15b0b43fc847cfc5a",
+    "own_dose1_noise2.npz": "229c1a1935b7ad10bd9ce9cac0ee2e24465414e2a6ed5d1154cc4a5a516ddd14",
+    "own_dose2_noise0.npz": "d8f42c69140c984909496702216c76ddcdf6df41d11d17b99f261c9df79f4483",
+    "own_dose2_noise1.npz": "4871238cf1d9ef0ea99a6aceb1094b850ca4f52e9f6a786bc2328298756370c3",
+    "own_dose2_noise2.npz": "ff7221fb76ac8eca0058500821ede9cd82ca5c2cb48a11f87480d9c7df63239d",
+    "raw-graph.npz": "67456d3b13b37f2dbe28bfd88488b72511abbdd1075fc66ff579ae6154b97be5",
+    "rollouts.csv": "08973e7768abbd003968cc6c42ded99c9454f522048e46be02ec4a4f7626a509",
+    "training.json": "e7399240d19be5cfeb24e60c87764349947656968edc12ee86321c1b4203102a",
+    "weights.npz": "60fe8786bea8418cf5a9d1711d88694ae6a1859d85f5d73ef2e3fc9ceec75f87"
+  }
+}

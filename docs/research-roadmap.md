@@ -1,5 +1,14 @@
 # DrosoMem research roadmap
 
+## Latest — 2026-10-02
+
+The [fresh-model coordinate-SD structural confirmation](fresh-coordinate-sd-results.md)
+is complete, with 96 new fits and full independent replay of 1,824 paths.
+The registered intact-over-degree random-digit criterion fails in both new
+cohorts. The earlier reused-head calibration study remains a separate closed
+result. Further whole-brain, physiological or internal-learning work needs a
+new prospective protocol; this study does not trigger a calibration sweep.
+
 DrosoMem studies computational models using actual Drosophila connectome structure.
 It does not demonstrate a living fly memorizing pi. Always distinguish
 **representation** (past inputs affect state), **decoding** (a head extracts useful
