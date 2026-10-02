@@ -39,20 +39,21 @@ def verify(result,out):
                         dt_ms=.1,eligibility_ms=c['eligibility_ms'],learning_rate=rate,
                         floor_fraction=c['floor_fraction'])
                     np.testing.assert_allclose(a['adapted_data'],fresh.data,atol=1e-10,rtol=0)
-                    assert row['adapted_weight_sha256']==core.weight_hash(fresh)
-                    assert row['changed_edges']==int(np.count_nonzero(fresh.data!=weights.data))
+                    adapted=weights.copy();adapted.data[:]=a['adapted_data']
+                    assert row['adapted_weight_sha256']==core.weight_hash(adapted)
+                    assert row['changed_edges']==int(np.count_nonzero(adapted.data!=weights.data))
                     counts['closed_form_updates']+=1
-                    after=study.response(fresh,roles,encoder,c,mbon)
+                    after=study.response(adapted,roles,encoder,c,mbon)
                     np.testing.assert_array_equal(a['probe_after'],after)
                     np.testing.assert_array_equal(a['drive_before'],study.drive(weights,encoder,c,mbon))
-                    np.testing.assert_array_equal(a['drive_after'],study.drive(fresh,encoder,c,mbon))
+                    np.testing.assert_array_equal(a['drive_after'],study.drive(adapted,encoder,c,mbon))
                     assert row['cs_plus_after']==int(after[0].sum())
                     assert row['cs_minus_after']==int(after[1].sum())
                     assert row['fixed_anatomical_accuracy']==study.fixed_accuracy(after)
                     counts['response_replays']+=1
                     if arm in ('paired','no_dopamine'):
                         train=a['lag_train'];test=a['lag_test'];observed=np.flatnonzero(np.asarray(roles)=='MBON')
-                        simulator=LIFReservoir(fresh,encoder,roles)
+                        simulator=LIFReservoir(adapted,encoder,roles)
                         xtrain=simulator.states(train)[:,observed];xtest=simulator.states(test)[:,observed]
                         np.testing.assert_array_equal(a['lag_xtrain'],xtrain)
                         np.testing.assert_array_equal(a['lag_xtest'],xtest)
