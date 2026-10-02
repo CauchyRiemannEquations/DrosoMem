@@ -59,7 +59,7 @@ def verify(result,out):
                 scores=((a['test_features'][w:]-mean)/scale@coef+bias).reshape(len(ytest),len(lags),4)
                 pred=scores.argmax(axis=2)
                 np.testing.assert_array_equal(a['predictions'],pred)
-                assert row['shuffled_accuracy']==float(np.mean(pred==ytest))
+                assert abs(row['shuffled_accuracy']-float(np.mean(pred==ytest)))<1e-15
                 counts['ridge_refits']+=1
             counts['cases']+=1
             print(f'verified s{block["seed"]} c{circuit}',flush=True)
