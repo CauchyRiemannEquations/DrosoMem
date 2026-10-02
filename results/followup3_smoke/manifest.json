@@ -1,0 +1,88 @@
+{
+  "config": {
+    "protocol": "docs/followup-3-protocol.md",
+    "circuit_seeds": [
+      701,
+      702
+    ],
+    "blocks": [
+      {
+        "seed": 810001,
+        "input_seed": 811001,
+        "sequence_seed": 812001,
+        "probe_train_seed": 813001,
+        "probe_test_seed": 814001
+      },
+      {
+        "seed": 810002,
+        "input_seed": 811002,
+        "sequence_seed": 812002,
+        "probe_train_seed": 813002,
+        "probe_test_seed": 814002
+      },
+      {
+        "seed": 810003,
+        "input_seed": 811003,
+        "sequence_seed": 812003,
+        "probe_train_seed": 813003,
+        "probe_test_seed": 814003
+      }
+    ],
+    "lengths": [
+      64,
+      128,
+      256
+    ],
+    "alphabet_sizes": [
+      4,
+      10,
+      16
+    ],
+    "families": [
+      "iid",
+      "markov",
+      "motif"
+    ],
+    "markov_self_probability": 0.7,
+    "motif_period": 8,
+    "prompt_length": 3,
+    "epochs": 300,
+    "hidden_units": 8,
+    "learning_rate": 0.03,
+    "l2": 1e-05,
+    "prefix_window": 32,
+    "prefix_weight": 4,
+    "warmup": 100,
+    "train_samples": 2000,
+    "test_samples": 1000,
+    "alpha": 1.0,
+    "gain": 0.9,
+    "leak": 0.6,
+    "input_fraction": 0.1,
+    "input_amplitude": 0.5,
+    "schedule": "mbon_after_kc",
+    "normalization": "incoming_l1",
+    "activity_epsilon": 1e-08,
+    "max_seconds": 3600,
+    "max_rss_bytes": 3221225472
+  },
+  "complete": true,
+  "smoke": true,
+  "artifacts": {
+    "config.json": "22f757da9baff21e6b8571d060b3808873e39f59c7c2ff0c853e43f1f2aab978",
+    "grid-summary.csv": "55b3cff279845608a4e063d1cf0a4b7f2f4e97e9499e6f4885f2e84a5b559c0f",
+    "raw-cases.csv": "da148bd23d0b6651838f7ebad417d1c23768085e267b2a3f6238eb037c17b31a",
+    "raw-probes.csv": "2a7d0c6b3d740f8131a24cb9a80459050546fc60f3ed0d45fcf4b0036b73ccca",
+    "seed-probes.csv": "445c4e3b60872f676d8a7db96e9e3c64245447c5827de89858167e073ca867d5",
+    "source-hashes.json": "989e81c4cf09fe9fcfbbbacde12ab9d72af460f34d9b1c68e1da198db5260ba4",
+    "summary.json": "aae7034a73cd9f1dd933a83b9b052c99979170f4bf4f44a6da521e89b69e3f24",
+    "verification.json": "059cfe81e8ffc7fd2bbd1037a0b31d3f4e213fde365070823cfa85590a5bcf4c",
+    "probe_s810001_c701_k4_iid/manifest.json": "04c974fa148161bbd0eeb1f48debe109d95d74cb3a17b33f8811c3d0c1918487",
+    "probe_s810001_c701_k4_iid/metrics.json": "a18e60db4e49db1462f0e9affd791158a5a8fd06484628b519ad53fdddeea2a1",
+    "probe_s810001_c701_k4_iid/probe.npz": "837353c332a4727ccc501fb38b082ab210b9a058f61d1020adc41f126ed1272d",
+    "s810001_c701_k4_iid_n64/case.npz": "ecf4dd90cb145c1d24c052a4011576532770fde9a75031b302e020f1d713f516",
+    "s810001_c701_k4_iid_n64/manifest.json": "5299ab9f4ff2c1b3fea24d28bb87db21f83baff517ba822a16e139f207da0f88",
+    "s810001_c701_k4_iid_n64/metrics.json": "46e71984d85a0d285d02245ea2eb67c1f604f18e77f25eabeae52d2c97027560",
+    "s810001_c701_k4_iid_n64/training.json": "2db0fd14701f084e9ddbb2226443a5b9578a23452755f3f168fa82c240a81672"
+  }
+}
