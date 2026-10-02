@@ -2,6 +2,16 @@
 
 ## Current handoff — 2026-10-02
 
+The [DAN→MBON temporal-pathway study](temporal-pathway-results.md) is now
+executed and independently verified. Its registered current-path-dominance
+criterion fails in both cohorts: a current-only cut improves refitted MBON
+delayed decoding, while a persistent cut impairs it. The descriptive
+nonadditive interaction warrants a distinct prospective study if pursued;
+there is no execution or verification left in this bounded study. Storage
+localization, physiological dopamine and whole-brain generalization remain
+open questions, not claims from this result. The notes below retain the
+preceding handoff state.
+
 The single [fresh-model coordinate-SD study](fresh-coordinate-sd-results.md)
 proposed by the closed extension is now executed and independently verified.
 Its registered intact-over-degree criterion fails in both fresh cohorts.

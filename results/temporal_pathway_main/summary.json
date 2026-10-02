@@ -1,0 +1,487 @@
+{
+  "statistics": {
+    "confirmation/KC_unstimulated/frozen": {
+      "intact": {
+        "n": 3,
+        "mean": 0.5092777777777777,
+        "median": 0.4760833333333333,
+        "variance": 0.005956543981481472,
+        "bootstrap95": [
+          0.45425000000000004,
+          0.5974999999999999
+        ],
+        "paired_dz": 6.598687321504551,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "persistent_loss": {
+        "n": 3,
+        "mean": 0.004861111111111112,
+        "median": 5.551115123125783e-17,
+        "variance": 8.105787037037016e-05,
+        "bootstrap95": [
+          -0.0006666666666667043,
+          0.015249999999999986
+        ],
+        "paired_dz": 0.539930614779454,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      },
+      "current_only_loss": {
+        "n": 3,
+        "mean": 0.0,
+        "median": 0.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          0.0,
+          0.0
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 3,
+        "losses": 0
+      },
+      "history_only_loss": {
+        "n": 3,
+        "mean": 0.004861111111111112,
+        "median": 5.551115123125783e-17,
+        "variance": 8.105787037037016e-05,
+        "bootstrap95": [
+          -0.0006666666666667043,
+          0.015249999999999986
+        ],
+        "paired_dz": 0.539930614779454,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      }
+    },
+    "confirmation/KC_unstimulated/refit": {
+      "intact": {
+        "n": 3,
+        "mean": 0.5092777777777777,
+        "median": 0.4760833333333333,
+        "variance": 0.005956543981481472,
+        "bootstrap95": [
+          0.45425000000000004,
+          0.5974999999999999
+        ],
+        "paired_dz": 6.598687321504551,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "persistent_loss": {
+        "n": 3,
+        "mean": -0.0004444444444444695,
+        "median": 8.333333333337967e-05,
+        "variance": 1.668981481481686e-06,
+        "bootstrap95": [
+          -0.0019166666666667886,
+          0.0005000000000000004
+        ],
+        "paired_dz": -0.34402636203002285,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      },
+      "current_only_loss": {
+        "n": 3,
+        "mean": 0.0,
+        "median": 0.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          0.0,
+          0.0
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 3,
+        "losses": 0
+      },
+      "history_only_loss": {
+        "n": 3,
+        "mean": -0.0004444444444444695,
+        "median": 8.333333333337967e-05,
+        "variance": 1.668981481481686e-06,
+        "bootstrap95": [
+          -0.0019166666666667886,
+          0.0005000000000000004
+        ],
+        "paired_dz": -0.34402636203002285,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      }
+    },
+    "confirmation/MBON/frozen": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7787777777777777,
+        "median": 0.7786666666666666,
+        "variance": 3.307175925925965e-05,
+        "bootstrap95": [
+          0.7730833333333335,
+          0.7845833333333334
+        ],
+        "paired_dz": 135.42065235980593,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "persistent_loss": {
+        "n": 3,
+        "mean": 0.49216666666666664,
+        "median": 0.4927500000000001,
+        "variance": 4.9840277777777096e-05,
+        "bootstrap95": [
+          0.4848333333333333,
+          0.4989166666666665
+        ],
+        "paired_dz": 69.7143158162937,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "current_only_loss": {
+        "n": 3,
+        "mean": 0.4608611111111111,
+        "median": 0.46391666666666664,
+        "variance": 0.0001298425925925938,
+        "bootstrap95": [
+          0.44825,
+          0.4704166666666667
+        ],
+        "paired_dz": 40.44468648840464,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "history_only_loss": {
+        "n": 3,
+        "mean": 0.4315277777777778,
+        "median": 0.44425000000000003,
+        "variance": 0.0016685023148148086,
+        "bootstrap95": [
+          0.3858333333333334,
+          0.4644999999999999
+        ],
+        "paired_dz": 10.564412491682287,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "confirmation/MBON/refit": {
+      "intact": {
+        "n": 3,
+        "mean": 0.7787777777777777,
+        "median": 0.7786666666666666,
+        "variance": 3.307175925925965e-05,
+        "bootstrap95": [
+          0.7730833333333335,
+          0.7845833333333334
+        ],
+        "paired_dz": 135.42065235980593,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "persistent_loss": {
+        "n": 3,
+        "mean": 0.08186111111111109,
+        "median": 0.08266666666666667,
+        "variance": 1.2446759259258573e-05,
+        "bootstrap95": [
+          0.07800000000000007,
+          0.08491666666666653
+        ],
+        "paired_dz": 23.20328584744383,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "current_only_loss": {
+        "n": 3,
+        "mean": -0.022249999999999954,
+        "median": -0.02141666666666664,
+        "variance": 1.0027777777777714e-05,
+        "bootstrap95": [
+          -0.02574999999999994,
+          -0.019583333333333286
+        ],
+        "paired_dz": -7.026315789473692,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "history_only_loss": {
+        "n": 3,
+        "mean": 0.017138888888888888,
+        "median": 0.016750000000000043,
+        "variance": 6.759259259257771e-07,
+        "bootstrap95": [
+          0.016583333333333394,
+          0.01808333333333323
+        ],
+        "paired_dz": 20.846498123626436,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "discovery/KC_unstimulated/frozen": {
+      "intact": {
+        "n": 3,
+        "mean": 0.5090277777777779,
+        "median": 0.50775,
+        "variance": 0.0007483356481481475,
+        "bootstrap95": [
+          0.48233333333333334,
+          0.537
+        ],
+        "paired_dz": 18.607724419864965,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "persistent_loss": {
+        "n": 3,
+        "mean": 0.001722222222222236,
+        "median": 0.0021666666666667056,
+        "variance": 1.9259259259259955e-06,
+        "bootstrap95": [
+          0.0001666666666666483,
+          0.0028333333333333544
+        ],
+        "paired_dz": 1.2409931919894128,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "current_only_loss": {
+        "n": 3,
+        "mean": 0.0,
+        "median": 0.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          0.0,
+          0.0
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 3,
+        "losses": 0
+      },
+      "history_only_loss": {
+        "n": 3,
+        "mean": 0.001722222222222236,
+        "median": 0.0021666666666667056,
+        "variance": 1.9259259259259955e-06,
+        "bootstrap95": [
+          0.0001666666666666483,
+          0.0028333333333333544
+        ],
+        "paired_dz": 1.2409931919894128,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "discovery/KC_unstimulated/refit": {
+      "intact": {
+        "n": 3,
+        "mean": 0.5090277777777779,
+        "median": 0.50775,
+        "variance": 0.0007483356481481475,
+        "bootstrap95": [
+          0.48233333333333334,
+          0.537
+        ],
+        "paired_dz": 18.607724419864965,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "persistent_loss": {
+        "n": 3,
+        "mean": 0.000694444444444479,
+        "median": 0.0009166666666666767,
+        "variance": 1.0370370370370306e-06,
+        "bootstrap95": [
+          -0.0004166666666666208,
+          0.001583333333333381
+        ],
+        "paired_dz": 0.6819309069875121,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      },
+      "current_only_loss": {
+        "n": 3,
+        "mean": 0.0,
+        "median": 0.0,
+        "variance": 0.0,
+        "bootstrap95": [
+          0.0,
+          0.0
+        ],
+        "paired_dz": null,
+        "wins": 0,
+        "ties": 3,
+        "losses": 0
+      },
+      "history_only_loss": {
+        "n": 3,
+        "mean": 0.000694444444444479,
+        "median": 0.0009166666666666767,
+        "variance": 1.0370370370370306e-06,
+        "bootstrap95": [
+          -0.0004166666666666208,
+          0.001583333333333381
+        ],
+        "paired_dz": 0.6819309069875121,
+        "wins": 2,
+        "ties": 0,
+        "losses": 1
+      }
+    },
+    "discovery/MBON/frozen": {
+      "intact": {
+        "n": 3,
+        "mean": 0.77725,
+        "median": 0.7778333333333334,
+        "variance": 4.638194444444413e-05,
+        "bootstrap95": [
+          0.7701666666666668,
+          0.78375
+        ],
+        "paired_dz": 114.12643598101664,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "persistent_loss": {
+        "n": 3,
+        "mean": 0.5023333333333334,
+        "median": 0.50325,
+        "variance": 1.1465277777777962e-05,
+        "bootstrap95": [
+          0.4985833333333332,
+          0.5051666666666667
+        ],
+        "paired_dz": 148.35415253030743,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "current_only_loss": {
+        "n": 3,
+        "mean": 0.48780555555555555,
+        "median": 0.4816666666666666,
+        "variance": 0.00018347453703703665,
+        "bootstrap95": [
+          0.4784166666666667,
+          0.5033333333333333
+        ],
+        "paired_dz": 36.01296192617002,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "history_only_loss": {
+        "n": 3,
+        "mean": 0.44683333333333336,
+        "median": 0.4455833333333334,
+        "variance": 0.0010874236111111113,
+        "bootstrap95": [
+          0.41450000000000004,
+          0.48041666666666666
+        ],
+        "paired_dz": 13.55021494213754,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "discovery/MBON/refit": {
+      "intact": {
+        "n": 3,
+        "mean": 0.77725,
+        "median": 0.7778333333333334,
+        "variance": 4.638194444444413e-05,
+        "bootstrap95": [
+          0.7701666666666668,
+          0.78375
+        ],
+        "paired_dz": 114.12643598101664,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "persistent_loss": {
+        "n": 3,
+        "mean": 0.08408333333333325,
+        "median": 0.08591666666666664,
+        "variance": 1.7861111111110934e-05,
+        "bootstrap95": [
+          0.07924999999999993,
+          0.08708333333333318
+        ],
+        "paired_dz": 19.8955378446407,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      },
+      "current_only_loss": {
+        "n": 3,
+        "mean": -0.02894444444444444,
+        "median": -0.026000000000000023,
+        "variance": 2.7509259259258576e-05,
+        "bootstrap95": [
+          -0.03499999999999992,
+          -0.025833333333333375
+        ],
+        "paired_dz": -5.518560016537015,
+        "wins": 0,
+        "ties": 0,
+        "losses": 3
+      },
+      "history_only_loss": {
+        "n": 3,
+        "mean": 0.013194444444444472,
+        "median": 0.01216666666666677,
+        "variance": 0.0001378773148148144,
+        "bootstrap95": [
+          0.0020000000000000018,
+          0.025416666666666643
+        ],
+        "paired_dz": 1.1236853024556979,
+        "wins": 3,
+        "ties": 0,
+        "losses": 0
+      }
+    }
+  },
+  "gates": {
+    "confirmation": {
+      "persistent": true,
+      "current": false,
+      "dominance": false,
+      "history": true
+    },
+    "discovery": {
+      "persistent": true,
+      "current": false,
+      "dominance": false,
+      "history": true
+    }
+  },
+  "primary_confirmed": false,
+  "primary_site": "MBON",
+  "primary_mode": "refit",
+  "cohorts_pooled": false,
+  "autonomous_paths": 64
+}

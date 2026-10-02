@@ -11,6 +11,15 @@ fly memorizing pi or a model predicting unseen pi digits.
 
 ## Current research
 
+The [DAN→MBON temporal-pathway study](docs/temporal-pathway-results.md) is
+complete: 12 paired state panels, 96 new readout fits and 64 independently
+replayed autonomous paths. Its preregistered current-path-dominance criterion
+fails in both cohorts. A current-only cut improves refitted MBON delayed
+decoding by 2.894/2.225 percentage points, while a persistent cut loses
+8.408/8.186 points. The interaction does not identify an anatomical memory
+storage site. [Protocol](docs/temporal-pathway-protocol.md) and
+[independent audit](results/temporal_pathway_main_validation/checks.json).
+
 The [fresh-model coordinate-SD structural confirmation](docs/fresh-coordinate-sd-results.md)
 is complete: 96 new readout fits and 1,824 independently replayed autonomous
 paths. The registered intact-over-degree criterion fails in both fresh cohorts.
@@ -62,8 +71,8 @@ Keep the committed parent artifacts. The [protocol](docs/additional-research-com
 defines seeds, budgets, stopping rules and replay subsets; individual reports contain raw tables,
 checkpoints and plotting commands. Distinguish **representation**, **decoding** and **internal learning**.
 The subsequent graph-relative and coordinate-SD calibrations are also complete.
-One future proposal is fresh model/data/graph seeds under coordinate-SD calibration;
-this fresh-model study is not registered or executed. [Data and attribution](data/README.md) · [Primary-source review](docs/research.md) ·
+The fresh-model coordinate-SD study and the subsequent DAN→MBON temporal-pathway
+study are complete within their own fixed scopes. [Data and attribution](data/README.md) · [Primary-source review](docs/research.md) ·
 [Historical reproduction](docs/historical-reproduction.md) · [License](LICENSE)
 
 

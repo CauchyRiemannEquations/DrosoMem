@@ -1,0 +1,111 @@
+{
+  "study": "dan-mbon-current-versus-history-probe",
+  "protocol": "docs/temporal-pathway-protocol.md",
+  "parent": "results/fresh_coordinate_sd",
+  "circuit_seeds": [
+    701,
+    702
+  ],
+  "cohorts": {
+    "discovery": [
+      {
+        "seed": 720001,
+        "train_seed": 730001,
+        "test_seed": 750001,
+        "observation_seed": 740001
+      },
+      {
+        "seed": 720002,
+        "train_seed": 730002,
+        "test_seed": 750002,
+        "observation_seed": 740002
+      },
+      {
+        "seed": 720003,
+        "train_seed": 730003,
+        "test_seed": 750003,
+        "observation_seed": 740003
+      }
+    ],
+    "confirmation": [
+      {
+        "seed": 721001,
+        "train_seed": 731001,
+        "test_seed": 751001,
+        "observation_seed": 741001
+      },
+      {
+        "seed": 721002,
+        "train_seed": 731002,
+        "test_seed": 751002,
+        "observation_seed": 741002
+      },
+      {
+        "seed": 721003,
+        "train_seed": 731003,
+        "test_seed": 751003,
+        "observation_seed": 741003
+      }
+    ]
+  },
+  "smoke": {
+    "seed": 729001,
+    "train_seed": 739001,
+    "test_seed": 759001,
+    "observation_seed": 749001
+  },
+  "alphabet_size": 4,
+  "warmup": 100,
+  "train_samples": 2000,
+  "test_samples": 1000,
+  "smoke_train_samples": 200,
+  "smoke_test_samples": 100,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "arms": [
+    "intact",
+    "current_only",
+    "history_only",
+    "persistent"
+  ],
+  "sites": [
+    "MBON",
+    "KC_unstimulated"
+  ],
+  "alpha": 1.0,
+  "normalization": "incoming_l1",
+  "schedule": "mbon_after_kc",
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "activity_epsilon": 1e-08,
+  "minimum_persistent_loss": 0.05,
+  "minimum_current_loss": 0.05,
+  "minimum_current_fraction": 0.75,
+  "maximum_history_loss": 0.02,
+  "bootstrap_seed": 769399,
+  "bootstrap_draws": 10000,
+  "max_seconds": 3600,
+  "verification_seconds": 3600,
+  "max_rss_bytes": 3221225472
+}

@@ -1,5 +1,20 @@
 # Research status
 
+## Latest — DAN→MBON temporal-pathway intervention (2026-10-02)
+
+[Precommitted protocol](temporal-pathway-protocol.md),
+[results](temporal-pathway-results.md),
+[main evidence](../results/temporal_pathway_main/manifest.json),
+[independent audit](../results/temporal_pathway_main_validation/checks.json).
+Twelve paired state panels yielded 96 new ridge refits; all 64 secondary
+autonomous paths were independently replayed. With each arm refitted at the
+same 48 MBONs, a current-only DAN→MBON cut *improves* held-out delayed-symbol
+accuracy by 2.894/2.225 percentage points, whereas a persistent cut loses
+8.408/8.186 points in discovery/confirmation. The preregistered
+current-path-dominance criterion fails in both. The large descriptive
+interaction does not establish a storage site or physiological mechanism.
+Earlier studies remain separate and unchanged.
+
 ## Latest — fresh-model coordinate-SD structural confirmation (2026-10-02)
 
 [Precommitted protocol](fresh-coordinate-sd-protocol.md), [results](fresh-coordinate-sd-results.md),

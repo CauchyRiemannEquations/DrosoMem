@@ -2,6 +2,13 @@
 
 ## Latest — 2026-10-02
 
+The [DAN→MBON temporal-pathway intervention](temporal-pathway-results.md) is
+complete: 12 paired state panels, 96 fresh ridge fits and independent replay
+of 64 secondary autonomous paths. Current-only cutting improves refitted MBON
+delayed decoding while persistent cutting impairs it, so the preregistered
+current-path-dominance criterion fails in both cohorts. A descriptive
+current/history interaction is visible; it does not locate stored memory.
+
 The [fresh-model coordinate-SD structural confirmation](fresh-coordinate-sd-results.md)
 is complete, with 96 new fits and full independent replay of 1,824 paths.
 The registered intact-over-degree random-digit criterion fails in both new
@@ -36,7 +43,7 @@ it is not registered or executed. No further calibration sweep is included in th
 | ACT III-A | Current partial-model population panel,input controls,frozen/refit and fresh confirmation | Whole-brain/downstream and autonomous-recall localization |
 | ACT III-B | DAN/count/raw-bin and normalized-bin controls;weak/strong/random/betweenness/within-role/between-role panel | Whole-brain,detected biological modules,full dose curves remain untested extensions |
 | ACT III-C | Four controls including exact per-neuron incoming-weight and role/signed-degree preservation;169 cases | Whole-brain, uniform-ensemble mixing and broader autonomous tasks; current partial K10 comparison is completed separately |
-| ACT III-D | Five preregistered pathways, matched removal controls, sensitivity map and fresh confirmation;273 cases | Minimal/unique subnetwork, motifs, whole-brain localization and separation of storage from readout access |
+| ACT III-D | Five preregistered pathways, matched removal controls, sensitivity map and fresh confirmation;273 cases; subsequent four-arm temporal-pathway study completed with a failed current-path-dominance criterion | Minimal/unique subnetwork, motifs, whole-brain localization and storage-site identification remain open |
 | ACT IV | Earlier negative biological/local-rule results; IV-A A/B/C/D, observation diagnostics and scalar/local39-case experiment plus direction/noise/trajectory/margin diagnostics and explicit closeout completed | Unanswered extensions: physiological and whole-brain local learning, literal decoder-free biology; no claim of successful internal memory formation |
 | ACT V | Five perturbation curves, relative-noise calibration, instantaneous-observation and matched-energy coordinate allocation; frozen heads, declared fresh seeds/draws, final audit | Physiological calibration, other dynamics/tasks and temporal noise; autonomous and synthetic spatial-correlation studies are separately completed |
 
