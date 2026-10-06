@@ -1,0 +1,76 @@
+{
+  "neurons": 686,
+  "edges": 3309,
+  "role_blocks": {
+    "APL->APL": {
+      "edges": 0,
+      "common_edges": 0
+    },
+    "APL->DAN": {
+      "edges": 35,
+      "common_edges": 35
+    },
+    "APL->KC": {
+      "edges": 512,
+      "common_edges": 512
+    },
+    "APL->MBON": {
+      "edges": 27,
+      "common_edges": 27
+    },
+    "DAN->APL": {
+      "edges": 31,
+      "common_edges": 31
+    },
+    "DAN->DAN": {
+      "edges": 8,
+      "common_edges": 4
+    },
+    "DAN->KC": {
+      "edges": 24,
+      "common_edges": 6
+    },
+    "DAN->MBON": {
+      "edges": 189,
+      "common_edges": 38
+    },
+    "KC->APL": {
+      "edges": 512,
+      "common_edges": 512
+    },
+    "KC->DAN": {
+      "edges": 147,
+      "common_edges": 27
+    },
+    "KC->KC": {
+      "edges": 43,
+      "common_edges": 1
+    },
+    "KC->MBON": {
+      "edges": 1474,
+      "common_edges": 366
+    },
+    "MBON->APL": {
+      "edges": 23,
+      "common_edges": 23
+    },
+    "MBON->DAN": {
+      "edges": 118,
+      "common_edges": 12
+    },
+    "MBON->KC": {
+      "edges": 0,
+      "common_edges": 0
+    },
+    "MBON->MBON": {
+      "edges": 166,
+      "common_edges": 45
+    }
+  },
+  "overlap": 0.49531580537926867,
+  "original_raw_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+  "rewired_raw_sha256": "ef1f9de42b6489aeb431206ea7c0ad539f372678447f4253e2261d9757591668",
+  "exact_node_degrees": true,
+  "exact_presynaptic_signed_multisets": true,
+  "no_invalid_edges": true
+}

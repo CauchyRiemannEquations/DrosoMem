@@ -1,0 +1,112 @@
+{
+  "neurons": 138639,
+  "edges": 2700513,
+  "role_blocks": {
+    "APL->APL": {
+      "edges": 0,
+      "common_edges": 0
+    },
+    "APL->DAN": {
+      "edges": 88,
+      "common_edges": 70
+    },
+    "APL->KC": {
+      "edges": 5166,
+      "common_edges": 2888
+    },
+    "APL->MBON": {
+      "edges": 68,
+      "common_edges": 46
+    },
+    "APL->OTHER": {
+      "edges": 202,
+      "common_edges": 108
+    },
+    "DAN->APL": {
+      "edges": 99,
+      "common_edges": 85
+    },
+    "DAN->DAN": {
+      "edges": 31,
+      "common_edges": 10
+    },
+    "DAN->KC": {
+      "edges": 324,
+      "common_edges": 80
+    },
+    "DAN->MBON": {
+      "edges": 735,
+      "common_edges": 214
+    },
+    "DAN->OTHER": {
+      "edges": 641,
+      "common_edges": 203
+    },
+    "KC->APL": {
+      "edges": 5177,
+      "common_edges": 2945
+    },
+    "KC->DAN": {
+      "edges": 2066,
+      "common_edges": 525
+    },
+    "KC->KC": {
+      "edges": 2133,
+      "common_edges": 309
+    },
+    "KC->MBON": {
+      "edges": 21438,
+      "common_edges": 5886
+    },
+    "KC->OTHER": {
+      "edges": 5102,
+      "common_edges": 2848
+    },
+    "MBON->APL": {
+      "edges": 62,
+      "common_edges": 50
+    },
+    "MBON->DAN": {
+      "edges": 480,
+      "common_edges": 114
+    },
+    "MBON->KC": {
+      "edges": 39,
+      "common_edges": 9
+    },
+    "MBON->MBON": {
+      "edges": 566,
+      "common_edges": 197
+    },
+    "MBON->OTHER": {
+      "edges": 7006,
+      "common_edges": 1466
+    },
+    "OTHER->APL": {
+      "edges": 323,
+      "common_edges": 203
+    },
+    "OTHER->DAN": {
+      "edges": 3758,
+      "common_edges": 913
+    },
+    "OTHER->KC": {
+      "edges": 24485,
+      "common_edges": 4099
+    },
+    "OTHER->MBON": {
+      "edges": 3480,
+      "common_edges": 869
+    },
+    "OTHER->OTHER": {
+      "edges": 2617044,
+      "common_edges": 355190
+    }
+  },
+  "overlap": 0.14046479317077903,
+  "original_raw_sha256": "95677906fec28ff87c50900f563432cc30ad062f4b4495a388db8fe872637f10",
+  "rewired_raw_sha256": "cf8ea2c522c0d49b9a76fe579ddd3c2ae786c3434b9afceb1ffcf1bf38f66b76",
+  "exact_node_degrees": true,
+  "exact_presynaptic_signed_multisets": true,
+  "no_invalid_edges": true
+}

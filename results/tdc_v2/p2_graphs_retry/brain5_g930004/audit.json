@@ -1,0 +1,124 @@
+{
+  "neurons": 138639,
+  "edges": 2700513,
+  "exact_in_degree": true,
+  "exact_out_degree": true,
+  "exact_role_blocks": true,
+  "exact_presynaptic_signed_weight_multisets": true,
+  "exact_global_weight_multiset": true,
+  "no_self_duplicate_zero_edges": true,
+  "source_raw_weight_sha256": "95677906fec28ff87c50900f563432cc30ad062f4b4495a388db8fe872637f10",
+  "null_raw_weight_sha256": "e0da4c43a00e456827a4a85700257bf9c4256fdaa337add408f54febbcd6a204",
+  "overlap": 0.13986231504902957,
+  "role_blocks": {
+    "APL->APL": {
+      "edges": 0,
+      "common_edges": 0
+    },
+    "APL->DAN": {
+      "edges": 88,
+      "common_edges": 64
+    },
+    "APL->KC": {
+      "edges": 5166,
+      "common_edges": 2944
+    },
+    "APL->MBON": {
+      "edges": 68,
+      "common_edges": 42
+    },
+    "APL->OTHER": {
+      "edges": 202,
+      "common_edges": 114
+    },
+    "DAN->APL": {
+      "edges": 99,
+      "common_edges": 83
+    },
+    "DAN->DAN": {
+      "edges": 31,
+      "common_edges": 11
+    },
+    "DAN->KC": {
+      "edges": 324,
+      "common_edges": 87
+    },
+    "DAN->MBON": {
+      "edges": 735,
+      "common_edges": 203
+    },
+    "DAN->OTHER": {
+      "edges": 641,
+      "common_edges": 180
+    },
+    "KC->APL": {
+      "edges": 5177,
+      "common_edges": 2959
+    },
+    "KC->DAN": {
+      "edges": 2066,
+      "common_edges": 499
+    },
+    "KC->KC": {
+      "edges": 2133,
+      "common_edges": 296
+    },
+    "KC->MBON": {
+      "edges": 21438,
+      "common_edges": 5785
+    },
+    "KC->OTHER": {
+      "edges": 5102,
+      "common_edges": 2876
+    },
+    "MBON->APL": {
+      "edges": 62,
+      "common_edges": 50
+    },
+    "MBON->DAN": {
+      "edges": 480,
+      "common_edges": 117
+    },
+    "MBON->KC": {
+      "edges": 39,
+      "common_edges": 13
+    },
+    "MBON->MBON": {
+      "edges": 566,
+      "common_edges": 167
+    },
+    "MBON->OTHER": {
+      "edges": 7006,
+      "common_edges": 1482
+    },
+    "OTHER->APL": {
+      "edges": 323,
+      "common_edges": 205
+    },
+    "OTHER->DAN": {
+      "edges": 3758,
+      "common_edges": 945
+    },
+    "OTHER->KC": {
+      "edges": 24485,
+      "common_edges": 4063
+    },
+    "OTHER->MBON": {
+      "edges": 3480,
+      "common_edges": 936
+    },
+    "OTHER->OTHER": {
+      "edges": 2617044,
+      "common_edges": 353579
+    }
+  },
+  "swap_log": {
+    "requested_swaps": 2700513,
+    "accepted_swaps": 2700513,
+    "attempts": 2741001,
+    "edge_overlap": 0.13986231504902957
+  },
+  "incoming_strength_changed_nodes": 122243,
+  "incoming_strength_mean_absolute_change": 77.82782622494392,
+  "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+}

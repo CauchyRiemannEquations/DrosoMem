@@ -1,0 +1,3332 @@
+[
+  {
+    "identity": "brain5/g930001",
+    "level": "brain5",
+    "graph_seed": 930001,
+    "audit": {
+      "neurons": 138639,
+      "edges": 2700513,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "95677906fec28ff87c50900f563432cc30ad062f4b4495a388db8fe872637f10",
+      "null_raw_weight_sha256": "bd298d27f97d2dbaacd2e8a05c9cfcd1fc7cadae3dce8876882bda252e26b71f",
+      "overlap": 0.140013767754497,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 88,
+          "common_edges": 76
+        },
+        "APL->KC": {
+          "edges": 5166,
+          "common_edges": 2946
+        },
+        "APL->MBON": {
+          "edges": 68,
+          "common_edges": 46
+        },
+        "APL->OTHER": {
+          "edges": 202,
+          "common_edges": 118
+        },
+        "DAN->APL": {
+          "edges": 99,
+          "common_edges": 83
+        },
+        "DAN->DAN": {
+          "edges": 31,
+          "common_edges": 11
+        },
+        "DAN->KC": {
+          "edges": 324,
+          "common_edges": 86
+        },
+        "DAN->MBON": {
+          "edges": 735,
+          "common_edges": 183
+        },
+        "DAN->OTHER": {
+          "edges": 641,
+          "common_edges": 181
+        },
+        "KC->APL": {
+          "edges": 5177,
+          "common_edges": 2881
+        },
+        "KC->DAN": {
+          "edges": 2066,
+          "common_edges": 494
+        },
+        "KC->KC": {
+          "edges": 2133,
+          "common_edges": 295
+        },
+        "KC->MBON": {
+          "edges": 21438,
+          "common_edges": 6026
+        },
+        "KC->OTHER": {
+          "edges": 5102,
+          "common_edges": 2880
+        },
+        "MBON->APL": {
+          "edges": 62,
+          "common_edges": 42
+        },
+        "MBON->DAN": {
+          "edges": 480,
+          "common_edges": 116
+        },
+        "MBON->KC": {
+          "edges": 39,
+          "common_edges": 13
+        },
+        "MBON->MBON": {
+          "edges": 566,
+          "common_edges": 180
+        },
+        "MBON->OTHER": {
+          "edges": 7006,
+          "common_edges": 1526
+        },
+        "OTHER->APL": {
+          "edges": 323,
+          "common_edges": 209
+        },
+        "OTHER->DAN": {
+          "edges": 3758,
+          "common_edges": 994
+        },
+        "OTHER->KC": {
+          "edges": 24485,
+          "common_edges": 4144
+        },
+        "OTHER->MBON": {
+          "edges": 3480,
+          "common_edges": 866
+        },
+        "OTHER->OTHER": {
+          "edges": 2617044,
+          "common_edges": 353713
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 2700513,
+        "accepted_swaps": 2700513,
+        "attempts": 2740674,
+        "edge_overlap": 0.140013767754497
+      },
+      "incoming_strength_changed_nodes": 122094,
+      "incoming_strength_mean_absolute_change": 78.04526864735031,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 84.51806129999932,
+      "peak_sampled_rss_bytes": 1169829888,
+      "os_process_peak_working_set_bytes": 1185427456,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "brain5/g930002",
+    "level": "brain5",
+    "graph_seed": 930002,
+    "audit": {
+      "neurons": 138639,
+      "edges": 2700513,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "95677906fec28ff87c50900f563432cc30ad062f4b4495a388db8fe872637f10",
+      "null_raw_weight_sha256": "cf8ea2c522c0d49b9a76fe579ddd3c2ae786c3434b9afceb1ffcf1bf38f66b76",
+      "overlap": 0.14046479317077903,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 88,
+          "common_edges": 70
+        },
+        "APL->KC": {
+          "edges": 5166,
+          "common_edges": 2888
+        },
+        "APL->MBON": {
+          "edges": 68,
+          "common_edges": 46
+        },
+        "APL->OTHER": {
+          "edges": 202,
+          "common_edges": 108
+        },
+        "DAN->APL": {
+          "edges": 99,
+          "common_edges": 85
+        },
+        "DAN->DAN": {
+          "edges": 31,
+          "common_edges": 10
+        },
+        "DAN->KC": {
+          "edges": 324,
+          "common_edges": 80
+        },
+        "DAN->MBON": {
+          "edges": 735,
+          "common_edges": 214
+        },
+        "DAN->OTHER": {
+          "edges": 641,
+          "common_edges": 203
+        },
+        "KC->APL": {
+          "edges": 5177,
+          "common_edges": 2945
+        },
+        "KC->DAN": {
+          "edges": 2066,
+          "common_edges": 525
+        },
+        "KC->KC": {
+          "edges": 2133,
+          "common_edges": 309
+        },
+        "KC->MBON": {
+          "edges": 21438,
+          "common_edges": 5886
+        },
+        "KC->OTHER": {
+          "edges": 5102,
+          "common_edges": 2848
+        },
+        "MBON->APL": {
+          "edges": 62,
+          "common_edges": 50
+        },
+        "MBON->DAN": {
+          "edges": 480,
+          "common_edges": 114
+        },
+        "MBON->KC": {
+          "edges": 39,
+          "common_edges": 9
+        },
+        "MBON->MBON": {
+          "edges": 566,
+          "common_edges": 197
+        },
+        "MBON->OTHER": {
+          "edges": 7006,
+          "common_edges": 1466
+        },
+        "OTHER->APL": {
+          "edges": 323,
+          "common_edges": 203
+        },
+        "OTHER->DAN": {
+          "edges": 3758,
+          "common_edges": 913
+        },
+        "OTHER->KC": {
+          "edges": 24485,
+          "common_edges": 4099
+        },
+        "OTHER->MBON": {
+          "edges": 3480,
+          "common_edges": 869
+        },
+        "OTHER->OTHER": {
+          "edges": 2617044,
+          "common_edges": 355190
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 2700513,
+        "accepted_swaps": 2700513,
+        "attempts": 2740630,
+        "edge_overlap": 0.14046479317077903
+      },
+      "incoming_strength_changed_nodes": 122221,
+      "incoming_strength_mean_absolute_change": 77.43696939533609,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 84.95631089999915,
+      "peak_sampled_rss_bytes": 1168445440,
+      "os_process_peak_working_set_bytes": 1184133120,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "brain5/g930003",
+    "level": "brain5",
+    "graph_seed": 930003,
+    "audit": {
+      "neurons": 138639,
+      "edges": 2700513,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "95677906fec28ff87c50900f563432cc30ad062f4b4495a388db8fe872637f10",
+      "null_raw_weight_sha256": "3d28d44c12146841cf5f5b33a876a49fc76e921245b25bf17663e4035f36db05",
+      "overlap": 0.14023335566242415,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 88,
+          "common_edges": 66
+        },
+        "APL->KC": {
+          "edges": 5166,
+          "common_edges": 2934
+        },
+        "APL->MBON": {
+          "edges": 68,
+          "common_edges": 48
+        },
+        "APL->OTHER": {
+          "edges": 202,
+          "common_edges": 114
+        },
+        "DAN->APL": {
+          "edges": 99,
+          "common_edges": 87
+        },
+        "DAN->DAN": {
+          "edges": 31,
+          "common_edges": 8
+        },
+        "DAN->KC": {
+          "edges": 324,
+          "common_edges": 90
+        },
+        "DAN->MBON": {
+          "edges": 735,
+          "common_edges": 183
+        },
+        "DAN->OTHER": {
+          "edges": 641,
+          "common_edges": 173
+        },
+        "KC->APL": {
+          "edges": 5177,
+          "common_edges": 2999
+        },
+        "KC->DAN": {
+          "edges": 2066,
+          "common_edges": 469
+        },
+        "KC->KC": {
+          "edges": 2133,
+          "common_edges": 308
+        },
+        "KC->MBON": {
+          "edges": 21438,
+          "common_edges": 6074
+        },
+        "KC->OTHER": {
+          "edges": 5102,
+          "common_edges": 2920
+        },
+        "MBON->APL": {
+          "edges": 62,
+          "common_edges": 48
+        },
+        "MBON->DAN": {
+          "edges": 480,
+          "common_edges": 101
+        },
+        "MBON->KC": {
+          "edges": 39,
+          "common_edges": 13
+        },
+        "MBON->MBON": {
+          "edges": 566,
+          "common_edges": 190
+        },
+        "MBON->OTHER": {
+          "edges": 7006,
+          "common_edges": 1623
+        },
+        "OTHER->APL": {
+          "edges": 323,
+          "common_edges": 193
+        },
+        "OTHER->DAN": {
+          "edges": 3758,
+          "common_edges": 965
+        },
+        "OTHER->KC": {
+          "edges": 24485,
+          "common_edges": 4138
+        },
+        "OTHER->MBON": {
+          "edges": 3480,
+          "common_edges": 904
+        },
+        "OTHER->OTHER": {
+          "edges": 2617044,
+          "common_edges": 354054
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 2700513,
+        "accepted_swaps": 2700513,
+        "attempts": 2740567,
+        "edge_overlap": 0.14023335566242415
+      },
+      "incoming_strength_changed_nodes": 122196,
+      "incoming_strength_mean_absolute_change": 77.93457829326525,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 50.35746199999994,
+      "peak_sampled_rss_bytes": 1168297984,
+      "os_process_peak_working_set_bytes": 1185427456,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "brain5/g930004",
+    "level": "brain5",
+    "graph_seed": 930004,
+    "audit": {
+      "neurons": 138639,
+      "edges": 2700513,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "95677906fec28ff87c50900f563432cc30ad062f4b4495a388db8fe872637f10",
+      "null_raw_weight_sha256": "e0da4c43a00e456827a4a85700257bf9c4256fdaa337add408f54febbcd6a204",
+      "overlap": 0.13986231504902957,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 88,
+          "common_edges": 64
+        },
+        "APL->KC": {
+          "edges": 5166,
+          "common_edges": 2944
+        },
+        "APL->MBON": {
+          "edges": 68,
+          "common_edges": 42
+        },
+        "APL->OTHER": {
+          "edges": 202,
+          "common_edges": 114
+        },
+        "DAN->APL": {
+          "edges": 99,
+          "common_edges": 83
+        },
+        "DAN->DAN": {
+          "edges": 31,
+          "common_edges": 11
+        },
+        "DAN->KC": {
+          "edges": 324,
+          "common_edges": 87
+        },
+        "DAN->MBON": {
+          "edges": 735,
+          "common_edges": 203
+        },
+        "DAN->OTHER": {
+          "edges": 641,
+          "common_edges": 180
+        },
+        "KC->APL": {
+          "edges": 5177,
+          "common_edges": 2959
+        },
+        "KC->DAN": {
+          "edges": 2066,
+          "common_edges": 499
+        },
+        "KC->KC": {
+          "edges": 2133,
+          "common_edges": 296
+        },
+        "KC->MBON": {
+          "edges": 21438,
+          "common_edges": 5785
+        },
+        "KC->OTHER": {
+          "edges": 5102,
+          "common_edges": 2876
+        },
+        "MBON->APL": {
+          "edges": 62,
+          "common_edges": 50
+        },
+        "MBON->DAN": {
+          "edges": 480,
+          "common_edges": 117
+        },
+        "MBON->KC": {
+          "edges": 39,
+          "common_edges": 13
+        },
+        "MBON->MBON": {
+          "edges": 566,
+          "common_edges": 167
+        },
+        "MBON->OTHER": {
+          "edges": 7006,
+          "common_edges": 1482
+        },
+        "OTHER->APL": {
+          "edges": 323,
+          "common_edges": 205
+        },
+        "OTHER->DAN": {
+          "edges": 3758,
+          "common_edges": 945
+        },
+        "OTHER->KC": {
+          "edges": 24485,
+          "common_edges": 4063
+        },
+        "OTHER->MBON": {
+          "edges": 3480,
+          "common_edges": 936
+        },
+        "OTHER->OTHER": {
+          "edges": 2617044,
+          "common_edges": 353579
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 2700513,
+        "accepted_swaps": 2700513,
+        "attempts": 2741001,
+        "edge_overlap": 0.13986231504902957
+      },
+      "incoming_strength_changed_nodes": 122243,
+      "incoming_strength_mean_absolute_change": 77.82782622494392,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 50.852516099999775,
+      "peak_sampled_rss_bytes": 1169653760,
+      "os_process_peak_working_set_bytes": 1185067008,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "brain5/g930005",
+    "level": "brain5",
+    "graph_seed": 930005,
+    "audit": {
+      "neurons": 138639,
+      "edges": 2700513,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "95677906fec28ff87c50900f563432cc30ad062f4b4495a388db8fe872637f10",
+      "null_raw_weight_sha256": "fec7d92ea83bffc0569cb2f5e017d7d5ca42b9f6f79cbbc541e005e9b37830fa",
+      "overlap": 0.13987971914965786,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 88,
+          "common_edges": 72
+        },
+        "APL->KC": {
+          "edges": 5166,
+          "common_edges": 2934
+        },
+        "APL->MBON": {
+          "edges": 68,
+          "common_edges": 46
+        },
+        "APL->OTHER": {
+          "edges": 202,
+          "common_edges": 126
+        },
+        "DAN->APL": {
+          "edges": 99,
+          "common_edges": 91
+        },
+        "DAN->DAN": {
+          "edges": 31,
+          "common_edges": 13
+        },
+        "DAN->KC": {
+          "edges": 324,
+          "common_edges": 82
+        },
+        "DAN->MBON": {
+          "edges": 735,
+          "common_edges": 184
+        },
+        "DAN->OTHER": {
+          "edges": 641,
+          "common_edges": 175
+        },
+        "KC->APL": {
+          "edges": 5177,
+          "common_edges": 2947
+        },
+        "KC->DAN": {
+          "edges": 2066,
+          "common_edges": 496
+        },
+        "KC->KC": {
+          "edges": 2133,
+          "common_edges": 259
+        },
+        "KC->MBON": {
+          "edges": 21438,
+          "common_edges": 6027
+        },
+        "KC->OTHER": {
+          "edges": 5102,
+          "common_edges": 2812
+        },
+        "MBON->APL": {
+          "edges": 62,
+          "common_edges": 42
+        },
+        "MBON->DAN": {
+          "edges": 480,
+          "common_edges": 114
+        },
+        "MBON->KC": {
+          "edges": 39,
+          "common_edges": 13
+        },
+        "MBON->MBON": {
+          "edges": 566,
+          "common_edges": 184
+        },
+        "MBON->OTHER": {
+          "edges": 7006,
+          "common_edges": 1541
+        },
+        "OTHER->APL": {
+          "edges": 323,
+          "common_edges": 189
+        },
+        "OTHER->DAN": {
+          "edges": 3758,
+          "common_edges": 956
+        },
+        "OTHER->KC": {
+          "edges": 24485,
+          "common_edges": 4115
+        },
+        "OTHER->MBON": {
+          "edges": 3480,
+          "common_edges": 840
+        },
+        "OTHER->OTHER": {
+          "edges": 2617044,
+          "common_edges": 353489
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 2700513,
+        "accepted_swaps": 2700513,
+        "attempts": 2740930,
+        "edge_overlap": 0.13987971914965786
+      },
+      "incoming_strength_changed_nodes": 122181,
+      "incoming_strength_mean_absolute_change": 78.00936244491088,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 48.571012500000506,
+      "peak_sampled_rss_bytes": 1168605184,
+      "os_process_peak_working_set_bytes": 1185427456,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "brain5/g930006",
+    "level": "brain5",
+    "graph_seed": 930006,
+    "audit": {
+      "neurons": 138639,
+      "edges": 2700513,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "95677906fec28ff87c50900f563432cc30ad062f4b4495a388db8fe872637f10",
+      "null_raw_weight_sha256": "36e0296ef0992e6d2b2ba5b5b651680db5bd6097b0f25c6a9d3f91dcf8ffc20f",
+      "overlap": 0.14044516727007053,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 88,
+          "common_edges": 66
+        },
+        "APL->KC": {
+          "edges": 5166,
+          "common_edges": 2964
+        },
+        "APL->MBON": {
+          "edges": 68,
+          "common_edges": 46
+        },
+        "APL->OTHER": {
+          "edges": 202,
+          "common_edges": 112
+        },
+        "DAN->APL": {
+          "edges": 99,
+          "common_edges": 77
+        },
+        "DAN->DAN": {
+          "edges": 31,
+          "common_edges": 10
+        },
+        "DAN->KC": {
+          "edges": 324,
+          "common_edges": 81
+        },
+        "DAN->MBON": {
+          "edges": 735,
+          "common_edges": 202
+        },
+        "DAN->OTHER": {
+          "edges": 641,
+          "common_edges": 178
+        },
+        "KC->APL": {
+          "edges": 5177,
+          "common_edges": 3007
+        },
+        "KC->DAN": {
+          "edges": 2066,
+          "common_edges": 525
+        },
+        "KC->KC": {
+          "edges": 2133,
+          "common_edges": 320
+        },
+        "KC->MBON": {
+          "edges": 21438,
+          "common_edges": 5835
+        },
+        "KC->OTHER": {
+          "edges": 5102,
+          "common_edges": 2891
+        },
+        "MBON->APL": {
+          "edges": 62,
+          "common_edges": 48
+        },
+        "MBON->DAN": {
+          "edges": 480,
+          "common_edges": 114
+        },
+        "MBON->KC": {
+          "edges": 39,
+          "common_edges": 13
+        },
+        "MBON->MBON": {
+          "edges": 566,
+          "common_edges": 192
+        },
+        "MBON->OTHER": {
+          "edges": 7006,
+          "common_edges": 1504
+        },
+        "OTHER->APL": {
+          "edges": 323,
+          "common_edges": 205
+        },
+        "OTHER->DAN": {
+          "edges": 3758,
+          "common_edges": 914
+        },
+        "OTHER->KC": {
+          "edges": 24485,
+          "common_edges": 4182
+        },
+        "OTHER->MBON": {
+          "edges": 3480,
+          "common_edges": 925
+        },
+        "OTHER->OTHER": {
+          "edges": 2617044,
+          "common_edges": 354863
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 2700513,
+        "accepted_swaps": 2700513,
+        "attempts": 2740694,
+        "edge_overlap": 0.14044516727007053
+      },
+      "incoming_strength_changed_nodes": 122132,
+      "incoming_strength_mean_absolute_change": 78.11021429756418,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 49.59701119999954,
+      "peak_sampled_rss_bytes": 1169813504,
+      "os_process_peak_working_set_bytes": 1185484800,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "brain5/g930007",
+    "level": "brain5",
+    "graph_seed": 930007,
+    "audit": {
+      "neurons": 138639,
+      "edges": 2700513,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "95677906fec28ff87c50900f563432cc30ad062f4b4495a388db8fe872637f10",
+      "null_raw_weight_sha256": "6d93a6709fc1f56836cf40b4ada64e10f5197dbf49e7f25f4ce8ad6d9d9ba2e2",
+      "overlap": 0.14017003436013825,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 88,
+          "common_edges": 72
+        },
+        "APL->KC": {
+          "edges": 5166,
+          "common_edges": 2942
+        },
+        "APL->MBON": {
+          "edges": 68,
+          "common_edges": 46
+        },
+        "APL->OTHER": {
+          "edges": 202,
+          "common_edges": 120
+        },
+        "DAN->APL": {
+          "edges": 99,
+          "common_edges": 89
+        },
+        "DAN->DAN": {
+          "edges": 31,
+          "common_edges": 10
+        },
+        "DAN->KC": {
+          "edges": 324,
+          "common_edges": 79
+        },
+        "DAN->MBON": {
+          "edges": 735,
+          "common_edges": 177
+        },
+        "DAN->OTHER": {
+          "edges": 641,
+          "common_edges": 183
+        },
+        "KC->APL": {
+          "edges": 5177,
+          "common_edges": 2905
+        },
+        "KC->DAN": {
+          "edges": 2066,
+          "common_edges": 490
+        },
+        "KC->KC": {
+          "edges": 2133,
+          "common_edges": 266
+        },
+        "KC->MBON": {
+          "edges": 21438,
+          "common_edges": 5903
+        },
+        "KC->OTHER": {
+          "edges": 5102,
+          "common_edges": 2893
+        },
+        "MBON->APL": {
+          "edges": 62,
+          "common_edges": 46
+        },
+        "MBON->DAN": {
+          "edges": 480,
+          "common_edges": 115
+        },
+        "MBON->KC": {
+          "edges": 39,
+          "common_edges": 12
+        },
+        "MBON->MBON": {
+          "edges": 566,
+          "common_edges": 193
+        },
+        "MBON->OTHER": {
+          "edges": 7006,
+          "common_edges": 1513
+        },
+        "OTHER->APL": {
+          "edges": 323,
+          "common_edges": 207
+        },
+        "OTHER->DAN": {
+          "edges": 3758,
+          "common_edges": 960
+        },
+        "OTHER->KC": {
+          "edges": 24485,
+          "common_edges": 4127
+        },
+        "OTHER->MBON": {
+          "edges": 3480,
+          "common_edges": 905
+        },
+        "OTHER->OTHER": {
+          "edges": 2617044,
+          "common_edges": 354278
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 2700513,
+        "accepted_swaps": 2700513,
+        "attempts": 2740555,
+        "edge_overlap": 0.14017003436013825
+      },
+      "incoming_strength_changed_nodes": 122127,
+      "incoming_strength_mean_absolute_change": 77.70659049762332,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 77.92876649999926,
+      "peak_sampled_rss_bytes": 1169473536,
+      "os_process_peak_working_set_bytes": 1185427456,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "brain5/g930008",
+    "level": "brain5",
+    "graph_seed": 930008,
+    "audit": {
+      "neurons": 138639,
+      "edges": 2700513,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "95677906fec28ff87c50900f563432cc30ad062f4b4495a388db8fe872637f10",
+      "null_raw_weight_sha256": "6b70a9dbd783071ab55c47ca429b437f24b9b3d04e3591663063618e6a044ba9",
+      "overlap": 0.14005968495615462,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 88,
+          "common_edges": 68
+        },
+        "APL->KC": {
+          "edges": 5166,
+          "common_edges": 2976
+        },
+        "APL->MBON": {
+          "edges": 68,
+          "common_edges": 46
+        },
+        "APL->OTHER": {
+          "edges": 202,
+          "common_edges": 112
+        },
+        "DAN->APL": {
+          "edges": 99,
+          "common_edges": 81
+        },
+        "DAN->DAN": {
+          "edges": 31,
+          "common_edges": 13
+        },
+        "DAN->KC": {
+          "edges": 324,
+          "common_edges": 88
+        },
+        "DAN->MBON": {
+          "edges": 735,
+          "common_edges": 187
+        },
+        "DAN->OTHER": {
+          "edges": 641,
+          "common_edges": 175
+        },
+        "KC->APL": {
+          "edges": 5177,
+          "common_edges": 2909
+        },
+        "KC->DAN": {
+          "edges": 2066,
+          "common_edges": 507
+        },
+        "KC->KC": {
+          "edges": 2133,
+          "common_edges": 284
+        },
+        "KC->MBON": {
+          "edges": 21438,
+          "common_edges": 5939
+        },
+        "KC->OTHER": {
+          "edges": 5102,
+          "common_edges": 2853
+        },
+        "MBON->APL": {
+          "edges": 62,
+          "common_edges": 46
+        },
+        "MBON->DAN": {
+          "edges": 480,
+          "common_edges": 117
+        },
+        "MBON->KC": {
+          "edges": 39,
+          "common_edges": 10
+        },
+        "MBON->MBON": {
+          "edges": 566,
+          "common_edges": 188
+        },
+        "MBON->OTHER": {
+          "edges": 7006,
+          "common_edges": 1515
+        },
+        "OTHER->APL": {
+          "edges": 323,
+          "common_edges": 203
+        },
+        "OTHER->DAN": {
+          "edges": 3758,
+          "common_edges": 927
+        },
+        "OTHER->KC": {
+          "edges": 24485,
+          "common_edges": 4035
+        },
+        "OTHER->MBON": {
+          "edges": 3480,
+          "common_edges": 912
+        },
+        "OTHER->OTHER": {
+          "edges": 2617044,
+          "common_edges": 354042
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 2700513,
+        "accepted_swaps": 2700513,
+        "attempts": 2740476,
+        "edge_overlap": 0.14005968495615462
+      },
+      "incoming_strength_changed_nodes": 122196,
+      "incoming_strength_mean_absolute_change": 77.86856512236817,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 80.29537369999889,
+      "peak_sampled_rss_bytes": 1168564224,
+      "os_process_peak_working_set_bytes": 1185484800,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "brain5/g930009",
+    "level": "brain5",
+    "graph_seed": 930009,
+    "audit": {
+      "neurons": 138639,
+      "edges": 2700513,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "95677906fec28ff87c50900f563432cc30ad062f4b4495a388db8fe872637f10",
+      "null_raw_weight_sha256": "d926df15e0b18f5d5629e96bdbc42adeada93171b11cf0bf9bd94fd366ebe012",
+      "overlap": 0.14012485775850736,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 88,
+          "common_edges": 74
+        },
+        "APL->KC": {
+          "edges": 5166,
+          "common_edges": 2928
+        },
+        "APL->MBON": {
+          "edges": 68,
+          "common_edges": 48
+        },
+        "APL->OTHER": {
+          "edges": 202,
+          "common_edges": 112
+        },
+        "DAN->APL": {
+          "edges": 99,
+          "common_edges": 85
+        },
+        "DAN->DAN": {
+          "edges": 31,
+          "common_edges": 15
+        },
+        "DAN->KC": {
+          "edges": 324,
+          "common_edges": 71
+        },
+        "DAN->MBON": {
+          "edges": 735,
+          "common_edges": 197
+        },
+        "DAN->OTHER": {
+          "edges": 641,
+          "common_edges": 189
+        },
+        "KC->APL": {
+          "edges": 5177,
+          "common_edges": 2979
+        },
+        "KC->DAN": {
+          "edges": 2066,
+          "common_edges": 462
+        },
+        "KC->KC": {
+          "edges": 2133,
+          "common_edges": 282
+        },
+        "KC->MBON": {
+          "edges": 21438,
+          "common_edges": 6071
+        },
+        "KC->OTHER": {
+          "edges": 5102,
+          "common_edges": 2923
+        },
+        "MBON->APL": {
+          "edges": 62,
+          "common_edges": 48
+        },
+        "MBON->DAN": {
+          "edges": 480,
+          "common_edges": 94
+        },
+        "MBON->KC": {
+          "edges": 39,
+          "common_edges": 13
+        },
+        "MBON->MBON": {
+          "edges": 566,
+          "common_edges": 182
+        },
+        "MBON->OTHER": {
+          "edges": 7006,
+          "common_edges": 1534
+        },
+        "OTHER->APL": {
+          "edges": 323,
+          "common_edges": 199
+        },
+        "OTHER->DAN": {
+          "edges": 3758,
+          "common_edges": 926
+        },
+        "OTHER->KC": {
+          "edges": 24485,
+          "common_edges": 3984
+        },
+        "OTHER->MBON": {
+          "edges": 3480,
+          "common_edges": 923
+        },
+        "OTHER->OTHER": {
+          "edges": 2617044,
+          "common_edges": 354070
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 2700513,
+        "accepted_swaps": 2700513,
+        "attempts": 2741019,
+        "edge_overlap": 0.14012485775850736
+      },
+      "incoming_strength_changed_nodes": 122226,
+      "incoming_strength_mean_absolute_change": 77.82608068436731,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 98.49175490000016,
+      "peak_sampled_rss_bytes": 1168797696,
+      "os_process_peak_working_set_bytes": 1185427456,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "brain5/g930010",
+    "level": "brain5",
+    "graph_seed": 930010,
+    "audit": {
+      "neurons": 138639,
+      "edges": 2700513,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "95677906fec28ff87c50900f563432cc30ad062f4b4495a388db8fe872637f10",
+      "null_raw_weight_sha256": "0f6f56a1f37df124214047aefab5575fbed2c3a673e3c3eaa2c1903a481183d1",
+      "overlap": 0.13985676054882906,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 88,
+          "common_edges": 72
+        },
+        "APL->KC": {
+          "edges": 5166,
+          "common_edges": 2918
+        },
+        "APL->MBON": {
+          "edges": 68,
+          "common_edges": 52
+        },
+        "APL->OTHER": {
+          "edges": 202,
+          "common_edges": 110
+        },
+        "DAN->APL": {
+          "edges": 99,
+          "common_edges": 79
+        },
+        "DAN->DAN": {
+          "edges": 31,
+          "common_edges": 13
+        },
+        "DAN->KC": {
+          "edges": 324,
+          "common_edges": 87
+        },
+        "DAN->MBON": {
+          "edges": 735,
+          "common_edges": 191
+        },
+        "DAN->OTHER": {
+          "edges": 641,
+          "common_edges": 186
+        },
+        "KC->APL": {
+          "edges": 5177,
+          "common_edges": 2889
+        },
+        "KC->DAN": {
+          "edges": 2066,
+          "common_edges": 503
+        },
+        "KC->KC": {
+          "edges": 2133,
+          "common_edges": 284
+        },
+        "KC->MBON": {
+          "edges": 21438,
+          "common_edges": 5984
+        },
+        "KC->OTHER": {
+          "edges": 5102,
+          "common_edges": 2906
+        },
+        "MBON->APL": {
+          "edges": 62,
+          "common_edges": 50
+        },
+        "MBON->DAN": {
+          "edges": 480,
+          "common_edges": 121
+        },
+        "MBON->KC": {
+          "edges": 39,
+          "common_edges": 9
+        },
+        "MBON->MBON": {
+          "edges": 566,
+          "common_edges": 188
+        },
+        "MBON->OTHER": {
+          "edges": 7006,
+          "common_edges": 1513
+        },
+        "OTHER->APL": {
+          "edges": 323,
+          "common_edges": 203
+        },
+        "OTHER->DAN": {
+          "edges": 3758,
+          "common_edges": 952
+        },
+        "OTHER->KC": {
+          "edges": 24485,
+          "common_edges": 4092
+        },
+        "OTHER->MBON": {
+          "edges": 3480,
+          "common_edges": 880
+        },
+        "OTHER->OTHER": {
+          "edges": 2617044,
+          "common_edges": 353403
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 2700513,
+        "accepted_swaps": 2700513,
+        "attempts": 2741086,
+        "edge_overlap": 0.13985676054882906
+      },
+      "incoming_strength_changed_nodes": 122192,
+      "incoming_strength_mean_absolute_change": 77.80082083684967,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 98.87464279999949,
+      "peak_sampled_rss_bytes": 1168470016,
+      "os_process_peak_working_set_bytes": 1185484800,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920001",
+    "level": "legacy5",
+    "graph_seed": 920001,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "2d86b4702c60a34db4b55fb5048851e2a014142231d221626a5a714199828945",
+      "overlap": 0.4910849199153823,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 4
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 6
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 20
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 34
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 1
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 379
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 9
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 32
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39401,
+        "edge_overlap": 0.4910849199153823
+      },
+      "incoming_strength_changed_nodes": 148,
+      "incoming_strength_mean_absolute_change": 8.02332361516035,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 0.5947181999999884,
+      "peak_sampled_rss_bytes": 110374912,
+      "os_process_peak_working_set_bytes": 110804992,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920002",
+    "level": "legacy5",
+    "graph_seed": 920002,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "b8950758518588ee51875324f1656ee794cbb19289f0f5897d6265569068c9b1",
+      "overlap": 0.4871562405560592,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 3
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 9
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 29
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 30
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 1
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 347
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 11
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 42
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39641,
+        "edge_overlap": 0.4871562405560592
+      },
+      "incoming_strength_changed_nodes": 148,
+      "incoming_strength_mean_absolute_change": 6.763848396501458,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 0.6472300000004907,
+      "peak_sampled_rss_bytes": 110669824,
+      "os_process_peak_working_set_bytes": 110977024,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920003",
+    "level": "legacy5",
+    "graph_seed": 920003,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "128ea88f73027278247f996cc9edf533c60b5f0ec72f047787c259acf5ca17c2",
+      "overlap": 0.4865518283469326,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 4
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 5
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 24
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 28
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 0
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 359
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 17
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 33
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39368,
+        "edge_overlap": 0.4865518283469326
+      },
+      "incoming_strength_changed_nodes": 148,
+      "incoming_strength_mean_absolute_change": 8.2332361516035,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.069147799998973,
+      "peak_sampled_rss_bytes": 110133248,
+      "os_process_peak_working_set_bytes": 113065984,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920004",
+    "level": "legacy5",
+    "graph_seed": 920004,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "46d967c194956f034473807feb317eeada7206b6afb8ee41838ad2ae34781dcd",
+      "overlap": 0.4856452100332427,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 2
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 7
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 24
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 29
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 0
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 359
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 17
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 29
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39498,
+        "edge_overlap": 0.4856452100332427
+      },
+      "incoming_strength_changed_nodes": 143,
+      "incoming_strength_mean_absolute_change": 6.915451895043732,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.27403779999986,
+      "peak_sampled_rss_bytes": 110850048,
+      "os_process_peak_working_set_bytes": 113770496,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920005",
+    "level": "legacy5",
+    "graph_seed": 920005,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "b754066be12d196d3a1660ac7998af0bb6500ec55839690b14181e8bf0bef41d",
+      "overlap": 0.48957388939256574,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 3
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 4
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 24
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 30
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 3
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 370
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 16
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 30
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39069,
+        "edge_overlap": 0.48957388939256574
+      },
+      "incoming_strength_changed_nodes": 145,
+      "incoming_strength_mean_absolute_change": 7.364431486880466,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.2265958999996656,
+      "peak_sampled_rss_bytes": 110997504,
+      "os_process_peak_working_set_bytes": 113065984,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920006",
+    "level": "legacy5",
+    "graph_seed": 920006,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "7dd62e3388a07994028ded936ca7653298aea9e8f5e99f7696341dda363f741b",
+      "overlap": 0.49168933212450894,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 3
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 5
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 28
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 31
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 0
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 368
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 13
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 39
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39367,
+        "edge_overlap": 0.49168933212450894
+      },
+      "incoming_strength_changed_nodes": 142,
+      "incoming_strength_mean_absolute_change": 8.227405247813412,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.1861198999995395,
+      "peak_sampled_rss_bytes": 110850048,
+      "os_process_peak_working_set_bytes": 113770496,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920007",
+    "level": "legacy5",
+    "graph_seed": 920007,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "bfe71677f14688a394c25b606f0b2053e819edd93b5219700ab33f222a676985",
+      "overlap": 0.490782713810819,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 3
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 7
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 25
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 25
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 2
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 376
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 12
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 34
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39061,
+        "edge_overlap": 0.490782713810819
+      },
+      "incoming_strength_changed_nodes": 140,
+      "incoming_strength_mean_absolute_change": 8.215743440233236,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.5973924999998417,
+      "peak_sampled_rss_bytes": 110997504,
+      "os_process_peak_working_set_bytes": 113065984,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920008",
+    "level": "legacy5",
+    "graph_seed": 920008,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "afc6866c257f8533f6797b765fc873ff50b1f19cd8f33b9e39119e344fe78417",
+      "overlap": 0.4865518283469326,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 4
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 10
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 25
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 25
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 1
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 352
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 19
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 34
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39542,
+        "edge_overlap": 0.4865518283469326
+      },
+      "incoming_strength_changed_nodes": 140,
+      "incoming_strength_mean_absolute_change": 7.539358600583091,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.547017799999594,
+      "peak_sampled_rss_bytes": 111255552,
+      "os_process_peak_working_set_bytes": 113770496,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920009",
+    "level": "legacy5",
+    "graph_seed": 920009,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "cd3825a67f3148ca6bf879a668ee1699476439aa05655a427c85034cf591c0cc",
+      "overlap": 0.49168933212450894,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 1
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 8
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 22
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 29
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 0
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 375
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 16
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 36
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39506,
+        "edge_overlap": 0.49168933212450894
+      },
+      "incoming_strength_changed_nodes": 146,
+      "incoming_strength_mean_absolute_change": 7.3790087463556855,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.2720493000015267,
+      "peak_sampled_rss_bytes": 110493696,
+      "os_process_peak_working_set_bytes": 113168384,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920010",
+    "level": "legacy5",
+    "graph_seed": 920010,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "72347d55f03f58da3d89ccc5f2a62da5b9fc79f0d334a23b9a2eee00b31ddc5d",
+      "overlap": 0.4865518283469326,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 3
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 6
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 22
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 31
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 0
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 353
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 19
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 36
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39279,
+        "edge_overlap": 0.4865518283469326
+      },
+      "incoming_strength_changed_nodes": 146,
+      "incoming_strength_mean_absolute_change": 6.565597667638484,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.2363872999994783,
+      "peak_sampled_rss_bytes": 111255552,
+      "os_process_peak_working_set_bytes": 113815552,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920011",
+    "level": "legacy5",
+    "graph_seed": 920011,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "44803d7ddd8850e2923f14a5b9d241c5ce6ff81c4055683fd1be2df99a8ba09f",
+      "overlap": 0.5007555152614083,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 3
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 6
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 33
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 39
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 1
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 379
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 19
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 37
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39234,
+        "edge_overlap": 0.5007555152614083
+      },
+      "incoming_strength_changed_nodes": 150,
+      "incoming_strength_mean_absolute_change": 6.495626822157434,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.120372800000041,
+      "peak_sampled_rss_bytes": 110764032,
+      "os_process_peak_working_set_bytes": 113192960,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920012",
+    "level": "legacy5",
+    "graph_seed": 920012,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "c08e1d2811875a312b9a50b43cb5f9b60840a5c7ba342d7821258681bc90bcaf",
+      "overlap": 0.4919915382290722,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 4
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 5
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 21
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 32
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 0
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 376
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 13
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 37
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39607,
+        "edge_overlap": 0.4919915382290722
+      },
+      "incoming_strength_changed_nodes": 147,
+      "incoming_strength_mean_absolute_change": 7.19533527696793,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.132877300000473,
+      "peak_sampled_rss_bytes": 110993408,
+      "os_process_peak_working_set_bytes": 113881088,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920013",
+    "level": "legacy5",
+    "graph_seed": 920013,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "44b9a3b11b68e645b606b35adfdb236caf7b8ed0db13be5bfcdbadad2aafc8a7",
+      "overlap": 0.48534300392867935,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 4
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 7
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 17
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 34
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 0
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 360
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 15
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 29
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39145,
+        "edge_overlap": 0.48534300392867935
+      },
+      "incoming_strength_changed_nodes": 149,
+      "incoming_strength_mean_absolute_change": 7.451895043731779,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.1466190999999526,
+      "peak_sampled_rss_bytes": 110764032,
+      "os_process_peak_working_set_bytes": 113319936,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920014",
+    "level": "legacy5",
+    "graph_seed": 920014,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "a6e629a31c52269db36a465652382b7a3a1c850a497ca64029fe1eb81fa589c5",
+      "overlap": 0.4886672710788758,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 6
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 5
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 24
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 28
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 3
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 365
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 15
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 31
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39759,
+        "edge_overlap": 0.4886672710788758
+      },
+      "incoming_strength_changed_nodes": 145,
+      "incoming_strength_mean_absolute_change": 6.8979591836734695,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.3120973999994021,
+      "peak_sampled_rss_bytes": 110993408,
+      "os_process_peak_working_set_bytes": 113881088,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920015",
+    "level": "legacy5",
+    "graph_seed": 920015,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "51341bc58585a6d03b7018497618e63dca3a7f1bd15f1fa009fd5072208541be",
+      "overlap": 0.48806285886974915,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 3
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 4
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 23
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 27
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 1
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 372
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 8
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 37
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39520,
+        "edge_overlap": 0.48806285886974915
+      },
+      "incoming_strength_changed_nodes": 142,
+      "incoming_strength_mean_absolute_change": 8.227405247813412,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.6415896999988036,
+      "peak_sampled_rss_bytes": 111452160,
+      "os_process_peak_working_set_bytes": 113319936,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920016",
+    "level": "legacy5",
+    "graph_seed": 920016,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "1d70a83e734620372c56155bb3a35fce01e97e4afc337be4ffcccd141af37e2b",
+      "overlap": 0.5016621335750983,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 2
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 11
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 31
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 34
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 1
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 377
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 24
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 40
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39509,
+        "edge_overlap": 0.5016621335750983
+      },
+      "incoming_strength_changed_nodes": 151,
+      "incoming_strength_mean_absolute_change": 6.040816326530612,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.5373806999996305,
+      "peak_sampled_rss_bytes": 110952448,
+      "os_process_peak_working_set_bytes": 113881088,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920017",
+    "level": "legacy5",
+    "graph_seed": 920017,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "7d2aa6f48d37bfdb981397fff53067113c39c465ed9afc7ead75d1addcbd8b70",
+      "overlap": 0.4862496222423693,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 5
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 5
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 17
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 30
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 1
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 359
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 14
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 38
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39443,
+        "edge_overlap": 0.4862496222423693
+      },
+      "incoming_strength_changed_nodes": 141,
+      "incoming_strength_mean_absolute_change": 6.871720116618076,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.6756456999992224,
+      "peak_sampled_rss_bytes": 110915584,
+      "os_process_peak_working_set_bytes": 113319936,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920018",
+    "level": "legacy5",
+    "graph_seed": 920018,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "bdd9de03b2a38999f73de0f3fc95ef56b3c67d63e7430f0fb8bd7dcce9be20f4",
+      "overlap": 0.48685403445149594,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 3
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 8
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 26
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 32
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 1
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 348
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 14
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 39
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39931,
+        "edge_overlap": 0.48685403445149594
+      },
+      "incoming_strength_changed_nodes": 144,
+      "incoming_strength_mean_absolute_change": 7.97667638483965,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.7764050000005227,
+      "peak_sampled_rss_bytes": 111017984,
+      "os_process_peak_working_set_bytes": 113881088,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920019",
+    "level": "legacy5",
+    "graph_seed": 920019,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "ef1f9de42b6489aeb431206ea7c0ad539f372678447f4253e2261d9757591668",
+      "overlap": 0.49531580537926867,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 4
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 6
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 38
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 27
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 1
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 366
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 12
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 45
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39317,
+        "edge_overlap": 0.49531580537926867
+      },
+      "incoming_strength_changed_nodes": 151,
+      "incoming_strength_mean_absolute_change": 8.446064139941692,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.878811800001131,
+      "peak_sampled_rss_bytes": 110919680,
+      "os_process_peak_working_set_bytes": 113926144,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/g920020",
+    "level": "legacy5",
+    "graph_seed": 920020,
+    "audit": {
+      "neurons": 686,
+      "edges": 3309,
+      "exact_in_degree": true,
+      "exact_out_degree": true,
+      "exact_role_blocks": true,
+      "exact_presynaptic_signed_weight_multisets": true,
+      "exact_global_weight_multiset": true,
+      "no_self_duplicate_zero_edges": true,
+      "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+      "null_raw_weight_sha256": "59d5dd2a6dac9e4ddb1f912c4aff2255e5d70f33698253ff9849a4d6f0356f3c",
+      "overlap": 0.4889694771834391,
+      "role_blocks": {
+        "APL->APL": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "APL->DAN": {
+          "edges": 35,
+          "common_edges": 35
+        },
+        "APL->KC": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "APL->MBON": {
+          "edges": 27,
+          "common_edges": 27
+        },
+        "DAN->APL": {
+          "edges": 31,
+          "common_edges": 31
+        },
+        "DAN->DAN": {
+          "edges": 8,
+          "common_edges": 2
+        },
+        "DAN->KC": {
+          "edges": 24,
+          "common_edges": 8
+        },
+        "DAN->MBON": {
+          "edges": 189,
+          "common_edges": 22
+        },
+        "KC->APL": {
+          "edges": 512,
+          "common_edges": 512
+        },
+        "KC->DAN": {
+          "edges": 147,
+          "common_edges": 28
+        },
+        "KC->KC": {
+          "edges": 43,
+          "common_edges": 1
+        },
+        "KC->MBON": {
+          "edges": 1474,
+          "common_edges": 361
+        },
+        "MBON->APL": {
+          "edges": 23,
+          "common_edges": 23
+        },
+        "MBON->DAN": {
+          "edges": 118,
+          "common_edges": 19
+        },
+        "MBON->KC": {
+          "edges": 0,
+          "common_edges": 0
+        },
+        "MBON->MBON": {
+          "edges": 166,
+          "common_edges": 37
+        }
+      },
+      "swap_log": {
+        "requested_swaps": 16545,
+        "accepted_swaps": 16545,
+        "attempts": 39418,
+        "edge_overlap": 0.4889694771834391
+      },
+      "incoming_strength_changed_nodes": 149,
+      "incoming_strength_mean_absolute_change": 7.396501457725948,
+      "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+    },
+    "usage": {
+      "seconds": 1.895029400000567,
+      "peak_sampled_rss_bytes": 111665152,
+      "os_process_peak_working_set_bytes": 113881088,
+      "sample_seconds": 0.05
+    }
+  }
+]
