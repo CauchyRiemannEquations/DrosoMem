@@ -9,7 +9,35 @@ fly memorizing pi or a model predicting unseen pi digits.
 [한국어 설명](docs/README-ko.md) · [Research status / audit](docs/research-status.md) ·
 [Roadmap](docs/research-roadmap.md) · [Extension closeout](docs/additional-research-closeout.md)
 
-## Current research
+## Current research — 2026-10-06
+
+[v1 closeout](docs/drosomem-v1-closeout.md) seals baseline `0cf0867` and its
+negative results. The [Temporal Decodability Curve](docs/temporal-memory-curve-results.md)
+uses independent iid K10 streams, fixed recurrent weights and equal-budget
+ridge decoders of historical inputs. All six partial-graph blocks pass the
+prospective lag 1–5 access criterion. Mean accuracy is83.11% at lag 2,43.60% at
+lag 5 and 9.62% at lag 20; chance is10%. This supports decodable past information
+in a source-derived computational reservoir, not sequence prediction or
+biological learning.
+
+The [matched null ensembles](docs/temporal-null-ensemble-results.md) contain20
+partial and 10 whole-brain controls preserving each neuron's degrees, role blocks
+and raw presynaptic weight multisets. The registered wiring-advantage criterion
+fails in both analyses. Partial real−null mean is−2.285 pp raw accuracy; secondary
+whole-brain real is above all 10 controls but only+0.985 pp, below the fixed2.7 pp
+requirement. Preserve that small positive direction and the failed gate together.
+All planned159 cases,318 complete state replays and 3,339 independent lag refits
+are validated. Failed console-only generation and same-seed retry records remain.
+
+[Full synthesis and Korean explanation](docs/temporal-memory-synthesis.md) ·
+[P1 protocol](docs/temporal-memory-curve-protocol.md) ·
+[P2 protocol](docs/temporal-null-ensemble-protocol.md) ·
+[Final provenance audit](results/tdc_v2/final_audit/audit.json).
+No general real-wiring/whole-brain superiority, storage site, physiological
+dopamine learning, living-fly pi memory or formal memory capacity is established.
+P3 spiking/plasticity/physiology is excluded from this completed work.
+
+## Sealed v1 studies
 
 The [length × alphabet × sequence-family follow-up](docs/followup-3-results.md)
 completed 162 trained-sequence cases and 54 independent-stream probes. Its

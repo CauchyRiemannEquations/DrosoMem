@@ -2,7 +2,7 @@
 
 **The registered historical-decoding criterion passes.** All six predetermined
 computational blocks on `legacy5` exceed the strongest chance/frequency/current-
-symbol baseline by at least 10 percentage points at each of lag1–5. This is
+symbol baseline by at least 10 percentage points at each of lag 1–5. This is
 30 required cells, not selection of the best seed or a later success threshold.
 The result supports past-input access in a fixed computational reservoir.
 
@@ -15,7 +15,7 @@ as `99d9038`. Smoke and its full verification precede main. Main source commit
 is `03c12e9e383738161f9bb468e45143c5b3670d83`.
 
 Independent uniform iid K10 train/test streams start from zero state, with
-warmup200, train4,000/test2,000 rows at every lag. Six new mapping/data blocks,
+warmup 200, train 4,000/test 2,000 rows at every lag. Six new mapping/data blocks,
 one fixed source-derived partial graph and its whole-brain secondary analysis;
 48 observed MBON coordinates and 490 affine decoder parameters per lag.
 Train-only standardization and alpha-1 ridge, no recurrent learning, no
@@ -56,7 +56,7 @@ include every lag, mean, median, sample SD, baseline excess and chance-adjusted
 accuracy `(accuracy−.1)/.9`, without clipping. The 10,000-draw seed bootstrap
 uses the registered seed and paired resampling across graphs/lags. Intervals
 describe these six computational blocks; they are not animal confidence intervals.
-For example partial lag2 SD is 1.70pp and lag5 SD is 1.06pp.
+For example partial lag 2 SD is 1.70 pp and lag 5 SD is 1.06 pp.
 
 ## Independent validation and resource evidence
 
@@ -71,7 +71,7 @@ coefficients, scores, labels, baselines and every summary statistic are checked.
 The [exact rational count audit](../results/tdc_v2/p1_decision_validation/checks.json)
 also confirms all 30 primary cells and PASS, without floating threshold ambiguity.
 It adds verification and does not alter the original manifest, result or criterion.
-The smallest primary excess is 29.85pp. All 24 full-state trajectory digests
+The smallest primary excess is 29.85 pp. All 24 full-state trajectory digests
 also match exactly, including every unobserved coordinate at every step.
 
 Main ran 905.89 seconds; sampled peak RSS 266,502,144 bytes and Windows
@@ -97,7 +97,7 @@ are complete. P2 requires a separate prospective null-ensemble protocol.
 
 ## Reproduction
 
-Use Python3.12 and `requirements-act1-lock.txt`, with numerical threads set to1.
+Use Python 3.12 and `requirements-act1-lock.txt`, with numerical threads set to1.
 From the repository root, first prepare pinned sources/cache at the config paths:
 
 ```powershell

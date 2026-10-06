@@ -1,6 +1,27 @@
-# Prioritized work — updated 2026-10-02
+# Prioritized work — updated 2026-10-06
 
-## Current handoff — 2026-10-02
+## Current handoff — 2026-10-06
+
+The requested P0 closeout, P1 iid TDC and P2 matched null ensembles are complete.
+[Synthesis](temporal-memory-synthesis.md), [P1 results](temporal-memory-curve-results.md),
+[P2 results](temporal-null-ensemble-results.md),
+[final audit](../results/tdc_v2/final_audit/audit.json).
+No experiment execution or validation remains in these fixed scopes.
+
+P1 confirms short-lag historical access; P2 fails its real-wiring material
+criterion in both graph analyses. Partial real is below 20 nulls; whole-brain
+real is above 10 nulls but only+0.985 pp, below the registered2.7 pp requirement.
+Keep all paired values, the positive secondary direction, both failed gates,
+earlier v1 negatives and the console-only failed attempt. No additional seed,
+null graph, weaker threshold or different decoder is a completion step.
+
+A distinct future computational question could separate leak-only history from
+recurrent-network contributions under a new fixed TDC protocol. This is a
+proposal, unregistered and unexecuted; it is not an automatic attempt to repair
+the failed wiring hypothesis. P3 physiology/spiking/plasticity is outside the
+current work. The dated handoffs below retain historical context.
+
+## Historical handoff — 2026-10-02
 
 The requested [sequence grid and novel-family study](followup-3-results.md),
 [whole-brain scale/pathway study](followup-4-results.md), separate

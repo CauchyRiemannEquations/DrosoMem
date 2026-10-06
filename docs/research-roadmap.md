@@ -1,5 +1,25 @@
 # DrosoMem research roadmap
 
+## Current — 2026-10-06
+
+The finite [v1/P1/P2 programme](temporal-memory-synthesis.md) is complete and
+independently verified. Research completion does not turn a failed hypothesis
+into success. New evidence and manifests are isolated under `results/tdc_v2/`.
+
+| stage | fixed question | outcome / boundary |
+| --- | --- | --- |
+| P0 | Seal current claims/provenance without tuning past results | [Closed](drosomem-v1-closeout.md);39,608 historical result blobs preserved |
+| P1 | Independent iid temporal decodability versus lag | [Closed, criterion passes](temporal-memory-curve-results.md); all 6 blocks at lag 1–5 |
+| P2 primary | Partial real versus 20 matched null graphs | [Closed, advantage fails](temporal-null-ensemble-results.md); real below all 20 |
+| P2 secondary | Whole-brain real versus 10 matched nulls | Closed, material gate fails; small+0.985 pp direction retained |
+| P3 | Physiology-calibrated spiking/plasticity | Excluded; unexecuted in this work, not a remaining P0/P1/P2 step |
+
+The supported claim is computational past-input access, not living-fly memory,
+anatomical storage, formal capacity or general real/whole-brain superiority.
+Any future study must ask a distinct question, register its budget/criteria
+before outcomes, preserve this programme and avoid a success-seeking seed or
+threshold loop. [Handoff](next-work.md). Earlier dated roadmaps below are history.
+
 ## Latest — 2026-10-02
 
 The [full length × alphabet × family grid](followup-3-results.md) is complete;
@@ -88,7 +108,7 @@ The [independent-stream delayed-symbol comparison](delayed-symbol-results.md)
 is now complete: partial60.42% / whole-brain51.10% past-lag accuracy, with
 20 exact repeats. Whole-brain superiority fails. The fixed-N128
 [alphabet comparison](alphabet-memory-results.md) is also complete:80 fits,
-80 exact replays and8 independent refits. Both graphs pass trained-prefix gates
+80 exact replays and 8 independent refits. Both graphs pass trained-prefix gates
 at all four K, but no K establishes whole-brain superiority. Recall grows from
 K2 toK16, so the registered load-drop endpoint fails. The subsequent
 [finite-context diagnostic](context-memory-results.md) is complete:120 controls
@@ -164,7 +184,7 @@ margin direction, fixed-code accuracy and autonomous memory are different claims
 ## ACT V — Robustness (independent axis)
 
 The [current five-family panel](act5-robustness-results.md) is executed and checked.
-30 archived clean heads and18 fresh heads were evaluated without perturbation
+30 archived clean heads and 18 fresh heads were evaluated without perturbation
 refits. Previous partial real/shuffled robustness failures remain preserved.
 This completes the declared rate-model scope, not physiological validation.
 The subsequent [relative-dose study](relative-noise-results.md) and

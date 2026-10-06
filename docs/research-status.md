@@ -1,5 +1,28 @@
 # Research status
 
+## Current — v1 sealed; P1/P2 completed (2026-10-06)
+
+[v1 closeout](drosomem-v1-closeout.md), [TDC results](temporal-memory-curve-results.md),
+[null-ensemble results](temporal-null-ensemble-results.md),
+[synthesis](temporal-memory-synthesis.md),
+[final audit](../results/tdc_v2/final_audit/audit.json).
+Baseline `0cf0867` and all historical result blobs remain unchanged.
+
+P1's fixed iid K10 lag 1–5 access gate passes in all six partial-graph blocks:
+83.11% lag 2,43.60% lag 5 and minimum29.85 pp above the strongest predefined
+baseline. Twelve real graph/input cases and 252 heads are independently checked.
+P2's 20 partial/10 whole-brain null ensembles and 159 cases are complete, with
+318 exact whole-state trace hashes and 3,339 independent refits. The primary
+real-wiring gate fails: partial real−null mean−2.285 pp, below every control.
+Secondary whole-brain real is above all 10 controls but+0.985 pp is below the
+registered2.7 pp material requirement, so its gate also fails. Do not substitute
+its 100th percentile/standardized effect for confirmation.
+
+These results extend computational historical-input access and preserve prior
+whole-brain/wiring/local-learning negatives. No biological storage/learning or
+formal capacity claim. P0/P1/P2 are closed; P3 is excluded. The dated sections
+below are earlier snapshots and their numerical outcomes remain unchanged.
+
 ## Latest — numbered follow-ups 3, 4, 4B and 5 (2026-10-02)
 
 All four bounded studies are executed with archived cases and independent
@@ -80,7 +103,7 @@ The historical briefing and paragraphs below describe their own earlier mileston
 [Results](feedback-noise-results.md), [briefing](additional-research-brief.md).
 The completed ACT V remains unchanged. Fresh seeds 418001–418003 are noise streams,
 not new model cohorts. The brain1 joint gate is confirmed: prefix gains
-3.700/6.167, retention gains 10.986/16.283pp in the two inherited model cohorts.
+3.700/6.167, retention gains 10.986/16.283 pp in the two inherited model cohorts.
 Within-graph allocation improvement and whole-brain superiority are separate questions.
 1152 archived and 864 prospective certificates are independently checked. There are
 336 actual neural rollouts with full outputs and pre-error agreement; 140 full paths
@@ -96,7 +119,7 @@ squared observation noise fixed and reallocates by training SD. All 48 archived
 models and 1152 counterfactual evaluations completed, with three fresh noise draws
 regardless of initial outcomes. All graphs pass the registered gain gate across
 both model cohorts and both archived/fresh-noise stages. Fresh brain1 accuracy
-gains are21.004/20.192pp, with remaining clean losses18.455/18.002pp.
+gains are21.004/20.192 pp, with remaining clean losses18.455/18.002 pp.
 This is teacher decoding with no new neural simulation, training or autonomous
 recall. All 1152 counterfactuals independently reconstruct; 22 targeted tests and
 72 smoke evaluations pass. Existing flat144 and clean48 checks also pass.
@@ -114,9 +137,9 @@ unexecuted and not a required task remaining in this closeout.
 18 fresh clean heads, 384 actual neural evaluation trajectories and 48 zero aliases.
 Relative strength uses the clean training MBON-SD median, with the same fixed
 48-neuron interface and 482 readout parameters. Brain1 minus partial retention is
-−2.073/−5.714pp, mean prefix difference −1.033/−1.000 in discovery/confirmation.
+−2.073/−5.714 pp, mean prefix difference −1.033/−1.000 in discovery/confirmation.
 No comparison passes the registered joint improvement gate. The same discovery
-cohort had −22.10pp under absolute noise, so dose definition materially affects
+cohort had −22.10 pp under absolute noise, so dose definition materially affects
 the gap; confirmation cohorts differ and are not a paired before/after comparison.
 160 independent dynamical trajectories and six exact fresh refits pass. Original
 CSV-parser smoke failure is preserved; the pre-main correction reproduces all
@@ -126,9 +149,9 @@ CSV-parser smoke failure is preserved; the pre-main correction reproduces all
 evaluations and 48 clean rechecks, reusing the first study's models. All 144 controls
 independently reproduce with maximum error zero. Current-observation corruption
 alone causes large decoding loss; brain1's additional accumulated-history cost is
-0.541/0.761pp. Both whole graphs satisfy the separate descriptive near-tolerance
+0.541/0.761 pp. Both whole graphs satisfy the separate descriptive near-tolerance
 rule, not a formal equivalence test. Partial does not; its middle-dose history cost
-is about 4.92/4.99pp. No graph confirms the 5pp material-history-cost gate.
+is about 4.92/4.99 pp. No graph confirms the 5 pp material-history-cost gate.
 This is exploratory reuse, not a new independent cohort or autonomous recovery.
 
 [Two-study audit](../results/observation_noise_closeout/audit.json) pins reports,
@@ -140,7 +163,7 @@ completed above. Representation loss and decoding failure remain distinct questi
 
 [Five-family results](act5-robustness-results.md), [completion audit](../results/act5_closeout/audit.json).
 48 cases,1056 evaluation trajectories and unconditional fresh-seed confirmation.
-Full per-seed metrics/hashes,440 independently replayed trajectories and6 exact
+Full per-seed metrics/hashes,440 independently replayed trajectories and 6 exact
 fresh refits pass. Primary ongoing-noise whole-brain advantage confirmed: `False`.
 The five curves cover pulse/ongoing state noise,edge/neuron dropout and multiplicative
 weight noise. A Windows launcher-only memory measurement defect in the first smoke
@@ -153,7 +176,7 @@ at that time is now completed above; it does not replace this absolute-dose resu
 [Closeout](act4-results.md) audits seven study roots by research question and
 separates completed experiments from unresolved biology. The final
 [margin-sensitivity diagnostic](reward-margin-results.md) includes three fresh
-paired task seeds,74 checkpoints,2382 exact scalar baseline trajectories and14292
+paired task seeds,74 checkpoints,2382 exact scalar baseline trajectories and 14292
 independent reverse-adjoint mean checks.240 tests pass,8 optional skips.
 Margin confirmed endpoints: `{"attenuation": true, "persistent_utility": false}`. This does not change the older coding
 failure or finite-probe inconclusiveness. Physiological/whole-brain/literal decoder-free
@@ -173,9 +196,9 @@ at these same checkpoints, now completed above. The biological question remains 
 ## Preceding — ACT IV direction and noise diagnostics complete (2026-09-29)
 
 [Direction study](reward-direction-results.md):13 frozen proposal blocks,169 probe
-graphs,5187 exact scalar trajectory replays. Noisy local+ gains occur in6/6seed
-blocks; mean directional responses0.51615/0.88750pp. One discovery block has
-above-random−0.00594pp, so the complete criterion fails; confirmation alone passes.
+graphs,5187 exact scalar trajectory replays. Noisy local+ gains occur in 6/6seed
+blocks; mean directional responses0.51615/0.88750 pp. One discovery block has
+above-random−0.00594 pp, so the complete criterion fails; confirmation alone passes.
 All actual radii are1%, without boundary reduction. Clean outcomes are secondary.
 
 [Noise-match follow-up](reward-noise-results.md):39 frozen final checkpoints,
@@ -194,7 +217,7 @@ study is completed above. Biological ACT IV remains open.
 rate covariance rule receives scalar reward, no target-code vector or trained-head
 gradient. Fixed accuracy32.45/29.8333% versus frozen27.15/26.1333%, yoked25.85/24.2667%.
 Discovery fails the every-seed frequency-access gate; confirmation also contains
-negative paired effects and misses the5pp frozen mean gate. Neither full primary
+negative paired effects and misses the 5 pp frozen mean gate. Neither full primary
 passes. Ridge frozen100/99.9333%, trained99.3/99.7333%; no representation improvement.
 Plastic changes are substantial (~0.70 relative L2), with effective rank decreasing;
 this is not a silent/no-update failure. That direction diagnostic and noise follow-up are now completed above. No learning-rate tuning; biological ACT IV remains open.
@@ -216,8 +239,8 @@ it is not fresh confirmatory evidence. That scalar-reward/local-trace proposal i
 
 [Results](observation-location-results.md):130 exact fits/replays,260 independent
 site-specific train/test reconstructions,1430 metric rows;224 tests pass,8 optional
-skips. DAN→MBON cuts cause MBON losses7.8833/7.2722pp but unstimulated KC48 losses
-−0.0778/−0.0361pp. All required past-access and location-interaction gates pass in
+skips. DAN→MBON cuts cause MBON losses7.8833/7.2722 pp but unstimulated KC48 losses
+−0.0778/−0.0361 pp. All required past-access and location-interaction gates pass in
 both new-task cohorts. Old matched masks are reused explicitly. KC baseline~50%
 versus MBON~77%; temporal profiles differ. This is evidence of observation-dependent
 decoding impairment, not identified storage, biological learning or total ACT IV completion.
@@ -226,11 +249,11 @@ That proposed common-delay analysis is now complete and explicitly retrospective
 ## Preceding — ACT III-D pathway panel complete (2026-09-29)
 
 [Results](pathway-memory-results.md):273 fits/replays,260 frozen evaluations,
-546 independently reconstructed trajectories and5863 metric rows. Primary
-DAN→MBON refit excess impairment7.3306/8.3204pp passes both discovery and fresh
-confirmation. Secondary KC→MBON5.4907/5.7083pp also passes, with an immediate
-input-access confound (confirmation lag0 target24.02% versus controls100%).
-DAN→MBON retains100% lag0 decoding. No frozen specificity confirms. DAN→KC
+546 independently reconstructed trajectories and 5863 metric rows. Primary
+DAN→MBON refit excess impairment7.3306/8.3204 pp passes both discovery and fresh
+confirmation. Secondary KC→MBON5.4907/5.7083 pp also passes, with an immediate
+input-access confound (confirmation lag 0 target24.02% versus controls100%).
+DAN→MBON retains100% lag 0 decoding. No frozen specificity confirms. DAN→KC
 fails; APL specificity is unidentifiable under the declared overlap limit.
 These are model decoding/access pathway candidates, not localized storage or
 biological memory circuits. III-C and III-B negative findings remain unchanged.
@@ -261,11 +284,11 @@ Its proposed observation-location diagnostic is now complete; see the latest res
 | Does trained-prefix recall extend across alphabet sizes? | ACT II-A fixed-N128 comparison completed | 80 fits at K2/4/10/16; both graphs pass scoped trained-prefix gates at all K, no whole-brain superiority. Mean prefixes partial25.0/43.4/82.2/103.1; whole27.3/26.3/55.1/88.0. [Results](alphabet-memory-results.md). Full length-by-K design and additional families remain open |
 | Can finite-context distinctiveness help explain the K curve? | ACT II diagnostic completed; both scoped endpoints pass | 120 context tables on20 unique tasks; order2 ambiguity K16−K2=−0.2272; order3 prefix +59.0; all independently checked. Context5 completes K10/K16. A task-level explanation candidate, not neural causality; [results](context-memory-results.md) |
 | Does a fixed-K low/high context-conflict intervention change recall? | Completed within registered cohort scope | Main40 fits; confirmed graphs: none. [Results](context-intervention-results.md). Matched unigram counts and interface; ordering covariates remain |
-| Are past symbols accessible on held-out positions and portable across paired orderings? | Two ACT II diagnostics completed | All four blocked graph/arm and transfer graph/direction cells pass past-access criteria in both cohorts; no confirmed next-symbol benefit. Frozen-head transfer within5pp tolerance; [blocked](frozen-state-probe-results.md), [transfer](cross-arm-probe-results.md) |
-| Which populations/edges affect decoding in the current model? | Bounded III-A and III-B panels complete | DAN refit sensitivity passes count/raw-bin controls but not the later effective-strength5pp criterion; APL frozen sensitivity remains scoped. Whole-brain/downstream localization open. [Latest results](edge-panel-results.md) |
-| Does original wiring outperform incoming-strength-preserving structural controls? | Current-model III-C complete; primary fails | Role control refit exceeds intact by1.33/1.12pp; all frozen controls show transfer loss. [Results](structural-controls-results.md) |
-| Which predefined pathways matter beyond matched edge/weight removal? | Bounded III-D complete; primary and one secondary refit candidate confirm | DAN→MBON7.33/8.32pp and KC→MBON5.49/5.71pp; access versus storage unresolved, APL controls not identifiable. [Results](pathway-memory-results.md) |
-| Is DAN→MBON lesion impairment observation-dependent? | ACT IV-A entry diagnostic complete; scoped hypothesis passes | MBON loss7.88/7.27pp, non-input KC48 retain access; baseline/lag profiles differ. [Results](observation-location-results.md) |
+| Are past symbols accessible on held-out positions and portable across paired orderings? | Two ACT II diagnostics completed | All four blocked graph/arm and transfer graph/direction cells pass past-access criteria in both cohorts; no confirmed next-symbol benefit. Frozen-head transfer within5 pp tolerance; [blocked](frozen-state-probe-results.md), [transfer](cross-arm-probe-results.md) |
+| Which populations/edges affect decoding in the current model? | Bounded III-A and III-B panels complete | DAN refit sensitivity passes count/raw-bin controls but not the later effective-strength5 pp criterion; APL frozen sensitivity remains scoped. Whole-brain/downstream localization open. [Latest results](edge-panel-results.md) |
+| Does original wiring outperform incoming-strength-preserving structural controls? | Current-model III-C complete; primary fails | Role control refit exceeds intact by 1.33/1.12 pp; all frozen controls show transfer loss. [Results](structural-controls-results.md) |
+| Which predefined pathways matter beyond matched edge/weight removal? | Bounded III-D complete; primary and one secondary refit candidate confirm | DAN→MBON7.33/8.32 pp and KC→MBON5.49/5.71 pp; access versus storage unresolved, APL controls not identifiable. [Results](pathway-memory-results.md) |
+| Is DAN→MBON lesion impairment observation-dependent? | ACT IV-A entry diagnostic complete; scoped hypothesis passes | MBON loss7.88/7.27 pp, non-input KC48 retain access; baseline/lag profiles differ. [Results](observation-location-results.md) |
 | Can internal teaching reduce dependence on a trained external head? | Bounded ACT IV-A comparison complete; artificial coding criterion passes | Fixed decoding improves to49.58/51.52%, ridge already near ceiling; no biological-learning or capacity claim. [Results](readout-dependency-results.md) |
 | Can scalar reward and local traces replace vector teaching? | Bounded ACT IV experiment complete; primary fails | Some gains, inconsistent confirmation; no increased memory capacity. [Results](local-reward-results.md) |
 | Do local proposals point toward higher reward? | Initial directional diagnostic complete; full gate failed | Positive noisy forward response6/6, above-random5/6; [results](reward-direction-results.md) |
@@ -280,9 +303,9 @@ checks,338 independently reconstructed train/test trajectories,3575 metric rows.
 incoming-weight preservation, role-constrained degree with incoming weights,
 and fixed-adjacency weight permutation. Three draws per family inside each of
 three paired computational blocks per cohort; two existing partial graphs.
-Primary intact-minus-role refit difference −1.3278/−1.1185pp; all6 seed blocks
-favor the control. No refit family passes the fixed5pp intact-advantage criterion.
-Degree-only contrasts4.6843/4.6676pp also fall short. Frozen contrasts all pass
+Primary intact-minus-role refit difference −1.3278/−1.1185 pp; all 6 seed blocks
+favor the control. No refit family passes the fixed5 pp intact-advantage criterion.
+Degree-only contrasts4.6843/4.6676 pp also fall short. Frozen contrasts all pass
 as decoder-transfer sensitivity, not unique intact memory information.
 Role edge overlap49.08–50.94%; outgoing strengths are not preserved. Finite
 swaps are not claimed to be a uniform graph ensemble. A preflight-only unused
@@ -296,10 +319,10 @@ is now completed; see the latest result above.
 prospectively registered effective-strength follow-up65;286 exact replays/refits,
 260 frozen evaluations,572 independent trajectories,6,006 audited lag rows.
 212 tests pass,8 optional skips. Every prior result file remains unchanged.
-Raw sign/weight-bin matched DAN refit extra loss6.997/6.994pp passes discovery/
-confirmation. It leaves normalized removed L1 88.023 versus58.774 in controls.
-Joint sign/raw/normalized-bin matching on fresh cohorts yields2.585/1.773pp:
-all seed differences positive but BOTH5pp gates fail. Actual normalized mass
+Raw sign/weight-bin matched DAN refit extra loss6.997/6.994 pp passes discovery/
+confirmation. It leaves normalized removed L1 88.023 versus 58.774 in controls.
+Joint sign/raw/normalized-bin matching on fresh cohorts yields2.585/1.773 pp:
+all seed differences positive but BOTH5 pp gates fail. Actual normalized mass
 error<=0.0167%; target overlap rises to63.41–70.42%, cohorts also change, so no
 claim that normalization alone explains the effect change. Other5%-edge families
 fail material-effect confirmation. A between/betweenness aggregation collision
@@ -311,15 +334,15 @@ above. No internal learning claim.
 ## Preceding ACT III-A current-model population closeout — 2026-09-29
 
 [Report](neuron-panel-results.md), [preregistered protocol](neuron-panel-protocol.md).
-Input-only28 + population299 conditions;327 exact full replays/refits,314 frozen
+Input-only 28 + population299 conditions;327 exact full replays/refits,314 frozen
 evaluations,654 independent train/test trajectories,7,051 audited lag rows.
 206 tests passed,8 optional skips;9,046 preceding result files unchanged.
 Confirmed under the fixed two-cohort criterion: **refit/DAN** and **frozen/APL**.
-DAN refit control-minus-target6.798/6.417pp; APL frozen48.618/50.499pp.
-APL refit extra loss1.975/2.242pp remains below5pp. KCab/KCapbp fail specificity;
+DAN refit control-minus-target6.798/6.417 pp; APL frozen48.618/50.499 pp.
+APL refit extra loss1.975/2.242 pp remains below 5 pp. KCab/KCapbp fail specificity;
 hub passes different modes in different cohorts and is NOT confirmed.
 Count/input controls for DAN/APL/hubs do not match edge count or strength;
-APL removes1,140 edges versus3.94 for its one-neuron random controls.
+APL removes1,140 edges versus 3.94 for its one-neuron random controls.
 This closes the bounded two-partial-circuit III-A panel, not whole-brain/
 downstream localization or autonomous-recall mechanism. Next single experiment:
 DAN-associated edge removal with matched edge count/weight bins, ACT III-B.
@@ -334,8 +357,8 @@ Historical manifests were not rewritten.
 
 [Fresh cohort](kc-confirmation-results.md): KCγ26.047% frozen/79.367% refit,
 matched26.962%/77.323%. Primary refit benefit confirms across new3blocks without
-pooling discovery. Frozen access/retention and5pp specificity fail again.
-Frozen specificity+0.915pp,all3positive,is not evidence of equivalence or zero.
+pooling discovery. Frozen access/retention and 5 pp specificity fail again.
+Frozen specificity+0.915 pp,all 3positive,is not evidence of equivalence or zero.
 35new condition replays,28frozen transfers,693metric rows checked;202tests pass,
 8optional skips;8,446prior result files unchanged. Same biological circuit strata.
 Next: input-only silencing versus full lesions to separate the added recurrent
@@ -344,9 +367,9 @@ edge-removal effect. Useful internal plasticity and circuit localization remain 
 ## Preceding ACT III-A frozen/refit lesions — 2026-09-29
 
 [Frozen intact-head comparison](kc-frozen-results.md): full KCγ26.250% frozen
-versus79.219% refit; matched26.377%/77.156%. Primary refit-benefit criterion passes
-all3 paired blocks. Subset frozen30.788%/32.181% versus refit76.957%/77.072%.
-All4 groups fail frozen access and5pp retention. Frozen KCγ-specific impairment
+versus 79.219% refit; matched26.377%/77.156%. Primary refit-benefit criterion passes
+all 3 paired blocks. Subset frozen30.788%/32.181% versus refit76.957%/77.072%.
+All4 groups fail frozen access and 5 pp retention. Frozen KCγ-specific impairment
 fails both full and subset criteria. Decoder mismatch is not information loss.
 70transfers/score replays,7source baselines,770metric rows independently checked;
 200tests pass,8optional skips;8,222prior result files unchanged.
@@ -369,7 +392,7 @@ No identified memory-critical subnetwork. The frozen/refit comparison is now com
 [Fresh cohort](fresh-alignment-results.md) uses new mapping55142–55144 and separate
 new train/test/rewire seeds on existing biological strata701/702. R→F45.142%,
 F→R47.256%, versus unaligned25.033%/26.061% and refit80.108%/77.606%.
-H1 improvement passes both directions/all3blocks; H2 access and H3 retention fail.
+H1 improvement passes both directions/all 3blocks; H2 access and H3 retention fail.
 12 new conditions/full replays,12 transfers,132 independently checked lag rows;
 194 tests pass/8 optional skips.7,511 historical result files unchanged.
 New pseudorandom realizations are not new biological connectome samples.
@@ -379,8 +402,8 @@ The matched KCγ refit study and disjoint follow-up are now complete above.
 
 [Two completed diagnostics](residual-orientation-results.md) reject low-half
 source-mode dominance and preferential decoder-sensitive residual orientation.
-Fixed ranks25–48:10–18% state energy but about0–1% mean signed score attribution.
-Actual/reference geometric score-distortion ratios are below1 in both directions
+Fixed ranks25–48:10–18% state energy but about 0–1% mean signed score attribution.
+Actual/reference geometric score-distortion ratios are below 1 in both directions
 and both archived cohorts. Each study34 exact replays/374 rows; second5984
 signed-permutation control energies.192 tests pass/8 optional skips. These are
 geometric decoding diagnostics, not neuron-group ablations or memory improvements.
@@ -392,9 +415,9 @@ The subsequent fresh-seed replication is complete as reported above.
 [Train-only mean/std alignment](moment-alignment-results.md) improves both
 directions in both archived cohorts: main51.007% /51.607%, confirmation49.447%
 /52.886%, versus unaligned25–27% and target refit79–80%. H1 improvement passes,
-H2 access fails because mean R² stays negative; H3 5pp retention also fails.
+H2 access fails because mean R² stays negative; H3 5 pp retention also fails.
 The label-free adapter estimates96 moments; source heads stay fixed.34 directions
-and374 lag rows verified,186 tests pass/8 optional skips.7,168 old result files
+and 374 lag rows verified,186 tests pass/8 optional skips.7,168 old result files
 unchanged. These are previously observed cohorts, not new confirmation seeds.
 The subsequent source-mode and orientation diagnostics are complete above.
 This remains decoding analysis, not recurrent learning.
@@ -403,7 +426,7 @@ This remains decoding analysis, not recurrent learning.
 
 [Frozen normalization transfer](normalization-transfer-results.md) completed both
 directions in both archived cohorts: main25.728% /25.468%; confirmation24.958%
-/27.172%, versus target refits about79–80%. All access/retention gates fail.
+/27.172%, versus target refits about 79–80%. All access/retention gates fail.
 32 analyzed plus2 smoke directions verify; zero new target fits.374 lag rows
 checked,181 tests pass,8 optional skips;7,053 historical result files unchanged.
 Train-feature means shift despite high centered temporal correlations. The subsequent
@@ -412,12 +435,12 @@ These results concern frozen decoder portability, not absent past information.
 
 ## Preceding normalization intervention
 
-[Normalization control](normalization-control-results.md) completed30 main and18
+[Normalization control](normalization-control-results.md) completed30 main and 18
 fresh-seed confirmation runs, plus3 separate smoke runs. Same raw rewired graph,
 original versus graph-specific incoming factors. Fixed-original improvement
-1.245pp main,0.894pp confirmation; registered1pp confirmation fails despite all
+1.245 pp main,0.894 pp confirmation; registered1 pp confirmation fails despite all
 paired blocks having the same sign. Do not pool cohorts or promote this as an
-established >=1pp improvement. All51 runs and561 lag rows verified;178 tests pass,
+established >=1 pp improvement. All51 runs and 561 lag rows verified;178 tests pass,
 8 optional skips. Historical6,653 result files unchanged. Fixed factors lose the
 sufficient contraction certificate; observed finite states/one small perturbation
 do not establish global stability. The subsequent frozen-head transfer is now complete as described above;
@@ -427,8 +450,8 @@ no gain search or internal-plasticity expansion was performed.
 
 [Current K4 structural control](structural-k4-results.md) completed20 graph runs,
 20 exact replays and refits. Real76.965% versus role-/degree-rewired78.603%; paired
-delta−1.638pp (five blocks, all negative). Both pass past-access controls, but
-real-wiring superiority fails. Observed effective rank6.68 versus7.22; association
+delta−1.638 pp (five blocks, all negative). Both pass past-access controls, but
+real-wiring superiority fails. Observed effective rank6.68 versus 7.22; association
 only. Renormalization changes644–645 outgoing weight multisets per control, so
 this is not a pure topology effect. Historical6,472 result files unchanged.
 175 tests pass,8 optional skips. The standalone verifier's initial BLAS-thread
@@ -505,11 +528,11 @@ memory, connectome-specific superiority, unseen prediction or recurrent learning
 ## ACT II length-scaling completion
 
 Protocol8885aca preceded outcomes; main execution070b4bf. All100 fits replayed
-exactly and10 independently refitted. Both networks meet the registered endpoint
+exactly and 10 independently refitted. Both networks meet the registered endpoint
 length-drop criterion; no graph-superiority confirmation was triggered. Raw
 teacher-forced features for shared prefixes match exactly across task lengths.
 Fixed prefix loss mass changes with N, so the curve is not intrinsic capacity.
-The rate suite passed144 tests with8 optional-dependency skips. All1,932 prior
+The rate suite passed144 tests with 8 optional-dependency skips. All1,932 prior
 result artifacts remained unchanged. [Protocol](length-scaling-protocol.md),
 [results](length-scaling-results.md). Its selected loss-mass diagnostic is now
 complete below, with frozen data/states and no multiplier sweep.
@@ -519,7 +542,7 @@ complete below, with frozen data/states and no multiplier sweep.
 Protocol a7badad preceded outcomes; execution and analysis code 2dfc1d9.
 Two smoke fits passed replay/refit and were excluded from estimates. Main reused
 20 verified baseline fits and added20 treatment fits. Both graphs qualified for
-the registered fresh-seed confirmation, which added12 baseline and12 treatment
+the registered fresh-seed confirmation, which added12 baseline and 12 treatment
 fits. All44 new scientific heads replayed exactly; six independently refitted.
 Two selected historical baseline heads were also replayed/refitted exactly.
 
@@ -528,7 +551,7 @@ teacher-forced accuracy tolerance. Confirmation later accuracy changes are
 legacy5 −5.21 percentage points and brain1 −3.46 points. Brain1's individual
 seed13143/stratum701 worsens from7 to0 even though its paired-block mean improves.
 All low scores are retained; no509-target completion or new default promotion.
-The rate suite passed146 tests with8 optional-dependency skips. All3,054 prior
+The rate suite passed146 tests with 8 optional-dependency skips. All3,054 prior
 result files remain unchanged. [Protocol](prefix-mass-protocol.md),
 [results and verification](prefix-mass-results.md).
 
@@ -538,15 +561,15 @@ The selected independent-stream delayed-symbol comparison is now complete below.
 
 Protocol28a407c preceded outcomes; runner332e340 and analyzer correction30ecb6b.
 Five paired seed blocks, two input strata, two graphs:20 scientific conditions,
-each with11 real and11 misaligned-target probes. Every trajectory and every
+each with 11 real and 11 misaligned-target probes. Every trajectory and every
 head independently regenerated/refitted exactly. Same48 MBON observation,
 input IDs and train/test streams. Mean primary past-lag accuracy: legacy5
-60.420% / brain1=51.100%; paired difference −9.320pp. H2 whole-brain
+60.420% / brain1=51.100%; paired difference −9.320 pp. H2 whole-brain
 superiority fails, so no fresh confirmation or tuning is triggered.
 [Results](delayed-symbol-results.md), [protocol](delayed-symbol-protocol.md).
 
 The smoke analyzer initially lacked the registered single-thread setting;
-exact reconstruction failed at4.996e-16, then passed with that setting restored
+exact reconstruction failed at 4.996e-16, then passed with that setting restored
 and no relaxed tolerance. A premature initial main launch was stopped and
 preserved; the full scientific cohort uses delay_main_v2. Its completed partial
 condition matches the restart exactly. Execution deviations are documented,
@@ -562,13 +585,13 @@ numerical modules are unchanged, and the K10 adapter exactly reproduces the
 old N128314-prompt baseline (legacy5=34, brain1=38), including independent fits.
 The new study uses010 for every K. Eight smoke runs pass replay/refit and are
 excluded. All80 main runs replay exactly; eight designated heads refit exactly.
-Tests154 passed,8 optional-dependency skips; all3,792 prior result files unchanged.
+Tests154 passed,8 optional-dependency skips; all 3,792 prior result files unchanged.
 
 Both graphs pass H1 at all four K. Whole-brain H2 fails everywhere; no fresh
 confirmation or tuning. The K16-minus-K2 prefix fraction increases in every
 block, so the registered alphabet-load decrease fails too. AtK16 the evaluation
-horizon is reached in5/10 partial and4/10 whole runs; this is censored performance.
-Low whole-brain K4 runs of0 and1 remain in the raw table. [Results](alphabet-memory-results.md).
+horizon is reached in 5/10 partial and 4/10 whole runs; this is censored performance.
+Low whole-brain K4 runs of 0 and 1 remain in the raw table. [Results](alphabet-memory-results.md).
 
 The selected saved-task context diagnostic is now completed below. Do not
 attribute the K curve to memory capacity or topology from these data alone. Comprehensive ACT III structural
@@ -585,11 +608,11 @@ Protocol382501b preceded new diagnostic outcomes; implementation bffc0cc.
 All120 table fits on20 unique datasets match independent recounts, including
 probabilities, teacher outputs and ambiguity. All20 old order1 controls match;
 80 saved neural prefixes were rescored. Tests165 passed,8 optional skips;
-all4,574 prior result files and old numerical source are unchanged.
+all 4,574 prior result files and old numerical source are unchanged.
 
 Both endpoints pass: order2 ambiguity falls0.2272 fromK2 toK16 (all five seeds),
 order3 prefix rises59.0 (all five). Yet order1 ambiguity rises, K2 context8
-recalls only7.2, and K4/data22143/context8 recalls0 despite zero long-context
+recalls only 7.2, and K4/data22143/context8 recalls0 despite zero long-context
 ambiguity because the short initial prompt is ambiguous. Every failure is kept.
 [Full results](context-memory-results.md). No neural training was repeated.
 
@@ -607,7 +630,7 @@ All replay checks and registered independent refits passed. Four smoke runs
 are excluded. [Results](context-intervention-results.md), including every seed,
 all control orders, regional conflict diagnostics and negative paired differences.
 
-K4, N128, symbol multiset, prompt010, input IDs,48 MBONs and428 head parameters
+K4, N128, symbol multiset, prompt010, input IDs,48 MBONs and 428 head parameters
 are matched. Other ordering statistics can differ, so this does not isolate
 context conflict as a unique causal variable. Tests167 passed,8 optional skips.
 The selected frozen-state diagnostic and its authorized cross-arm follow-up are completed below.
@@ -615,16 +638,16 @@ The selected frozen-state diagnostic and its authorized cross-arm follow-up are 
 ## Frozen-state and cross-arm diagnostics completed
 
 Two scoped ACT II diagnostics completed, each with its own protocol committed
-before outcomes:0b86a86 and5080e94. All64 archived trajectories remain unchanged.
+before outcomes:0b86a86 and 5080e94. All64 archived trajectories remain unchanged.
 Blocked probe:192 folds,1536 real+1536 null task heads; all four graph/arm cells
 pass past-access criteria in both seed cohorts, but no confirmed low-high next
 advantage. [Results](frozen-state-probe-results.md).
 
 Frozen transfer:192 folds with ZERO target-arm fits; all four graph/direction
-cells pass past access, both graphs pass the registered5pp retention tolerance.
-Main transfer-minus-within means−0.97pp partial/−0.83pp whole; confirmation
-+0.06pp/+0.93pp. Next-symbol prediction remains weak. Related source/target pairs
-share about59–60% same-position symbols; changed-target diagnostics are retained.
+cells pass past access, both graphs pass the registered5 pp retention tolerance.
+Main transfer-minus-within means−0.97 pp partial/−0.83 pp whole; confirmation
++0.06 pp/+0.93 pp. Next-symbol prediction remains weak. Related source/target pairs
+share about 59–60% same-position symbols; changed-target diagnostics are retained.
 [Results](cross-arm-probe-results.md). This is not arbitrary-stream generalization,
 autonomous recall improvement, equivalence or formal memory capacity.
 
