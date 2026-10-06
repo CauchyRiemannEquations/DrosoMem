@@ -1,0 +1,29 @@
+{
+  "all_checks_pass": true,
+  "cases": 4,
+  "replayed_streams": 8,
+  "independently_refit_lag_heads": 84,
+  "exact_full_state_trace_hashes": 8,
+  "endpoints": {
+    "legacy5": {
+      "registered_rule_pass": null,
+      "exact_real_score": "553/3600",
+      "exact_null_mean": "7/40",
+      "null_count": 1
+    },
+    "brain5": {
+      "registered_rule_pass": null,
+      "exact_real_score": "127/900",
+      "exact_null_mean": "17/120",
+      "null_count": 1
+    }
+  },
+  "result_manifest_sha256": "0f6e53ea93d6c63b1447321840986fe212d1c253b1f3766507f2da6e269a652d",
+  "structural_validation_manifest_sha256": "cfddce6001eed37c18a270d9d84f4a6f4191d52853d90eb05ba4ff52c8084cf9",
+  "verifier_commit": "d6783efca09194b111747461318d67cbf629114b",
+  "verifier_sha256": "609c6fc62cd9f7f18a778ac337f958e0ec4a022bd8bdd1f24d9143a88ca96d4d",
+  "historical_preservation": {
+    "historical_git_result_blobs_unchanged": true,
+    "baseline_commit": "0cf0867736ca598ae233cdf3e185031667dd52be"
+  }
+}

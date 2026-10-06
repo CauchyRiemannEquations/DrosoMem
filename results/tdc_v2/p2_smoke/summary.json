@@ -1,0 +1,42 @@
+{
+  "smoke": true,
+  "primary_pass": null,
+  "levels": {
+    "legacy5": {
+      "real_score": 0.15361111111111111,
+      "null_count": 1,
+      "null_mean": 0.175,
+      "null_median": 0.175,
+      "null_sd": 0.0,
+      "null_min": 0.175,
+      "null_max": 0.175,
+      "real_minus_null_mean": -0.021388888888888888,
+      "real_minus_null_mean_exact": "-77/3600",
+      "empirical_percentile": 0.0,
+      "standardized_effect": null,
+      "real_above_all_nulls": false,
+      "registered_rule_pass": null,
+      "fixed_input_blocks": 1
+    },
+    "brain5": {
+      "real_score": 0.1411111111111111,
+      "null_count": 1,
+      "null_mean": 0.14166666666666666,
+      "null_median": 0.14166666666666666,
+      "null_sd": 0.0,
+      "null_min": 0.14166666666666666,
+      "null_max": 0.14166666666666666,
+      "real_minus_null_mean": -0.0005555555555555556,
+      "real_minus_null_mean_exact": "-1/1800",
+      "empirical_percentile": 0.0,
+      "standardized_effect": null,
+      "real_above_all_nulls": false,
+      "registered_rule_pass": null,
+      "fixed_input_blocks": 1
+    }
+  },
+  "cases": 4,
+  "lag_heads": 84,
+  "score_definition": "unweighted mean (accuracy-.1)/.9 over historical lag1-20 and fixed paired blocks",
+  "criterion_unchanged": true
+}
