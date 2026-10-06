@@ -1,0 +1,103 @@
+{
+  "protocol": "docs/temporal-memory-curve-protocol.md",
+  "namespace": "results/tdc_v2",
+  "baseline_commit": "0cf0867736ca598ae233cdf3e185031667dd52be",
+  "cache": "outputs/tdc_v2/whole_cache",
+  "levels": [
+    "legacy5",
+    "brain5"
+  ],
+  "circuit_seeds": [
+    701
+  ],
+  "blocks": [
+    {
+      "seed": 910001,
+      "input_seed": 911001,
+      "train_seed": 912001,
+      "test_seed": 913001
+    },
+    {
+      "seed": 910002,
+      "input_seed": 911002,
+      "train_seed": 912002,
+      "test_seed": 913002
+    },
+    {
+      "seed": 910003,
+      "input_seed": 911003,
+      "train_seed": 912003,
+      "test_seed": 913003
+    },
+    {
+      "seed": 910004,
+      "input_seed": 911004,
+      "train_seed": 912004,
+      "test_seed": 913004
+    },
+    {
+      "seed": 910005,
+      "input_seed": 911005,
+      "train_seed": 912005,
+      "test_seed": 913005
+    },
+    {
+      "seed": 910006,
+      "input_seed": 911006,
+      "train_seed": 912006,
+      "test_seed": 913006
+    }
+  ],
+  "alphabet_size": 10,
+  "warmup": 200,
+  "train_samples": 4000,
+  "test_samples": 2000,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "primary_lags": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "minimum_excess": 0.1,
+  "alpha": 1.0,
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "schedule": "mbon_after_kc",
+  "normalization": "incoming_l1",
+  "activity_epsilon": 1e-08,
+  "bootstrap_seed": 914001,
+  "bootstrap_draws": 10000,
+  "smoke": {
+    "train_samples": 300,
+    "test_samples": 200,
+    "blocks": 1
+  },
+  "max_seconds": 7200,
+  "max_rss_bytes": 4294967296
+}
