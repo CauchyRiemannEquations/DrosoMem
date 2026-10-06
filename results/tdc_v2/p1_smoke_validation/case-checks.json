@@ -1,0 +1,26 @@
+[
+  {
+    "level": "legacy5",
+    "seed": 910001,
+    "seconds": 0.20460569999977452,
+    "exact_full_state_trace_hash": {
+      "train": true,
+      "test": true
+    },
+    "manual_state_update": true,
+    "independently_refit_heads": 21,
+    "prediction_arrays_exact": true
+  },
+  {
+    "level": "brain5",
+    "seed": 910001,
+    "seconds": 21.66065399999934,
+    "exact_full_state_trace_hash": {
+      "train": true,
+      "test": true
+    },
+    "manual_state_update": true,
+    "independently_refit_heads": 21,
+    "prediction_arrays_exact": true
+  }
+]

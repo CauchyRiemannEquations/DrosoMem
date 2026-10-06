@@ -1,0 +1,98 @@
+{
+  "complete": true,
+  "smoke": true,
+  "config": {
+    "protocol": "docs/temporal-memory-curve-protocol.md",
+    "namespace": "results/tdc_v2",
+    "baseline_commit": "0cf0867736ca598ae233cdf3e185031667dd52be",
+    "cache": "outputs/tdc_v2/whole_cache",
+    "levels": [
+      "legacy5",
+      "brain5"
+    ],
+    "circuit_seeds": [
+      701
+    ],
+    "blocks": [
+      {
+        "seed": 910001,
+        "input_seed": 911001,
+        "train_seed": 912001,
+        "test_seed": 913001
+      }
+    ],
+    "alphabet_size": 10,
+    "warmup": 200,
+    "train_samples": 300,
+    "test_samples": 200,
+    "lags": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "primary_lags": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "minimum_excess": 0.1,
+    "alpha": 1.0,
+    "gain": 0.9,
+    "leak": 0.6,
+    "input_fraction": 0.1,
+    "input_amplitude": 0.5,
+    "schedule": "mbon_after_kc",
+    "normalization": "incoming_l1",
+    "activity_epsilon": 1e-08,
+    "bootstrap_seed": 914001,
+    "bootstrap_draws": 10000,
+    "smoke": {
+      "train_samples": 300,
+      "test_samples": 200,
+      "blocks": 1
+    },
+    "max_seconds": 7200,
+    "max_rss_bytes": 4294967296
+  },
+  "source_commit": "99d9038b1114945bfc9ece8e165461c402c73999",
+  "protocol_sha256": "9c86d66782114a68bbe9ec54a707476e851c69abbe20430deb9b21f65799cbe7",
+  "artifacts": {
+    "attempt.json": "6221b65f4582c16424fa40c58d59f3f4ace30d4411aa1eab6fced37e16232fd2",
+    "brain5_s910001/case.npz": "49d6a5cf92b516b9e43544927f31f3fc6947641b0c73d00cdd36c481caaa6c6d",
+    "brain5_s910001/graph.json": "94d28523f60f53f269cd42e1ad909bc1b276bbd8a36675551d453fe6a35a3019",
+    "brain5_s910001/manifest.json": "b8d94115d72146d796e5fe3e6186fa7154e4832e340103740ec4f3f557954f89",
+    "brain5_s910001/metrics.json": "d09c49d3cf27742a9acbb2569a20f3a5a9f65b606df2bcd8150e17e95d3d4fce",
+    "config.json": "42c6e575ac1f44c76a16c6b2a1c82bf01ee417d41197ccf27effc777490e7a64",
+    "curve-summary.csv": "2c44ca9d52e72712513c05b7f5aab0f18bf3c02ca84363a7ef81ada770705e66",
+    "historical-preservation.json": "2548a6debaa4e20d5f78050ebd5cd7fe4421a94ba22520d81bfa15006d45bd9b",
+    "legacy5_s910001/case.npz": "0e060acb517f74871f6e9cc28dae5577886f42e670fde93f6a79b7135d202ece",
+    "legacy5_s910001/graph.json": "da402404fb7cb0e4db74d14cca34d0ea0c602be40b79ffda94f23e20b98388cd",
+    "legacy5_s910001/manifest.json": "c92fe0f344e500358798e75f24f827ac8de4af2d2a9c03fbf4db8a4cdc3d5171",
+    "legacy5_s910001/metrics.json": "f1d0a8951f0cac9ee01cbc4078306ae57e22e1c374ec83a0453c7cce106ad695",
+    "raw-lags.csv": "f3c807f01282208f4fe4cf8ed61489fccf224920d710c6679ef343aa1bb614dc",
+    "resources.json": "986d4c7c9a182d2745fa321a3a8b3682819d19cd583a57f3157e0601984270c9",
+    "source.json": "2ae8391a2e47773fa1465f2bb7061c7c9409986b0ad523525468eb1e0fb32129",
+    "summary.json": "2f8cfdab20ac6693d85de9cb028536776a225525fce0bbbb5c5a7ea85d01de82",
+    "tdc.png": "d44763f930c46a6b96455354df09c0103e5665b1b6faa5bf1ebdc9d8b73df8a4"
+  }
+}

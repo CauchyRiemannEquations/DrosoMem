@@ -1,0 +1,10 @@
+{
+  "primary_pass": null,
+  "primary_endpoint": "every legacy5 block at every lag1-5 has >=.10 excess over max(chance,frequency,current-only)",
+  "smoke": true,
+  "cases": 2,
+  "lag_heads": 42,
+  "failed_primary_cells": [],
+  "criterion_unchanged": true,
+  "whole_brain_secondary": true
+}
