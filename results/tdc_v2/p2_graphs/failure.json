@@ -1,0 +1,8 @@
+{
+  "kind": "p2-graph-ensemble",
+  "complete": false,
+  "exception": "UnicodeEncodeError",
+  "message": "'cp949' codec can't encode character '\\u2014' in position 36: illegal multibyte sequence",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-10-06\\new-chat-2\\work\\DrosoMem-research\\scripts\\tdc_support.py\", line 100, in attempt\n    yield r\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-10-06\\new-chat-2\\work\\DrosoMem-research\\scripts\\temporal_null_ensemble.py\", line 126, in prepare\n    results, usage = pooled(graph_job, jobs, c['graph_workers'], c, 'P2 graph generation')\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-10-06\\new-chat-2\\work\\DrosoMem-research\\scripts\\tdc_pool.py\", line 62, in pooled\n    print(f'{label}: {len(results)}/{len(jobs)} completed \u2014 {result[\"identity\"]}', flush=True)\nUnicodeEncodeError: 'cp949' codec can't encode character '\\u2014' in position 36: illegal multibyte sequence\n",
+  "source_commit": "2468741fdbc299be9bbd3de5836e1a0b609d810a"
+}

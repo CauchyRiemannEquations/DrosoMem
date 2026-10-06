@@ -59,7 +59,7 @@ def pooled(function, jobs, workers, c, label):
                     job = pending.pop(future)
                     result = future.result()
                     results.append(result)
-                    print(f'{label}: {len(results)}/{len(jobs)} completed — {result["identity"]}', flush=True)
+                    print(f'{label}: {len(results)}/{len(jobs)} completed - {result["identity"]}', flush=True)
         return results, tree.close()
     finally:
         if not tree.stop.is_set():

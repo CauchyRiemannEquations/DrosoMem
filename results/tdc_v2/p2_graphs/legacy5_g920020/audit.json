@@ -1,0 +1,88 @@
+{
+  "neurons": 686,
+  "edges": 3309,
+  "exact_in_degree": true,
+  "exact_out_degree": true,
+  "exact_role_blocks": true,
+  "exact_presynaptic_signed_weight_multisets": true,
+  "exact_global_weight_multiset": true,
+  "no_self_duplicate_zero_edges": true,
+  "source_raw_weight_sha256": "a0bdd60c13705b17c83a4f2abca85fbad823c408b4cdfe5f0029678509151b3b",
+  "null_raw_weight_sha256": "59d5dd2a6dac9e4ddb1f912c4aff2255e5d70f33698253ff9849a4d6f0356f3c",
+  "overlap": 0.4889694771834391,
+  "role_blocks": {
+    "APL->APL": {
+      "edges": 0,
+      "common_edges": 0
+    },
+    "APL->DAN": {
+      "edges": 35,
+      "common_edges": 35
+    },
+    "APL->KC": {
+      "edges": 512,
+      "common_edges": 512
+    },
+    "APL->MBON": {
+      "edges": 27,
+      "common_edges": 27
+    },
+    "DAN->APL": {
+      "edges": 31,
+      "common_edges": 31
+    },
+    "DAN->DAN": {
+      "edges": 8,
+      "common_edges": 2
+    },
+    "DAN->KC": {
+      "edges": 24,
+      "common_edges": 8
+    },
+    "DAN->MBON": {
+      "edges": 189,
+      "common_edges": 22
+    },
+    "KC->APL": {
+      "edges": 512,
+      "common_edges": 512
+    },
+    "KC->DAN": {
+      "edges": 147,
+      "common_edges": 28
+    },
+    "KC->KC": {
+      "edges": 43,
+      "common_edges": 1
+    },
+    "KC->MBON": {
+      "edges": 1474,
+      "common_edges": 361
+    },
+    "MBON->APL": {
+      "edges": 23,
+      "common_edges": 23
+    },
+    "MBON->DAN": {
+      "edges": 118,
+      "common_edges": 19
+    },
+    "MBON->KC": {
+      "edges": 0,
+      "common_edges": 0
+    },
+    "MBON->MBON": {
+      "edges": 166,
+      "common_edges": 37
+    }
+  },
+  "swap_log": {
+    "requested_swaps": 16545,
+    "accepted_swaps": 16545,
+    "attempts": 39418,
+    "edge_overlap": 0.4889694771834391
+  },
+  "incoming_strength_changed_nodes": 149,
+  "incoming_strength_mean_absolute_change": 7.396501457725948,
+  "normalization": "independent incoming-L1; normalized outgoing multisets not constrained"
+}
