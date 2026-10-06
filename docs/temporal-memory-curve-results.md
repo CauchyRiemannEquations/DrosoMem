@@ -71,10 +71,13 @@ coefficients, scores, labels, baselines and every summary statistic are checked.
 The [exact rational count audit](../results/tdc_v2/p1_decision_validation/checks.json)
 also confirms all 30 primary cells and PASS, without floating threshold ambiguity.
 It adds verification and does not alter the original manifest, result or criterion.
+The smallest primary excess is 29.85pp. All 24 full-state trajectory digests
+also match exactly, including every unobserved coordinate at every step.
 
 Main ran 905.89 seconds; sampled peak RSS 266,502,144 bytes and Windows
 process peak working set 298,909,696 bytes (285.1 MiB). Independent verification
 has its own [runtime and memory record](../results/tdc_v2/p1_main_validation/resources.json).
+It took 494.36 seconds, with OS process peak 581,685,248 bytes (554.7 MiB).
 Config/protocol/code/raw-source/cache/graph/stream/model array hashes,
 environment, final states and full-state trajectory digests are archived.
 Five safeguard tests cover the conjunction, current-only leakage, wrong lag
