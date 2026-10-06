@@ -1,0 +1,25 @@
+{
+  "protocol": "docs/temporal-null-ensemble-protocol.md",
+  "base_config": "configs/temporal_memory_curve.json",
+  "parent": "results/tdc_v2/p1_main",
+  "parent_validation": "results/tdc_v2/p1_main_validation",
+  "parent_manifest_sha256": "d9fcc47fd5204d6432760f15fce9b89597bcfda8a643a9547e1e8606af53b955",
+  "graphs": "results/tdc_v2/p2_graphs",
+  "graph_validation": "results/tdc_v2/p2_graph_validation",
+  "null_seeds": {
+    "legacy5": [920001,920002,920003,920004,920005,920006,920007,920008,920009,920010,920011,920012,920013,920014,920015,920016,920017,920018,920019,920020],
+    "brain5": [930001,930002,930003,930004,930005,930006,930007,930008,930009,930010]
+  },
+  "swaps_per_edge": {"legacy5": 5, "brain5": 1},
+  "blocks_by_level": {
+    "legacy5": [910001,910002,910003,910004,910005,910006],
+    "brain5": [910001,910002,910003]
+  },
+  "score_lags": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+  "minimum_score_difference": 0.03,
+  "primary_level": "legacy5",
+  "graph_workers": 2,
+  "neural_workers": 4,
+  "max_seconds": 7200,
+  "max_rss_bytes": 4294967296
+}
