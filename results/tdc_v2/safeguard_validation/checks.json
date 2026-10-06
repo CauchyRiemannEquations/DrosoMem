@@ -1,0 +1,11 @@
+{
+  "all_checks_pass": true,
+  "tests_passed": 8,
+  "test_command": "python -m pytest tests/test_temporal_memory_curve.py tests/test_temporal_null_ensemble.py -q",
+  "source_commit": "c3c3942b09b565961a77142347f817794ce7f49e",
+  "test_source_sha256": {
+    "tests/test_temporal_memory_curve.py": "860ac6728a30a489b8c036fa06938d4fce776c069008136e2ed275b3bc2a07a2",
+    "tests/test_temporal_null_ensemble.py": "08cebfa4cc61c51f25e783bf1815f457fc26bd36ded60512d1a8e86fefffc9b6"
+  },
+  "observed_seconds": 1.49
+}

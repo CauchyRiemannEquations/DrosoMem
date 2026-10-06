@@ -1,0 +1,27 @@
+{
+  "all_checks_pass": true,
+  "baseline_commit": "0cf0867736ca598ae233cdf3e185031667dd52be",
+  "audit_source_commit": "c3c3942b09b565961a77142347f817794ce7f49e",
+  "verifier_sha256": "9895fbbea74e4aa84197e0ab67e33db5b1d120866a71ccbe936ab174a334ed60",
+  "historical_result_blobs_unchanged": 39608,
+  "original_numerical_source_data_config_blobs_unchanged": 335,
+  "manifests_checked": 439,
+  "checksum_entries": 4229,
+  "retained_incomplete_attempts": [
+    "results/tdc_v2/final_audit_attempt1/manifest.json",
+    "results/tdc_v2/p2_graphs/manifest.json"
+  ],
+  "recorded_source_entries_verified": 514,
+  "archives_inspected": 231,
+  "arrays_inspected": 4518,
+  "nonfinite_arrays": 0,
+  "p1_primary_pass": true,
+  "p2_primary_pass": false,
+  "p2_secondary_pass": false,
+  "p1_independently_replayed_streams": 24,
+  "p2_independently_replayed_streams": 318,
+  "p2_exact_full_state_trace_hashes": 318,
+  "protocol_commits_precede_result_sources": true,
+  "seconds": 26.407654299999194,
+  "scope": "Preserves all baseline Git blobs; new checksum/source/array validation is separate from the bounded v1 materialized audit. No biological population or formal capacity inference."
+}

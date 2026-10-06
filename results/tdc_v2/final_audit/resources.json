@@ -1,0 +1,80 @@
+{
+  "p1_main": {
+    "parent": {
+      "seconds": 905.885631099999,
+      "peak_sampled_rss_bytes": 266502144,
+      "os_process_peak_working_set_bytes": 298909696,
+      "sample_seconds": 0.05
+    },
+    "process_tree": null
+  },
+  "p1_main_validation": {
+    "parent": {
+      "seconds": 494.3636925999999,
+      "peak_sampled_rss_bytes": 581337088,
+      "os_process_peak_working_set_bytes": 581685248,
+      "sample_seconds": 0.05
+    },
+    "process_tree": null
+  },
+  "p2_graphs_retry": {
+    "parent": {
+      "seconds": 383.1685094000004,
+      "peak_sampled_rss_bytes": 110235648,
+      "os_process_peak_working_set_bytes": 111288320,
+      "sample_seconds": 0.05
+    },
+    "process_tree": {
+      "seconds": 381.9194791000009,
+      "peak_sampled_process_tree_rss_bytes": 2393001984,
+      "maximum_observed_processes": 6,
+      "sample_seconds": 0.05,
+      "interpretation": "Sum of live RSS, includes launcher/children and shared pages; not an OS exact aggregate peak"
+    }
+  },
+  "p2_graph_validation_retry": {
+    "parent": {
+      "seconds": 596.6790915000001,
+      "peak_sampled_rss_bytes": 585404416,
+      "os_process_peak_working_set_bytes": 585416704,
+      "sample_seconds": 0.05
+    },
+    "process_tree": {
+      "seconds": 588.1081013000003,
+      "peak_sampled_process_tree_rss_bytes": 2619744256,
+      "maximum_observed_processes": 7,
+      "sample_seconds": 0.05,
+      "interpretation": "Sum of live RSS, includes launcher/children and shared pages; not an OS exact aggregate peak"
+    }
+  },
+  "p2_main": {
+    "parent": {
+      "seconds": 1629.2939657999996,
+      "peak_sampled_rss_bytes": 157573120,
+      "os_process_peak_working_set_bytes": 157609984,
+      "sample_seconds": 0.05
+    },
+    "process_tree": {
+      "seconds": 1626.3515996999995,
+      "peak_sampled_process_tree_rss_bytes": 1077927936,
+      "maximum_observed_processes": 13,
+      "sample_seconds": 0.05,
+      "interpretation": "Sum of live RSS, includes launcher/children and shared pages; not an OS exact aggregate peak"
+    }
+  },
+  "p2_main_validation": {
+    "parent": {
+      "seconds": 1380.5737802999993,
+      "peak_sampled_rss_bytes": 587071488,
+      "os_process_peak_working_set_bytes": 587083776,
+      "sample_seconds": 0.05
+    },
+    "process_tree": {
+      "seconds": 1372.6985485999994,
+      "peak_sampled_process_tree_rss_bytes": 1176801280,
+      "maximum_observed_processes": 11,
+      "sample_seconds": 0.05,
+      "interpretation": "Sum of live RSS, includes launcher/children and shared pages; not an OS exact aggregate peak"
+    }
+  }
+}
