@@ -1,0 +1,176 @@
+{
+  "smoke": false,
+  "outcome": "assay-invalid",
+  "primary_pass": null,
+  "levels": {
+    "legacy5": {
+      "input_access_valid": false,
+      "contrasts": {
+        "synaptic_increment": {
+          "mean": 0.19794907407407406,
+          "median": 0.1982361111111111,
+          "sd": 0.005643673850139553,
+          "bootstrap_lo": 0.19371759259259258,
+          "bootstrap_hi": 0.2020050925925926,
+          "mean_exact": "42757/216000",
+          "all_blocks_positive": true,
+          "registered_rule_pass": null
+        },
+        "carry_increment": {
+          "mean": 0.05563425925925925,
+          "median": 0.05425,
+          "sd": 0.004043147558656495,
+          "bootstrap_lo": 0.053398148148148146,
+          "bootstrap_hi": 0.058958333333333335,
+          "mean_exact": "12017/216000",
+          "all_blocks_positive": true,
+          "registered_rule_pass": null
+        },
+        "carry_only_history": {
+          "mean": 0.017453703703703704,
+          "median": 0.0175,
+          "sd": 0.0032912466523718586,
+          "bootstrap_lo": 0.015092592592592593,
+          "bootstrap_hi": 0.01981944444444444,
+          "mean_exact": "377/21600",
+          "all_blocks_positive": true,
+          "registered_rule_pass": null
+        },
+        "synaptic_only_history": {
+          "mean": 0.1597685185185185,
+          "median": 0.16075,
+          "sd": 0.0031552751570778086,
+          "bootstrap_lo": 0.1573425925925926,
+          "bootstrap_hi": 0.16189814814814815,
+          "mean_exact": "3451/21600",
+          "all_blocks_positive": true,
+          "registered_rule_pass": null
+        }
+      },
+      "interaction": {
+        "mean": 0.03818055555555556,
+        "median": 0.03784722222222223,
+        "sd": 0.004278598406135782,
+        "bootstrap_lo": 0.0352962962962963,
+        "bootstrap_hi": 0.04131481481481481
+      },
+      "arm_scores": {
+        "full": {
+          "mean": 0.21699537037037034,
+          "median": 0.21719444444444447,
+          "sd": 0.007214855573502635,
+          "bootstrap_lo": 0.21171296296296296,
+          "bootstrap_hi": 0.2222777777777778
+        },
+        "carry_only": {
+          "mean": 0.019046296296296297,
+          "median": 0.019833333333333335,
+          "sd": 0.0040897971012286306,
+          "bootstrap_lo": 0.016069444444444442,
+          "bootstrap_hi": 0.02189351851851852
+        },
+        "synaptic_only": {
+          "mean": 0.1613611111111111,
+          "median": 0.16259722222222223,
+          "sd": 0.005248750586191853,
+          "bootstrap_lo": 0.15772685185185187,
+          "bootstrap_hi": 0.16495370370370369
+        },
+        "instantaneous": {
+          "mean": 0.0015925925925925927,
+          "median": 0.0006666666666666668,
+          "sd": 0.003225365644247897,
+          "bootstrap_lo": -0.00038888888888888876,
+          "bootstrap_hi": 0.004175925925925926
+        }
+      }
+    },
+    "brain5": {
+      "input_access_valid": false,
+      "contrasts": {
+        "synaptic_increment": {
+          "mean": 0.17744444444444443,
+          "median": 0.1778888888888889,
+          "sd": 0.0018461254053681456,
+          "bootstrap_lo": 0.17541666666666667,
+          "bootstrap_hi": 0.17902777777777779,
+          "mean_exact": "1597/9000",
+          "all_blocks_positive": true,
+          "registered_rule_pass": null
+        },
+        "carry_increment": {
+          "mean": 0.060398148148148145,
+          "median": 0.05733333333333333,
+          "sd": 0.00804752153651411,
+          "bootstrap_lo": 0.054333333333333324,
+          "bootstrap_hi": 0.06952777777777777,
+          "mean_exact": "6523/108000",
+          "all_blocks_positive": true,
+          "registered_rule_pass": null
+        },
+        "carry_only_history": {
+          "mean": 0.01650925925925926,
+          "median": 0.018277777777777778,
+          "sd": 0.0034055072197645268,
+          "bootstrap_lo": 0.012583333333333334,
+          "bootstrap_hi": 0.018666666666666668,
+          "mean_exact": "1783/108000",
+          "all_blocks_positive": true,
+          "registered_rule_pass": null
+        },
+        "synaptic_only_history": {
+          "mean": 0.13355555555555554,
+          "median": 0.13727777777777778,
+          "sd": 0.007832939312391289,
+          "bootstrap_lo": 0.12455555555555557,
+          "bootstrap_hi": 0.13883333333333334,
+          "mean_exact": "601/4500",
+          "all_blocks_positive": true,
+          "registered_rule_pass": null
+        }
+      },
+      "interaction": {
+        "mean": 0.043888888888888894,
+        "median": 0.04175,
+        "sd": 0.006186591933616312,
+        "bootstrap_lo": 0.03905555555555556,
+        "bootstrap_hi": 0.050861111111111114
+      },
+      "arm_scores": {
+        "full": {
+          "mean": 0.19517592592592592,
+          "median": 0.19452777777777777,
+          "sd": 0.0030520602904367615,
+          "bootstrap_lo": 0.1925,
+          "bootstrap_hi": 0.1985
+        },
+        "carry_only": {
+          "mean": 0.017731481481481483,
+          "median": 0.01911111111111111,
+          "sd": 0.0037641024266336456,
+          "bootstrap_lo": 0.013472222222222224,
+          "bootstrap_hi": 0.02061111111111111
+        },
+        "synaptic_only": {
+          "mean": 0.13477777777777777,
+          "median": 0.13816666666666666,
+          "sd": 0.008599633928470657,
+          "bootstrap_lo": 0.125,
+          "bootstrap_hi": 0.14116666666666666
+        },
+        "instantaneous": {
+          "mean": 0.0012222222222222224,
+          "median": 0.0008888888888888889,
+          "sd": 0.00098757715747951,
+          "bootstrap_lo": 0.0004444444444444445,
+          "bootstrap_hi": 0.0023333333333333335
+        }
+      }
+    }
+  },
+  "cases": 36,
+  "lag_heads": 756,
+  "criterion_unchanged": true,
+  "biological_plasticity_performed": false,
+  "anatomical_cycle_only_claim": false
+}

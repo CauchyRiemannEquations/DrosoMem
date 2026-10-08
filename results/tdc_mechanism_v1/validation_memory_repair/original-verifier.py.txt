@@ -6,7 +6,6 @@ import argparse
 from fractions import Fraction
 import hashlib
 from pathlib import Path
-import subprocess
 
 import numpy as np
 import pandas as pd
@@ -81,10 +80,7 @@ def case_job(job):
                     np.testing.assert_allclose(last,saved[split+'_final_state'],atol=1e-9,rtol=1e-9)
                     exact[split]=h==info[split+'_full_state_trajectory_sha256']
                     if arm=='instantaneous':
-                        # Select the fixed observation coordinates before indexing time.
-                        # Both orders select the same values; this avoids a whole-brain
-                        # rows-by-neurons temporary that exceeds the fixed RSS budget.
-                        np.testing.assert_array_equal(saved[split+'_features'],proto[:,obs][symbols])
+                        np.testing.assert_array_equal(saved[split+'_features'],proto[symbols][:,obs])
                     times=np.arange(w,len(symbols));np.testing.assert_array_equal(saved[split+'_times'],times)
                     labels[split]=np.column_stack([symbols[w-lag:len(symbols)-lag] if lag else symbols[w:] for lag in c['lags']])
                     np.testing.assert_array_equal(saved['y'+split],labels[split]);rebuilt[split]=x[w:]
@@ -183,14 +179,7 @@ def verify_summaries(f,result,c,smoke):
 
 def verify(result,out):
     m=check_manifest(result);c=read(result/'config.json');assert c==m['config']
-    recorded=read(result/'source.json')
-    for n,h in recorded['hashes'].items():
-        if n=='scripts/verify_temporal_mechanism.py':
-            # The independent verifier may receive a documented technical repair;
-            # authenticate the original recorded verifier at its recorded revision.
-            original=subprocess.check_output(['git','show',recorded['source_commit']+':'+n])
-            assert hashlib.sha256(original).hexdigest()==h,n
-        else:assert sha(n)==h,n
+    for n,h in read(result/'source.json')['hashes'].items():assert sha(n)==h,n
     with attempt(out,c,'mechanism-independent-validation') as resources:
         write(out/'environment.json',environment());write(out/'source-graph-audit.json',validate_whole_source(c,resources))
         jobs=[dict(config=c,level=level,arm=arm,block=block,result=str(result),out=str(out/f'{level}_{arm}_s{block["seed"]}'))
@@ -206,8 +195,6 @@ def verify(result,out):
                                    instantaneous_certificates=sum('instantaneous' in r['identity'] for r in results),
                                    zero_state_input_access_certificates=len(results),outcome=outcome,endpoints=endpoints,
                                    result_manifest_sha256=sha(result/'manifest.json'),verifier_commit=git('rev-parse','HEAD'),verifier_sha256=sha(__file__),
-                                   original_verifier_sha256=recorded['hashes']['scripts/verify_temporal_mechanism.py'],
-                                   recorded_original_verifier_authenticated=True,
                                    historical_preservation=history_preserved(c)))
     seal(out,dict(complete=True,result_manifest_sha256=sha(result/'manifest.json')))
     print(dict(all_checks_pass=True,outcome=outcome,cases=len(results)),flush=True)

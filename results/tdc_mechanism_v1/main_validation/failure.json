@@ -1,0 +1,8 @@
+{
+  "kind": "mechanism-independent-validation",
+  "complete": false,
+  "exception": "RuntimeError",
+  "message": "Registered aggregate process-tree budget exceeded",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-10-06\\new-chat-2\\work\\DrosoMem-research\\scripts\\tdc_support.py\", line 100, in attempt\n    yield r\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-10-06\\new-chat-2\\work\\DrosoMem-research\\scripts\\verify_temporal_mechanism.py\", line 187, in verify\n    results,usage=pooled(case_job,jobs,c['neural_workers'],c,'Mechanism independent verification')\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-10-06\\new-chat-2\\work\\DrosoMem-research\\scripts\\tdc_pool.py\", line 56, in pooled\n    tree.check()\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-10-06\\new-chat-2\\work\\DrosoMem-research\\scripts\\tdc_pool.py\", line 38, in check\n    raise RuntimeError('Registered aggregate process-tree budget exceeded')\nRuntimeError: Registered aggregate process-tree budget exceeded\n",
+  "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2"
+}

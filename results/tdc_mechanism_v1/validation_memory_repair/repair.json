@@ -1,0 +1,36 @@
+{
+  "kind": "independent-verifier-memory-repair",
+  "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+  "original_verifier_sha256": "14682cec782890072ade35cf8b40d02f7a4da7a7a24700bf35f44f01586b980c",
+  "repaired_verifier_sha256": "bed8156094c29589cc8b82548e8a2f1ce2e3dac5af901fc5fae3c0ab920d9124",
+  "unchanged_main_manifest_sha256": "96b4f5afe156daa9b025c980c60586ec6fa637df8aaa6e5443c45a1a50e89bfc",
+  "failed_validation_manifest_sha256": "21b39c86e0a06882faaf778e5484a6716506ec961a87b8cb92b8568a802cec43",
+  "incomplete_manifest_paths": [
+    "results/tdc_mechanism_v1/main_validation/brain5_carry_only_s1100002/manifest.json",
+    "results/tdc_mechanism_v1/main_validation/brain5_carry_only_s1100003/manifest.json",
+    "results/tdc_mechanism_v1/main_validation/brain5_full_s1100002/manifest.json",
+    "results/tdc_mechanism_v1/main_validation/brain5_full_s1100003/manifest.json",
+    "results/tdc_mechanism_v1/main_validation/brain5_instantaneous_s1100001/manifest.json",
+    "results/tdc_mechanism_v1/main_validation/brain5_instantaneous_s1100002/manifest.json",
+    "results/tdc_mechanism_v1/main_validation/brain5_instantaneous_s1100003/manifest.json",
+    "results/tdc_mechanism_v1/main_validation/brain5_synaptic_only_s1100002/manifest.json",
+    "results/tdc_mechanism_v1/main_validation/brain5_synaptic_only_s1100003/manifest.json",
+    "results/tdc_mechanism_v1/main_validation/manifest.json"
+  ],
+  "scientific_parameters_changed": false,
+  "main_recomputed": false,
+  "exact_small_array_indexing_equivalence": true,
+  "old_temporary_shape": [
+    4200,
+    138639
+  ],
+  "old_temporary_float64_bytes": 4658270400,
+  "new_selected_shape": [
+    4200,
+    48
+  ],
+  "new_selected_float64_bytes": 1612800,
+  "failed_aggregate_peak_bytes": null,
+  "reason": "Select observation coordinates before time indexing; the same exact values no longer require a 4.657 GB whole-brain temporary. Original failed pool peak was not persisted by the frozen shared pool. Main outputs, tolerances, seeds, criteria and four-worker/4 GiB limits stay fixed.",
+  "provenance_repair": "Authenticate the original verifier against its recorded Git blob; record both original and independently repaired verifier hashes. All other recorded numerical source/data/config/protocol hashes still match current bytes."
+}

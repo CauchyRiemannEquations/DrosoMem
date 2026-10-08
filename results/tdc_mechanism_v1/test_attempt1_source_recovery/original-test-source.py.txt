@@ -1,0 +1,94 @@
+"""Synthetic numerical and protocol safeguard tests; no research seed search."""
+from pathlib import Path
+import sys
+from fractions import Fraction
+
+import numpy as np
+import pandas as pd
+from scipy import sparse
+
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
+from flying.brain.timed_reservoir import TimedReservoir
+from flying.training.whole_brain_memory import MappedEncoder
+from temporal_mechanism import FactorReservoir,zero_prototypes,summarize
+from verify_temporal_mechanism import analytic_prototypes,trajectory
+from mechanism_support import config
+
+
+def fixture():
+    rng=np.random.default_rng(7);roles=np.array(['KC']*10+['MBON']*4+['DAN'])
+    raw=rng.normal(size=(15,15));raw[rng.random((15,15))>.3]=0;np.fill_diagonal(raw,0)
+    raw[10:14,:10]=rng.uniform(.1,1.,(4,10))
+    strength=abs(raw).sum(axis=1);weights=sparse.csr_matrix(raw*.9/strength[:,None])
+    patterns=np.zeros((10,15));patterns[:,:10]=np.eye(10)*.5
+    return TimedReservoir(weights,MappedEncoder(patterns),roles,.6,'mbon_after_kc'),roles
+
+
+def test_factor_full_is_exact_original_and_zero_response_shared():
+    base,roles=fixture();factor=FactorReservoir(base,True,True)
+    for symbol in np.random.default_rng(8).integers(0,10,50):
+        np.testing.assert_array_equal(base.step(int(symbol)),factor.step(int(symbol)))
+    for carry,history in [(True,True),(True,False),(False,True),(False,False)]:
+        model=FactorReservoir(base,carry,history)
+        full,observed=zero_prototypes(base,model,np.flatnonzero(roles=='MBON'))
+        np.testing.assert_array_equal(full,analytic_prototypes(base.weights,base.encoder.patterns,roles,config()))
+        assert np.any(observed!=0),'Memory control must retain MBON input access'
+    zero_prototypes(base,base,np.flatnonzero(roles=='MBON'))
+
+
+def test_instantaneous_is_independent_of_arbitrary_previous_state():
+    base,roles=fixture();model=FactorReservoir(base,False,False)
+    proto=analytic_prototypes(base.weights,base.encoder.patterns,roles,config())
+    rng=np.random.default_rng(9)
+    for symbol in range(10):
+        model.state=rng.normal(size=15)*100
+        np.testing.assert_array_equal(model.step(symbol),proto[symbol])
+
+
+def test_carry_only_retains_gain_and_current_kc_mbon_path():
+    base,roles=fixture();model=FactorReservoir(base,True,False)
+    model.step(2);old=model.state.copy();actual=model.step(3)
+    kc=np.flatnonzero(roles=='KC');mb=np.flatnonzero(roles=='MBON')
+    kc_expected=.4*old[kc]+.6*np.tanh(base.encoder.patterns[3,kc])
+    mb_expected=.4*old[mb]+.6*np.tanh(base.weights[mb][:,kc]@kc_expected)
+    np.testing.assert_allclose(actual[kc],kc_expected,atol=1e-15,rtol=0)
+    np.testing.assert_allclose(actual[mb],mb_expected,atol=1e-15,rtol=0)
+
+
+def test_independent_trajectory_matches_all_synthetic_factor_arms():
+    base,roles=fixture();c=config();symbols=np.random.default_rng(10).integers(0,10,30)
+    obs=np.flatnonzero(roles=='MBON')
+    class Budget:
+        def check(self):pass
+    for switches in c['arms'].values():
+        model=FactorReservoir(base,**switches);states=np.array([model.step(int(s)) for s in symbols])
+        x,norm,last,_=trajectory(base.weights,base.encoder.patterns,roles,obs,symbols,c,switches['carry'],switches['synaptic_history'],Budget())
+        np.testing.assert_array_equal(x,states[:,obs]);np.testing.assert_array_equal(last,states[-1])
+        np.testing.assert_allclose(norm,np.linalg.norm(states,axis=1),atol=1e-15,rtol=0)
+
+
+def synthetic_table(c):
+    rows=[]
+    counts={'full':600,'carry_only':546,'synaptic_only':540,'instantaneous':200}
+    for level,seeds in c['blocks_by_level'].items():
+        for seed in seeds:
+            for arm in c['arms']:
+                for lag in c['lags']:
+                    correct=2000 if lag==0 else counts[arm];accuracy=correct/2000
+                    rows.append(dict(level=level,arm=arm,seed=seed,lag=lag,samples=2000,correct=correct,accuracy=accuracy,
+                                     frequency_accuracy=.1,current_accuracy=1. if lag==0 else .1,
+                                     baseline_excess=0. if lag==0 else accuracy-.1,chance_adjusted=(accuracy-.1)/.9))
+    return pd.DataFrame(rows)
+
+
+def test_exact_equality_primary_conjunction_and_assay_invalid():
+    c=config();f=synthetic_table(c)
+    first=summarize(f,c,False)[0]
+    assert first['outcome']=='PASS' and first['primary_pass'] is True
+    assert first['levels']['legacy5']['contrasts']['synaptic_increment']['mean_exact']==str(Fraction(3,100))
+    f.loc[(f.level=='legacy5')&(f.arm=='full')&(f.seed==1100006)&(f.lag>0),'correct']=540
+    assert summarize(f,c,False)[0]['primary_pass'] is False
+    f=synthetic_table(c)
+    f.loc[(f.level=='legacy5')&(f.arm=='instantaneous')&(f.seed==1100006)&(f.lag==0),'correct']=1799
+    status=summarize(f,c,False)[0]
+    assert status['outcome']=='assay-invalid' and status['primary_pass'] is None
