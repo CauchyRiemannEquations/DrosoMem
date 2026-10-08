@@ -1,0 +1,253 @@
+{
+  "smoke": false,
+  "outcome": "PASS",
+  "primary_pass": true,
+  "levels": {
+    "legacy5": {
+      "reference_valid": true,
+      "arm_metrics": {
+        "full": {
+          "current": {
+            "mean": 1.0,
+            "median": 1.0,
+            "sd": 0.0,
+            "bootstrap_lo": 1.0,
+            "bootstrap_hi": 1.0
+          },
+          "history": {
+            "mean": 0.6731851851851851,
+            "median": 0.671,
+            "sd": 0.006114006048316272,
+            "bootstrap_lo": 0.6693703703703703,
+            "bootstrap_hi": 0.678
+          },
+          "long_history": {
+            "mean": 0.22110185185185185,
+            "median": 0.2197222222222222,
+            "sd": 0.004360444629422008,
+            "bootstrap_lo": 0.21819444444444444,
+            "bootstrap_hi": 0.22445833333333332
+          }
+        },
+        "carry_only": {
+          "current": {
+            "mean": 0.8497499999999999,
+            "median": 0.851,
+            "sd": 0.006194755846681947,
+            "bootstrap_lo": 0.8451666666666666,
+            "bootstrap_hi": 0.8541666666666666
+          },
+          "history": {
+            "mean": 0.07148148148148148,
+            "median": 0.06805555555555556,
+            "sd": 0.007361450027138511,
+            "bootstrap_lo": 0.06666666666666667,
+            "bootstrap_hi": 0.07722222222222222
+          },
+          "long_history": {
+            "mean": 0.018523148148148146,
+            "median": 0.017097222222222222,
+            "sd": 0.002847427725194401,
+            "bootstrap_lo": 0.01682407407407407,
+            "bootstrap_hi": 0.020777777777777777
+          }
+        },
+        "synaptic_only": {
+          "current": {
+            "mean": 1.0,
+            "median": 1.0,
+            "sd": 0.0,
+            "bootstrap_lo": 1.0,
+            "bootstrap_hi": 1.0
+          },
+          "history": {
+            "mean": 0.6459444444444443,
+            "median": 0.6408333333333334,
+            "sd": 0.015787438357014863,
+            "bootstrap_lo": 0.6355370370370369,
+            "bootstrap_hi": 0.658462962962963
+          },
+          "long_history": {
+            "mean": 0.16165740740740742,
+            "median": 0.16111111111111112,
+            "sd": 0.004008773813738055,
+            "bootstrap_lo": 0.15893518518518518,
+            "bootstrap_hi": 0.16469444444444448
+          }
+        },
+        "instantaneous": {
+          "current": {
+            "mean": 1.0,
+            "median": 1.0,
+            "sd": 0.0,
+            "bootstrap_lo": 1.0,
+            "bootstrap_hi": 1.0
+          },
+          "history": {
+            "mean": -0.001425925925925926,
+            "median": -0.0013888888888888887,
+            "sd": 0.001464673168222841,
+            "bootstrap_lo": -0.002462962962962963,
+            "bootstrap_hi": -0.0003333333333333333
+          },
+          "long_history": {
+            "mean": -2.777777777777781e-05,
+            "median": -9.722222222222223e-05,
+            "sd": 0.0009715076739243119,
+            "bootstrap_lo": -0.0006574074074074074,
+            "bootstrap_hi": 0.0007453703703703703
+          }
+        }
+      },
+      "primary": {
+        "historical_gain": {
+          "mean": 0.0729074074074074,
+          "median": 0.06994444444444445,
+          "sd": 0.008004139875341565,
+          "bootstrap_lo": 0.06774027777777777,
+          "bootstrap_hi": 0.07916666666666668,
+          "mean_exact": "3937/54000"
+        },
+        "current_difference": {
+          "mean": -0.15025,
+          "median": -0.149,
+          "sd": 0.006194755846681939,
+          "bootstrap_lo": -0.15483333333333335,
+          "bootstrap_hi": -0.14583333333333334,
+          "mean_exact": "-601/4000"
+        },
+        "historical_mean_pass": true,
+        "current_mean_pass": true,
+        "all_history_positive": true,
+        "all_current_negative": true,
+        "registered_joint_pass": true
+      }
+    },
+    "brain5": {
+      "reference_valid": true,
+      "arm_metrics": {
+        "full": {
+          "current": {
+            "mean": 1.0,
+            "median": 1.0,
+            "sd": 0.0,
+            "bootstrap_lo": 1.0,
+            "bootstrap_hi": 1.0
+          },
+          "history": {
+            "mean": 0.6291111111111111,
+            "median": 0.6273333333333333,
+            "sd": 0.007275869130553252,
+            "bootstrap_lo": 0.6228888888888889,
+            "bootstrap_hi": 0.6371111111111111
+          },
+          "long_history": {
+            "mean": 0.19530555555555554,
+            "median": 0.19411111111111112,
+            "sd": 0.005883317595194563,
+            "bootstrap_lo": 0.19011111111111112,
+            "bootstrap_hi": 0.20169444444444448
+          }
+        },
+        "carry_only": {
+          "current": {
+            "mean": 0.8496666666666667,
+            "median": 0.849,
+            "sd": 0.0070237691685684995,
+            "bootstrap_lo": 0.843,
+            "bootstrap_hi": 0.8569999999999999
+          },
+          "history": {
+            "mean": 0.07022222222222223,
+            "median": 0.06844444444444445,
+            "sd": 0.006733920033111888,
+            "bootstrap_lo": 0.06455555555555556,
+            "bootstrap_hi": 0.07766666666666666
+          },
+          "long_history": {
+            "mean": 0.017694444444444443,
+            "median": 0.016694444444444446,
+            "sd": 0.001780380039884673,
+            "bootstrap_lo": 0.01663888888888889,
+            "bootstrap_hi": 0.01975
+          }
+        },
+        "synaptic_only": {
+          "current": {
+            "mean": 1.0,
+            "median": 1.0,
+            "sd": 0.0,
+            "bootstrap_lo": 1.0,
+            "bootstrap_hi": 1.0
+          },
+          "history": {
+            "mean": 0.5404444444444444,
+            "median": 0.5306666666666666,
+            "sd": 0.01771098564015225,
+            "bootstrap_lo": 0.5297777777777778,
+            "bootstrap_hi": 0.5608888888888889
+          },
+          "long_history": {
+            "mean": 0.13329629629629627,
+            "median": 0.13219444444444445,
+            "sd": 0.0046680167800079945,
+            "bootstrap_lo": 0.12927777777777777,
+            "bootstrap_hi": 0.13841666666666666
+          }
+        },
+        "instantaneous": {
+          "current": {
+            "mean": 1.0,
+            "median": 1.0,
+            "sd": 0.0,
+            "bootstrap_lo": 1.0,
+            "bootstrap_hi": 1.0
+          },
+          "history": {
+            "mean": -0.0011111111111111111,
+            "median": -0.0012222222222222222,
+            "sd": 0.0005091750772173155,
+            "bootstrap_lo": -0.0015555555555555555,
+            "bootstrap_hi": -0.0005555555555555556
+          },
+          "long_history": {
+            "mean": -9.259259259259263e-06,
+            "median": -8.333333333333333e-05,
+            "sd": 0.00015298807075794728,
+            "bootstrap_lo": -0.00011111111111111113,
+            "bootstrap_hi": 0.00016666666666666666
+          }
+        }
+      },
+      "primary": {
+        "historical_gain": {
+          "mean": 0.07133333333333335,
+          "median": 0.07,
+          "sd": 0.006328458162621393,
+          "bootstrap_lo": 0.06577777777777778,
+          "bootstrap_hi": 0.07822222222222222,
+          "mean_exact": "107/1500"
+        },
+        "current_difference": {
+          "mean": -0.15033333333333332,
+          "median": -0.151,
+          "sd": 0.0070237691685684995,
+          "bootstrap_lo": -0.157,
+          "bootstrap_hi": -0.143,
+          "mean_exact": "-451/3000"
+        },
+        "historical_mean_pass": true,
+        "current_mean_pass": true,
+        "all_history_positive": true,
+        "all_current_negative": true,
+        "registered_joint_pass": true
+      }
+    }
+  },
+  "cases": 36,
+  "lag_heads": 756,
+  "criterion_unchanged": true,
+  "biological_plasticity_performed": false,
+  "m1_outcome_unchanged": "assay-invalid",
+  "m1_informed_design": true
+}

@@ -1,5 +1,31 @@
 # DrosoMem research roadmap
 
+## Current — M2 completed (2026-10-08)
+
+The [joint current/history study](temporal-tradeoff-results.md) is executed and
+independently verified under its [prospective protocol](temporal-tradeoff-protocol.md).
+Primary carry_only−instantaneous has a6.562pp historical gain and15.025pp current
+loss, both directions across all six fresh blocks; joint criterion PASS.
+Whole firstthree secondary also passes its own joint criterion. Full and
+synaptic_only preserve both high current and historical access, limiting the
+claim to this specified intervention. M1's original invalid assay stays sealed.
+
+| Stage / question | Status | Boundary |
+| --- | --- | --- |
+| P0 / v1 | Sealed | Original evidence and negatives preserved |
+| P1 iid TDC | Closed; short-lag gate passes | Computational past-input access |
+| P2 null ensembles | Closed; both material gates fail | No general wiring advantage |
+| M1 carry / synaptic increment | Closed; assay-invalid | Original endpoint undefined |
+| M2 joint current/history change | Closed; primary and secondary PASS | Specific linear-decoding intervention comparison; no universal memory cost |
+| Next: delayed feedforward / feedback cycles | Proposal only | Separate fixed controls/protocol needed; not executed |
+| P3 physiology / spiking / plasticity | Outside this work | Biological calibration and learning claims remain open |
+
+No extra seeds, decoder changes or carry/gain sweep remain in M2. Future cycle
+work must preserve input access and register its own question/validity/budget
+before new outcomes; M1's R switch includes both delayed feedforward and
+feedback transmission. [Current handoff](next-work.md). Earlier dated snapshots
+below retain their original outcomes.
+
 ## Current — 2026-10-08
 
 The next-work state-carry/history-dependent transmission question has now been

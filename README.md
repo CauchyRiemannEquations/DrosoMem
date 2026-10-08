@@ -11,6 +11,24 @@ fly memorizing pi or a model predicting unseen pi digits.
 
 ## Current research — 2026-10-08
 
+The [joint current/history decoding study M2](docs/temporal-tradeoff-results.md)
+passes its precommitted fresh-input criterion: carry_only versus instantaneous
+gains6.562pp mean lag1–5 decoding while losing15.025pp current accuracy, with
+both directions in all six partial blocks. Secondary whole firstthree also
+passes its own joint rule. All72 full-state hashes,756 independent refits and36
+diagnostic panels validate. The lag focus and hypothesis were informed by M1;
+no settings or criteria changed after new outcomes.
+
+This is a specific intervention/readout comparison. Full and synaptic_only
+retain100% current accuracy and strong historical decoding, so it establishes
+no universal need to sacrifice current access for memory. M1 remains
+assay-invalid; prior wiring/whole-brain negatives and42,717 old result-file Git
+identities are preserved. [M2 protocol](docs/temporal-tradeoff-protocol.md) ·
+[Independent verification](results/tdc_tradeoff_v1/main_validation/checks.json) ·
+[Final audit](results/tdc_tradeoff_v1/final_audit/audit.json).
+
+## Closed M1 — 2026-10-08
+
 The [state-carry / previous-state synaptic-drive study](docs/temporal-mechanism-results.md)
 is complete with registered outcome **assay-invalid**, not confirmed mechanism
 advantage. Four fixed interventions retain current KC-to-MBON input access and

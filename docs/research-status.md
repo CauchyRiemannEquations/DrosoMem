@@ -1,5 +1,28 @@
 # Research status
 
+## Current — M2 joint current/history criterion passes (2026-10-08)
+
+[Prospective protocol](temporal-tradeoff-protocol.md),
+[results/synthesis and Korean summary](temporal-tradeoff-results.md),
+[independent verification](../results/tdc_tradeoff_v1/main_validation/checks.json),
+[final audit](../results/tdc_tradeoff_v1/final_audit/audit.json).
+All36 cases,72 exact full-state replays,756 independent lag readout refits and36
+diagnostic panels are complete. Fresh-input primary carry_only−instantaneous
+has+6.5617pp mean lag1–5 accuracy and−15.025pp current accuracy; adjusted
+historical gain3937/54000 and raw current change−601/4000 satisfy both material
+requirements and all six strict paired directions. Instantaneous current100%
+and exact no-history certificates pass the separate99% reference gate.
+Whole firstthree secondary also passes (+6.42pp /−15.0333pp), reported separately.
+
+The question and short-lag focus were informed by M1 before new outcomes.
+M1 remains assay-invalid; its original endpoint is still undefined. Full and
+synaptic_only retain100% current accuracy with substantial historical decoding;
+this bounded tradeoff is not a universal memory cost or conserved capacity.
+All42,717 prior result-file Git identities, scientific code/data/config/protocols
+and tests are preserved. M2 has no failed attempts; archived earlier failures
+and negative structural/whole-brain/local-learning outcomes remain unchanged.
+This finite scope is closed. Feedback-cycle isolation and P3 were not added.
+
 ## Current — M1 closed with assay-invalid outcome (2026-10-08)
 
 [Prospective protocol](temporal-mechanism-protocol.md),

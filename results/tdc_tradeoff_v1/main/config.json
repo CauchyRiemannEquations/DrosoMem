@@ -1,0 +1,150 @@
+{
+  "protocol": "docs/temporal-tradeoff-protocol.md",
+  "namespace": "results/tdc_tradeoff_v1",
+  "baseline_commit": "e52d1ff959d4426ce61315ad17788aa7c66fcb88",
+  "cache": "outputs/tdc_v2/whole_cache",
+  "levels": [
+    "legacy5",
+    "brain5"
+  ],
+  "circuit_seeds": [
+    701
+  ],
+  "arms": {
+    "full": {
+      "carry": true,
+      "synaptic_history": true
+    },
+    "carry_only": {
+      "carry": true,
+      "synaptic_history": false
+    },
+    "synaptic_only": {
+      "carry": false,
+      "synaptic_history": true
+    },
+    "instantaneous": {
+      "carry": false,
+      "synaptic_history": false
+    }
+  },
+  "blocks": [
+    {
+      "seed": 1200001,
+      "input_seed": 1210001,
+      "train_seed": 1220001,
+      "test_seed": 1230001
+    },
+    {
+      "seed": 1200002,
+      "input_seed": 1210002,
+      "train_seed": 1220002,
+      "test_seed": 1230002
+    },
+    {
+      "seed": 1200003,
+      "input_seed": 1210003,
+      "train_seed": 1220003,
+      "test_seed": 1230003
+    },
+    {
+      "seed": 1200004,
+      "input_seed": 1210004,
+      "train_seed": 1220004,
+      "test_seed": 1230004
+    },
+    {
+      "seed": 1200005,
+      "input_seed": 1210005,
+      "train_seed": 1220005,
+      "test_seed": 1230005
+    },
+    {
+      "seed": 1200006,
+      "input_seed": 1210006,
+      "train_seed": 1220006,
+      "test_seed": 1230006
+    }
+  ],
+  "blocks_by_level": {
+    "legacy5": [
+      1200001,
+      1200002,
+      1200003,
+      1200004,
+      1200005,
+      1200006
+    ],
+    "brain5": [
+      1200001,
+      1200002,
+      1200003
+    ]
+  },
+  "alphabet_size": 10,
+  "warmup": 200,
+  "train_samples": 4000,
+  "test_samples": 2000,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "score_lags": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "primary_level": "legacy5",
+  "primary_contrast": [
+    "carry_only",
+    "instantaneous"
+  ],
+  "alpha": 1.0,
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "schedule": "mbon_after_kc",
+  "normalization": "incoming_l1",
+  "activity_epsilon": 1e-08,
+  "bootstrap_seed": 1240001,
+  "bootstrap_draws": 10000,
+  "smoke": {
+    "train_samples": 300,
+    "test_samples": 200,
+    "blocks": 1
+  },
+  "neural_workers": 4,
+  "max_seconds": 7200,
+  "max_rss_bytes": 4294967296,
+  "primary_question": "carry_only versus instantaneous joint current/history decoding change",
+  "reference_current_min": 0.99,
+  "historical_gain_min": 0.03,
+  "current_difference_max": -0.05,
+  "diagnostics": [
+    "repeat_switch_current_accuracy",
+    "current_errors_equal_previous_symbol",
+    "current_confusion_matrix"
+  ]
+}

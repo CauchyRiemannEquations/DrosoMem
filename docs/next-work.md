@@ -1,5 +1,29 @@
 # Prioritized work — updated 2026-10-08
 
+## Current handoff — M2 completed (2026-10-08)
+
+The proposed joint current/history tradeoff question is now
+[closed](temporal-tradeoff-results.md) under its
+[precommitted protocol](temporal-tradeoff-protocol.md). All36 main cases,72
+exact full-state traces,756 independent refits and36 diagnostic panels validate.
+Primary PASS: carry_only versus instantaneous gains6.5617pp historical accuracy
+and loses15.025pp current accuracy, with both strict directions in all six fresh
+blocks. Secondary firstthree whole blocks also passes; do not pool as nine
+independent inputs. M1 remains assay-invalid with its endpoint undefined.
+Full/synaptic_only retain high current and history access, so there is no
+universal memory-cost claim. Earlier negatives/failures and42,717 prior result
+identities remain unchanged. No execution or validation remains in M2.
+
+The next candidate is **delayed feedforward propagation versus anatomical
+feedback cycles**. Existing R interventions include both, and neither M1 nor M2
+isolates cycles. Before pursuing it, design a distinct input-access-preserving
+control with a fixed decoder/normalization budget, mathematical reference checks,
+fresh seeds, resource limits and prospective criteria. This is a proposal,
+unregistered and unexecuted, not a remaining step or an automatic sweep.
+Do not retrospectively tune M1's eligibility or promote M2 into its confirmation.
+P3 physiology/spiking/plasticity stays outside this work. The dated notes below
+retain historical handoff context.
+
 ## Current handoff — 2026-10-08
 
 The proposed leak/carry versus previous-state synaptic transmission study is
