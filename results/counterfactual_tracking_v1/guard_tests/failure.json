@@ -1,0 +1,8 @@
+{
+  "kind": "m6-synthetic-guards",
+  "complete": false,
+  "exception": "AssertionError",
+  "message": "('Uncommitted captured source', 'scripts/audit_counterfactual_tracking.py')",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-10-06\\new-chat-2\\work\\DrosoMem-research\\scripts\\tdc_support.py\", line 100, in attempt\n    yield r\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-10-06\\new-chat-2\\work\\DrosoMem-research\\scripts\\run_counterfactual_guards.py\", line 19, in run\n    source = source_record(c)\n             ^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-10-06\\new-chat-2\\work\\DrosoMem-research\\scripts\\counterfactual_support.py\", line 137, in source_record\n    authenticate_git_sources(tracked, hashes, revision)\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-10-06\\new-chat-2\\work\\DrosoMem-research\\scripts\\counterfactual_support.py\", line 108, in authenticate_git_sources\n    assert digest.hexdigest() == hashes[name], ('Uncommitted captured source', name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('Uncommitted captured source', 'scripts/audit_counterfactual_tracking.py')\n",
+  "source_commit": "2f22d744af8553183fe270bc4af5dd0bfcefe750"
+}
