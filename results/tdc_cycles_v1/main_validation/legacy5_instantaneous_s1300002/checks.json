@@ -1,0 +1,14 @@
+{
+  "all_checks_pass": true,
+  "level": "legacy5",
+  "arm": "instantaneous",
+  "seed": 1300002,
+  "exact_full_state_trace_hash": {
+    "train": true,
+    "test": true
+  },
+  "independently_refit_heads": 21,
+  "instantaneous_no_history_certificate": true,
+  "preserved_zero_state_input_response": true,
+  "finite_window_certificate": null
+}

@@ -1,5 +1,30 @@
 # DrosoMem research roadmap
 
+## Current — M3 completed (2026-10-08)
+
+[M3](temporal-cycles-results.md) prospectively verifies **cycle-free delayed
+feedforward sufficiency**, with current input paths retained and direct carry0.
+Primary lag2 decoding99.9833%, minimum baseline excess88.5pp across six blocks;
+whole firstthree secondary also passes. All27 cases/54 exact state traces/567
+refits and9 finite-history certificate pairs validate. Current accuracy100%.
+The mask changes degree/weight/path structure, so pure cycle attribution remains
+open; the bounded sufficiency question is closed.
+
+| Stage | Status | Interpretation boundary |
+| --- | --- | --- |
+| P0/v1 | Sealed | Original claims/negatives preserved |
+| P1 iid TDC | Closed; short-lag gate passes | Computational past-input access |
+| P2 null ensembles | Closed; both material gates fail | No general wiring advantage |
+| M1 carry/synaptic increment | Closed; assay-invalid | Original endpoint undefined |
+| M2 current/history tradeoff | Closed; registered joint PASS | Specific readout/intervention, no universal memory cost |
+| M3 cycle-free sufficiency | Closed; primary/secondary PASS | Delayed acyclic propagation can support lag2; no unique cycle-effect claim |
+| Next cycle-attribution methodology | Proposal only | Match deleted degree/strength/path effects while preserving current access |
+| P3 physiological spiking/plasticity | Outside this work | Requires separate biological targets/protocol |
+
+No seed/order/threshold/decoder sweep remains in M3. Further attribution requires
+a new prospective validity argument, not relabeling this result or M1.
+[Current handoff](next-work.md). Earlier snapshots retain their original outcomes.
+
 ## Current — M2 completed (2026-10-08)
 
 The [joint current/history study](temporal-tradeoff-results.md) is executed and

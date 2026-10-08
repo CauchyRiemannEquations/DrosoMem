@@ -1,0 +1,170 @@
+{
+  "protocol": "docs/temporal-cycles-protocol.md",
+  "namespace": "results/tdc_cycles_v1",
+  "baseline_commit": "eb571bd83107e2b108bf270003a918f8eb21e797",
+  "cache": "outputs/tdc_v2/whole_cache",
+  "levels": [
+    "legacy5",
+    "brain5"
+  ],
+  "circuit_seeds": [
+    701
+  ],
+  "arms": {
+    "intact_synaptic": {
+      "carry": false,
+      "synaptic_history": true,
+      "dag": false
+    },
+    "dag_synaptic": {
+      "carry": false,
+      "synaptic_history": true,
+      "dag": true
+    },
+    "instantaneous": {
+      "carry": false,
+      "synaptic_history": false,
+      "dag": false
+    }
+  },
+  "blocks": [
+    {
+      "seed": 1300001,
+      "input_seed": 1310001,
+      "train_seed": 1320001,
+      "test_seed": 1330001,
+      "initial_a_seed": 1350001,
+      "initial_b_seed": 1350101,
+      "prefix_a_seed": 1360001,
+      "prefix_b_seed": 1360101,
+      "suffix_seed": 1370001
+    },
+    {
+      "seed": 1300002,
+      "input_seed": 1310002,
+      "train_seed": 1320002,
+      "test_seed": 1330002,
+      "initial_a_seed": 1350002,
+      "initial_b_seed": 1350102,
+      "prefix_a_seed": 1360002,
+      "prefix_b_seed": 1360102,
+      "suffix_seed": 1370002
+    },
+    {
+      "seed": 1300003,
+      "input_seed": 1310003,
+      "train_seed": 1320003,
+      "test_seed": 1330003,
+      "initial_a_seed": 1350003,
+      "initial_b_seed": 1350103,
+      "prefix_a_seed": 1360003,
+      "prefix_b_seed": 1360103,
+      "suffix_seed": 1370003
+    },
+    {
+      "seed": 1300004,
+      "input_seed": 1310004,
+      "train_seed": 1320004,
+      "test_seed": 1330004,
+      "initial_a_seed": 1350004,
+      "initial_b_seed": 1350104,
+      "prefix_a_seed": 1360004,
+      "prefix_b_seed": 1360104,
+      "suffix_seed": 1370004
+    },
+    {
+      "seed": 1300005,
+      "input_seed": 1310005,
+      "train_seed": 1320005,
+      "test_seed": 1330005,
+      "initial_a_seed": 1350005,
+      "initial_b_seed": 1350105,
+      "prefix_a_seed": 1360005,
+      "prefix_b_seed": 1360105,
+      "suffix_seed": 1370005
+    },
+    {
+      "seed": 1300006,
+      "input_seed": 1310006,
+      "train_seed": 1320006,
+      "test_seed": 1330006,
+      "initial_a_seed": 1350006,
+      "initial_b_seed": 1350106,
+      "prefix_a_seed": 1360006,
+      "prefix_b_seed": 1360106,
+      "suffix_seed": 1370006
+    }
+  ],
+  "blocks_by_level": {
+    "legacy5": [
+      1300001,
+      1300002,
+      1300003,
+      1300004,
+      1300005,
+      1300006
+    ],
+    "brain5": [
+      1300001,
+      1300002,
+      1300003
+    ]
+  },
+  "alphabet_size": 10,
+  "warmup": 200,
+  "train_samples": 4000,
+  "test_samples": 2000,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "primary_level": "legacy5",
+  "alpha": 1.0,
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "schedule": "mbon_after_kc",
+  "normalization": "incoming_l1",
+  "activity_epsilon": 1e-08,
+  "bootstrap_seed": 1340001,
+  "bootstrap_draws": 10000,
+  "smoke": {
+    "train_samples": 300,
+    "test_samples": 200,
+    "blocks": 1
+  },
+  "neural_workers": 4,
+  "max_seconds": 7200,
+  "max_rss_bytes": 4294967296,
+  "reference_current_min": 0.99,
+  "primary_arm": "dag_synaptic",
+  "primary_lag": 2,
+  "minimum_excess": 0.1,
+  "carry_multiplier": 0.0,
+  "mask_order": "KC/other/MBON tiers, ascending numeric root ID",
+  "expected_depth": {
+    "legacy5": 11,
+    "brain5": 153
+  },
+  "certificate_prefix_steps": 64
+}

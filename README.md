@@ -11,6 +11,24 @@ fly memorizing pi or a model predicting unseen pi digits.
 
 ## Current research — 2026-10-08
 
+The [cycle-free feedforward sufficiency study M3](docs/temporal-cycles-results.md)
+passes its prospective iid lag2 criterion in all six fresh partial blocks:
+acyclic DAG with zero direct carry decodes11998/12000 symbols (99.9833%), with
+minimum88.5pp excess above the strongest registered baseline. Whole firstthree
+secondary also passes. Current decoding is100% in every arm.
+
+Independent replay confirms54 complete-state hashes,567 ridge refits and9
+finite-history certificate pairs. Common12/154-symbol suffixes erase differing
+earlier histories exactly under the DAG's structural bounds. This supports
+delayed feedforward sufficiency in the fixed computational scope; intact−DAG
+differences also include deleted degrees/weights/paths and do not isolate cycles.
+M1 stays invalid, M2/P1/P2 conclusions and43,495 prior result identities remain
+sealed. [Protocol](docs/temporal-cycles-protocol.md) ·
+[Independent checks](results/tdc_cycles_v1/main_validation/checks.json) ·
+[Final audit](results/tdc_cycles_v1/final_audit/audit.json).
+
+## Closed M2 — 2026-10-08
+
 The [joint current/history decoding study M2](docs/temporal-tradeoff-results.md)
 passes its precommitted fresh-input criterion: carry_only versus instantaneous
 gains6.562pp mean lag1–5 decoding while losing15.025pp current accuracy, with

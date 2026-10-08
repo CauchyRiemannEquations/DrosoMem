@@ -1,5 +1,29 @@
 # Prioritized work — updated 2026-10-08
 
+## Current handoff — M3 completed (2026-10-08)
+
+The cycle question is now [closed within feedforward sufficiency scope](temporal-cycles-results.md)
+under its [prospective protocol](temporal-cycles-protocol.md). Source-derived DAG
+with direct carry0 has99.9833% primary lag2 accuracy and minimum88.5pp excess;
+all six cells pass, and secondary whole firstthree also passes. All27 cases,
+54 exact complete-state hashes,567 independent refits,9 finite-history pairs
+and18 certificate replay hashes are verified. Current access100% throughout.
+No execution/validation remains in this finite M3 scope.
+
+Intact−DAG differences also change degree, weight mass and delayed paths; this
+does not identify unique cycle contribution or storage. M1 remains assay-invalid,
+M2's specific joint result and P1/P2 negatives remain, and all43,495 prior result
+identities and old scientific source/data/config/protocol/tests are protected.
+
+The next candidate is **cycle-attribution design feasibility**: can deleted
+degree/strength/path effects be adequately matched while current input access
+stays fixed? Start with mathematical/structural validity checks and then a
+distinct prospective question, fixed controls/seeds/decoder/budget/criteria.
+This is a proposal only, not a registered or executed experiment. Do not call a
+different sparse graph a pure cycle control without its validity argument.
+No automatic seed, rank-order, decoder or coefficient sweep, and no P3, follows
+this result. The dated notes below retain historical handoffs.
+
 ## Current handoff — M2 completed (2026-10-08)
 
 The proposed joint current/history tradeoff question is now

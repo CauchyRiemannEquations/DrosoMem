@@ -1,5 +1,26 @@
 # Research status
 
+## Current — M3 cycle-free sufficiency passes (2026-10-08)
+
+[Protocol](temporal-cycles-protocol.md), [results/synthesis](temporal-cycles-results.md),
+[independent validation](../results/tdc_cycles_v1/main_validation/checks.json),
+[final audit](../results/tdc_cycles_v1/final_audit/audit.json).
+All27 cases/54 exact state replays/567 independent ridge refits and9 finite-window
+certificate pairs are complete. DAG/no direct carry lag2 decoding is99.9833%
+primary,100% secondary; minimum strongest-baseline excess88.5pp passes every
+six/three registered block. Instantaneous reference and all-arm current access
+are100%. Fixed current KC→MBON coefficients survive masking exactly.
+
+Rank proofs and independent structural replay show no cycles/self-edges;
+global dependency upper bounds11/153 give12/154-symbol common-suffix tests with
+exact entire-state agreement and18 matching certificate replay hashes.
+These are structural computational bounds, not biological forgetting times.
+Intact−DAG gaps are descriptive, confounded by degree/weight/path deletion.
+Delayed propagation is sufficient for this short-lag decoding scope; no unique
+cycle effect/storage mechanism is established. M1 remains assay-invalid;
+M2/P1/P2 and43,495 earlier result identities/scientific source remain unchanged.
+M3 closes this finite mechanism study, and physiology/plasticity P3 is excluded.
+
 ## Current — M2 joint current/history criterion passes (2026-10-08)
 
 [Prospective protocol](temporal-tradeoff-protocol.md),

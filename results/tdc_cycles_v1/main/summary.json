@@ -1,0 +1,99 @@
+{
+  "smoke": false,
+  "outcome": "PASS",
+  "primary_pass": true,
+  "levels": {
+    "legacy5": {
+      "reference_valid": true,
+      "primary": {
+        "lag": 2,
+        "arm": "dag_synaptic",
+        "excess": {
+          "mean": 0.8935000000000001,
+          "median": 0.8947499999999999,
+          "sd": 0.007266360849834004,
+          "bootstrap_lo": 0.8882500000000001,
+          "bootstrap_hi": 0.89825
+        },
+        "mean_exact": "1787/2000",
+        "minimum_excess": 0.885,
+        "minimum_excess_exact": "177/200",
+        "all_blocks_meet_margin": true,
+        "registered_rule_pass": true
+      },
+      "arm_long_scores": {
+        "intact_synaptic": {
+          "mean": 0.1624537037037037,
+          "median": 0.16344444444444445,
+          "sd": 0.0029392336841778653,
+          "bootstrap_lo": 0.16013425925925925,
+          "bootstrap_hi": 0.16448148148148148
+        },
+        "dag_synaptic": {
+          "mean": 0.13363425925925923,
+          "median": 0.13594444444444442,
+          "sd": 0.00771547300316393,
+          "bootstrap_lo": 0.12789351851851852,
+          "bootstrap_hi": 0.13894444444444443
+        },
+        "instantaneous": {
+          "mean": -0.0016944444444444444,
+          "median": -0.001138888888888889,
+          "sd": 0.0019210497387536407,
+          "bootstrap_lo": -0.003305555555555556,
+          "bootstrap_hi": -0.0006296296296296296
+        }
+      }
+    },
+    "brain5": {
+      "reference_valid": true,
+      "primary": {
+        "lag": 2,
+        "arm": "dag_synaptic",
+        "excess": {
+          "mean": 0.895,
+          "median": 0.9,
+          "sd": 0.008660254037844393,
+          "bootstrap_lo": 0.8850000000000001,
+          "bootstrap_hi": 0.9
+        },
+        "mean_exact": "179/200",
+        "minimum_excess": 0.885,
+        "minimum_excess_exact": "177/200",
+        "all_blocks_meet_margin": true,
+        "registered_rule_pass": true
+      },
+      "arm_long_scores": {
+        "intact_synaptic": {
+          "mean": 0.13742592592592592,
+          "median": 0.13891666666666666,
+          "sd": 0.0036654389078023403,
+          "bootstrap_lo": 0.13325,
+          "bootstrap_hi": 0.1401111111111111
+        },
+        "dag_synaptic": {
+          "mean": 0.1135462962962963,
+          "median": 0.11386111111111111,
+          "sd": 0.0035382972352676735,
+          "bootstrap_lo": 0.10986111111111112,
+          "bootstrap_hi": 0.11691666666666667
+        },
+        "instantaneous": {
+          "mean": -0.0012037037037037036,
+          "median": -0.0014166666666666668,
+          "sd": 0.0005459823328816877,
+          "bootstrap_lo": -0.0016111111111111111,
+          "bootstrap_hi": -0.0005833333333333334
+        }
+      }
+    }
+  },
+  "cases": 27,
+  "lag_heads": 567,
+  "certificate_pairs": 9,
+  "criterion_unchanged": true,
+  "m1_outcome_unchanged": "assay-invalid",
+  "m2_outcome_unchanged": "PASS",
+  "cycle_effect_isolation_claim": false,
+  "biological_plasticity_performed": false
+}

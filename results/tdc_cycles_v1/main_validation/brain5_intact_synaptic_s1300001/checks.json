@@ -1,0 +1,14 @@
+{
+  "all_checks_pass": true,
+  "level": "brain5",
+  "arm": "intact_synaptic",
+  "seed": 1300001,
+  "exact_full_state_trace_hash": {
+    "train": true,
+    "test": true
+  },
+  "independently_refit_heads": 21,
+  "instantaneous_no_history_certificate": false,
+  "preserved_zero_state_input_response": true,
+  "finite_window_certificate": null
+}

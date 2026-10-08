@@ -1,0 +1,24 @@
+{
+  "all_checks_pass": true,
+  "level": "legacy5",
+  "arm": "dag_synaptic",
+  "seed": 1300006,
+  "exact_full_state_trace_hash": {
+    "train": true,
+    "test": true
+  },
+  "independently_refit_heads": 21,
+  "instantaneous_no_history_certificate": false,
+  "preserved_zero_state_input_response": true,
+  "finite_window_certificate": {
+    "all_checks_pass": true,
+    "global_dependency_depth": 11,
+    "common_suffix_steps": 12,
+    "exact_terminal_equality": true,
+    "exact_certificate_full_state_trace_hashes": {
+      "a": "dc1c4579d095d4c9815ffcc3a6440313f2062b1e31a2b82b26590c8aa7f79069",
+      "b": "451d2dcd962761da662f13fd7dc9dcfa5f1110237616aef69ae3280d65b14d4a"
+    },
+    "source_certificate_sha256": "7b5650677477b8247a2615e7f764cd8bb260b3980f84cc43270644af0e222ef4"
+  }
+}
