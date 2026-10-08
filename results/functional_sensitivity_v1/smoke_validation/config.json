@@ -1,0 +1,134 @@
+{
+  "protocol": "docs/temporal-functional-sensitivity-protocol.md",
+  "namespace": "results/functional_sensitivity_v1",
+  "baseline_commit": "4a72db553f80317c282f48561e33b5edbfc3a765",
+  "cache": "outputs/tdc_v2/whole_cache",
+  "levels": [
+    "legacy5",
+    "brain5"
+  ],
+  "circuit_seeds": [
+    701
+  ],
+  "primary_level": "legacy5",
+  "blocks": [
+    {
+      "seed": 1500001,
+      "input_seed": 1510001,
+      "train_seed": 1520001,
+      "test_seed": 1530001
+    },
+    {
+      "seed": 1500002,
+      "input_seed": 1510002,
+      "train_seed": 1520002,
+      "test_seed": 1530002
+    },
+    {
+      "seed": 1500003,
+      "input_seed": 1510003,
+      "train_seed": 1520003,
+      "test_seed": 1530003
+    },
+    {
+      "seed": 1500004,
+      "input_seed": 1510004,
+      "train_seed": 1520004,
+      "test_seed": 1530004
+    },
+    {
+      "seed": 1500005,
+      "input_seed": 1510005,
+      "train_seed": 1520005,
+      "test_seed": 1530005
+    },
+    {
+      "seed": 1500006,
+      "input_seed": 1510006,
+      "train_seed": 1520006,
+      "test_seed": 1530006
+    }
+  ],
+  "blocks_by_level": {
+    "legacy5": [
+      1500001
+    ],
+    "brain5": [
+      1500001
+    ]
+  },
+  "alphabet_size": 10,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "gain": 0.9,
+  "normalization": "incoming_l1",
+  "leak": 0.6,
+  "carry_multiplier": 0.0,
+  "synaptic_history": true,
+  "schedule": "mbon_after_kc",
+  "alpha": 1.0,
+  "warmup": 200,
+  "train_samples": 300,
+  "test_samples": 200,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "probe_count": 32,
+  "anchor_rule": "warmup + floor(linspace(0,test_samples-1-max(lags),32))",
+  "direction": "input_pattern[(symbol+1)%10] - input_pattern[symbol]; pulse interpolation eta at one anchor only",
+  "finite_difference_probe_indices": [
+    0,
+    10,
+    21,
+    31
+  ],
+  "finite_difference_epsilons": [
+    0.0001,
+    1e-05
+  ],
+  "finite_difference_atol": 2e-09,
+  "finite_difference_rtol": 2e-05,
+  "complex_step_size": 1e-20,
+  "complex_step_atol": 1e-12,
+  "complex_step_rtol": 1e-09,
+  "reduction_atol": 1e-12,
+  "reduction_rtol": 1e-12,
+  "minimum_current_gain": 1e-08,
+  "primary_lag": 5,
+  "maximum_primary_relative_gain": 0.1,
+  "primary_rule": "normalized squared RMS observed symbol-contrast gain at lag5 <= lag0/100 in every six primary blocks; exact saved-float rational arithmetic",
+  "bootstrap_seed": 1540001,
+  "bootstrap_draws": 10000,
+  "neural_workers": 4,
+  "max_seconds": 7200,
+  "max_rss_bytes": 4294967296,
+  "smoke": {
+    "train_samples": 300,
+    "test_samples": 200,
+    "blocks": 1
+  },
+  "instantaneous_reference": "same current KC-to-MBON block with prior-state drive disabled; analytic and replay-certified zero influence after lag0",
+  "replacement_eta": 1.0,
+  "graph_searches": 0,
+  "biological_plasticity_performed": false
+}

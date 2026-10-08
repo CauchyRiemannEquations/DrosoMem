@@ -1,0 +1,71 @@
+{
+  "smoke": true,
+  "outcome": "smoke",
+  "primary_pass": null,
+  "levels": {
+    "legacy5": {
+      "eligible": true,
+      "registered_rule_pass": null,
+      "outcome": "smoke",
+      "cells": [
+        {
+          "level": "legacy5",
+          "seed": 1500001,
+          "eligible": true,
+          "scientific_rule_pass": true,
+          "s0_numerator": 9552064560193561664638858831881235376816361241,
+          "s0_denominator": 146179461337094861426520675821508993750521736069120,
+          "s5_numerator": 3399180600947000671903882696679811750662687183,
+          "s5_denominator": 1064446353131983204272051001182045934937132499447316480,
+          "current_gain": 0.008083611739753298,
+          "relative_gain": 0.006990685826960019,
+          "invalid_reason": null
+        }
+      ],
+      "relative_lag5_gain": {
+        "mean": 0.006990685826960019,
+        "median": 0.006990685826960019,
+        "sd": 0.0,
+        "bootstrap_lo": 0.006990685826960019,
+        "bootstrap_hi": 0.006990685826960019
+      }
+    },
+    "brain5": {
+      "eligible": true,
+      "registered_rule_pass": null,
+      "outcome": "smoke",
+      "cells": [
+        {
+          "level": "brain5",
+          "seed": 1500001,
+          "eligible": true,
+          "scientific_rule_pass": true,
+          "s0_numerator": 1048665329179786038431618797946519074512351005,
+          "s0_denominator": 467774276278703556564866162628828780001669555421184,
+          "s5_numerator": 49881354196912025825827008969783764691801987586273,
+          "s5_denominator": 642904069928672114151995606754507839005039861098510331391508480,
+          "current_gain": 0.0014972705658324078,
+          "relative_gain": 0.00018603546453735452,
+          "invalid_reason": null
+        }
+      ],
+      "relative_lag5_gain": {
+        "mean": 0.00018603546453735452,
+        "median": 0.00018603546453735452,
+        "sd": 0.0,
+        "bootstrap_lo": 0.00018603546453735452,
+        "bootstrap_hi": 0.00018603546453735452
+      }
+    }
+  },
+  "cases": 2,
+  "lag_heads": 42,
+  "probe_pairs": 64,
+  "selected_full_fd_probes": 8,
+  "criterion_unchanged": true,
+  "biological_plasticity_performed": false,
+  "unique_cycle_effect_claim": false,
+  "memory_loss_from_attenuation_claim": false,
+  "m1_outcome_unchanged": "assay-invalid",
+  "m4_outcome_unchanged": "INFEASIBLE"
+}

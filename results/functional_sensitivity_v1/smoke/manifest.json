@@ -1,0 +1,190 @@
+{
+  "complete": true,
+  "smoke": true,
+  "config": {
+    "protocol": "docs/temporal-functional-sensitivity-protocol.md",
+    "namespace": "results/functional_sensitivity_v1",
+    "baseline_commit": "4a72db553f80317c282f48561e33b5edbfc3a765",
+    "cache": "outputs/tdc_v2/whole_cache",
+    "levels": [
+      "legacy5",
+      "brain5"
+    ],
+    "circuit_seeds": [
+      701
+    ],
+    "primary_level": "legacy5",
+    "blocks": [
+      {
+        "seed": 1500001,
+        "input_seed": 1510001,
+        "train_seed": 1520001,
+        "test_seed": 1530001
+      },
+      {
+        "seed": 1500002,
+        "input_seed": 1510002,
+        "train_seed": 1520002,
+        "test_seed": 1530002
+      },
+      {
+        "seed": 1500003,
+        "input_seed": 1510003,
+        "train_seed": 1520003,
+        "test_seed": 1530003
+      },
+      {
+        "seed": 1500004,
+        "input_seed": 1510004,
+        "train_seed": 1520004,
+        "test_seed": 1530004
+      },
+      {
+        "seed": 1500005,
+        "input_seed": 1510005,
+        "train_seed": 1520005,
+        "test_seed": 1530005
+      },
+      {
+        "seed": 1500006,
+        "input_seed": 1510006,
+        "train_seed": 1520006,
+        "test_seed": 1530006
+      }
+    ],
+    "blocks_by_level": {
+      "legacy5": [
+        1500001
+      ],
+      "brain5": [
+        1500001
+      ]
+    },
+    "alphabet_size": 10,
+    "input_fraction": 0.1,
+    "input_amplitude": 0.5,
+    "gain": 0.9,
+    "normalization": "incoming_l1",
+    "leak": 0.6,
+    "carry_multiplier": 0.0,
+    "synaptic_history": true,
+    "schedule": "mbon_after_kc",
+    "alpha": 1.0,
+    "warmup": 200,
+    "train_samples": 300,
+    "test_samples": 200,
+    "lags": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "probe_count": 32,
+    "anchor_rule": "warmup + floor(linspace(0,test_samples-1-max(lags),32))",
+    "direction": "input_pattern[(symbol+1)%10] - input_pattern[symbol]; pulse interpolation eta at one anchor only",
+    "finite_difference_probe_indices": [
+      0,
+      10,
+      21,
+      31
+    ],
+    "finite_difference_epsilons": [
+      0.0001,
+      1e-05
+    ],
+    "finite_difference_atol": 2e-09,
+    "finite_difference_rtol": 2e-05,
+    "complex_step_size": 1e-20,
+    "complex_step_atol": 1e-12,
+    "complex_step_rtol": 1e-09,
+    "reduction_atol": 1e-12,
+    "reduction_rtol": 1e-12,
+    "minimum_current_gain": 1e-08,
+    "primary_lag": 5,
+    "maximum_primary_relative_gain": 0.1,
+    "primary_rule": "normalized squared RMS observed symbol-contrast gain at lag5 <= lag0/100 in every six primary blocks; exact saved-float rational arithmetic",
+    "bootstrap_seed": 1540001,
+    "bootstrap_draws": 10000,
+    "neural_workers": 4,
+    "max_seconds": 7200,
+    "max_rss_bytes": 4294967296,
+    "smoke": {
+      "train_samples": 300,
+      "test_samples": 200,
+      "blocks": 1
+    },
+    "instantaneous_reference": "same current KC-to-MBON block with prior-state drive disabled; analytic and replay-certified zero influence after lag0",
+    "replacement_eta": 1.0,
+    "graph_searches": 0,
+    "biological_plasticity_performed": false
+  },
+  "source_commit": "963eb341aeb34c748759b9aebfeca46b7e92d2d5",
+  "artifacts": {
+    "attempt.json": "46e24755f1d92beda5fc56a4fc31beaa38524bb9e4c64554a6fafa25bd0969d3",
+    "block-sensitivity.csv": "0dd351f828e6a87987b91b598fba52071c3c6015ff3e6210308b5b50fc43b6da",
+    "brain5_s1500001/attempt.json": "41d29154219ad4e09e66602eb4590c6b711867ddee5f37029b806dd6ca44d2b6",
+    "brain5_s1500001/case.npz": "754b0c537a1d0345bb88c52ada6a678fb6b568897fedd6c17c1495b1c7e5ab51",
+    "brain5_s1500001/fd-p00.json": "abc6473d754452a784cce93bb50bcc64a2792c46c2374efe1283238b58dfc36e",
+    "brain5_s1500001/fd-p00.npz": "3be59f478d144009426662d0b23189a43c3cbd96ade9295bcda094755ad3cabe",
+    "brain5_s1500001/fd-p10.json": "7280f3b9c1e747198d79d28eaefbd4c7b71bbbbbd597cb686cca394e686c2918",
+    "brain5_s1500001/fd-p10.npz": "735f955137a8fa48f21071e44c19281e8a8cf04eb5d522df7efc213f41917923",
+    "brain5_s1500001/fd-p21.json": "f5f7c60bc0a7ab32eb489614c37cc2b1f0118b08d3c91b068a08258071c6c287",
+    "brain5_s1500001/fd-p21.npz": "53c2eadef70d2bc39538217aa2368d870eef6ce425e43a09e28eb376bf7a5f5d",
+    "brain5_s1500001/fd-p31.json": "8341566ff7f6b955613b915e553a3f86d5ad97b0ac32563188aa8de57dee2718",
+    "brain5_s1500001/fd-p31.npz": "e577886c5ccf196d3dd0b958f6ba64e86798f8d7a4bbc2d6b2867b1d8cae8b43",
+    "brain5_s1500001/graph.json": "805cc27f0ee8e861c125de1429985d4d2b97764e30fa1c0d1f94b3f805038bab",
+    "brain5_s1500001/manifest.json": "2d5dd0ff623197315b43a0f413aaf0f03c0a1165262f6f8d769decd6abc2ddb7",
+    "brain5_s1500001/metrics.json": "00e511dcc6b86ea71c26de151b2027bbe145bafdb172af35205ff4586821c3aa",
+    "brain5_s1500001/primary-cell.json": "7e77f2a9e21d8266431d85010c42ef05aea6d625f8722f1905b37d1fc794acaa",
+    "brain5_s1500001/probe-info.json": "40cd099a68fd3e12b4cfdddfa698d08adc9ab348eefa219ee30de0fa14b616d8",
+    "brain5_s1500001/resources.json": "81f8b92c542d946573c582133c081f61c67d0b2756460acab05bf63aa87d1f1a",
+    "brain5_s1500001/sensitivity-metrics.json": "6f68b8a98b12426c7a6c61eb2aba8a353eb2c83ca6e0f7d710f40c38a43b0ee8",
+    "config.json": "4199d1344b44e39ad0a83b577727c3081fb6503738b8a1957b34dc3173d5de2c",
+    "functional-sensitivity.png": "eb44e84708dcd27d9e28fc9078e5e2b56d125a6e763975cc9248c77fc5998dd5",
+    "historical-preservation.json": "7ce990c2552ae4d8da7ced96d77546028c64efa4edbd77942956d7dc1a73223b",
+    "job-resources.json": "d906ce6ea7725f56fa6eeaa297d688e496bfbd33aa61d33b01a9053159c9b582",
+    "legacy5_s1500001/attempt.json": "1c62625b57998b5fe71106e17b621a7355cb6b0559ee4d3eda13016d9aac6817",
+    "legacy5_s1500001/case.npz": "a574c23ee59b3af9e0a79090d6a1adef8d6cdd03348cee89455d405a0a4cae62",
+    "legacy5_s1500001/fd-p00.json": "bc21823ba5d1e99dc3766393e2b6f691d3a1541324e3d4f18c8cab846fb94d60",
+    "legacy5_s1500001/fd-p00.npz": "23b4de2ca2fe2245e7f5945619c18406dc88664843980f59572300513858308b",
+    "legacy5_s1500001/fd-p10.json": "2eed7a08450f0f7953c40d27558fcad0572b9ff75e7c01e4e2272ea4767bf978",
+    "legacy5_s1500001/fd-p10.npz": "efba313c2fb0b61f4a250aad244b90ee160db0443d11e63b3cb83a3d3ad4576d",
+    "legacy5_s1500001/fd-p21.json": "77993c4c6d43e85a0ad4966d45e12ff67a29317263c07e5bac3e77de44b9538f",
+    "legacy5_s1500001/fd-p21.npz": "bbc9e90e742f222e2c8ba015ca8ae874eae15824a18d817f652a58dc62b07425",
+    "legacy5_s1500001/fd-p31.json": "d7ae4cc5b8df448aab74aebde0626cdd82463164a44a41b06ede541a4cdc9760",
+    "legacy5_s1500001/fd-p31.npz": "1461d3b601520033755077e9cb8cee66b78f92a61795f57e468078a7d4383ccd",
+    "legacy5_s1500001/graph.json": "8433bb79b13dcac32b635e07e32d24ffbd51343386b92dbb001c0b9d31e02d44",
+    "legacy5_s1500001/manifest.json": "b9d5cfec2807ed7f22b11f68b525a75c8dfede5cfb871c6aae4c53336e1bd488",
+    "legacy5_s1500001/metrics.json": "0c7a8ea3fe1f862784606d3996709c4ca4e88176973f7f36400fcabff2b0ee2b",
+    "legacy5_s1500001/primary-cell.json": "ebbe907bfd43720330d970ff73ca644c6b0ed30763fe27bb56abb2f630f2917b",
+    "legacy5_s1500001/probe-info.json": "857e982d9e037ea76e661cc6433d31a7ce70b64f45e707029b3e2a3ab627c77e",
+    "legacy5_s1500001/resources.json": "02461197f92918eddcf01c5ce7261208c4905376bec962de910aaffdd5ac220c",
+    "legacy5_s1500001/sensitivity-metrics.json": "35431ee112021d99f2a624c900e9ffb532311ad29ca4b1787700c738712543be",
+    "primary-cells.json": "51269ccd78a22903a7e26c25fdc0b39b07ef48d8d500cba07051d75004382d74",
+    "process-tree-resources.json": "95cbff6c1e96bd343e1e9905203af0d08b09c2a3523ffc435a6489d4c0810dba",
+    "raw-lags.csv": "e49aceefa7a2d34bf15b9097aaf498db1015a92e70588d5049c0e068b77863d2",
+    "raw-sensitivity.csv": "1ba220a7df1fd75d0d8878526e9f9cdfc3f1d6b0093af845eb8b408bc13ed9f4",
+    "resources.json": "309a87700dccb089d9fdf24c42f4a9989c65fd5c95d8176f2f94acb723574e13",
+    "sensitivity-summary.csv": "9972f2b8c0771b87d651c2420eba1e9fbed1d9a8439bf98bb5ef0d1d3c447e57",
+    "source.json": "10a2559d04d41880a003fe3818b6eea8750e735be97543f8c69c2968ab0b564d",
+    "summary.json": "fb1dbe06f863f6fcf57bf3fd99513883f37d6459bac7de3761d86832780cf4cb",
+    "tdc-summary.csv": "86cfc6b8a322e3bec722cd1c8d06ba4815cc1023a2a8b3c7f4264d601f9cc86c"
+  }
+}
