@@ -78,6 +78,8 @@ def history_preserved(c=None):
 
 def source_record(c):
     assert subprocess.run(['git', 'diff', '--quiet', 'HEAD']).returncode == 0, 'Tracked edits before execution'
+    revision = git('rev-parse', 'HEAD')
+    revision_tree = git('rev-parse', 'HEAD^{tree}')
     paths = sorted(Path('src/flying').rglob('*.py'))
     paths += [CONFIG, Path(c['protocol']), Path('requirements-act1-lock.txt')]
     paths += [Path('scripts')/name for name in ['m4_support.py', 'cycle_attribution_feasibility.py',
@@ -91,14 +93,18 @@ def source_record(c):
     paths += sorted((cache.parent/'raw').glob('*'))
     for p in paths:
         assert p.is_file(), p
-        if not p.as_posix().startswith('outputs/'):
-            subprocess.run(['git', 'ls-files', '--error-unmatch', p.as_posix()], check=True, stdout=subprocess.DEVNULL)
+    tracked_paths = [p.as_posix() for p in paths if not p.as_posix().startswith('outputs/')]
+    subprocess.run(['git', 'ls-files', '--error-unmatch', '--', *tracked_paths],
+                   check=True, stdout=subprocess.DEVNULL)
     protocol_bytes = subprocess.check_output(['git', 'show', f'{PREREGISTRATION}:{c["protocol"]}'])
     assert hashlib.sha256(protocol_bytes).hexdigest() == sha(c['protocol']), 'Prospective protocol changed'
     subprocess.run(['git', 'merge-base', '--is-ancestor', PREREGISTRATION, 'HEAD'], check=True)
-    return {'source_commit': git('rev-parse', 'HEAD'), 'source_tree': git('rev-parse', 'HEAD^{tree}'),
+    hashes = {p.as_posix(): sha(p) for p in paths}
+    assert git('rev-parse', 'HEAD') == revision, 'HEAD changed during source capture'
+    assert subprocess.run(['git', 'diff', '--quiet', 'HEAD']).returncode == 0, 'Tracked edits during source capture'
+    return {'source_commit': revision, 'source_tree': revision_tree,
             'protocol_commit': PREREGISTRATION, 'initial_protocol_commit': INITIAL_PREREGISTRATION,
-            'tracked_changes': False, 'hashes': {p.as_posix(): sha(p) for p in paths},
+            'tracked_changes': False, 'hashes': hashes,
             'environment': environment(), 'neural_runs': 0, 'decoder_fits': 0, 'graph_searches': 0}
 
 

@@ -1,0 +1,16 @@
+[
+  {
+    "stage": "guard_tests",
+    "manifest_sha256": "6d5c8111842da18ed761fa4bf49395e7ac63fdd179e0f9f20dcbb3e74f0114b0",
+    "record": "guard_tests/source.json",
+    "reason": "Auditor changed during source capture; recorded commit does not authenticate its captured hash",
+    "invalid_source_path": "scripts/audit_cycle_attribution_feasibility.py",
+    "recorded_commit": "c5b4bf025ed0ce8f225947d921a736602daebb50",
+    "recorded_sha256": "8b2a8e3e079da835926fabc2de8c0728f7fc1ba570c2ff7b27b3eefdbc4adbc9",
+    "git_sha256": "92bff8d913c594f8af99679d46c5908b334b193dccac801d37b200c22c76de5c",
+    "source_validation_failed": true,
+    "neural_runs": 0,
+    "parameters_changed": false,
+    "snapshot_path": "validation_failure_001/captured-auditor.py.txt"
+  }
+]

@@ -379,8 +379,7 @@ def stage_replay(stage, c, summary, smoke):
                 validated_degree_obstructions=obstruction_count, outcome=summary['outcome'])
 
 
-def audit(out, main_validation='main_validation', smoke_validation='smoke_validation',
-          guard_stage='guard_tests_retry1'):
+def audit(out, main_validation='main_validation', smoke_validation='smoke_validation'):
     root = NAMESPACE
     c = read(root/'main/config.json')
     fixed_config(c)
@@ -435,6 +434,7 @@ def audit(out, main_validation='main_validation', smoke_validation='smoke_valida
             failures.append(dict(row, failure_sha256=cached(path)))
         failure_files = {path.as_posix() for path in root.rglob('failure.json')
                          if out.resolve() not in path.resolve().parents}
+        assert failure_files == {row['failure_path'] for row in registry}
         attempts = []
         for path in sorted(root.rglob('attempt.json')):
             if out.resolve() in path.resolve().parents:
@@ -444,54 +444,6 @@ def audit(out, main_validation='main_validation', smoke_validation='smoke_valida
             if record['complete'] is False:
                 assert (path.parent/'manifest.json').as_posix() in incomplete, 'Unsealed interrupted attempt'
             attempts.append(dict(path=path.as_posix(), complete=record['complete'], sha256=cached(path)))
-        validation_registry_path = root/'validation-failures.json'
-        validation_registry = read(validation_registry_path) if validation_registry_path.exists() else []
-        assert isinstance(validation_registry, list)
-        validation_failures, invalid_entries, validation_failure_files = [], {}, set()
-        for row in validation_registry:
-            # This explicit exception describes the observed guard-capture race;
-            # it cannot validate a scientific main/smoke source or a modified protocol.
-            assert row['stage'] == 'guard_tests'
-            assert row['record'] == 'guard_tests/source.json'
-            assert row['invalid_source_path'] == 'scripts/audit_cycle_attribution_feasibility.py'
-            assert row['source_validation_failed'] is True
-            assert row['neural_runs'] == 0 and row['parameters_changed'] is False
-            assert isinstance(row['reason'], str) and row['reason'].strip()
-            source_path = root/row['record']
-            assert source_path.is_file()
-            failed_manifest = source_path.parent/'manifest.json'
-            assert cached(failed_manifest) == row['manifest_sha256']
-            failed_record = read(failed_manifest)
-            assert failed_record['complete'] is True
-            assert failed_record['artifacts']['source.json'] == cached(source_path)
-            original_source = read(source_path)
-            assert original_source['source_commit'] == row['recorded_commit']
-            assert original_source['hashes'][row['invalid_source_path']] == row['recorded_sha256']
-            actual_blob = tree(row['recorded_commit'])[row['invalid_source_path']]
-            actual_digest = hashlib.sha256(subprocess.check_output(['git', 'cat-file', 'blob', actual_blob])).hexdigest()
-            assert actual_digest == row['git_sha256'] and actual_digest != row['recorded_sha256']
-            snapshot = (root/row['snapshot_path']).resolve()
-            assert root.resolve() in snapshot.parents and snapshot.is_file()
-            assert cached(snapshot) == row['recorded_sha256']
-            snapshot_manifest = read(snapshot.parent/'manifest.json')
-            assert snapshot_manifest['complete'] is True
-            assert snapshot_manifest['scientifically_valid'] is False
-            assert snapshot_manifest['kind'] == 'preserved-source-validation-failure'
-            assert snapshot_manifest['artifacts'][snapshot.name] == row['recorded_sha256']
-            validation_failure_path = snapshot.parent/'failure.json'
-            assert read(validation_failure_path) == row
-            assert snapshot_manifest['artifacts']['failure.json'] == cached(validation_failure_path)
-            validation_failure_files.add(validation_failure_path.relative_to(Path.cwd()).as_posix())
-            key = (source_path.as_posix(), row['invalid_source_path'])
-            assert key not in invalid_entries
-            invalid_entries[key] = row
-            validation_failures.append(dict(row, source_record_sha256=cached(source_path),
-                snapshot_sha256=cached(snapshot), historical_guard_tests_preserved=True,
-                guard_source_validation='INVALID', authentication='snapshot_only_validation_failed'))
-        assert failure_files == {row['failure_path'] for row in registry} | validation_failure_files
-        assert Path(guard_stage).name == guard_stage
-        assert guard_stage not in {row['stage'] for row in validation_registry}, 'Invalid guard stage cannot certify this closeout'
-        consumed_invalid_entries = set()
         recorded, trees, blobs = [], {}, {}
         pinned = {name: digest for name, digest in read('results/tdc_cycles_v1/main/source.json')['hashes'].items()
                   if name.startswith('outputs/tdc_v2/')}
@@ -515,24 +467,14 @@ def audit(out, main_validation='main_validation', smoke_validation='smoke_valida
                     blob = trees[revision][name]
                     if blob not in blobs:
                         blobs[blob] = hashlib.sha256(subprocess.check_output(['git', 'cat-file', 'blob', blob])).hexdigest()
-                    invalid_key = (path.as_posix(), name)
-                    if expected != blobs[blob]:
-                        assert invalid_key in invalid_entries, ('Unregistered source validation failure', path, name)
-                        failure = invalid_entries[invalid_key]
-                        assert failure['recorded_commit'] == revision
-                        assert failure['recorded_sha256'] == expected and failure['git_sha256'] == blobs[blob]
-                        consumed_invalid_entries.add(invalid_key)
-                        authentication = 'snapshot_only_validation_failed'
-                    else:
-                        assert invalid_key not in invalid_entries
-                        authentication = 'recorded_git_blob'
+                    assert expected == blobs[blob], (path, name)
+                    authentication = 'recorded_git_blob'
                 else:
                     assert name in pinned and expected == pinned[name] == cached(name), (path, name)
                     authentication = 'immutable_pinned_external_bytes'
                 recorded.append(dict(record=path.as_posix(), path=name, sha256=expected,
                                      source_commit=revision, authentication=authentication))
         assert recorded
-        assert consumed_invalid_entries == set(invalid_entries), 'Source validation failure registry was not fully authenticated'
         replay, stage_checks, usage = {}, {}, {}
         for stage, validation in [('smoke', smoke_validation), ('main', main_validation)]:
             smoke = stage == 'smoke'
@@ -616,7 +558,7 @@ def audit(out, main_validation='main_validation', smoke_validation='smoke_valida
                     arrays += 1
                     if value.dtype.kind in 'fci':
                         assert np.isfinite(value).all(), (path, name)
-        guards = read(root/guard_stage/'checks.json')
+        guards = read(root/'guard_tests/checks.json')
         assert guards['all_checks_pass'] is True
         assert type(guards['tests_passed']) is int and guards['tests_passed'] == 29
         assert guards['parameters_changed'] is False
@@ -625,9 +567,6 @@ def audit(out, main_validation='main_validation', smoke_validation='smoke_valida
         allowed_tests = required_tests | {'tests/test_temporal_mechanism.py', 'tests/test_temporal_cycles.py'}
         assert required_tests <= set(guards['test_hashes']) <= allowed_tests
         guard_tree = tree(guards['source_commit'])
-        guard_source = read(root/guard_stage/'source.json')
-        assert guard_source['source_commit'] == guards['source_commit']
-        assert not any(key[0] == (root/guard_stage/'source.json').as_posix() for key in invalid_entries)
         for name, digest in guards['test_hashes'].items():
             data = subprocess.check_output(['git', 'cat-file', 'blob', guard_tree[name]])
             assert hashlib.sha256(data).hexdigest() == digest
@@ -646,7 +585,6 @@ def audit(out, main_validation='main_validation', smoke_validation='smoke_valida
         write(out/'manifest-checks.json', manifests)
         write(out/'attempt-checks.json', attempts)
         write(out/'recorded-source-checks.json', recorded)
-        write(out/'retained-validation-failures.json', validation_failures)
         write(out/'rational-witness-replay.json', replay)
         write(out/'stage-verifier-checks.json', stage_checks)
         write(out/'stage-resources.json', usage)
@@ -658,9 +596,6 @@ def audit(out, main_validation='main_validation', smoke_validation='smoke_valida
             'protocol_precedes_recorded_main_source': True,
             'manifests_checked': len(manifests), 'checksum_entries': sum(row['artifacts'] for row in manifests),
             'recorded_source_entries': len(recorded), 'retained_incomplete_attempts': failures,
-            'retained_validation_failures': validation_failures,
-            'guard_retry_stage': guard_stage, 'original_guard_source_validation': 'INVALID' if validation_failures else None,
-            'registered_scientific_questions_and_main_outcomes_unchanged': True,
             'attempts_checked': len(attempts),
             'archives_inspected': archives, 'arrays_inspected': arrays, 'nonfinite_arrays': 0,
             'exact_degree_and_walk_arithmetic_replayed': True,
@@ -680,6 +615,5 @@ if __name__ == '__main__':
     parser.add_argument('--out', type=Path, required=True)
     parser.add_argument('--main-validation', default='main_validation')
     parser.add_argument('--smoke-validation', default='smoke_validation')
-    parser.add_argument('--guard-stage', default='guard_tests_retry1')
     args = parser.parse_args()
-    audit(args.out, args.main_validation, args.smoke_validation, args.guard_stage)
+    audit(args.out, args.main_validation, args.smoke_validation)
