@@ -82,6 +82,7 @@ def source_record(c):
     paths += [CONFIG, Path(c['protocol']), Path('requirements-act1-lock.txt')]
     paths += [Path('scripts')/name for name in ['m4_support.py', 'cycle_attribution_feasibility.py',
         'verify_cycle_attribution_feasibility.py', 'audit_cycle_attribution_feasibility.py',
+        'run_cycle_attribution_guards.py',
         'cycle_structure.py', 'tdc_support.py', 'verify_temporal_memory_curve.py']]
     paths += [Path('tests')/name for name in ['test_cycle_attribution_feasibility.py', 'test_cycle_attribution_verifier.py']]
     paths += sorted(Path('data/flywire_783_mb_left_kc512_s701').glob('*'))

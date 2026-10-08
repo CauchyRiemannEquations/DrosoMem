@@ -1,0 +1,612 @@
+"""M4 structural feasibility closeout: exact witnesses and authenticated evidence.
+
+No neural trajectory, decoder fit or performance metric is calculated. Only
+frozen independent source loaders are shared with earlier verification code;
+the new experiment's certificate, graph-mask and summary code is not imported.
+"""
+import argparse
+import hashlib
+from itertools import combinations
+from pathlib import Path
+import posixpath
+import re
+import subprocess
+
+import numpy as np
+from scipy import sparse
+
+from m4_support import read, write, sha, array_sha, attempt, seal, git, history_preserved
+from verify_temporal_memory_curve import independent_graph
+
+
+BASELINE = '5afe8f28cc1d820973b9156c20501a0d31c88a26'
+PREREGISTRATION = '2c7a5f593c22909652a1374c9338571656411855'
+INITIAL_PREREGISTRATION = 'a1def337bbe3358bf278a4bb39c19ee1eb9c9a86'
+NAMESPACE = Path('results/cycle_attribution_v1')
+CONFIG = 'configs/cycle_attribution_feasibility.json'
+PROTOCOL = 'docs/cycle-attribution-feasibility-protocol.md'
+OVERVIEWS = {'README.md', 'docs/research-status.md',
+             'docs/research-roadmap.md', 'docs/next-work.md'}
+RULES = ['missing_source_or_sink', 'node_incident_capacity', 'global_dag_density',
+         'within_role_density', 'opposite_role_pair_capacity']
+
+
+def tree(revision):
+    return {line.split('\t', 1)[1]: line.split('\t', 1)[0].split()[2]
+            for line in git('ls-tree', '-r', revision).splitlines()}
+
+
+def fixed_config(c, smoke=False):
+    """Authenticate complete registration and independently assert its limits."""
+    assert (c['baseline_commit'], c['namespace'], c['protocol']) == (BASELINE, NAMESPACE.as_posix(), PROTOCOL)
+    assert c['levels'] == ['legacy5', 'brain5'] and c['primary_level'] == 'legacy5'
+    assert c['circuit_seeds'] == [701]
+    assert c['blocks'] == [{'seed': 1400001+i, 'input_seed': 1410001+i} for i in range(6)]
+    expected_blocks = {'legacy5': list(range(1400001, 1400007)),
+                       'brain5': list(range(1400001, 1400004))}
+    if smoke:
+        expected_blocks = {name: seeds[:1] for name, seeds in expected_blocks.items()}
+    assert c['blocks_by_level'] == expected_blocks
+    assert (c['alphabet_size'], c['input_fraction'], c['input_amplitude'], c['gain']) == (10, .1, .5, .9)
+    assert (c['leak'], c['carry_multiplier'], c['normalization'], c['schedule']) == (.6, 0., 'incoming_l1', 'mbon_after_kc')
+    assert c['lags'] == list(range(21)) and c['degree_certificates'] == RULES
+    assert c['smoke_blocks'] == 1
+    assert (c['neural_runs'], c['decoder_fits'], c['graph_searches']) == (0, 0, 0)
+    assert (c['max_seconds'], c['max_rss_bytes']) == (7200, 4294967296)
+    registered = read(CONFIG)
+    expected = dict(registered, blocks_by_level=expected_blocks)
+    assert c == expected
+    for name in [CONFIG, PROTOCOL]:
+        blob = subprocess.check_output(['git', 'show', PREREGISTRATION+':'+name])
+        assert hashlib.sha256(blob).hexdigest() == sha(name), name
+
+
+def matrix_hash(matrix):
+    return hashlib.sha256(matrix.data.tobytes()+matrix.indices.tobytes()+matrix.indptr.tobytes()).hexdigest()
+
+
+def degree_arithmetic(arrays):
+    """Sufficient DAG obstructions, using only exact integer degrees/role flows."""
+    ids, roles = arrays['root_ids'], arrays['roles']
+    incoming, outgoing = arrays['original_indegree'], arrays['original_outdegree']
+    assert incoming.shape == outgoing.shape == ids.shape == roles.shape
+    assert incoming.dtype.kind in 'iu' and outgoing.dtype.kind in 'iu'
+    assert np.all(incoming >= 0) and np.all(outgoing >= 0)
+    edge_count = int(incoming.sum())
+    assert edge_count == int(outgoing.sum())
+    incident = incoming+outgoing
+    active = incident > 0
+    active_count = int(active.sum())
+    sources = np.flatnonzero(active & (incoming == 0))
+    sinks = np.flatnonzero(active & (outgoing == 0))
+    offenders = np.flatnonzero(incident > max(0, active_count-1))
+    global_capacity = active_count*(active_count-1)//2
+    rules = []
+    if edge_count and (not len(sources) or not len(sinks)):
+        rules.append('missing_source_or_sink')
+    if len(offenders):
+        rules.append('node_incident_capacity')
+    if edge_count > global_capacity:
+        rules.append('global_dag_density')
+    return dict(node_count=len(ids), active_node_count=active_count, edge_count=edge_count,
+                source_indices=sources.tolist(), sink_indices=sinks.tolist(),
+                nonisolated_source_count=len(sources), nonisolated_sink_count=len(sinks),
+                node_incident_capacity=max(0, active_count-1), global_capacity=global_capacity,
+                offenders=offenders.tolist(), rules=rules)
+
+
+def degree_replay(root, arrays, weights):
+    """Rebuild role totals and every registered integer impossibility condition."""
+    record = read(root/'degree-certificates.json')
+    result = degree_arithmetic(arrays)
+    roles, ids = arrays['roles'], arrays['root_ids']
+    post = np.repeat(np.arange(len(ids)), np.diff(weights.indptr))
+    pre = weights.indices
+    unique, counts = np.unique(roles, return_counts=True)
+    count = dict(zip(map(str, unique), map(int, counts)))
+    blocks = {}
+    for first in sorted(count):
+        for second in sorted(count):
+            blocks[first+'->'+second] = int(np.count_nonzero((roles[pre] == first) & (roles[post] == second)))
+    within, pairs = [], []
+    for role, n in sorted(count.items()):
+        total, capacity = blocks[role+'->'+role], n*(n-1)//2
+        within.append(dict(role=role, nodes=n, edges=total, capacity=capacity, obstructed=total > capacity))
+    for first, second in combinations(sorted(count), 2):
+        total = blocks[first+'->'+second]+blocks[second+'->'+first]
+        capacity = count[first]*count[second]
+        pairs.append(dict(roles=[first, second], r_to_s=blocks[first+'->'+second],
+                          s_to_r=blocks[second+'->'+first], edges=total,
+                          capacity=capacity, obstructed=total > capacity))
+    if any(row['obstructed'] for row in within):
+        result['rules'].append('within_role_density')
+    if any(row['obstructed'] for row in pairs):
+        result['rules'].append('opposite_role_pair_capacity')
+    rules = result['rules']
+    status = 'INFEASIBLE' if rules else 'UNRESOLVED'
+    assert record['status'] == status
+    assert record['certified_obstruction'] is bool(rules)
+    assert {row['rule'] for row in record['obstructions']} == set(rules)
+    for name in ['node_count', 'active_node_count', 'edge_count', 'source_indices',
+                 'sink_indices', 'nonisolated_source_count', 'nonisolated_sink_count',
+                 'node_incident_capacity', 'global_capacity']:
+        assert record[name] == result[name], (root, name)
+    offenders = [dict(index=int(i), indegree=int(arrays['original_indegree'][i]),
+                      outdegree=int(arrays['original_outdegree'][i]),
+                      incident=int(arrays['original_indegree'][i]+arrays['original_outdegree'][i]),
+                      capacity=result['node_incident_capacity']) for i in result['offenders']]
+    obstructions = []
+    for rule in rules:
+        if rule == 'missing_source_or_sink':
+            row = dict(rule=rule, source_missing=not bool(result['nonisolated_source_count']),
+                       sink_missing=not bool(result['nonisolated_sink_count']))
+        elif rule == 'node_incident_capacity':
+            row = dict(rule=rule, offender_indices=result['offenders'])
+        elif rule == 'global_dag_density':
+            row = dict(rule=rule, edges=result['edge_count'], capacity=result['global_capacity'])
+        elif rule == 'within_role_density':
+            row = dict(rule=rule, roles=[item['role'] for item in within if item['obstructed']])
+        else:
+            row = dict(rule=rule, role_pairs=[item['roles'] for item in pairs if item['obstructed']])
+        obstructions.append(row)
+    for name, expected in [('node_incident_offenders', offenders), ('role_sizes', count),
+                           ('role_block_counts', blocks), ('within_roles', within),
+                           ('role_pairs', pairs), ('obstructions', obstructions)]:
+        assert record[name] == expected, (root, name)
+    result.update(status=status, role_block_counts=blocks, within_roles=within,
+                  role_pairs=pairs, node_incident_offenders=offenders, obstructions=obstructions)
+    return result
+
+
+def witness_replay(witness, symbols, weights, ids, roles, observed, horizon):
+    """Check every source edge and the compressed same-N arbitrary-lag witness."""
+    assert isinstance(witness['certified'], bool)
+    symbol = witness['symbol']
+    assert isinstance(symbol, int) and 0 <= symbol < 10
+    if not witness['certified']:
+        assert witness['H'] == horizon and witness['node_count'] == len(ids)
+        assert isinstance(witness['reason'], str) and witness['reason'].strip()
+        for name in ['input_path', 'cycle', 'observed_path']:
+            assert witness[name] == []
+        for name in ['A', 'B', 'P', 'k', 'delay', 'k_same_nodes', 'universal_delay',
+                     'anchor_root_id', 'scc_size']:
+            assert witness[name] is None
+        return dict(symbol=symbol, certified=False, status='UNRESOLVED')
+    index = {str(value): i for i, value in enumerate(ids)}
+    def path(value):
+        assert isinstance(value, list) and len(value)
+        assert all(isinstance(root_id, str) and root_id in index for root_id in value)
+        return [index[root_id] for root_id in value]
+    access = path(witness['input_path'])
+    cycle = path(witness['cycle'])
+    exit_path = path(witness['observed_path'])
+    assert access[0] in set(map(int, symbols[symbol]))
+    assert exit_path[-1] in set(map(int, observed))
+    assert len(cycle) >= 3 and cycle[0] == cycle[-1]
+    assert len(set(cycle[:-1])) == len(cycle)-1
+    assert access[-1] == cycle[0] == exit_path[0]
+    assert witness['reason'] is None and witness['anchor_root_id'] == str(ids[cycle[0]])
+    assert type(witness['scc_size']) is int and witness['scc_size'] >= len(cycle)-1
+    def delay(path_indices):
+        value = 0
+        for pre, post in zip(path_indices, path_indices[1:]):
+            assert pre != post and weights[post, pre] != 0, ('Invalid witness edge', ids[pre], ids[post])
+            value += 0 if roles[pre] == 'KC' and roles[post] == 'MBON' else 1
+        return value
+    a, b, p = delay(access), delay(exit_path), delay(cycle)
+    assert p >= 1
+    n = len(ids)
+    k = max(1, (horizon-a-b)//p+1)
+    delay_h = a+k*p+b
+    k_same_nodes = max(1, (n-1-a-b)//p+1)
+    universal_delay = a+k_same_nodes*p+b
+    expected = dict(A=a, B=b, P=p, H=horizon, k=k, delay=delay_h, node_count=n,
+                    k_same_nodes=k_same_nodes, universal_delay=universal_delay)
+    for name, value in expected.items():
+        assert type(witness[name]) is int and witness[name] == value, (name, witness[name], value)
+    assert delay_h > horizon and universal_delay > n-1
+    return dict(symbol=symbol, certified=True, **expected,
+                reference_bound_exceeded=True, same_neuron_dag_bound_exceeded=True,
+                signed_functional_or_memory_influence_inferred=False)
+
+
+def load_structural_level(stage, c, level):
+    """Authenticate saved arrays against independent source coordinates and CSR."""
+    root = stage/level
+    source, _, roles, observed, ids = independent_graph(c, level, c['blocks'][0]['input_seed'])
+    roles = np.asarray(roles, dtype='U5')
+    with np.load(root/'structural-arrays.npz', allow_pickle=False) as archive:
+        arrays = {name: archive[name] for name in archive.files}
+    np.testing.assert_array_equal(arrays['root_ids'], ids)
+    np.testing.assert_array_equal(arrays['roles'], roles)
+    np.testing.assert_array_equal(arrays['observed_indices'], observed)
+    np.testing.assert_array_equal(arrays['original_indegree'], np.diff(source.indptr))
+    np.testing.assert_array_equal(arrays['original_outdegree'], np.bincount(source.indices, minlength=len(ids)))
+    post = np.repeat(np.arange(len(ids)), np.diff(source.indptr))
+    for name, value in [('original_incoming_abs_weight', np.bincount(post, weights=np.abs(source.data), minlength=len(ids))),
+                        ('original_outgoing_abs_weight', np.bincount(source.indices, weights=np.abs(source.data), minlength=len(ids)))]:
+        np.testing.assert_allclose(arrays[name], value, atol=1e-12, rtol=1e-12)
+    sealed_root = Path('results/tdc_cycles_v1/structural_audit')
+    with np.load(sealed_root/(level+'-dag.npz'), allow_pickle=False) as archive:
+        dag = sparse.csr_matrix((archive['data'], archive['indices'], archive['indptr']), shape=tuple(archive['shape']))
+    with np.load(sealed_root/(level+'-per-neuron.npz'), allow_pickle=False) as archive:
+        assert set(archive.files) == set(arrays)
+        for name in archive.files:
+            np.testing.assert_array_equal(archive[name], arrays[name])
+    structure = read(sealed_root/(level+'.json'))
+    assert matrix_hash(source) == structure['original_weight_sha256']
+    assert matrix_hash(dag) == structure['dag_weight_sha256']
+    protected = np.flatnonzero(roles == 'MBON')
+    kc = np.flatnonzero(roles == 'KC')
+    assert (source[protected][:, kc] != dag[protected][:, kc]).nnz == 0
+    assert int(arrays['global_dependency_depth'].max()) == structure['global_dependency_depth']
+    published = read(root/'topology.json')
+    assert published == {name: structure[name] for name in published}, 'Sealed reference topology changed'
+    matrix_record = read(root/'source-matrix.json')
+    for name, expected in [('original_weight_sha256', matrix_hash(source)),
+                           ('dag_weight_sha256', matrix_hash(dag)),
+                           ('root_ids_sha256', array_sha(ids)),
+                           ('roles_sha256', array_sha(roles)),
+                           ('observation_indices_sha256', array_sha(observed)),
+                           ('sealed_dag_file_sha256', sha(sealed_root/(level+'-dag.npz')))]:
+        assert matrix_record[name] == expected, name
+    assert matrix_record['sealed_m3_mask_exact'] is True
+    source_graph = matrix_record['source_graph']
+    assert source_graph['weight_sha256'] == matrix_record['original_weight_sha256']
+    assert source_graph['observation_root_ids'] == ids[observed].astype(str).tolist()
+    pinned = read('results/tdc_cycles_v1/main/source.json')['hashes']
+    for name, digest in source_graph['graph_cache_hashes'].items():
+        assert digest == pinned['outputs/tdc_v2/whole_cache/'+name]
+    for name, context in source_graph['source'].items():
+        assert context['sha256'] == pinned['outputs/tdc_v2/raw/'+name]
+    mismatch = read(root/'mismatch.json')
+    expected_mismatch = {}
+    for suffix, name in [('indegree', 'indegree_mismatch_count'),
+                         ('outdegree', 'outdegree_mismatch_count'),
+                         ('incoming_abs_weight', 'incoming_mass_mismatch_count'),
+                         ('outgoing_abs_weight', 'outgoing_mass_mismatch_count')]:
+        expected_mismatch[name] = int(np.count_nonzero(arrays['original_'+suffix] != arrays['dag_'+suffix]))
+    dag_post = np.repeat(np.arange(len(ids)), np.diff(dag.indptr))
+    source_post = np.repeat(np.arange(len(ids)), np.diff(source.indptr))
+    blocks_equal = all(int(np.count_nonzero((roles[source.indices] == first) & (roles[source_post] == second))) ==
+                       int(np.count_nonzero((roles[dag.indices] == first) & (roles[dag_post] == second)))
+                       for first in np.unique(roles) for second in np.unique(roles))
+    expected_mismatch.update(current_block_exact=True,
+        degree_equal=not bool(expected_mismatch['indegree_mismatch_count'] or expected_mismatch['outdegree_mismatch_count']),
+        weight_mass_equal=not bool(expected_mismatch['incoming_mass_mismatch_count'] or expected_mismatch['outgoing_mass_mismatch_count']),
+        role_blocks_equal=blocks_equal, exact_comparison=True)
+    assert mismatch == expected_mismatch
+    return source, dag, ids, roles, observed, arrays, structure
+
+
+def scheduled_support(matrix, roles, selected, observed):
+    """Boolean walk support, with zero-delay closure followed by each lag step."""
+    target = np.repeat(np.arange(matrix.shape[0]), np.diff(matrix.indptr))
+    current = (roles[matrix.indices] == 'KC') & (roles[target] == 'MBON')
+    zero = sparse.csr_matrix((current, matrix.indices, matrix.indptr), shape=matrix.shape, copy=True)
+    delayed = sparse.csr_matrix((~current, matrix.indices, matrix.indptr), shape=matrix.shape, copy=True)
+    zero.eliminate_zeros()
+    delayed.eliminate_zeros()
+    result = np.zeros((10, 21, len(observed)), dtype=bool)
+    for symbol, input_indices in enumerate(selected):
+        active = np.zeros(matrix.shape[0], dtype=bool)
+        active[input_indices] = True
+        active |= zero@active
+        result[symbol, 0] = active[observed]
+        for lag in range(1, 21):
+            active = delayed@active
+            active |= zero@active
+            result[symbol, lag] = active[observed]
+    return result
+
+
+def stage_replay(stage, c, summary, smoke):
+    """Independent integer endpoint replay; absent obstruction stays UNRESOLVED."""
+    replay, mappings, certified_total, obstruction_count = {}, 0, 0, 0
+    for level in c['levels']:
+        root = stage/level
+        weights, dag, ids, roles, observed, arrays, structure = load_structural_level(stage, c, level)
+        degree = degree_replay(root, arrays, weights)
+        cells, witness_details = [], []
+        for seed in c['blocks_by_level'][level]:
+            mapping_path = root/f'mapping-s{seed}.npz'
+            with np.load(mapping_path, allow_pickle=False) as archive:
+                assert set(archive.files) == {'input_indices', 'lag_support_original', 'lag_support_dag',
+                                              'zero_state_original', 'zero_state_dag'}
+                selected = archive['input_indices']
+                mapping = read(root/f'mapping-s{seed}.json')
+                assert set(archive.files) == set(mapping['array_hashes'])
+                for name in archive.files:
+                    assert array_sha(archive[name]) == mapping['array_hashes'][name]
+                assert selected.shape == (10, 51) and selected.dtype.kind in 'iu'
+                assert np.all((selected >= 0) & (selected < len(ids)))
+                assert np.all(roles[selected] == 'KC')
+                assert all(len(np.unique(row)) == 51 for row in selected)
+                block = next(block for block in c['blocks'] if block['seed'] == seed)
+                assert mapping['seed'] == seed and mapping['input_seed'] == block['input_seed']
+                assert mapping['input_root_ids'] == [ids[row].astype(str).tolist() for row in selected]
+                assert mapping['observation_root_ids'] == ids[observed].astype(str).tolist()
+                assert mapping['zero_state_current_exact'] is True
+                assert mapping['structural_walk_support_only'] is True
+                assert mapping['current_decoding_measured'] is False
+                _, independent_patterns, _, _, independent_ids = independent_graph(c, level, block['input_seed'])
+                np.testing.assert_array_equal(independent_ids, ids)
+                for symbol in range(10):
+                    np.testing.assert_array_equal(np.sort(selected[symbol]),
+                                                  np.flatnonzero(independent_patterns[symbol]))
+                for name in ['lag_support_original', 'lag_support_dag']:
+                    assert archive[name].shape == (10, 21, 48) and archive[name].dtype.kind == 'b'
+                np.testing.assert_array_equal(archive['lag_support_original'], scheduled_support(weights, roles, selected, observed))
+                np.testing.assert_array_equal(archive['lag_support_dag'], scheduled_support(dag, roles, selected, observed))
+                for name in ['zero_state_original', 'zero_state_dag']:
+                    assert archive[name].shape == (10, 48)
+                np.testing.assert_array_equal(archive['zero_state_original'], archive['zero_state_dag'])
+                prototype = c['leak']*np.tanh(c['leak']*np.tanh(c['input_amplitude'])*
+                    np.column_stack([np.asarray(weights[observed][:, row].sum(axis=1)).ravel() for row in selected]).T)
+                np.testing.assert_allclose(archive['zero_state_original'], prototype, atol=1e-12, rtol=1e-12)
+            witnesses = read(root/f'witnesses-s{seed}.json')
+            assert isinstance(witnesses, list) and len(witnesses) == 10
+            assert [value['symbol'] for value in witnesses] == list(range(10))
+            for witness in witnesses:
+                details = witness_replay(witness, selected, weights, ids, roles, observed,
+                                         structure['global_dependency_depth'])
+                cells.append(dict(seed=seed, symbol=witness['symbol'], certified=witness['certified']))
+                witness_details.append(dict(seed=seed, **details))
+            mappings += 1
+        witness_count = sum(cell['certified'] for cell in cells)
+        path_status = 'INFEASIBLE' if witness_count else 'UNRESOLVED'
+        outcome = 'INFEASIBLE' if degree['status'] == 'INFEASIBLE' or witness_count else 'UNRESOLVED'
+        expected = dict(degree_role_status=degree['status'], all_lag_path_status=path_status,
+                        outcome=outcome, witness_count=witness_count, cell_count=len(cells),
+                        cells=cells, degree_obstruction_rules=degree['rules'])
+        actual = summary['levels'][level]
+        for name, value in expected.items():
+            assert actual[name] == value, (stage, level, name)
+        replay[level] = dict(**expected, degree_arithmetic=degree, witness_arithmetic=witness_details)
+        certified_total += witness_count
+        obstruction_count += len(degree['rules'])
+    assert mappings == (2 if smoke else 9)
+    assert summary['outcome'] == (None if smoke else replay[c['primary_level']]['outcome'])
+    assert summary['smoke'] is smoke
+    assert summary['neural_runs'] == summary['decoder_fits'] == 0
+    assert summary['graph_searches'] == 0
+    assert summary['functional_cycle_effect_claim'] is False
+    assert summary['biological_plasticity_performed'] is False
+    assert summary['exact_all_lag_ideal_only'] is True
+    assert summary['absence_of_obstruction_is_not_feasible'] is True
+    return dict(levels=replay, mapping_cases=mappings,
+                witness_cells=10*mappings, certified_witnesses=certified_total,
+                validated_degree_obstructions=obstruction_count, outcome=summary['outcome'])
+
+
+def audit(out, main_validation='main_validation', smoke_validation='smoke_validation'):
+    root = NAMESPACE
+    c = read(root/'main/config.json')
+    fixed_config(c)
+    with attempt(out, c, 'm4-feasibility-closeout'):
+        preservation = history_preserved(c)
+        assert preservation['prior_result_identities_preserved'] == 43983
+        old = read(root/'baseline_audit/baseline-git-blobs.json')
+        assert old == tree(BASELINE)
+        current = tree('HEAD')
+        protected = {name: blob for name, blob in old.items() if name not in OVERVIEWS}
+        assert all(current.get(name) == blob for name, blob in protected.items())
+        names = sorted(name for name in protected if Path(name).is_file())
+        materialized = subprocess.run(['git', 'hash-object', '--stdin-paths'],
+            input='\n'.join(names)+'\n', text=True, capture_output=True, check=True).stdout.splitlines()
+        assert len(materialized) == len(names)
+        assert all(blob == protected[name] for name, blob in zip(names, materialized))
+        digests = {}
+        def cached(path):
+            path = Path(path).resolve()
+            if path not in digests:
+                digests[path] = sha(path)
+            return digests[path]
+        manifests, incomplete = [], []
+        for path in sorted(root.rglob('manifest.json')):
+            if out.resolve() in path.resolve().parents:
+                continue
+            record = read(path)
+            for name, digest in record['artifacts'].items():
+                target = (path.parent/name).resolve()
+                assert path.parent.resolve() in target.parents
+                assert cached(target) == digest, (path, name)
+            complete = record.get('complete', True)
+            assert isinstance(complete, bool)
+            manifests.append(dict(path=path.as_posix(), sha256=cached(path),
+                                  artifacts=len(record['artifacts']), complete=complete))
+            if not complete:
+                incomplete.append(path.as_posix())
+        registry_path = root/'known-incomplete-attempts.json'
+        registry = read(registry_path) if registry_path.exists() else []
+        assert isinstance(registry, list)
+        assert sorted(row['manifest_path'] for row in registry) == sorted(incomplete)
+        failures = []
+        for row in registry:
+            assert isinstance(row['reason'], str) and row['reason'].strip()
+            path = Path(row['failure_path'])
+            assert root.resolve() in path.resolve().parents
+            failure = read(path)
+            assert failure['complete'] is False and failure['message']
+            failures.append(dict(row, failure_sha256=cached(path)))
+        failure_files = {path.as_posix() for path in root.rglob('failure.json')
+                         if out.resolve() not in path.resolve().parents}
+        assert failure_files == {row['failure_path'] for row in registry}
+        attempts = []
+        for path in sorted(root.rglob('attempt.json')):
+            if out.resolve() in path.resolve().parents:
+                continue
+            record = read(path)
+            assert isinstance(record['complete'], bool)
+            if record['complete'] is False:
+                assert (path.parent/'manifest.json').as_posix() in incomplete, 'Unsealed interrupted attempt'
+            attempts.append(dict(path=path.as_posix(), complete=record['complete'], sha256=cached(path)))
+        recorded, trees, blobs = [], {}, {}
+        pinned = {name: digest for name, digest in read('results/tdc_cycles_v1/main/source.json')['hashes'].items()
+                  if name.startswith('outputs/tdc_v2/')}
+        for path in sorted(root.rglob('source.json')):
+            if out.resolve() in path.resolve().parents:
+                continue
+            source = read(path)
+            revision = source['source_commit']
+            if revision not in trees:
+                trees[revision] = tree(revision)
+            assert source['source_tree'] == git('rev-parse', revision+'^{tree}')
+            assert source['tracked_changes'] is False
+            assert source['protocol_commit'] == PREREGISTRATION
+            assert source['initial_protocol_commit'] == INITIAL_PREREGISTRATION
+            assert source['neural_runs'] == source['decoder_fits'] == source['graph_searches'] == 0
+            subprocess.run(['git', 'merge-base', '--is-ancestor', PREREGISTRATION, revision], check=True)
+            for name in [CONFIG, PROTOCOL]:
+                assert trees[revision][name] == tree(PREREGISTRATION)[name]
+            for name, expected in source['hashes'].items():
+                if name in trees[revision]:
+                    blob = trees[revision][name]
+                    if blob not in blobs:
+                        blobs[blob] = hashlib.sha256(subprocess.check_output(['git', 'cat-file', 'blob', blob])).hexdigest()
+                    assert expected == blobs[blob], (path, name)
+                    authentication = 'recorded_git_blob'
+                else:
+                    assert name in pinned and expected == pinned[name] == cached(name), (path, name)
+                    authentication = 'immutable_pinned_external_bytes'
+                recorded.append(dict(record=path.as_posix(), path=name, sha256=expected,
+                                     source_commit=revision, authentication=authentication))
+        assert recorded
+        replay, stage_checks, usage = {}, {}, {}
+        for stage, validation in [('smoke', smoke_validation), ('main', main_validation)]:
+            smoke = stage == 'smoke'
+            stage_root = root/stage
+            saved_config = read(stage_root/'config.json')
+            fixed_config(saved_config, smoke)
+            summary = read(stage_root/'summary.json')
+            manifest = read(stage_root/'manifest.json')
+            source = read(stage_root/'source.json')
+            assert all(name in source['hashes'] for name in ['scripts/m4_support.py',
+                'scripts/cycle_attribution_feasibility.py', 'scripts/verify_cycle_attribution_feasibility.py',
+                'scripts/audit_cycle_attribution_feasibility.py', 'scripts/cycle_structure.py',
+                'scripts/verify_temporal_memory_curve.py', CONFIG, PROTOCOL,
+                'tests/test_cycle_attribution_feasibility.py', 'tests/test_cycle_attribution_verifier.py'])
+            assert manifest['complete'] is True and manifest['source_commit'] == source['source_commit']
+            assert manifest['smoke'] is smoke
+            checks = read(root/validation/'checks.json')
+            assert checks['all_checks_pass'] is True
+            assert checks['result_manifest_sha256'] == cached(stage_root/'manifest.json')
+            assert checks['source_commit'] == source['source_commit']
+            assert checks['protocol_commit'] == PREREGISTRATION
+            assert checks['neural_runs'] == checks['decoder_fits'] == 0
+            assert checks['graph_searches'] == 0 and checks['current_decoding_measured'] is False
+            for name in ['raw_source_graphs_authenticated', 'rank_mask_independently_reconstructed',
+                         'graph_support_and_analytic_response_independently_recalculated',
+                         'deterministic_witness_selection_and_universal_bound_verified',
+                         'cross_level_input_root_ids_paired']:
+                assert checks[name] is True
+            verifier_path = 'scripts/verify_cycle_attribution_feasibility.py'
+            verifier_blob = tree(checks['verifier_commit'])[verifier_path]
+            verifier_bytes = subprocess.check_output(['git', 'cat-file', 'blob', verifier_blob])
+            assert hashlib.sha256(verifier_bytes).hexdigest() == checks['verifier_sha256'] == source['hashes'][verifier_path]
+            validation_source = read(root/validation/'source-validation.json')
+            assert validation_source['result_source_commit'] == source['source_commit']
+            assert validation_source['protocol_commit'] == PREREGISTRATION
+            assert validation_source['source_hashes_checked'] == len(source['hashes'])
+            assert validation_source['neural_runs'] == validation_source['decoder_fits'] == 0
+            assert read(root/validation/'recomputed-summary.json') == summary
+            replay[stage] = stage_replay(stage_root, saved_config, summary, smoke)
+            for name in ['outcome', 'mapping_cases', 'witness_cells', 'certified_witnesses',
+                         'validated_degree_obstructions']:
+                assert checks[name] == replay[stage][name], (stage, name)
+            for level, values in replay[stage]['levels'].items():
+                for name in ['degree_role_status', 'all_lag_path_status', 'outcome', 'witness_count',
+                             'cell_count', 'cells', 'degree_obstruction_rules']:
+                    assert checks['levels'][level][name] == values[name]
+                for seed in saved_config['blocks_by_level'][level]:
+                    fresh = read(root/validation/level/f'witness-checks-s{seed}.json')
+                    actual = [row for row in values['witness_arithmetic'] if row['seed'] == seed]
+                    assert len(fresh) == len(actual) == 10
+                    for left, right in zip(fresh, actual):
+                        assert left['symbol'] == right['symbol'] and left['certified'] is right['certified']
+                        if right['certified']:
+                            for name in ['A', 'B', 'P', 'H', 'k', 'delay', 'node_count', 'k_same_nodes', 'universal_delay']:
+                                assert left[name] == right[name]
+                            assert left['every_edge_and_endpoint_valid'] is True
+                            assert left['deterministic_paths_independently_recalculated'] is True
+                        else:
+                            assert left['independently_absent_relevant_cycle'] is True
+            raw_source = read(root/validation/'source-graph-audit.json')
+            for name in ['full_graph_rebuilt_from_pinned_parquet',
+                         'roles_rebuilt_from_pinned_annotations', 'partial_induced_graph_exact']:
+                assert raw_source[name] is True
+            for name, digest in raw_source['raw_source_sha256'].items():
+                assert digest == pinned['outputs/tdc_v2/raw/'+name]
+            stage_checks[stage] = checks
+            for folder in [stage, validation]:
+                resource = read(root/folder/'resources.json')
+                assert resource['seconds'] <= 7200
+                assert resource['peak_sampled_rss_bytes'] <= 4294967296
+                assert (resource.get('os_process_peak_working_set_bytes') or 0) <= 4294967296
+                usage[folder] = resource
+        arrays = archives = 0
+        for path in sorted(root.rglob('*.npz')):
+            with np.load(path, allow_pickle=False) as archive:
+                archives += 1
+                for name in archive.files:
+                    value = archive[name]
+                    arrays += 1
+                    if value.dtype.kind in 'fci':
+                        assert np.isfinite(value).all(), (path, name)
+        guards = read(root/'guard_tests/checks.json')
+        assert guards['all_checks_pass'] is True
+        assert type(guards['tests_passed']) is int and guards['tests_passed'] > 0
+        assert guards['parameters_changed'] is False
+        assert set(guards['test_hashes']) == {'tests/test_cycle_attribution_feasibility.py',
+                                             'tests/test_cycle_attribution_verifier.py'}
+        guard_tree = tree(guards['source_commit'])
+        for name, digest in guards['test_hashes'].items():
+            data = subprocess.check_output(['git', 'cat-file', 'blob', guard_tree[name]])
+            assert hashlib.sha256(data).hexdigest() == digest
+        documents = [PROTOCOL, 'docs/cycle-attribution-feasibility-results.md', *sorted(OVERVIEWS)]
+        links = []
+        for name in documents:
+            assert Path(name).is_file()
+            for target in re.findall(r'\]\(([^)]+)\)', Path(name).read_text(encoding='utf-8')):
+                if '://' in target or target.startswith(('#', 'mailto:', 'app:')):
+                    continue
+                target = target.strip('<>')
+                destination = posixpath.normpath(posixpath.join(Path(name).parent.as_posix(), target.split('#')[0]))
+                assert (destination in current or Path(destination).exists()
+                        or Path(destination).resolve() == (out/'audit.json').resolve()), (name, target)
+                links.append(dict(document=name, target=target, destination=destination))
+        write(out/'manifest-checks.json', manifests)
+        write(out/'attempt-checks.json', attempts)
+        write(out/'recorded-source-checks.json', recorded)
+        write(out/'rational-witness-replay.json', replay)
+        write(out/'stage-verifier-checks.json', stage_checks)
+        write(out/'stage-resources.json', usage)
+        write(out/'document-links.json', links)
+        write(out/'document-sha256.json', {name: cached(name) for name in documents})
+        write(out/'audit.json', {**preservation, 'all_checks_pass': True,
+            'source_commit': git('rev-parse', 'HEAD'), 'audit_source_sha256': sha(__file__),
+            'protocol_commit': PREREGISTRATION, 'initial_protocol_commit': INITIAL_PREREGISTRATION,
+            'protocol_precedes_recorded_main_source': True,
+            'manifests_checked': len(manifests), 'checksum_entries': sum(row['artifacts'] for row in manifests),
+            'recorded_source_entries': len(recorded), 'retained_incomplete_attempts': failures,
+            'attempts_checked': len(attempts),
+            'archives_inspected': archives, 'arrays_inspected': arrays, 'nonfinite_arrays': 0,
+            'exact_degree_and_walk_arithmetic_replayed': True,
+            'same_neuron_dag_bound_independently_replayed': True,
+            'outcome': replay['main']['outcome'], 'mapping_cases': replay['main']['mapping_cases'],
+            'witness_cells': replay['main']['witness_cells'],
+            'certified_witnesses': replay['main']['certified_witnesses'],
+            'validated_degree_obstructions': replay['main']['validated_degree_obstructions'],
+            'neural_runs': 0, 'decoder_fits': 0, 'performance_curves_generated': 0,
+            'biological_plasticity_performed': False, 'guards': guards})
+    seal(out, dict(complete=True, kind='m4-feasibility-closeout', source_commit=git('rev-parse', 'HEAD')))
+    print(read(out/'audit.json'), flush=True)
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--out', type=Path, required=True)
+    parser.add_argument('--main-validation', default='main_validation')
+    parser.add_argument('--smoke-validation', default='smoke_validation')
+    args = parser.parse_args()
+    audit(args.out, args.main_validation, args.smoke_validation)
