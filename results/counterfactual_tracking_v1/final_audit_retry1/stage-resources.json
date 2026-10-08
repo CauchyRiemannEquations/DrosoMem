@@ -1,0 +1,54 @@
+{
+  "results/counterfactual_tracking_v1/smoke": {
+    "seconds": 53.615794299999834,
+    "peak_sampled_rss_bytes": 176705536,
+    "os_process_peak_working_set_bytes": 183468032,
+    "sample_seconds": 0.05,
+    "process_tree": {
+      "seconds": 19.020486499997787,
+      "peak_sampled_process_tree_rss_bytes": 478175232,
+      "maximum_observed_processes": 7,
+      "sample_seconds": 0.05,
+      "interpretation": "Sum of live RSS, includes launcher/children and shared pages; not an OS exact aggregate peak"
+    }
+  },
+  "results/counterfactual_tracking_v1/smoke_validation": {
+    "seconds": 64.7727331999995,
+    "peak_sampled_rss_bytes": 567021568,
+    "os_process_peak_working_set_bytes": 567611392,
+    "sample_seconds": 0.05,
+    "process_tree": {
+      "seconds": 24.33700239999962,
+      "peak_sampled_process_tree_rss_bytes": 620793856,
+      "maximum_observed_processes": 7,
+      "sample_seconds": 0.05,
+      "interpretation": "Sum of live RSS, includes launcher/children and shared pages; not an OS exact aggregate peak"
+    }
+  },
+  "results/counterfactual_tracking_v1/main": {
+    "seconds": 97.67131349999909,
+    "peak_sampled_rss_bytes": 180047872,
+    "os_process_peak_working_set_bytes": 184651776,
+    "sample_seconds": 0.05,
+    "process_tree": {
+      "seconds": 64.12809239999842,
+      "peak_sampled_process_tree_rss_bytes": 884895744,
+      "maximum_observed_processes": 11,
+      "sample_seconds": 0.05,
+      "interpretation": "Sum of live RSS, includes launcher/children and shared pages; not an OS exact aggregate peak"
+    }
+  },
+  "results/counterfactual_tracking_v1/main_validation": {
+    "seconds": 110.71904789999826,
+    "peak_sampled_rss_bytes": 587780096,
+    "os_process_peak_working_set_bytes": 588034048,
+    "sample_seconds": 0.05,
+    "process_tree": {
+      "seconds": 68.17486719999943,
+      "peak_sampled_process_tree_rss_bytes": 1000554496,
+      "maximum_observed_processes": 12,
+      "sample_seconds": 0.05,
+      "interpretation": "Sum of live RSS, includes launcher/children and shared pages; not an OS exact aggregate peak"
+    }
+  }
+}
