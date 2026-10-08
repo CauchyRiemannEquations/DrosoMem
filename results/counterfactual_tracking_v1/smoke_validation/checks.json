@@ -1,0 +1,68 @@
+{
+  "all_checks_pass": true,
+  "outcome": "smoke",
+  "primary_pass": null,
+  "cases": 2,
+  "replayed_streams": 2,
+  "exact_full_state_hashes": 2,
+  "old_head_independent_svd_authentications": 2,
+  "frozen_heads_used": 2,
+  "new_trained_parameters": 0,
+  "probe_pairs": 128,
+  "exact_full_state_prestate_hashes": 128,
+  "exact_four_world_window_trace_hashes": 512,
+  "exact_four_world_final_state_hashes": 512,
+  "instantaneous_final_state_pairs_exact": 128,
+  "all_anchors_unconditionally_scored": true,
+  "one_actual_symbol_changed": true,
+  "prefix_and_future_identical": true,
+  "evaluation_lag": 2,
+  "frequency_current_instantaneous_joint_counts_exact_zero": true,
+  "frozen_head_projection_of_margin_change_verified": true,
+  "exact_frozen_head_scaler_and_controls": true,
+  "exact_integer_primary_recalculated": true,
+  "independent_manual_dynamics_no_main_scorer_import": true,
+  "scientific_threshold_tolerance_applied": false,
+  "performance_eligibility_gate": false,
+  "biological_plasticity_performed": false,
+  "unique_cycle_effect_claim": false,
+  "source_graph_reconstruction": {
+    "full_graph_rebuilt_from_pinned_parquet": true,
+    "roles_rebuilt_from_pinned_annotations": true,
+    "partial_induced_graph_exact": true,
+    "neurons": 138639,
+    "edges": 2700513,
+    "raw_source_sha256": {
+      "Connectivity_783.parquet": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347",
+      "Completeness_783.csv": "bbb847a4cc2caaa7a16349722d220c087317b946d148d4d592d94d250617a311",
+      "annotations.tsv": "9a4f8b2f843196074431ebd7cd883536afa1be86c8a4ce90970441e8be81d1be"
+    }
+  },
+  "pairing": {
+    "paired_block_seeds": [
+      1600001
+    ],
+    "inputs_targets_anchors_identical": true,
+    "computational_blocks_are_not_biological_replicates": true
+  },
+  "result_manifest_sha256": "d88179fff1dc1c2d57a7cde4bb5e8df70fe5cd9b55764a19d9dfaa4051ff7d9c",
+  "source_commit": "65d0b1791b3ec3c87ac58685a4def09c17049cb4",
+  "protocol_commit": "c2263270503c1d106dce7069a496c30c924e04f6",
+  "historical_preservation": {
+    "baseline_commit": "43d6b068af853dd317241fc611f0df78b7110fca",
+    "prior_result_identities_preserved": 44571,
+    "protected_baseline_paths": 45219,
+    "historical_scientific_source_data_protocol_config_tests_preserved": true,
+    "m1_outcome_unchanged": "assay-invalid",
+    "m2_outcome_unchanged": "PASS",
+    "m3_outcome_unchanged": "PASS",
+    "m4_outcome_unchanged": "INFEASIBLE",
+    "m5_outcome_unchanged": "PASS",
+    "p2_material_gates_unchanged": "FAIL",
+    "materialized_protected_files_checked": 5607,
+    "materialized_prior_result_files_checked": 4963,
+    "sparse_excluded_prior_result_identities": 39608,
+    "all_materialized_blob_checks_pass": true,
+    "sparse_paths_freshly_replayed": false
+  }
+}
