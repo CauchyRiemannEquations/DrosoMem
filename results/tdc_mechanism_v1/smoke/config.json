@@ -1,0 +1,151 @@
+{
+  "protocol": "docs/temporal-mechanism-protocol.md",
+  "namespace": "results/tdc_mechanism_v1",
+  "baseline_commit": "28248fc7bbf306bcc4af708343c5cb4c6017856e",
+  "cache": "outputs/tdc_v2/whole_cache",
+  "levels": [
+    "legacy5",
+    "brain5"
+  ],
+  "circuit_seeds": [
+    701
+  ],
+  "arms": {
+    "full": {
+      "carry": true,
+      "synaptic_history": true
+    },
+    "carry_only": {
+      "carry": true,
+      "synaptic_history": false
+    },
+    "synaptic_only": {
+      "carry": false,
+      "synaptic_history": true
+    },
+    "instantaneous": {
+      "carry": false,
+      "synaptic_history": false
+    }
+  },
+  "blocks": [
+    {
+      "seed": 1100001,
+      "input_seed": 1110001,
+      "train_seed": 1120001,
+      "test_seed": 1130001
+    },
+    {
+      "seed": 1100002,
+      "input_seed": 1110002,
+      "train_seed": 1120002,
+      "test_seed": 1130002
+    },
+    {
+      "seed": 1100003,
+      "input_seed": 1110003,
+      "train_seed": 1120003,
+      "test_seed": 1130003
+    },
+    {
+      "seed": 1100004,
+      "input_seed": 1110004,
+      "train_seed": 1120004,
+      "test_seed": 1130004
+    },
+    {
+      "seed": 1100005,
+      "input_seed": 1110005,
+      "train_seed": 1120005,
+      "test_seed": 1130005
+    },
+    {
+      "seed": 1100006,
+      "input_seed": 1110006,
+      "train_seed": 1120006,
+      "test_seed": 1130006
+    }
+  ],
+  "blocks_by_level": {
+    "legacy5": [
+      1100001
+    ],
+    "brain5": [
+      1100001
+    ]
+  },
+  "alphabet_size": 10,
+  "warmup": 200,
+  "train_samples": 300,
+  "test_samples": 200,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "score_lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "primary_level": "legacy5",
+  "primary_contrast": [
+    "full",
+    "carry_only"
+  ],
+  "minimum_score_difference": 0.03,
+  "minimum_current_accuracy": 0.9,
+  "alpha": 1.0,
+  "gain": 0.9,
+  "leak": 0.6,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "schedule": "mbon_after_kc",
+  "normalization": "incoming_l1",
+  "activity_epsilon": 1e-08,
+  "bootstrap_seed": 1140001,
+  "bootstrap_draws": 10000,
+  "smoke": {
+    "train_samples": 300,
+    "test_samples": 200,
+    "blocks": 1
+  },
+  "neural_workers": 4,
+  "max_seconds": 7200,
+  "max_rss_bytes": 4294967296
+}

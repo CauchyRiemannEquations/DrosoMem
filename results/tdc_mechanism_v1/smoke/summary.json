@@ -1,0 +1,176 @@
+{
+  "smoke": true,
+  "outcome": "smoke",
+  "primary_pass": null,
+  "levels": {
+    "legacy5": {
+      "input_access_valid": false,
+      "contrasts": {
+        "synaptic_increment": {
+          "mean": 0.14083333333333334,
+          "median": 0.14083333333333334,
+          "sd": 0.0,
+          "bootstrap_lo": 0.14083333333333334,
+          "bootstrap_hi": 0.14083333333333334,
+          "mean_exact": "169/1200",
+          "all_blocks_positive": true,
+          "registered_rule_pass": null
+        },
+        "carry_increment": {
+          "mean": 0.035,
+          "median": 0.035,
+          "sd": 0.0,
+          "bootstrap_lo": 0.035,
+          "bootstrap_hi": 0.035,
+          "mean_exact": "7/200",
+          "all_blocks_positive": true,
+          "registered_rule_pass": null
+        },
+        "carry_only_history": {
+          "mean": 0.015555555555555555,
+          "median": 0.015555555555555555,
+          "sd": 0.0,
+          "bootstrap_lo": 0.015555555555555555,
+          "bootstrap_hi": 0.015555555555555555,
+          "mean_exact": "7/450",
+          "all_blocks_positive": true,
+          "registered_rule_pass": null
+        },
+        "synaptic_only_history": {
+          "mean": 0.1213888888888889,
+          "median": 0.1213888888888889,
+          "sd": 0.0,
+          "bootstrap_lo": 0.1213888888888889,
+          "bootstrap_hi": 0.1213888888888889,
+          "mean_exact": "437/3600",
+          "all_blocks_positive": true,
+          "registered_rule_pass": null
+        }
+      },
+      "interaction": {
+        "mean": 0.019444444444444445,
+        "median": 0.019444444444444445,
+        "sd": 0.0,
+        "bootstrap_lo": 0.019444444444444445,
+        "bootstrap_hi": 0.019444444444444445
+      },
+      "arm_scores": {
+        "full": {
+          "mean": 0.1625,
+          "median": 0.1625,
+          "sd": 0.0,
+          "bootstrap_lo": 0.1625,
+          "bootstrap_hi": 0.1625
+        },
+        "carry_only": {
+          "mean": 0.021666666666666667,
+          "median": 0.021666666666666667,
+          "sd": 0.0,
+          "bootstrap_lo": 0.021666666666666667,
+          "bootstrap_hi": 0.021666666666666667
+        },
+        "synaptic_only": {
+          "mean": 0.1275,
+          "median": 0.1275,
+          "sd": 0.0,
+          "bootstrap_lo": 0.1275,
+          "bootstrap_hi": 0.1275
+        },
+        "instantaneous": {
+          "mean": 0.006111111111111111,
+          "median": 0.006111111111111111,
+          "sd": 0.0,
+          "bootstrap_lo": 0.006111111111111111,
+          "bootstrap_hi": 0.006111111111111111
+        }
+      }
+    },
+    "brain5": {
+      "input_access_valid": false,
+      "contrasts": {
+        "synaptic_increment": {
+          "mean": 0.13722222222222222,
+          "median": 0.13722222222222222,
+          "sd": 0.0,
+          "bootstrap_lo": 0.13722222222222222,
+          "bootstrap_hi": 0.13722222222222222,
+          "mean_exact": "247/1800",
+          "all_blocks_positive": true,
+          "registered_rule_pass": null
+        },
+        "carry_increment": {
+          "mean": 0.03805555555555556,
+          "median": 0.03805555555555556,
+          "sd": 0.0,
+          "bootstrap_lo": 0.03805555555555556,
+          "bootstrap_hi": 0.03805555555555556,
+          "mean_exact": "137/3600",
+          "all_blocks_positive": true,
+          "registered_rule_pass": null
+        },
+        "carry_only_history": {
+          "mean": 0.015555555555555555,
+          "median": 0.015555555555555555,
+          "sd": 0.0,
+          "bootstrap_lo": 0.015555555555555555,
+          "bootstrap_hi": 0.015555555555555555,
+          "mean_exact": "7/450",
+          "all_blocks_positive": true,
+          "registered_rule_pass": null
+        },
+        "synaptic_only_history": {
+          "mean": 0.11472222222222223,
+          "median": 0.11472222222222223,
+          "sd": 0.0,
+          "bootstrap_lo": 0.11472222222222223,
+          "bootstrap_hi": 0.11472222222222223,
+          "mean_exact": "413/3600",
+          "all_blocks_positive": true,
+          "registered_rule_pass": null
+        }
+      },
+      "interaction": {
+        "mean": 0.0225,
+        "median": 0.0225,
+        "sd": 0.0,
+        "bootstrap_lo": 0.0225,
+        "bootstrap_hi": 0.0225
+      },
+      "arm_scores": {
+        "full": {
+          "mean": 0.15888888888888889,
+          "median": 0.15888888888888889,
+          "sd": 0.0,
+          "bootstrap_lo": 0.15888888888888889,
+          "bootstrap_hi": 0.15888888888888889
+        },
+        "carry_only": {
+          "mean": 0.021666666666666667,
+          "median": 0.021666666666666667,
+          "sd": 0.0,
+          "bootstrap_lo": 0.021666666666666667,
+          "bootstrap_hi": 0.021666666666666667
+        },
+        "synaptic_only": {
+          "mean": 0.12083333333333333,
+          "median": 0.12083333333333333,
+          "sd": 0.0,
+          "bootstrap_lo": 0.12083333333333333,
+          "bootstrap_hi": 0.12083333333333333
+        },
+        "instantaneous": {
+          "mean": 0.006111111111111111,
+          "median": 0.006111111111111111,
+          "sd": 0.0,
+          "bootstrap_lo": 0.006111111111111111,
+          "bootstrap_hi": 0.006111111111111111
+        }
+      }
+    }
+  },
+  "cases": 8,
+  "lag_heads": 168,
+  "criterion_unchanged": true,
+  "biological_plasticity_performed": false,
+  "anatomical_cycle_only_claim": false
+}
