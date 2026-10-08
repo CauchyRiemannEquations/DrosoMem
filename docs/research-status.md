@@ -1,5 +1,31 @@
 # Research status
 
+## Current — M6 frozen lag2 tracking passes (2026-10-08)
+
+[Protocol](counterfactual-tracking-protocol.md),
+[results/synthesis](counterfactual-tracking-results.md),
+[independent checks](../results/counterfactual_tracking_v1/main_validation/checks.json),
+[final audit](../results/counterfactual_tracking_v1/final_audit/audit.json).
+Registered unconditioned paired-transition PASS: all six primary blocks64/64
+(384/384 total), three paired whole counterparts64/64 (192/192). Exactly one
+past input changes; the same old graph/encoder/head/scaler, prefix and future
+inputs remain fixed. No new learning or performance eligibility gate/filtering.
+
+Frequency/current-only predictions and instantaneous-reference final states/
+scores remain equal across worlds, so exact paired joint0 follows. It is not
+single-arm10% chance. Independent replay confirms9 full streams,576 pre-state
+digests,2304 recorded four-world windows/final entries and9 old-head SVD
+authentications; official new scores use exact archived parameters. Full-stream
+lag0/lag2 sanity is100% in both cohorts, separately descriptive.
+
+The29 safeguards pass in source-authenticated retry. First guard failed before
+tests/outcomes because CRLF working bytes differed from Git LF; exact committed
+bytes were restored without code/scientific changes, and failed artifacts remain
+sealed. All44,571 older results and source/data/config/protocol/tests, M1 invalid,
+P2 material FAIL, M4 INFEASIBLE and prior failure snapshot remain intact.
+This fixed computational lag2 study is closed; no biological/cycle/storage/
+capacity/noise-robustness claim or P3 was added.
+
 ## Current — M5 observed sensitivity attenuation passes (2026-10-08)
 
 [Protocol](temporal-functional-sensitivity-protocol.md),

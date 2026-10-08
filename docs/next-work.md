@@ -1,5 +1,34 @@
 # Prioritized work — updated 2026-10-08
 
+## Current handoff — M6 completed (2026-10-08)
+
+The [frozen-readout counterfactual tracking study](counterfactual-tracking-results.md)
+is closed under its [prospective protocol](counterfactual-tracking-protocol.md).
+Primary384/384 and secondary192/192 unconditioned pairs satisfy the fixed lag2
+criterion in every block. All64 anchors count; no baseline-success subset or
+performance-invalidity gate is used. Existing M5 graph/mapping/scaler/head is
+frozen; new fitted parameters0. All9 new streams and2304 recorded four-world
+windows independently replay;9 SVD checks authenticate OLD training only.
+No execution or validation remains in M6.
+
+The29-test valid retry passes; first guard's LF/CRLF source-byte validation
+failure is sealed and retained, with no changed scientific settings. All44,571
+prior result identities and older scientific source/failures remain protected.
+Unchanged controls' paired joint0 is mathematical, not10% chance. M1 remains
+assay-invalid, P2 material gates fail and M4 remains INFEASIBLE. This supports
+the fixed computational readout following historical value, not biological
+learning, storage site, cycle/wiring/whole-brain superiority or formal capacity.
+
+The next candidate is **frozen-readout counterfactual tracking under artificial
+observation noise**. First audit prior closed ACT V/observation-noise scopes to
+avoid duplication or relabeling earlier failures. If pursued, register one
+fixed nonzero artificial dose, paired noise/control rules, fresh streams,
+unchanged model/head budget and finite primary endpoint before outcomes.
+This is a proposal only, not registered or executed. Do not sweep until
+success, recalibrate on results, add seeds/decoder adaptation or imply
+physiological calibration. M6's clean result remains sealed and P3 is excluded.
+Historical handoffs below retain their original outcomes and completion scopes.
+
 ## Current handoff — M5 completed (2026-10-08)
 
 The [finite-lag sensitivity study](temporal-functional-sensitivity-results.md)

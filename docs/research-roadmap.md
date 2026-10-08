@@ -1,5 +1,34 @@
 # DrosoMem research roadmap
 
+## Current — M6 frozen tracking closed (2026-10-08)
+
+[M6](counterfactual-tracking-results.md) prospectively confirms unconditioned
+lag2 tracking after an ACTUAL one-symbol replacement: primary384/384,
+secondary192/192, with identical prefix/future and no new fitted parameters.
+Current/frequency/instantaneous unchanged paired controls have joint0 exactly.
+This is model input→state→frozen-readout tracking, not biological learning/site.
+
+| Stage | Status | Interpretation boundary |
+| --- | --- | --- |
+| P0/v1 | Sealed | Original claims/negatives preserved |
+| P1 iid TDC | Closed; short-lag PASS | Computational historical-input access |
+| P2 null ensembles | Closed; material FAIL | No general real-wiring advantage |
+| M1 carry/synaptic increment | Closed; assay-invalid | Original endpoint undefined |
+| M2 current/history tradeoff | Closed; specified PASS | No universal memory cost |
+| M3 cycle-free sufficiency | Closed; PASS | No unique cycle contribution |
+| M4 strict-control feasibility | Closed; INFEASIBLE | Other causal designs remain open |
+| M5 symbol-contrast sensitivity | Closed; attenuation PASS | Norm reduction is not information loss |
+| M6 frozen-readout tracking | Closed; lag2 PASS | No noise robustness or biological inference |
+| Next observation-noise tracking | Proposal only | Audit prior ACT V scopes; one fixed artificial dose, paired controls/fresh streams |
+| P3 physiology/spiking/plasticity | Outside this work | Separate biological targets/protocol |
+
+Next candidate asks whether the clean paired tracking result survives one
+predefined artificial observation-noise setting with frozen heads. Audit earlier
+closed noise studies first; do not repeat them or repair old failures under a
+new label. No automatic noise/seed/lag/decoder search or physiological calibration.
+All44,571 prior results and source-capture failures remain preserved.
+[Current handoff](next-work.md). Older dated snapshots retain historical scopes.
+
 ## Current — M5 functional sensitivity closed (2026-10-08)
 
 [M5](temporal-functional-sensitivity-results.md) verifies the registered

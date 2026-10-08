@@ -1,0 +1,106 @@
+{
+  "protocol": "docs/counterfactual-tracking-protocol.md",
+  "namespace": "results/counterfactual_tracking_v1",
+  "baseline_commit": "43d6b068af853dd317241fc611f0df78b7110fca",
+  "parent_namespace": "results/functional_sensitivity_v1/main",
+  "parent_source_commit": "c541993484f6778a031d71ad4eb1798c748f6ce7",
+  "parent_protocol_commit": "37212abeb6cfc1a4907e08348ff41030f3edfb8b",
+  "parent_manifest_sha256": "98eb3b4c3c49934365caa30608fd50b677dd883b7e3ed722271db4aceeaf73af",
+  "cache": "outputs/tdc_v2/whole_cache",
+  "levels": [
+    "legacy5",
+    "brain5"
+  ],
+  "primary_level": "legacy5",
+  "circuit_seeds": [
+    701
+  ],
+  "blocks": [
+    {
+      "seed": 1600001,
+      "parent_seed": 1500001,
+      "input_seed": 1510001,
+      "stream_seed": 1610001
+    },
+    {
+      "seed": 1600002,
+      "parent_seed": 1500002,
+      "input_seed": 1510002,
+      "stream_seed": 1610002
+    },
+    {
+      "seed": 1600003,
+      "parent_seed": 1500003,
+      "input_seed": 1510003,
+      "stream_seed": 1610003
+    },
+    {
+      "seed": 1600004,
+      "parent_seed": 1500004,
+      "input_seed": 1510004,
+      "stream_seed": 1610004
+    },
+    {
+      "seed": 1600005,
+      "parent_seed": 1500005,
+      "input_seed": 1510005,
+      "stream_seed": 1610005
+    },
+    {
+      "seed": 1600006,
+      "parent_seed": 1500006,
+      "input_seed": 1510006,
+      "stream_seed": 1610006
+    }
+  ],
+  "blocks_by_level": {
+    "legacy5": [
+      1600001,
+      1600002,
+      1600003,
+      1600004,
+      1600005,
+      1600006
+    ],
+    "brain5": [
+      1600001,
+      1600002,
+      1600003
+    ]
+  },
+  "alphabet_size": 10,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "gain": 0.9,
+  "normalization": "incoming_l1",
+  "leak": 0.6,
+  "carry_multiplier": 0.0,
+  "synaptic_history": true,
+  "schedule": "mbon_after_kc",
+  "alpha": 1.0,
+  "warmup": 200,
+  "test_samples": 2000,
+  "probe_count": 64,
+  "primary_lag": 2,
+  "anchor_rule": "warmup + floor(linspace(0,test_samples-1-primary_lag,64))",
+  "replacement_rule": "actual discrete symbol (original+1)%10 at anchor only; identical prefix and all future symbols",
+  "minimum_joint_accuracy": 0.9,
+  "primary_rule": "10*joint_correct >= 9*64 in every one of six primary blocks; all fixed anchors counted unconditionally",
+  "performance_eligibility_gate": false,
+  "head_selection": "M5 coefficients[:,20:30], intercept[20:30], original mean/scale; lag0 [:,0:10]/[:10] sanity only",
+  "new_trained_parameters": 0,
+  "bootstrap_seed": 1620001,
+  "bootstrap_draws": 10000,
+  "score_atol": 1e-10,
+  "score_rtol": 1e-10,
+  "neural_workers": 4,
+  "max_seconds": 7200,
+  "max_rss_bytes": 4294967296,
+  "smoke": {
+    "test_samples": 200,
+    "blocks": 1
+  },
+  "instantaneous_reference": "same current KC-to-MBON block, carry0 and prior-state drive off; same frozen lag2 head; unchanged final states/scores/predictions and zero joint tracking",
+  "graph_searches": 0,
+  "biological_plasticity_performed": false
+}

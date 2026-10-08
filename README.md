@@ -11,6 +11,26 @@ fly memorizing pi or a model predicting unseen pi digits.
 
 ## Current research — 2026-10-08
 
+The [M6 frozen-readout counterfactual tracking study](docs/counterfactual-tracking-results.md)
+passes its prospective lag2 paired-transition criterion:384/384 primary pairs
+and192/192 paired whole secondary follow one ACTUAL past-symbol replacement
+while prefix/future inputs remain identical. All64 anchors count in every
+block; original failures were never filtered. Existing M5 heads/scalers stay
+frozen, with0 new trained parameters. Unchanged current/frequency/reference
+predictors have exact joint0, which is a paired-control property, not10% chance.
+
+Independent reconstruction confirms9 baseline hashes,576 pre-state entries,
+2304 four-world window entries and9 OLD-head SVD authentications. The29-test
+valid retry passes; the prior LF/CRLF source-capture failure remains archived.
+All44,571 older result identities/scientific source remain protected.
+[Protocol](docs/counterfactual-tracking-protocol.md) ·
+[Independent checks](results/counterfactual_tracking_v1/main_validation/checks.json) ·
+[Final audit](results/counterfactual_tracking_v1/final_audit/audit.json).
+This supports fixed computational historical-value tracking, not biological
+learning, a storage site, graph superiority or formal capacity.
+
+## Closed M5 — 2026-10-08
+
 The [M5 finite-lag symbol-contrast sensitivity study](docs/temporal-functional-sensitivity-results.md)
 passes its prospective lag5 attenuation criterion in all six primary blocks.
 Mean normalized local derivative gain is0.66135% of immediate gain; paired
