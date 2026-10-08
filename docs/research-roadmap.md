@@ -1,5 +1,123 @@
 # DrosoMem research roadmap
 
+## Proposed post-M6 research programme — 2026-10-09
+
+**Status: planning only.** [M6](counterfactual-tracking-results.md) is closed:
+all384/384 primary and192/192 paired whole secondary lag2 symbol replacements
+were tracked by the OLD frozen readout, with0 newly trained parameters.
+This establishes a causal input-to-state-to-readout response in the specified
+computational system. It does **not** establish a living fly's memory, biological
+learning, an anatomical storage site, a unique cycle effect, formal capacity,
+or superiority of real connectome wiring. P2's real-wiring material gates
+remain **FAIL**, M1 remains **assay-invalid**, and M4's exact same-node DAG
+control remains **INFEASIBLE**. Earlier outcomes and artifacts are not reopened.
+
+| Order | Research direction | Status / boundary |
+| --- | --- | --- |
+| 1 | Frozen-readout tracking under artificial observation noise (working label **M7**) | **Proposed only**; no protocol registered, no runs or results |
+| 2 | Structural specificity: real connectome vs matched rewiring and simple delay controls | **New future proposal**; distinct study and predeclared feasible controls required |
+| 3 | Mathematical-sequence rule transfer beyond trained-string recall | **Exploratory future proposal**; not evidence of animal or human mathematical learning |
+| 4 | Public research synthesis, software archive and possible manuscript | **Documentation/release plan**; no DOI or publication claimed; preparation can run alongside research |
+
+### Priority 1 — artificial observation-noise tracking (working label M7)
+
+**Question:** Does the clean M6 paired lag2 tracking survive one fixed,
+nonzero **artificial observation-noise** condition when the same original
+graph, encoder, M5 model, scaler and frozen readout are retained?
+
+1. **Audit before designing:** compare the closed ACT V, observation-noise,
+   noise-allocation and later extension protocols/results. Write down the
+   genuinely new paired *past-symbol replacement* question; do not repeat
+   earlier analyses or reinterpret their negative endpoints.
+2. **Register before observing results:** one noise allocation/dose, fresh
+   independent held-out input streams, exactly specified paired noise
+   realization, lag2 target/replacement, finite model/head/seed/anchor budget,
+   unconditioned joint tracking metric, quantitative PASS/FAIL threshold,
+   and stopping/resource rules. Do not choose a favorable setting afterward.
+3. **Keep causal controls:** the original and replacement worlds share their
+   prefix, future symbols and appropriately paired observation noise; all
+   anchors count, including original errors. Retain frequency-only,
+   current-only and instantaneous-reference controls. Compare to sealed clean
+   M6 as a separate reference, not as a rescore of its registered outcome.
+4. **Verify and report:** frozen parameters and no new training; source/hash
+   authentication, independent trajectory and prediction replay, paired raw
+   scores and failure cases. Failure under the chosen noise is an informative
+   result, not permission for a noise/seed/head sweep.
+
+This is a **proposed** M7 label, not an existing registered M7 experiment.
+Noise is synthetic, not a physiological calibration.
+[Latest operational handoff](next-work.md).
+
+### Priority 2 — how much is specific to the connectome wiring?
+
+**Question:** Is M6-style historical-value tracking better in the original
+connectome-derived graph than in relevant *feasibly matched* alternatives?
+
+- Compare real-wiring, role/degree/weight-aware rewiring ensembles, and
+  simple feedforward delay or otherwise minimal-history computational controls
+  under transparent matched input, observation and readout budgets.
+- Fix the task, pairing, graph ensembles, train/test separation, seeds,
+  effect-size requirement and validation plan *before* outcomes. Preserve
+  both current-symbol accessibility and historical decoding measurements.
+- Do **not** call an unmatched graph a pure test of feedback cycles. M3 shows
+  short-lag feedforward sufficiency; M4 shows that exact all-lag structural
+  support preservation by a same-node DAG is impossible in the tested scope.
+  State which connectivity, weight and path properties each feasible control
+  does and does not preserve.
+- Carry forward P2 and earlier structural negative results. A generic
+  delay-line also tracking lag2 would limit any claim of connectome-specific
+  memory; an advantage would need independent confirmation, not post-hoc
+  selection of an accommodating null.
+
+This is **not registered or executed**. It asks a distinct structural
+question rather than repairing the failed P2 hypothesis.
+
+### Priority 3 — mathematical sequence rules, not just recalled symbols
+
+**Question:** Can a trained decoder or explicitly defined learner transfer
+regularities of arithmetic/geometric/periodic sequences to unseen examples,
+rather than reproduce already trained digits or merely access past inputs?
+
+- Define valid input encodings, tasks and held-out splits across sequence
+  instances and parameters; separate **past-symbol decoding**, **next-symbol
+  prediction** and **unseen-rule generalization** as different endpoints.
+- Compare with trivial delay, frequency, n-gram/finite-state and appropriately
+  budgeted neural baselines. Include random and shuffled-sequence controls to
+  prevent easy periodic patterns from masquerading as learned mathematics.
+- If recurrent/internal weights are to change, introduce a separate prospective
+  learning protocol. Success with a fitted output head alone does **not**
+  establish internal synaptic learning, and computation on fly-derived wiring
+  does not directly describe how humans learn mathematics.
+
+This is a **distinct exploratory proposal**; it is not part of M7 and has no
+results or promised outcome.
+
+### Priority 4 — synthesis and responsible research release
+
+- Prepare a concise Korean/English synthesis of what was confirmed, what
+  failed (including P2 and local plasticity), what was assay-invalid, and
+  what remains biological speculation. Keep representation, decoding,
+  autonomous recall and internal learning clearly separate.
+- Validate test/replay instructions, manifests, checksums, source/data
+  attribution and release archive size. Follow [Zenodo guidance](ZENODO.md)
+  and [citation metadata](../CITATION.cff); code's MIT license does not
+  override FlyWire-derived data terms.
+- Consider a pinned GitHub software release followed by a Zenodo **Software**
+  record/DOI after metadata checks, then a separately curated dataset or
+  research preprint if appropriate. This is a plan, **not a claim that a DOI,
+  paper or release already exists**. Documentation work may proceed in
+  parallel with future experiments.
+
+**한국어 요약:** M6까지의 결과는 확정·보존한다. 다음 우선순위는
+(1) 고정 출력층을 사용한 과거 숫자 추적의 인공 잡음 강건성(M7 가칭),
+(2) 실제 초파리 연결망과 재배선망·단순 지연 회로의 공정한 비교,
+(3) 기존 숫자열 암기와 구별되는 수열 규칙의 새로운 사례 전이,
+(4) 성공·실패를 모두 담은 보고서 및 재현 가능한 공개 자료다.
+1~3은 **아직 수행하지 않은 제안**이며, 실제 초파리나 인간의
+수학 학습이 입증됐다는 뜻이 아니다.
+
+---
+
 ## Current — M6 frozen tracking closed (2026-10-08)
 
 [M6](counterfactual-tracking-results.md) prospectively confirms unconditioned
