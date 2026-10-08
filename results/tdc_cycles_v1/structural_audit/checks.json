@@ -1,0 +1,24 @@
+{
+  "all_checks_pass": true,
+  "new_neural_outcomes_generated": false,
+  "source_commit": "eb571bd83107e2b108bf270003a918f8eb21e797",
+  "helper_sha256": "9c32b4ef753b469655496048931ad9af1c9b4d48c2f50d8d36b20e0c5bd4224c",
+  "graph_summaries": {
+    "legacy5": {
+      "nodes": 686,
+      "original_edges": 3309,
+      "dag_edges": 2500,
+      "global_dependency_depth": 11,
+      "protected_kc_to_mbon_edges": 1474,
+      "dag_cycle_edges": 0
+    },
+    "brain5": {
+      "nodes": 138639,
+      "original_edges": 2700513,
+      "dag_edges": 1353524,
+      "global_dependency_depth": 153,
+      "protected_kc_to_mbon_edges": 21438,
+      "dag_cycle_edges": 0
+    }
+  }
+}
