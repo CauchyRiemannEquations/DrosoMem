@@ -1,0 +1,226 @@
+{
+  "complete": true,
+  "smoke": true,
+  "config": {
+    "protocol": "docs/temporal-cycles-protocol.md",
+    "namespace": "results/tdc_cycles_v1",
+    "baseline_commit": "eb571bd83107e2b108bf270003a918f8eb21e797",
+    "cache": "outputs/tdc_v2/whole_cache",
+    "levels": [
+      "legacy5",
+      "brain5"
+    ],
+    "circuit_seeds": [
+      701
+    ],
+    "arms": {
+      "intact_synaptic": {
+        "carry": false,
+        "synaptic_history": true,
+        "dag": false
+      },
+      "dag_synaptic": {
+        "carry": false,
+        "synaptic_history": true,
+        "dag": true
+      },
+      "instantaneous": {
+        "carry": false,
+        "synaptic_history": false,
+        "dag": false
+      }
+    },
+    "blocks": [
+      {
+        "seed": 1300001,
+        "input_seed": 1310001,
+        "train_seed": 1320001,
+        "test_seed": 1330001,
+        "initial_a_seed": 1350001,
+        "initial_b_seed": 1350101,
+        "prefix_a_seed": 1360001,
+        "prefix_b_seed": 1360101,
+        "suffix_seed": 1370001
+      },
+      {
+        "seed": 1300002,
+        "input_seed": 1310002,
+        "train_seed": 1320002,
+        "test_seed": 1330002,
+        "initial_a_seed": 1350002,
+        "initial_b_seed": 1350102,
+        "prefix_a_seed": 1360002,
+        "prefix_b_seed": 1360102,
+        "suffix_seed": 1370002
+      },
+      {
+        "seed": 1300003,
+        "input_seed": 1310003,
+        "train_seed": 1320003,
+        "test_seed": 1330003,
+        "initial_a_seed": 1350003,
+        "initial_b_seed": 1350103,
+        "prefix_a_seed": 1360003,
+        "prefix_b_seed": 1360103,
+        "suffix_seed": 1370003
+      },
+      {
+        "seed": 1300004,
+        "input_seed": 1310004,
+        "train_seed": 1320004,
+        "test_seed": 1330004,
+        "initial_a_seed": 1350004,
+        "initial_b_seed": 1350104,
+        "prefix_a_seed": 1360004,
+        "prefix_b_seed": 1360104,
+        "suffix_seed": 1370004
+      },
+      {
+        "seed": 1300005,
+        "input_seed": 1310005,
+        "train_seed": 1320005,
+        "test_seed": 1330005,
+        "initial_a_seed": 1350005,
+        "initial_b_seed": 1350105,
+        "prefix_a_seed": 1360005,
+        "prefix_b_seed": 1360105,
+        "suffix_seed": 1370005
+      },
+      {
+        "seed": 1300006,
+        "input_seed": 1310006,
+        "train_seed": 1320006,
+        "test_seed": 1330006,
+        "initial_a_seed": 1350006,
+        "initial_b_seed": 1350106,
+        "prefix_a_seed": 1360006,
+        "prefix_b_seed": 1360106,
+        "suffix_seed": 1370006
+      }
+    ],
+    "blocks_by_level": {
+      "legacy5": [
+        1300001
+      ],
+      "brain5": [
+        1300001
+      ]
+    },
+    "alphabet_size": 10,
+    "warmup": 200,
+    "train_samples": 300,
+    "test_samples": 200,
+    "lags": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "primary_level": "legacy5",
+    "alpha": 1.0,
+    "gain": 0.9,
+    "leak": 0.6,
+    "input_fraction": 0.1,
+    "input_amplitude": 0.5,
+    "schedule": "mbon_after_kc",
+    "normalization": "incoming_l1",
+    "activity_epsilon": 1e-08,
+    "bootstrap_seed": 1340001,
+    "bootstrap_draws": 10000,
+    "smoke": {
+      "train_samples": 300,
+      "test_samples": 200,
+      "blocks": 1
+    },
+    "neural_workers": 4,
+    "max_seconds": 7200,
+    "max_rss_bytes": 4294967296,
+    "reference_current_min": 0.99,
+    "primary_arm": "dag_synaptic",
+    "primary_lag": 2,
+    "minimum_excess": 0.1,
+    "carry_multiplier": 0.0,
+    "mask_order": "KC/other/MBON tiers, ascending numeric root ID",
+    "expected_depth": {
+      "legacy5": 11,
+      "brain5": 153
+    },
+    "certificate_prefix_steps": 64
+  },
+  "source_commit": "9a38675daade9bc4a7fac871fcdc33bfeac1fd2d",
+  "artifacts": {
+    "attempt.json": "734b645fe6ba22d0876d3d8d1744ea99479a51f9bcccfe0bb5aec338910c60ae",
+    "brain5_dag_synaptic_s1300001/attempt.json": "e6fd69606890bbe3bd00af320a0d8b77477333624e82731fa0fbd5273c7a4886",
+    "brain5_dag_synaptic_s1300001/case.npz": "36e100ca85354e9edac9002506aaa599b659eee27f77d58a07a45b9126c6f217",
+    "brain5_dag_synaptic_s1300001/certificate.json": "1f4c681cc1436347a6d3c2532dac65d821797d6b11cd95c98249f65c1923a46f",
+    "brain5_dag_synaptic_s1300001/certificate.npz": "0cc2d15058a9791a854e125c30bf10c6bebecd1a5e1364979d7e50b0a9c10df2",
+    "brain5_dag_synaptic_s1300001/graph.json": "34ba84b24cccc9e40067ff929debb26b6ad0293e363f13dc8a89e2f62f3aed7c",
+    "brain5_dag_synaptic_s1300001/manifest.json": "d1e59cb96340a179748ccae7a58620f78fad3c7a80b7b73fa618b7207f62a2c6",
+    "brain5_dag_synaptic_s1300001/metrics.json": "a34ca6fd7fcd78e89ad9358ca2d05d708349f662c8df4d9bbf16e028915139a1",
+    "brain5_dag_synaptic_s1300001/resources.json": "e66eaeb706646c3e2359188b596c725555c0621ca2e81bb8fdc853de9c75d9ef",
+    "brain5_dag_synaptic_s1300001/topology.json": "c8038cde0b839e88ee96a925ddf60021a696896205fb616d8167d0bf7e8e4d5c",
+    "brain5_instantaneous_s1300001/attempt.json": "363d65fd09083dd46d36094ba1b3f4e4e251ccf63af3150a3384572c8bf5d6b7",
+    "brain5_instantaneous_s1300001/case.npz": "ead8274beee1906c7eb9860c26105659701135ae6a0ab45a1048ffa7637d562d",
+    "brain5_instantaneous_s1300001/graph.json": "d501e749a41c30f31b7e00617a06e807a70c93f76318d7da8ace00eb3cd8bf98",
+    "brain5_instantaneous_s1300001/manifest.json": "98c140285af9598de1cc2c7c08762d03cf6dfc089d0d44b8daefaf50c6492856",
+    "brain5_instantaneous_s1300001/metrics.json": "e42d57b5796f8324ffc469abed93b3e91f1c11579839911ec9240f5c9c08ab93",
+    "brain5_instantaneous_s1300001/resources.json": "38b2795c01215a4329b9487d9499a15dc992e22d91aa1ae8d3f4d84972766e8d",
+    "brain5_intact_synaptic_s1300001/attempt.json": "21968dfc11656e00d1bff7b4c3a49e0fb41c51ee42ce920c72e8a1837966cf79",
+    "brain5_intact_synaptic_s1300001/case.npz": "820cdc4ccc2b3aa39885b1fbf017b6950a7d72d2808844b8519a594715f3e95e",
+    "brain5_intact_synaptic_s1300001/graph.json": "36bc649518e2e694e98a22f8f8b6b78d5cc2e62843be362f7a6975d49c074914",
+    "brain5_intact_synaptic_s1300001/manifest.json": "062594dffe4724759f54222738dfe4f3a854b51d982f9bc853dec25bc5badef4",
+    "brain5_intact_synaptic_s1300001/metrics.json": "b9f4c722c304498aefdcbe2372bb9d94a11af1658f103b028e68c7fe29d59ab7",
+    "brain5_intact_synaptic_s1300001/resources.json": "17fb8f60031ad0e0f3043a81f7affae6834874aafb03c6f519637b76ee4db226",
+    "config.json": "32c8154c3392465a7434e7fd00bf400b604ab7ac2d195e5d1e53e66bedb16ca3",
+    "curve-summary.csv": "4ef66e46e34de234e2bec2bbd99140dba362fbfde17c69866293240f7a5a7b38",
+    "cycles-tdc.png": "e5bacf59a3e55ff5cd89adfec007be8e18f2b973a855b89196de4576d29d15d6",
+    "descriptive-differences.csv": "88333bcf9c621ffbd8164d501143213ec21503ef0f10ed3cbcc15abbeae79914",
+    "historical-preservation.json": "958cf3e56bacc43a297a88266a1bb6cf7b916b53e76c24cca92bf15bfec389d9",
+    "job-resources.json": "957d966bd33b81eb2aae4e13470d7c3273b5872fdcaa85152a614ffed8bf690b",
+    "legacy5_dag_synaptic_s1300001/attempt.json": "5eacedd64d74057a02a02a5fabdcac33b8f2fb0103f7243f9f241691e599c87a",
+    "legacy5_dag_synaptic_s1300001/case.npz": "2dda1eeb078d3eb1699498bf3f2aa46133d26e8e495df3f7b2d6417074f84c48",
+    "legacy5_dag_synaptic_s1300001/certificate.json": "d3acc7f5a5caa93c3a7278b5f4052b381cf21b5456fcdaa3095506ed84e8a0b0",
+    "legacy5_dag_synaptic_s1300001/certificate.npz": "93a790fa8a32809ad508352f3e2a35f8e4b02b6eccca4334deab6c3c6893f03f",
+    "legacy5_dag_synaptic_s1300001/graph.json": "63846124f1ffc1ecfb370e7a1f4e392318dbfa8691ce54ef46dc0626b7e88ac0",
+    "legacy5_dag_synaptic_s1300001/manifest.json": "78b01d1c71a4855d4abf4050ae1e1dea80c4ef1d86bc53a80d4f22f671f899e3",
+    "legacy5_dag_synaptic_s1300001/metrics.json": "d42845ee870c88adef68e79a8318534328b912855b0e9f6f0c30052643b40bf7",
+    "legacy5_dag_synaptic_s1300001/resources.json": "a507d2dbdef984d704e645bc415c927bf9efc2ea480a7fcb2c37e622408b0f61",
+    "legacy5_dag_synaptic_s1300001/topology.json": "5e96ccbcca160c5990163e1918f49253b5e454d663b45f7aeddb451a1054edaf",
+    "legacy5_instantaneous_s1300001/attempt.json": "86be68e233f3cdb697b57a4d44042c614b06c5aa3f9a6b91dee4097823d86272",
+    "legacy5_instantaneous_s1300001/case.npz": "d98ad835f693e2f5b5202884737321cd55a1897a45e77ccf63ffc7c0faab8aea",
+    "legacy5_instantaneous_s1300001/graph.json": "70a48e7261778a62f672ce14316a863fc5ce8ba016c4f88128025b8521e7ca1f",
+    "legacy5_instantaneous_s1300001/manifest.json": "76fd6627c446ba4f4edcf6c9c54676ed0d98104b98646e11913b2dbca3626985",
+    "legacy5_instantaneous_s1300001/metrics.json": "456ffd03997648b999095a19bb1da26f66ff4a46d9d728a9fe4e2acc4400c99a",
+    "legacy5_instantaneous_s1300001/resources.json": "48e292118a7eb1f2764e7c1d7c9da37669f8cbac0f70b3ac5f01aec1f242a8fd",
+    "legacy5_intact_synaptic_s1300001/attempt.json": "bf952092e1776ce2aa170ba07cc27a371097e81678cca3517133dd188b32f43f",
+    "legacy5_intact_synaptic_s1300001/case.npz": "f549ca3c4658683f6385c13d5f5e618f7a3e4f7a21093af5b0fa5abf40639c95",
+    "legacy5_intact_synaptic_s1300001/graph.json": "02f338adaf61c83b04d9b6c704f12c5cd7b10f3498efbdf0bc9b464c2b1142fd",
+    "legacy5_intact_synaptic_s1300001/manifest.json": "76f5f5761334d6e46df4be6673879a8dc71e19d891ced41048bfb9e7f1cc0d6f",
+    "legacy5_intact_synaptic_s1300001/metrics.json": "b8a04b3ad50dbf500f307c43881ca964546328a9c1f04d14b53407b77e879c7b",
+    "legacy5_intact_synaptic_s1300001/resources.json": "edb699334e1efa486e55d863cd23af821c0f390a65fb09e5a7600847f34ac6ad",
+    "primary-cells.csv": "2679be8c41bb12477116aea6092769246563587312217fc7abbe0e028790f2b4",
+    "process-tree-resources.json": "5f5d56e9cc36441c3661ecdd78c34db8882031c251e6ea5482ab9bc6b5d78063",
+    "raw-lags.csv": "ff88391ae8b75ae39b51415e484cfa013e660aa7aa562a55dd1f65e6325754d3",
+    "resources.json": "6c6a039fc0e99130fcf6d7919b3e1df4e227a6704f95c8df0478ea9dbce63773",
+    "seed-scores.csv": "d2f477f4dc6bc565598cffcbb5204d156567a1f446ea856c1a0315374fc8ca2e",
+    "source.json": "62843e7f39fd2c7fbe287c65cff5d8ccb5d5a1029d5c0e38eee53745fde43de9",
+    "summary.json": "4c7538068e7d062660c15bbefb172853f3c5a8c2ad664ae5b075ac946d9dd294"
+  }
+}

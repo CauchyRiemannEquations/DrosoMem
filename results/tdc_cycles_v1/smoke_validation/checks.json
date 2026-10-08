@@ -1,0 +1,39 @@
+{
+  "all_checks_pass": true,
+  "cases": 6,
+  "replayed_streams": 12,
+  "independently_refit_lag_heads": 126,
+  "exact_full_state_trace_hashes": 12,
+  "instantaneous_certificates": 2,
+  "zero_state_input_access_certificates": 6,
+  "finite_window_certificate_pairs": 2,
+  "exact_certificate_trace_hashes": 4,
+  "outcome": "smoke",
+  "primary_pass": null,
+  "endpoints": {
+    "legacy5": {
+      "reference_valid": true,
+      "registered_rule_pass": null,
+      "minimum_excess_exact": "89/100",
+      "all_blocks_meet_margin": true
+    },
+    "brain5": {
+      "reference_valid": true,
+      "registered_rule_pass": null,
+      "minimum_excess_exact": "163/200",
+      "all_blocks_meet_margin": true
+    }
+  },
+  "result_manifest_sha256": "9da5140eefa96df5634e4a6f6b4c488de6e596579a55777ed692a2d8095c7b45",
+  "source_commit": "9a38675daade9bc4a7fac871fcdc33bfeac1fd2d",
+  "protocol_commit": "438cae437e110dbeb9cb2a02d0a58cfe61e6d233",
+  "verifier_commit": "9a38675daade9bc4a7fac871fcdc33bfeac1fd2d",
+  "verifier_sha256": "04ed7b350044d6173f260ff225b06e6c254ee6cf828d7f77044dc3799d4c6fdc",
+  "historical_preservation": {
+    "baseline_commit": "eb571bd83107e2b108bf270003a918f8eb21e797",
+    "prior_result_blobs_unchanged": 43495,
+    "historical_numerical_source_data_config_protocols_tests_unchanged": true,
+    "m1_outcome_unchanged": "assay-invalid",
+    "m2_outcome_unchanged": "PASS"
+  }
+}

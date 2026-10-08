@@ -1,0 +1,342 @@
+{
+  "nodes": 686,
+  "original_edges": 3309,
+  "dag_edges": 2500,
+  "removed_edges": 809,
+  "roles": {
+    "APL": 1,
+    "DAN": 125,
+    "KC": 512,
+    "MBON": 48
+  },
+  "rank_definition": "KC first; other roles second; MBON last; ascending numeric root ID within group",
+  "normalization": "original incoming-L1 normalized weights masked without rescaling",
+  "original_scc": {
+    "components": 51,
+    "largest_sizes": [
+      636,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "nontrivial_components": 1,
+    "cycle_participating_edges": 3233,
+    "self_edges": 0
+  },
+  "dag_scc": {
+    "components": 686,
+    "largest_sizes": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "nontrivial_components": 0,
+    "cycle_participating_edges": 0,
+    "self_edges": 0
+  },
+  "strict_rank_increase_on_every_retained_edge": true,
+  "dag_cycle_edges": 0,
+  "protected_kc_to_mbon_edges": 1474,
+  "protected_kc_to_mbon_all_kept_exactly": true,
+  "role_blocks": {
+    "original": {
+      "APL->APL": {
+        "edges": 0,
+        "absolute_weight_sum": 0.0
+      },
+      "APL->DAN": {
+        "edges": 35,
+        "absolute_weight_sum": 16.991242202684894
+      },
+      "APL->KC": {
+        "edges": 512,
+        "absolute_weight_sum": 448.5857704527664
+      },
+      "APL->MBON": {
+        "edges": 27,
+        "absolute_weight_sum": 1.4534275743235499
+      },
+      "DAN->APL": {
+        "edges": 31,
+        "absolute_weight_sum": 0.0487620157296825
+      },
+      "DAN->DAN": {
+        "edges": 8,
+        "absolute_weight_sum": 1.3475410747587548
+      },
+      "DAN->KC": {
+        "edges": 24,
+        "absolute_weight_sum": 4.011147204849067
+      },
+      "DAN->MBON": {
+        "edges": 189,
+        "absolute_weight_sum": 7.039540873410577
+      },
+      "KC->APL": {
+        "edges": 512,
+        "absolute_weight_sum": 0.7957908534809206
+      },
+      "KC->DAN": {
+        "edges": 147,
+        "absolute_weight_sum": 16.876364013113168
+      },
+      "KC->KC": {
+        "edges": 43,
+        "absolute_weight_sum": 8.20308234238463
+      },
+      "KC->MBON": {
+        "edges": 1474,
+        "absolute_weight_sum": 13.883622722451895
+      },
+      "MBON->APL": {
+        "edges": 23,
+        "absolute_weight_sum": 0.05544713078939704
+      },
+      "MBON->DAN": {
+        "edges": 118,
+        "absolute_weight_sum": 43.08485270944319
+      },
+      "MBON->KC": {
+        "edges": 0,
+        "absolute_weight_sum": 0.0
+      },
+      "MBON->MBON": {
+        "edges": 166,
+        "absolute_weight_sum": 20.82340882981398
+      }
+    },
+    "dag": {
+      "APL->APL": {
+        "edges": 0,
+        "absolute_weight_sum": 0.0
+      },
+      "APL->DAN": {
+        "edges": 21,
+        "absolute_weight_sum": 10.416927258722733
+      },
+      "APL->KC": {
+        "edges": 0,
+        "absolute_weight_sum": 0.0
+      },
+      "APL->MBON": {
+        "edges": 27,
+        "absolute_weight_sum": 1.4534275743235499
+      },
+      "DAN->APL": {
+        "edges": 11,
+        "absolute_weight_sum": 0.013763472181765221
+      },
+      "DAN->DAN": {
+        "edges": 7,
+        "absolute_weight_sum": 1.3349158242577526
+      },
+      "DAN->KC": {
+        "edges": 0,
+        "absolute_weight_sum": 0.0
+      },
+      "DAN->MBON": {
+        "edges": 189,
+        "absolute_weight_sum": 7.039540873410577
+      },
+      "KC->APL": {
+        "edges": 512,
+        "absolute_weight_sum": 0.7957908534809206
+      },
+      "KC->DAN": {
+        "edges": 147,
+        "absolute_weight_sum": 16.876364013113168
+      },
+      "KC->KC": {
+        "edges": 23,
+        "absolute_weight_sum": 4.5677743027195365
+      },
+      "KC->MBON": {
+        "edges": 1474,
+        "absolute_weight_sum": 13.883622722451895
+      },
+      "MBON->APL": {
+        "edges": 0,
+        "absolute_weight_sum": 0.0
+      },
+      "MBON->DAN": {
+        "edges": 0,
+        "absolute_weight_sum": 0.0
+      },
+      "MBON->KC": {
+        "edges": 0,
+        "absolute_weight_sum": 0.0
+      },
+      "MBON->MBON": {
+        "edges": 89,
+        "absolute_weight_sum": 11.000118435470778
+      }
+    }
+  },
+  "per_neuron_statistics": {
+    "original": {
+      "indegree": {
+        "count": 686,
+        "min": 0.0,
+        "max": 566.0,
+        "mean": 4.8236151603498545,
+        "median": 1.0,
+        "sd": 26.724914873152784,
+        "sum": 3309.0
+      },
+      "outdegree": {
+        "count": 686,
+        "min": 0.0,
+        "max": 574.0,
+        "mean": 4.8236151603498545,
+        "median": 4.0,
+        "sd": 21.895113657868176,
+        "sum": 3309.0
+      },
+      "incoming_abs_weight": {
+        "count": 686,
+        "min": 0.0,
+        "max": 0.9000000000000025,
+        "mean": 0.8501457725947522,
+        "median": 0.9,
+        "sd": 0.20587219500104637,
+        "sum": 583.2
+      },
+      "outgoing_abs_weight": {
+        "count": 686,
+        "min": 0.0,
+        "max": 467.03044022977116,
+        "mean": 0.850145772594747,
+        "median": 0.027759275526855802,
+        "sd": 17.81984160949981,
+        "sum": 583.1999999999964
+      }
+    },
+    "dag": {
+      "indegree": {
+        "count": 686,
+        "min": 0.0,
+        "max": 523.0,
+        "mean": 3.6443148688046647,
+        "median": 0.0,
+        "sd": 25.313233405938877,
+        "sum": 2500.0
+      },
+      "outdegree": {
+        "count": 686,
+        "min": 0.0,
+        "max": 48.0,
+        "mean": 3.6443148688046647,
+        "median": 3.0,
+        "sd": 2.742924326342473,
+        "sum": 2500.0
+      },
+      "incoming_abs_weight": {
+        "count": 686,
+        "min": 0.0,
+        "max": 0.900000000000001,
+        "mean": 0.09822484742001848,
+        "median": 0.0,
+        "sd": 0.25477310138608217,
+        "sum": 67.38224533013268
+      },
+      "outgoing_abs_weight": {
+        "count": 686,
+        "min": 0.0,
+        "max": 11.870354833046282,
+        "mean": 0.09822484742001848,
+        "median": 0.025317507187031487,
+        "sd": 0.5060533513471678,
+        "sum": 67.38224533013268
+      }
+    }
+  },
+  "retained_incoming_mass_fraction_active_rows": {
+    "count": 648,
+    "min": 0.0,
+    "max": 1.0,
+    "mean": 0.11553882944124258,
+    "median": 0.0,
+    "sd": 0.2899910196773748,
+    "sum": 74.86916147792519
+  },
+  "retained_incoming_mass_fraction_observed_rows": {
+    "count": 48,
+    "min": 0.0,
+    "max": 1.0,
+    "mean": 0.772609018649463,
+    "median": 0.9066499645988783,
+    "sd": 0.30216546725428395,
+    "sum": 37.08523289517422
+  },
+  "delay_definition": "0 for KC->MBON; 1 for every other edge under mbon_after_kc; no direct carry",
+  "global_dependency_depth": 11,
+  "observed_dependency_depth": 11,
+  "input_pool_definition": "all neurons with KC role, independent of per-symbol selected inputs",
+  "input_pool_count": 512,
+  "input_pool_observed_depth": 11,
+  "input_pool_observed_depths": [
+    5,
+    4,
+    5,
+    -1,
+    5,
+    5,
+    5,
+    6,
+    7,
+    5,
+    8,
+    7,
+    7,
+    6,
+    7,
+    6,
+    9,
+    -1,
+    8,
+    8,
+    9,
+    8,
+    -1,
+    -1,
+    5,
+    9,
+    8,
+    10,
+    8,
+    9,
+    10,
+    10,
+    10,
+    9,
+    10,
+    10,
+    10,
+    10,
+    7,
+    10,
+    8,
+    11,
+    10,
+    11,
+    10,
+    9,
+    7,
+    11
+  ],
+  "input_pool_observed_reachable": 44,
+  "observed_count": 48
+}

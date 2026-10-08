@@ -1,0 +1,99 @@
+{
+  "smoke": true,
+  "outcome": "smoke",
+  "primary_pass": null,
+  "levels": {
+    "legacy5": {
+      "reference_valid": true,
+      "primary": {
+        "lag": 2,
+        "arm": "dag_synaptic",
+        "excess": {
+          "mean": 0.89,
+          "median": 0.89,
+          "sd": 0.0,
+          "bootstrap_lo": 0.89,
+          "bootstrap_hi": 0.89
+        },
+        "mean_exact": "89/100",
+        "minimum_excess": 0.89,
+        "minimum_excess_exact": "89/100",
+        "all_blocks_meet_margin": true,
+        "registered_rule_pass": null
+      },
+      "arm_long_scores": {
+        "intact_synaptic": {
+          "mean": 0.10777777777777778,
+          "median": 0.10777777777777778,
+          "sd": 0.0,
+          "bootstrap_lo": 0.10777777777777778,
+          "bootstrap_hi": 0.10777777777777778
+        },
+        "dag_synaptic": {
+          "mean": 0.11694444444444445,
+          "median": 0.11694444444444445,
+          "sd": 0.0,
+          "bootstrap_lo": 0.11694444444444445,
+          "bootstrap_hi": 0.11694444444444445
+        },
+        "instantaneous": {
+          "mean": -0.007222222222222222,
+          "median": -0.007222222222222222,
+          "sd": 0.0,
+          "bootstrap_lo": -0.007222222222222222,
+          "bootstrap_hi": -0.007222222222222222
+        }
+      }
+    },
+    "brain5": {
+      "reference_valid": true,
+      "primary": {
+        "lag": 2,
+        "arm": "dag_synaptic",
+        "excess": {
+          "mean": 0.815,
+          "median": 0.815,
+          "sd": 0.0,
+          "bootstrap_lo": 0.815,
+          "bootstrap_hi": 0.815
+        },
+        "mean_exact": "163/200",
+        "minimum_excess": 0.815,
+        "minimum_excess_exact": "163/200",
+        "all_blocks_meet_margin": true,
+        "registered_rule_pass": null
+      },
+      "arm_long_scores": {
+        "intact_synaptic": {
+          "mean": 0.10277777777777777,
+          "median": 0.10277777777777777,
+          "sd": 0.0,
+          "bootstrap_lo": 0.10277777777777777,
+          "bootstrap_hi": 0.10277777777777777
+        },
+        "dag_synaptic": {
+          "mean": 0.09694444444444444,
+          "median": 0.09694444444444444,
+          "sd": 0.0,
+          "bootstrap_lo": 0.09694444444444444,
+          "bootstrap_hi": 0.09694444444444444
+        },
+        "instantaneous": {
+          "mean": -0.007222222222222222,
+          "median": -0.007222222222222222,
+          "sd": 0.0,
+          "bootstrap_lo": -0.007222222222222222,
+          "bootstrap_hi": -0.007222222222222222
+        }
+      }
+    }
+  },
+  "cases": 6,
+  "lag_heads": 126,
+  "certificate_pairs": 2,
+  "criterion_unchanged": true,
+  "m1_outcome_unchanged": "assay-invalid",
+  "m2_outcome_unchanged": "PASS",
+  "cycle_effect_isolation_claim": false,
+  "biological_plasticity_performed": false
+}
