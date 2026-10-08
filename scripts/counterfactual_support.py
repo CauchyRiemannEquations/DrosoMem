@@ -92,9 +92,11 @@ def authenticate_git_sources(tracked, hashes, revision):
     process = subprocess.Popen(['git', 'cat-file', '--batch'], stdin=subprocess.PIPE,
                                stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     try:
-        process.stdin.write(('\n'.join(inventory[n] for n in tracked)+'\n').encode())
-        process.stdin.close()
         for name in tracked:
+            # One request at a time avoids stdin/stdout pipe backpressure on
+            # Windows while authenticating large frozen-parent blobs.
+            process.stdin.write((inventory[name]+'\n').encode())
+            process.stdin.flush()
             header = process.stdout.readline().decode().split()
             assert len(header) == 3 and header[1] == 'blob', name
             remaining = int(header[2]); digest = hashlib.sha256()
@@ -104,6 +106,7 @@ def authenticate_git_sources(tracked, hashes, revision):
                 digest.update(data); remaining -= len(data)
             assert process.stdout.read(1) == b'\n'
             assert digest.hexdigest() == hashes[name], ('Uncommitted captured source', name)
+        process.stdin.close()
         assert process.wait() == 0
     finally:
         if process.poll() is None:
