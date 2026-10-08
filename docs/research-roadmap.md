@@ -1,5 +1,34 @@
 # DrosoMem research roadmap
 
+## Current — M5 functional sensitivity closed (2026-10-08)
+
+[M5](temporal-functional-sensitivity-results.md) verifies the registered
+order-of-magnitude lag5 attenuation criterion in all six primary blocks; mean
+response ratio0.66135%, secondary0.01635%. It also verifies fresh iid decoding
+and distinguishes local tangents from actual one-symbol replacements.
+Attenuation, structural support and decoded information are different metrics.
+
+| Stage | Status | Interpretation boundary |
+| --- | --- | --- |
+| P0/v1 | Sealed | Original claims/negatives preserved |
+| P1 iid TDC | Closed; short-lag PASS | Computational historical-input access |
+| P2 null ensembles | Closed; material FAIL | No general real-wiring advantage |
+| M1 carry/synaptic increment | Closed; assay-invalid | Original endpoint undefined |
+| M2 current/history tradeoff | Closed; specified PASS | No universal memory cost |
+| M3 cycle-free sufficiency | Closed; PASS | No unique cycle contribution |
+| M4 strict cycle-control feasibility | Closed; INFEASIBLE | Other causal designs remain open |
+| M5 symbol-contrast sensitivity | Closed; attenuation PASS | Norm reduction is not information loss |
+| Next frozen-readout counterfactual tracking | Proposal only | Fresh streams, valid one-symbol replacement, identical future inputs |
+| P3 physiological spiking/plasticity | Outside this work | Separate biological targets/protocol |
+
+Next candidate: does an already-trained lag decoder follow a changed ACTUAL
+past symbol on fresh held-out streams? Register fixed lag/criterion, head/model
+budget, fresh streams and controls before counterfactual decoding outcomes.
+Do not rescore old primary endpoints, select favorable seeds/lags/decoder,
+promote small numerical tails into resolved biological memory, or add P3.
+All44,147 prior result identities and existing failures remain preserved.
+[Current handoff](next-work.md). Earlier dated snapshots retain their history.
+
 ## Current — M4 exact-control feasibility closed (2026-10-08)
 
 [M4](cycle-attribution-feasibility-results.md) independently verifies registered

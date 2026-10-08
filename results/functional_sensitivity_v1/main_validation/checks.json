@@ -1,0 +1,60 @@
+{
+  "all_checks_pass": true,
+  "outcome": "PASS",
+  "primary_pass": true,
+  "cases": 9,
+  "replayed_streams": 18,
+  "exact_full_state_hashes": 18,
+  "independently_refit_lag_heads": 189,
+  "observed_complex_step_probes": 288,
+  "observed_complex_step_vectors": 6048,
+  "selected_full_complex_step_probes": 36,
+  "full_coordinate_fd_probe_epsilon_lag_checks": 1512,
+  "exact_replacement_and_instantaneous_probe_trace_hashes": 1152,
+  "exact_centered_fd_trace_hashes": 144,
+  "exact_saved_float_primary_recalculated": true,
+  "independent_complex_primary_decisions_same": true,
+  "independent_complex_step_no_main_jacobian_import": true,
+  "full_coordinate_finite_differences_both_epsilons": true,
+  "instantaneous_past_influence_exact_zero": true,
+  "unsigned_envelope_structural_support_and_contraction_verified": true,
+  "source_graph_reconstruction": {
+    "full_graph_rebuilt_from_pinned_parquet": true,
+    "roles_rebuilt_from_pinned_annotations": true,
+    "partial_induced_graph_exact": true,
+    "neurons": 138639,
+    "edges": 2700513,
+    "raw_source_sha256": {
+      "Connectivity_783.parquet": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347",
+      "Completeness_783.csv": "bbb847a4cc2caaa7a16349722d220c087317b946d148d4d592d94d250617a311",
+      "annotations.tsv": "9a4f8b2f843196074431ebd7cd883536afa1be86c8a4ce90970441e8be81d1be"
+    }
+  },
+  "pairing": {
+    "paired_partial_whole_blocks": 3,
+    "streams_mapping_observed_ids_and_budget_paired": true
+  },
+  "scientific_threshold_tolerance_applied": false,
+  "biological_plasticity_performed": false,
+  "unique_cycle_effect_claim": false,
+  "memory_loss_from_attenuation_claim": false,
+  "result_manifest_sha256": "98eb3b4c3c49934365caa30608fd50b677dd883b7e3ed722271db4aceeaf73af",
+  "source_commit": "c541993484f6778a031d71ad4eb1798c748f6ce7",
+  "protocol_commit": "37212abeb6cfc1a4907e08348ff41030f3edfb8b",
+  "historical_preservation": {
+    "baseline_commit": "4a72db553f80317c282f48561e33b5edbfc3a765",
+    "prior_result_identities_preserved": 44147,
+    "protected_baseline_paths": 44784,
+    "historical_scientific_source_data_protocol_config_tests_preserved": true,
+    "m1_outcome_unchanged": "assay-invalid",
+    "m2_outcome_unchanged": "PASS",
+    "m3_outcome_unchanged": "PASS",
+    "m4_outcome_unchanged": "INFEASIBLE",
+    "p2_material_gates_unchanged": "FAIL",
+    "materialized_protected_files_checked": 5172,
+    "materialized_prior_result_files_checked": 4539,
+    "sparse_excluded_prior_result_identities": 39608,
+    "all_materialized_blob_checks_pass": true,
+    "sparse_paths_freshly_replayed": false
+  }
+}

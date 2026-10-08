@@ -1,5 +1,31 @@
 # Research status
 
+## Current — M5 observed sensitivity attenuation passes (2026-10-08)
+
+[Protocol](temporal-functional-sensitivity-protocol.md),
+[results/synthesis](temporal-functional-sensitivity-results.md),
+[independent checks](../results/functional_sensitivity_v1/main_validation/checks.json),
+[final audit](../results/functional_sensitivity_v1/final_audit/audit.json).
+All six fixed partial blocks pass exact S5<=S0/100; mean R5=.00661346
+(0.66135% of immediate local gain). Secondary firstthree mean .000163466
+(0.01635%) separately passes. Both cohorts' immediate gain exceeds1e-8.
+This is an operational zero-carry state-response attenuation test, not memory
+loss or an improvement claim. New iid lag2 decoding is100% in both cohorts.
+
+All9 cases/18 exact complete-state traces/189 independent heads,288 observed
+complex windows/6048 vectors,36 full-vector probes and1512 full-coordinate FD
+checks validate. Eta1 valid replacements are distinct from local tangents;
+structural support persists while gain diminishes. Late responses below the
+FD per-coordinate absolute tolerance do not establish resolved long memory.
+Instantaneous reference has exact zero past influence. No unique cycle/site,
+real-wiring/whole-brain superiority, biological learning or formal capacity.
+
+31 safeguards pass; no M5 failed attempts. All44,147 older result identities
+and scientific source/data/config/protocol/tests, M1 assay-invalid, P2 failed
+material gates and M4 strict INFEASIBLE/source-failure snapshot remain intact.
+This fixed M5 scope is closed. P3 remains excluded; next tracking proposal is
+unregistered and unexecuted.
+
 ## Current — M4 strict cycle-control feasibility rejected (2026-10-08)
 
 [Protocol](cycle-attribution-feasibility-protocol.md),

@@ -1,5 +1,32 @@
 # Prioritized work — updated 2026-10-08
 
+## Current handoff — M5 completed (2026-10-08)
+
+The [finite-lag sensitivity study](temporal-functional-sensitivity-results.md)
+is closed under its [prospective protocol](temporal-functional-sensitivity-protocol.md).
+Primary and secondary attenuation criteria PASS; mean lag5/immediate local
+gain0.66135% partial /0.01635% whole firstthree. Every six/three block meets
+the fixed10% limit, and no scientific tolerance enlarges the criterion.
+All9 cases/18 state hashes/189 refits/288 complex probes/1512 full-coordinate
+FD checks validate. No execution or verification remains in M5.
+
+Norm attenuation does not mean information loss: fresh lag2 TDC is100% in
+both cohorts. Structural support, local continuous interpolation sensitivity
+and eta1 actual symbol replacement are distinct. Long computed tails below
+FD resolution cannot establish resolved nonzero long memory. The31 safeguards
+pass, no M5 attempt failed,44,147 prior result identities and old scientific
+source/failures remain intact. M1 stays invalid and M4 stays INFEASIBLE.
+
+The next candidate is **counterfactual past-symbol tracking by frozen readouts**:
+on new independent held-out streams, does the already-trained lag decoder
+follow an actual replacement of one past symbol when all future inputs remain
+identical? Begin with a separate protocol fixing one lag/endpoint, source/model/
+readout budget, new stream seeds, control predictions and validity rules.
+M5 supplied state differences, not a registered counterfactual decoding test.
+This is a proposal only, not registered or executed; no automatic seed/lag/
+threshold/decoder sweep or physiology/plasticity P3 follows M5. Historical
+handoffs below retain their original scopes and outcomes.
+
 ## Current handoff — M4 completed (2026-10-08)
 
 The [exact cycle-attribution feasibility study](cycle-attribution-feasibility-results.md)

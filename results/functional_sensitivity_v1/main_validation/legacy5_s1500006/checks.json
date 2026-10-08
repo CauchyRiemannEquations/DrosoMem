@@ -1,0 +1,37 @@
+{
+  "all_checks_pass": true,
+  "level": "legacy5",
+  "seed": 1500006,
+  "exact_full_state_trace_hash": {
+    "train": "5b946ef7861edd59f55bc6ebe9f993a9f1ab713917a3fa4f3ce086f97adee9af",
+    "test": "6dd786e700885b5165e21703219bdc91e87437cc2f00df4a5b1c640cb4384989"
+  },
+  "independently_refit_heads": 21,
+  "exact_prediction_arrays": true,
+  "official_cell": {
+    "level": "legacy5",
+    "seed": 1500006,
+    "eligible": true,
+    "scientific_rule_pass": true,
+    "s0_numerator": 92917781287444980503671554777081848543353073669,
+    "s0_denominator": 1245373073209535442802565757648180518186263102095360,
+    "s5_numerator": 14783487531423670557222813133799066616527191075,
+    "s5_denominator": 5483626715956226461748257544076468457677753691146289152,
+    "current_gain": 0.008637731097419707,
+    "relative_gain": 0.006011112112709519,
+    "invalid_reason": null
+  },
+  "independent_complex_cell_decision_equal": true,
+  "probes": 32,
+  "lags": 21,
+  "selected_full_state_complex_probes": 4,
+  "full_state_fd_epsilons": 2,
+  "observed_complex_step_agreement": true,
+  "full_coordinate_complex_step_agreement": true,
+  "full_coordinate_fd_gate": true,
+  "unsigned_envelope_bound": true,
+  "contraction_bound": true,
+  "instantaneous_zero_history_exact": true,
+  "exact_replacement_and_instantaneous_full_state_hashes": 128,
+  "exact_centered_fd_full_state_hashes": 16
+}

@@ -11,6 +11,24 @@ fly memorizing pi or a model predicting unseen pi digits.
 
 ## Current research — 2026-10-08
 
+The [M5 finite-lag symbol-contrast sensitivity study](docs/temporal-functional-sensitivity-results.md)
+passes its prospective lag5 attenuation criterion in all six primary blocks.
+Mean normalized local derivative gain is0.66135% of immediate gain; paired
+whole firstthree secondary also passes (0.01635%). These are model response
+magnitudes, not percentages of memory lost. Fresh iid lag2 decoding is100% in
+both cohorts despite attenuated responses, and structural support remains broad.
+
+All9 cases,18 complete-state hashes,189 independent ridge refits,288 complex
+probe windows and1512 full-coordinate FD checks validate. Finite valid symbol
+replacements differ from local interpolation tangents. No M5 attempt failed;
+31 safeguards pass,44,147 historical result identities and M4's invalid guard
+snapshot remain preserved. [Protocol](docs/temporal-functional-sensitivity-protocol.md) ·
+[Independent checks](results/functional_sensitivity_v1/main_validation/checks.json) ·
+[Final audit](results/functional_sensitivity_v1/final_audit/audit.json).
+No unique cycle, biological learning or formal capacity claim is added.
+
+## Closed M4 — 2026-10-08
+
 The [M4 exact cycle-control feasibility study](docs/cycle-attribution-feasibility-results.md)
 is closed with registered **INFEASIBLE**. Partial labeled degrees/role totals
 already force cycles; in both graphs, relevant positive-delay cycles prevent a

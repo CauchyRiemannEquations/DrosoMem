@@ -1,0 +1,162 @@
+{
+  "smoke": false,
+  "outcome": "PASS",
+  "primary_pass": true,
+  "levels": {
+    "legacy5": {
+      "eligible": true,
+      "registered_rule_pass": true,
+      "outcome": "PASS",
+      "cells": [
+        {
+          "level": "legacy5",
+          "seed": 1500001,
+          "eligible": true,
+          "scientific_rule_pass": true,
+          "s0_numerator": 1338905201599093064281149869493580702564234181,
+          "s0_denominator": 18272432667136857678315084477688624218815217008640,
+          "s5_numerator": 1902248807870940926419846753267023541843218271,
+          "s5_denominator": 598751073636740552403028688164900838402137030939115520,
+          "current_gain": 0.008560058433033342,
+          "relative_gain": 0.006584666419795507,
+          "invalid_reason": null
+        },
+        {
+          "level": "legacy5",
+          "seed": 1500002,
+          "eligible": true,
+          "scientific_rule_pass": true,
+          "s0_numerator": 178290711263538057604885839255846614790701907179,
+          "s0_denominator": 2779528308322731278139059806924924634792529242357760,
+          "s5_numerator": 17888455064698480613120493280962917355239207107237,
+          "s5_denominator": 6284491268891228838022189110978799199868830276736956497920,
+          "current_gain": 0.00800900948537457,
+          "relative_gain": 0.006661507873979006,
+          "invalid_reason": null
+        },
+        {
+          "level": "legacy5",
+          "seed": 1500003,
+          "eligible": true,
+          "scientific_rule_pass": true,
+          "s0_numerator": 165514492515701635063283225557008589931597933897,
+          "s0_denominator": 2095238945831693013780129686774962243757478216990720,
+          "s5_numerator": 1257059940972971758554897825644843930823853303837,
+          "s5_denominator": 470789415613802857203752842808516316366480316898413117440,
+          "current_gain": 0.00888794246024937,
+          "relative_gain": 0.005813844528674361,
+          "invalid_reason": null
+        },
+        {
+          "level": "legacy5",
+          "seed": 1500004,
+          "eligible": true,
+          "scientific_rule_pass": true,
+          "s0_numerator": 18682453271634448926621367495191355759310089,
+          "s0_denominator": 345577922782730168857022874282527171987049021440,
+          "s5_numerator": 29482481213604643464791768893624047185730937,
+          "s5_denominator": 11323897373744502173106925544489850371671622334545920,
+          "current_gain": 0.0073526510868730886,
+          "relative_gain": 0.006939690395007864,
+          "invalid_reason": null
+        },
+        {
+          "level": "legacy5",
+          "seed": 1500005,
+          "eligible": true,
+          "scientific_rule_pass": true,
+          "s0_numerator": 344851055043561962787123658095316205475468353,
+          "s0_denominator": 7613513611307024032631285199036926757839673753600,
+          "s5_numerator": 63816582184160098102953327004611780338989923911,
+          "s5_denominator": 23950042945469622096121147526596033536085481237564620800,
+          "current_gain": 0.00673012631286725,
+          "relative_gain": 0.007669912456821978,
+          "invalid_reason": null
+        },
+        {
+          "level": "legacy5",
+          "seed": 1500006,
+          "eligible": true,
+          "scientific_rule_pass": true,
+          "s0_numerator": 92917781287444980503671554777081848543353073669,
+          "s0_denominator": 1245373073209535442802565757648180518186263102095360,
+          "s5_numerator": 14783487531423670557222813133799066616527191075,
+          "s5_denominator": 5483626715956226461748257544076468457677753691146289152,
+          "current_gain": 0.008637731097419707,
+          "relative_gain": 0.006011112112709519,
+          "invalid_reason": null
+        }
+      ],
+      "relative_lag5_gain": {
+        "mean": 0.006613455631164707,
+        "median": 0.006623087146887256,
+        "sd": 0.0006675123387322792,
+        "bootstrap_lo": 0.006149347929423712,
+        "bootstrap_hi": 0.007103674625360387
+      }
+    },
+    "brain5": {
+      "eligible": true,
+      "registered_rule_pass": true,
+      "outcome": "PASS",
+      "cells": [
+        {
+          "level": "brain5",
+          "seed": 1500001,
+          "eligible": true,
+          "scientific_rule_pass": true,
+          "s0_numerator": 5551509646105000776935403162568894305112376177,
+          "s0_denominator": 2338871381393517782824330813144143900008347777105920,
+          "s5_numerator": 102714393204542204563482804404889582216539446193,
+          "s5_denominator": 1255672011579437722953116419442398123056718478708027990999040,
+          "current_gain": 0.0015406442927560072,
+          "relative_gain": 0.0001856415414708317,
+          "invalid_reason": null
+        },
+        {
+          "level": "brain5",
+          "seed": 1500002,
+          "eligible": true,
+          "scientific_rule_pass": true,
+          "s0_numerator": 23607531069809527655872694035634054623822910831,
+          "s0_denominator": 9589372663713422909579756333890989990034225886134272,
+          "s5_numerator": 105017302916155535439937614621083374963260901244059,
+          "s5_denominator": 1647441679192222292514488742308426337450414644064932724190740480,
+          "current_gain": 0.0015690261677390174,
+          "relative_gain": 0.00016091451438870295,
+          "invalid_reason": null
+        },
+        {
+          "level": "brain5",
+          "seed": 1500003,
+          "eligible": true,
+          "scientific_rule_pass": true,
+          "s0_numerator": 42729377980010636425569050790412977470309968565,
+          "s0_denominator": 13409529253322835288192829995359758360047860588740608,
+          "s5_numerator": 28252446568391782240068048500908915252693437481,
+          "s5_denominator": 428522988078697000690349254254151740408245195114644473118720,
+          "current_gain": 0.0017850752121809073,
+          "relative_gain": 0.00014384158153824044,
+          "invalid_reason": null
+        }
+      ],
+      "relative_lag5_gain": {
+        "mean": 0.00016346587913259168,
+        "median": 0.00016091451438870295,
+        "sd": 2.1016452106238758e-05,
+        "bootstrap_lo": 0.00014384158153824044,
+        "bootstrap_hi": 0.0001856415414708317
+      }
+    }
+  },
+  "cases": 9,
+  "lag_heads": 189,
+  "probe_pairs": 288,
+  "selected_full_fd_probes": 36,
+  "criterion_unchanged": true,
+  "biological_plasticity_performed": false,
+  "unique_cycle_effect_claim": false,
+  "memory_loss_from_attenuation_claim": false,
+  "m1_outcome_unchanged": "assay-invalid",
+  "m4_outcome_unchanged": "INFEASIBLE"
+}
