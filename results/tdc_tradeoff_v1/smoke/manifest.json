@@ -1,0 +1,221 @@
+{
+  "complete": true,
+  "smoke": true,
+  "config": {
+    "protocol": "docs/temporal-tradeoff-protocol.md",
+    "namespace": "results/tdc_tradeoff_v1",
+    "baseline_commit": "e52d1ff959d4426ce61315ad17788aa7c66fcb88",
+    "cache": "outputs/tdc_v2/whole_cache",
+    "levels": [
+      "legacy5",
+      "brain5"
+    ],
+    "circuit_seeds": [
+      701
+    ],
+    "arms": {
+      "full": {
+        "carry": true,
+        "synaptic_history": true
+      },
+      "carry_only": {
+        "carry": true,
+        "synaptic_history": false
+      },
+      "synaptic_only": {
+        "carry": false,
+        "synaptic_history": true
+      },
+      "instantaneous": {
+        "carry": false,
+        "synaptic_history": false
+      }
+    },
+    "blocks": [
+      {
+        "seed": 1200001,
+        "input_seed": 1210001,
+        "train_seed": 1220001,
+        "test_seed": 1230001
+      },
+      {
+        "seed": 1200002,
+        "input_seed": 1210002,
+        "train_seed": 1220002,
+        "test_seed": 1230002
+      },
+      {
+        "seed": 1200003,
+        "input_seed": 1210003,
+        "train_seed": 1220003,
+        "test_seed": 1230003
+      },
+      {
+        "seed": 1200004,
+        "input_seed": 1210004,
+        "train_seed": 1220004,
+        "test_seed": 1230004
+      },
+      {
+        "seed": 1200005,
+        "input_seed": 1210005,
+        "train_seed": 1220005,
+        "test_seed": 1230005
+      },
+      {
+        "seed": 1200006,
+        "input_seed": 1210006,
+        "train_seed": 1220006,
+        "test_seed": 1230006
+      }
+    ],
+    "blocks_by_level": {
+      "legacy5": [
+        1200001
+      ],
+      "brain5": [
+        1200001
+      ]
+    },
+    "alphabet_size": 10,
+    "warmup": 200,
+    "train_samples": 300,
+    "test_samples": 200,
+    "lags": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "score_lags": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "primary_level": "legacy5",
+    "primary_contrast": [
+      "carry_only",
+      "instantaneous"
+    ],
+    "alpha": 1.0,
+    "gain": 0.9,
+    "leak": 0.6,
+    "input_fraction": 0.1,
+    "input_amplitude": 0.5,
+    "schedule": "mbon_after_kc",
+    "normalization": "incoming_l1",
+    "activity_epsilon": 1e-08,
+    "bootstrap_seed": 1240001,
+    "bootstrap_draws": 10000,
+    "smoke": {
+      "train_samples": 300,
+      "test_samples": 200,
+      "blocks": 1
+    },
+    "neural_workers": 4,
+    "max_seconds": 7200,
+    "max_rss_bytes": 4294967296,
+    "primary_question": "carry_only versus instantaneous joint current/history decoding change",
+    "reference_current_min": 0.99,
+    "historical_gain_min": 0.03,
+    "current_difference_max": -0.05,
+    "diagnostics": [
+      "repeat_switch_current_accuracy",
+      "current_errors_equal_previous_symbol",
+      "current_confusion_matrix"
+    ]
+  },
+  "source_commit": "e64f9193bc969cce77d7a9514da04f277e2fa1ca",
+  "artifacts": {
+    "arm-scores.csv": "b63a924375c3cea413052875d46fdea9c77997aa644545b28ee85e9592dc2b05",
+    "attempt.json": "c9cc5ef25d8856ba9eeced18b89aac13ff4cff81ad471bd50e93820f9c400446",
+    "brain5_carry_only_s1200001/attempt.json": "677dde5d4348c6fd2091236d2921a546417cdb85d6aacb8885f0cbcbbec68df2",
+    "brain5_carry_only_s1200001/case.npz": "f5ffb2b7db5e1aca628cfaee5e3c9dbbc8a6a1ffcdce2c90871583eb39dfc048",
+    "brain5_carry_only_s1200001/diagnostics.json": "d03a777ba9f8072132b9b9cd84af66e9053d7ee17bb07ae9ef4e941e13ef4ec6",
+    "brain5_carry_only_s1200001/graph.json": "25982675d51367832020045a9ce640d7d784f9f9ec2cf37af4408b3d3848f550",
+    "brain5_carry_only_s1200001/manifest.json": "ce2305054b446656e9cd3807682c91799b89c889f18e918f9a44c1a9da407cf5",
+    "brain5_carry_only_s1200001/metrics.json": "bcaa57acec5c5c15a34c38bd6247f0191d6e3dba100193f01a1fc082259fa4a4",
+    "brain5_carry_only_s1200001/resources.json": "55c513332e4fa44ef06378b7f474b4915743203bcaf003a4e05e3957d31b50e3",
+    "brain5_full_s1200001/attempt.json": "c3b25d80eb2ca2d06580ca72142b65473aa7115e71acdaf1313b00d9828f33d2",
+    "brain5_full_s1200001/case.npz": "e17956fe070e18606ced2aa5757ca0988642817031779b9bb77d6a51b4d4eb2a",
+    "brain5_full_s1200001/diagnostics.json": "54e9291b5e23d87e0ab8ff09008c482c2644dbb33026936b0414f0a83e59f117",
+    "brain5_full_s1200001/graph.json": "e88fd9a1c762966b1b1d2c8622359ab005c02cfda37d39ab5d46919be9324c53",
+    "brain5_full_s1200001/manifest.json": "d76f6f8c9c1581e605ae999e75c0b4fb3b49956513139bd8e17c5385c9153abf",
+    "brain5_full_s1200001/metrics.json": "69b8aa41965d06f1429ce318021855140fe7e908bb1de32717d4720050eeb694",
+    "brain5_full_s1200001/resources.json": "d94408f61fa9b6bcb0a1f46260c2efee49684a5f004fbb97f4ef98c8b1e90b8d",
+    "brain5_instantaneous_s1200001/attempt.json": "0c9048cce334136a7e7d47a323fea80fe6574df3b7bec2740f3e1f1070c46a6f",
+    "brain5_instantaneous_s1200001/case.npz": "9684720dc21ed8240a07edf222f1fc507118321b61e3057f223e582c201ffdee",
+    "brain5_instantaneous_s1200001/diagnostics.json": "54e9291b5e23d87e0ab8ff09008c482c2644dbb33026936b0414f0a83e59f117",
+    "brain5_instantaneous_s1200001/graph.json": "ba359f34babb6de0469b2330bedd85a5d9f6eefe4763c7e2ab2b1788e7005a8e",
+    "brain5_instantaneous_s1200001/manifest.json": "83b96d913705b6306360c63a52e8b9ad668ae3f85851f89e2997cff4ecbabf00",
+    "brain5_instantaneous_s1200001/metrics.json": "b2e421e8a4e94cf31a01a35ee8fa1a016b3882cf289d4a296140582563feda65",
+    "brain5_instantaneous_s1200001/resources.json": "39d9105873b98f3b2218e1eb5ebc39c92caa07f7edf6daaa3bc82e6b7b35ce63",
+    "brain5_synaptic_only_s1200001/attempt.json": "21cdeddfb6479a415fe8cbccd7ff802fbdd00afcc52a378229a005e5229a85e6",
+    "brain5_synaptic_only_s1200001/case.npz": "482597c200a6a9c54c2dfbd23ec1158fa104c6b3a01c3b28613d2f8a2b7e5d43",
+    "brain5_synaptic_only_s1200001/diagnostics.json": "54e9291b5e23d87e0ab8ff09008c482c2644dbb33026936b0414f0a83e59f117",
+    "brain5_synaptic_only_s1200001/graph.json": "fbeee1904970e14e0df67750e89abc484f9cc0293b894c38781108d97fe1caf3",
+    "brain5_synaptic_only_s1200001/manifest.json": "5be10b5405c995fb1523690de16f35a1a80b58ba10d36bc39cc9d69adc92d06a",
+    "brain5_synaptic_only_s1200001/metrics.json": "ecdd63f977d708f4b44e1dbe74288efc2449619fdb6cf5b8ea53e26cb51676e3",
+    "brain5_synaptic_only_s1200001/resources.json": "31e26c5911c4a496a7e368ef6b599e490e9d3e4c031c0d50e0d69c0dc19c6d38",
+    "config.json": "8c091f4749f45a8c19ac390e46d2150e0f7347e4b8cae6f68b58f42bfa7f678a",
+    "curve-summary.csv": "f19ad4a023efeee07a8115f5151a173778a3c3101c1ff4c53fffbeea0f659976",
+    "descriptive-pairwise.csv": "a46d12490fe76089f41896c31618f74584c185ef74b17580a3149e10c27c1fae",
+    "diagnostics.csv": "4aefce3dc2149110026a66ba5e4adc043bcbf27518b49317dcfcf99edac1dcb4",
+    "historical-preservation.json": "bafc7852d901a62d8cbd65acf1098917d044de5ee6d63d60fe8524f6b2b8a292",
+    "job-resources.json": "2e7f0e9d6651cfb3bbd3de174a216409a79c3a105b13564c7b80128d7a5a5857",
+    "legacy5_carry_only_s1200001/attempt.json": "5ae53c7ad548c20aa4b7f9bf5715ece83f55199e87a5fd3f84b82843ed3c5be0",
+    "legacy5_carry_only_s1200001/case.npz": "4998eeb2e0106db1362be4d68c13b73a9e2512817d86352f852068106028dedc",
+    "legacy5_carry_only_s1200001/diagnostics.json": "d03a777ba9f8072132b9b9cd84af66e9053d7ee17bb07ae9ef4e941e13ef4ec6",
+    "legacy5_carry_only_s1200001/graph.json": "27e67d191287758b915203c8e5151569a0590d22d09e9320dd711bccbe61abe3",
+    "legacy5_carry_only_s1200001/manifest.json": "aca4274546d4378bcb258140d50e0bcef1687e72deda6ad20384462a8be9d464",
+    "legacy5_carry_only_s1200001/metrics.json": "4d1c3e3268eeadea0acb43d6a0c61703472e2e714ec49d2322a19689e68021a3",
+    "legacy5_carry_only_s1200001/resources.json": "9cb1b0413620781de5a3a8b5a775710f91bf4effb91541b25f1ff97ee9529a09",
+    "legacy5_full_s1200001/attempt.json": "43e964668dbea35de14244f11dc90ed150bcd4e140d22fa271ab063339c1e414",
+    "legacy5_full_s1200001/case.npz": "78cba1062c45da4ca17f0babb980e7a97efdffac69a7416d0b9eea5cbd5ce411",
+    "legacy5_full_s1200001/diagnostics.json": "54e9291b5e23d87e0ab8ff09008c482c2644dbb33026936b0414f0a83e59f117",
+    "legacy5_full_s1200001/graph.json": "ad6e08f469298e35c9c3d73c3902ab2a81e9a4d72dbb206547ddcd02c1b996aa",
+    "legacy5_full_s1200001/manifest.json": "a416ae6218d2c6ce5eb4a358041fd83bdca0e988a50e2a4cc2e096e65022fd86",
+    "legacy5_full_s1200001/metrics.json": "b8cf14656c3173fa5efb8808756b33bf8172397636511cb7b72133fe3b8285f3",
+    "legacy5_full_s1200001/resources.json": "c2db609b69d70511fde5c510494ef1ba9f90e41e574dc586e5ed5b0f7781d9d1",
+    "legacy5_instantaneous_s1200001/attempt.json": "5e7823c818d5184634de64aef18288dadd0524a0fd2003a49efd7d293479eb24",
+    "legacy5_instantaneous_s1200001/case.npz": "0d328d4fe95f454b657a64407d843b261a385b4c2bf418b344b5db175dfb2622",
+    "legacy5_instantaneous_s1200001/diagnostics.json": "54e9291b5e23d87e0ab8ff09008c482c2644dbb33026936b0414f0a83e59f117",
+    "legacy5_instantaneous_s1200001/graph.json": "1c2b4bbbc5dcc7ae7c36828571a10c6c38f254c4e3563c274dbc9d0c0ca16a56",
+    "legacy5_instantaneous_s1200001/manifest.json": "f178187d002d2a7eb1db08f198ddbbff8155ab5077663309470fd205d80a5f05",
+    "legacy5_instantaneous_s1200001/metrics.json": "6cb107a2fe137a2a66d077826bc867b07a2b8984adf11a1f34c1014cb97ae9c7",
+    "legacy5_instantaneous_s1200001/resources.json": "9adfd12a52914dea57d5fcc19574c551ca1cc80281cbded901f4a3ee1cdef82c",
+    "legacy5_synaptic_only_s1200001/attempt.json": "9772ce43c90326c756f736737b84a0d516cc818fbaa6b81a2991dcc6308aa745",
+    "legacy5_synaptic_only_s1200001/case.npz": "0c549a3d59cb74bde914cdc0b2d9d34a982d133d3201beb5fa4fcde4b2d2d82d",
+    "legacy5_synaptic_only_s1200001/diagnostics.json": "54e9291b5e23d87e0ab8ff09008c482c2644dbb33026936b0414f0a83e59f117",
+    "legacy5_synaptic_only_s1200001/graph.json": "5414d82eaa5b683c3b3ca15ca73aa22f87cf5882ebcf43e41f4bbdf99cf32b2e",
+    "legacy5_synaptic_only_s1200001/manifest.json": "7339e2bad7da4c7da45826c252f15333563320ba48995b0309a63d9d1a9cc9f4",
+    "legacy5_synaptic_only_s1200001/metrics.json": "31460ed4130394d200b840889a49b79d101dae423642699f311dab9b2d984a52",
+    "legacy5_synaptic_only_s1200001/resources.json": "6289449192f084438fc29f0c58613422b3f53c5fce8e2d691c3e504ad2905917",
+    "paired-tradeoff.csv": "8e113f2d8750ed18852741421573d4e4182c8f4097b4f3a45122af9233006d80",
+    "process-tree-resources.json": "a439a54ba03f75f2781eb8e52d2b709763c9d759eec2677631da247ac5453ad4",
+    "raw-lags.csv": "d067a125751b98e02a159acf878b09e4b88f21603d04d3ab6b2b008c8a9c4279",
+    "resources.json": "b3928bd79aac487aa758b7c0387958232a6c9696c09d56c7344c88a4946bbf2c",
+    "source.json": "1ac8e207d727f3b964df5a6d3cb5ebc58a984ad4ffb38ddb4423f758ee6fe7e1",
+    "summary.json": "606bca24d57cbe9fa44f4f71f599fed635ecc94dcf8c13e031ea34516e193d00",
+    "tradeoff-tdc.png": "7e694f7ef4534d4eda16258c9cfe503cafc9c634da73592d3f0d5bcad81fccfe"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "all_checks_pass": true,
+  "cases": 8,
+  "replayed_streams": 16,
+  "independently_refit_lag_heads": 168,
+  "exact_full_state_trace_hashes": 16,
+  "instantaneous_certificates": 2,
+  "zero_state_input_access_certificates": 8,
+  "diagnostics_independently_recomputed": 8,
+  "outcome": "smoke",
+  "primary_pass": null,
+  "endpoints": {
+    "legacy5": {
+      "reference_valid": true,
+      "registered_joint_pass": null,
+      "historical_gain_exact": "73/900",
+      "current_difference_exact": "-39/200",
+      "historical_mean_pass": true,
+      "current_mean_pass": true,
+      "all_history_positive": true,
+      "all_current_negative": true
+    },
+    "brain5": {
+      "reference_valid": true,
+      "registered_joint_pass": null,
+      "historical_gain_exact": "73/900",
+      "current_difference_exact": "-39/200",
+      "historical_mean_pass": true,
+      "current_mean_pass": true,
+      "all_history_positive": true,
+      "all_current_negative": true
+    }
+  },
+  "result_manifest_sha256": "1f7d64dfddecad86076b8516eff03d28fc65ca9766e3e1e968da5668df9dc947",
+  "verifier_commit": "e64f9193bc969cce77d7a9514da04f277e2fa1ca",
+  "verifier_sha256": "433967cf028142fcfde5715f0242c137127c7f005359880af3d8b4a70b48efed",
+  "historical_preservation": {
+    "baseline_commit": "e52d1ff959d4426ce61315ad17788aa7c66fcb88",
+    "prior_result_blobs_unchanged": 42717,
+    "historical_numerical_source_data_config_protocols_tests_unchanged": true,
+    "m1_outcome_unchanged": "assay-invalid"
+  }
+}

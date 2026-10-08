@@ -1,0 +1,253 @@
+{
+  "smoke": true,
+  "outcome": "smoke",
+  "primary_pass": null,
+  "levels": {
+    "legacy5": {
+      "reference_valid": true,
+      "arm_metrics": {
+        "full": {
+          "current": {
+            "mean": 1.0,
+            "median": 1.0,
+            "sd": 0.0,
+            "bootstrap_lo": 1.0,
+            "bootstrap_hi": 1.0
+          },
+          "history": {
+            "mean": 0.5822222222222222,
+            "median": 0.5822222222222222,
+            "sd": 0.0,
+            "bootstrap_lo": 0.5822222222222222,
+            "bootstrap_hi": 0.5822222222222222
+          },
+          "long_history": {
+            "mean": 0.16555555555555557,
+            "median": 0.16555555555555557,
+            "sd": 0.0,
+            "bootstrap_lo": 0.16555555555555557,
+            "bootstrap_hi": 0.16555555555555557
+          }
+        },
+        "carry_only": {
+          "current": {
+            "mean": 0.805,
+            "median": 0.805,
+            "sd": 0.0,
+            "bootstrap_lo": 0.805,
+            "bootstrap_hi": 0.805
+          },
+          "history": {
+            "mean": 0.09222222222222222,
+            "median": 0.09222222222222222,
+            "sd": 0.0,
+            "bootstrap_lo": 0.09222222222222222,
+            "bootstrap_hi": 0.09222222222222222
+          },
+          "long_history": {
+            "mean": 0.01888888888888889,
+            "median": 0.01888888888888889,
+            "sd": 0.0,
+            "bootstrap_lo": 0.01888888888888889,
+            "bootstrap_hi": 0.01888888888888889
+          }
+        },
+        "synaptic_only": {
+          "current": {
+            "mean": 1.0,
+            "median": 1.0,
+            "sd": 0.0,
+            "bootstrap_lo": 1.0,
+            "bootstrap_hi": 1.0
+          },
+          "history": {
+            "mean": 0.45666666666666667,
+            "median": 0.45666666666666667,
+            "sd": 0.0,
+            "bootstrap_lo": 0.45666666666666667,
+            "bootstrap_hi": 0.45666666666666667
+          },
+          "long_history": {
+            "mean": 0.11638888888888889,
+            "median": 0.11638888888888889,
+            "sd": 0.0,
+            "bootstrap_lo": 0.11638888888888889,
+            "bootstrap_hi": 0.11638888888888889
+          }
+        },
+        "instantaneous": {
+          "current": {
+            "mean": 1.0,
+            "median": 1.0,
+            "sd": 0.0,
+            "bootstrap_lo": 1.0,
+            "bootstrap_hi": 1.0
+          },
+          "history": {
+            "mean": 0.011111111111111112,
+            "median": 0.011111111111111112,
+            "sd": 0.0,
+            "bootstrap_lo": 0.011111111111111112,
+            "bootstrap_hi": 0.011111111111111112
+          },
+          "long_history": {
+            "mean": 0.005,
+            "median": 0.005,
+            "sd": 0.0,
+            "bootstrap_lo": 0.005,
+            "bootstrap_hi": 0.005
+          }
+        }
+      },
+      "primary": {
+        "historical_gain": {
+          "mean": 0.0811111111111111,
+          "median": 0.0811111111111111,
+          "sd": 0.0,
+          "bootstrap_lo": 0.0811111111111111,
+          "bootstrap_hi": 0.0811111111111111,
+          "mean_exact": "73/900"
+        },
+        "current_difference": {
+          "mean": -0.195,
+          "median": -0.195,
+          "sd": 0.0,
+          "bootstrap_lo": -0.195,
+          "bootstrap_hi": -0.195,
+          "mean_exact": "-39/200"
+        },
+        "historical_mean_pass": true,
+        "current_mean_pass": true,
+        "all_history_positive": true,
+        "all_current_negative": true,
+        "registered_joint_pass": null
+      }
+    },
+    "brain5": {
+      "reference_valid": true,
+      "arm_metrics": {
+        "full": {
+          "current": {
+            "mean": 1.0,
+            "median": 1.0,
+            "sd": 0.0,
+            "bootstrap_lo": 1.0,
+            "bootstrap_hi": 1.0
+          },
+          "history": {
+            "mean": 0.5555555555555556,
+            "median": 0.5555555555555556,
+            "sd": 0.0,
+            "bootstrap_lo": 0.5555555555555556,
+            "bootstrap_hi": 0.5555555555555556
+          },
+          "long_history": {
+            "mean": 0.14666666666666667,
+            "median": 0.14666666666666667,
+            "sd": 0.0,
+            "bootstrap_lo": 0.14666666666666667,
+            "bootstrap_hi": 0.14666666666666667
+          }
+        },
+        "carry_only": {
+          "current": {
+            "mean": 0.805,
+            "median": 0.805,
+            "sd": 0.0,
+            "bootstrap_lo": 0.805,
+            "bootstrap_hi": 0.805
+          },
+          "history": {
+            "mean": 0.09222222222222222,
+            "median": 0.09222222222222222,
+            "sd": 0.0,
+            "bootstrap_lo": 0.09222222222222222,
+            "bootstrap_hi": 0.09222222222222222
+          },
+          "long_history": {
+            "mean": 0.01888888888888889,
+            "median": 0.01888888888888889,
+            "sd": 0.0,
+            "bootstrap_lo": 0.01888888888888889,
+            "bootstrap_hi": 0.01888888888888889
+          }
+        },
+        "synaptic_only": {
+          "current": {
+            "mean": 1.0,
+            "median": 1.0,
+            "sd": 0.0,
+            "bootstrap_lo": 1.0,
+            "bootstrap_hi": 1.0
+          },
+          "history": {
+            "mean": 0.4311111111111111,
+            "median": 0.4311111111111111,
+            "sd": 0.0,
+            "bootstrap_lo": 0.4311111111111111,
+            "bootstrap_hi": 0.4311111111111111
+          },
+          "long_history": {
+            "mean": 0.1111111111111111,
+            "median": 0.1111111111111111,
+            "sd": 0.0,
+            "bootstrap_lo": 0.1111111111111111,
+            "bootstrap_hi": 0.1111111111111111
+          }
+        },
+        "instantaneous": {
+          "current": {
+            "mean": 1.0,
+            "median": 1.0,
+            "sd": 0.0,
+            "bootstrap_lo": 1.0,
+            "bootstrap_hi": 1.0
+          },
+          "history": {
+            "mean": 0.011111111111111112,
+            "median": 0.011111111111111112,
+            "sd": 0.0,
+            "bootstrap_lo": 0.011111111111111112,
+            "bootstrap_hi": 0.011111111111111112
+          },
+          "long_history": {
+            "mean": 0.005,
+            "median": 0.005,
+            "sd": 0.0,
+            "bootstrap_lo": 0.005,
+            "bootstrap_hi": 0.005
+          }
+        }
+      },
+      "primary": {
+        "historical_gain": {
+          "mean": 0.0811111111111111,
+          "median": 0.0811111111111111,
+          "sd": 0.0,
+          "bootstrap_lo": 0.0811111111111111,
+          "bootstrap_hi": 0.0811111111111111,
+          "mean_exact": "73/900"
+        },
+        "current_difference": {
+          "mean": -0.195,
+          "median": -0.195,
+          "sd": 0.0,
+          "bootstrap_lo": -0.195,
+          "bootstrap_hi": -0.195,
+          "mean_exact": "-39/200"
+        },
+        "historical_mean_pass": true,
+        "current_mean_pass": true,
+        "all_history_positive": true,
+        "all_current_negative": true,
+        "registered_joint_pass": null
+      }
+    }
+  },
+  "cases": 8,
+  "lag_heads": 168,
+  "criterion_unchanged": true,
+  "biological_plasticity_performed": false,
+  "m1_outcome_unchanged": "assay-invalid",
+  "m1_informed_design": true
+}

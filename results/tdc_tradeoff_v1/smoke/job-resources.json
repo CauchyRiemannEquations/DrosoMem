@@ -1,0 +1,74 @@
+[
+  {
+    "identity": "legacy5/instantaneous/s1200001",
+    "resources": {
+      "seconds": 0.1889930999986973,
+      "peak_sampled_rss_bytes": 111759360,
+      "os_process_peak_working_set_bytes": 111759360,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/carry_only/s1200001",
+    "resources": {
+      "seconds": 0.22815860000082466,
+      "peak_sampled_rss_bytes": 111759360,
+      "os_process_peak_working_set_bytes": 111759360,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/synaptic_only/s1200001",
+    "resources": {
+      "seconds": 0.23644919999969716,
+      "peak_sampled_rss_bytes": 112017408,
+      "os_process_peak_working_set_bytes": 112017408,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "legacy5/full/s1200001",
+    "resources": {
+      "seconds": 0.29147480000028736,
+      "peak_sampled_rss_bytes": 112140288,
+      "os_process_peak_working_set_bytes": 112140288,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "brain5/carry_only/s1200001",
+    "resources": {
+      "seconds": 14.660471200000757,
+      "peak_sampled_rss_bytes": 256757760,
+      "os_process_peak_working_set_bytes": 289165312,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "brain5/instantaneous/s1200001",
+    "resources": {
+      "seconds": 14.94455890000063,
+      "peak_sampled_rss_bytes": 256884736,
+      "os_process_peak_working_set_bytes": 289292288,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "brain5/full/s1200001",
+    "resources": {
+      "seconds": 23.18043089999992,
+      "peak_sampled_rss_bytes": 255885312,
+      "os_process_peak_working_set_bytes": 288849920,
+      "sample_seconds": 0.05
+    }
+  },
+  {
+    "identity": "brain5/synaptic_only/s1200001",
+    "resources": {
+      "seconds": 23.18165079999926,
+      "peak_sampled_rss_bytes": 256622592,
+      "os_process_peak_working_set_bytes": 289030144,
+      "sample_seconds": 0.05
+    }
+  }
+]
