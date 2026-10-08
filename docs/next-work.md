@@ -1,4 +1,31 @@
-# Prioritized work — updated 2026-10-06
+# Prioritized work — updated 2026-10-08
+
+## Current handoff — 2026-10-08
+
+The proposed leak/carry versus previous-state synaptic transmission study is
+now [closed](temporal-mechanism-results.md) under its
+[precommitted protocol](temporal-mechanism-protocol.md). All36 main cases,
+72 exact complete-state replays and756 independent readout refits are complete.
+Registered outcome: **assay-invalid**. Carry-only current decoding84–86% fails
+the90% eligibility requirement; the material-mechanism endpoint is undefined.
+Large descriptive historical gaps do not substitute for the registered result.
+The technical verifier memory failure and same-data retry remain archived.
+All42,015 prior result blobs and all old scientific code/data/configs remain
+unchanged. No execution or validation remains in M1 or the closed P0/P1/P2 scopes.
+
+The next candidate computational question is the **joint current/history
+decoding tradeoff**: how do these interventions change both kinds of access
+under a prospectively validated assay? Any such study needs a distinct protocol,
+fixed reference checks, seeds, budgets and interpretation before new outcomes.
+It must not lower M1's90% gate or relabel M1 as confirmed. This is a proposal,
+not a registered or executed experiment. Another distinct later question is
+delayed feedforward propagation versus anatomical feedback cycles; M1's R
+switch includes both and cannot resolve that distinction.
+
+P3 physiology/spiking/plasticity remains outside this work. Do not automatically
+start a carry/drive sweep, favorable-lag selection, new decoder or extra seed.
+Retain the current invalid assay, earlier wiring/whole-brain/local-learning
+negative results and every interruption. The dated handoffs below are history.
 
 ## Current handoff — 2026-10-06
 

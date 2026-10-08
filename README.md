@@ -9,7 +9,24 @@ fly memorizing pi or a model predicting unseen pi digits.
 [한국어 설명](docs/README-ko.md) · [Research status / audit](docs/research-status.md) ·
 [Roadmap](docs/research-roadmap.md) · [Extension closeout](docs/additional-research-closeout.md)
 
-## Current research — 2026-10-06
+## Current research — 2026-10-08
+
+The [state-carry / previous-state synaptic-drive study](docs/temporal-mechanism-results.md)
+is complete with registered outcome **assay-invalid**, not confirmed mechanism
+advantage. Four fixed interventions retain current KC-to-MBON input access and
+equal decoder budgets. Carry-only current-symbol decoding is84–86%, below the
+prospective90% eligibility requirement; primary and secondary endpoints remain
+undefined. Full−carry-only mean historical accuracy is descriptively+17.815 pp
+partial and+15.970 pp whole, but those gaps do not rescue the failed assay.
+All72 full-state trace hashes and756 independent refits validate exactly at
+predictions/counts. The first verifier memory failure, technical indexing repair
+and all42,015 pre-study result blobs are preserved. No settings or criteria were
+tuned. [Protocol](docs/temporal-mechanism-protocol.md) ·
+[Independent verification](results/tdc_mechanism_v1/main_validation_retry1/checks.json) ·
+[Final audit](results/tdc_mechanism_v1/final_audit/audit.json).
+P3 remains excluded; earlier P1/P2 conclusions below are unchanged.
+
+## Closed v1/P1/P2 programme — 2026-10-06
 
 [v1 closeout](docs/drosomem-v1-closeout.md) seals baseline `0cf0867` and its
 negative results. The [Temporal Decodability Curve](docs/temporal-memory-curve-results.md)

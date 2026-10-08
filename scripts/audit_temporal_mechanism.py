@@ -59,6 +59,14 @@ def audit(out):
         assert (smoke['cases'],smoke['replayed_streams'],smoke['independently_refit_lag_heads'])==(8,16,168)
         assert (main['cases'],main['replayed_streams'],main['independently_refit_lag_heads'])==(36,72,756)
         assert main['instantaneous_certificates']==9 and main['zero_state_input_access_certificates']==36
+        assert main['exact_full_state_trace_hashes']==72
+        assert main['verifier_sha256']==repair['repaired_verifier_sha256']
+        assert main['original_verifier_sha256']==repair['original_verifier_sha256']
+        retry_smoke=read(root/'smoke_validation_retry1/checks.json')
+        assert retry_smoke['all_checks_pass'] and retry_smoke['verifier_sha256']==repair['repaired_verifier_sha256']
+        assert (retry_smoke['cases'],retry_smoke['replayed_streams'],retry_smoke['independently_refit_lag_heads'])==(8,16,168)
+        guard=read(root/'final_guard_tests/checks.json')
+        assert guard['all_checks_pass'] and guard['tests_passed']==5
         assert main['result_manifest_sha256']==cached(root/'main/manifest.json')
         assert smoke['result_manifest_sha256']==cached(root/'smoke/manifest.json')
         assert main['outcome']==summary['outcome']

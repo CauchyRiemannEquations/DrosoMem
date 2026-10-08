@@ -1,5 +1,31 @@
 # DrosoMem research roadmap
 
+## Current — 2026-10-08
+
+The next-work state-carry/history-dependent transmission question has now been
+[registered](temporal-mechanism-protocol.md), executed and
+[independently verified](temporal-mechanism-results.md). Its outcome is
+**assay-invalid**: carry_only lag0 accuracy84–86% fails the fixed90% current
+input-access requirement. A descriptive+17.815 pp partial historical gap does
+not yield a registered success. The whole secondary gap is+15.970 pp, also
+ineligible. All four arms and all fixed blocks are retained, including the
+initial verifier memory failure and technical retry. Earlier stages are closed.
+
+| Stage / question | Status | Boundary |
+| --- | --- | --- |
+| P0/v1 | Sealed | Historical claims and negatives unchanged |
+| P1 iid TDC | Closed; short-lag gate passes | Computational historical access |
+| P2 matched null ensembles | Closed; both material gates fail | No general real-wiring advantage |
+| M1 carry / previous-state transmission | Closed; assay-invalid | Material mechanism endpoint undefined;36 cases/72 exact replays/756 refits |
+| Future current/history tradeoff assay | Proposal only | New question, budget and prospective validation; cannot revise M1's eligibility |
+| Future delayed feedforward / feedback-cycle distinction | Proposal only | M1 does not isolate anatomical feedback cycles |
+| P3 physiological spiking/plasticity | Outside completed scope | Requires separate biological targets/protocol; unexecuted here |
+
+No extra seed, threshold change, decoder replacement or coefficient sweep is
+a completion step. Future work must preserve this outcome and ask its own
+question before observing new outcomes. [Current handoff](next-work.md).
+The earlier dated roadmap below retains its historical conclusions.
+
 ## Current — 2026-10-06
 
 The finite [v1/P1/P2 programme](temporal-memory-synthesis.md) is complete and

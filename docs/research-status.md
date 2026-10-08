@@ -1,5 +1,34 @@
 # Research status
 
+## Current — M1 closed with assay-invalid outcome (2026-10-08)
+
+[Prospective protocol](temporal-mechanism-protocol.md),
+[results/synthesis and Korean explanation](temporal-mechanism-results.md),
+[independent verification](../results/tdc_mechanism_v1/main_validation_retry1/checks.json),
+[final audit](../results/tdc_mechanism_v1/final_audit/audit.json).
+All36 four-arm/graph/block cases,72 full-state streams and756 lag readout heads
+are executed and independently checked; all72 state trajectory digests match
+exactly. Analytical instantaneous prototypes verify the no-history arm and all
+zero-state current responses are identical.
+
+The current-symbol eligibility requirement fails in carry_only at84–86%,
+below90%, in all six partial and all three whole blocks. Primary and secondary
+mechanism endpoints are undefined: **assay-invalid**, not registered success or
+an eligible negative comparison. Descriptive full−carry-only mean historical
+accuracy is+17.815 pp partial /+15.970 pp whole. Current/history decoding can
+interact despite identical zero-state input paths; no criterion was relaxed.
+Previous-state synaptic drive includes delayed feedforward paths, so these
+interventions do not isolate anatomical cycles or locate storage.
+
+An initial whole-brain verifier indexing allocation exceeded4GiB; the failed
+attempt, original source and technical repair are archived. Coordinate-first
+indexing checks identical values; smoke and all main cases pass verification
+after repair under unchanged limits/tolerances. All42,015 pre-M1 result blobs
+and prior numerical source/data/config/scripts remain unchanged. P1's
+historical-input evidence and P2's failed wiring gates below remain sealed.
+M1 execution/validation is closed; its scientific mechanism question remains
+unresolved under this assay. P3 was not added.
+
 ## Current — v1 sealed; P1/P2 completed (2026-10-06)
 
 [v1 closeout](drosomem-v1-closeout.md), [TDC results](temporal-memory-curve-results.md),
