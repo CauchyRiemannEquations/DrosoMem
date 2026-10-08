@@ -1,5 +1,32 @@
 # Prioritized work — updated 2026-10-08
 
+## Current handoff — M4 completed (2026-10-08)
+
+The [exact cycle-attribution feasibility study](cycle-attribution-feasibility-results.md)
+is closed under its [prospective protocol](cycle-attribution-feasibility-protocol.md).
+Registered result INFEASIBLE: partial degree/role totals force cycles, and both
+graphs' input-observed positive-delay cycles preclude exact all-lag support in
+any same-node DAG. All9 mapping cases/90 symbol witnesses independently validate.
+Whole's degree-only count tests remain UNRESOLVED; no feasible construction or
+memory-performance result is inferred. No execution/verification remains in M4.
+
+The29 safeguards pass with source-authenticated retry. The first guard's source
+capture race is preserved as validation-invalid with its exact snapshot, original
+manifest and explicit registry. No settings/seeds/criteria changed; no new
+source-graph trajectory, decoder, graph search or P3 was added. All43,983 prior
+result identities and older scientific source/results remain protected.
+
+The next candidate is **finite-lag functional sensitivity on the fixed graph**:
+how does the actual signed/nonlinear influence of past inputs differ from mere
+structural reachability and decodable information? Start with a distinct
+prospective derivative/finite-difference validity argument, fresh independent
+streams, fixed lags/observation/model/readout budgets and one primary endpoint.
+This is a proposal only, not registered or executed. It does not identify a
+unique cycle effect or require biological plasticity. M4's strict all-lag ideal
+is stronger than every useful causal comparison needs; paths can mediate effects.
+Do not automatically weaken its gate, add seeds/controls or start a favorable
+lag/order/decoder sweep. P3 remains excluded. Dated notes below retain history.
+
 ## Current handoff — M3 completed (2026-10-08)
 
 The cycle question is now [closed within feedforward sufficiency scope](temporal-cycles-results.md)

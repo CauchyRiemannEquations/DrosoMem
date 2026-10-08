@@ -11,6 +11,23 @@ fly memorizing pi or a model predicting unseen pi digits.
 
 ## Current research — 2026-10-08
 
+The [M4 exact cycle-control feasibility study](docs/cycle-attribution-feasibility-results.md)
+is closed with registered **INFEASIBLE**. Partial labeled degrees/role totals
+already force cycles; in both graphs, relevant positive-delay cycles prevent a
+same-node DAG from retaining complete all-lag structural input-observation walk
+support. All9 fixed mapping cases/90 symbol witnesses validate independently.
+Whole degree-only feasibility remains UNRESOLVED. This is a strict design limit,
+not a failed cycle-memory hypothesis or a universal ban on causal comparisons.
+
+No new decoding run was added. The29 safeguards pass with authenticated retry;
+the first guard's source-capture validation failure and exact snapshot are
+preserved. All43,983 prior result identities and old scientific source remain
+sealed. [Protocol](docs/cycle-attribution-feasibility-protocol.md) ·
+[Independent checks](results/cycle_attribution_v1/main_validation/checks.json) ·
+[Final audit](results/cycle_attribution_v1/final_audit/audit.json).
+
+## Closed M3 — 2026-10-08
+
 The [cycle-free feedforward sufficiency study M3](docs/temporal-cycles-results.md)
 passes its prospective iid lag2 criterion in all six fresh partial blocks:
 acyclic DAG with zero direct carry decodes11998/12000 symbols (99.9833%), with

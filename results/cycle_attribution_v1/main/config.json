@@ -1,0 +1,104 @@
+{
+  "protocol": "docs/cycle-attribution-feasibility-protocol.md",
+  "namespace": "results/cycle_attribution_v1",
+  "baseline_commit": "5afe8f28cc1d820973b9156c20501a0d31c88a26",
+  "cache": "outputs/tdc_v2/whole_cache",
+  "levels": [
+    "legacy5",
+    "brain5"
+  ],
+  "circuit_seeds": [
+    701
+  ],
+  "primary_level": "legacy5",
+  "blocks": [
+    {
+      "seed": 1400001,
+      "input_seed": 1410001
+    },
+    {
+      "seed": 1400002,
+      "input_seed": 1410002
+    },
+    {
+      "seed": 1400003,
+      "input_seed": 1410003
+    },
+    {
+      "seed": 1400004,
+      "input_seed": 1410004
+    },
+    {
+      "seed": 1400005,
+      "input_seed": 1410005
+    },
+    {
+      "seed": 1400006,
+      "input_seed": 1410006
+    }
+  ],
+  "blocks_by_level": {
+    "legacy5": [
+      1400001,
+      1400002,
+      1400003,
+      1400004,
+      1400005,
+      1400006
+    ],
+    "brain5": [
+      1400001,
+      1400002,
+      1400003
+    ]
+  },
+  "alphabet_size": 10,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "gain": 0.9,
+  "normalization": "incoming_l1",
+  "leak": 0.6,
+  "carry_multiplier": 0.0,
+  "schedule": "mbon_after_kc",
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "reference_mask": "sealed M3 KC/other/MBON numeric-root-ID rank DAG; no renormalization",
+  "degree_certificates": [
+    "missing_source_or_sink",
+    "node_incident_capacity",
+    "global_dag_density",
+    "within_role_density",
+    "opposite_role_pair_capacity"
+  ],
+  "path_matching": "all-lag structural dependency-walk support from each stimulated symbol set to observed MBONs",
+  "universal_dag_bound": "N-1; save k_same_nodes=max(1,floor((N-1-A-B)/P)+1) and universal_delay=A+k_same_nodes*P+B",
+  "primary_rule": "any validated degree/role or input-observed positive-delay-cycle obstruction rejects strict DAG-control feasibility; absent obstruction is UNRESOLVED",
+  "witness_selection": "eligible SCC by descending size then minimum numeric root ID; anchor minimum root ID; first root-sorted internal outgoing neighbor, shortest return; input and observed endpoints minimum reachable numeric root ID",
+  "smoke_blocks": 1,
+  "neural_runs": 0,
+  "decoder_fits": 0,
+  "graph_searches": 0,
+  "max_seconds": 7200,
+  "max_rss_bytes": 4294967296
+}

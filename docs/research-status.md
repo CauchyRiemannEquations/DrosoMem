@@ -1,5 +1,30 @@
 # Research status
 
+## Current — M4 strict cycle-control feasibility rejected (2026-10-08)
+
+[Protocol](cycle-attribution-feasibility-protocol.md),
+[results/synthesis](cycle-attribution-feasibility-results.md),
+[independent validation](../results/cycle_attribution_v1/main_validation/checks.json),
+[final audit](../results/cycle_attribution_v1/final_audit/audit.json).
+Registered outcome INFEASIBLE; all9 mapping cases/90 symbol-cycle witnesses
+validate. Partial degree/role totals independently forbid a DAG: APL incident
+degree1140>682 active-neighbor capacity, APL↔KC1024>512 and APL↔MBON50>48
+pair capacities. Whole's local count tests remain UNRESOLVED.
+
+Each symbol input set has at least one authenticated input→positive-delay
+cycle→observed path. Repetition exceeds the universal same-N DAG bound N−1,
+so complete all-lag support cannot match in either graph. Structural support
+does not demonstrate functional gain or useful long memory; changing paths
+may mediate cycle effects. No general cycle-causality impossibility follows.
+Analytic current responses match original/DAG within each graph, not across
+graph levels; history-bearing current accuracy was not measured here.
+
+No new source-graph trajectories/decoder fits. Same29 safeguards pass with
+valid retry; original source-capture provenance failure/snapshot remains
+validation-invalid and archived. All43,983 old result identities, scientific
+source/data/protocol/config/tests, M1 assay-invalid and earlier negatives remain
+preserved. This finite methodology study is closed; P3 remains excluded.
+
 ## Current — M3 cycle-free sufficiency passes (2026-10-08)
 
 [Protocol](temporal-cycles-protocol.md), [results/synthesis](temporal-cycles-results.md),

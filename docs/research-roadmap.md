@@ -1,5 +1,32 @@
 # DrosoMem research roadmap
 
+## Current — M4 exact-control feasibility closed (2026-10-08)
+
+[M4](cycle-attribution-feasibility-results.md) independently verifies registered
+INFEASIBLE for the strict exact cycle-removal control. Partial degree/role counts
+force cycles; whole degree-only tests are UNRESOLVED. Relevant-cycle witnesses
+in all60/30 symbol cells prevent complete all-lag path-support preservation in
+any same-node DAG. No new memory-performance or biological result is claimed.
+
+| Stage | Status | Interpretation boundary |
+| --- | --- | --- |
+| P0/v1 | Sealed | Original claims/negatives preserved |
+| P1 iid TDC | Closed; short-lag gate passes | Computational past-input access |
+| P2 null ensembles | Closed; both material gates fail | No general wiring advantage |
+| M1 carry/synaptic increment | Closed; assay-invalid | Original endpoint undefined |
+| M2 current/history tradeoff | Closed; specified joint PASS | No universal memory cost |
+| M3 cycle-free sufficiency | Closed; PASS | No unique cycle-effect claim |
+| M4 strict cycle-control feasibility | Closed; INFEASIBLE | Exact ideal rejected; other causal designs remain open |
+| Next finite-lag functional sensitivity | Proposal only | Signed/nonlinear influence versus structural support and decoding |
+| P3 physiological spiking/plasticity | Outside this work | Separate biological targets/protocol required |
+
+Any next study must register its finite lags, fresh streams, derivative/reference
+checks, budgets and endpoints before outcomes. Do not relax M4's exact gate into
+success, sweep degree/rank/decoder choices, or reinterpret M3's confounded gap.
+The29 valid safeguards and preserved provenance-invalid first guard are documented;
+all43,983 prior result identities remain sealed. [Current handoff](next-work.md).
+Earlier dated snapshots below retain their historical outcomes/proposals.
+
 ## Current — M3 completed (2026-10-08)
 
 [M3](temporal-cycles-results.md) prospectively verifies **cycle-free delayed

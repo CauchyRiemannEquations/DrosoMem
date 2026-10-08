@@ -1,0 +1,214 @@
+{
+  "status": "INFEASIBLE",
+  "certified_obstruction": true,
+  "node_count": 686,
+  "active_node_count": 683,
+  "edge_count": 3309,
+  "source_indices": [
+    3,
+    26,
+    54,
+    75,
+    85,
+    88,
+    122,
+    143,
+    177,
+    189,
+    240,
+    242,
+    244,
+    256,
+    275,
+    293,
+    349,
+    351,
+    355,
+    356,
+    403,
+    461,
+    496,
+    498,
+    504,
+    518,
+    554,
+    555,
+    589,
+    598,
+    629,
+    654,
+    663,
+    670,
+    685
+  ],
+  "sink_indices": [
+    4,
+    16,
+    79,
+    166,
+    274,
+    319,
+    374,
+    395,
+    415,
+    493,
+    634,
+    641
+  ],
+  "nonisolated_source_count": 35,
+  "nonisolated_sink_count": 12,
+  "node_incident_capacity": 682,
+  "global_capacity": 232903,
+  "node_incident_offenders": [
+    {
+      "index": 335,
+      "indegree": 566,
+      "outdegree": 574,
+      "incident": 1140,
+      "capacity": 682
+    }
+  ],
+  "role_sizes": {
+    "APL": 1,
+    "DAN": 125,
+    "KC": 512,
+    "MBON": 48
+  },
+  "role_block_counts": {
+    "APL->APL": 0,
+    "APL->DAN": 35,
+    "APL->KC": 512,
+    "APL->MBON": 27,
+    "DAN->APL": 31,
+    "DAN->DAN": 8,
+    "DAN->KC": 24,
+    "DAN->MBON": 189,
+    "KC->APL": 512,
+    "KC->DAN": 147,
+    "KC->KC": 43,
+    "KC->MBON": 1474,
+    "MBON->APL": 23,
+    "MBON->DAN": 118,
+    "MBON->KC": 0,
+    "MBON->MBON": 166
+  },
+  "within_roles": [
+    {
+      "role": "APL",
+      "nodes": 1,
+      "edges": 0,
+      "capacity": 0,
+      "obstructed": false
+    },
+    {
+      "role": "DAN",
+      "nodes": 125,
+      "edges": 8,
+      "capacity": 7750,
+      "obstructed": false
+    },
+    {
+      "role": "KC",
+      "nodes": 512,
+      "edges": 43,
+      "capacity": 130816,
+      "obstructed": false
+    },
+    {
+      "role": "MBON",
+      "nodes": 48,
+      "edges": 166,
+      "capacity": 1128,
+      "obstructed": false
+    }
+  ],
+  "role_pairs": [
+    {
+      "roles": [
+        "APL",
+        "DAN"
+      ],
+      "r_to_s": 35,
+      "s_to_r": 31,
+      "edges": 66,
+      "capacity": 125,
+      "obstructed": false
+    },
+    {
+      "roles": [
+        "APL",
+        "KC"
+      ],
+      "r_to_s": 512,
+      "s_to_r": 512,
+      "edges": 1024,
+      "capacity": 512,
+      "obstructed": true
+    },
+    {
+      "roles": [
+        "APL",
+        "MBON"
+      ],
+      "r_to_s": 27,
+      "s_to_r": 23,
+      "edges": 50,
+      "capacity": 48,
+      "obstructed": true
+    },
+    {
+      "roles": [
+        "DAN",
+        "KC"
+      ],
+      "r_to_s": 24,
+      "s_to_r": 147,
+      "edges": 171,
+      "capacity": 64000,
+      "obstructed": false
+    },
+    {
+      "roles": [
+        "DAN",
+        "MBON"
+      ],
+      "r_to_s": 189,
+      "s_to_r": 118,
+      "edges": 307,
+      "capacity": 6000,
+      "obstructed": false
+    },
+    {
+      "roles": [
+        "KC",
+        "MBON"
+      ],
+      "r_to_s": 1474,
+      "s_to_r": 0,
+      "edges": 1474,
+      "capacity": 24576,
+      "obstructed": false
+    }
+  ],
+  "obstructions": [
+    {
+      "rule": "node_incident_capacity",
+      "offender_indices": [
+        335
+      ]
+    },
+    {
+      "rule": "opposite_role_pair_capacity",
+      "role_pairs": [
+        [
+          "APL",
+          "KC"
+        ],
+        [
+          "APL",
+          "MBON"
+        ]
+      ]
+    }
+  ]
+}
