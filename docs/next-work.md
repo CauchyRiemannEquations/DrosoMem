@@ -18,6 +18,8 @@ Unchanged controls' paired joint0 is mathematical, not10% chance. M1 remains
 assay-invalid, P2 material gates fail and M4 remains INFEASIBLE. This supports
 the fixed computational readout following historical value, not biological
 learning, storage site, cycle/wiring/whole-brain superiority or formal capacity.
+The initial artifact audit's CSV column-order failure is also preserved; the
+same scientific evidence closes through an aligned-column audit retry.
 
 The next candidate is **frozen-readout counterfactual tracking under artificial
 observation noise**. First audit prior closed ACT V/observation-noise scopes to

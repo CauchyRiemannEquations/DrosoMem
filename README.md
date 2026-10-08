@@ -25,7 +25,9 @@ valid retry passes; the prior LF/CRLF source-capture failure remains archived.
 All44,571 older result identities/scientific source remain protected.
 [Protocol](docs/counterfactual-tracking-protocol.md) ·
 [Independent checks](results/counterfactual_tracking_v1/main_validation/checks.json) ·
-[Final audit](results/counterfactual_tracking_v1/final_audit/audit.json).
+[Final audit](results/counterfactual_tracking_v1/final_audit_retry1/audit.json).
+The first artifact audit's CSV column-order failure is retained; its retry
+aligns names with unchanged value checks and scientific settings.
 This supports fixed computational historical-value tracking, not biological
 learning, a storage site, graph superiority or formal capacity.
 

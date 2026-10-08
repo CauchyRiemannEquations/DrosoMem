@@ -122,7 +122,7 @@ historical value under this controlled computational intervention.
 
 The scientific tracking criterion passes; no held-out smoke/main execution or
 independent decoding validation failed. One pre-experiment source-capture
-attempt was rejected before any safeguard test/new source-graph outcome:
+attempt was rejected before that attempt's safeguard tests or any new source-graph outcome:
 the auditor's CRLF working bytes differed from its committed LF Git blob.
 The first `guard_tests` directory, failure, resources and incomplete manifest
 remain archived. Working bytes were normalized to the exact already-recorded
@@ -131,6 +131,15 @@ Git blob, with no code/threshold/head/data change. The same tests reran in
 [Failure](../results/counterfactual_tracking_v1/guard_tests/failure.json),
 [registry](../results/counterfactual_tracking_v1/known-incomplete-attempts.json),
 [valid retry](../results/counterfactual_tracking_v1/guard_tests_retry1/checks.json).
+
+The first final artifact audit also stopped because main/verifier CSV columns
+were ordered differently despite identical named values. Its incomplete
+manifest/failure/resources remain preserved. The auditor now requires exactly
+the same column-name set, aligns their order, and applies the unchanged value
+checks. Experiments, heads, labels, scientific thresholds and tolerances were
+not changed or rerun; the same evidence was audited in a fresh directory.
+[Retained audit failure](../results/counterfactual_tracking_v1/final_audit/failure.json),
+[successful artifact-audit retry](../results/counterfactual_tracking_v1/final_audit_retry1/audit.json).
 
 This result does not establish biological memory/learning, storage location,
 cycle necessity, real-wiring or whole-brain superiority, noise robustness or
@@ -184,7 +193,7 @@ New M6 main manifest SHA256:
 [source/parent-bank lineage](../results/counterfactual_tracking_v1/main/source.json),
 [runner](../scripts/counterfactual_tracking.py),
 [verifier](../scripts/verify_counterfactual_tracking.py),
-[final artifact audit](../results/counterfactual_tracking_v1/final_audit/audit.json).
+[final artifact audit](../results/counterfactual_tracking_v1/final_audit_retry1/audit.json).
 
 The baseline seal preserves44,571 prior result Git identities and45,219 old
 paths excluding four authorized overview documents. Fresh byte checks cover

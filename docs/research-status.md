@@ -5,7 +5,7 @@
 [Protocol](counterfactual-tracking-protocol.md),
 [results/synthesis](counterfactual-tracking-results.md),
 [independent checks](../results/counterfactual_tracking_v1/main_validation/checks.json),
-[final audit](../results/counterfactual_tracking_v1/final_audit/audit.json).
+[final audit](../results/counterfactual_tracking_v1/final_audit_retry1/audit.json).
 Registered unconditioned paired-transition PASS: all six primary blocks64/64
 (384/384 total), three paired whole counterparts64/64 (192/192). Exactly one
 past input changes; the same old graph/encoder/head/scaler, prefix and future
@@ -25,6 +25,9 @@ sealed. All44,571 older results and source/data/config/protocol/tests, M1 invali
 P2 material FAIL, M4 INFEASIBLE and prior failure snapshot remain intact.
 This fixed computational lag2 study is closed; no biological/cycle/storage/
 capacity/noise-robustness claim or P3 was added.
+The first artifact closeout also failed on CSV column order only; its original
+incomplete attempt is preserved and the auditor retry aligns identical column
+names with all value/criterion/tolerance checks unchanged.
 
 ## Current — M5 observed sensitivity attenuation passes (2026-10-08)
 

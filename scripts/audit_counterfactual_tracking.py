@@ -668,9 +668,17 @@ def stage_verifier_evidence(stage, validation, c, smoke, replay, cached, pinned)
         'scripts/run_counterfactual_guards.py', 'tests/test_counterfactual_tracking.py',
         'tests/test_counterfactual_tracking_verifier.py', CONFIG, PROTOCOL}
     assert required <= set(source['hashes']) and required <= set(verifier_source['hashes'])
-    assert all(source['hashes'][name] == verifier_source['hashes'][name] == cached(name) for name in required), 'M6 source freeze changed'
+    assert all(source['hashes'][name] == verifier_source['hashes'][name] for name in required), 'Main/verifier M6 source freeze differs'
+    auditor = 'scripts/audit_counterfactual_tracking.py'
+    # The preserved main/verifier auditor bytes are authenticated against their
+    # recorded Git blobs above. This explicitly authorized closeout repair
+    # changes only CSV column alignment; scientific sources remain frozen.
+    assert all(source['hashes'][name] == cached(name) for name in required if name != auditor), 'M6 scientific source freeze changed'
+    assert cached(auditor) == git_digest(tree('HEAD')[auditor]), 'Uncommitted closeout auditor bytes'
     for name in ['raw-trials', 'stream-metrics', 'block-scores']:
         first, second = pd.read_csv(stage/(name+'.csv')), pd.read_csv(validation/('recomputed-'+name+'.csv'))
+        assert set(first.columns) == set(second.columns), 'Recomputed CSV column set differs'
+        second = second.loc[:, first.columns]
         pd.testing.assert_frame_equal(first, second, check_dtype=False, check_exact=False, atol=c['score_atol'], rtol=c['score_rtol'])
     same_tree(read(stage/'summary.json'), read(validation/'recomputed-summary.json'), c)
     saved_case_checks = read(validation/'case-checks.json')
