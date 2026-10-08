@@ -30,6 +30,7 @@
   "reference_mask": "sealed M3 KC/other/MBON numeric-root-ID rank DAG; no renormalization",
   "degree_certificates": ["missing_source_or_sink", "node_incident_capacity", "global_dag_density", "within_role_density", "opposite_role_pair_capacity"],
   "path_matching": "all-lag structural dependency-walk support from each stimulated symbol set to observed MBONs",
+  "universal_dag_bound": "N-1; save k_same_nodes=max(1,floor((N-1-A-B)/P)+1) and universal_delay=A+k_same_nodes*P+B",
   "primary_rule": "any validated degree/role or input-observed positive-delay-cycle obstruction rejects strict DAG-control feasibility; absent obstruction is UNRESOLVED",
   "witness_selection": "eligible SCC by descending size then minimum numeric root ID; anchor minimum root ID; first root-sorted internal outgoing neighbor, shortest return; input and observed endpoints minimum reachable numeric root ID",
   "smoke_blocks": 1,

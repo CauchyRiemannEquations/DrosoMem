@@ -86,6 +86,10 @@ of the relevant cycle produces unbounded delays, while **any finite DAG on the
 same N neurons** has a finite longest path (at most N−1 delayed edges). This
 certifies that no finite DAG can preserve the complete all-lag structural walk
 support, regardless of its rank or its degree/weight matching.
+Also archive `k_same_nodes=max(1,floor((N−1−A−B)/P)+1)` and the resulting
+`universal_delay=A+k_same_nodes*P+B>N−1`, storing the cycle once and its
+repetition count. This finite compressed witness applies to every same-N DAG;
+the smaller H-specific witness separately checks the sealed M3 reference.
 
 There cannot be a cycle consisting only of delay0 edges: such edges go KC→MBON,
 and a subsequent edge from MBON has delay1. A DAG under this schedule has finite
