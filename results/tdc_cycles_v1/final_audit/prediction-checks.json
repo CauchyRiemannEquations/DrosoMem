@@ -1,0 +1,20 @@
+{
+  "smoke": {
+    "cases": 6,
+    "saved_streams_checked": 12,
+    "prediction_columns_checked": 126,
+    "certificate_pairs_checked": 2,
+    "split_safe_labels": true,
+    "paired_arm_streams_and_inputs": true,
+    "fixed_decoder_parameter_budget": 490
+  },
+  "main": {
+    "cases": 27,
+    "saved_streams_checked": 54,
+    "prediction_columns_checked": 567,
+    "certificate_pairs_checked": 9,
+    "split_safe_labels": true,
+    "paired_arm_streams_and_inputs": true,
+    "fixed_decoder_parameter_budget": 490
+  }
+}

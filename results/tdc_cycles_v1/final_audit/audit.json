@@ -1,0 +1,42 @@
+{
+  "baseline_commit": "eb571bd83107e2b108bf270003a918f8eb21e797",
+  "prior_result_blobs_unchanged": 43495,
+  "historical_numerical_source_data_config_protocols_tests_unchanged": true,
+  "m1_outcome_unchanged": "assay-invalid",
+  "m2_outcome_unchanged": "PASS",
+  "all_checks_pass": true,
+  "protected_baseline_paths": 44096,
+  "historical_documents_and_tests_unchanged": true,
+  "source_commit": "400d760b7f6ffa76bda74a59587dea764551268a",
+  "verifier_sha256": "928a99a92545aaa71f7c53ebd3c1b8a4b35c570cd9922aafdbf6d6d83e93d063",
+  "manifests_checked": 73,
+  "checksum_entries": 799,
+  "recorded_source_entries": 174,
+  "retained_incomplete_attempts": [],
+  "archives_inspected": 63,
+  "arrays_inspected": 1209,
+  "nonfinite_arrays": 0,
+  "independent_main_streams": 54,
+  "independent_main_heads": 567,
+  "certificate_pairs": 9,
+  "certificate_full_state_hashes": 18,
+  "instantaneous_certificates": 9,
+  "zero_state_input_access_certificates": 27,
+  "exact_main_state_hashes": 54,
+  "outcome": "PASS",
+  "primary_pass": true,
+  "protocol_precedes_source": true,
+  "criterion_replayed_with_rational_counts": true,
+  "cycle_effect_isolation_claim": false,
+  "biological_plasticity_performed": false,
+  "guard_tests": {
+    "all_checks_pass": true,
+    "tests_passed": 11,
+    "source_commit": "9a38675daade9bc4a7fac871fcdc33bfeac1fd2d",
+    "test_hashes": {
+      "tests/test_temporal_mechanism.py": "6418a2590ec86ce34b2c175f13f3176632db73bd0466597b1babbde12a629b54",
+      "tests/test_temporal_cycles.py": "00e8dbdf172a09b425a75db96150cc3b0379f8852e8946accec093f2df08b0ac"
+    },
+    "parameters_changed": false
+  }
+}

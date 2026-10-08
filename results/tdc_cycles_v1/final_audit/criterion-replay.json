@@ -1,0 +1,97 @@
+{
+  "smoke": {
+    "legacy5": {
+      "reference_valid": true,
+      "minimum_excess_exact": "89/100",
+      "mean_excess_exact": "89/100",
+      "all_blocks_meet_margin": true,
+      "registered_rule_pass": null,
+      "paired_values": [
+        {
+          "seed": 1300001,
+          "excess_exact": "89/100",
+          "instantaneous_current_exact": "1"
+        }
+      ]
+    },
+    "brain5": {
+      "reference_valid": true,
+      "minimum_excess_exact": "163/200",
+      "mean_excess_exact": "163/200",
+      "all_blocks_meet_margin": true,
+      "registered_rule_pass": null,
+      "paired_values": [
+        {
+          "seed": 1300001,
+          "excess_exact": "163/200",
+          "instantaneous_current_exact": "1"
+        }
+      ]
+    }
+  },
+  "main": {
+    "legacy5": {
+      "reference_valid": true,
+      "minimum_excess_exact": "177/200",
+      "mean_excess_exact": "1787/2000",
+      "all_blocks_meet_margin": true,
+      "registered_rule_pass": true,
+      "paired_values": [
+        {
+          "seed": 1300001,
+          "excess_exact": "9/10",
+          "instantaneous_current_exact": "1"
+        },
+        {
+          "seed": 1300002,
+          "excess_exact": "177/200",
+          "instantaneous_current_exact": "1"
+        },
+        {
+          "seed": 1300003,
+          "excess_exact": "9/10",
+          "instantaneous_current_exact": "1"
+        },
+        {
+          "seed": 1300004,
+          "excess_exact": "1779/2000",
+          "instantaneous_current_exact": "1"
+        },
+        {
+          "seed": 1300005,
+          "excess_exact": "1773/2000",
+          "instantaneous_current_exact": "1"
+        },
+        {
+          "seed": 1300006,
+          "excess_exact": "9/10",
+          "instantaneous_current_exact": "1"
+        }
+      ]
+    },
+    "brain5": {
+      "reference_valid": true,
+      "minimum_excess_exact": "177/200",
+      "mean_excess_exact": "179/200",
+      "all_blocks_meet_margin": true,
+      "registered_rule_pass": true,
+      "paired_values": [
+        {
+          "seed": 1300001,
+          "excess_exact": "9/10",
+          "instantaneous_current_exact": "1"
+        },
+        {
+          "seed": 1300002,
+          "excess_exact": "177/200",
+          "instantaneous_current_exact": "1"
+        },
+        {
+          "seed": 1300003,
+          "excess_exact": "9/10",
+          "instantaneous_current_exact": "1"
+        }
+      ]
+    }
+  }
+}
