@@ -1,0 +1,998 @@
+[
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/__init__.py",
+    "sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/brain/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/brain/constrained_bptt.py",
+    "sha256": "c8994023957d13ad3c6cd68114c90a5b5a2deeff5a8fa4dcc9ccd762c04f0508"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/brain/diagnostics.py",
+    "sha256": "6cd44d3971490d4be13445d53571537bea0782e4d96a4b9e209510bbcdb619d0"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/brain/dopamine.py",
+    "sha256": "b41673ca1cfebd665da89d4a984d654d8f8c06867a7e33bb48a2cff821ab3946"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/brain/fly_network.py",
+    "sha256": "5b6393e9343d9516050a714e10ec94faea1aaa82c7799b4ee87b184436301e7a"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/brain/lif.py",
+    "sha256": "c2636413867ec57c2b7ae962c42aa007f3c46a781b63f930922efc8c47d63afa"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/brain/lif_reference.py",
+    "sha256": "9437bfa887f77f6e77bdaf60547a8802f3c52e1cfdfb5c008e6d038a5de195a9"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/brain/local_reward.py",
+    "sha256": "dc80495aafa5da9ac4e3fd8ff27b8e2bff232d06afa3e5c1944f8b47699b3995"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/brain/mushroom_body.py",
+    "sha256": "c47ab26f28d8f969f7bfc45c32d046a6af93e56dce3c26dae1ab8eda263386b6"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/brain/plasticity.py",
+    "sha256": "22a213c0ca0f81954ae59ea6b5773885caec3b9a9b6e19c4a3f064df7d48ebef"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/brain/random_network.py",
+    "sha256": "95efa4ccc748cde4b71872bcef3d611958d4f8b21eabbce459af667e80e303cf"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/brain/reservoir.py",
+    "sha256": "2221db2706b6b01c92d83b6aa27bf6e1cedc8744e615d70f4081b41eb75f4630"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/brain/reward_plasticity.py",
+    "sha256": "c1d481e72a712296ba9743714e2dad4d7f183aca27feb94245a72793de18b1fe"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/brain/role_random.py",
+    "sha256": "31bc1ae01f3420f8743c7d155df303651960ff931841203827ed3bc8b3b252c7"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/brain/shuffled_network.py",
+    "sha256": "8ec288b891c91823e425fd3982b61ad0d065d8f76abb192d45ac021d03a3a9c9"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/brain/sparse_lif.py",
+    "sha256": "cd34efcff7f76631cfbfb8d250b8a9b5dcf3624a24a9b6844093da6d3b8bfdfe"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/brain/timed_reservoir.py",
+    "sha256": "7378dadb9e03e131abb8483bd6a3e058e8453dcf007109ec14918ae55dbb0ce2"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/data/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/data/compartments.py",
+    "sha256": "4ad9b45297b22d19f3ff1b945fcd07c64628c9ec020ea90b26f089456c5a73b9"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/data/connectome.py",
+    "sha256": "08adf495f49cffdd0d1b868220993362f8a3a8b9a453349649b0d90b7673a13e"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/data/mushroom_body.py",
+    "sha256": "914598925bff65d702118d881327df10e30323148e2e39255da424def69ae6be"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/data/pi_digits.py",
+    "sha256": "8892f5f70730ab8d29698214f81328e557916c1866afe73a4e118edfe00d6091"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/data/sequences.py",
+    "sha256": "b1cff877f02487b61dc693c1e6f08f5c5ef230fb21fbb5dcd79399199c612e99"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/data/subsets.py",
+    "sha256": "0b84efc98944e534a5206b955b277f2be423393075b2c4905ace3ecb980294d8"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/data/whole_brain.py",
+    "sha256": "f6dcf5b24dff88913ed6053a9bdcff8804b77e516b83d14e3209b50143ace31c"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/encoding/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/encoding/digit_encoder.py",
+    "sha256": "e83dffff85555862e597b02b53da8f8dac497808af27ffe8f766a51b01735b89"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/evaluation/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/evaluation/delayed_memory.py",
+    "sha256": "17d708b0f7958effecfe685285c92aab54005ffe6ef2ac0054014a2b3ab3c465"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/evaluation/free_recall.py",
+    "sha256": "39f27d2310fcd136eb56acf5681de06801853cf547283a96e8efcf93b2055154"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/evaluation/metrics.py",
+    "sha256": "aa64b8d4e03002d940e81116ecef99f206fc4d28ad4c7985a352f9c52d0c51e9"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/evaluation/next_digit.py",
+    "sha256": "cb7e74cb472ad255d79fcbeb5449e20c540433cd484bbec599457aa07d68e2b7"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/evaluation/perturbation.py",
+    "sha256": "9b1af2184173f16af3edb9a9791af828089828fa6ed28f6797c868952d0dfa7b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/models/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/models/nonlinear_readout.py",
+    "sha256": "de9350e9ed782c84a9e47cf28984d01ca5cc8141c42482e45d28dd0d360aa5ed"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/models/readout.py",
+    "sha256": "7efbba8619a7018cbf5c62c6b6df64084299051a631ab330f0a8c0f7b55bfd83"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/models/ridge.py",
+    "sha256": "1a0427ffa6af4b95692ce4350e62c727df4eac16266810c42dad0cd158205514"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/phase2.py",
+    "sha256": "3bd639ba2a0c1c2bdc2f6be212b33edf146ae781d6a71941b49eaeae6c9919a6"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/phase2_robustness.py",
+    "sha256": "8d30c20d5af302a4a64d8b9444b11c115e32b8c10801777659ddf2d9cdf0d027"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/phase3.py",
+    "sha256": "6443932e7022e7a26a8e3facd049d5a0905afb7777f55098b3aac0ce1d546208"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/phase3b.py",
+    "sha256": "5853d1df143fb8d51c8ca6000881bc6203c536d72c4d2e34bd6c482570594fc1"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/phase4.py",
+    "sha256": "a9d093d323dbaba7c46e0620532ae40082ae56cc054f520b231d0350d5a80aaf"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/phase5.py",
+    "sha256": "0781b81165590d7cb88bbb7cf29be5b917904ba7f74f97357f00667081e04505"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/phase5_bptt.py",
+    "sha256": "1fd743d72dfc1a11904ff8323eba45eb8dbf6340e5ddbf8dc5965f3fbe88d6ab"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/phase5_curriculum.py",
+    "sha256": "c19aa9c406091511a347edd4bee2d4c3d9324ca82e7dcd6c66f126958b7c5707"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/phase5_diagnostic.py",
+    "sha256": "80c2a924c8a2fcfcf3b5ccc84cef2635832e3dade6a8f19643bce69d89dcb7f3"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/phase5_prefix.py",
+    "sha256": "b4d5ca3b7fdf7d9d3bafa41e0ac02e88a8c4f2ac9a790d6620a2b02894693d16"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/phase5_prefix_confirmation.py",
+    "sha256": "18d9f7dd0715a61e8d2ee8e90137b41eebb9bb4160fb7b6c2acab69a86adbc77"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/phase5_readout.py",
+    "sha256": "f62a4fa7a8c3eacbe3f2dec95debe71d0703a70cef4ce53906f7a14ee87c8091"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/phase5_retention.py",
+    "sha256": "643ef1f766651ba600e4dee233687dc1f796e829b9593fe2dde35268f85f5af4"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/phase5_retention_confirmation.py",
+    "sha256": "cc8d3612562e8d29aa248fd5309cceb2de77f890ba1d7ee5a93ea9c963a7715b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/phase5_timing.py",
+    "sha256": "9beef32dc395d7abd24bb2cf9d8ee10afe856ce3055b2128fd6355825ab5a95c"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/phase5b.py",
+    "sha256": "1515c30a29ba132930c801592cb64dbf2007121032b6e6b24d91aa52f6be0129"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/phase6.py",
+    "sha256": "f14a6aaaa76d280ec03ef0f1530c60212a77fecd8c7df05fc92dd8a9c2605047"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/sequence_memory.py",
+    "sha256": "67fd43d53741090a3d4630a7dd30f96d7a5064bf2853d905a4e4bc9e29417e65"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/stage_bc.py",
+    "sha256": "1e9bce43e07d8121ec365547225f460b621045f2bd0dd16e6b7622c538e2c878"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/train.py",
+    "sha256": "d9a09c93431fca0cebacb13c202a345e23a26a94eae7f6fc035c0dfe6f353063"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/training/whole_brain_memory.py",
+    "sha256": "f3046ac2494365d2849e700b4ca118443392d42a17f032796dcd1b7f66822d78"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/visualization/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/visualization/activity.py",
+    "sha256": "06b8cc7ea84082a95cea57252a541e487d1c828bdae00519ce91687ad164fe20"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "src/flying/visualization/pi_memory.py",
+    "sha256": "93b513a51e540e5befb3d8045979d957de850223a93182d13ba420b4bb01316e"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "configs/temporal_mechanism.json",
+    "sha256": "50eb20cb1d055b784b764467673fac88fa002f3c1e6ce94919fd4249a70b2091"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "docs/temporal-mechanism-protocol.md",
+    "sha256": "77a7c286d913927d20fdd9e8b0415ee18f190707b4f9c24f568b662939ac7146"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "requirements-act1-lock.txt",
+    "sha256": "fe83ab7e79199151e5aa9b6e55e0d1cf86c0bb4e52414648b41ac4061b092213"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "scripts/temporal_mechanism.py",
+    "sha256": "8c8a30e79f6b66c0acf7a16b74e8fb96de44e1444b4c8eaad1d85d6544fb614b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "scripts/verify_temporal_mechanism.py",
+    "sha256": "14682cec782890072ade35cf8b40d02f7a4da7a7a24700bf35f44f01586b980c"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "scripts/mechanism_support.py",
+    "sha256": "52ccf34211dd684239854948c135c965c502b7d9f8bb8ae7d9eb7e2eaacc9b49"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "scripts/tdc_support.py",
+    "sha256": "98b3d018b9cf2991c3304aab211f89db014d7ec5ba0afd3505a1e335a60b622c"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "scripts/tdc_pool.py",
+    "sha256": "a640f7246785110fd656d727216a7a7e42da51dc1dbfd40bd1b763cca82b1b5e"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "scripts/temporal_memory_curve.py",
+    "sha256": "22bb4c1483b277b1fc75022154b5fc68861131d09c3e885c70b5608eb5a5f08b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "scripts/verify_temporal_memory_curve.py",
+    "sha256": "117ef45008b96e04e7cd6be46ee73088a3c6a029145a52b44de0e9fb3c814eef"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "data/flywire_783_mb_left_kc512_s701/annotations.csv",
+    "sha256": "10f9c9d4db8ee2741bd19cf464e4b46fd6e24f086a5ce1dbb550bcea633cdb16"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "data/flywire_783_mb_left_kc512_s701/edges.csv",
+    "sha256": "d8c47ea1202575994d430f55e5bd8602f939f320ef02f71522fc1bc54b97db51"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "data/flywire_783_mb_left_kc512_s701/neurons.json",
+    "sha256": "05d83a288b1d42337001015be2d54167aed00cdc9fea58b578423d18756aa77b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "data/flywire_783_mb_left_kc512_s701/provenance.json",
+    "sha256": "e1a50d254628fb0573d7853b8e66926697b353da317bd701b17e60bfd4942061"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "outputs/tdc_v2/whole_cache/nodes.npz",
+    "sha256": "e9827b294f19778508c21ed8effd22712ece0cbcb7fca98f70c1c141f82775f3"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "outputs/tdc_v2/whole_cache/brain5.npz",
+    "sha256": "5225dff229b94b40e31ef81af4755ebe8fd09883b340ccd2bebbbdd4ac60b572"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "outputs/tdc_v2/whole_cache/provenance.json",
+    "sha256": "191487956100d4953821416ffab5e0ba8198251d1bf3313ae00df66a83e6137f"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "outputs/tdc_v2/raw/annotations.tsv",
+    "sha256": "9a4f8b2f843196074431ebd7cd883536afa1be86c8a4ce90970441e8be81d1be"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "outputs/tdc_v2/raw/Completeness_783.csv",
+    "sha256": "bbb847a4cc2caaa7a16349722d220c087317b946d148d4d592d94d250617a311"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/main/source.json",
+    "source_commit": "4c2619df99a87c4072ecc8bd7481c67932963ab2",
+    "path": "outputs/tdc_v2/raw/Connectivity_783.parquet",
+    "sha256": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/__init__.py",
+    "sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/brain/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/brain/constrained_bptt.py",
+    "sha256": "c8994023957d13ad3c6cd68114c90a5b5a2deeff5a8fa4dcc9ccd762c04f0508"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/brain/diagnostics.py",
+    "sha256": "6cd44d3971490d4be13445d53571537bea0782e4d96a4b9e209510bbcdb619d0"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/brain/dopamine.py",
+    "sha256": "b41673ca1cfebd665da89d4a984d654d8f8c06867a7e33bb48a2cff821ab3946"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/brain/fly_network.py",
+    "sha256": "5b6393e9343d9516050a714e10ec94faea1aaa82c7799b4ee87b184436301e7a"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/brain/lif.py",
+    "sha256": "c2636413867ec57c2b7ae962c42aa007f3c46a781b63f930922efc8c47d63afa"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/brain/lif_reference.py",
+    "sha256": "9437bfa887f77f6e77bdaf60547a8802f3c52e1cfdfb5c008e6d038a5de195a9"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/brain/local_reward.py",
+    "sha256": "dc80495aafa5da9ac4e3fd8ff27b8e2bff232d06afa3e5c1944f8b47699b3995"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/brain/mushroom_body.py",
+    "sha256": "c47ab26f28d8f969f7bfc45c32d046a6af93e56dce3c26dae1ab8eda263386b6"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/brain/plasticity.py",
+    "sha256": "22a213c0ca0f81954ae59ea6b5773885caec3b9a9b6e19c4a3f064df7d48ebef"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/brain/random_network.py",
+    "sha256": "95efa4ccc748cde4b71872bcef3d611958d4f8b21eabbce459af667e80e303cf"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/brain/reservoir.py",
+    "sha256": "2221db2706b6b01c92d83b6aa27bf6e1cedc8744e615d70f4081b41eb75f4630"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/brain/reward_plasticity.py",
+    "sha256": "c1d481e72a712296ba9743714e2dad4d7f183aca27feb94245a72793de18b1fe"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/brain/role_random.py",
+    "sha256": "31bc1ae01f3420f8743c7d155df303651960ff931841203827ed3bc8b3b252c7"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/brain/shuffled_network.py",
+    "sha256": "8ec288b891c91823e425fd3982b61ad0d065d8f76abb192d45ac021d03a3a9c9"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/brain/sparse_lif.py",
+    "sha256": "cd34efcff7f76631cfbfb8d250b8a9b5dcf3624a24a9b6844093da6d3b8bfdfe"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/brain/timed_reservoir.py",
+    "sha256": "7378dadb9e03e131abb8483bd6a3e058e8453dcf007109ec14918ae55dbb0ce2"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/data/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/data/compartments.py",
+    "sha256": "4ad9b45297b22d19f3ff1b945fcd07c64628c9ec020ea90b26f089456c5a73b9"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/data/connectome.py",
+    "sha256": "08adf495f49cffdd0d1b868220993362f8a3a8b9a453349649b0d90b7673a13e"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/data/mushroom_body.py",
+    "sha256": "914598925bff65d702118d881327df10e30323148e2e39255da424def69ae6be"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/data/pi_digits.py",
+    "sha256": "8892f5f70730ab8d29698214f81328e557916c1866afe73a4e118edfe00d6091"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/data/sequences.py",
+    "sha256": "b1cff877f02487b61dc693c1e6f08f5c5ef230fb21fbb5dcd79399199c612e99"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/data/subsets.py",
+    "sha256": "0b84efc98944e534a5206b955b277f2be423393075b2c4905ace3ecb980294d8"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/data/whole_brain.py",
+    "sha256": "f6dcf5b24dff88913ed6053a9bdcff8804b77e516b83d14e3209b50143ace31c"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/encoding/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/encoding/digit_encoder.py",
+    "sha256": "e83dffff85555862e597b02b53da8f8dac497808af27ffe8f766a51b01735b89"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/evaluation/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/evaluation/delayed_memory.py",
+    "sha256": "17d708b0f7958effecfe685285c92aab54005ffe6ef2ac0054014a2b3ab3c465"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/evaluation/free_recall.py",
+    "sha256": "39f27d2310fcd136eb56acf5681de06801853cf547283a96e8efcf93b2055154"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/evaluation/metrics.py",
+    "sha256": "aa64b8d4e03002d940e81116ecef99f206fc4d28ad4c7985a352f9c52d0c51e9"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/evaluation/next_digit.py",
+    "sha256": "cb7e74cb472ad255d79fcbeb5449e20c540433cd484bbec599457aa07d68e2b7"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/evaluation/perturbation.py",
+    "sha256": "9b1af2184173f16af3edb9a9791af828089828fa6ed28f6797c868952d0dfa7b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/models/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/models/nonlinear_readout.py",
+    "sha256": "de9350e9ed782c84a9e47cf28984d01ca5cc8141c42482e45d28dd0d360aa5ed"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/models/readout.py",
+    "sha256": "7efbba8619a7018cbf5c62c6b6df64084299051a631ab330f0a8c0f7b55bfd83"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/models/ridge.py",
+    "sha256": "1a0427ffa6af4b95692ce4350e62c727df4eac16266810c42dad0cd158205514"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/phase2.py",
+    "sha256": "3bd639ba2a0c1c2bdc2f6be212b33edf146ae781d6a71941b49eaeae6c9919a6"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/phase2_robustness.py",
+    "sha256": "8d30c20d5af302a4a64d8b9444b11c115e32b8c10801777659ddf2d9cdf0d027"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/phase3.py",
+    "sha256": "6443932e7022e7a26a8e3facd049d5a0905afb7777f55098b3aac0ce1d546208"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/phase3b.py",
+    "sha256": "5853d1df143fb8d51c8ca6000881bc6203c536d72c4d2e34bd6c482570594fc1"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/phase4.py",
+    "sha256": "a9d093d323dbaba7c46e0620532ae40082ae56cc054f520b231d0350d5a80aaf"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/phase5.py",
+    "sha256": "0781b81165590d7cb88bbb7cf29be5b917904ba7f74f97357f00667081e04505"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/phase5_bptt.py",
+    "sha256": "1fd743d72dfc1a11904ff8323eba45eb8dbf6340e5ddbf8dc5965f3fbe88d6ab"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/phase5_curriculum.py",
+    "sha256": "c19aa9c406091511a347edd4bee2d4c3d9324ca82e7dcd6c66f126958b7c5707"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/phase5_diagnostic.py",
+    "sha256": "80c2a924c8a2fcfcf3b5ccc84cef2635832e3dade6a8f19643bce69d89dcb7f3"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/phase5_prefix.py",
+    "sha256": "b4d5ca3b7fdf7d9d3bafa41e0ac02e88a8c4f2ac9a790d6620a2b02894693d16"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/phase5_prefix_confirmation.py",
+    "sha256": "18d9f7dd0715a61e8d2ee8e90137b41eebb9bb4160fb7b6c2acab69a86adbc77"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/phase5_readout.py",
+    "sha256": "f62a4fa7a8c3eacbe3f2dec95debe71d0703a70cef4ce53906f7a14ee87c8091"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/phase5_retention.py",
+    "sha256": "643ef1f766651ba600e4dee233687dc1f796e829b9593fe2dde35268f85f5af4"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/phase5_retention_confirmation.py",
+    "sha256": "cc8d3612562e8d29aa248fd5309cceb2de77f890ba1d7ee5a93ea9c963a7715b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/phase5_timing.py",
+    "sha256": "9beef32dc395d7abd24bb2cf9d8ee10afe856ce3055b2128fd6355825ab5a95c"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/phase5b.py",
+    "sha256": "1515c30a29ba132930c801592cb64dbf2007121032b6e6b24d91aa52f6be0129"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/phase6.py",
+    "sha256": "f14a6aaaa76d280ec03ef0f1530c60212a77fecd8c7df05fc92dd8a9c2605047"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/sequence_memory.py",
+    "sha256": "67fd43d53741090a3d4630a7dd30f96d7a5064bf2853d905a4e4bc9e29417e65"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/stage_bc.py",
+    "sha256": "1e9bce43e07d8121ec365547225f460b621045f2bd0dd16e6b7622c538e2c878"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/train.py",
+    "sha256": "d9a09c93431fca0cebacb13c202a345e23a26a94eae7f6fc035c0dfe6f353063"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/training/whole_brain_memory.py",
+    "sha256": "f3046ac2494365d2849e700b4ca118443392d42a17f032796dcd1b7f66822d78"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/visualization/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/visualization/activity.py",
+    "sha256": "06b8cc7ea84082a95cea57252a541e487d1c828bdae00519ce91687ad164fe20"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "src/flying/visualization/pi_memory.py",
+    "sha256": "93b513a51e540e5befb3d8045979d957de850223a93182d13ba420b4bb01316e"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "configs/temporal_mechanism.json",
+    "sha256": "50eb20cb1d055b784b764467673fac88fa002f3c1e6ce94919fd4249a70b2091"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "docs/temporal-mechanism-protocol.md",
+    "sha256": "77a7c286d913927d20fdd9e8b0415ee18f190707b4f9c24f568b662939ac7146"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "requirements-act1-lock.txt",
+    "sha256": "fe83ab7e79199151e5aa9b6e55e0d1cf86c0bb4e52414648b41ac4061b092213"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "scripts/temporal_mechanism.py",
+    "sha256": "8c8a30e79f6b66c0acf7a16b74e8fb96de44e1444b4c8eaad1d85d6544fb614b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "scripts/verify_temporal_mechanism.py",
+    "sha256": "14682cec782890072ade35cf8b40d02f7a4da7a7a24700bf35f44f01586b980c"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "scripts/mechanism_support.py",
+    "sha256": "52ccf34211dd684239854948c135c965c502b7d9f8bb8ae7d9eb7e2eaacc9b49"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "scripts/tdc_support.py",
+    "sha256": "98b3d018b9cf2991c3304aab211f89db014d7ec5ba0afd3505a1e335a60b622c"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "scripts/tdc_pool.py",
+    "sha256": "a640f7246785110fd656d727216a7a7e42da51dc1dbfd40bd1b763cca82b1b5e"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "scripts/temporal_memory_curve.py",
+    "sha256": "22bb4c1483b277b1fc75022154b5fc68861131d09c3e885c70b5608eb5a5f08b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "scripts/verify_temporal_memory_curve.py",
+    "sha256": "117ef45008b96e04e7cd6be46ee73088a3c6a029145a52b44de0e9fb3c814eef"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "data/flywire_783_mb_left_kc512_s701/annotations.csv",
+    "sha256": "10f9c9d4db8ee2741bd19cf464e4b46fd6e24f086a5ce1dbb550bcea633cdb16"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "data/flywire_783_mb_left_kc512_s701/edges.csv",
+    "sha256": "d8c47ea1202575994d430f55e5bd8602f939f320ef02f71522fc1bc54b97db51"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "data/flywire_783_mb_left_kc512_s701/neurons.json",
+    "sha256": "05d83a288b1d42337001015be2d54167aed00cdc9fea58b578423d18756aa77b"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "data/flywire_783_mb_left_kc512_s701/provenance.json",
+    "sha256": "e1a50d254628fb0573d7853b8e66926697b353da317bd701b17e60bfd4942061"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "outputs/tdc_v2/whole_cache/nodes.npz",
+    "sha256": "e9827b294f19778508c21ed8effd22712ece0cbcb7fca98f70c1c141f82775f3"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "outputs/tdc_v2/whole_cache/brain5.npz",
+    "sha256": "5225dff229b94b40e31ef81af4755ebe8fd09883b340ccd2bebbbdd4ac60b572"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "outputs/tdc_v2/whole_cache/provenance.json",
+    "sha256": "191487956100d4953821416ffab5e0ba8198251d1bf3313ae00df66a83e6137f"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "outputs/tdc_v2/raw/annotations.tsv",
+    "sha256": "9a4f8b2f843196074431ebd7cd883536afa1be86c8a4ce90970441e8be81d1be"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "outputs/tdc_v2/raw/Completeness_783.csv",
+    "sha256": "bbb847a4cc2caaa7a16349722d220c087317b946d148d4d592d94d250617a311"
+  },
+  {
+    "record": "results/tdc_mechanism_v1/smoke/source.json",
+    "source_commit": "5a5edef7eb696ca35757f3b2e5238df30c78890e",
+    "path": "outputs/tdc_v2/raw/Connectivity_783.parquet",
+    "sha256": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347"
+  }
+]
