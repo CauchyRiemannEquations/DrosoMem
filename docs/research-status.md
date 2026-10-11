@@ -1,5 +1,38 @@
 # Research status
 
+## Current — M7 artificial observation-noise criterion fails (2026-10-12)
+
+[Protocol](counterfactual-noise-protocol.md),
+[results/synthesis](counterfactual-noise-results.md),
+[independent checks](../results/counterfactual_noise_v1/main_validation/checks.json),
+[final audit](../results/counterfactual_noise_v1/final_audit/audit.json).
+Registered primary FAIL: noisy joint255/384 (66.40625%), per-block57,39,29,46,44,40
+of64; all six miss minimum58/64. Paired whole secondary FAIL:41,38,30 of64,
+109/192 (56.77083%). Clean on the SAME new streams is384/384 and192/192.
+No clean-success filtering, performance-invalidity gate or changed threshold.
+
+One predefined sigma0.10 in the OLD floored standardized48-coordinate space;
+shared exact noise across original/replacement/instantaneous worlds and paired
+graph counterparts. Raw energies differ by graph, with whole scale-floor
+counts3,3,4. No clipping, state/feedback noise, new learning or recalibration.
+Frozen graph/encoder/M5 head/scaler remain;0 new fitted parameters. Unchanged
+paired controls have exact joint0, not a10% joint-chance estimate. Shared noise
+preserves affine intervention score differences but can change argmax classes.
+
+All9 raw-source/manual trajectory reconstructions,576 pre-states/2304 windows
+and9 OLD-training SVD authentications agree, along with576 exact noise vectors/
+predictions and all primary/summary values. Scientific FAIL is a valid completed
+result; validation PASS means that FAIL was reproduced. All23 safeguards pass,
+no M7 technical failures,44,844 old result identities/protected scientific files
+and prior incomplete attempts are preserved. M1 stays invalid, P2 material
+gates FAIL and M4 stays INFEASIBLE. No execution/verification remains in M7.
+
+This limits the chosen fixed readout's measurement robustness, not internal
+information retention or living-fly memory. No dose/seed/head sweep follows.
+Next is proposed structural-specificity design feasibility, separately from
+failed P2 and M4's strict impossible control. P3 remains excluded.
+The dated sections below retain their original completed scopes.
+
 ## Current — M6 frozen lag2 tracking passes (2026-10-08)
 
 [Protocol](counterfactual-tracking-protocol.md),

@@ -1,6 +1,43 @@
 # DrosoMem research roadmap
 
-## Proposed post-M6 research programme — 2026-10-09
+## Current — M7 closed; structural specificity next (2026-10-12)
+
+[M7 results/synthesis](counterfactual-noise-results.md),
+[protocol](counterfactual-noise-protocol.md),
+[current handoff](next-work.md). The owner's October 9 priority1 is now
+completed with registered **FAIL** at its sole sigma0.10 observation-noise
+condition:255/384 (66.41%) primary and109/192 (56.77%) paired whole secondary.
+Every block misses90%; clean on those fresh streams is100%. All9 cases and
+576 noisy pairs independently reconstruct; no new training or settings changes.
+The result limits this fixed readout under artificial measurement noise;
+states were not perturbed and internal-information erasure is not inferred.
+
+| Order | Direction | Current state |
+| --- | --- | --- |
+| 1 / M7 | Frozen-readout artificial observation-noise tracking | Closed; primary and secondary FAIL; no automatic dose sweep |
+| 2 / working M8 | Structural specificity: feasible real/rewired/minimal-delay comparison | Next proposal; audit/design validity before distinct protocol or runs |
+| 3 | Mathematical-sequence rule transfer | Future exploratory proposal; no result |
+| 4 | Responsible synthesis/software archive/possible manuscript | Future release plan; no DOI/publication claimed |
+
+Priority2 first audits P2 controls plus M3/M4 limitations. Match what is
+feasible and state what differs, including degrees/roles/weights/path support,
+input/current access and readout fitting budgets. Preregister task, finite
+ensembles/seeds, paired streams and a material endpoint before outcomes.
+This is not a repaired P2 claim or a pure cycle test. A generic delay control
+also tracking past values is a scientifically useful outcome. See the latest
+handoff for the design sequence; nothing in M8 has been registered or executed.
+
+All44,844 previous result identities/scientific files and prior failures stay
+protected. P1/P0 claims, P2 material FAIL, M1 assay-invalid and M4 INFEASIBLE
+remain. No graph/whole-brain superiority, storage-site/biological learning or
+formal capacity claim is added, and P3 remains outside this work.
+
+**한국어:** 사전 지정 인공 잡음에서 고정 출력기의 과거 숫자 추적은
+통과하지 못했다. 이를 그대로 종료·보존하고, 다음은 실제 연결 구조의
+특수성이 있는지 공정하게 비교할 수 있는 대조 설계부터 검토한다.
+아래 October 9 제안과 이전 상태는 당시의 계획·결과를 보존한 기록이다.
+
+## Historical post-M6 research programme — 2026-10-09 (planning snapshot)
 
 **Status: planning only.** [M6](counterfactual-tracking-results.md) is closed:
 all384/384 primary and192/192 paired whole secondary lag2 symbol replacements

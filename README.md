@@ -9,7 +9,32 @@ fly memorizing pi or a model predicting unseen pi digits.
 [한국어 설명](docs/README-ko.md) · [Research status / audit](docs/research-status.md) ·
 [Roadmap](docs/research-roadmap.md) · [Extension closeout](docs/additional-research-closeout.md)
 
-## Current research — 2026-10-08
+## Current research — M7 closed, 2026-10-12
+
+The [M7 artificial observation-noise tracking study](docs/counterfactual-noise-results.md)
+has registered **primary FAIL and paired secondary FAIL**. At the one fixed
+sigma0.10 dose, joint lag2 tracking is255/384 (66.41%) partial and109/192 (56.77%)
+whole secondary; every block misses the predefined90% rule. The same fresh
+clean counterparts are100%. Old graph/encoder/scaler/head remain frozen,
+with0 new trained parameters; noise is added only to endpoint observations.
+No smaller dose, extra seed, new decoder or revised criterion follows failure.
+
+All9 cases,576 noisy pairs,9 baseline state hashes/576 pre-states/2304
+four-world windows and9 OLD-head SVD checks independently reproduce this
+negative result. All23 safeguards pass; no M7 technical attempt failed.
+All44,844 prior result identities and historical scientific files/failures
+remain protected. Observation-only failure does not demonstrate internal
+information erasure or biological noise robustness/learning.
+[Protocol](docs/counterfactual-noise-protocol.md) ·
+[Independent checks](results/counterfactual_noise_v1/main_validation/checks.json) ·
+[Final audit](results/counterfactual_noise_v1/final_audit/audit.json).
+
+Next is the roadmap's **structural specificity** priority: assess feasible
+real/rewired/minimal-delay controls, then preregister a distinct bounded
+comparison. It remains a proposal; prior P2 FAIL and M4 INFEASIBLE stay sealed.
+Rule transfer and responsible release remain later proposals. P3 is excluded.
+
+## Closed M6 — 2026-10-08
 
 The [M6 frozen-readout counterfactual tracking study](docs/counterfactual-tracking-results.md)
 passes its prospective lag2 paired-transition criterion:384/384 primary pairs

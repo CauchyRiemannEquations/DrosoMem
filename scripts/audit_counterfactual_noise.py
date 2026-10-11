@@ -3,11 +3,26 @@ import argparse
 import hashlib
 from pathlib import Path
 import subprocess
+import re
 import numpy as np
 import pandas as pd
-from noise_tracking_support import config,read,write,sha,array_sha,git,tree,history_preserved,attempt,seal,PREREGISTRATION
+from noise_tracking_support import config,read,write,sha,array_sha,git,tree,history_preserved,attempt,seal,PREREGISTRATION,source_record,assert_source_unchanged
 
 WORLDS=('original','counterfactual','instantaneous_original','instantaneous_counterfactual')
+
+def compare_csv(actual,expected,keys):
+    assert actual.columns.is_unique and expected.columns.is_unique
+    assert set(actual.columns)==set(expected.columns)
+    assert len(actual.drop_duplicates(keys))==len(actual)
+    actual=actual.sort_values(keys).reset_index(drop=True)
+    expected=expected.sort_values(keys).reset_index(drop=True)
+    assert len(actual)==len(expected)
+    for name in expected.columns:
+        np.testing.assert_array_equal(actual[name].isna(),expected[name].isna())
+        present=~expected[name].isna()
+        if expected[name].dtype.kind=='f':
+            np.testing.assert_allclose(actual.loc[present,name],expected.loc[present,name],atol=1e-10,rtol=1e-10)
+        else:np.testing.assert_array_equal(actual.loc[present,name],expected.loc[present,name])
 
 def stage_replay(root,validation,c,smoke):
     cells=read(root/'primary-cells.json');summary=read(root/'summary.json');checks=read(validation/'checks.json')
@@ -15,6 +30,9 @@ def stage_replay(root,validation,c,smoke):
     assert len(cells)==(2 if smoke else 9) and checks['cases']==len(cells)
     raw=pd.read_csv(root/'raw-trials.csv');assert len(raw)==64*len(cells)
     blocks=pd.read_csv(root/'block-scores.csv');assert len(blocks)==len(cells)
+    compare_csv(blocks,pd.DataFrame(cells),['level','seed'])
+    expected_rows=[row for cell in cells for row in read(root/'noisy'/f'{cell["level"]}_s{cell["seed"]}'/'trials.json')]
+    compare_csv(raw,pd.DataFrame(expected_rows),['level','seed','probe_index'])
     replay={}
     for l in c['levels']:
         selected=[]
@@ -70,11 +88,13 @@ def stage_replay(root,validation,c,smoke):
     assert summary['outcome']==('smoke' if smoke else 'PASS' if primary else 'FAIL')
     assert summary['new_trained_parameters']==0 and not summary['noise_feedback'] and not summary['noise_clipping']
     assert checks['baseline_full_state_hashes']==len(cells) and checks['four_world_window_hash_entries']==256*len(cells)
-    return dict(outcome=summary['outcome'],primary_pass=primary,levels=replay,cases=len(cells),probe_pairs=64*len(cells),new_trained_parameters=0)
+    return dict(outcome=summary['outcome'],primary_pass=primary,levels=replay,cases=len(cells),probe_pairs=64*len(cells),new_trained_parameters=0,all_csv_columns_replayed=True)
 
 def audit(out):
     c=config();root=Path(c['namespace'])
+    source=source_record(c)
     with attempt(out,c,'m7-closeout'):
+        write(out/'closeout-source.json',source)
         preservation=history_preserved(c);write(out/'history.json',preservation)
         manifests=[];incomplete=[]
         for p in sorted(root.rglob('manifest.json')):
@@ -120,6 +140,16 @@ def audit(out):
         write(out/'audit.json',dict(**preservation,all_checks_pass=True,outcome=replay['main']['outcome'],primary_pass=replay['main']['primary_pass'],
             manifests_checked=len(manifests),checksum_entries=sum(x['entries'] for x in manifests),recorded_source_entries=len(records),arrays_inspected=total_arrays,
             retained_incomplete_attempts=failures,exact_integer_primary=True,noise_sigma=.1,new_trained_parameters=0,physiological_noise_claim=False,source_commit=git('rev-parse','HEAD')))
+        inventory=tree('HEAD');links=[]
+        for name in docs[:3]:
+            for link in re.findall(r'\[[^\]]+\]\(([^)]+)\)',Path(name).read_text(encoding='utf-8')):
+                if '://' in link or link.startswith('#'):continue
+                target=(Path(name).parent/link.split('#')[0]).resolve()
+                relative=target.relative_to(Path.cwd().resolve()).as_posix()
+                assert target.is_file() or relative in inventory,(name,link)
+                links.append(dict(document=name,link=link,target=relative))
+        write(out/'document-link-checks.json',links)
+        assert_source_unchanged(source)
     seal(out,dict(complete=True,kind='m7-final-audit'))
     print(read(out/'audit.json'),flush=True)
 

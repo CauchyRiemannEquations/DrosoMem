@@ -1,4 +1,47 @@
-# Prioritized work — updated 2026-10-08
+# Prioritized work — updated 2026-10-12
+
+## Current handoff — M7 completed; structural specificity next (2026-10-12)
+
+The [one-dose observation-noise tracking study](counterfactual-noise-results.md)
+is closed under its [prospective protocol](counterfactual-noise-protocol.md).
+Registered primary and paired secondary FAIL:255/384 (66.41%) partial and
+109/192 (56.77%) whole; every block misses90%. Same fresh clean counterparts
+are100%, no newly learned parameters, noise only in endpoint observations.
+All9 cases/576 noisy pairs and independent raw-source/full-state/old-head
+authentication validate. All23 safeguards pass; no M7 technical failure.
+No execution or verification remains in this scope.
+
+All44,844 prior result identities, prior scientific files/negative outcomes and
+incomplete attempts remain sealed. M6 was not rescored; M1 remains invalid,
+P2 material gates FAIL and M4 strict-control INFEASIBLE. Observation-noise
+failure does not mean internal information was erased. Do not lower sigma,
+add seeds/draws, adapt the head or relabel the gate after this outcome.
+
+Next is **structural specificity**, priority2 of the owner's October 9 roadmap
+(working M8 label, **proposal only; not registered or executed**): can a feasible
+matched graph comparison determine how much clean historical-value tracking
+depends on source-derived wiring rather than generic delayed propagation?
+
+1. Audit existing P2 nulls, M3 feedforward sufficiency, M4 exact-control limits,
+   available graph builders and their actual degree/role/weight/path preservation.
+   First decide what bounded question those controls can validly answer.
+2. Define feasible real/rewired and minimal-delay controls with transparent
+   matched input/observation/decoder budgets. State unavoidable unmatched
+   properties; do not promise exact all-lag same-node DAG preservation or call
+   an unmatched graph a pure cycle intervention.
+3. Fix independent training/test streams, graph ensemble size/seeds, pairing,
+   current access/lag2 tracking metrics, effect requirement, validity/resource
+   rules and verifier before outcomes. Declare whether heads are graph-specific
+   fits then frozen at test; unfair transfer of a real-only head is not a
+   substitute for a justified structural comparison. New fitting, if used,
+   belongs to that separate computational study, not biological learning.
+4. Preserve old P2 failures and test the distinct new question honestly; no
+   favorable null selection or result-dependent ensemble/criterion expansion.
+
+Do not begin neural comparisons before design/protocol closure. Mathematical
+rule transfer and responsible synthesis/release remain later proposals;
+no DOI/publication is claimed and P3 stays excluded. Historical handoffs below
+are dated snapshots, not outstanding instructions to rerun their next proposal.
 
 ## Current handoff — M6 completed (2026-10-08)
 
