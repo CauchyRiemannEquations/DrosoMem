@@ -1,0 +1,147 @@
+{
+  "smoke": true,
+  "outcome": "smoke",
+  "primary_pass": null,
+  "levels": {
+    "legacy5": {
+      "registered_rule_pass": null,
+      "outcome": "smoke",
+      "cells": [
+        {
+          "level": "legacy5",
+          "seed": 1700001,
+          "noise_seed": 1720001,
+          "samples": 64,
+          "original_correct": 62,
+          "replacement_correct": 59,
+          "joint_correct": 57,
+          "original_accuracy": 0.96875,
+          "replacement_accuracy": 0.921875,
+          "joint_accuracy": 0.890625,
+          "prediction_changes": 62,
+          "clean_joint_correct": 64,
+          "clean_joint_accuracy": 1.0,
+          "clean_minus_noisy_joint": 0.109375,
+          "frequency_joint_correct": 0,
+          "current_joint_correct": 0,
+          "instantaneous_joint_correct": 0,
+          "scientific_rule_pass": null,
+          "technical_checks_pass": true,
+          "scale_floor_value_count": 0,
+          "mean_raw_noise_energy": 7.708761584479157e-06,
+          "mean_standardized_noise_energy": 0.46861130772787785
+        }
+      ],
+      "joint_accuracy": {
+        "mean": 0.890625,
+        "median": 0.890625,
+        "sd": 0.0,
+        "bootstrap_lo": 0.890625,
+        "bootstrap_hi": 0.890625
+      },
+      "original_accuracy": {
+        "mean": 0.96875,
+        "median": 0.96875,
+        "sd": 0.0,
+        "bootstrap_lo": 0.96875,
+        "bootstrap_hi": 0.96875
+      },
+      "replacement_accuracy": {
+        "mean": 0.921875,
+        "median": 0.921875,
+        "sd": 0.0,
+        "bootstrap_lo": 0.921875,
+        "bootstrap_hi": 0.921875
+      },
+      "clean_joint_accuracy": {
+        "mean": 1.0,
+        "median": 1.0,
+        "sd": 0.0,
+        "bootstrap_lo": 1.0,
+        "bootstrap_hi": 1.0
+      },
+      "clean_minus_noisy_joint": {
+        "mean": 0.109375,
+        "median": 0.109375,
+        "sd": 0.0,
+        "bootstrap_lo": 0.109375,
+        "bootstrap_hi": 0.109375
+      }
+    },
+    "brain5": {
+      "registered_rule_pass": null,
+      "outcome": "smoke",
+      "cells": [
+        {
+          "level": "brain5",
+          "seed": 1700001,
+          "noise_seed": 1720001,
+          "samples": 64,
+          "original_correct": 48,
+          "replacement_correct": 49,
+          "joint_correct": 38,
+          "original_accuracy": 0.75,
+          "replacement_accuracy": 0.765625,
+          "joint_accuracy": 0.59375,
+          "prediction_changes": 57,
+          "clean_joint_correct": 64,
+          "clean_joint_accuracy": 1.0,
+          "clean_minus_noisy_joint": 0.40625,
+          "frequency_joint_correct": 0,
+          "current_joint_correct": 0,
+          "instantaneous_joint_correct": 0,
+          "scientific_rule_pass": null,
+          "technical_checks_pass": true,
+          "scale_floor_value_count": 3,
+          "mean_raw_noise_energy": 2.1645339447563297e-07,
+          "mean_standardized_noise_energy": 0.46861130772787785
+        }
+      ],
+      "joint_accuracy": {
+        "mean": 0.59375,
+        "median": 0.59375,
+        "sd": 0.0,
+        "bootstrap_lo": 0.59375,
+        "bootstrap_hi": 0.59375
+      },
+      "original_accuracy": {
+        "mean": 0.75,
+        "median": 0.75,
+        "sd": 0.0,
+        "bootstrap_lo": 0.75,
+        "bootstrap_hi": 0.75
+      },
+      "replacement_accuracy": {
+        "mean": 0.765625,
+        "median": 0.765625,
+        "sd": 0.0,
+        "bootstrap_lo": 0.765625,
+        "bootstrap_hi": 0.765625
+      },
+      "clean_joint_accuracy": {
+        "mean": 1.0,
+        "median": 1.0,
+        "sd": 0.0,
+        "bootstrap_lo": 1.0,
+        "bootstrap_hi": 1.0
+      },
+      "clean_minus_noisy_joint": {
+        "mean": 0.40625,
+        "median": 0.40625,
+        "sd": 0.0,
+        "bootstrap_lo": 0.40625,
+        "bootstrap_hi": 0.40625
+      }
+    }
+  },
+  "cases": 2,
+  "probe_pairs": 128,
+  "noise_sigma": 0.1,
+  "new_trained_parameters": 0,
+  "decoder_parameters": 490,
+  "noise_feedback": false,
+  "noise_clipping": false,
+  "performance_eligibility_gate": false,
+  "physiological_noise_claim": false,
+  "criterion_unchanged": true
+}
