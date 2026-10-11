@@ -5,7 +5,7 @@
 [Protocol](counterfactual-noise-protocol.md),
 [results/synthesis](counterfactual-noise-results.md),
 [independent checks](../results/counterfactual_noise_v1/main_validation/checks.json),
-[final audit](../results/counterfactual_noise_v1/final_audit/audit.json).
+[final audit retry](../results/counterfactual_noise_v1/final_audit_retry1/audit.json).
 Registered primary FAIL: noisy joint255/384 (66.40625%), per-block57,39,29,46,44,40
 of64; all six miss minimum58/64. Paired whole secondary FAIL:41,38,30 of64,
 109/192 (56.77083%). Clean on the SAME new streams is384/384 and192/192.
@@ -23,9 +23,11 @@ All9 raw-source/manual trajectory reconstructions,576 pre-states/2304 windows
 and9 OLD-training SVD authentications agree, along with576 exact noise vectors/
 predictions and all primary/summary values. Scientific FAIL is a valid completed
 result; validation PASS means that FAIL was reproduced. All23 safeguards pass,
-no M7 technical failures,44,844 old result identities/protected scientific files
+no neural execution/replay failures,44,844 old result identities/protected scientific files
 and prior incomplete attempts are preserved. M1 stays invalid, P2 material
-gates FAIL and M4 stays INFEASIBLE. No execution/verification remains in M7.
+gates FAIL and M4 stays INFEASIBLE. First closeout's source-record variable
+shadowing failure is retained; the fresh audit retry changes only that reference,
+not experiments or science. No execution/verification remains in M7.
 
 This limits the chosen fixed readout's measurement robustness, not internal
 information retention or living-fly memory. No dose/seed/head sweep follows.

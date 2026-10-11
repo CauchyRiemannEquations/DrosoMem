@@ -8,7 +8,9 @@ Registered primary and paired secondary FAIL:255/384 (66.41%) partial and
 109/192 (56.77%) whole; every block misses90%. Same fresh clean counterparts
 are100%, no newly learned parameters, noise only in endpoint observations.
 All9 cases/576 noisy pairs and independent raw-source/full-state/old-head
-authentication validate. All23 safeguards pass; no M7 technical failure.
+authentication validate. All23 safeguards pass; no neural execution/replay failed.
+The first closeout failed on a source-record variable reference and is retained;
+the same evidence closes through a fresh audit-only retry.
 No execution or verification remains in this scope.
 
 All44,844 prior result identities, prior scientific files/negative outcomes and

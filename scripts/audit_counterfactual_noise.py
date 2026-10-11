@@ -92,9 +92,9 @@ def stage_replay(root,validation,c,smoke):
 
 def audit(out):
     c=config();root=Path(c['namespace'])
-    source=source_record(c)
+    captured_source=source_record(c)
     with attempt(out,c,'m7-closeout'):
-        write(out/'closeout-source.json',source)
+        write(out/'closeout-source.json',captured_source)
         preservation=history_preserved(c);write(out/'history.json',preservation)
         manifests=[];incomplete=[]
         for p in sorted(root.rglob('manifest.json')):
@@ -149,7 +149,7 @@ def audit(out):
                 assert target.is_file() or relative in inventory,(name,link)
                 links.append(dict(document=name,link=link,target=relative))
         write(out/'document-link-checks.json',links)
-        assert_source_unchanged(source)
+        assert_source_unchanged(captured_source)
     seal(out,dict(complete=True,kind='m7-final-audit'))
     print(read(out/'audit.json'),flush=True)
 

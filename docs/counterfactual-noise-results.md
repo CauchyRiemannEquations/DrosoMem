@@ -125,10 +125,19 @@ justify reporting successful robustness merely because some pairs remain
 correct or single-arm values exceed10%. No smaller dose, extra seed/draw,
 alternative endpoint, adaptation or retraining was attempted.
 
-No M7 execution, safeguard, source capture or independent validation attempt
-failed technically. The scientific FAIL is a completed valid result, not an
-interrupted run. [Attempt registry](../results/counterfactual_noise_v1/known-incomplete-attempts.json)
-is empty. Historical failed attempts, M1 assay-invalid, P2 material FAIL,
+No neural execution, safeguard or independent verification failed technically.
+The scientific FAIL is a completed valid result. The FIRST final artifact audit
+stopped at its last source-freeze check: its initial source-record variable was
+overwritten while reading historical records, so it compared HEAD to a prior
+stage's commit rather than its own captured source. No actual source drift or
+experimental discrepancy was found. Its incomplete manifest/failure/resources
+and provisional audit outputs remain unchanged; the provisional `all_checks_pass`
+field does not certify that interrupted audit. Only the captured-source variable
+reference was repaired, and the same evidence was audited in a fresh retry;
+no experiments, thresholds, tolerances or seeds were changed or rerun.
+[Retained audit failure](../results/counterfactual_noise_v1/final_audit/failure.json),
+[attempt registry](../results/counterfactual_noise_v1/known-incomplete-attempts.json).
+Historical failed attempts, M1 assay-invalid, P2 material FAIL,
 M4 strict-control INFEASIBLE and earlier noise/plasticity negatives stay intact.
 
 ## 4. What can now be said about DrosoMem?
@@ -192,7 +201,7 @@ Materialized files authenticate; sparse-excluded historical artifacts are
 protected by Git identity, not claimed freshly replayed. All prior scientific
 source/data/config/protocol/tests and failures stay unchanged. Only the four
 overview documents are updated, retaining dated historical snapshots.
-[Final artifact audit](../results/counterfactual_noise_v1/final_audit/audit.json)
+[Valid final artifact audit retry](../results/counterfactual_noise_v1/final_audit_retry1/audit.json)
 checks manifest coverage/checksums, recorded sources, finite arrays, every
 named CSV column and integer gate, documents and historical preservation.
 

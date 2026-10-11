@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "manifest_path": "results/counterfactual_noise_v1/final_audit/manifest.json",
+    "failure_path": "results/counterfactual_noise_v1/final_audit/failure.json",
+    "kind": "technical_closeout_source_record_variable_shadowing",
+    "validation_invalid": true,
+    "scientific_evidence_changed": false,
+    "source_graph_outcomes_executed": false,
+    "reason": "Auditor reused its initial source variable while reading historical source records, then falsely compared current HEAD with the last historical record. Captured-source reference alone is repaired; experimental data, protocol and scientific gate stay unchanged. The incomplete manifest and all original files remain preserved."
+  }
+]

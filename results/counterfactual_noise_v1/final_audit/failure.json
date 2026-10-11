@@ -1,0 +1,8 @@
+{
+  "kind": "m7-closeout",
+  "complete": false,
+  "exception": "AssertionError",
+  "message": "",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-10-06\\new-chat-2\\work\\DrosoMem-research\\scripts\\tdc_support.py\", line 100, in attempt\n    yield r\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-10-06\\new-chat-2\\work\\DrosoMem-research\\scripts\\audit_counterfactual_noise.py\", line 152, in audit\n    assert_source_unchanged(source)\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-10-06\\new-chat-2\\work\\DrosoMem-research\\scripts\\noise_tracking_support.py\", line 70, in assert_source_unchanged\n    assert git('rev-parse','HEAD')==source['source_commit'] and subprocess.run(['git','diff','--quiet','HEAD']).returncode==0\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "source_commit": "bbb047d521be46a81e23f3d45a310367eda73481"
+}

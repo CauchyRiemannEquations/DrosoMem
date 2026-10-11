@@ -21,13 +21,15 @@ No smaller dose, extra seed, new decoder or revised criterion follows failure.
 
 All9 cases,576 noisy pairs,9 baseline state hashes/576 pre-states/2304
 four-world windows and9 OLD-head SVD checks independently reproduce this
-negative result. All23 safeguards pass; no M7 technical attempt failed.
+negative result. All23 safeguards pass; no neural run or independent replay failed.
 All44,844 prior result identities and historical scientific files/failures
 remain protected. Observation-only failure does not demonstrate internal
 information erasure or biological noise robustness/learning.
 [Protocol](docs/counterfactual-noise-protocol.md) ·
 [Independent checks](results/counterfactual_noise_v1/main_validation/checks.json) ·
-[Final audit](results/counterfactual_noise_v1/final_audit/audit.json).
+[Final audit retry](results/counterfactual_noise_v1/final_audit_retry1/audit.json).
+The first closeout's source-record variable error is preserved; the audit-only
+repair leaves all scientific evidence/settings unchanged.
 
 Next is the roadmap's **structural specificity** priority: assess feasible
 real/rewired/minimal-delay controls, then preregister a distinct bounded
