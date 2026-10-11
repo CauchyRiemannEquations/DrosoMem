@@ -1,0 +1,53 @@
+{
+  "smoke": {
+    "outcome": "smoke",
+    "primary_pass": null,
+    "levels": {
+      "legacy5": {
+        "joint_correct": [
+          57
+        ],
+        "registered_rule_pass": null
+      },
+      "brain5": {
+        "joint_correct": [
+          38
+        ],
+        "registered_rule_pass": null
+      }
+    },
+    "cases": 2,
+    "probe_pairs": 128,
+    "new_trained_parameters": 0,
+    "all_csv_columns_replayed": true
+  },
+  "main": {
+    "outcome": "FAIL",
+    "primary_pass": false,
+    "levels": {
+      "legacy5": {
+        "joint_correct": [
+          57,
+          39,
+          29,
+          46,
+          44,
+          40
+        ],
+        "registered_rule_pass": false
+      },
+      "brain5": {
+        "joint_correct": [
+          41,
+          38,
+          30
+        ],
+        "registered_rule_pass": false
+      }
+    },
+    "cases": 9,
+    "probe_pairs": 576,
+    "new_trained_parameters": 0,
+    "all_csv_columns_replayed": true
+  }
+}
