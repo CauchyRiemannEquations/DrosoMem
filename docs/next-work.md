@@ -1,5 +1,39 @@
 # Prioritized work — updated 2026-10-13
 
+## Current handoff — M11 closed FAIL; responsible synthesis next
+
+[M11](rule-transfer-results.md) completes the requested performance registration,
+all216 fits and independent verification. All427680 complete-state trajectories,
+head predictions/scores/rule counts and exact decisions agree; nine guards and
+smoke pass. Both primary rule-continuation and secondary fine-wiring criteria
+FAIL. Real nonperiod2 first13.23/13.94%, completion0.51/1.01%; training acquisition
+19.35/18.86% is below50%. Fixed lag2 solves the known110 period2 cases, excluded
+prospectively from the330 primary examples. All seeds/nulls/negatives are kept.
+
+No M11 execution or verification remains; do not search another head, seed,
+rule set or threshold until a positive result appears. The current M10/M11
+scope closes task design READY plus this negative fixed-budget comparison.
+M9's past-input tracking and every older outcome remain unchanged.
+
+Next one roadmap task is **responsible synthesis/archive**, not a new experiment:
+
+1. Build a dated claim/evidence/limitation matrix for M1–M11, linking each
+   protocol, actual learned parameters, exact outcome, raw archive and independent
+   checks. Separate historical access, causal tracking, train acquisition,
+   teacher prediction, autonomous continuation and fine-wiring advantage.
+2. Explain M11's weak acquisition and scope before discussing transfer failure.
+   Distinguish matched neural budgets from the privileged formula/table/fixed-copy
+   references; record shared datasets/shift repeats and conditional null mixing.
+3. Audit reproducibility entry points and source/environment/parent dependencies
+   using archived identities. Avoid changing scientific files or rerunning old
+   numerical results at the current source to repair historical manifests.
+4. Draft a research summary/manuscript outline only with supported claims.
+   No DOI/publication/external submission is implied; broader learner/internal-
+   plasticity/rule-family work needs its own prospective scope, not hidden P3.
+
+All47049 prior result Git identities and materialized historical bytes are
+preserved. The dated handoffs below are historical positions, not open tasks.
+
 ## Current handoff — M10 task design READY; model protocol next
 
 [M10 task preflight](rule-transfer-design-results.md) is closed READY, with

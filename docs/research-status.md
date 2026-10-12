@@ -1,5 +1,37 @@
 # Research status
 
+## Current — M11 verified rule-continuation primary/secondary FAIL (2026-10-13)
+
+[Protocol](rule-transfer-protocol.md), [results](rule-transfer-results.md),
+[independent checks](../results/rule_transfer_v1/main_validation/checks.json),
+[final audit](../results/rule_transfer_v1/final_audit/audit.json).
+All216 fits/independent SVD refits and427680 complete-state teacher/autonomous
+trajectory digests replay, with all predictions/scores/rule counts/exact gates.
+All10 partial nulls reconstruct from pinned swaps. Nine guards/3-case smoke
+pass; no technical failure. Main/secondary scientific criteria both FAIL.
+
+Primary a=7..9 excludes the known period-2 shortcut. Real first131/990 and138/990
+(13.23/13.94%); completion5/990 and10/990 (0.51/1.01%); shift completion0.
+Real−shift0.505/1.010pp misses5pp; absolute/per-multiplier gates also fail.
+Training teacher1277/6600 and1245/6600 (19.35/18.86%) misses50% acquisition.
+Null means1.253/0.869%; real−null−0.747/+0.141pp, not strictly above every null.
+Fixed lag2 solves110/440 (all period2) and0/330 primary episodes.
+
+Per head48 observations/539 affine scalars plus96 train moments,2200 rows,
+frozen source/encoder/recurrent weights.216 official heads learn116424 scalars
+and20736 moments; verification refits are not independent new models. Six input
+maps share M10 task instances and shift's canonical interface repeats. Iid/shuffle
+are retained diagnostics, not alternate successful primary families.
+
+All47049 prior result identities/47747 scientific paths and8135 materialized
+files remain unchanged. M10 READY is task feasibility; M9's historical tracking
+does not imply rule prediction. This is a completed negative learner-budget
+result with weak acquisition, not universal inability or biological mathematics.
+No specified M11 work remains. Next is responsible synthesis/archive/claim-
+evidence-limitation matrix; no further registered experiment or hidden tuning.
+
+The dated M10 and earlier sections retain their completion-time handoffs.
+
 ## Current — M10 task-design preflight READY (2026-10-13)
 
 [Protocol](rule-transfer-design-protocol.md), [results](rule-transfer-design-results.md),

@@ -23,7 +23,7 @@ def audit(out):
                 assert (p.parent / 'failure.json').is_file()
         failures = read(root / 'known-incomplete-attempts.json')
         assert sorted(f['manifest_path'] for f in failures) == sorted(incomplete)
-        for stage in ['baseline_audit', 'guards', 'smoke', 'smoke_validation', 'main', 'main_validation']:
+        for stage in ['baseline_audit', 'guards', 'smoke', 'smoke_validation', 'main', 'main_validation', 'report']:
             r = root / stage
             assert read(r / 'manifest.json')['complete']
             authenticate_source(read(r / 'source.json'))
@@ -45,13 +45,29 @@ def audit(out):
                 assert check['independent_svd_refits'] == 1 and check['all_predictions_and_metrics_exact']
             stage_checks[stage] = dict(fits=fits, trajectories=checked['full_state_trajectories_exact'], all_checks_pass=True)
         assert read(root / 'main/fixed-lag-reference-metrics.json') == read(root / 'main_validation/recomputed-fixed-lag-metrics.json')
+        plot = root / 'report'
+        assert read(plot / 'input.json')['main_manifest_sha256'] == sha(root / 'main/manifest.json')
+        from fractions import Fraction
+        metric_rows = read(root / 'main/metrics.json')
+        panels = {'Training teacher accuracy': ('train', 'all', 'teacher_correct', 'teacher_predictions'),
+                  'Held-out first next accuracy': ('parameter_test', 'nonperiod2', 'first_correct', 'episodes'),
+                  'Held-out autonomous completion': ('parameter_test', 'nonperiod2', 'completed', 'episodes')}
+        plotted = read(plot / 'plotted-values.json')
+        assert len(plotted) == 18
+        for cell in plotted:
+            split, group, count, denominator = panels[cell['panel']]
+            seeds = c['cohorts'][cell['cohort']]
+            selected = [r for r in metric_rows if r['family'] == 'affine' and r['split'] == split and r['group'] == group
+                        and r['input_seed'] in seeds and (r['model'].startswith('g') if cell['kind'] == 'nulls' else r['model'] == cell['kind'])]
+            selected.sort(key=lambda r: (r['model'], r['input_seed']))
+            assert cell['scores_exact'] == [str(Fraction(r[count], r[denominator])) for r in selected]
         docs = {n: sha(n) for n in sorted(OVERVIEWS | {'docs/rule-transfer-results.md'})}
         write(out / 'document-sha256.json', docs)
         outcome = read(root / 'main/summary.json')
         write(out / 'audit.json', dict(all_checks_pass=True, outcome=outcome['outcome'], primary_pass=outcome['primary_pass'],
                                        secondary_pass=outcome['secondary_pass'], historical_scientific_evidence_preserved=True,
                                        independent_verification_complete=True, stages=stage_checks,
-                                       manifests=manifests, recorded_incomplete_attempts=len(failures)))
+                                       manifests=manifests, plotted_values_replayed=True, recorded_incomplete_attempts=len(failures)))
         unchanged(record)
     seal(out, dict(complete=True, study='M11 final audit'))
     print(dict(all_checks_pass=True, outcome=outcome['outcome'], independent_verification_complete=True))

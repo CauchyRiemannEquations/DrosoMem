@@ -1,0 +1,70 @@
+{
+  "discovery": {
+    "real_minus_shift": {
+      "input_seeds": [
+        2710001,
+        2710002,
+        2710003
+      ],
+      "paired_differences_exact": [
+        "2/165",
+        "0",
+        "1/330"
+      ],
+      "mean_exact": "1/198",
+      "median_exact": "1/330",
+      "sample_sd": 0.0063080787862610085,
+      "standardized_paired_effect": 0.8006407690254357
+    },
+    "real_minus_null_mean": {
+      "input_seeds": [
+        2710001,
+        2710002,
+        2710003
+      ],
+      "paired_differences_exact": [
+        "-4/825",
+        "-41/3300",
+        "-17/3300"
+      ],
+      "mean_exact": "-37/4950",
+      "median_exact": "-17/3300",
+      "sample_sd": 0.004289065403143868,
+      "standardized_paired_effect": -1.7427450440062104
+    }
+  },
+  "confirmation": {
+    "real_minus_shift": {
+      "input_seeds": [
+        2710004,
+        2710005,
+        2710006
+      ],
+      "paired_differences_exact": [
+        "1/165",
+        "1/165",
+        "1/55"
+      ],
+      "mean_exact": "1/99",
+      "median_exact": "1/165",
+      "sample_sd": 0.0069981850810863725,
+      "standardized_paired_effect": 1.4433756729740645
+    },
+    "real_minus_null_mean": {
+      "input_seeds": [
+        2710004,
+        2710005,
+        2710006
+      ],
+      "paired_differences_exact": [
+        "1/3300",
+        "-2/825",
+        "7/1100"
+      ],
+      "mean_exact": "7/4950",
+      "median_exact": "1/3300",
+      "sample_sd": 0.0044980695107499635,
+      "standardized_paired_effect": 0.31438851951081437
+    }
+  }
+}

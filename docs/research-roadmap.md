@@ -1,5 +1,29 @@
 # DrosoMem research roadmap
 
+## Current — M11 performance comparison closed FAIL; synthesis next
+
+[M11 results](rule-transfer-results.md), [protocol](rule-transfer-protocol.md),
+[handoff](next-work.md). All216 matched source/null/shift fits and independent
+state/SVD replays complete,427680 trajectories agree. Registered primary and
+secondary FAIL: held-out nonperiod2 completion0.51/1.01%, small shift gaps,
+weak train acquisition19.35/18.86%, no strict fine-wiring benefit. These are
+bounded computational outcomes; no failure is retrospectively promoted.
+
+| Priority | Direction | Current completion boundary |
+| --- | --- | --- |
+| 1 / M7 | Artificial-noise historical tracking | Closed; FAIL preserved |
+| 2 / M8–M9 | Matched structural construction/tracking | Closed; READY construction, valid material-advantage FAIL |
+| 3 / M10 | Finite rule-transfer task design | Closed; READY within registered checks |
+| 3 / M11 | Matched fitted-model held-out coefficient continuation | Closed;216 fits and independent validation; primary/secondary FAIL |
+| 4 | Responsible synthesis/archive/possible manuscript | Next: claim/evidence/limitation matrix; no DOI/publication claimed |
+
+Priority3 closes this initial fixed-reservoir/affine-head/mod-11 scope, not every
+mathematical rule/internal-learning question. Acquisition already weakens this
+learner budget; do not call it isolated transfer failure after successful learning.
+No automatic new head/seed/hyperparameter family or P3 follows. Broader extensions
+require an independent prospective question/protocol; current work has no pending
+experiment/verification. The historical handoffs below preserve their dated scope.
+
 ## Current — M10 task design closed READY; performance registration next
 
 [M10 results](rule-transfer-design-results.md), [protocol](rule-transfer-design-protocol.md),

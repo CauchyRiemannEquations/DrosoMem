@@ -9,7 +9,28 @@ fly memorizing pi or a model predicting unseen pi digits.
 [한국어 설명](docs/README-ko.md) · [Research status / audit](docs/research-status.md) ·
 [Roadmap](docs/research-roadmap.md) · [Extension closeout](docs/additional-research-closeout.md)
 
-## Current research — M10 rule-transfer task design READY, 2026-10-13
+## Current research — M11 rule-continuation primary/secondary FAIL, 2026-10-13
+
+The [M11 matched fitted-model comparison](docs/rule-transfer-results.md) is closed
+with **primary/secondary FAIL**. All216 source/ten-null/shift fits and independent
+SVD refits complete; all427680 teacher/autonomous state trajectories, predictions,
+scores/counts and exact gates replay. Nine guards and smoke validation pass.
+
+Excluding known period-2 rules prospectively, real held-out first accuracy is
+13.23/13.94%,8-symbol completion0.51/1.01%, and real−shift completion0.51/1.01pp,
+below registered25%/10%/5pp. Training teacher accuracy19.35/18.86% also misses50%,
+so acquisition itself is limited under this fixed-reservoir/539-affine-scalar
+budget. Real is not above every matched null; no wiring advantage is supported.
+Fixed lag2 completes the110 period-2 cases and none of the330 primary cases.
+
+[Protocol](docs/rule-transfer-protocol.md) ·
+[Independent checks](results/rule_transfer_v1/main_validation/checks.json) ·
+[Final audit](results/rule_transfer_v1/final_audit/audit.json).
+M10 task READY, M9 and prior negative results remain unchanged. The bounded
+M10/M11 comparison is complete. Next is responsible synthesis/archive and a
+claim/evidence/limitation matrix; no automatic head/seed tuning or P3.
+
+## Closed M10 rule-transfer task design READY, 2026-10-13
 
 The [M10 finite task-design preflight](docs/rule-transfer-design-results.md) is
 **READY**, independently checked: 990 mod-11 affine episodes separate training,
