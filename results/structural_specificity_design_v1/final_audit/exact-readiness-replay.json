@@ -1,0 +1,23 @@
+{
+  "smoke_retry1": {
+    "outcome": "smoke",
+    "primary_ready": null,
+    "levels": {
+      "legacy5": null
+    },
+    "graph_constructions": 1,
+    "new_decoder_fits": 0,
+    "source_graph_neural_trajectories": 0
+  },
+  "main": {
+    "outcome": "READY",
+    "primary_ready": true,
+    "levels": {
+      "legacy5": true,
+      "brain5": true
+    },
+    "graph_constructions": 13,
+    "new_decoder_fits": 0,
+    "source_graph_neural_trajectories": 0
+  }
+}

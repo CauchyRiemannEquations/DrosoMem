@@ -1,0 +1,42 @@
+{
+  "all_checks_pass": true,
+  "baseline_commit": "4185b214ae831499b556764fa288295b1dbd917b",
+  "prior_result_identities_preserved": 45245,
+  "protected_baseline_paths": 45913,
+  "old_scientific_files_and_failures_preserved": true,
+  "p2_outcome": "FAIL",
+  "m7_outcome": "FAIL",
+  "m1_outcome": "assay-invalid",
+  "m4_outcome": "INFEASIBLE",
+  "materialized_protected_files_checked": 6301,
+  "materialized_prior_result_files_checked": 5637,
+  "sparse_excluded_prior_result_identities": 39608,
+  "all_materialized_blob_checks_pass": true,
+  "sparse_paths_freshly_replayed": false,
+  "outcome": "READY",
+  "primary_ready": true,
+  "manifests_checked": 43,
+  "checksum_entries": 425,
+  "arrays_inspected": 166,
+  "retained_incomplete_attempts": [
+    {
+      "manifest_path": "results/structural_specificity_design_v1/smoke/manifest.json",
+      "failure_path": "results/structural_specificity_design_v1/smoke/failure.json",
+      "kind": "source_root_id_representation_mismatch",
+      "scientific_settings_changed": false,
+      "new_graph_or_prototype_outcomes_generated": false,
+      "reason": "Main loader converted current IDs to int64 but indexed them with the original string IDs. Canonical int64 conversion preserves exact root values; no graph, mapping, weights, seeds, budgets or gates change. The interrupted smoke and nested definition attempt are retained."
+    },
+    {
+      "manifest_path": "results/structural_specificity_design_v1/smoke/definitions/legacy5/manifest.json",
+      "failure_path": "results/structural_specificity_design_v1/smoke/definitions/legacy5/failure.json",
+      "kind": "nested_definition_attempt_in_same_interrupted_smoke",
+      "scientific_settings_changed": false,
+      "new_graph_or_prototype_outcomes_generated": false
+    }
+  ],
+  "exact_integer_overlap": true,
+  "new_decoder_fits": 0,
+  "source_graph_neural_trajectories": 0,
+  "source_commit": "4f50c72775e0eede890854df4acdf63cd0ef3e02"
+}
