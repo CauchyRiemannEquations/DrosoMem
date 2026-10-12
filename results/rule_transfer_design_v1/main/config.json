@@ -1,0 +1,82 @@
+{
+  "study": "M10 task-design validity preflight",
+  "baseline_commit": "81ad81f25c445c8964599d35f52e0bef51ce4755",
+  "namespace": "results/rule_transfer_design_v1",
+  "protocol": "docs/rule-transfer-design-protocol.md",
+  "modulus": 11,
+  "prefix_length": 3,
+  "horizon": 8,
+  "train_multipliers": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "parameter_test_multipliers": [
+    7,
+    8,
+    9,
+    10
+  ],
+  "train_offsets_from_fixed_point": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "instance_test_offsets_from_fixed_point": [
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "splits": [
+    "train",
+    "instance_test",
+    "parameter_test"
+  ],
+  "expected_episodes": {
+    "train": 275,
+    "instance_test": 275,
+    "parameter_test": 440
+  },
+  "iid_seeds": {
+    "train": 2610001,
+    "instance_test": 2610002,
+    "parameter_test": 2610003
+  },
+  "shuffle_seeds": {
+    "train": 2611001,
+    "instance_test": 2611002,
+    "parameter_test": 2611003
+  },
+  "controls": [
+    "frequency",
+    "current",
+    "repeat_difference",
+    "history1",
+    "history2",
+    "history3",
+    "known_form_oracle"
+  ],
+  "maximum_trivial_parameter_first_accuracy": "1/4",
+  "maximum_iid_oracle_first_accuracy": "1/4",
+  "maximum_shuffled_oracle_first_accuracy": "1/4",
+  "max_seconds_per_stage": 300,
+  "max_process_rss_bytes": 1073741824,
+  "neural_model_fits": 0,
+  "future_model_budget": {
+    "status": "proposal only; requires separate performance preregistration",
+    "observations": 48,
+    "outputs": 11,
+    "affine_parameters": 539,
+    "train_transition_rows": 2200,
+    "ridge_alpha": 1.0,
+    "train_only_scaler_floor": 1e-05,
+    "recurrent_learning": false,
+    "reset_between_episodes": true
+  }
+}
