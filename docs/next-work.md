@@ -1,5 +1,39 @@
 # Prioritized work — updated 2026-10-12
 
+## Current handoff — M9 closed; rule-transfer design next
+
+[M9](structural-tracking-results.md) independently closes the bounded structural
+comparison with primary/secondary material FAIL: all real/null/delay scores100%,
+real−null gap0pp, current access valid. All87 cases/174 states+refits/5568 probe
+pairs validate;11 safeguards pass, no technical failures. Old45525 result
+identities/scientific files/failures stay sealed. No M9 execution remains.
+Ceiling limits discrimination; do not move lag/noise/seed/head/threshold until
+a favorable wiring result appears. P2/M7 FAIL/M1 invalid/M4 INFEASIBLE remain.
+
+Next is roadmap priority3: **mathematical-sequence rule-transfer task design**
+(working M10, proposal only; not registered/executed). Begin with a bounded
+validity preflight, not a claim that the model learns mathematics:
+
+1. Define separate trained-string recall, next-symbol prediction and unseen-rule
+   application endpoints. Audit existing periodic/pi/context prediction results
+   to avoid repeating or relabeling old memorization claims.
+2. Specify sequence families/encodings and held-out instance/parameter splits
+   that do not leak the answer or permit shared cycles/templates to masquerade
+   as transfer. Check what the declared learner actually has to infer.
+3. Define trivial frequency/current/history lookup/finite-state/delay controls
+   and matched fitted-model budgets. Fix how much task/rule knowledge is given
+   to each baseline. Independent iid/shuffled controls distinguish predictable
+   structure from generic past-input access.
+4. Register one finite question, seeds, task/split/metric/validity/resource rules
+   before new model outcomes; implement/smoke/verify/run/report only that scope.
+   Declare exactly learned parameters. Output-head fitting alone is not
+   internal synaptic or biological learning. No post-hoc successful family,
+   rule, seed or architecture selection, and no P3.
+
+Responsible synthesis/release remains priority4; no DOI/publication is claimed.
+Historical handoffs below preserve their dated proposed next steps, not requests
+to reopen their closed negative endpoints.
+
 ## Current handoff — M8 preflight closed; structural performance next
 
 [M8](structural-specificity-design-results.md) is independently **READY**:

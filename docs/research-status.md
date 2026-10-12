@@ -1,5 +1,29 @@
 # Research status
 
+## Current — M9 valid material wiring criterion FAIL (2026-10-12)
+
+[Protocol](structural-tracking-protocol.md), [results/synthesis](structural-tracking-results.md),
+[independent checks](../results/structural_tracking_v1/main_validation/checks.json),
+[final audit](../results/structural_tracking_v1/final_audit/audit.json).
+All87 real/null/engineered cases score100% lag0/lag2 and64/64 paired substitutions.
+Real partial384/384, each10 nulls384/384, delay384/384; whole real/each3 nulls/
+delay192/192. Current validity passes. Primary and secondary advantage FAIL:
+gap0pp, all ties, below fixed3pp and strict-above-all. No settings changed.
+
+Every174 complete-state trace/head refit,5568 pre-states/probe pairs and22272
+four-world windows/final entries match. All CSVs/metrics/criteria independently
+recompute. Eleven safeguards pass; no M9 execution/validation failure. New
+85260 nominal affine scalars plus8352 train-estimated scaler moments; no
+recurrent/encoder/template learning or new graphs/noise. Training/test streams
+independent, heads frozen before test, every anchor included without filtering.
+
+This is a finite conditional ceiling result, not equivalence of all biological
+wirings or a general whole-brain/cycle/storage/capacity claim. Source-front
+engineered delay is a different computational reference.45525 old results and
+source/protocol/data/tests/failures remain protected; P2/M7 FAIL, M1 invalid,
+M4 INFEASIBLE and M8 READY stay unchanged. No M9 work remains. Next proposal
+is rule-transfer design (working M10), unregistered/unexecuted; P3 excluded.
+
 ## Current — M8 constructive feasibility READY (2026-10-12)
 
 [Protocol](structural-specificity-design-protocol.md),

@@ -1,5 +1,34 @@
 # DrosoMem research roadmap
 
+## Current — M9 structural comparison closed; rule-transfer design next
+
+[M9 results/synthesis](structural-tracking-results.md),
+[protocol](structural-tracking-protocol.md), [handoff](next-work.md).
+Registered primary/secondary material wiring advantage FAIL: real/null/delay
+all reach100% joint lag2 tracking and current accuracy, real−null gap0pp,
+all ties. All87 cases,174 complete-state trace/head refits and5568 paired probes
+validate;11 safeguards pass. This conditional ceiling result does not prove
+universal wiring equivalence or physiological memory/learning.
+
+| Priority | Direction | Completion boundary |
+| --- | --- | --- |
+| 1 / M7 | One-dose artificial observation-noise tracking | Closed; FAIL preserved |
+| 2 / M8 | Matched structural-control construction | Closed; READY |
+| 2 / M9 | Fitted then frozen conditional historical tracking comparison | Closed; material advantage FAIL, valid ceiling scores |
+| 3 / working M10 | Mathematical-sequence rule-transfer design | Next proposal; not registered/executed |
+| 4 | Responsible synthesis/archive/possible manuscript | Future plan; no DOI/publication claimed |
+
+Priority2 is closed within M8/M9's finite bank/model/task budgets, not all
+connectome-specificity questions. Do not automatically add harder lags/noise,
+nulls or seeds after the failure. Priority3 first separates recall/prediction/
+unseen-rule generalization, audits old periodic/context results, defines
+nonleaking held-out instances/parameters and appropriate trivial/learned controls,
+then registers a bounded protocol before model outcomes. A fly-derived fixed
+reservoir plus fitted head is not a living fly or human learning mathematics.
+45525 older results/scientific files/failures and P2/M7 FAIL/M1 invalid/M4
+INFEASIBLE remain protected. P3 is excluded. Dated snapshots below retain
+their historical planning/completion states.
+
 ## Current — M8 design preflight READY; performance remains open (2026-10-12)
 
 [M8 results](structural-specificity-design-results.md),

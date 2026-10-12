@@ -9,7 +9,32 @@ fly memorizing pi or a model predicting unseen pi digits.
 [한국어 설명](docs/README-ko.md) · [Research status / audit](docs/research-status.md) ·
 [Roadmap](docs/research-roadmap.md) · [Extension closeout](docs/additional-research-closeout.md)
 
-## Current research — M8 design preflight closed, 2026-10-12
+## Current research — M9 structural advantage FAIL, 2026-10-12
+
+The [M9 fitted then frozen structural tracking study](docs/structural-tracking-results.md)
+is closed with **primary/secondary material wiring advantage FAIL**. All87
+cases have100% current/lag2 accuracy and64/64 unconditioned replacement pairs:
+real, each10 partial/3 whole matched nulls and engineered delay are tied.
+Real−null gap0pp misses the fixed3pp/strict-above-all rule. Current access
+is valid; ceiling/basic tracking success does not override the failed hypothesis.
+
+All174 full-state train/test hashes,174 independent head refits,5568 pre-states/
+paired probes and22272 four-world window/final entries independently replay.
+Eleven safeguards pass; no M9 technical failure. Per graph two490-parameter
+affine heads learn on4000 train rows, then freeze before independent test;
+recurrent/encoder/template learning0.45525 older result identities/failures
+remain protected. [Protocol](docs/structural-tracking-protocol.md) ·
+[Independent checks](results/structural_tracking_v1/main_validation/checks.json) ·
+[Final audit](results/structural_tracking_v1/final_audit/audit.json).
+
+The conditional bank shares many structures/current coefficients; the delay
+has different dynamics and a source instantaneous front end. Ties at ceiling
+do not prove all-wiring equivalence or biological learning. P2/M7 negatives
+stay sealed. Next is proposed mathematical-sequence rule-transfer task design,
+separating recall, prediction and unseen-rule application; not registered or
+executed. No automatic harder-lag/noise/seed sweep or P3 follows this result.
+
+## Closed M8 design preflight — 2026-10-12
 
 The [M8 structural control construction preflight](docs/structural-specificity-design-results.md)
 is **READY**, independently verified:10 partial/3 whole constructions preserve
