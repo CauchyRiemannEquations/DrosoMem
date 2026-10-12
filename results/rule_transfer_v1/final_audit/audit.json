@@ -1,0 +1,2694 @@
+{
+  "all_checks_pass": true,
+  "outcome": "FAIL",
+  "primary_pass": false,
+  "secondary_pass": false,
+  "historical_scientific_evidence_preserved": true,
+  "independent_verification_complete": true,
+  "stages": {
+    "smoke": {
+      "fits": 3,
+      "trajectories": 198,
+      "all_checks_pass": true
+    },
+    "main": {
+      "fits": 216,
+      "trajectories": 427680,
+      "all_checks_pass": true
+    }
+  },
+  "manifests": [
+    {
+      "path": "results/rule_transfer_v1/baseline_audit/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "0e919562634e633a6c96efb6f02749168de4ae784d39869b002761872dcb4fc5"
+    },
+    {
+      "path": "results/rule_transfer_v1/guards/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "0f04a53e585afc8e0326054519160d2b017f3a506795e792888fd7db4efae652"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840001_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "03a90d79691fbffcf80952f7c49a379b67a9633d7cfbf639ae13b35196fc86ac"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840001_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "a4b4e5d193acf01c0446d22b4029357db2b1cc70bd3d1669b559b9d8d01be301"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840001_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "6ffa0a30ebf5f432aec231a0fbfb2a1539e76287e46291beb85d36ad1812de4f"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840001_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "30d19e7438452c3b8b7a08673d81f669ea616a5c7c18d4042a23aec56698ce6e"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840001_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "83bf820354b729b8a0f1c2d09907151516bdeaaa1a7be868790dd2c4f51d0059"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840001_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "870ebf49b4188a620c8412f13ce4486aac75828dd70c740689f4c285a18265a1"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840002_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "d50a4249cabb1039b6800ca80867755f5b91a9e68600e3222fa6a4b6e8739e3e"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840002_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "d0e9eee4e74a055ea0f901c3e877b6ff0f0dedd77f87b15fc80e9ec2916ed449"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840002_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "2e8a9f22676f72de730fa69caa5de9514e42fd1cec91fdf578deeef6e77ce119"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840002_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "fff3938cc1886af56aa2658697832f6779556cc8e88d150e204f8d1b4753adf4"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840002_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "fd141926498e565b903ce7478aaca7b63549342040f73baa89ce6db9a00761cd"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840002_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "f66b642bf94224e3904e8b97a6b1a3e8673d9cc22ce71579b7339f74f907336f"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840003_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "7e8f36de568c5a82319cb8f4e1a144aeb4f059abbb13dbdaf893eec454486af8"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840003_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "4bd1cb505810ab3969a80f1748e17b4beb9bc50f744fdf8b3f4a8d9dcabf469e"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840003_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "7d9c168c182ed7bf3b89985d8e0b122d4d80b6ef06741052095bba93e37527d9"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840003_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "b1aced8a7c69cab0dc6273a4e77395592cb58f102d40bc9235c9f6f54a8cfa3c"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840003_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "4c40cc0cbafa84ceb5f7d3de38e5280632cedfdf387231748bc98895fcc70e52"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840003_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "d38a26e607080418fe39ab4204716b3c3e6584eaea931e1ab894e098e15df9dc"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840004_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "8a7feaae3a9a89d057e939eab7a737d58f8db78b98604c09625c1c334688befb"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840004_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "78d71bca5ba002103557cd981e2696d81e081b63bcc871deea24d65bcf91356c"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840004_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "1440ef015e995d5cf467731b159e4646e8992f3844f6971bff1ac7fa687b48b2"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840004_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "f85f60b2df8692b3f5e868d1da414962595b8bf556d109bd8761fe0edefc0b8b"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840004_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "b336ac7d112cefbd7e4a9f7e50de915bfef3e578bcf5cd3f4a02849b996da446"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840004_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "510268147c60e9bf5447e9b294d1665e193fb668221b19202d3c3ffdcf74f73a"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840005_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "af4a1b6a50b21b8c183c64a3775ef103363bb863e3ccfd3c36f60aa83b8dba9c"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840005_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "3c0ef33a9dea59ed81d46b221b3812a1c4bc122c62966b997cc91877e11d7c1a"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840005_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "4ae894da05a02cbd99a7b355a6dac5b93f420d423aa09730b634611f57f91ecc"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840005_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "1d74c6713a3104942b7ea3169ba39adbdca7ef893aafffbef6c155916ba43de3"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840005_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "42620d80a03ad1d255413bce26aa07132f40c6d9345cf91ebd8fbb5cea026372"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840005_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "259e3c6e5842c924b7f823711653c40f473a4c41cb1c943b3e81e1c84c194df8"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840006_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "dbd8b285462919607ab8b41047aec63ed539bd2f344401e7997d02eb26140c50"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840006_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "34a35c3c2c8a2ac267db783c587b81fca04771ecbd12cccf63e279bcb62cd794"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840006_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "7d0875951f4a878dd46f83a62c5fc77a9cbe4ea4d92e909c5399aa7104911126"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840006_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "36f27c7e27b3545b5ebc30c64735ba1b76ea7ddd0e46343ce5e594514165c175"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840006_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "23d10c754b841be185c805ba45867d35bc7e118b32a599959436c46f7c12cee3"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840006_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "e03d170245121dda00e056d201fad743e7f02131ac4b8bbc51f53db1df965652"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840007_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "781e631280b4af6c1967267f8aa340cc5d0eb3cc19d9201beee4474853993e69"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840007_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "e3ccfc25bf7f4a154b97ca4dddaee6e25616484a316042d16558fdebf318e0c5"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840007_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "9766efdfb291536060e1bf18136c54c0def54a852fe6c37fcf6e3d34a20ca4ae"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840007_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "ba06771276b115ae349b031f0971bb1fd2841279085e0139abf3a1828c8f2492"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840007_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "cf7c19702c8bcebe642a29e669d0752b0e0d35f34c2eb3a22cdbca0c662a1a4d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840007_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "44cec39bc5564e8166544ba1e8758f688360c0e0c163002b375810f1bb456138"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840008_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "d49e416d3d779a6ed2550080ed2f05c14ca3ad5b0ba031eaec127d8672748df3"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840008_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "57a409fb22faaf363f5dfb0791a36caad9e41f5580a5cf4c81fce21a250c2074"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840008_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "a7c205beb618837cfab464628371659a9960cafc4d3eb744125cfde179330a30"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840008_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "ab6b8afc3b0e553803640bf7a81b47bc1ecbb85607a4ad5e1c5c73f5abcc94da"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840008_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "edf8bfe435b51fce230c44cf24cc5d77b336fa76c55fb069e373ea5f8fe38b6d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840008_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "77f915ada48299c2dabd36e1df5488141f3368c7921a591a265ff5c2998465a5"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840009_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "d3047748001c85542b87849d2c7a88d2ede9a0890f931dfd9665e84dc1d2b10a"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840009_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "1696d1a6b8e536337cd306c6fde82e1566fe4d7d6e25d3963814808b2076e002"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840009_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "9b354c92a5463e53fb3d582bd8f255a0af534fb3696d2b07d58f82aa36ad50a9"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840009_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "0de0e24aa5a7b8478a528b58fc0c7e0a4a77c6a6f7b6dc33a634e8be6b86a84d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840009_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "165fa2a6d114ae8a86aa0b0f7789672f28dc76000ee425701ed6513b2459e2f4"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840009_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "d43f3fe701247fdd7849f7e5e4fecc7f32e0b302c33d491f114897012eb9fc9b"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840010_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "54fea0f174cf89c735cee2c3fbc7f2b8d12391f1f92e45482e60b7ee42d21262"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840010_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "ca0eb112a6e1438c80008466c1d854852660369901f6263d0d238dde5b5517de"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840010_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "719636a3b6071131c47ffc34386e6657af360777e48eb48acf0e0d88ebc309b9"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840010_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "d31168fafd7a8782388dd95f766605bced4baccc4ecd0088775f9ac72e3c67a5"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840010_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "32644cd6fff96353f86afbfe788c671190fad2253712b3294af38b07ab986f90"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_g1840010_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "be8458f6f0e73d267c039af0026b278f27080163ca7f37b3494b8bf814981361"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_real_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "c2d7785adc15703698da5eaf7410bb9348174b3177733343e6554329554d25ad"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_real_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "f2219a317363a83bedacdab44ef04c99d423e6a896c7d578ae174ced1940a430"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_real_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "97691d4cf515308ad469cfeb3e4322d8e9e5d5f3adb5df88f6c957092bbed963"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_real_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "0edb1ccb1ef429af99f02edce8214b23ff3b402f0e30fe8f4277639263a14829"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_real_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "c063c9b08a0020aa14e98fb310bd7ac19dc1a6503d35c1c9341eb134d32e9ca0"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_real_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "cf56bf589e9755cd1da77b564855d0f479a8d4121c1a74f3cb59875e9f8a1b60"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_shift_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "d2c4be6187481f9a1dc383e9126444248584990c1d77969df0fc7b0dea785565"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_shift_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "9c4125dd706ce9421b29d772d43da580d0a12cb7aba15e4f0ebf0829118804da"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_shift_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "f620b1e975c2afaa9a0e150f4bf9468963c28c9c7dc743a21a9b36ff8894cb8a"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_shift_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "fce3dc57642defb34b726ce78df5b59dabbd992097d8f0d7779c1f31ce944df9"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_shift_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "8bff6ae786115c9254feaa2bc79c6a0fef9afeeaa1d955aa754f836b0d94d340"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/affine_shift_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "04ac9c748ccd08d4a612b5cba6bd29897819e8bdac5098b0a98d03f7d467c94b"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840001_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "46d940673f45abf32efbfbcf9a81703c09237eedb130db3caac1537bc92a03a9"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840001_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "a78f2641a0367df2b971c9db29a1bd0b1a7f32dfa37e65cd7462b49ae6a30a42"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840001_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "58c5cff65ae9e8efcd71fcc0ac401b4f2505d39b9f06f5dbf9fdf088a7fe2855"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840001_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "b5e580ae02efad4351450bc8211b653a66c837134eb8e66ff21ce37044357be2"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840001_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "0b4a574f71989fa65432f2e28de5712adccaee6973653ec3fb505864f16c986a"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840001_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "09dd486f9794736051aba7539cda800611a3b4971ca4c8b8097ca328ba6cdbaa"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840002_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "f57613d811e66a969cdf1945e69ca7534f59da74ece31a5b9bbc7887ae5df7e9"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840002_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "1abd651b5a4b911bb16996d977059200312c62aab031ce27089057dba5809a70"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840002_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "9f615a9935e705ff078da85f13a26df5e619816d4d35f06d2580c1bac79f12a7"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840002_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "c9b4a943604ea122aeedc28c4f68888ba8e5e567263ec100f1edd38df8d5bf7d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840002_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "4e21428ed0bc18c2054ca6537b65e4291c450fd86397a9e520f7f8aa756a03de"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840002_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "27869304a54af62c308dd166ca28b9520272d8baee62108047109288d1542a57"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840003_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "563b4eaaeca295b897c764502b9d218e209156ac5d9f5cb798ab3b48d118adfd"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840003_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "d2c760a780125bb49dd21236f8c2755e1b409b29d20b5d8b70303f18bcd3d2cf"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840003_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "a28480f198cbe8f4413cf8d327cbb6fab9d22a7c4dac23689981f5094fb1f5f8"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840003_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "db7b751944987c4650141686c09bde959ae7666c875a9350ff738dbd29c4acd7"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840003_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "6d376447bbf3319fc456c4aa860867d59c9195d06bc259c8a312c061c793db3f"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840003_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "eaad76239bfeed1939efb47420cec44570534ef5e29ef65f2e1cbe6d73eb493a"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840004_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "442a4af0d91cdfddf793db6b90f80566fe3e94d559bb983972618fca999346f0"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840004_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "9343991621f8d5d167a300886cbcc7d4fbd962b9a3f80acf2e0f7a59341cdb96"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840004_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "38d45dd0e64945369765b5172c2daaf9f229b6891cfc72538b43b7e17e8cbc84"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840004_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "d649c5f9e767f7e0bb6de6019c2288a8de1fe9adc9aade238a5dc3c98bf817c5"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840004_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "aae45939c00ce2b41c527463c6a32fe9f404fcafaf79827878b2d3d88d18632d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840004_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "fa3000c8b03764de027f2522a48b7c21cdb053de6fddd9be8cc918e6952b36bb"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840005_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "b4d613f495a38074e82c8385f979035329dd9bb329bcf61f4649e625e77042f8"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840005_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "5be2a8264ffbfff146111a742ea1a8492cd0759219ed26285901ef2704b8bf36"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840005_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "c6345d7afe6b89109b34dca780e157dfd187538e63deed6fc02bb3b43df2d285"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840005_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "21fe1d2f43f14076d404cd1aea2ff33f92fa4c5f4ea256ccd3f2457c6747545e"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840005_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "26c97a5e18b2f0e5d954a197226d372408b7c28c7ec0e1b3bdbca2ee40f91ecd"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840005_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "ae1f9cd99481fcd5cd04ac8f4746815bbdf4e3b6054fc8048b0c71fe8d873134"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840006_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "fa509d29bb15d3ed30c9b3e9e52892e16b62b17b186be18afb8f1a72158ad115"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840006_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "1514d0db9e88c5f2182ad7b2d3290055e4076cc35d1b16160c18392518953b06"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840006_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "360672cd17241ec8fca1345cb0bfdcb6fc82013acce97111c8dad94d0c1e8488"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840006_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "db1f0fa85baf94c15f794de7debbe2277604b14131fe410314c38334ec0c4dad"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840006_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "f38d4bdee89e19f052a70644fe18657c46d1acb226ceb3883b4aa04ee7767d7d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840006_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "1d35e0dbb5c20405b37ff75ef06dea88a11f568ae986a6fb2899208714617af4"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840007_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "15c5e9ce1aec21f54b42297efb124386910a2bd75cb5d5bc5ea6d45161f45b45"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840007_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "8917fb619cfa69e0e4977f34690dcd493e79dde39f4d61efac32c04ed6d987b8"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840007_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "f22e2738cd97aff0f59976e8bc5926fada2b79a4b008a1e54f1d4e72aa4119f6"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840007_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "54d65448a1514fb465134d8c03967fcee8b4a95cb0fd679ec593a16c2f485c9d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840007_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "6709b3e71fd8a4f8db3a2d758d129148ba323e9415293452262e21745e0cfdb2"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840007_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "013fc9cc3f333369528a8b3658ca6069e03e1f413299ddd16558fa0f582147b6"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840008_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "8c7f43acaf46d0bb1bedabbd4552a9138dc0d1fc3cfd8c7bb9593538671c5188"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840008_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "0fe321ab0a90f85be1e9138b94ba20dac3ec5f19f64112271795b87bcfc42eca"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840008_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "fbfc4cb0e43b89c530eab53b2e0d60f2dcb7b9957b026bb9170db4494faaf362"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840008_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "9562ee6bb2585482febc9128dea6ed5d336b6994646cb3d001aaf30d1c9db6e9"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840008_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "5e47c5f767f7fcd6cfb14aec43186cac3acd1a22e0caaa192c75a1a839b91f5b"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840008_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "bb8dbc970bef61cfe8741db3ba4355b645b6f20bfdfd3f5113a324a9adadeb0e"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840009_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "2ab5c61e95973a025a5adb977407dbafa0ac9b1de28a4cfc21384cb8fea2f1da"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840009_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "9d5c74ed1f10d963777116ae9bb55b1ef9325c4d33cc376b5509568d53f7685b"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840009_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "02b3a691923fa471b902b22a1b36030e844578a42644e572f178210a9945c7dc"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840009_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "a6200a33d9f9e297144e3c607960b46c5c8afdbc169339be915bf9b571990200"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840009_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "7de832a5d06681a30ba53aefb60df75ac98d3cae9e7020325305a1cad526b18f"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840009_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "6f10f19e16c53c649bbbc57eb7bc54e8c93faa14b95a6e07798798e14a432cd4"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840010_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "98619ecf75f6f39eaa272230e7c4d98bc50aa5a5960863e131e86bec55f52880"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840010_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "059af553c06980dc9eaff26e9649c18e586bc0fe3d56156cbf5ead8736030a12"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840010_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "abcc83b369cd1ae057f98b6fee1dddaa31384b7f4268d9b8b9a50c614fce1874"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840010_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "d15b28d18c2ed13b17d2031e3ebd8dc6520a43b8f7d7169a40f1294dba6381c6"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840010_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "f2dfe1744c844063f8ac17e3f95b774fbf97fd1a15422fd6f0518599141095f3"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_g1840010_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "ec35a75f55487bf830828a5b79c02cf541c515fd9703d0b1b9ec5aed4362e8ed"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_real_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "9455cf22b24c48cb799c83c8f75ee466a477b72a59584cc4d7e2d0b8bce29679"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_real_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "3af7405a2f2f52ba96d26b3108571f8467ced9af37647e57ad594fb9fe3fd178"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_real_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "598d2e418b5896f7b38d92dc71b76d3754a287ed6457479955fcdd02a5f6401e"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_real_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "20f7f508bbca94ce8e1ded5e02433f09630a666288c26107e299563aec430d1c"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_real_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "7033e10542bcee68feff8c4c542b9d31986800e6f693b17dbe676c5dcc282125"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_real_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "b96de1e412d1612a44682458a21f536e5a3b0600daff45e5f0be882afa72105f"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_shift_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "76c25d396b7382720126d3183304f8ad9fa4675e044c4d8930c65d74ba856df1"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_shift_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "10f532f56b342b3ef9d4f3f8703167829d31b929b228d1c92e1ced266b6c2f9a"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_shift_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "fabf07a5334527977313b94f71745723946e72f9019bda5235a372f745937b04"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_shift_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "5c055ae6bec70cd5937c7b51d4c83bfa9c60f7cd4eb5db41680291d9c02b8968"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_shift_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "d84f15729e3c5432b9b14a204148041ea412e8a3babc07c9412b50b34abc47d1"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/iid_shift_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "ac7dfb2779b5450d440796c4c1340e48c7740fdc7c4a84fbc170bb89ca51bbca"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840001_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "e3d1d8c656bbc220802a61bd6ec94e683795336acad9451735dc122756f27acf"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840001_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "012f0b6f6307686d81c62dc9d103cd335d419034830c550983bcf03678a37dfe"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840001_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "a41e6fe72505e8996e6c115c026c848830ddd3b5c16cc744db9650be0fa8e96b"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840001_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "9098c976ade9fb91c80b57fe521ec4a2c39031cb91baf3354e10d2d1b8d94ff5"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840001_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "46c98947e7e2f3eda87da8242d40c28c5c447975b29bf8b1e63e06fdf298fc46"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840001_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "456742ed7980b9944ad6beec115e57a6d9fa58c99fa7a329dd21cd126f2472d0"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840002_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "f64b74f99c45355c2f397e49246d966d6a0d9cb806395d4547c61398af37fa98"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840002_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "660c4550b25b3f1c8f171184376e7d1aca05fb23b4f5d0e9b1e54db7f67244b3"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840002_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "1c63c62c7ba915f8c6c304ebd425fe256b770cbef9c3ba8fc2f358c7c3ca2107"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840002_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "f5c407f8ef3c5535d346b1f2b9b250c03ab26a4ab6eaa5d8a4b7eaf2bda8268b"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840002_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "51cb724c5bb73b3e06d91f2251bbb28084ab3ac0f7f0fcfa2e1b9bc705728ccc"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840002_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "a69e501ad1fd159eb01546a26f2539a7018ca00a87cb0a7882f630368f54b9b8"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840003_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "952986ba324a84f4a81e6eb9bd12036c24ff394e6c9040ab7a8cf6d8eb6becc9"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840003_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "12d73c9acdaace9d8cf18255dada15f5cd53bf823e884c53b4863d458b352c54"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840003_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "12e421b2c809373614ea05d80d1e28a88e62658d2d0edf2c64d3764541a58e83"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840003_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "3f478684e086292d465825f39fad59d6eed165da2ebe11d2b606fe86e3c4dc95"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840003_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "9b4b28131adcb36beac081ffd51ca4525bbf95130b22bdc35280b2bad6670184"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840003_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "e631ef40bb5f4c0967f37af1bc5abc274219beddd7a044e39ef10f29888ab3fc"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840004_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "edd0dc2a12827132eb69adfc18bce4775b04f66d144c51a0dabc829e6d3f1877"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840004_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "2a72956c7ecb4dd6ba7029eec3393470643fd2cf667067351d96caae6e9c87ab"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840004_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "8e495f5ec5e6600bcddae852711da317e58fbbffbf44a764f96c434fd39b4ad8"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840004_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "39f1cf07c1789944459f1682f56467642961e797fbe0804838887a661f41df93"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840004_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "4b9fd826f2f9a9360c75f8e68569e27b6490d25538e47667a891ee9662ee6e27"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840004_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "1166f5734808c5a5d518c3595a036f6aa12d2d76d4a6e34564548a1449758413"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840005_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "405b0e6ec3e68b8f185d1459dafbb11f8fe83863a2caa52dfc91998450490bef"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840005_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "d6a2564b0b7de1440a1207c26645c944929aa1fb73243cf7bc7b4a760b1a3c46"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840005_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "ecfdb6a08cc72f4908dd6cbb7e13d4323e4ce5db7f455418c3a821ba7999c8f9"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840005_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "1a607971057eda932500a5ac28d767d166162459c2a9d26dc02cd07025df7752"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840005_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "2fd5c7d139cbe605444a2c5e1a8e366c32d60bec35e509dc0f574280eb749e2d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840005_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "3619a2045b4156ecef9e36d60212435e6c0e516c5bdc9662086157475d6edd7d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840006_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "398798c3ac91748307ccd462973d8fa234e221540f376984454829ea71a08be8"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840006_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "22c5a0160351e688e20cb763d179f55de9303bb1721fd3b88cc5c3d80ce7f202"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840006_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "0cb01ca37d62ea95f924adcffe30cd3f2e2973fee66119a8736fe408e8dc96d8"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840006_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "79bc5f01d7d7a0b99541ed930fc13ec591b26d26429ba4e415672a9717d93efb"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840006_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "08d75f0d07a0a71a8a7488d7849ce068bb6d2a71797695dc13aef3428ba9a205"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840006_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "95db74d8049c4ff0c08a8f8f18a62efdb49a9351befe0efad612d0cd7350853a"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840007_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "b751cb52103055306c34881592fd5aa53c2fad0d940b7c8c58f6e073f12f29a4"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840007_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "942d8e1fad7e61d8f162beac20794b14060e2ff313e6d49eef783edde1bf14fd"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840007_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "ace08b6aa6316dd81990844572a2cce4fc4b9a0084a24444e5a4288bee0ccdab"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840007_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "87f46019decda17851d196c997f4148979229a8fba7dcd4b53f4a1be6a2cce60"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840007_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "ab6ce2bd974713951ff7a6293de85a7f41dfe976ca988f4713e212c1b6646216"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840007_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "194c05bbb50bbeb8ca62157f70068c86e1f4b4e0abcb52a8155557b632fa54ed"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840008_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "0e5f8c8052cb3e133e378686751c11552a4a70643b18da74dd6492bbd0a63ae9"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840008_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "1042832454ef9182e2f406e5207612b27036e5fc193eb115fcd5423080761af6"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840008_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "639a1272af345eb0f2c1c765df7cb1c739ea41285c3def403217b05a12bd1d44"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840008_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "88eddf802a51c144d2f69e5bbdb8cb36c01fa2a1b70c6df723a2ab081e0ef59c"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840008_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "7293a73dd2b736ced909015d9497e26cdcac8d5395a1730e0b9a3c87792f73e2"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840008_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "cc11b67c3df49bfd889aef19a55b3caa1dbd64020f236653564428ad3a5b7112"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840009_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "7de5a85ddf04f117360c1198d87e6a94b161a8c7b0778f9bb9eff66094ec61f1"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840009_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "98e92df648e7ee8a03e932adde44cb4d30c9eef6735e362fdec67a9b3dd101b5"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840009_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "47199ef1025568ecfc20734793cfeb5b03203dcc3cc94622fd2fa6bb88e86382"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840009_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "d222edb441bb9905317248557bf2c8e4f6c512d4ed01bd1116d558b3ef7d2c1f"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840009_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "d65edb8ee15ebd89f5a3b0f8cafcd6ab1282d5c3b2b976ed83a77323804bd6ca"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840009_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "6e4af45ed06099f76116b769a82c544c6fd72410ba0d0792ceeffd09615bdd65"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840010_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "49e1e6762bbddebf1c56ee9cd5d27efc2af23ab0ebba9d7aa3f380fb1f6f753b"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840010_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "dd405f3562cfdc2b4e0abf22bc5d976b8203a52cc64ca8f43ba79c622dae058c"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840010_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "64cf642d96a6a3dbc497485a0600da49bf08a0cad3ad9fe7c649e8aebfda3bb9"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840010_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "3d25d022b151cced514d62860072cc0388eee600533463290e2ef4fb87b5d17d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840010_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "349bf16f1aa16d4c4f6aa308bc2caf00a7923bae0825f101bb36c3b2364dba1e"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_g1840010_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "f50b49b2cc3555a7a9150520c3e7d9f11ca4684b9ddca455ac3a17957ce0cc6d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_real_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "bc23217d09e790609f686e200dbbb3afbbb26a56dd2079dda11795107729dc9e"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_real_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "17b10d0672aa65f6bd9fe3ae85e258e6935ef082904f2cdcfff66a36811d66b5"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_real_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "74246a091f3693272b2ea5eca40bb085c38b96db9b34ff0eb47aea6615e4b44c"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_real_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "4fd67d253e8ab245d72f939a876d7f3d41edec286a3f9627871c2e7238d1438d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_real_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "51e70d8b679f63cb2879d61d41d62b7ac47cb2f9c8cd8db56d137904b9a52d48"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_real_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "4f65405e7f84b0619474154ce754206d90d651ef1856cc05c34858d3cbf3d9b6"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_shift_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "d622c93cf62e0cca3807bbee686596b1ab0f008175edcbadf90cb15aae083fe4"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_shift_s2710002/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "4fd10463230f42352556d9a21d2d610c87bb81497cecebc8805e2efd02b53312"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_shift_s2710003/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "902a2eafa616272549986ec069f5fcb7a6b8ce4a6932236c08a040880658de78"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_shift_s2710004/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "313f59e1008564ebda35730dbd9750ced8fe9021a4eab4884aa1744640cefa94"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_shift_s2710005/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "450c907059e225ba06aab4740bf112fc4e21e25b821d29db08155f6afe00d512"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/cases/shuffled_shift_s2710006/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "60a2f998496ce502787c9f2d88dc6cddb29b4ef2d4f0d401f286d4156cfc27d6"
+    },
+    {
+      "path": "results/rule_transfer_v1/main/manifest.json",
+      "complete": true,
+      "entries": 1309,
+      "sha256": "7d15d388d1ebe5b667e1f0304bd3f3e12afe214283311c51676e372c6905edf1"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840001_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "1cce933576625f0afd3c20c4ea4da87273d4bedd31e9cda5a6ab10cea186dfab"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840001_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "caa0b769062756c4c0f185fd2a8f081bc6dd00db33c711e92a562d1385654d52"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840001_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "78a5dd3c9f07fc18d3fed9e552f3194701708f9746dfe2bdfbafc7d2f2a8eba4"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840001_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "8ac5de503b8bd1e2085e18e5ea3bd30bfdac5d8b52b7e048aaf08860f2239f5c"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840001_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "45b383c093cc2eecd9309a626e851507a55987c89d8463ca5a41aff38a21672e"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840001_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "d63606ee9acea19aa15cc24386785e9e3819d052dd33e56c69a3629b2ea8b72c"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840002_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "908afb002ee0d581ccca69cac781d83691ee166c3b1368d2e8f1bed00b54e3f8"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840002_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "ba03d1dbf73ea288e8f575232bbcd98e37b252ce8220102010a51bc984fae370"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840002_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "f34c4db299c82fc8f330dbf3602581e356237090c3a9370c79ef86f7941e6967"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840002_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "58843d82c6d09c4f525e721090161e12bb06c4debd57d39fccfea6d45378e305"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840002_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "9e377ba9aa9707e54eaff223a90d46d2725b589706d0fc9a82c0d7882a7a3712"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840002_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "88434b9b2a6a9059172090bdcbda323ad9a9475f54f940d527de064f2bbf514a"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840003_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "0f59947649cf9b1b3e5fdd585627974601a2831c71e34e4f87f4e4c401496398"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840003_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "04e52a021f5f8edfa3cc9446bee956a8b04254e18793c3b3cefbba8c31f122af"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840003_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "c54fa0e0683877b285669e8130d5accb8c6180103e6eaaca7045a42eb9fc22c6"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840003_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "e001c272118ff5f779c1edcb7b98618fda1b35aab00918e5c8b04213ab7327a4"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840003_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "dfd24e7a5bfd93b04e486f15176451598fb506d39f1ca6d62d05c3de90882563"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840003_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "b389ac108fe5085b6dd827e9a5eb56ad75d8bfb2f742b650c2be4e966a0007e5"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840004_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "5ebf677ad3351184235e4db7ad988e979a60639e7a443a7bd0256476a30c66da"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840004_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "106bd8ddc3efb567fdd2b57654e4be48244e52bb2473ca28b9a83c51a4e75637"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840004_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "2d9234a7696058157cfbcbd6370a21eba5362e50bede55a8c87ed06980c0f9a2"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840004_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "ea3b0496ccb20eab014fa2ac88254f86bdb3b029498c7723c87f95b84b3bc615"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840004_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "7347c60fbec7093b6e446581c2c1431661716d8fef7e106161c38c024c37182e"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840004_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "b9e8245d972fd018bff880ac86701431d2766d01ab33aac54213279e7d0543af"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840005_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "aeca6d2a0baea69266d093c8bb0bb34d6ad2e1c06262517b9ea9e055937e81a2"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840005_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "a63d3d497a4c14fa5e47617f61d5f171248efee6fe3eb6867bf59cc7ff09333d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840005_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "252d588fd9e24d98b1d544bca3efeea4e6eb2c0d76ce2c848283202d1bdcdd8b"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840005_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "ef48896753c174f38f92b2b92e6d534cd1545d0dbcf4ba52aba8144a8c3cbac0"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840005_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "b844d9327a379f973d96bc3bdd4ebf3b1e5bb2c6a42d89851189a64e6692f08c"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840005_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "fa39f1bfd5e43f2cdedb5ca90405df253dd85c2f594d1b770d1d40bec2e9541f"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840006_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "e3543d73c957e6946a0ca40e16ab65f946e21a28e9b5e4078d17605131b1928f"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840006_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "ae2abd9e49904359424108396b1e965a23d2fd72407e6493b184a96c7e1b6c7d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840006_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "58451c4097dfeac2dfa056ed4e46b7f2c136925af5745d15ab3cec78a2a7af52"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840006_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "801964d5f1243b4e89288b327799e3b8bce11d580abd8397768758c529a83020"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840006_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "74ddacb1d5ec60f5ef79ddfcf2f28143e9b26bdf2e62c2933548245e63079888"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840006_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "2d2f696a30cf6a5ff2191930f4460a74a74b01a71d321ff32e4149b8a38402fb"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840007_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "4c40edd6e70b0c9b8d0ce7109f18aa920ce21e4e794de9f5c4580edaa38ce3d0"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840007_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "6a15fe20eedfead7c33070c4455ebd770ae807a63cdb44fbd9945b4e2e76151c"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840007_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "1940d2af539f8297d379728265c7df2825f43c4163bf9ec5fc655881ed5d4699"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840007_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "d631d900ce67d626561675a670c0e9ddbb512e2ad8685f8536470b7bd620374b"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840007_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "73282f8721115ac235a31e6bc65f96a030aa0ec62dea138a48ac9f516271625d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840007_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "ae96fbd807946b389d42dfb49c2c0e83c42275ad263b28c419b2a6d63ce59006"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840008_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "dcd23f22f13020235a547602b7690669bee6b32acd76846b253828fa3e17aab0"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840008_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "1bc373a203b88bc0f380905d69ff3feddb92b21ff5d939c58d29de1422b19cda"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840008_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "eeca407e8061d0f05e1615fc8535f5efb0cc0feb13ef6304be4616502113b113"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840008_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "317787444b452bbde640703d503114a4c0109296aa8fe01f95a6a34809e4e512"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840008_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "70b36224146dd0c8d65aee247943f6e488e4af851e4f8a63961e69330b2d5323"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840008_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "4f96dd1cbbb2fe0782778b7e0ac5c0fc762f3f26c5848901e448b57ba059c30e"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840009_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "3c322a8d0c043f3b33fe64567b23c314d4323efa6a810bf9edb61f88acd0aa58"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840009_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "2e5fa4272cfa79586a763f8a04d459fb57f030aedcb3f104654cef26c7654fea"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840009_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "692fedc025e3ea6c37bde9cb2a50cf19a13f6e28e691192a514c147c1292a22b"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840009_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "93df263450d6f3843e2dda25d425491b2a506f8e9fe83a0de6cdf9e061618008"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840009_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "e57898fd1e2c79bf884ba8556f62969c7d801a94c4bcec324ec580ebccaf9f4d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840009_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "7c31b8fafd44388c672b7caf65709cf7f32eb93f62cde4829a81a102a1bab794"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840010_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "cb88b7ec38c9678200c7d4d4a075bd5233f922f95a31ecda6a99ab245ba10c4b"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840010_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "26da6d2551107cfd2b70881246bd8ada6cfb88c8bb6789faa76a3a89c84ab31d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840010_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "ba3263ec897a617548479269b2a568863738c587fe06511fb06a83b0e4c60a9a"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840010_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "052b66dd9415bcbae6f8ff5b354e55da3f7b99dda670ae379c12dedf4c9d04c7"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840010_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "5d499ea9017111e5a4dafcd14036afbf14992496e2fb9fbcd0eebcdc4206aba9"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_g1840010_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "df8a18f4582f64dd18a2e7dca7b30f6309568876baaf90c10d38acb9204713b4"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_real_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "20cae484ed7772db6bd0a6f4ccdfed66e74992a4be075e982515a58461cc6d1e"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_real_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "1418a4d3e2af72a5d3d6f8fc131ac43e854b77d0f0db6281907e8fb18477a6ff"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_real_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "7b00002c60f704821c33fbd13dfbb22119274cc04a1f4437109ca8fbd7d9ef2d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_real_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "5cf23a69fcd7f815e95cc722c5938e448850c5a6db536f2c0066ba4ff9c48edf"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_real_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "eb183ea8e6337823360e37477a1b8ba6beda7672c68b51af08783c36a98e763d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_real_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "66924cbcc393261d408bd71bde85c70f5bdfdf5ed45f200d3123c9b62f681efe"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_shift_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "133db6596137194bb2745903c3556bccc26d71fad17f68384bbdd911b3539d48"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_shift_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "fd8b53aac3236e9d75db15e9c54d5d451a7dbf9af174ce743b38ee7d5d436051"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_shift_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "c016e6ce09fbbbb052471291dab99b329520fcf3136cd029164d963efbcf51f5"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_shift_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "7a5425dd5140b063fb75f2b650afd66e4ef37b2ee9e8996497b783bd615028c1"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_shift_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "7c71f8fbfa557ed1eb38af549265dabeacce1e316d2bdf58c675cbac0750a8ba"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/affine_shift_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "b0957f7591236749e1b2b9850f1805715c85766257f808c5736906b01a10f1f0"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840001_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "f23504334dabfcfa1f65e6c1b356eb6211abe74dad7430b4c6df0893677787a2"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840001_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "d704ce1f510ba56f0091b95d4e17c9104af9b978fd2e0466e0684690d1e5c75f"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840001_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "f3ec1af87e602e32e36f89e1711413dacae16e27c9511aa925f0740b1be263d8"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840001_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "9e602a2f4128e0108b5d34dc72f6351bf4d2a9eb8b896a6eb04c668e510f590f"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840001_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "44186988493e769643db2e3946946469d56ed8cce36a7a07e9d84d8b5a9e9658"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840001_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "cac4a8c396daab66a4f877b021a6d6b95d22a690ed69db3652d19a8642836f43"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840002_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "1d19e185f398cd59a725045f3d09716c27016afdc1ec2571be8bcf4643f81372"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840002_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "25ec548c449eafd4a6723fead4b173f17c9a42eb2dc99d7f226ac27e8241f06f"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840002_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "bf1ba937b71ed0973136a92eb9972ab036e0ba3fb77b8e7a93bb583c83c3eb77"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840002_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "cc395fda37c00310c0db70cd2961189672c02674810e2f445511e2983a5762de"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840002_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "9b7b1dcf04d67d02843b160f6ecae4d7dfa1ca6c19dd7cde78b2d0c2cfe0acd1"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840002_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "db144cb140017a139f6e7afc32a6f130e0bd06e482174d4d4b9afd3fdae99e97"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840003_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "e8c457bd250897165320ff695e471f307a975453b7de235d09341ef8826607a4"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840003_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "1de8f0d93b951a7ffb08fde414997502349e0f8ca32ac5f1e781dd2d79432798"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840003_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "c373315dd1b28f2fdf96497f08a9a9694ddb01e39cf7d5424d5d11f161d988ad"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840003_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "219bc78a21c3e47199a5e48ffe44b0e12b34247fa5f46882c53f27ac4ca4fa66"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840003_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "f19a672a015e30645870aa283091068c0131e910c05f159635500e14a398a143"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840003_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "9a8f9da0564008fc63c9ceb2df9ea7451e04e12a421f9dcdf21c786bd2717362"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840004_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "141ae89ba859a1ef325a8f55b32e117c4f0a8f15d2eec2718cc66bb8af6b713a"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840004_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "c4e14aa2742874c26e77574c4de5c19f9c94f4f372137c6bd52ee8712618d443"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840004_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "b023f78e8bd311423f5ea193f75b0e7ba0466840a63a7317fa41d26ca40f7b34"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840004_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "26933a3dcc5a83ab6f12c3da301bded71a1a8e013af5db91e5de295852f21a12"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840004_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "fe7797c08f93477babc1152c12939fc04a4d128e44576cbf4c8bc075a135df70"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840004_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "4f645a13eb86c3d43b6ef56440a4d7a04d9771dcaed195cecc793d86f8afee0c"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840005_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "233caacb6eb71be2ad3ed747e0d43376b3075e3a1215dcd65dd4ac28a8529436"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840005_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "541de5070e8d0283c4b464b722bc657f594aa4671228890073847880f57b64a9"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840005_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "3bb24ce71da3d0545a0dd152b7e23b35fd74a14f686b26eda6b227e9f476de66"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840005_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "9a3bca34419d312baba207a1d160dc2d78270f47fc5ae7e6694fe73a9f39f44c"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840005_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "7cbb6351e09b0958fc7c4915ee81c15e0f23ed0062a99773b75a2af5c8d59541"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840005_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "cc1de1fa1491cf506c5caee50e4b5da1113df904d8df86163b7d67a44de742a2"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840006_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "4a96d7929bdf80026b4757f8cad1d3887e0987eaab6c9aa3166cd7d239cc80fd"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840006_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "2b67c4138c5ee153683d8bd5f82b642ad594319ad433cf2aee283ddabf3cf2bb"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840006_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "9f242f7b49ceb550ecd65ff9a4b1d52d0e89ddb3eeee20bfae6ff847e5cba368"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840006_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "48c5b9b7e235c70000fc5c93b3b09549107f5cf37b0d1a934faf260f3e4eed24"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840006_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "7f82291f58b3907eca7a5cc5cbafb8486b9a88c507d84d9c1d1ae0656485b0ca"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840006_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "686a0da1e17789f36e7a1034e5d9a791402cfbc09fac47bb755e927b4e8bd8f7"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840007_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "6a281f170a78ca91ef3feb193343577f408da36ecb50f5ab1f38c06b5d566b6d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840007_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "0f80b4930e5d5c0ebe1363c3d464d2d81657cc71464114ea361468697d754dac"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840007_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "2ef817aa2ddc1c5668a34704ed6b387256e7b429ae0a69308540a7618d10fd7e"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840007_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "c6cf079458ce3b296127decd0b65a97486100ae62b40504ba5e27f3af53862fc"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840007_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "26940ee54c5b1ff7fb60aa41fde99c0f650d0bf34a4320b2ad4ddafff82df72c"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840007_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "9af17b05679601b80882719c7eb1a8c1c637d678b5c5c25cc65867d92c7aa2dd"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840008_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "37c495a569f1e751443ce12c3880e59ab934091efcbabf4f6c796df3a2460cec"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840008_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "42b633e1fb88055608ffc05c2ea3ce8be5bcf7aa12039af5d2869d0757ea3045"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840008_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "6833e4dedfb5d62fca63b860423eb51cb39570b45c7cd95af892ec20e347b738"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840008_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "4b70fee973a32c58c56b9aaa3b91407d932923bd33b0d266ae6601d18d1649c2"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840008_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "29d58fe16157d8f04a6142001ae8b036e0ed19b6a7faf3f98fffd819bd9389fa"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840008_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "22684dee9fd8deef4efa85a3d70623d68fb6d63327cb62fe2f7c6f6db9a23847"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840009_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "637255bf5fcc8b5afe11a468d9f7fa9f3a3894170007cc12a4ef1d8071bbfd2f"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840009_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "a106c9e9ec32e5e928990d3cc05f49d7844e8bcd4b13e94275887bbba599560b"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840009_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "160a2b1bb82501bb6dd9a0d5020cf83f11f5b22827cc59e16524ea01e3b473fe"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840009_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "2011a3aa2c719853c574b37412a3b772e44abffdedbdea7bda00d9712228a9eb"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840009_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "36e3c5fa27e6ba092cbf3ee47029373e7b75494b680cd928bbcc760f34dfd29e"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840009_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "ea1fe4843822074b3ad70ce1ec0a62f51c2c30d8001816399b5ec4882c0493d5"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840010_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "0e5cf12a25069098b5ecec0d0ef623b958eb3fcbb7e7136d5d4e5fd13bfdd9bd"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840010_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "4bccd364b40a0aa598f333dcbf849dd91c7c27431cf7fa56b824b8be3c63de51"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840010_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "ff3783b1f050e2e7cc5b2ba4bc393fcdb6b36170165478edec6b6874c12c0de8"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840010_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "0878b3b49d783265bad97a65d0d7b53a6da78db35296fbe453708937b2d76996"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840010_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "883eee1e57ba3f49f7a1bde979f694728e285747609810c76fe30634fbd88a86"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_g1840010_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "fc752a74ee1bbd3a1bd596b9d2489d63a9060fbafee8b82852a6b51d44d52bc2"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_real_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "5b2c0040516bd81c3243299beb521384ae02f9435ba759b8e0ec3847823934da"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_real_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "e57847c4ff020e4255e54c4d0728c5524af3e1462df3c9cc27a99cbc22588075"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_real_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "45c998962c9c7b3f6b59d9d0babcc463a5d99a980574ded8f88714fbf2aeaf40"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_real_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "e49a294118ceccd5953d3a238adbe13c54a4ae03251a1e6204f70543cdcbd23c"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_real_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "509a50e366c37e05557a932d7af59bc0ba7c8352aabcab69714da292f3810875"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_real_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "c23ec74f17c93c962cf804ce6c229c7cf3b3b709d35cafb8091a69b035f43d50"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_shift_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "cb2d99fab930eeea866df76face27f90064ffd7aab7115568e74e9726a639ad6"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_shift_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "3abe82eedc9adbcce1f6e85025889727ab6e7494c0f002dba1df63dd4c23e8f4"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_shift_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "19f6e6debd350ea89fee0afd9c42848f23a9009af296dc3b5016e63913c11247"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_shift_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "131ad0ff23b4ab01c1dc15d92ce17598dfa59c276975826ac343c420623c2174"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_shift_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "d46abed1bdc879282fa517be70c3bc501295f09183e0403debbee96d5783b043"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/iid_shift_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "1c88ef6e3ee12586d0a33f0cf45c3c248eeac4c5feb508cfced7fb1d7d376d43"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840001_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "a3d993e89f06ec98a2b0cf6a2a64463f35266185135ba57e9b0536ac286b8a8f"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840001_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "88114adcc75698ca4a226c7607c6001d8e508f656dc43d89b6a5d330a6527afb"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840001_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "f198846800a0c1602d1f5ef700768f67adfcec3b78c9c1826e7286ac8d4649a4"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840001_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "3e36427720f058ebd39e9adbfa70fba8eb286d13104a994e9560e67ad318a105"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840001_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "841b0629251e2ef0167fdd8a2cfafa487df7e6edd7d446a0e86afeef27142d04"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840001_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "f12d761846a31df2164c459186511140fb402ce0c3563e7af21c753ae3ff38f3"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840002_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "0ebf88ce0f0bb5ebe7214309a634fd7dd4f21e1c08ccb377b0dc11b2e5259091"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840002_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "4f3c36f197e981415d435f42e6a7d8f42832900c0f6e767a8fbfdbfe2a8f3f49"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840002_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "ffbe3418f6fb26fe9b8131037cdcbf0ecd5cf23387a1c917a447f6f2503ad6e8"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840002_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "2043212ec0f505f12c29db0e0c81d925fa85ebfff7dd388f9a976ac4fea64fe8"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840002_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "1c5aa0450ede90d4f88cdee0acbdc87ccc0bd33d0908cc5d89ce5b0f0a5dedc8"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840002_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "ac9df7d0b9545fe4b15f70aafa0bbc3b0e16c62b85addeb6cb415127b16ef953"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840003_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "b70ba7a3c81593163918fd76779828d549e613e8be984063188d38dd0ba405f0"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840003_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "587c43f7259ac2c750ce5bba9826a1386cccfa18f8c0406a8eb0a9fe533482c5"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840003_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "8e293a77e07893aab7253668f93ab9e1bea4f4d6220d12f02a2f69e6463a4cca"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840003_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "efff031f4567c9c75b2ae51d375b003ae5b42ec1048497ea166642a9c316a31f"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840003_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "6a3d8024c4f261eb4651f4ab149b7f0c98905c3f7bd7d7583ed108874fa6d41b"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840003_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "d4f0daf37c75dfdcc6acea88629718a0f245ef396b50a14f1f002846cbe0ff9f"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840004_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "845269c14067bb44dfd0d1e015b02cdba2a2215addfc71849901bdf92d4256e3"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840004_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "6337578ae91c40188a6d7459465a0a224ed796c37425b756037bd0c3ff7b8c58"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840004_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "c592b677562653d9121fcea3177c76fa9983bbfa764e6575342f9e06a8072292"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840004_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "beca98c2ff9f8073da3e9ede863ccd2aceb6a3c872610155deb9215518886186"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840004_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "56165dcff6caf9ad677b891dbcb5b349484165eadcc1b69095e9f15641ee2fe0"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840004_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "d4248261712c95d18db5ea1f45774270d02a804e3adc66847bec60f647412241"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840005_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "4c52baf403bd7104f56d9a1d2858011ff32f6e84a1971c7e26c686d7a6f46c05"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840005_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "66c5a009a45261cbf1ba84bc0223644c3f14654c86342eb7af02f8b49f6e4350"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840005_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "65896d112e98902b566f15978483f1d719099fe694861e7c21055bb717201b26"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840005_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "01486ee2bead43defcaf16319d1142748dfd17f831608b20888720bca3756e9b"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840005_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "336e4d68097fad93bce6835532bdd1426db9b597cfe275cbb3ea7f25f11267d4"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840005_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "74812dde6a5033439873e81a8701289b4282afa48d2545bb4e5b9350562ce2bb"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840006_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "260b641e01a3b376cc7a752838ebd4a0e99ef0891cf211cad5e0a8067bb3a8a3"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840006_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "645faa754ba3d96005a962fa6b2c6e433383c1dfd1bbc62828cc3c40f9a08be4"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840006_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "0a8d9a7681a2857f9edfaafd7a45472876247bed45897b83d36d2b23b681297f"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840006_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "351ed55fc8872478872cbb5ff569a5b2f18c71dfe40fbdfe434b982dfa5c0853"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840006_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "d76e1f4dd60f3b80fbf6ff1117f32443543615a6041630e0902a9ee106efe72a"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840006_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "0600007470deb3bf7f44e230e1a4b2432e9e51b8babd20bab98e42a4219d709b"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840007_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "97965c801b597deae2f8ad79731a0210100d3be991e14a44df427efea1693a99"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840007_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "5bf78d4f82f7a5fa06fc42ba199cf8e6f0b3f200ebf183c3ceaf46016951bd30"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840007_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "a9c6a0db8d4a7873e02e8f17adcd85cc529092ca92e83804ed6417a769fd5440"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840007_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "8b1967591df1fe61f2e710b66924bf14096893aae4d4689cc0a6536cfdad1a8c"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840007_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "3f4b9fb5eeea3a3ca017c02913ac9a256972debaf14e7ad549427e3a3c510bd1"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840007_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "b6dad5cd5f004a74f47cad4858b432ae44553a0dc402b765c5935c1edadb5343"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840008_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "726267cbd66b9a4e2ec2f7ba7ce09479807821439c86360054186d98f5801049"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840008_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "dbe7e6d82a21004363c993fcf4ab03fab4f37412fcd00b77703d2e4e3811f01e"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840008_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "c1e74e50868b143492806239e789e1a30a066d595de6d78947ebdbc22c213a28"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840008_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "09b19c55b3bb90c5ef4e5a9067a1fbeda9a4fffcb34648de46749b69b3162377"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840008_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "663300cac2f12728dd79079ed7ed46d042c1a72a4d978360af09c5b10b604c7b"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840008_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "0e3befa00ab87a25dee9144ad51657124dfe36d55f577165e0230062701d8763"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840009_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "068fcd9dea344dedec50788010b3442bec171c1bf65da66db75752c013cd075c"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840009_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "4d7a6c161549f01c247d66a73f9904edc1a516d13bf01eb6dfb539631bab5082"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840009_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "022468378ff357821955710b0c28ae74fc6a58e8280cb7fa247bd8ef3be99072"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840009_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "4fb6dd8d4be0c04d5107410e30a2a8c607483746807a391956d0c4d8bb3b4986"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840009_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "2591c585b48d588abeb3399bb1f59109505bb37d08c571c592cafed58954f890"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840009_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "04eaab028429584be65118ded497ecf98f08dc6c75cf867ec4d71d8716a3607d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840010_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "a9ab336fc739d8027b9b89ff0cd13643aa00ffe5b3e3d31c2d781e5d84bb082d"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840010_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "7a5297d6954ef52192a82f8c4a091519821764e08bf96d04aba12dc527d213e9"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840010_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "9a34ed9a246ce37d2e76bf37caccb9b9e2c4f54763d5ca6f60e912c8736740d7"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840010_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "ffd5562bbce760e694d9760d1517509a43f84957fbd3eba7764a8bd3c32546bc"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840010_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "3e3c621dc7c3a112fce2dc68d6ebab781309962911bf15c961803c614c370c7e"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_g1840010_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "09e8d88dda58d7487dd22d281a45d3f36a9d679f910bbd5d4035529d025ad472"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_real_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "3a556c81af50c1bca2ce59c974fac8a17f3492f32afaada75544c07f6e7b1e97"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_real_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "be3ae02131780d70e10f80bff47157e2d12998d384011e86619e2abdb217f068"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_real_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "5b7aa452050b8cd12f2dc02f0e410a50606c796b91e31076cba4e9677bf2c638"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_real_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "ff886238204adbaa78b1f422415bff5f5b17ff8b3bcc4d20be490c360f81431a"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_real_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "32765bf4a5e07f73f2a8f4922304db822fad41b041d761711e165310ff95aa94"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_real_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "2cae2f64c49ae70c37b48fe8792889221af77783e57724c53efd87359e14b867"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_shift_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "426639daa614b1e34ff0a0869bdd7714fd0029aa40b968da8eae2a02abe109f6"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_shift_s2710002/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "e0e4fc920b6733b1b75a802f4005df27528d9f6e0c00f1bef51419573ff021bb"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_shift_s2710003/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "a93e43e462e27511ff5d9cd03a9d2349b72cdfc15979ae0348e3a1a632d53990"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_shift_s2710004/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "afd3e745eb7370d037564321859b06cf66cb61717b5ff67cbb07fac78989a003"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_shift_s2710005/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "73d75bfbd8470a05b23357de1fc814e0867ff6c6e92881ed2c265d20c1651b26"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/cases/shuffled_shift_s2710006/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "04758f23f67a141b12ed9463cb9dd3546779e2eab0f0fecd4a29d1e9079518d2"
+    },
+    {
+      "path": "results/rule_transfer_v1/main_validation/manifest.json",
+      "complete": true,
+      "entries": 1094,
+      "sha256": "f82e3fdac7e1923c686e35ea831e4de97b772f675a39f481673ce66f17ed0188"
+    },
+    {
+      "path": "results/rule_transfer_v1/report/manifest.json",
+      "complete": true,
+      "entries": 7,
+      "sha256": "f50cbe9096f56f6bf181e4a9d7a37483818ac1260455c409e13c321a37551f69"
+    },
+    {
+      "path": "results/rule_transfer_v1/smoke/cases/affine_g1840001_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "b586d76fd1c956b4f935b53e56c38804c9f815deebe2645925cf7dca406f39be"
+    },
+    {
+      "path": "results/rule_transfer_v1/smoke/cases/affine_real_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "b798377329f9c4fdc34a809f252981561a8dcfb6dd53ea20a65aae0171a6bc0c"
+    },
+    {
+      "path": "results/rule_transfer_v1/smoke/cases/affine_shift_s2710001/manifest.json",
+      "complete": true,
+      "entries": 5,
+      "sha256": "cc61dca517e744fbc6df3fb330a3a405eff3fd0ecde0e499b4de30ffb9977212"
+    },
+    {
+      "path": "results/rule_transfer_v1/smoke/manifest.json",
+      "complete": true,
+      "entries": 28,
+      "sha256": "9bbbabc8d47ef2f541fa17f71d1f42d0667fbbae2aa682a21e127913af6cb89d"
+    },
+    {
+      "path": "results/rule_transfer_v1/smoke_validation/cases/affine_g1840001_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "782af03f2df114518c091c0fd521bce4cc9342e6d74c1e0ae6d5153f85988ac2"
+    },
+    {
+      "path": "results/rule_transfer_v1/smoke_validation/cases/affine_real_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "0dd77fbe7791e4c5bdb0caa9f5f24685706f3dfcaf5f3b0d40bf28c6400f8046"
+    },
+    {
+      "path": "results/rule_transfer_v1/smoke_validation/cases/affine_shift_s2710001/manifest.json",
+      "complete": true,
+      "entries": 4,
+      "sha256": "229d6aa08e1d46e86a338cb7c7f3ac71eb7ec3342f8cf168d5cc6fef6fd906d7"
+    },
+    {
+      "path": "results/rule_transfer_v1/smoke_validation/manifest.json",
+      "complete": true,
+      "entries": 27,
+      "sha256": "77301339cb524ebf1fe351e9a4c5ffdac23f23087504d9bb9081dc1782b27ef4"
+    }
+  ],
+  "plotted_values_replayed": true,
+  "recorded_incomplete_attempts": 0
+}
