@@ -1,0 +1,75 @@
+{
+  "neurons": 138639,
+  "edges": 2700513,
+  "protected_current_edges": 21438,
+  "delayed_edges": 2679075,
+  "common_delayed_edges": 376613,
+  "delayed_overlap": 0.14057575842408293,
+  "total_edge_overlap": 0.1473982906210783,
+  "exact_degrees_and_both_raw_weight_multisets": true,
+  "exact_role_blocks": true,
+  "exact_incoming_strength_and_factors": true,
+  "exact_protected_raw_and_normalized_coefficients": true,
+  "no_invalid_edges": true,
+  "role_labels": [
+    "APL",
+    "DAN",
+    "KC",
+    "MBON",
+    "OTHER"
+  ],
+  "role_block_counts": [
+    [
+      0,
+      99,
+      5177,
+      62,
+      323
+    ],
+    [
+      88,
+      31,
+      2066,
+      480,
+      3758
+    ],
+    [
+      5166,
+      324,
+      2133,
+      39,
+      24485
+    ],
+    [
+      68,
+      735,
+      21438,
+      566,
+      3480
+    ],
+    [
+      202,
+      641,
+      5102,
+      7006,
+      2617044
+    ]
+  ],
+  "original_raw_sha256": "95677906fec28ff87c50900f563432cc30ad062f4b4495a388db8fe872637f10",
+  "null_raw_sha256": "e8ffb209b9a71876f43eb958a1b4f1873998a4834c8a63472debfaaeb50a1d85",
+  "original_normalized_sha256": "1f562bd8a32240c57890677a81c7906b1f0344d9304763997d794dfa8632a44a",
+  "null_normalized_sha256": "b04a96278eebc1e473f5fcfe4382ad635391ecda08898b4642ff27d465619d50",
+  "protected_normalized_sha256": "3c9ec74d78bbc817e891ae805fa3ea83bc14a61ad9057ccfbe1d5ea01c1e0e92",
+  "construction_rule_pass": true,
+  "normalized_outgoing_multisets_constrained": false,
+  "requested_swaps": 2679075,
+  "accepted_swaps": 2679075,
+  "attempts": 2717709,
+  "eligible_delayed_edges": 2679075,
+  "proposal_pool_edges": 2678113,
+  "proposal_groups": 1674,
+  "proposal_pool_sha256": "119177aae18362b751a83a59eef64540fd591ff86e915f28788ecf1cee667947",
+  "finite_budget_complete": true,
+  "level": "brain5",
+  "seed": 1841002
+}
