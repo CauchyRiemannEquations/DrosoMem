@@ -1,0 +1,24 @@
+{
+  "smoke": true,
+  "outcome": "smoke",
+  "primary_ready": null,
+  "levels": {
+    "legacy5": {
+      "registered_ready": null,
+      "graphs": 1,
+      "maps": 1,
+      "distinct_graphs": true,
+      "minimum_delayed_overlap": 0.771117166212534,
+      "maximum_delayed_overlap": 0.771117166212534,
+      "all_swap_budgets_complete": true,
+      "all_delay_code_certificates_pass": true
+    }
+  },
+  "graph_constructions": 1,
+  "input_maps": 1,
+  "new_decoder_fits": 0,
+  "source_graph_neural_trajectories": 0,
+  "performance_experiment_executed": false,
+  "real_wiring_superiority_tested": false,
+  "criterion_unchanged": true
+}
