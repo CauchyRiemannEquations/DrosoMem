@@ -1,0 +1,88 @@
+{
+  "outcome": "FAIL",
+  "primary_pass": false,
+  "secondary_pass": false,
+  "cohorts": {
+    "discovery": {
+      "primary_gates": {
+        "train_acquisition": false,
+        "first_next": false,
+        "completion": false,
+        "every_nonperiod2_multiplier": false,
+        "shift_gap": false
+      },
+      "primary_pass": false,
+      "real_train_teacher": "1277/6600",
+      "real_nonperiod2_first": "131/990",
+      "nonperiod2_completions": {
+        "real": "1/198",
+        "g1840001": "7/990",
+        "g1840002": "8/495",
+        "g1840003": "4/495",
+        "g1840004": "1/66",
+        "g1840005": "1/66",
+        "g1840006": "1/55",
+        "g1840007": "1/198",
+        "g1840008": "1/90",
+        "g1840009": "13/990",
+        "g1840010": "8/495",
+        "shift": "0"
+      },
+      "real_completions_by_multiplier": {
+        "7": "0",
+        "8": "0",
+        "9": "1/66",
+        "10": "0"
+      },
+      "real_minus_shift_completion": "1/198",
+      "null_mean_completion": "31/2475",
+      "real_minus_null_completion": "-37/4950",
+      "real_strictly_above_every_null": false,
+      "secondary_local_pass": false
+    },
+    "confirmation": {
+      "primary_gates": {
+        "train_acquisition": false,
+        "first_next": false,
+        "completion": false,
+        "every_nonperiod2_multiplier": false,
+        "shift_gap": false
+      },
+      "primary_pass": false,
+      "real_train_teacher": "83/440",
+      "real_nonperiod2_first": "23/165",
+      "nonperiod2_completions": {
+        "real": "1/99",
+        "g1840001": "1/90",
+        "g1840002": "2/165",
+        "g1840003": "1/198",
+        "g1840004": "4/495",
+        "g1840005": "8/495",
+        "g1840006": "1/110",
+        "g1840007": "2/495",
+        "g1840008": "1/198",
+        "g1840009": "2/495",
+        "g1840010": "2/165",
+        "shift": "0"
+      },
+      "real_completions_by_multiplier": {
+        "7": "0",
+        "8": "0",
+        "9": "1/33",
+        "10": "0"
+      },
+      "real_minus_shift_completion": "1/99",
+      "null_mean_completion": "43/4950",
+      "real_minus_null_completion": "7/4950",
+      "real_strictly_above_every_null": false,
+      "secondary_local_pass": false
+    }
+  },
+  "fits": 216,
+  "affine_parameters": 116424,
+  "scaler_moments": 20736,
+  "recurrent_learning": false,
+  "iid_shuffled_secondary_diagnostics": true,
+  "effective_independent_shift_interfaces": 1,
+  "task_instances_shared_across_input_maps": true
+}

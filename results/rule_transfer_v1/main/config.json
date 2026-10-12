@@ -1,0 +1,109 @@
+{
+  "protocol": "docs/rule-transfer-protocol.md",
+  "namespace": "results/rule_transfer_v1",
+  "baseline_commit": "5467811412cb36a0a56f6137e98f93b9e31f8206",
+  "task_parent": "results/rule_transfer_design_v1/main",
+  "task_parent_manifest_sha256": "40b857dc78b20a8e6965903e309cbbadf16bdea19b4df4b7343c5b17d897772d",
+  "task_validation": "results/rule_transfer_design_v1/independent_validation",
+  "task_validation_manifest_sha256": "b5babd9dc71f10f7fc733be4ef0b89cf361aed65b16480215fffd94998b27084",
+  "graph_parent": "results/structural_specificity_design_v1/main",
+  "graph_parent_manifest_sha256": "528d420d16b55ccc99d8c180fdd07886cab1235d14b6ce1043bb381f2a0780eb",
+  "source_data": "data/flywire_783_mb_left_kc512_s701",
+  "models": [
+    "real",
+    "g1840001",
+    "g1840002",
+    "g1840003",
+    "g1840004",
+    "g1840005",
+    "g1840006",
+    "g1840007",
+    "g1840008",
+    "g1840009",
+    "g1840010",
+    "shift"
+  ],
+  "families": [
+    "affine",
+    "iid",
+    "shuffled"
+  ],
+  "splits": [
+    "train",
+    "instance_test",
+    "parameter_test"
+  ],
+  "cohorts": {
+    "discovery": [
+      2710001,
+      2710002,
+      2710003
+    ],
+    "confirmation": [
+      2710004,
+      2710005,
+      2710006
+    ]
+  },
+  "input_seeds": [
+    2710001,
+    2710002,
+    2710003,
+    2710004,
+    2710005,
+    2710006
+  ],
+  "alphabet_size": 11,
+  "prefix_length": 3,
+  "horizon": 8,
+  "input_pool_coordinates": 512,
+  "active_inputs_per_symbol": 51,
+  "input_amplitude": 0.5,
+  "gain": 0.9,
+  "drive": 0.6,
+  "carry": 0.0,
+  "schedule": "mbon_after_kc",
+  "observations": 48,
+  "source_scalar_states": 686,
+  "shift_active_states": 33,
+  "training_rows": 2200,
+  "affine_parameters": 539,
+  "alpha": 1.0,
+  "scale_floor": 1e-05,
+  "prediction_tie_atol": 1e-10,
+  "verification_atol": 1e-09,
+  "verification_rtol": 1e-09,
+  "primary_multipliers": [
+    7,
+    8,
+    9
+  ],
+  "minimum_source_train_teacher": "1/2",
+  "minimum_source_first": "1/4",
+  "minimum_source_completion": "1/10",
+  "minimum_each_rule_completion": "1/20",
+  "minimum_source_shift_completion_gap": "1/20",
+  "minimum_source_null_completion_gap": "1/20",
+  "fixed_lag_copies": [
+    2,
+    3
+  ],
+  "recurrent_learning": false,
+  "reset_between_episodes": true,
+  "performance_selection": false,
+  "workers": 4,
+  "numeric_threads": 1,
+  "max_seconds": 7200,
+  "max_rss_bytes": 4294967296,
+  "max_stage_artifact_bytes": 1073741824,
+  "smoke_models": [
+    "real",
+    "g1840001",
+    "shift"
+  ],
+  "smoke_input_seeds": [
+    2710001
+  ],
+  "smoke_family": "affine",
+  "smoke_episodes_per_split": 11
+}
