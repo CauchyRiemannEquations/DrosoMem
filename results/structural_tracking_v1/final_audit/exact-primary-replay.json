@@ -1,0 +1,50 @@
+{
+  "smoke": {
+    "outcome": "smoke",
+    "primary_pass": null,
+    "levels": {
+      "legacy5": {
+        "outcome": "smoke",
+        "registered_rule_pass": null,
+        "real_score_exact": "1",
+        "real_null_gap_exact": "0",
+        "current_access_valid": true
+      },
+      "brain5": {
+        "outcome": "smoke",
+        "registered_rule_pass": null,
+        "real_score_exact": "1",
+        "real_null_gap_exact": "0",
+        "current_access_valid": true
+      }
+    },
+    "cases": 6,
+    "paired_probes": 384,
+    "lag_heads": 12,
+    "all_csv_columns_checked": true
+  },
+  "main": {
+    "outcome": "FAIL",
+    "primary_pass": false,
+    "levels": {
+      "legacy5": {
+        "outcome": "FAIL",
+        "registered_rule_pass": false,
+        "real_score_exact": "1",
+        "real_null_gap_exact": "0",
+        "current_access_valid": true
+      },
+      "brain5": {
+        "outcome": "FAIL",
+        "registered_rule_pass": false,
+        "real_score_exact": "1",
+        "real_null_gap_exact": "0",
+        "current_access_valid": true
+      }
+    },
+    "cases": 87,
+    "paired_probes": 5568,
+    "lag_heads": 174,
+    "all_csv_columns_checked": true
+  }
+}
