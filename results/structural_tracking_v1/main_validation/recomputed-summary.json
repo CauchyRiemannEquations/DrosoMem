@@ -1,0 +1,89 @@
+{
+  "smoke": false,
+  "outcome": "FAIL",
+  "primary_pass": false,
+  "levels": {
+    "legacy5": {
+      "current_access_valid": true,
+      "registered_rule_pass": false,
+      "outcome": "FAIL",
+      "real_score": 1.0,
+      "null_count": 10,
+      "null_mean": 1.0,
+      "null_median": 1.0,
+      "null_sd": 0.0,
+      "null_min": 1.0,
+      "null_max": 1.0,
+      "real_minus_null_mean": 0.0,
+      "real_minus_null_mean_exact": "0",
+      "real_above_all_nulls": false,
+      "empirical_percentile": 50.0,
+      "standardized_effect": null,
+      "real_tracking90_pass": true,
+      "delay_score": 1.0,
+      "delay_current_access_valid": true,
+      "delay_tracking90_pass": true,
+      "delay_outcome": "PASS",
+      "real_minus_delay": 0.0,
+      "paired_real_minus_null": {
+        "mean": 0.0,
+        "median": 0.0,
+        "sd": 0.0,
+        "bootstrap_lo": 0.0,
+        "bootstrap_hi": 0.0
+      },
+      "paired_real_minus_delay": {
+        "mean": 0.0,
+        "median": 0.0,
+        "sd": 0.0,
+        "bootstrap_lo": 0.0,
+        "bootstrap_hi": 0.0
+      }
+    },
+    "brain5": {
+      "current_access_valid": true,
+      "registered_rule_pass": false,
+      "outcome": "FAIL",
+      "real_score": 1.0,
+      "null_count": 3,
+      "null_mean": 1.0,
+      "null_median": 1.0,
+      "null_sd": 0.0,
+      "null_min": 1.0,
+      "null_max": 1.0,
+      "real_minus_null_mean": 0.0,
+      "real_minus_null_mean_exact": "0",
+      "real_above_all_nulls": false,
+      "empirical_percentile": 50.0,
+      "standardized_effect": null,
+      "real_tracking90_pass": true,
+      "delay_score": 1.0,
+      "delay_current_access_valid": true,
+      "delay_tracking90_pass": true,
+      "delay_outcome": "PASS",
+      "real_minus_delay": 0.0,
+      "paired_real_minus_null": {
+        "mean": 0.0,
+        "median": 0.0,
+        "sd": 0.0,
+        "bootstrap_lo": 0.0,
+        "bootstrap_hi": 0.0
+      },
+      "paired_real_minus_delay": {
+        "mean": 0.0,
+        "median": 0.0,
+        "sd": 0.0,
+        "bootstrap_lo": 0.0,
+        "bootstrap_hi": 0.0
+      }
+    }
+  },
+  "cases": 87,
+  "lag_heads": 174,
+  "probe_pairs": 5568,
+  "new_fitted_affine_parameters": 85260,
+  "new_recurrent_learning": false,
+  "new_graphs": 0,
+  "observation_noise": false,
+  "criterion_unchanged": true
+}

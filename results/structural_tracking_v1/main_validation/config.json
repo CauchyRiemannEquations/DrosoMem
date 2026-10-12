@@ -1,0 +1,139 @@
+{
+  "protocol": "docs/structural-tracking-protocol.md",
+  "namespace": "results/structural_tracking_v1",
+  "baseline_commit": "b2ef8412832ce64e208287fe063abe8068b5df5c",
+  "parent": "results/structural_specificity_design_v1/main",
+  "parent_validation": "results/structural_specificity_design_v1/main_validation",
+  "parent_manifest_sha256": "528d420d16b55ccc99d8c180fdd07886cab1235d14b6ce1043bb381f2a0780eb",
+  "parent_validation_manifest_sha256": "abfd3bfeb500b9a643afd268042c1551023af6bc6eb1507cbfad2a57a99ec272",
+  "cache": "outputs/tdc_v2/whole_cache",
+  "levels": [
+    "legacy5",
+    "brain5"
+  ],
+  "primary_level": "legacy5",
+  "circuit_seeds": [
+    701
+  ],
+  "graph_ids": {
+    "legacy5": [
+      "real",
+      "g1840001",
+      "g1840002",
+      "g1840003",
+      "g1840004",
+      "g1840005",
+      "g1840006",
+      "g1840007",
+      "g1840008",
+      "g1840009",
+      "g1840010",
+      "delay"
+    ],
+    "brain5": [
+      "real",
+      "g1841001",
+      "g1841002",
+      "g1841003",
+      "delay"
+    ]
+  },
+  "blocks": [
+    {
+      "seed": 1900001,
+      "input_seed": 1810001,
+      "train_seed": 1910001,
+      "test_seed": 1920001
+    },
+    {
+      "seed": 1900002,
+      "input_seed": 1810002,
+      "train_seed": 1910002,
+      "test_seed": 1920002
+    },
+    {
+      "seed": 1900003,
+      "input_seed": 1810003,
+      "train_seed": 1910003,
+      "test_seed": 1920003
+    },
+    {
+      "seed": 1900004,
+      "input_seed": 1810004,
+      "train_seed": 1910004,
+      "test_seed": 1920004
+    },
+    {
+      "seed": 1900005,
+      "input_seed": 1810005,
+      "train_seed": 1910005,
+      "test_seed": 1920005
+    },
+    {
+      "seed": 1900006,
+      "input_seed": 1810006,
+      "train_seed": 1910006,
+      "test_seed": 1920006
+    }
+  ],
+  "blocks_by_level": {
+    "legacy5": [
+      1900001,
+      1900002,
+      1900003,
+      1900004,
+      1900005,
+      1900006
+    ],
+    "brain5": [
+      1900001,
+      1900002,
+      1900003
+    ]
+  },
+  "alphabet_size": 10,
+  "input_fraction": 0.1,
+  "input_amplitude": 0.5,
+  "gain": 0.9,
+  "normalization": "incoming_l1",
+  "leak": 0.6,
+  "carry_multiplier": 0.0,
+  "synaptic_history": true,
+  "schedule": "mbon_after_kc",
+  "warmup": 200,
+  "train_samples": 4000,
+  "test_samples": 2000,
+  "lags": [
+    0,
+    2
+  ],
+  "primary_lag": 2,
+  "probe_count": 64,
+  "alpha": 1.0,
+  "scale_floor": 1e-05,
+  "decoder_parameters_per_lag": 490,
+  "heads_per_case": 2,
+  "minimum_current_accuracy": 0.9,
+  "minimum_tracking_accuracy": 0.9,
+  "minimum_real_null_gap": 0.03,
+  "primary_rule": "If ALL real/null lag0 current cells >=90%, require real mean joint strictly above every null and real minus null mean >=3 raw percentage points; otherwise assay-invalid",
+  "delay_primary_comparator": false,
+  "performance_eligibility_filter": false,
+  "bootstrap_seed": 1930001,
+  "bootstrap_draws": 10000,
+  "score_atol": 1e-09,
+  "score_rtol": 1e-09,
+  "neural_workers": 4,
+  "max_seconds": 7200,
+  "max_rss_bytes": 4294967296,
+  "new_graphs": 0,
+  "new_recurrent_learning": false,
+  "observation_noise": false,
+  "biological_plasticity_performed": false,
+  "smoke": {
+    "train_samples": 300,
+    "test_samples": 200,
+    "blocks": 1,
+    "graphs": "real, first fixed null, delay at each level"
+  }
+}
