@@ -80,13 +80,13 @@ def audit(out):
                 if n not in inventory:assert sha(n)==h
             sources.append(dict(path=p.as_posix(),source_commit=record['source_commit'],hashes_checked=len(record['hashes'])))
         replay={}
-        for stage,validation in [('smoke','smoke_validation'),('main','main_validation')]:
-            sc=config(stage=='smoke');assert read(ROOT/stage/'config.json')==sc
-            replay[stage]=readiness(ROOT/stage,ROOT/validation,sc,stage=='smoke')
+        for stage,validation in [('smoke_retry1','smoke_validation'),('main','main_validation')]:
+            sc=config(stage!='main');assert read(ROOT/stage/'config.json')==sc
+            replay[stage]=readiness(ROOT/stage,ROOT/validation,sc,stage!='main')
             for directory in [stage,validation]:
                 resources=read(ROOT/directory/'resources.json');usage=read(ROOT/directory/'process-tree-resources.json')
                 assert resources['seconds']<=7200 and usage['peak_sampled_process_tree_rss_bytes']<=4294967296
-        guards=read(ROOT/'guard_tests/checks.json');assert guards['all_checks_pass'] and guards['source_freeze_rechecked']
+        guards=read(ROOT/'guard_tests_retry1/checks.json');assert guards['all_checks_pass'] and guards['source_freeze_rechecked']
         for n,h in guards['test_hashes'].items():assert sha(n)==h
         arrays=0
         for p in ROOT.rglob('*.npz'):

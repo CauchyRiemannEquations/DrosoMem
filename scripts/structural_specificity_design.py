@@ -11,15 +11,21 @@ from flying.encoding.digit_encoder import DigitEncoder
 from tdc_pool import pooled
 from specificity_design_support import config,read,write,sha,array_sha,attempt,seal,history_preserved,source_record,source_unchanged
 
+def canonical_ids(values):
+    ids=np.asarray(values,dtype=np.int64)
+    assert ids.ndim==1 and len(np.unique(ids))==len(ids)
+    return ids
+
 def original(c,level):
     folder=Path('data/flywire_783_mb_left_kc512_s701');small,small_ids,_=core.load_connectome(folder);small_roles,_=core.load_roles(folder,small_ids)
+    small_ids=canonical_ids(small_ids)
     if level=='legacy5':raw,ids,roles=small,small_ids,small_roles
     else:
         cache=Path(c['cache']);provenance=read(cache/'provenance.json')
         for name in ['nodes.npz','brain5.npz']:assert sha(cache/name)==provenance['files'][name]
         raw=sparse.load_npz(cache/'brain5.npz').tocsr()
         with np.load(cache/'nodes.npz',allow_pickle=False) as n:ids=n['ids'].copy();roles=n['roles'].copy()
-    roles=np.asarray(roles,dtype='U5');ids=np.asarray(ids,dtype=np.int64);raw.sort_indices()
+    roles=np.asarray(roles,dtype='U5');ids=canonical_ids(ids);raw.sort_indices()
     local=pd.Index(ids).get_indexer(small_ids);assert (local>=0).all()
     pool=local[np.flatnonzero(small_roles=='KC')];obs=local[np.flatnonzero(small_roles=='MBON')]
     assert len(pool)==512 and len(obs)==48

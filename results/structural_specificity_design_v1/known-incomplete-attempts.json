@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "manifest_path": "results/structural_specificity_design_v1/smoke/manifest.json",
+    "failure_path": "results/structural_specificity_design_v1/smoke/failure.json",
+    "kind": "source_root_id_representation_mismatch",
+    "scientific_settings_changed": false,
+    "new_graph_or_prototype_outcomes_generated": false,
+    "reason": "Main loader converted current IDs to int64 but indexed them with the original string IDs. Canonical int64 conversion preserves exact root values; no graph, mapping, weights, seeds, budgets or gates change. The interrupted smoke and nested definition attempt are retained."
+  },
+  {
+    "manifest_path": "results/structural_specificity_design_v1/smoke/definitions/legacy5/manifest.json",
+    "failure_path": "results/structural_specificity_design_v1/smoke/definitions/legacy5/failure.json",
+    "kind": "nested_definition_attempt_in_same_interrupted_smoke",
+    "scientific_settings_changed": false,
+    "new_graph_or_prototype_outcomes_generated": false
+  }
+]

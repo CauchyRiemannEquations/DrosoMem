@@ -4,13 +4,20 @@ from pathlib import Path
 import numpy as np
 import pytest
 from scipy import sparse
-from structural_specificity_design import rewire,audit_graph,delay_layout,spectra,summarize
+from structural_specificity_design import rewire,audit_graph,delay_layout,spectra,summarize,canonical_ids
 from verify_structural_specificity_design import independent_swaps,invariants
 
 def toy():
     roles=np.asarray(['KC','KC','DAN','DAN','MBON','MBON'])
     pre=[0,1,2,3,0,1,2,3];post=[4,5,0,1,2,3,4,5];weights=[7,9,-5,-5,6,6,8,11]
     return sparse.csr_matrix((weights,(post,pre)),shape=(6,6),dtype=float),roles
+
+def test_string_source_and_integer_cache_root_ids_map_without_float_conversion():
+    import pandas as pd
+    ids=np.asarray([720575940000000001,720575940000000002],dtype=np.int64)
+    converted=canonical_ids(ids.astype(str));np.testing.assert_array_equal(converted,ids)
+    np.testing.assert_array_equal(pd.Index(ids).get_indexer(converted),[0,1])
+    with pytest.raises(AssertionError):canonical_ids(['1','1'])
 
 def test_independent_equal_weight_replay_preserves_both_multisets_and_current_factors():
     raw,roles=toy();saved=raw.copy()
