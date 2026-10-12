@@ -1,0 +1,33 @@
+{
+  "exact_split_sizes": true,
+  "all_prefixes_identifiable": true,
+  "unique_structured_prefixes": true,
+  "parameter_prefix_overlap": 0,
+  "parameter_teacher_window_overlap": 0,
+  "parameter_cycle_overlap": 0,
+  "instance_cycle_overlap": 88,
+  "distinct_cycles": {
+    "train": 88,
+    "instance_test": 88,
+    "parameter_test": 99
+  },
+  "oracle_structured_complete": true,
+  "trivial_parameter_first_max": "1/10",
+  "negative_oracle_first": {
+    "iid": "43/440",
+    "shuffled": "49/220"
+  },
+  "gates": {
+    "split_sizes": true,
+    "identifiable": true,
+    "unique_prefixes": true,
+    "no_parameter_prefix_leak": true,
+    "no_parameter_teacher_window_leak": true,
+    "no_parameter_cycle_leak": true,
+    "oracle_complete": true,
+    "trivial_separation": true,
+    "iid_separation": true,
+    "shuffled_separation": true
+  },
+  "all_task_gates_pass": true
+}
