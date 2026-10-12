@@ -9,7 +9,26 @@ fly memorizing pi or a model predicting unseen pi digits.
 [한국어 설명](docs/README-ko.md) · [Research status / audit](docs/research-status.md) ·
 [Roadmap](docs/research-roadmap.md) · [Extension closeout](docs/additional-research-closeout.md)
 
-## Current research — M9 structural advantage FAIL, 2026-10-12
+## Current research — M10 rule-transfer task design READY, 2026-10-13
+
+The [M10 finite task-design preflight](docs/rule-transfer-design-results.md) is
+**READY**, independently checked: 990 mod-11 affine episodes separate training,
+seen-rule new starts and held-out coefficients. Held-out prefixes/teacher windows/
+rotated cycles have zero training overlap. History-3 completes all seen-rule
+instances but none of 440 held-out coefficient continuations; the supplied-form
+oracle completes all 440. All 63 control evaluations and 2970 total family
+episodes reconstruct exactly; 7 safeguards pass. No neural model is fitted.
+
+READY concerns the registered design checks. Some held-out rules have period 2,
+so the future comparison also needs explicit lag-copy controls and per-rule
+scores. M9's failed wiring advantage and earlier negatives remain sealed.
+[Protocol](docs/rule-transfer-design-protocol.md) ·
+[Independent checks](results/rule_transfer_design_v1/independent_validation/checks.json) ·
+[Final audit](results/rule_transfer_design_v1/final_audit/audit.json).
+Next: separately preregister a matched learned-model/shift-reference continuation
+comparison, provisionally M11; not yet registered or executed.
+
+## Closed M9 structural advantage FAIL, 2026-10-12
 
 The [M9 fitted then frozen structural tracking study](docs/structural-tracking-results.md)
 is closed with **primary/secondary material wiring advantage FAIL**. All87

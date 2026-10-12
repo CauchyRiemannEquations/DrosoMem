@@ -1,5 +1,31 @@
 # Research status
 
+## Current — M10 task-design preflight READY (2026-10-13)
+
+[Protocol](rule-transfer-design-protocol.md), [results](rule-transfer-design-results.md),
+[independent checks](../results/rule_transfer_design_v1/independent_validation/checks.json),
+[final audit](../results/rule_transfer_design_v1/final_audit/audit.json).
+275 training/275 seen-rule new-start/440 held-out-coefficient affine episodes
+pass all ten task gates. No held-out initial-prefix/teacher-window/cycle overlap;
+instance tests share all 88 training cycles. History-3 completes all seen-rule
+instances but none of the 440 coefficient tests; privileged formula oracle
+completes all. Its negative first scores are iid43/440 and shuffled98/440,
+below the fixed25% ceiling. Every control outcome is retained; no tuning.
+
+Independent reconstruction matches all 2970 family episodes, 144 data/prediction
+arrays, 9 identifiability arrays, 63 evaluations, training tables and exact scores.
+Seven safeguards pass; no technical failure. All47001 prior result identities,
+47689 protected paths and8077 materialized file bytes agree with the baseline.
+No old outcome or manifest is changed. No neural head/recurrent/encoder fit.
+
+This establishes a bounded task benchmark, not learned rule transfer. Period-2
+coefficient cases remain a known lag-copy shortcut requiring explicit controls
+and per-rule reporting in the future comparison. Next is a separate matched
+model/shift-reference performance preregistration (provisional M11), unregistered/
+unexecuted. M9/P2/M7 FAIL, M1 invalid, M4 INFEASIBLE and M8 READY remain.
+
+The dated M9 and earlier sections below retain their completion-time handoffs.
+
 ## Current — M9 valid material wiring criterion FAIL (2026-10-12)
 
 [Protocol](structural-tracking-protocol.md), [results/synthesis](structural-tracking-results.md),

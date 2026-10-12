@@ -1,4 +1,37 @@
-# Prioritized work — updated 2026-10-12
+# Prioritized work — updated 2026-10-13
+
+## Current handoff — M10 task design READY; model protocol next
+
+[M10 task preflight](rule-transfer-design-results.md) is closed READY, with
+275 training/275 seen-rule new-start/440 held-out-coefficient mod-11 episodes.
+No held-out training prefix/teacher-window/rotated-cycle overlap; formula oracle
+completes all440, registered trivial first accuracy at most10%. History-3 completes
+the seen-rule tests but not coefficient tests. All63 evaluations/2970 family
+episodes match independent reconstruction;7 safeguards pass. Zero neural fits.
+
+Next one task is a **separate performance preregistration**, provisional M11,
+not yet registered/executed. Do not turn task READY into learned-rule success.
+
+1. Freeze a K11 source circuit/input map and matched controls before fits. Adopt
+   the proposed48-coordinate/539-affine-parameter/2200-training-row budget,
+   train-only scaler/alpha1, frozen recurrence and episode resets, or explicitly
+   justify any prospectively chosen change. No test labels/metadata enter inputs.
+2. Include a matched 3-slot one-hot shift reference padded to48, with the same
+   fitted head budget. Keep existing tables and privileged known-form oracle
+   distinct from matched learned models. Add explicit fixed lag-copy controls;
+   a=10's110/440 period-2 cases can be solved by copying two positions back.
+3. Register first-next, teacher-forced and target-free8-step continuation
+   endpoints separately. Define exact validity/advantage gates and rule-level
+   scores; a result driven only by period2 cannot justify broad rule transfer.
+   Fix all input/model seeds, failure/resource stopping rules and full archive.
+4. Commit that protocol before any new fitted outcomes, then implement the
+   declared finite study with synthetic/smoke safeguards and independent
+   full-state/parameter/prediction replay. No seed/family/head selection after
+   test, hidden biological learning or P3. Preserve M9 and every prior negative.
+
+M10 protects47001 prior result identities and all materialized historical bytes.
+Responsible synthesis/release remains priority4. Historical handoffs below are
+their dated positions, not requests to reopen already closed scopes.
 
 ## Current handoff — M9 closed; rule-transfer design next
 

@@ -1,5 +1,29 @@
 # DrosoMem research roadmap
 
+## Current — M10 task design closed READY; performance registration next
+
+[M10 results](rule-transfer-design-results.md), [protocol](rule-transfer-design-protocol.md),
+[handoff](next-work.md). Finite mod-11 affine splits distinguish seen-rule starts
+from held-out coefficients: zero held-out training prefix/window/cycle overlap;
+all 2970 family episodes/63 control evaluations independently reconstruct.
+All task checks and seven safeguards pass. No neural transfer outcome exists.
+Some held-out period-2 rules permit fixed lag copy, so the next registered model
+comparison must report that control and per-rule scores.
+
+| Priority | Direction | Current boundary |
+| --- | --- | --- |
+| 1 / M7 | Artificial-noise historical tracking | Closed; FAIL preserved |
+| 2 / M8–M9 | Matched structural construction and tracking comparison | Closed; READY construction, valid material-advantage FAIL |
+| 3 / M10 | Rule-transfer task validity preflight | Closed; READY within registered checks; zero neural fits |
+| 3 / provisional M11 | Matched fitted-model versus shift-reference held-out coefficient continuation | Next performance preregistration; unregistered/unexecuted |
+| 4 | Responsible synthesis/archive/possible manuscript | Future plan; no DOI/publication claimed |
+
+M10 READY does not establish source-wiring advantage, learned rule application,
+internal synaptic learning or physiological mathematics. Freeze one M11 question,
+model/interface/seeds/budgets, validity/advantage gates and independent replay
+before any new fitted outcomes. No hidden harder-M9 search or P3 is included.
+The dated stages below preserve their historical handoffs.
+
 ## Current — M9 structural comparison closed; rule-transfer design next
 
 [M9 results/synthesis](structural-tracking-results.md),
