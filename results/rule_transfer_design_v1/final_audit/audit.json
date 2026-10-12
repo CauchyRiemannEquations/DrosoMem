@@ -1,0 +1,27 @@
+{
+  "all_checks_pass": true,
+  "outcome": "READY",
+  "neural_model_fits": 0,
+  "historical_git_identities_preserved": true,
+  "manifest_coverage": [
+    {
+      "stage": "guards",
+      "entries": 5,
+      "manifest_sha256": "698e36d2490c72d2db3169a87b92a2ad4f51105b3d2340b0d9dd3d7c0da5aa05"
+    },
+    {
+      "stage": "main",
+      "entries": 25,
+      "manifest_sha256": "40b857dc78b20a8e6965903e309cbbadf16bdea19b4df4b7343c5b17d897772d"
+    },
+    {
+      "stage": "independent_validation",
+      "entries": 7,
+      "manifest_sha256": "b5babd9dc71f10f7fc733be4ef0b89cf361aed65b16480215fffd94998b27084"
+    }
+  ],
+  "independent_verification_complete": true,
+  "tests_passed": 7,
+  "future_neural_performance_registered": false,
+  "incomplete_attempts": 0
+}
