@@ -1,5 +1,41 @@
 # Prioritized work — updated 2026-10-12
 
+## Current handoff — M8 preflight closed; structural performance next
+
+[M8](structural-specificity-design-results.md) is independently **READY**:
+10 partial/3 whole controls preserve both raw weight multisets, node degrees/
+roles, incoming factors and exact current coefficients while delayed locations
+change22.34–23.76% /85.94–85.99%. A separate engineered608-slot current/lag2
+reference meets scalar state/48-observation/490-head limits;18 numerical ranks
+validate. No neural trajectory or head fit was run; no memory superiority was
+tested. Nine safeguards/valid smoke/main/independent replay complete; first
+root-ID indexing interruption and nested failure record stay unchanged.
+No construction/validation work remains within this finite preflight.
+
+Next is **a distinct structural-performance protocol** (working M9, proposal
+only, not registered/executed). Priority2 is still open. Before outcomes:
+
+1. Audit the completed control bank and its immobile/conditional structure;
+   define a bounded historical-value tracking question with a material gate.
+2. Fix all real/null/delay conditions, ensemble sizes, paired training/test
+   streams/maps, observation/model/readout budgets, lag/current metrics, actual
+   past-symbol replacements and stopping/resource/validity rules.
+3. Declare graph-specific matched fitting followed by frozen held-out test
+   heads; a real-only frozen head on nulls measures transfer as well as wiring.
+   Numerical prototype rank is not finite-sample ridge performance. Record
+   history-bearing current access without filtering favorable test anchors.
+4. Commit protocol before new neural outcomes, then implementation/smoke/
+   independent smoke/main/independent main/synthesis. No favorable null/seed/
+   threshold or decoder selection after results; report ceiling and negative
+   outcomes. No pure cycle attribution from these controls.
+
+Preserve P2/M7 failed gates, M1 invalid and M4 strict INFEASIBLE plus all45245
+older result identities. Delay reference has different dynamics/roles and a
+source instantaneous front end; state padding is not anatomical matching.
+M8 does not grant empirical structural advantage or close this performance
+question. Rule transfer/release remain later; P3 is excluded. Dated older
+handoffs below preserve the plans as they existed at those dates.
+
 ## Current handoff — M7 completed; structural specificity next (2026-10-12)
 
 The [one-dose observation-noise tracking study](counterfactual-noise-results.md)

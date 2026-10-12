@@ -9,7 +9,31 @@ fly memorizing pi or a model predicting unseen pi digits.
 [한국어 설명](docs/README-ko.md) · [Research status / audit](docs/research-status.md) ·
 [Roadmap](docs/research-roadmap.md) · [Extension closeout](docs/additional-research-closeout.md)
 
-## Current research — M7 closed, 2026-10-12
+## Current research — M8 design preflight closed, 2026-10-12
+
+The [M8 structural control construction preflight](docs/structural-specificity-design-results.md)
+is **READY**, independently verified:10 partial/3 whole constructions preserve
+node degrees/roles, both incoming/outgoing raw weight multisets, incoming-L1
+factors and the exact current KC→MBON coefficients. Delayed edge locations
+change22.34–23.76% partial /85.94–85.99% whole; all fixed budgets complete.
+A separate608-active-coordinate engineered current/lag2 reference fits the
+scalar state/48-observation/490-head budget; all18 numerical code ranks validate.
+
+This is construction feasibility, **not measured memory or wiring superiority**.
+The delay system changes anatomical identities/dynamics and retains the source
+instantaneous front end. Source neural trajectories0/new decoder fits0.
+All13 graphs regenerate exactly;9 valid safeguards pass. First smoke's root-ID
+type error and its nested record are preserved; the value-preserving retry passes.
+45245 old result identities remain protected. [Protocol](docs/structural-specificity-design-protocol.md) ·
+[Independent checks](results/structural_specificity_design_v1/main_validation/checks.json) ·
+[Final audit](results/structural_specificity_design_v1/final_audit/audit.json).
+
+Next is a distinct preregistered structural **performance** comparison (working
+M9, proposal only), with fair graph-specific fitting then frozen held-out heads.
+The roadmap's priority2 remains open. P2/M7 FAIL and M4 INFEASIBLE stay sealed;
+no P3 or graph/whole-brain/biological superiority claim is added.
+
+## Closed M7 — 2026-10-12
 
 The [M7 artificial observation-noise tracking study](docs/counterfactual-noise-results.md)
 has registered **primary FAIL and paired secondary FAIL**. At the one fixed

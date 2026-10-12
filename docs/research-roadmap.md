@@ -1,5 +1,38 @@
 # DrosoMem research roadmap
 
+## Current — M8 design preflight READY; performance remains open (2026-10-12)
+
+[M8 results](structural-specificity-design-results.md),
+[protocol](structural-specificity-design-protocol.md), [handoff](next-work.md).
+Thirteen fixed equal-weight delayed-edge constructions independently regenerate
+and preserve degrees/roles/both raw weight multisets/incoming-L1 factors/current
+coefficients. Delayed locations change22.34–23.76% partial /85.94–85.99% whole.
+Nine fixed maps/18 numerical code ranks and the608-slot engineered current/lag2
+reference pass the registered preflight. No fitted decoder/source trajectory
+or empirical graph-memory comparison was executed.
+
+| Priority | Direction | Current boundary |
+| --- | --- | --- |
+| 1 / M7 | One-dose artificial observation-noise tracking | Closed; primary/secondary FAIL unchanged |
+| 2 / M8 preflight | Feasible structural controls and engineered delay design | Closed; READY, construction only |
+| 2 / working M9 | Real/null/delay historical tracking performance | Next distinct protocol proposal; not registered/executed |
+| 3 | Mathematical-sequence rule transfer | Future exploratory proposal |
+| 4 | Responsible synthesis/archive/possible manuscript | Release plan; no DOI/publication claimed |
+
+The remaining priority2 needs matched per-graph training then frozen held-out
+evaluation, paired streams/mappings, a finite material endpoint/current-access
+checks and independent state/head/prediction replay. Conditional swaps are not
+uniformly mixed graph sampling; the simple delay has different roles/dynamics
+and inherits the source instantaneous front end. No pure cycle test, anatomical
+storage, biological learning, whole-brain/real-wiring advantage or capacity
+follows READY. P2 material FAIL/M1 invalid/M4 INFEASIBLE/M7 FAIL and45245 old
+result identities/scientific files/failures stay protected. P3 remains excluded.
+
+**한국어:** 비교용 대조망과 단순 지연 장치를 만들 수 있다는 설계 검증은
+끝났다. 다음은 별도의 사전 기준을 정한 실제 성능 비교다. 실제 연결망의
+기억 우위가 확인된 것은 아니며 기존 실패 결과는 그대로 보존한다.
+Below are dated historical status/planning snapshots.
+
 ## Current — M7 closed; structural specificity next (2026-10-12)
 
 [M7 results/synthesis](counterfactual-noise-results.md),

@@ -1,5 +1,32 @@
 # Research status
 
+## Current — M8 constructive feasibility READY (2026-10-12)
+
+[Protocol](structural-specificity-design-protocol.md),
+[results/synthesis](structural-specificity-design-results.md),
+[independent checks](../results/structural_specificity_design_v1/main_validation/checks.json),
+[final audit](../results/structural_specificity_design_v1/final_audit/audit.json).
+Ten partial/three whole fixed graph constructions pass all constraints/budgets
+and exact at-least10% delayed-location change. Actual change22.34–23.76% /
+85.94–85.99%. Degrees/roles/BOTH signed raw weight multisets, row-normalization
+factors and raw/normalized current KC→MBON coefficients remain exact.
+
+Independent source/RNG/CSR reconstruction matches all13, nine maps/18 numerical
+rank checks and two padded delay layouts. Engineered reference has608 active
+slots, original scalar N,48 observations/current24+lag2 24,490 affine-head
+budget; its48 shifts have D²24 edges/D³0. It changes source roles/dynamics and
+inherits the instantaneous source front end. Zero-history coefficient equality
+does not establish history-bearing current access or held-out ridge accuracy.
+Source neural trajectories0/new decoder fits0; wiring superiority untested.
+
+Initial smoke failed on string/integer root-ID indexing before graph/prototype
+outcomes; exact int64 representation repair,9 safeguards and smoke retry pass.
+Parent/nested interrupted records remain; main/replay have no failures.
+45245 older result identities/scientific files and prior failures are preserved.
+P2/M7 FAIL, M1 invalid and M4 INFEASIBLE remain. This preflight is complete;
+structural-performance comparison is the separate proposed M9, unregistered
+and unexecuted. P3 remains excluded. Dated sections retain historical scopes.
+
 ## Current — M7 artificial observation-noise criterion fails (2026-10-12)
 
 [Protocol](counterfactual-noise-protocol.md),
