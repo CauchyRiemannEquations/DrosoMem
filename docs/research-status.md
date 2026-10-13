@@ -1,5 +1,37 @@
 # Research status
 
+## Current — M1–M11 synthesis and archive audit complete (2026-10-13)
+
+[Synthesis](research-synthesis.md), [evidence matrix](research-evidence-matrix.md),
+[reproduction index](research-reproduction-index.md), [internal outline](manuscript-outline.md),
+[inventory](../results/research_synthesis_v1/inventory/checks.json),
+[final document audit](../results/research_synthesis_v1/final_audit/checks.json).
+Cutoff main `c48e0c43836e640ec1a15b1ac1152f7e3ec4e2a4`.
+Thirteen canonical studies (P1/P2 anchors plus M1–M11) have linked questions,
+actual learning budgets, unchanged registered verdicts, raw manifests, successful
+independent checks and explicit limits. No new model run/fit or old neural replay.
+
+The archive inventory verifies1606 manifests,2371 successful recorded tracked
+source references and all six available external hash-matched inputs. Nineteen
+incomplete/scientifically-invalid manifest records remain, including M4's
+complete source-mismatch snapshot. All49539 prior result Git identities,
+50248 protected baseline paths and10636 materialized files (9931 results)
+remain unchanged;39608 sparse-excluded results retain Git identity only.
+Successful validator/main manifest links and pinned producer/verifier CLI
+arguments agree. This is static/provenance validation, not a fresh full replay.
+
+Final verdicts remain: P1/M2/M3/M5/M6 PASS within their named gates;
+P2/M7/M9/M11 FAIL; M1 assay-invalid/null; M4 strict INFEASIBLE with whole
+degree-only UNRESOLVED; M8/M10 READY for control/task preparation. M10's old
+producer pending label is preserved and final READY comes from its independent
+checks/final audit. Verification success does not relabel a scientific failure.
+
+This closes the specified programme/synthesis, not all possible biological or
+mathematical learning questions. Full manuscript/literature context, author
+review and any external release/submission remain separate future work; no DOI,
+publication or hidden new experiment/P3 is implied. Dated sections below retain
+their completion-time handoffs.
+
 ## Current — M11 verified rule-continuation primary/secondary FAIL (2026-10-13)
 
 [Protocol](rule-transfer-protocol.md), [results](rule-transfer-results.md),

@@ -1,5 +1,29 @@
 # DrosoMem research roadmap
 
+## Current — bounded programme and responsible synthesis closed
+
+2026-10-13: [evidence synthesis](research-synthesis.md),
+[M1–M11 matrix](research-evidence-matrix.md), [replay index](research-reproduction-index.md),
+[internal manuscript outline](manuscript-outline.md).
+The priority4 handoff after M11 is complete:13 canonical studies, learned
+budgets/limits and exact archived verdicts are mapped;1606 manifests and2371
+successful source references authenticate, with all historical evidence preserved.
+No new model outcomes, biological learning or publication are claimed.
+
+| Priority | Completion boundary |
+| --- | --- |
+| 1 / M7 | One-dose frozen tracking closed FAIL |
+| 2 / M8–M9 | Control bank READY; valid material tracking advantage FAIL |
+| 3 / M10–M11 | Task READY; matched acquired-rule/continuation/fine-wiring criteria FAIL |
+| 4 / synthesis | Claim/evidence/limitation matrix, pinned replay inventory and internal outline complete |
+
+No specified experiment, independent validation or synthesis deliverable remains.
+Future work is a separately scoped full manuscript with researched literature
+context/author review, or a distinct prospective learner/rule-family/physiological
+question. Neither is a completion requirement or automatic repair to M1/M7/M9/
+M11. External submission/release/DOI and P3 are outside this closed scope.
+The historical handoffs below preserve their dated positions.
+
 ## Current — M11 performance comparison closed FAIL; synthesis next
 
 [M11 results](rule-transfer-results.md), [protocol](rule-transfer-protocol.md),

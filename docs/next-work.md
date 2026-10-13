@@ -1,5 +1,34 @@
 # Prioritized work — updated 2026-10-13
 
+## Current handoff — bounded synthesis complete; full manuscript remains future work
+
+[Research synthesis](research-synthesis.md), [evidence matrix](research-evidence-matrix.md),
+[pinned replay index](research-reproduction-index.md), [internal manuscript outline](manuscript-outline.md)
+complete the priority4 task following M11. Thirteen canonical P1/P2/M1–M11
+records are mapped with learned budgets, raw/protocol/validation links and limits.
+Archive/source/CLI inventory passes; old numerical outcomes were not rerun or
+rewritten. All49539 old result identities and materialized bytes remain protected.
+No specified programme/synthesis work remains pending.
+
+The next document task, if continued, is a **full manuscript draft with literature
+context**, based on the outline and frozen evidence. Its useful order is:
+
+1. Research primary literature and source/model context, distinguish novelty
+   from repository-only observations, and record citations supporting each
+   background/comparison statement. The present synthesis has not done that
+   external literature review or claimed novelty.
+2. Develop the outline into a methods/results/discussion manuscript retaining
+   the exact outcome types, acquisition limits, matched-control restrictions,
+   actual learned parameters and computational pairing units.
+3. Review figures/tables and reproduction/data/source availability without
+   editing old scientific archives. Any new derived figures get new manifests.
+4. Resolve author/contributor and venue/format decisions before an external
+   submission. No DOI/publication/submission is authorized or implied here.
+
+A new model/rule-family/internal-learning study is a separate prospective task,
+not the default response to M11's failure. Do not sweep heads/seeds/doses or
+start P3 automatically. Earlier dated handoffs below are historical scopes.
+
 ## Current handoff — M11 closed FAIL; responsible synthesis next
 
 [M11](rule-transfer-results.md) completes the requested performance registration,

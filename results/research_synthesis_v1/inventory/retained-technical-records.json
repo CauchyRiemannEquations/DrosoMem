@@ -1,0 +1,232 @@
+{
+  "retained_manifest_records": [
+    {
+      "path": "results/counterfactual_noise_v1/final_audit/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": "m7-closeout",
+      "entries": 11,
+      "sha256": "8d9db14eed64b628b6fe4007fa5ffe677a5c919467df695850a3be600aa9b8ac"
+    },
+    {
+      "path": "results/counterfactual_tracking_v1/final_audit/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": "m6-counterfactual-tracking-closeout",
+      "entries": 3,
+      "sha256": "d64cf61d5dae7edd0e256cdd7a068b029cb361e45238edf6ea3369cc464a5461"
+    },
+    {
+      "path": "results/counterfactual_tracking_v1/guard_tests/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": "m6-synthetic-guards",
+      "entries": 3,
+      "sha256": "16d93c4a4079c99f0444b6e1672adb3257293222f44615ac22e5db6d681634f0"
+    },
+    {
+      "path": "results/cycle_attribution_v1/validation_failure_001/manifest.json",
+      "complete": true,
+      "scientifically_valid": false,
+      "kind": "preserved-source-validation-failure",
+      "entries": 2,
+      "sha256": "cf7f192f8f923a359e89de0b096620aa166f425db6ae40dc68c7e89c00c00b0a"
+    },
+    {
+      "path": "results/structural_specificity_design_v1/smoke/definitions/legacy5/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": "m8-analytic-delay-definition",
+      "entries": 3,
+      "sha256": "854fb145bb3739160937263ef839a31ce3d8e59f9038ec755a18e437b6543e17"
+    },
+    {
+      "path": "results/structural_specificity_design_v1/smoke/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": "m8-smoke",
+      "entries": 10,
+      "sha256": "ba2c764e1cc6558ddf9c9e5ff0f68ef9d871f8dbf5b54839f6e0b6669c653d76"
+    },
+    {
+      "path": "results/tdc_mechanism_v1/main_validation/brain5_carry_only_s1100002/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": "mechanism-independent-case",
+      "entries": 3,
+      "sha256": "202b77a2ddf588fb561d95ac4b84e85228d5f8df0beeb363f3da441c5b0f46a8"
+    },
+    {
+      "path": "results/tdc_mechanism_v1/main_validation/brain5_carry_only_s1100003/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": "mechanism-independent-case",
+      "entries": 3,
+      "sha256": "bb7dce29311cc0e779a07e0d1906c10fbb13d699a4f558831b6aa6e1de61523c"
+    },
+    {
+      "path": "results/tdc_mechanism_v1/main_validation/brain5_full_s1100002/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": "mechanism-independent-case",
+      "entries": 3,
+      "sha256": "e4bd81241046f6b1d2a34dbf5f8468fc537b156e20997d14dc4305994ea8afbf"
+    },
+    {
+      "path": "results/tdc_mechanism_v1/main_validation/brain5_full_s1100003/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": "mechanism-independent-case",
+      "entries": 3,
+      "sha256": "b0839e4951a38169e675f4b47b602e4e89c2d53d42d8dea21e913f9f93f10318"
+    },
+    {
+      "path": "results/tdc_mechanism_v1/main_validation/brain5_instantaneous_s1100001/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": "mechanism-independent-case",
+      "entries": 3,
+      "sha256": "d876a0ea121b18d6294cebf5cb6235aa92cd5ef025f9860974010b981341ac61"
+    },
+    {
+      "path": "results/tdc_mechanism_v1/main_validation/brain5_instantaneous_s1100002/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": "mechanism-independent-case",
+      "entries": 3,
+      "sha256": "446731a5975c0605c0f5f2a0c4fa4b6be60ac27204d45843ba585f22f117c7ee"
+    },
+    {
+      "path": "results/tdc_mechanism_v1/main_validation/brain5_instantaneous_s1100003/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": "mechanism-independent-case",
+      "entries": 3,
+      "sha256": "e3d34ff284728f1446655cc8ace093d348975b1b8c2f1a5c94c5fd57a98e3a69"
+    },
+    {
+      "path": "results/tdc_mechanism_v1/main_validation/brain5_synaptic_only_s1100002/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": "mechanism-independent-case",
+      "entries": 3,
+      "sha256": "6a62b978b2ce151bca6acfd30705f0370839e03d3a3e70e1b1a6f3e68af9ffbd"
+    },
+    {
+      "path": "results/tdc_mechanism_v1/main_validation/brain5_synaptic_only_s1100003/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": "mechanism-independent-case",
+      "entries": 3,
+      "sha256": "fd97574acd4ead6be207050938c777fb97d4a83e73e6c44e486062f90b5218e5"
+    },
+    {
+      "path": "results/tdc_mechanism_v1/main_validation/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": "mechanism-independent-validation",
+      "entries": 149,
+      "sha256": "21b39c86e0a06882faaf778e5484a6716506ec961a87b8cb92b8568a802cec43"
+    },
+    {
+      "path": "results/tdc_mechanism_v1/test_attempt1/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": null,
+      "entries": 1,
+      "sha256": "6386fd91d026f57370c29045ddf2d2338ba888673d33cfd50b94543c1e56fef5"
+    },
+    {
+      "path": "results/tdc_v2/final_audit_attempt1/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": null,
+      "entries": 1,
+      "sha256": "faff1d8d280176bb899192cf723b45eaff8856c01c75e73646a09c9beb98b8b9"
+    },
+    {
+      "path": "results/tdc_v2/p2_graphs/manifest.json",
+      "complete": false,
+      "scientifically_valid": null,
+      "kind": "p2-graph-ensemble",
+      "entries": 129,
+      "sha256": "0ec975c0d07da072557b00fbe7f8140b47375cc7a22f87db8d3fa66f1fa4f1a1"
+    }
+  ],
+  "registries": [
+    {
+      "study": "M4",
+      "registry": "results/cycle_attribution_v1/validation-failures.json",
+      "record": {
+        "stage": "guard_tests",
+        "manifest_sha256": "6d5c8111842da18ed761fa4bf49395e7ac63fdd179e0f9f20dcbb3e74f0114b0",
+        "record": "guard_tests/source.json",
+        "reason": "Auditor changed during source capture; recorded commit does not authenticate its captured hash",
+        "invalid_source_path": "scripts/audit_cycle_attribution_feasibility.py",
+        "recorded_commit": "c5b4bf025ed0ce8f225947d921a736602daebb50",
+        "recorded_sha256": "8b2a8e3e079da835926fabc2de8c0728f7fc1ba570c2ff7b27b3eefdbc4adbc9",
+        "git_sha256": "92bff8d913c594f8af99679d46c5908b334b193dccac801d37b200c22c76de5c",
+        "source_validation_failed": true,
+        "neural_runs": 0,
+        "parameters_changed": false,
+        "snapshot_path": "validation_failure_001/captured-auditor.py.txt"
+      }
+    },
+    {
+      "study": "M6",
+      "registry": "results/counterfactual_tracking_v1/known-incomplete-attempts.json",
+      "record": {
+        "manifest_path": "results/counterfactual_tracking_v1/guard_tests/manifest.json",
+        "failure_path": "results/counterfactual_tracking_v1/guard_tests/failure.json",
+        "reason": "Source capture rejected CRLF working bytes differing from canonical LF Git blob; no tests or source-graph outcomes executed; normalized only working bytes and retry unchanged settings"
+      }
+    },
+    {
+      "study": "M6",
+      "registry": "results/counterfactual_tracking_v1/known-incomplete-attempts.json",
+      "record": {
+        "manifest_path": "results/counterfactual_tracking_v1/final_audit/manifest.json",
+        "failure_path": "results/counterfactual_tracking_v1/final_audit/failure.json",
+        "reason": "Artifact audit rejected differently ordered CSV columns with identical names/values; align only serialization column order and retry unchanged experiments and scientific criteria"
+      }
+    },
+    {
+      "study": "M7",
+      "registry": "results/counterfactual_noise_v1/known-incomplete-attempts.json",
+      "record": {
+        "manifest_path": "results/counterfactual_noise_v1/final_audit/manifest.json",
+        "failure_path": "results/counterfactual_noise_v1/final_audit/failure.json",
+        "kind": "technical_closeout_source_record_variable_shadowing",
+        "validation_invalid": true,
+        "scientific_evidence_changed": false,
+        "source_graph_outcomes_executed": false,
+        "reason": "Auditor reused its initial source variable while reading historical source records, then falsely compared current HEAD with the last historical record. Captured-source reference alone is repaired; experimental data, protocol and scientific gate stay unchanged. The incomplete manifest and all original files remain preserved."
+      }
+    },
+    {
+      "study": "M8",
+      "registry": "results/structural_specificity_design_v1/known-incomplete-attempts.json",
+      "record": {
+        "manifest_path": "results/structural_specificity_design_v1/smoke/manifest.json",
+        "failure_path": "results/structural_specificity_design_v1/smoke/failure.json",
+        "kind": "source_root_id_representation_mismatch",
+        "scientific_settings_changed": false,
+        "new_graph_or_prototype_outcomes_generated": false,
+        "reason": "Main loader converted current IDs to int64 but indexed them with the original string IDs. Canonical int64 conversion preserves exact root values; no graph, mapping, weights, seeds, budgets or gates change. The interrupted smoke and nested definition attempt are retained."
+      }
+    },
+    {
+      "study": "M8",
+      "registry": "results/structural_specificity_design_v1/known-incomplete-attempts.json",
+      "record": {
+        "manifest_path": "results/structural_specificity_design_v1/smoke/definitions/legacy5/manifest.json",
+        "failure_path": "results/structural_specificity_design_v1/smoke/definitions/legacy5/failure.json",
+        "kind": "nested_definition_attempt_in_same_interrupted_smoke",
+        "scientific_settings_changed": false,
+        "new_graph_or_prototype_outcomes_generated": false
+      }
+    }
+  ],
+  "technical_failure_records_are_not_scientific_outcomes": true,
+  "m4_complete_failure_snapshot_is_scientifically_invalid": true
+}

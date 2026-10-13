@@ -9,7 +9,32 @@ fly memorizing pi or a model predicting unseen pi digits.
 [한국어 설명](docs/README-ko.md) · [Research status / audit](docs/research-status.md) ·
 [Roadmap](docs/research-roadmap.md) · [Extension closeout](docs/additional-research-closeout.md)
 
-## Current research — M11 rule-continuation primary/secondary FAIL, 2026-10-13
+## Current — M1–M11 evidence synthesis archived, 2026-10-13
+
+The [research synthesis](docs/research-synthesis.md) and
+[claim/evidence/limitation matrix](docs/research-evidence-matrix.md) close the
+bounded handoff after M11. They preserve13 canonical study outcomes (P1/P2 and
+M1–M11), with each question, learned budget, protocol, raw archive, successful
+independent checks and interpretation limit linked. No new model is fitted.
+
+The core supported result is operational historical-input access in fixed
+computational reservoirs. Tested material real-wiring advantages and M11's
+acquisition/continuation gates remain failed; M1 stays undefined, M4 strict
+matching INFEASIBLE, M8/M10 tool/task READY. These labels have different meanings.
+[Pinned reproduction index](docs/research-reproduction-index.md) separates
+producer/verifier revisions, parent/cache inputs and static CLI checks.
+[Internal manuscript outline](docs/manuscript-outline.md) maps only supported
+claims; no publication/DOI/external submission is claimed.
+
+[Inventory](results/research_synthesis_v1/inventory/checks.json) authenticates1606
+manifests and2371 recorded successful source references;19 incomplete/invalid
+manifest records remain. All49539 prior result Git identities and10636
+materialized protected files agree with the cutoff. Numerical replay was not
+performed by this synthesis. [Final document audit](results/research_synthesis_v1/final_audit/checks.json).
+The current programme and synthesis are closed; a full manuscript/literature
+context task or a separately registered new research question remains future work.
+
+## Closed M11 rule-continuation primary/secondary FAIL, 2026-10-13
 
 The [M11 matched fitted-model comparison](docs/rule-transfer-results.md) is closed
 with **primary/secondary FAIL**. All216 source/ten-null/shift fits and independent
