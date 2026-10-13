@@ -11,7 +11,7 @@ archived failure remain unchanged.
 [Pinned reproduction index](research-reproduction-index.md) ·
 [Internal manuscript outline](manuscript-outline.md) ·
 [Synthesis inventory](../results/research_synthesis_v1/inventory/checks.json) ·
-[Final document audit](../results/research_synthesis_v1/final_audit_retry1/checks.json).
+[Final document audit](../results/research_synthesis_v1/final_audit_retry2/checks.json).
 
 ## 한국어 핵심 정리
 
@@ -161,11 +161,13 @@ completeness does not make that captured source a successful experiment. The
 new matrix records both distinctions without rewriting old hashes or prose.
 
 The initial synthesis document audit checked its own result link before creating
-that result file and stopped. The corrected audit validates the planned own
-artifact, creates it and verifies its presence; the initial failure/manifest
-remain in the new synthesis namespace. Document bytes are normalized to the
-canonical Git form before the successful final audit. No study verdict or old
-scientific archive changed. [Retained synthesis attempt](../results/research_synthesis_v1/known-incomplete-attempts.json).
+that result file and stopped. Its first retry also detected Windows newline
+bytes differing from the canonical Git document bytes. Both failed attempts and
+manifests remain in the new synthesis namespace. The corrected audit validates
+the planned own artifact, creates it and verifies its presence; all documents
+were normalized and directly compared to committed Git bytes before the final
+retry. No study verdict or old scientific archive changed.
+[Retained synthesis attempts](../results/research_synthesis_v1/known-incomplete-attempts.json).
 
 This completes the bounded synthesis/archive handoff after M11. The manuscript
 outline is an internal draft with a mapped evidence base. Literature context,
