@@ -1,0 +1,14 @@
+[
+  {
+    "manifest_path": "results/research_synthesis_v1/final_audit/manifest.json",
+    "manifest_sha256": "5d23885984457f2f17e8c1ff8cd75aa3bb63d6b2479ce2a1c3ae898baed85a95",
+    "failure_path": "results/research_synthesis_v1/final_audit/failure.json",
+    "reason": "Final document auditor validated its own checks.json link before creating that file; fix only link validation ordering and preserve failed attempt; no scientific changes"
+  },
+  {
+    "manifest_path": "results/research_synthesis_v1/final_audit_retry1/manifest.json",
+    "manifest_sha256": "3222778fb470e1f41fd8e765ff14ae85b8c8f88b0b6717323a53a5739201b813",
+    "failure_path": "results/research_synthesis_v1/final_audit_retry1/failure.json",
+    "reason": "Canonical document-byte check rejected Windows CRLF working bytes differing from LF Git blobs; normalize only new document bytes; no study or scientific archive changes"
+  }
+]
