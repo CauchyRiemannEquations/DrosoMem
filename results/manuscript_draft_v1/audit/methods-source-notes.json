@@ -1,0 +1,17 @@
+{
+  "source_hashes": {
+    "src/flying/data/connectome.py": "08adf495f49cffdd0d1b868220993362f8a3a8b9a453349649b0d90b7673a13e",
+    "src/flying/data/mushroom_body.py": "914598925bff65d702118d881327df10e30323148e2e39255da424def69ae6be",
+    "src/flying/brain/timed_reservoir.py": "7378dadb9e03e131abb8483bd6a3e058e8453dcf007109ec14918ae55dbb0ce2",
+    "src/flying/models/ridge.py": "1a0427ffa6af4b95692ce4350e62c727df4eac16266810c42dad0cd158205514",
+    "scripts/temporal_mechanism.py": "8c8a30e79f6b66c0acf7a16b74e8fb96de44e1444b4c8eaad1d85d6544fb614b"
+  },
+  "manual_review": [
+    "postsynaptic rows/incoming-L1 normalization",
+    "carry and drive separate; same-step KC to MBON schedule",
+    "centered affine ridge; train-only moments and nominal budgets",
+    "teacher forcing separate from autonomous continuation"
+  ],
+  "numerical_execution": false,
+  "automatic_equation_entailment": false
+}
