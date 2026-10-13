@@ -1,6 +1,25 @@
 # Research status
 
-## Current — M1–M11 synthesis and archive audit complete (2026-10-13)
+## Current — full internal manuscript complete (2026-10-13)
+
+[Manuscript](manuscript-draft.md), [primary-literature context](literature-context.md),
+[BibTeX](manuscript-references.bib),
+[document/provenance audit](../results/manuscript_draft_v1/audit/checks.json).
+The full English author draft covers P1/P2 and M1–M11, with explicit scheduled
+rate dynamics, actual learning budgets, separate decoding/continuation endpoints,
+three unchanged archived figures and an exact M11 cohort table. Nine primary
+references are classified as seven journal articles, one technical report and
+one preprint; access limits and comparison boundaries are recorded.
+
+Selected numerical anchors, bibliography identities, local links, canonical
+document bytes and all protected prior evidence are audited. This document task
+performs zero new model runs/fits/replays. Historical independent validations
+remain linked evidence; this audit is not external scientific peer review.
+Internal manuscript/literature work is complete. Author facts, declarations,
+venue formatting and final scientific review remain before an external
+submission; no submission or project DOI is created. Dated scopes below remain.
+
+## Archived — M1–M11 synthesis and archive audit complete (2026-10-13)
 
 [Synthesis](research-synthesis.md), [evidence matrix](research-evidence-matrix.md),
 [reproduction index](research-reproduction-index.md), [internal outline](manuscript-outline.md),

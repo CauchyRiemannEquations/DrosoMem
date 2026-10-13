@@ -1,6 +1,22 @@
 # DrosoMem research roadmap
 
-## Current — bounded programme and responsible synthesis closed
+## Current — full internal manuscript and primary-literature context complete
+
+2026-10-13: [full author draft](manuscript-draft.md),
+[literature access/claim notes](literature-context.md),
+[bibliography](manuscript-references.bib),
+[document/provenance audit](../results/manuscript_draft_v1/audit/checks.json).
+The document extension after the synthesis is complete, including methods,
+results, discussion, unchanged archived figures and nine primary references.
+All thirteen canonical outcomes and selected quantitative anchors remain tied
+to frozen evidence. There are zero new neural runs, fits or replays.
+
+The next useful step is internal scientific/editorial review and factual
+authorship/declaration input, followed by a separately chosen venue/format.
+External submission, DOI creation and a new learner study require their own
+scope. Earlier dated programme handoffs below are retained as history.
+
+## Archived — bounded programme and responsible synthesis closed
 
 2026-10-13: [evidence synthesis](research-synthesis.md),
 [M1–M11 matrix](research-evidence-matrix.md), [replay index](research-reproduction-index.md),

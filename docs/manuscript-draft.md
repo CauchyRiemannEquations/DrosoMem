@@ -13,6 +13,10 @@ paper. The existing software citation identity is recorded separately in
 [Literature context and access notes](literature-context.md) ·
 [BibTeX](manuscript-references.bib).
 
+[Document/provenance audit](../results/manuscript_draft_v1/audit/checks.json)
+checks citation identities, selected numerical anchors, archive preservation and
+local links. It does not replace external peer review or execute new model fits.
+
 ## Abstract
 
 Connectivity-constrained computational models can retain information about

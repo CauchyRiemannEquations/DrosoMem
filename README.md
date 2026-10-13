@@ -9,7 +9,25 @@ fly memorizing pi or a model predicting unseen pi digits.
 [한국어 설명](docs/README-ko.md) · [Research status / audit](docs/research-status.md) ·
 [Roadmap](docs/research-roadmap.md) · [Extension closeout](docs/additional-research-closeout.md)
 
-## Current — M1–M11 evidence synthesis archived, 2026-10-13
+## Current — full internal manuscript and literature context, 2026-10-13
+
+The [full manuscript draft](docs/manuscript-draft.md) develops P1/P2 and M1–M11
+into introduction, explicit model/readout methods, results, discussion and
+provenance/declarations. [Literature access notes](docs/literature-context.md)
+and [BibTeX](docs/manuscript-references.bib) document nine primary references:
+seven journal articles, one technical report and one versioned preprint.
+Connectome-reservoir precedents and their different tasks are acknowledged.
+
+[Document/provenance checks](results/manuscript_draft_v1/audit/checks.json)
+verify all thirteen archived outcomes, selected count/percentage anchors,
+citation identities, existing figures, local links and historical preservation.
+No new model run, fit or historical neural replay is performed. M11's weak
+acquisition and all earlier negative/undefined outcomes retain their meanings.
+The deliverable is an internal author draft; byline/declarations and final
+scientific review precede any separately authorized external submission.
+Earlier dated handoffs below remain historical completion scopes.
+
+## Archived — M1–M11 evidence synthesis, 2026-10-13
 
 The [research synthesis](docs/research-synthesis.md) and
 [claim/evidence/limitation matrix](docs/research-evidence-matrix.md) close the

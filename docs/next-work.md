@@ -1,6 +1,31 @@
 # Prioritized work — updated 2026-10-13
 
-## Current handoff — bounded synthesis complete; full manuscript remains future work
+## Current handoff — full internal manuscript complete; review next
+
+[Full author draft](manuscript-draft.md), [literature context](literature-context.md),
+[BibTeX](manuscript-references.bib) and
+[document/provenance checks](../results/manuscript_draft_v1/audit/checks.json)
+complete the manuscript task after the synthesis. Methods, all thirteen study
+outcomes, M11 exact counts, three existing figures and bounded discussion are
+included. Nine primary references record publication class and actual access
+scope. No model was rerun/refitted and no prior scientific archive was edited.
+
+The next bounded work is scientific/editorial review of this internal draft:
+
+1. Check the draft's arguments, definitions, limitations and figure/table
+   readability against the frozen evidence matrix and primary source notes.
+   Preserve negative results and acquisition limits; record substantive
+   corrections as new document versions without changing old archives.
+2. Obtain factual authorship/affiliation/contribution, funding and interest
+   declarations from the project owner. The software citation identity alone
+   does not settle manuscript authorship.
+3. Choose a venue and adapt its format after the review. External submission,
+   project DOI/release and any new experiment are separate scope decisions.
+
+No manuscript drafting, literature identity or document-audit deliverable remains
+in the current task. The prior handoffs below are dated historical scopes.
+
+## Archived handoff — bounded synthesis complete; manuscript then future work
 
 [Research synthesis](research-synthesis.md), [evidence matrix](research-evidence-matrix.md),
 [pinned replay index](research-reproduction-index.md), [internal manuscript outline](manuscript-outline.md)
