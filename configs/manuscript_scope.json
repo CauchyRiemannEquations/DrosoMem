@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-13",
+  "baseline_commit": "5e78dc5fec885234ae591ba2a56c45c870210ab9",
+  "scientific_cutoff": "c48e0c43836e640ec1a15b1ac1152f7e3ec4e2a4",
+  "namespace": "results/manuscript_draft_v1",
+  "parent_inventory": "results/research_synthesis_v1/inventory",
+  "parent_manifest_sha256": "113a9617a266037fd9434f84122ff8375d1bd0a630e7301924f88b2febf4a055",
+  "literature": "configs/manuscript_literature.json",
+  "documents": ["docs/manuscript-draft.md", "docs/literature-context.md", "docs/manuscript-references.bib"],
+  "new_model_runs": 0,
+  "new_model_fits": 0,
+  "external_submission": false,
+  "third_party_figure_reuse": false,
+  "max_seconds": 3600,
+  "max_rss_bytes": 4294967296,
+  "expected_statuses": {"P1":"PASS", "P2":"FAIL", "M1":"assay-invalid", "M2":"PASS", "M3":"PASS", "M4":"INFEASIBLE", "M5":"PASS", "M6":"PASS", "M7":"FAIL", "M8":"READY", "M9":"FAIL", "M10":"READY", "M11":"FAIL"},
+  "figure_paths": ["results/tdc_v2/p1_main/tdc.png", "results/functional_sensitivity_v1/main/functional-sensitivity.png", "results/rule_transfer_v1/report/rule-transfer.png"],
+  "required_draft_sections": ["## Abstract", "## 1. Introduction", "## 2. Methods", "## 3. Results", "## 4. Discussion", "## 5. Conclusion", "## 6. Data, code, provenance and declarations", "## References"]
+}
