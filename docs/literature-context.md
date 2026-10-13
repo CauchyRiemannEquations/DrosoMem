@@ -1,7 +1,7 @@
 # Manuscript literature context and claim-access notes
 
 Reviewed 2026-10-13. This is a representative, claim-focused primary-literature
-selection for [the author draft](manuscript-draft.md), not a systematic review,
+selection for [the reviewed draft](manuscript-draft.md), not a systematic review,
 exhaustive priority search or novelty certification. No third-party experiment
 was reproduced and no third-party figure is imported. The
 [machine ledger](../configs/manuscript_literature.json) records access scope,
@@ -55,16 +55,20 @@ exhaust current work. Generalization beyond the chosen task/model budget remains
 a question for separate prospective studies. This text is a literature-context
 record, not an additional model study or a change to an old acceptance criterion.
 
-## Bibliographic and authorship handling
+## Bibliographic handling
 
-DOI records were checked against Crossref and primary publisher/author records.
-The technical report uses its institutional URL; the preprint pins v1. BibTeX
+Journal DOI metadata was checked against Crossref and primary publisher records.
+The technical report uses its institutional URL; the preprint's identity and
+status come from the primary arXiv v1 record, rather than a journal DOI record. BibTeX
 uses the correctly verified first author with `and others` for long author
 lists; this is abbreviated bibliography formatting, not removal of contributors
 or a proposed authorship list for DrosoMem. Full author lists remain available
-from the linked primary metadata. The manuscript's own byline, affiliations,
-funding and competing-interest declarations require factual project-owner review.
+from the linked primary metadata.
 
-This is an internal draft prepared for review. No external submission, project
+The [scientific review](manuscript-scientific-review.md) corrects the conn2res
+comparison's direction using rechecked publisher-indexed Figure5c text and
+retains the access boundaries for the forecasting study and versioned preprint.
+
+This is an internally reviewed draft. No external submission, project
 DOI or journal publication is created by adding literature citations to the
 repository.

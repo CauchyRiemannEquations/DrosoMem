@@ -1,6 +1,20 @@
 # DrosoMem research roadmap
 
-## Current — full internal manuscript and primary-literature context complete
+## Current — internal manuscript scientific review and corrections complete
+
+2026-10-13: [revised draft](manuscript-draft.md),
+[review record](manuscript-scientific-review.md),
+[revision checks](../results/manuscript_review_v1/audit/checks.json).
+The requested internal scientific review is complete with ten documented
+corrections/clarifications and all registered outcomes preserved. No own-paper
+author information is included or required for this task.
+
+No drafting, review correction or verification remains in the current scope.
+Any further format, translation, export or new research question is a separately
+chosen task. External submission and new experiments are not implied by this
+review. Earlier dated handoffs below record their historical scopes.
+
+## Archived — original full manuscript and literature context
 
 2026-10-13: [full author draft](manuscript-draft.md),
 [literature access/claim notes](literature-context.md),

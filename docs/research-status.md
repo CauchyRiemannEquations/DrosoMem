@@ -1,6 +1,23 @@
 # Research status
 
-## Current — full internal manuscript complete (2026-10-13)
+## Current — manuscript scientific review complete (2026-10-13)
+
+[Revised manuscript](manuscript-draft.md), [findings/corrections](manuscript-scientific-review.md),
+[revision audit](../results/manuscript_review_v1/audit/checks.json).
+All ten identified internal review findings are addressed. Methods now specify
+source selection/DAN treatment, separate drive notation, sensitivity pooling
+and Gaussian observation noise. The draft distinguishes 44 held-out rule pairs
+from 440 episodes, and includes thirteen panel/head/status rows. Figure captions
+and the conn2res empirical-over-null comparison are corrected. Own-paper author
+fields/placeholders are omitted at the user's request.
+
+Selected raw/config inputs and quantitative anchors, bibliography identities,
+local links and revised Git document bytes are checked. Every protected prior
+scientific source/result and original-draft audit remains unchanged. No neural
+run/fit/replay, altered acceptance gate or external submission occurs. Internal
+review is complete within accessed evidence; it is not external peer review.
+
+## Archived — original full internal manuscript (2026-10-13)
 
 [Manuscript](manuscript-draft.md), [primary-literature context](literature-context.md),
 [BibTeX](manuscript-references.bib),

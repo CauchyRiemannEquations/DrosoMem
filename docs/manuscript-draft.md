@@ -1,21 +1,20 @@
 # Historical Input Access and Limits of Rule Continuation in Fixed Fly-Connectome Computational Reservoirs
 
-**Author draft, 2026-10-13.** Scientific evidence cutoff:
-`c48e0c43836e640ec1a15b1ac1152f7e3ec4e2a4`; documentary baseline:
-`5e78dc5fec885234ae591ba2a56c45c870210ab9`.
-Authors, affiliations, correspondence and declarations await project-owner
-review. This is a full internal manuscript draft, not a submitted or peer-reviewed
-paper. The existing software citation identity is recorded separately in
-[CITATION.cff](../CITATION.cff).
+**Internally reviewed draft, 2026-10-13.** Scientific evidence cutoff:
+`c48e0c43836e640ec1a15b1ac1152f7e3ec4e2a4`; review baseline:
+`f916fe65a66263230d229a31e22d14fbc41bae6f`.
+This internal scientific review checks the draft against archived evidence and
+primary literature; it is not external peer review or journal publication.
 
 [Evidence matrix](research-evidence-matrix.md) ·
 [Reproduction index](research-reproduction-index.md) ·
 [Literature context and access notes](literature-context.md) ·
 [BibTeX](manuscript-references.bib).
 
-[Document/provenance audit](../results/manuscript_draft_v1/audit/checks.json)
-checks citation identities, selected numerical anchors, archive preservation and
-local links. It does not replace external peer review or execute new model fits.
+[Scientific review and corrections](manuscript-scientific-review.md) ·
+[Revised-document checks](../results/manuscript_review_v1/audit/checks.json).
+The [original draft audit](../results/manuscript_draft_v1/audit/checks.json)
+remains a versioned record of the pre-review draft.
 
 ## Abstract
 
@@ -111,7 +110,12 @@ conditions have 138,639 processed neurons and 2,700,513 retained threshold-5
 edges. Autapses are excluded. Matrices use postsynaptic rows and presynaptic
 columns; signed weights adopt the upstream excitatory/inhibitory column as a
 model assumption. Role labels and such signs do not supply cell-specific
-physiological calibration. M11 is partial-only.
+physiological calibration. Selection takes 512 uniformly sampled left-side KCs,
+all 48 left MBONs and one left APL, plus 125 DANs selected for a threshold-5
+direct connection with the full left KC/MBON pool before KC sampling. These
+DANs contribute ordinary signed edges, with no dopamine modulation or plasticity
+implemented. The [source provenance](../data/flywire_783_mb_left_kc512_s701/provenance.json)
+records the exact upstream URLs, hashes and selection policy. M11 is partial-only.
 
 Each symbol stimulates 51 distinct KCs in the same 512-cell pool at amplitude
 0.5. The symbol-specific categorical patterns are drawn from registered seeds
@@ -135,24 +139,25 @@ in the [canonical protocols](research-evidence-matrix.md).
 
 ### 2.2 Rate dynamics, state carry and delayed transmission
 
-Let x(t−1) be the previous full state, p(s_t) the fixed input pattern, b=0.6 the
+Let x(t−1) be the previous full state, p(s_t) the fixed input pattern, β=0.6 the
 drive coefficient, c either 0.4 or 0 the direct-carry coefficient, and h either
 1 or 0 the previous-state synaptic switch. A preliminary update is
 
 $$
- v(t)=c x(t-1)+b\tanh\!\left(hW x(t-1)+p(s_t)\right).
+ v(t)=c x(t-1)+\beta\tanh\!\left(hW x(t-1)+p(s_t)\right).
 $$
 
 The computational schedule then recomputes MBONs using current-step KC values:
 q_j(t)=v_j(t) for a KC, and q_j(t)=h x_j(t−1) otherwise. For an MBON i,
 
 $$
- x_i(t)=c x_i(t-1)+b\tanh\!\left(\sum_j W_{ij}q_j(t)+p_i(s_t)\right),
+ x_i(t)=c x_i(t-1)+\beta\tanh\!\left(\sum_j W_{ij}q_j(t)+p_i(s_t)\right),
 $$
 
-while other coordinates retain v(t). Every neuron integrates once; the MBON
-recomputation is a declared update schedule, not measured biological timing.
-Turning off carry keeps b=0.6 rather than replacing it with one. Turning off
+while other coordinates retain v(t). Each coordinate has one final state per
+symbol step; the provisional MBON value is discarded and replaced using the
+current KC values. This schedule does not assert measured biological timing.
+Turning off carry keeps β=0.6 rather than replacing it with one. Turning off
 previous-state synaptic drive retains the same-step KC→MBON transmission; in a
 carry-only arm that path can still transmit KC carry history. Thus these
 interventions are not a pure isolated-neuron versus feedback-cycle comparison.
@@ -237,7 +242,12 @@ constant. The derivative at η=0 is sensitivity of a synthetic continuous encode
 extension; η=1 is a valid symbol substitution. Complex-step and centered
 finite-difference checks validate the numerical response. The registered
 attenuation endpoint requires lag5 relative RMS observed derivative gain at most
-0.10 in every primary block, subject to an immediate-gain eligibility floor.
+0.10 in every primary block. Specifically, for probe p and lag l,
+g_{p,l}=||v_{p,l}[observed]||₂/||d_p||₂, where v is the state derivative and
+d_p is the input-code contrast. G_l=sqrt(mean_p(g_{p,l}²)) and R_l=G_l/G_0.
+Each probe is normalized before pooling; R_5≤0.10 is the registered endpoint.
+A zero contrast or G_0<10⁻⁸ makes the assay invalid. This fixed resolution
+check does not select probes according to their decoding performance.
 Exact saved-float square ratios adjudicate that rule. This is not a percentage
 of categorical memory lost.
 
@@ -251,9 +261,10 @@ cannot be correct for both distinct targets; their joint zero is a logical
 property rather than a 10% joint-chance baseline.
 
 M7 applies one registered artificial observation-noise condition:
-ε=0.10 σ_old Z, using the frozen M5 coordinate scales. The paired worlds share
-the same standardized draws in canonical root-ID order. Noise affects only the
-64 endpoint observations, with no clipping, refitting or state/feedback write-back.
+ε_i=0.10 σ_old,i ξ_i, with ξ∼N(0,I₄₈), using the frozen M5 coordinate scales.
+The paired worlds share the same standardized draws in canonical root-ID order.
+Noise affects the 48 observed coordinates at 64 paired endpoint anchors per
+case, with no clipping, refitting or state/feedback write-back.
 It is not physiological calibration, a dose-response curve or a noisy
 autonomous-recall study.
 
@@ -285,8 +296,9 @@ and three confirmation maps. Affine/iid/shuffled families yield 216 official
 fits; the shift's six copies per family are repeated canonical references.
 
 Because a=10 gives period-2 sequences solvable by fixed lag2 copying, M11
-prospectively excludes it from the primary, which uses all 330 a=7–9 episodes.
-All 440 coefficients and per-rule scores remain reported. In each cohort,
+prospectively excludes it from the primary, which uses all 330 a=7–9 episodes
+spanning 33 coefficient pairs. All 440 held-out episodes spanning 44 (a,b) pairs
+and per-rule scores remain reported. In each cohort,
 primary support requires source training teacher accuracy ≥50%, first-next
 accuracy ≥25%, full continuation ≥10%, at least 5% completion for each of
 a=7/8/9, and a source−shift completion gap ≥5pp. Both cohorts must pass all
@@ -310,8 +322,37 @@ three partial input blocks; anchors share streams/heads; affine episodes share
 finite rules/cycles; M11 repeats the same task arrays across input maps and
 repeats its shift interface. We report raw counts and paired computational
 descriptions, not pooled biological replication or a cross-study success rate.
-The current manuscript performs literature/context and document checks only;
-historical independent validations remain evidence from their recorded runs.
+Displayed percentages use decimal half-up rounding; scientific gates use the
+registered exact counts/fractions rather than rounded displays.
+The table gives the computational scope and newly fitted neural readouts in
+each study. A lag head has its own output coefficients; heads in one case can
+share features/scaler moments and are not independent model replicates.
+
+| Study | Computational panel | Newly fitted neural readouts | Final endpoint status |
+| --- | --- | ---: | --- |
+| P1 | 6 partial + 6 whole blocks | 252 lag heads | PASS |
+| P2 | 21 partial graphs × 6 blocks; 11 whole graphs × 3 blocks | 3339 lag heads | FAIL |
+| M1 | 4 arms × (6 partial + 3 whole blocks) | 756 lag heads | assay-invalid |
+| M2 | 4 arms × (6 partial + 3 whole blocks) | 756 lag heads | PASS |
+| M3 | 3 arms × (6 partial + 3 whole blocks) | 567 lag heads | PASS |
+| M4 | 60 partial + 30 whole symbol/block witness cells | 0 | INFEASIBLE |
+| M5 | 6 partial + 3 whole blocks; 32 sensitivity anchors per case | 189 lag heads | PASS |
+| M6 | 6 partial + 3 whole blocks; 64 original/replacement pairs per case | 0 | PASS |
+| M7 | 6 partial + 3 whole blocks; 64 original/replacement pairs per case | 0 | FAIL |
+| M8 | 10 partial + 3 whole rewired graphs | 0 | READY |
+| M9 | 72 partial + 15 whole graph/map cases; 64 original/replacement pairs per case | 174 lag heads | FAIL |
+| M10 | 3 families × 990 episodes; 63 predictor evaluations | 0 | READY |
+| M11 | 12 models × 6 input maps × 3 families | 216 K11 heads | FAIL |
+
+These statuses concern different registered questions and cannot be pooled into
+a success rate. M4 also retains a whole degree-only UNRESOLVED subquestion;
+M8/M10 READY concerns control/task preparation, with M10's lookup tables fitted
+separately from neural readouts. Smoke and verifier refits are outside these
+main-study head counts. Independent implementation means a separate numerical
+implementation on the same registered inputs, not an independent biological
+dataset or external laboratory replication. This manuscript revision performs
+document/evidence checks only; historical numerical validations remain evidence
+from their recorded runs.
 
 ## 3. Results
 
@@ -328,9 +369,11 @@ were independently checked. [P1 records](temporal-memory-curve-results.md)
 ![Figure 1: archived P1 temporal decoding curves](../results/tdc_v2/p1_main/tdc.png)
 
 **Figure 1.** Historical accuracy under the registered categorical iid task.
-The displayed curve is the archived original; lag0 sanity and long-lag weakness
-must be read with the registered short-lag gate. Computational steps are not
-physiological time. No new plotting or rescoring was performed for this draft.
+Blue legacy5 denotes the partial circuit; orange brain5 denotes the whole
+secondary condition. Curves show lags1–20; lag0 sanity is reported separately
+and is not plotted here. The thin traces are computational blocks. The archived
+curve must be read with the registered lag1–5 gate and its long-lag weakness.
+Computational steps are not physiological time. No new plotting was performed.
 
 P2 fails both material wiring gates. Partial real/raw mean accuracy is 29.664%
 versus 31.949% across nulls, a −2.285pp gap, with real below every partial null.
@@ -366,8 +409,8 @@ more than feedback cycles. [M3 records](temporal-cycles-results.md)
 M4 demonstrates strict design infeasibility. Partial labelled degree/role totals
 force reciprocal connections; its APL incident count is 1,140 against a maximum
 682 for a DAG over the 683 nonisolated source nodes. Separately, all 90 registered
-symbol cells have a source-to-cycle-to-observation witness whose repeated
-positive-delay traversal exceeds the universal same-node DAG bound. Whole
+symbol/block witness cells have a source-to-cycle-to-observation witness whose
+repeated positive-delay traversal exceeds the universal same-node DAG bound. Whole
 degree-only local tests remain UNRESOLVED, while exact all-lag support matching
 is infeasible in both levels. This is a structural obstruction, with no neural
 fit or functional cycle-performance comparison. [M4 records](cycle-attribution-feasibility-results.md)
@@ -383,13 +426,17 @@ difference and valid-substitution checks validate the reported responses.
 
 ![Figure 2: archived M5 functional gain and decoding](../results/functional_sensitivity_v1/main/functional-sensitivity.png)
 
-**Figure 2.** Local derivative gain, valid replacement effects and iid decoding
-are retained in the original M5 display. Gain ratios concern selected continuous
-code contrasts; they are not fractions of lost memory or categorical capacity.
+**Figure 2.** Top panels show local derivative gain and finite valid-replacement
+response, each relative to the immediate local gain; bottom panels show iid
+decoding accuracy. Left legacy5 is partial and right brain5 is whole secondary.
+The top axes are logarithmic with different ranges, while bottom axes are
+linear. The horizontal threshold concerns the local lag5 derivative ratio,
+not the finite replacement or decoding curves. These gain ratios concern
+specified input-code contrasts, not fractions of lost memory or capacity.
 
-M6's unchanged M5 lag2 head follows all 384 partial and 192 paired whole
-original/replacement transitions. Every fixed anchor counts. Unchanged
-frequency/current/instantaneous controls have joint0, as required for identical
+M6's unchanged M5 lag2 head follows all 384 partial and 192 whole
+original/replacement pairs (576 pairs, each with two worlds). Every fixed anchor
+counts. Unchanged frequency/current/instantaneous controls have joint0, as required for identical
 predictions against two distinct targets. New learned parameters are zero.
 [M6 records](counterfactual-tracking-results.md)
 
@@ -494,9 +541,11 @@ M9 has a ceiling. These differences need to accompany each result rather than
 be merged into one universal topology conclusion.
 
 Related connectome reservoirs already investigate architecture/task dependence
-[L7](#ref-l7). The conn2res fruit-fly comparison uses FlyCircuit and does not
-report the null advantage found for other species in that example; it is not
-the present neuron-level assay. Costi et al.'s reported overfitting resilience
+[L7](#ref-l7). The conn2res cross-species memory-capacity example reports an
+empirical-over-null advantage at peak capacity for mouse, rat and macaque, while
+the fruit-fly comparison does not reach statistical significance. That
+nonsignificant contrast does not establish equivalence and uses a different
+assay from ours. Costi et al.'s reported overfitting resilience
 concerns chaotic prediction with different reservoir selection, normalization,
 hybrid controls and readout conditions [L8](#ref-l8). Our categorical gates are
 not a contradiction, replication or direct numerical benchmark of that result.
@@ -555,8 +604,9 @@ review or priority/novelty certification. Publisher access limitations and the
 preprint status of [L9](#ref-l9) are explicit in the literature notes. Seven
 journal articles, one original technical report and one preprint contextualize
 the draft; we do not import their figures or claim to replicate their code.
-Human authorship, declarations, venue-specific formatting and final scientific
-review remain before any external submission.
+This internal review is limited to the stated evidence and accessed literature.
+It does not establish external peer review, exhaustive literature coverage or
+publication readiness for a particular venue.
 
 ## 5. Conclusion
 
@@ -570,7 +620,7 @@ failure is integral to that interpretation. Preserving positive, negative,
 undefined and feasibility outcomes with their independent checks provides a
 concrete basis for future, separately scoped computational studies.
 
-## 6. Data, code, provenance and declarations
+## 6. Data, code and provenance
 
 The [evidence matrix](research-evidence-matrix.md) links every protocol, actual
 learning budget, complete result manifest, successful independent checks and
@@ -595,12 +645,6 @@ software licensing does not grant rights over every upstream asset. Only existin
 DrosoMem figures are linked here. Source data provenance includes the pinned
 processed connectivity and annotation repositories above. No new animal
 experiment is reported by this computational programme.
-
-Paper authorship/affiliations, funding, competing-interest and contributor
-statements require the project owner's factual input before submission. No
-funding source, institutional affiliation, ethics identifier, external peer
-review, project DOI or journal submission is fabricated or claimed. Repository
-software citation identity does not automatically determine manuscript authorship.
 
 ## References
 

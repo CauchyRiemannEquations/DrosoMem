@@ -9,7 +9,24 @@ fly memorizing pi or a model predicting unseen pi digits.
 [한국어 설명](docs/README-ko.md) · [Research status / audit](docs/research-status.md) ·
 [Roadmap](docs/research-roadmap.md) · [Extension closeout](docs/additional-research-closeout.md)
 
-## Current — full internal manuscript and literature context, 2026-10-13
+## Current — internal scientific review and manuscript corrections, 2026-10-13
+
+The [revised manuscript](docs/manuscript-draft.md) has completed an internal
+[scientific review](docs/manuscript-scientific-review.md). Ten findings are
+addressed: episode/rule counts, source/DAN selection, rate/sensitivity/noise
+definitions, computational scope, figure captions and the direction of the
+conn2res comparison. A thirteen-study panel/head/status table makes the actual
+computational replication units explicit. Own-paper author placeholders are
+removed as requested; literature attribution is retained.
+
+[Revision checks](results/manuscript_review_v1/audit/checks.json) authenticate
+selected quantitative claims, citation identities, canonical document bytes,
+local links and the unchanged prior scientific/figure/audit records. No new
+model fit or neural replay occurs. Registered outcomes, including M11's
+acquisition-limited FAIL, stay unchanged. This internal review does not claim
+external peer review or submission. Earlier dated handoffs are historical.
+
+## Archived — original full manuscript and literature context, 2026-10-13
 
 The [full manuscript draft](docs/manuscript-draft.md) develops P1/P2 and M1–M11
 into introduction, explicit model/readout methods, results, discussion and

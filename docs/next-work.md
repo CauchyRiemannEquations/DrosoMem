@@ -1,6 +1,23 @@
 # Prioritized work — updated 2026-10-13
 
-## Current handoff — full internal manuscript complete; review next
+## Current handoff — scientific review complete; no author-information task
+
+[Revised manuscript](manuscript-draft.md),
+[scientific findings and corrections](manuscript-scientific-review.md),
+[revision checks](../results/manuscript_review_v1/audit/checks.json).
+The requested scientific review and necessary document revisions are complete.
+Ten findings cover counting, definitions, source treatment, computational units,
+figures, comparison direction and placeholders. Numerical anchors, source links,
+citations and archive preservation are checked; prior negative outcomes remain.
+
+The user explicitly chose to omit own-paper author information. There is no
+pending byline/affiliation/correspondence-input request. Literature attribution
+remains intact. No new experiment, external submission or journal publication
+is part of this completed review. Further document format/export or a distinct
+prospective research question can be selected separately; no automatic study
+or tuning follows. Earlier dated handoffs below are historical.
+
+## Archived handoff — original manuscript complete; review then next
 
 [Full author draft](manuscript-draft.md), [literature context](literature-context.md),
 [BibTeX](manuscript-references.bib) and
