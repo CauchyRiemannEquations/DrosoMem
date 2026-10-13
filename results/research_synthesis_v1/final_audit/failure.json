@@ -1,0 +1,8 @@
+{
+  "kind": "synthesis-final-document-audit",
+  "complete": false,
+  "exception": "AssertionError",
+  "message": "('docs/research-synthesis.md', '../results/research_synthesis_v1/final_audit/checks.json')",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-10-06\\new-chat-2\\work\\DrosoMem-research\\scripts\\tdc_support.py\", line 100, in attempt\n    yield r\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-10-06\\new-chat-2\\work\\DrosoMem-research\\scripts\\audit_research_synthesis.py\", line 374, in final\n    write(out / 'links.json', local_links(docs, git('rev-parse', 'HEAD')))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-10-06\\new-chat-2\\work\\DrosoMem-research\\scripts\\audit_research_synthesis.py\", line 356, in local_links\n    assert path in inventory or Path(path).is_file(), (name, target)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('docs/research-synthesis.md', '../results/research_synthesis_v1/final_audit/checks.json')\n",
+  "source_commit": "67d205eb12155f541f95fe75579721938c7ffd0c"
+}

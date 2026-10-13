@@ -341,10 +341,10 @@ def render(inventory_path):
     for name, content in [('docs/research-evidence-matrix.md', matrix_text(facts, c)), ('docs/research-reproduction-index.md', replay_text(facts, c))]:
         p = Path(name)
         assert not p.exists(), 'Never overwrite generated synthesis documents'
-        p.write_text(content, encoding='utf-8')
+        p.write_text(content, encoding='utf-8', newline='\n')
 
 
-def local_links(documents, revision):
+def local_links(documents, revision, pending=None):
     inventory = tree(revision)
     links = []
     for name in documents:
@@ -353,8 +353,9 @@ def local_links(documents, revision):
             if '://' in target or target.startswith('#'):
                 continue
             path = (Path(name).parent / target.split('#')[0]).resolve().relative_to(Path.cwd()).as_posix()
-            assert path in inventory or Path(path).is_file(), (name, target)
-            links.append(dict(document=name, path=path, present_in_git=path in inventory, materialized=Path(path).is_file()))
+            assert path in inventory or Path(path).is_file() or path == pending, (name, target)
+            links.append(dict(document=name, path=path, present_in_git=path in inventory, materialized=Path(path).is_file(),
+                              current_audit_artifact=path == pending))
     return links
 
 
@@ -371,14 +372,32 @@ def final(out, inventory_path):
         assert Path('docs/research-reproduction-index.md').read_text(encoding='utf-8') == replay_text(facts, c)
         write(out / 'history.json', history(True))
         docs = c['documents'] + sorted(OVERVIEWS)
-        write(out / 'links.json', local_links(docs, git('rev-parse', 'HEAD')))
+        pending = (out / 'checks.json').as_posix()
+        links = local_links(docs, git('rev-parse', 'HEAD'), pending)
+        blobs = GitBlobs()
+        try:
+            assert all(sha(n) == blobs.blob(git('rev-parse', 'HEAD'), n) for n in docs), 'Canonical document bytes must match Git'
+        finally:
+            blobs.close()
         write(out / 'document-sha256.json', {n: sha(n) for n in docs})
         write(out / 'checks.json', dict(all_checks_pass=True, canonical_studies=13,
                                         matrix_and_reproduction_index_match_frozen_evidence=True,
                                         inventory_manifest_sha256=sha(inventory_path / 'manifest.json'),
                                         all_local_document_links_resolve=True, baseline_evidence_preserved=True,
+                                        document_bytes_match_git=True,
                                         new_model_runs=0, new_model_fits=0, external_submission=False,
                                         publication_or_doi_claimed=False))
+        for entry in links:
+            if entry['current_audit_artifact']:
+                assert Path(entry['path']).is_file()
+                entry['materialized'] = True
+        write(out / 'links.json', links)
+        failures = read(Path(c['namespace']) / 'known-incomplete-attempts.json')
+        for entry in failures:
+            p = Path(entry['manifest_path'])
+            assert not read(p)['complete'] and sha(p) == entry['manifest_sha256']
+            assert Path(entry['failure_path']).is_file()
+        write(out / 'preserved-synthesis-attempts.json', failures)
         unchanged(record)
     seal(out, dict(complete=True, kind='synthesis final audit'))
     print(read(out / 'checks.json'))

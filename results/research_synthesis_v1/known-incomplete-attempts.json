@@ -1,0 +1,8 @@
+[
+  {
+    "manifest_path": "results/research_synthesis_v1/final_audit/manifest.json",
+    "manifest_sha256": "5d23885984457f2f17e8c1ff8cd75aa3bb63d6b2479ce2a1c3ae898baed85a95",
+    "failure_path": "results/research_synthesis_v1/final_audit/failure.json",
+    "reason": "Final document auditor validated its own checks.json link before creating that file; fix only link validation ordering and preserve failed attempt; no scientific changes"
+  }
+]

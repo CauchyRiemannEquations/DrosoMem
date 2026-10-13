@@ -5,7 +5,7 @@
 [Synthesis](research-synthesis.md), [evidence matrix](research-evidence-matrix.md),
 [reproduction index](research-reproduction-index.md), [internal outline](manuscript-outline.md),
 [inventory](../results/research_synthesis_v1/inventory/checks.json),
-[final document audit](../results/research_synthesis_v1/final_audit/checks.json).
+[final document audit](../results/research_synthesis_v1/final_audit_retry1/checks.json).
 Cutoff main `c48e0c43836e640ec1a15b1ac1152f7e3ec4e2a4`.
 Thirteen canonical studies (P1/P2 anchors plus M1–M11) have linked questions,
 actual learning budgets, unchanged registered verdicts, raw manifests, successful
@@ -19,6 +19,8 @@ complete source-mismatch snapshot. All49539 prior result Git identities,
 remain unchanged;39608 sparse-excluded results retain Git identity only.
 Successful validator/main manifest links and pinned producer/verifier CLI
 arguments agree. This is static/provenance validation, not a fresh full replay.
+The first synthesis final-audit self-link ordering error is retained; its corrected
+retry checks the created artifact and canonical Git document bytes.
 
 Final verdicts remain: P1/M2/M3/M5/M6 PASS within their named gates;
 P2/M7/M9/M11 FAIL; M1 assay-invalid/null; M4 strict INFEASIBLE with whole

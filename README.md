@@ -30,7 +30,7 @@ claims; no publication/DOI/external submission is claimed.
 manifests and2371 recorded successful source references;19 incomplete/invalid
 manifest records remain. All49539 prior result Git identities and10636
 materialized protected files agree with the cutoff. Numerical replay was not
-performed by this synthesis. [Final document audit](results/research_synthesis_v1/final_audit/checks.json).
+performed by this synthesis. [Final document audit](results/research_synthesis_v1/final_audit_retry1/checks.json).
 The current programme and synthesis are closed; a full manuscript/literature
 context task or a separately registered new research question remains future work.
 

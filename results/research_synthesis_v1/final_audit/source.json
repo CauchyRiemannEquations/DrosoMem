@@ -1,0 +1,45 @@
+{
+  "source_commit": "67d205eb12155f541f95fe75579721938c7ffd0c",
+  "scope_commit": "23a6f9d719c551499f3af3a75977548d52c39e91",
+  "hashes": {
+    "configs/research_synthesis.json": "09270771cebc26319031c87ec9a1747acabe8c4dc7701d56da1549da86d85709",
+    "scripts/audit_research_synthesis.py": "02e01f5c9e3d8e3f7481319d5d036e5f5f3e239a288fb1df018e3622f4bf2a1a",
+    "scripts/tdc_support.py": "98b3d018b9cf2991c3304aab211f89db014d7ec5ba0afd3505a1e335a60b622c",
+    "scripts/counterfactual_support.py": "3a3c3abce6fcb4636c364c26b2050be6a56b9cb2c89b0893e83842887f7bea9f"
+  },
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "executable": "C:\\Users\\USER\\Documents\\Codex\\2026-10-02\\new-chat-2\\work\\DrosoMem\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+    "logical_cpu_count": 12,
+    "total_ram_bytes": 16905629696,
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "pandas": "2.2.3",
+      "psutil": "7.2.2",
+      "matplotlib": "3.10.8",
+      "threadpoolctl": "3.6.0",
+      "pyarrow": "25.0.1"
+    },
+    "blas": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\USER\\Documents\\Codex\\2026-10-02\\new-chat-2\\work\\DrosoMem\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ],
+    "thread_variables": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "numerical_model_runs": 0
+}
