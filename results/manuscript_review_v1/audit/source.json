@@ -1,0 +1,55 @@
+{
+  "source_commit": "e7cc0452fc243f8bbabf81eca1a0d875bd3a2028",
+  "baseline_commit": "f916fe65a66263230d229a31e22d14fbc41bae6f",
+  "hashes": {
+    "docs/manuscript-draft.md": "bc070bd388a5e492c24c62d8a14d0e44ad5b2af7e5434934e2b118a70ff8e804",
+    "docs/literature-context.md": "e50363b35321dd30027a684749c02910847dacd4dfe41fc4f8da6ba775739303",
+    "docs/manuscript-scientific-review.md": "f69e50d8905b4d14e4ac0bdfd750b85cd6ab32c6ab46a415269b7b59add1a255",
+    "README.md": "3a0e7bc82aa093c272881922e168d2286b810e88c7d7f4108fa3fb73bc50d252",
+    "docs/research-status.md": "38f57e11fd0f298cb7b4a944d27d3e1181527e1e5c65652f7d4bc3f36f3c277e",
+    "docs/research-roadmap.md": "f601488b8529df62d8b6b9b0bf455111c5364fd597e26c45cc9894370ce30467",
+    "docs/next-work.md": "20505d61eb36b92f6cbc9e2e85d88e4165a5306134465d3a99705d791e9afcb3",
+    "configs/manuscript_scientific_review.json": "69f4d2076f4fda4a17048fbe2909883b5b3725934a83603ac23eccde747a6d11",
+    "scripts/audit_manuscript_review.py": "1eee292a2caf52b267802a35760c5d5dd78039126a22e3d497bbd44ca5f6dcc8",
+    "configs/manuscript_literature.json": "5ee92da6e7ddec75b787626271036a6fb4fb4557197b5a083f79cefa81392809",
+    "docs/manuscript-references.bib": "e4bda32efb3426a1d27867acc43d093687372a1bcddf478654e13e04b49c735e",
+    "scripts/audit_manuscript_draft.py": "c44f192d0a5def3d681b422bf6275b6098c4676f9a3f3a66b881c694c7b66f87",
+    "scripts/audit_research_synthesis.py": "903191cb12600e0112c5f99d989bb2e0e2393a98dcc51c6943d2fc20f1349d81",
+    "scripts/counterfactual_support.py": "3a3c3abce6fcb4636c364c26b2050be6a56b9cb2c89b0893e83842887f7bea9f",
+    "scripts/tdc_support.py": "98b3d018b9cf2991c3304aab211f89db014d7ec5ba0afd3505a1e335a60b622c"
+  },
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "executable": "C:\\Users\\USER\\Documents\\Codex\\2026-10-02\\new-chat-2\\work\\DrosoMem\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+    "logical_cpu_count": 12,
+    "total_ram_bytes": 16905629696,
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "pandas": "2.2.3",
+      "psutil": "7.2.2",
+      "matplotlib": "3.10.8",
+      "threadpoolctl": "3.6.0",
+      "pyarrow": "25.0.1"
+    },
+    "blas": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\USER\\Documents\\Codex\\2026-10-02\\new-chat-2\\work\\DrosoMem\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ],
+    "thread_variables": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  }
+}

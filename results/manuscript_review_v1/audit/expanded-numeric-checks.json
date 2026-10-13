@@ -1,0 +1,100 @@
+{
+  "P1": [
+    {
+      "lag": 1,
+      "mean_accuracy": "2399/2400"
+    },
+    {
+      "lag": 2,
+      "mean_accuracy": "9973/12000"
+    },
+    {
+      "lag": 3,
+      "mean_accuracy": "1049/1500"
+    },
+    {
+      "lag": 4,
+      "mean_accuracy": "2021/4000"
+    },
+    {
+      "lag": 5,
+      "mean_accuracy": "109/250"
+    }
+  ],
+  "P2": {
+    "legacy5": {
+      "raw_gap_pp": "-109687/48000"
+    },
+    "brain5": {
+      "raw_gap_pp": "3939/4000"
+    }
+  },
+  "M3": {
+    "legacy5": {
+      "correct": 11998,
+      "samples": 12000,
+      "retained_edges": 2500,
+      "global_dependency_depth": 11
+    },
+    "brain5": {
+      "correct": 6000,
+      "samples": 6000,
+      "retained_edges": 1353524,
+      "global_dependency_depth": 153
+    }
+  },
+  "M4": {
+    "incident": 1140,
+    "dag_incident_capacity": 682,
+    "active_nodes": 683,
+    "witness_cells": 90
+  },
+  "M6": {
+    "pairs": {
+      "legacy5": 384,
+      "brain5": 192
+    },
+    "worlds_per_pair": 2
+  },
+  "M8": {
+    "partial_proposal_edges": 602,
+    "partial_delayed_edges": 1835,
+    "all_ten_partial_proposal_scopes_checked": true
+  },
+  "M9": {
+    "cases": 87,
+    "heads": 174,
+    "joint_pairs": 5568
+  },
+  "M10": {
+    "unique_rules": {
+      "train": 55,
+      "instance_test": 55,
+      "parameter_test": 44
+    },
+    "primary_episodes": 330,
+    "primary_rules": 33,
+    "all_heldout_episodes": 440
+  },
+  "M11": {
+    "source_per_multiplier": {
+      "discovery": {
+        "a7": 0,
+        "a8": 0,
+        "a9": 5,
+        "a10": 0,
+        "episodes_per_multiplier": 330
+      },
+      "confirmation": {
+        "a7": 0,
+        "a8": 0,
+        "a9": 10,
+        "a10": 0,
+        "episodes_per_multiplier": 330
+      }
+    },
+    "shift_primary_completion": 0,
+    "lag2_period2_completed": 110,
+    "lag2_primary_completed": 0
+  }
+}

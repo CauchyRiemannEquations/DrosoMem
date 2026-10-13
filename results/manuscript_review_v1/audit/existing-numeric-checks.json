@@ -1,0 +1,74 @@
+{
+  "m11": {
+    "discovery": {
+      "raw_count_pairs": {
+        "train": [
+          1277,
+          6600
+        ],
+        "first": [
+          131,
+          990
+        ],
+        "teacher8": [
+          1319,
+          7920
+        ],
+        "completion": [
+          5,
+          990
+        ]
+      },
+      "all_reported_table_cells_match": true,
+      "gates": {
+        "train_acquisition": false,
+        "first_next": false,
+        "completion": false,
+        "every_nonperiod2_multiplier": false,
+        "shift_gap": false
+      }
+    },
+    "confirmation": {
+      "raw_count_pairs": {
+        "train": [
+          1245,
+          6600
+        ],
+        "first": [
+          138,
+          990
+        ],
+        "teacher8": [
+          1217,
+          7920
+        ],
+        "completion": [
+          10,
+          990
+        ]
+      },
+      "all_reported_table_cells_match": true,
+      "gates": {
+        "train_acquisition": false,
+        "first_next": false,
+        "completion": false,
+        "every_nonperiod2_multiplier": false,
+        "shift_gap": false
+      }
+    }
+  },
+  "m7": {
+    "legacy5": {
+      "joint_correct": 255,
+      "pairs": 384
+    },
+    "brain5": {
+      "joint_correct": 109,
+      "pairs": 192
+    }
+  },
+  "m2_raw_history_pp": "3937/600",
+  "m2_current_pp": "-601/40",
+  "m5_relative_gain_mean": 0.006613455631164705,
+  "scope": "selected exact/rounded manuscript anchors; not every prose numeral"
+}

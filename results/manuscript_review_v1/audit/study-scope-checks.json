@@ -1,0 +1,67 @@
+{
+  "P1": {
+    "panel": "6 partial + 6 whole blocks",
+    "new_neural_heads": 252,
+    "outcome": "PASS"
+  },
+  "P2": {
+    "panel": "21 partial graphs \u00d7 6 blocks; 11 whole graphs \u00d7 3 blocks",
+    "new_neural_heads": 3339,
+    "outcome": "FAIL"
+  },
+  "M1": {
+    "panel": "4 arms \u00d7 (6 partial + 3 whole blocks)",
+    "new_neural_heads": 756,
+    "outcome": "assay-invalid"
+  },
+  "M2": {
+    "panel": "4 arms \u00d7 (6 partial + 3 whole blocks)",
+    "new_neural_heads": 756,
+    "outcome": "PASS"
+  },
+  "M3": {
+    "panel": "3 arms \u00d7 (6 partial + 3 whole blocks)",
+    "new_neural_heads": 567,
+    "outcome": "PASS"
+  },
+  "M4": {
+    "panel": "60 partial + 30 whole symbol/block witness cells",
+    "new_neural_heads": 0,
+    "outcome": "INFEASIBLE"
+  },
+  "M5": {
+    "panel": "6 partial + 3 whole blocks; 32 sensitivity anchors per case",
+    "new_neural_heads": 189,
+    "outcome": "PASS"
+  },
+  "M6": {
+    "panel": "6 partial + 3 whole blocks; 64 original/replacement pairs per case",
+    "new_neural_heads": 0,
+    "outcome": "PASS"
+  },
+  "M7": {
+    "panel": "6 partial + 3 whole blocks; 64 original/replacement pairs per case",
+    "new_neural_heads": 0,
+    "outcome": "FAIL"
+  },
+  "M8": {
+    "panel": "10 partial + 3 whole rewired graphs",
+    "new_neural_heads": 0,
+    "outcome": "READY"
+  },
+  "M9": {
+    "panel": "72 partial + 15 whole graph/map cases; 64 original/replacement pairs per case",
+    "new_neural_heads": 174,
+    "outcome": "FAIL"
+  },
+  "M10": {
+    "panel": "3 families \u00d7 990 episodes; 63 predictor evaluations",
+    "new_neural_heads": 0,
+    "outcome": "READY"
+  },
+  "M11": {
+    "panel": "12 models \u00d7 6 input maps \u00d7 3 families",
+    "new_neural_heads": 216,
+    "outcome": "FAIL"
+  }
+}
